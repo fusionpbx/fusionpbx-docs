@@ -1,4 +1,0 @@
-fusionpbx-docs
-==============
-
-FusionPBX Documentation
