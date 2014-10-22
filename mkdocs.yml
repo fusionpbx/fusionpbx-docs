@@ -1,0 +1,9 @@
+site_name: FusionPBX Docs
+repo_url: https://github.com/fusionpbx/fusionpbx-docs/
+site_description: Documentation for the FusioPBX VoIP Project
+site_author: Mark J Crane
+site_favicon: favicon.ico
+pages:
+- ['index.md', 'Introduction']
+- ['about.md', 'About']
+theme: readthedocs
