@@ -5,5 +5,4 @@ site_author: Mark J Crane
 site_favicon: favicon.ico
 pages:
 - ['index.md', 'Introduction']
-- ['about.md', 'About']
 theme: readthedocs
