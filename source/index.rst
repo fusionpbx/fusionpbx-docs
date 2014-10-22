@@ -55,10 +55,14 @@ Getting Started
 -------------------
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     installation
     developers
+    manual
+
+Blah
+____
 
 
 
