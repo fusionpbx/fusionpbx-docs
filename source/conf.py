@@ -29,7 +29,7 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc', 'sphinx.ext.mathjax', 'matplotlib.sphinxext.only_directives', 'sphinx.ext.todo',
+    'sphinx.ext.autodoc', 'sphinx.ext.mathjax', 'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

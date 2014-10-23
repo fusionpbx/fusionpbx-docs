@@ -357,8 +357,6 @@ A first method is the following syntax::
 
 gives:
 
-.. htmlonly::
-
     +------------+------------+-----------+
     | Header 1   | Header 2   | Header 3  |
     +============+============+===========+
@@ -386,7 +384,7 @@ The previous syntax can be simplified::
 
 gives:
 
-.. htmlonly::
+
 
     =====  =====  ======
        Inputs     Output
@@ -420,7 +418,7 @@ which means three left-adjusted (LaTeX syntax). By default, Sphinx uses a table 
 
 gives 
 
-.. htmlonly::
+
 
     .. tabularcolumns:: |l|c|p{5cm}|
 
