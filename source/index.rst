@@ -1,10 +1,12 @@
 
+.. image:: _static/images/logo.png
+    :align: center
 
+|
+|
 
 Welcome to FusionPBX Docs
 =========================
-
-.. image:: _static/images/logo.png
 
 **FusionPBX** is an open source project that provides a customizable and
 flexible web interface to the very powerful and highly scalable
@@ -57,12 +59,10 @@ Getting Started
 .. toctree::
     :maxdepth: 2
 
-    installation
-    developers
-    manual
-
-Blah
-____
+    installation.rst
+    developers.rst
+    manual.rst
+    doc-guide.rst
 
 
 

@@ -6,6 +6,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose re
 
 .. toctree::
   :maxdepth: 3
+  :glob:
 
   developers/coding-standards
   developers/directory-structure  
