@@ -5,9 +5,9 @@
 Documentation Guide
 ###################
 
-    This page shows an nice overview of the reStructuredText syntax. This is not a comprehensive list of everything you can do, but should be enough to get you up and running to contribute some really nice documentation. It is based on resources found at `Sphinx <http://sphinx-doc.org/rest.html>`_ .
+This page shows an nice overview of the reStructuredText syntax. This is not a comprehensive list of everything you can do, but should be enough to get you up and running to contribute some really nice documentation. It is based on resources found at `Sphinx <http://sphinx-doc.org/rest.html>`_ .
 
-    To get your own local documentation repository running, simply  
+To get your own local documentation repository running, simply  
 
 Introduction
 #############
@@ -17,7 +17,7 @@ The reStructuredText (RST) syntax provides an easy-to-read, what-you-see-is-what
     * like Python, RST syntax is sensitive to indentation !
     * RST requires blank lines between paragraphs
 
-This entire document is written with the RST syntax. In the right sidebar, you should find a link **show source**, which shows the RST source code.
+This entire document is written with the RST syntax. In the right sidebar, you should find a link **"Edit on Github"**, which will show each page in reStructuredText raw text format.
 
 
 .. contents:: 
