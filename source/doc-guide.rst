@@ -27,7 +27,15 @@ This entire document is written with the RST syntax. In the right sidebar, you s
 Getting Started
 ###############
 
-Learn Git in 15 Minutes `Git Tutorial`_ that will help you get started if you prefer. Here is the link on installing Git if you don't have it yet `Git Install`_
+Getting Git Right
+==================
+
+Learn Git in 15 Minutes `Git Tutorial`_ that will help you get started if you prefer. There is also awesome Git Tutorials on the `Atlassian Git site`_. Here is the link on installing Git if you don't have it yet `Git Install`_
+
+Setting up the Docs Locally
+===============================
+
+One of the great things about Git and documentation is that all people who contribute are encouraged to setup their own local copy of the docs for off-line editing. This by default will ensure that many backups of the documents exist and there is never any concern about losing them.
 
 Assuming you have Python_ already, install Sphinx locally::
 
@@ -953,3 +961,4 @@ Similarly to the note directive, one can include todo boxes but it requires the 
 
 .. _Git Tutorial: https://try.github.io/levels/1/challenges/1
 .. _Git Install: http://git-scm.com/book/en/Getting-Started-Installing-Git
+.. _Atlassian Git site: https://www.atlassian.com/git/tutorials
