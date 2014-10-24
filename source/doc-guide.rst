@@ -238,7 +238,7 @@ Here, **code-block** is the name of the directive. **html** is an argument telli
 
 Note that options are tabulated.
 
-Inserting code and Literal blocks
+Code and Literal blocks
 #######################################
 
 How to include simple code
@@ -452,8 +452,8 @@ that is rendered as follows:
 
 
 
-Include other RST files with the toctree directive
-#####################################################
+The toctree directive
+######################
 
 Sooner or later you will want to structure your project documentation by having several RST files. The **toctree** directive allows you to insert other files within a RST file. The reason to use this directive is that RST does not have facilities to interconnect several documents, or split documents into multiple output files. The **toctree** directive looks like
 
@@ -933,7 +933,7 @@ TODO extension
 =================
 
 
-Similarly to the note directive, one can include todo boxes bu it requires the `sphinx.ext.todo` extension to be added in the **conf.py** file by adding two lines of code::
+Similarly to the note directive, one can include todo boxes but it requires the `sphinx.ext.todo` extension to be added in the **conf.py** file by adding two lines of code::
 
 
     extensions.append('sphinx.ext.todo')
@@ -942,32 +942,6 @@ Similarly to the note directive, one can include todo boxes bu it requires the `
 
 .. todo:: a todo box
   
-
-copybutton
-==================
-
-When including Python code with the >>> signs, there is a nice extension called copybutton that allows to hide the signs hence make a copy/paste possible. I put this extension into the package **easydev**, available on Pypi website. I do not know the origin of this code so sorry if it's yours. If so, let me know so that I can add the author!copyright.
-
-So, if you add the easydev.extension into the configuration file ::
-
-    extensions.append('easydev.copybutton')
-    jscopybutton_path = easydev.copybutton.get_copybutton_path()
-
-    if os.path.isdir('_static')==False:
-        os.mkdir('_static')
-
-    import shutil
-    shutil.copy(jscopybutton_path, '_static')
-
-    html_static_path = ['_static']
-
-
-
-Then, you can add a block code (using the >>> signs) and you should see a clickable set of characters (>>>) in the top right corner to swith on/off the >>> signs::
-
-    >>> a=1
-
-
 .. rubric:: Footnotes
 
 .. [#footnote1] this is a footnote aimed at illustrating the footnote capability.
