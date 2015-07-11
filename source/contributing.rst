@@ -1,6 +1,6 @@
-**********
+*************
 Contributing
-**********
+*************
 
 There are many ways to help the FusionPBX project.
 
@@ -26,7 +26,7 @@ How to Get Started
 3. Would you like to see FreePBX in your native language and have the time to commit to staying on top of translations for releases?
    Check out the translation section to learn how to use our translation server.
 
-  .. note::
+ .. note::
 
   Contributing Code or Documentation requires knowledge of Git, Github and how to create pull requests on Github.
   This is not as bad as it sounds and if you are willing to learn we will help you through it. 
@@ -37,9 +37,9 @@ How to Get Started
   :maxdepth: 3
   :glob:
 
-  contributing/contributing-code
-  contributing/contributing-documentation
-  contributing/contributing-translations
-  contributing/qa-testing
+  contributing/contributing-code.rst
+  contributing/contributing-documentation.rst
+  contributing/contributing-translations.rst
+  contributing/qa-testing.rst
   #contributing/coding-standards
   #contributing/directory-structure  

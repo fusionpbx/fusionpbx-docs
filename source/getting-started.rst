@@ -16,6 +16,6 @@ Just follow the menu to the left and you will have a working PBX in no time.
   :maxdepth: 3
   :glob:
 
-  getting-started/pre-installation
-  getting-started/installation-recommended
-  getting-started/post-installation
+  getting-started/pre-installation.rst
+  getting-started/installation-recommended.rst
+  getting-started/post-installation.rst
