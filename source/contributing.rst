@@ -5,7 +5,7 @@ Contributing
 There are many ways to help the FusionPBX project.
 
 What We Need
-----------------
+=================
 
 1. Developers
 2. Technical Writers
@@ -19,7 +19,7 @@ What We Need
   It does this by verifying that the code you are contributing is yours to give and the you give it freely and irrevocably to the project. 
 
 How to Get Started
----------------------
+====================
 
 1. If you have a good handle on PHP, Lua or SQL Development Might be the thing for you head over to the Development Manual
 2. Are you a FusionPBX power user and do you possible love to write? Check out the Documentation Guide or the Testing Guide
