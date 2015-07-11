@@ -33,7 +33,7 @@ How to Get Started
 
 
 .. toctree::
-  :maxdepth: 3
+  :maxdepth: 4
   :glob:
 
   contributing/contributing-code.rst
