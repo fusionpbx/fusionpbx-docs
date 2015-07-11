@@ -60,7 +60,7 @@ Getting Started
     :maxdepth: 2
 
     installation.rst
-    developers.rst
+    contributing.rst
     manual.rst
     doc-guide.rst
 
