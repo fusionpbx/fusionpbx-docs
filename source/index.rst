@@ -48,7 +48,7 @@ Our Eco-System
 --------------
 We are **community** driven and as such have a open and **very friendly** eco-system, we encourage community engagement, contribution and feedback. Please join us and get involved by giving us feedback and new feature ideas or helping out with code or Documentation.
 
-Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Why not come join us and say hi and meet the team?
+Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Why not come join us and meet the team?
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
