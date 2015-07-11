@@ -4,7 +4,7 @@ Contributing
 
 There are many ways to help the FusionPBX project.
 
-What We Need:
+What We Need
 ----------------
 
 1. Developers
