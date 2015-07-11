@@ -59,6 +59,7 @@ Getting Started
 .. toctree::
     :maxdepth: 2
 
+    getting-started.rst
     installation.rst
     contributing.rst
     manual.rst

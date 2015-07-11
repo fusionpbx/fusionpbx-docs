@@ -1,0 +1,5 @@
+*************************
+Contributing Translations
+*************************
+
+Lorem Ipsum
