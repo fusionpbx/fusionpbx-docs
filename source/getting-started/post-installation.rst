@@ -2,4 +2,4 @@
 Post Installation
 *****************
 
-Lorem Ipsum
+.. include:: Iptables.rst
