@@ -8,6 +8,6 @@ Welcome to the Installation section.  Here you will find Getting started Guides 
   :maxdepth: 3
   :glob:
 
-  getting_started/new-install.rst
+  getting-started/new-install.rst
   installation/debian-pkgs
   installation/debian-iso-install
