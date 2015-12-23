@@ -1,4 +1,7 @@
-.. image:: https://github.com/fusionpbx/fusionpbx/blob/master/themes/enhanced/images/logo.png
+*****************
+New Install
+*****************
+.. image:: https://cloud.githubusercontent.com/assets/13131198/11903431/270a6c1c-a587-11e5-8473-f7e84e02bf0c.png
 *************
 
 
@@ -44,6 +47,8 @@
      Database Password: whateveryouentered
      Create Database Username: Leave_Blank
      Create Database Password: Leave_Blank
+ 
+
      
     **4.** Web browser Installation part
      :Select Language: **Pick your language. Click next**
