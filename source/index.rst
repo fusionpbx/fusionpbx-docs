@@ -61,7 +61,7 @@ Getting Started
 
     getting-started.rst
     installation.rst
-    Gateway.rst
+    Gateway-Inbound-Outbound.rst
     contributing.rst
     manual.rst
     doc-guide.rst
