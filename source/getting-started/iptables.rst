@@ -1,7 +1,4 @@
 .. image:: _static/images/logo.png
-   :width: 40px
-   :alt: Fusionpbx
-   :target: https://github.com/fusionpbx/fusionpbx-docs
 
 Basic Rules
 ===========
