@@ -96,6 +96,8 @@ New Install
      
     
     :Install Finished:  **Login!!!**
-    .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg 
+    
+    .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+    .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
     
     .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
