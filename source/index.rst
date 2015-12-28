@@ -61,6 +61,7 @@ Getting Started
 
     getting-started.rst
     installation.rst
+    Gateway.rst
     contributing.rst
     manual.rst
     doc-guide.rst
