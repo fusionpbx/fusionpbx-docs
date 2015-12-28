@@ -1,5 +1,0 @@
-**************************
-Installation (Recommended)
-**************************
-
-lorem ipsum
