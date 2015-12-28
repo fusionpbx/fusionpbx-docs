@@ -1,4 +1,3 @@
-.. image:: _static/images/logo.png
 
 Basic Rules
 ===========
