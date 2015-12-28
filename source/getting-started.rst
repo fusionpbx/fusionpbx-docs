@@ -2,8 +2,8 @@
 Getting Started
 ***************
 
-So.. You want to install FusionPBX, well your in good hands.
-Just follow the menu to the left and you will have a working PBX in no time.
+Welcome! Let's install FusionPBX.
+Follow the menu to the left and you will have a working PBX in no time.
 
 .. note::
 
