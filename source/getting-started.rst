@@ -2,8 +2,8 @@
 Getting Started
 ***************
 
-So.. You want to install FusionPBX, well your in good hands.
-Just follow the menu to the left and you will have a working PBX in no time.
+Welcome! Let's install FusionPBX.
+Follow the menu to the left and you will have a working PBX in no time.
 
 .. note::
 
@@ -13,9 +13,10 @@ Just follow the menu to the left and you will have a working PBX in no time.
 
 
 .. toctree::
-  :maxdepth: 3
+  :maxdepth: 4
   :glob:
 
   getting-started/pre-installation.rst
   getting-started/installation-recommended.rst
   getting-started/post-installation.rst
+  iptables.rst

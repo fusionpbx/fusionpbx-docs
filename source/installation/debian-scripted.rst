@@ -13,17 +13,18 @@ Requirements
 Software
 ~~~~~~~~
 
-* **Database** : PostgreSQL 9.x / MySQL / SQLite *(PostgreSQL recommended)*
+* **Database** : PostgreSQL 9.x / SQLite *(PostgreSQL recommended)*
 * **Web Server** : nginx / apache *(nginx recommended)*
 * **PHP** : 5.x *(Version 5.5 recommended)*
-* **FreeSWITCH** : 1.4.x * *(Version 1.4.12 recommended)*
+* **FreeSWITCH** : 1.4.x * *(Version 1.4.26 recommended)*
 
 Hardware
 ~~~~~~~~
 
-* **RAM** : x.x *(X recommended)*
-* **DISK** : x.x *(X recommended)*
-* **CPU** : x.x *(X recommended)*
+
+* **RAM** : 512MB *(1GB+ recommended)*
+* **DISK** : 10GB *(20GB+ recommended)*
+* **CPU** : Single core 2266 MHz *(Dual core 2266 MHz+ recommended)*
 
 
 
@@ -33,7 +34,7 @@ Installation Guide
 # 1 - Debian ISO Download
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Download <http://www.debian.org/distrib/netinst>`_ Debian Lenny net install ISO 
+`Download <http://www.debian.org/distrib/netinst>`_ Debian Jessie net install ISO 
 
 # 2 - nginx Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~

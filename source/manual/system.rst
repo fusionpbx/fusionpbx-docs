@@ -5,24 +5,24 @@ System
 Account Settings
 ----------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+-  `Account Settings <Account_Settings>`__ - the account settings for the currently logged on user 
 
 Logout
 ------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+-  `Logout <Logout>`__ - use this to log out of the FusionPBX administration web site 
 
 Modules
 -------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+-  `Modules <Modules>`__ - for enabling and disabling FreeSWITCH modules 
 
 Settings
 --------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+-  `Settings <Settings>`__ - basic FusionPBX settings 
 
 Variables
 ---------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+-  `Variables <Variables>`__ - Manage FreeSWITCH `preprocessor variables <http://wiki.freeswitch.org/wiki/Config_vars.xml>`__ 
