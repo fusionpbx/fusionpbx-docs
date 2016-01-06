@@ -55,7 +55,7 @@ button on the right. Enter the gateway information below and Click on **Save** o
 Inbound Destination setup
 ===========
 
-Configure Inbound Destinations:
+Configure Inbound Destinations: (This will auto-configure an Inbound Route also)
 
 *Select* **Dialplan** from the drop-down list and then *click* **Destinations**. 
 
@@ -75,16 +75,17 @@ button on the right.
 
 ::
 
- Name: VoiceTel DID
+ Type: Inbound
  Destination Number: ^(?:\+?1)?(\d{10})$
- Action: Select desired destination from the drop-down list
- Order: 999
+ Action: Select desired destination from the drop-down list.  We choose "Extension 100" in our example.  This is where the call will route to.
  Enabled: true
  Description: VoiceTel-in
-
+ 
+ 
+ 
 ::
 
- Optionally replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.
+ Optional: Replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.
  
 
 .
