@@ -20,8 +20,12 @@ In this example we will be using Voicetel.  Each Gateway provider has their own 
     
 
 
-Select **Accounts** from the drop-down list and click on **Gateways**. Click the 
-``.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png``
+Select **Accounts** from the drop-down list and click on **Gateways**. 
+
+Click the 
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+
 button on the right. Enter the gateway information below and Click on **Save** once complete.
 
 ::
@@ -44,7 +48,13 @@ Inbound Destination setup
 
 Configure Inbound Route:
 
-*Select* **Dialplan** from the drop-down list and then *click* on **Inbound Routes**. Click on the .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png button on the right. *Enter* the route information below and *Click* on **Save** when complete.
+*Select* **Dialplan** from the drop-down list and then *click* on **Inbound Routes**. 
+
+Click on the
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+
+button on the right. *Enter* the route information below and *Click* **Save** once complete.
 ::
 
  Name: VoiceTel DID
@@ -69,7 +79,13 @@ Outbound setup
 Configure Outbound Route. 
 
 
-Select **Dialplan** from the drop-down list and then click **Outbound Routes** . Click the .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png button on the right. Enter the route information below and Click on **Save** when complete.
+Select **Dialplan** from the drop-down list and then click **Outbound Routes** . 
+
+Click the 
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+
+button on the right. Enter the route information below and Click **Save** once complete.
 
 ::
 
