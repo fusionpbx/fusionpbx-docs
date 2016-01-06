@@ -57,7 +57,7 @@ Inbound Destination setup
 
 Configure Inbound Destinations:
 
-*Select* **Dialplan** from the drop-down list and then *click* on **Destinations**. 
+*Select* **Dialplan** from the drop-down list and then *click* **Destinations**. 
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153363/86efa890-b487-11e5-8628-0b7358797493.jpg
 
@@ -65,7 +65,11 @@ Click on the
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
 
-button on the right. *Enter* the route information below and *Click* **Save** once complete.
+button on the right. 
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12153365/86f0df3a-b487-11e5-967d-4820f7c77f77.jpg
+
+*Enter* the route information below and *Click* **Save** once complete.
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153362/86ef406c-b487-11e5-9b63-af8d485cb4e1.jpg
 
