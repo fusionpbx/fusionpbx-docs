@@ -11,9 +11,11 @@ In this example we will be using `VoiceTel <http://tiny.cc/voicetel>`_ .  Each G
 **********************************************************   
     
 
-.. image:: http://www.voicetel.com/images/voicetel_logo.png 
 
-  
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12149664/e05ebd40-b472-11e5-83c3-5931c7c409d3.jpg 
+
+`Click to visit <http://tiny.cc/voicetel>`_  
     
 .. rubric:: .
 .. rubric:: .
