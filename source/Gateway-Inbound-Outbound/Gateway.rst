@@ -7,7 +7,7 @@ Gateway setup
 .. rubric:: .
 .. rubric:: .
 
-In this example we will be using Voicetel.  Each Gateway provider has their own setings to use.    
+In this example we will be using `VoiceTel <http://tiny.cc/voicetel>`_ .  Each Gateway provider has their own setings to use.    
 **********************************************************   
     
 
@@ -103,3 +103,5 @@ button on the right. Enter the route information below and Click **Save** once c
  Description: VoiceTel-out
 
 
+**By using** `VoiceTel <http://tiny.cc/voicetel>`_ **you help support FusionPBX.  Thank you for your support!**
+===============
