@@ -22,6 +22,13 @@ In this example we will be using Voicetel.  Each Gateway provider has their own 
 
 Select **Accounts** from the drop-down list and click on **Gateways**. 
 
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12148465/999cf76a-b46c-11e5-85ae-e42c0d3dc97b.jpg
+
+.
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12148464/999caf08-b46c-11e5-832e-b13240e01bc5.jpg
+
+
 Click the 
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
@@ -40,7 +47,7 @@ button on the right. Enter the gateway information below and Click on **Save** o
   Enabled: true 
 .
 
-
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12148466/99a8a5ba-b46c-11e5-80d2-4aca54114640.jpg
 
 
 Inbound Destination setup
