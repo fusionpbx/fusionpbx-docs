@@ -1,20 +1,22 @@
 Gateway setup
 ===========
-    .. image:: https://cloud.githubusercontent.com/assets/13131198/11903431/270a6c1c-a587-11e5-8473-f7e84e02bf0c.png
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/11903431/270a6c1c-a587-11e5-8473-f7e84e02bf0c.png
   
   
 .. rubric:: .
 .. rubric:: .
 
 In this example we will be using Voicetel.  Each Gateway provider has their own setings to use.    
-    
+**********************************************************   
     
 
-   .. image:: http://www.voicetel.com/images/voicetel_logo.png 
+.. image:: http://www.voicetel.com/images/voicetel_logo.png 
 
   
     
-    
+.. rubric:: .
+.. rubric:: .
     
 
 
