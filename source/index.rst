@@ -61,9 +61,11 @@ Getting Started
 
     getting-started.rst
     installation.rst
+    domains.rst
+    Extensions-IVR.rst
     Gateway-Inbound-Outbound.rst
-    contributing.rst
     manual.rst
+    contributing.rst
     doc-guide.rst
 
 
