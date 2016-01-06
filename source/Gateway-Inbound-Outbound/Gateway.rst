@@ -116,7 +116,7 @@ button on the right. Enter the route information below and Click **Save** once c
 
 .
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12156742/e8f6763c-b49a-11e5-95d6-d1e8b2b7a607.jpg
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12157521/633bfb4c-b4a0-11e5-9019-8217560076cc.jpg
 
 ::
 
