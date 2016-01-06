@@ -62,7 +62,7 @@ Getting Started
     getting-started.rst
     installation.rst
     domains.rst
-    Extensions.rst
+    Extensions-IVR.rst
     Gateway-Inbound-Outbound.rst
     manual.rst
     contributing.rst
