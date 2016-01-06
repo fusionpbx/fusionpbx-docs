@@ -7,8 +7,8 @@ Gateway setup
 .. rubric:: .
 .. rubric:: .
 
-In this example we will be using `VoiceTel <http://tiny.cc/voicetel>`_ .  Each Gateway provider has their own setings to use.    
-**********************************************************   
+**In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
+   
     
 
 
