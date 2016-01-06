@@ -14,4 +14,4 @@ Welcome to the adding IVR section.  Here you will find how to add IVR's.
   :maxdepth: 3
   :glob:
 
-  domains/domains.rst
+  Extensions-IVR/Extensions.rst
