@@ -100,16 +100,28 @@ Configure Outbound Route.
 
 Select **Dialplan** from the drop-down list and then click **Outbound Routes** . 
 
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12156744/e8fd860c-b49a-11e5-9136-2025ed9b9cd2.jpg
+
 Click the 
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
 
+
+
 button on the right. Enter the route information below and Click **Save** once complete.
+
+.
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12156743/e8f91c0c-b49a-11e5-88c5-f2475fc1bfad.jpg
+
+.
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12156742/e8f6763c-b49a-11e5-95d6-d1e8b2b7a607.jpg
 
 ::
 
  Gateway: VoiceTel
- Dialplan Expression: ^(?:\+?1)?(\d{10})$
+ Dialplan Expression: ^(?:\+?1)?(\d{10})$ (You can also choose more than one from the drop down list also as needed)
  Order: 000
  Enabled: true
  Description: VoiceTel-out
