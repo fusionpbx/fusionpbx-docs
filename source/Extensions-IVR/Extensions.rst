@@ -12,7 +12,7 @@ Welcome to the adding Extensions section.  Here you will find how to add Extensi
 .
 
 
-..
+.
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153359/86e7c814-b487-11e5-91ef-c1a1d89198c5.jpg
 
@@ -21,8 +21,9 @@ Welcome to the adding Extensions section.  Here you will find how to add Extensi
 .
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153358/86e71cd4-b487-11e5-8e46-4d78dd358db1.jpg
+
 .
-.
+
 
 .
 
@@ -41,8 +42,9 @@ Click the edit icon
 
 
 .
-.
+
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153357/86e5a980-b487-11e5-81ad-2944bff0f0bf.jpg
+
 .
 
 
@@ -58,6 +60,7 @@ IVR's
 ************
 
 Welcome to the adding IVR section.  Here you will find how to add IVR's.
+
 .
 
 
