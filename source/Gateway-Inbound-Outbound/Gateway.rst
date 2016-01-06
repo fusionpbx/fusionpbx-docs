@@ -3,21 +3,21 @@ Gateway setup
     .. image:: https://cloud.githubusercontent.com/assets/13131198/11903431/270a6c1c-a587-11e5-8473-f7e84e02bf0c.png
   
   
-    
+.. rubric:: .
+.. rubric:: .
+
+In this example we will be using Voicetel.  Each Gateway provider has their own setings to use.    
     
     
 
    .. image:: http://www.voicetel.com/images/voicetel_logo.png 
 
+  
+    
+    
+    
 
-    
-    
-    
-    
 
-* Setting up a gateway.  
-
-In this example we will be using Voicetel.  Each Gateway provider has their own setings to use.
 Select **Accounts** from the drop-down list and click on **Gateways**. Click the 
 ``.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png``
 button on the right. Enter the gateway information below and Click on **Save** once complete.
@@ -52,7 +52,10 @@ Configure Inbound Route:
  Enabled: true
  Description: VoiceTel-in
 
-``Optionally replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.`` .
+::
+
+ Optionally replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.
+ 
 
 .
 
