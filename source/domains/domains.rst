@@ -28,6 +28,8 @@ This will bring you to enter domain info. (Be sure to create an "A record" from 
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12263212/4e601550-b8fb-11e5-806c-927c6f2ee3eb.jpg
 
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12263214/4e6107da-b8fb-11e5-990d-94ad3c684965.jpg
+
 
 
 .. toctree::
