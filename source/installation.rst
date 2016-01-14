@@ -4,6 +4,9 @@ Installation
 
 Welcome to the Installation section.  Here you will find Getting started Guides on how to install FusionPBX different operating systems.  The default method is on Debian 8 (Jessie) with the recomended install script 
 
+|
+|
+
 .. toctree::
   :maxdepth: 3
   :glob:
