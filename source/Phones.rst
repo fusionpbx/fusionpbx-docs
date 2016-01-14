@@ -10,18 +10,6 @@ Welcome to the Registering Phones section.  Here you will find how to configure 
 |
 |
 
-Grandstream
-============
-
-|
-|
-
-
-Zoiper
-=======
-
-|
-|
 
 
 .. toctree::
