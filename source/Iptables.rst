@@ -38,8 +38,9 @@ Basic Rules
 ICMP (optional)
 ===============
 
-|
 | ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
+| ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
+
 
 Friendly Scanner
 ================
