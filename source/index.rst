@@ -74,10 +74,10 @@ Getting Started
     :maxdepth: 2
 
     getting-started.rst
-    domains.rst
     Extensions-IVR.rst
     Gateway-Inbound-Outbound.rst
     Phones.rst
+    domains.rst
     manual.rst
     contributing.rst
     doc-guide.rst
