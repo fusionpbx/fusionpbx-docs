@@ -37,14 +37,14 @@ Basic Rules
 
 ICMP (optional)
 ===============
-
+|
 | ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
 
 Friendly Scanner
 ================
 
 Rules to block not so friendly scanner
-
+|
 | ``iptables -I INPUT -j DROP -p tcp --dport 5060 -m string --string "friendly-scanner" --algo bm``
 | ``iptables -I INPUT -j DROP -p tcp --dport 5080 -m string --string "friendly-scanner" --algo bm``
 | ``iptables -I INPUT -j DROP -p udp --dport 5060 -m string --string "friendly-scanner" --algo bm``
