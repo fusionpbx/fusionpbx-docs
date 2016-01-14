@@ -14,7 +14,7 @@ Goto **Accounts** then click **Extensions**
 
 Then click the
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+ .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
 
 on the right.
 .
@@ -49,7 +49,21 @@ to customize internal, external, emergency caller id and other fine tuned option
 
 
 
-.
+Enter information as needed.
+
+- **Extenson:** This is the extension number or name if used with Number Alias
+- **Number Alias:** Number extension if extension is a name
+- **Password:** mouse over to see the password
+- **User List:** Add a user for this extesnion to login to the FusionPBX GUI interface
+- **Voicemail Password:** Password for this extensions voicemail
+- **Device Provisioning:** Used for hardware devices like voip phones and ata's
+- **Account Code:** Can be used for billing
+- **Effective Caller ID Name:** Used for internal caller id
+- **Effective Caller ID Number:** Used for internal caller id
+- **Outbound Caller ID Name:** Used for external (public) caller id
+- **Outbound Caller ID Number:** Used for external (public) caller id
+- **Emergency Caller ID Name:** Can be set to a national standard or local emergency entity
+- **Emergency Caller ID Number:** Can be set to a national standard or local emergency entity
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153357/86e5a980-b487-11e5-81ad-2944bff0f0bf.jpg
 
