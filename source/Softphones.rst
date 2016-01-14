@@ -14,4 +14,4 @@ Welcome to the Softphones section.  Here you will find how to configure some of 
   :maxdepth: 3
   :glob:
 
-  Softphones/softphones.rst
+  Softphones/Softphones.rst
