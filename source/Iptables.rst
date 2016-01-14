@@ -78,6 +78,7 @@ Save Changes
 
 Debian & Ubuntu
 
+|
 | ``apt-get install iptables-persistent``
 | ``service iptables-persistent save``
 |
