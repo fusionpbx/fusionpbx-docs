@@ -15,7 +15,7 @@ New Install
      
      cd /usr/src 
      apt-get install wget  
-     wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/install/ubuntu/install_fusionpbx.sh  
+     wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/install/debian/install_fusionpbx.sh  
      chmod 755 install_fusionpbx.sh 
      ./install_fusionpbx.sh install-both auto 
      
