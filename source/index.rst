@@ -78,7 +78,7 @@ Getting Started
     domains.rst
     Extensions-IVR.rst
     Gateway-Inbound-Outbound.rst
-    Softphones.rst
+    Phones.rst
     manual.rst
     contributing.rst
     doc-guide.rst
