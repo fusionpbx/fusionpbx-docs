@@ -1,5 +1,5 @@
 ************
-Domains
+Advanced
 ************
 
 Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from
