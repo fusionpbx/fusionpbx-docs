@@ -1,5 +1,5 @@
 ************
-Registering Phones
+Applications
 ************
 
 |
