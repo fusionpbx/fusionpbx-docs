@@ -4,8 +4,8 @@ Gateway setup
 .. image:: https://cloud.githubusercontent.com/assets/13131198/11903431/270a6c1c-a587-11e5-8473-f7e84e02bf0c.png
   
   
-.. rubric:: .
-.. rubric:: .
+|
+|
 
 **In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
    
@@ -17,8 +17,8 @@ Gateway setup
 
 `Click to visit <http://tiny.cc/voicetel>`_  
     
-.. rubric:: .
-.. rubric:: .
+|
+|
     
 
 
@@ -26,7 +26,8 @@ Select **Accounts** from the drop-down list and click on **Gateways**.
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12148465/999cf76a-b46c-11e5-85ae-e42c0d3dc97b.jpg
 
-.
+|
+|
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12148464/999caf08-b46c-11e5-832e-b13240e01bc5.jpg
 
@@ -47,7 +48,9 @@ button on the right. Enter the gateway information below and Click on **Save** o
   Proxy: sbc.voicetel.com 
   Register: true 
   Enabled: true 
-.
+
+|
+|
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12148466/99a8a5ba-b46c-11e5-80d2-4aca54114640.jpg
 
@@ -81,14 +84,16 @@ button on the right.
  Enabled: true
  Description: VoiceTel-in
  
- 
+|
+|
  
 ::
 
  Optional: Replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.
  
 
-.
+|
+|
 
 
 Outbound setup
@@ -110,13 +115,18 @@ Click the
 
 button on the right. Enter the route information below and Click **Save** once complete.
 
-.
+|
+|
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12156743/e8f91c0c-b49a-11e5-88c5-f2475fc1bfad.jpg
 
-.
+|
+|
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12157521/633bfb4c-b4a0-11e5-9019-8217560076cc.jpg
+
+|
+|
 
 ::
 
@@ -126,6 +136,8 @@ button on the right. Enter the route information below and Click **Save** once c
  Enabled: true
  Description: VoiceTel-out
 
+|
+|
 
 **By using** `VoiceTel <http://tiny.cc/voicetel>`_ **you help support FusionPBX.  Thank you for your support!**
 
