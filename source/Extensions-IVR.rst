@@ -8,3 +8,4 @@ Accounts
   :glob:
 
   Extensions-IVR/Extensions.rst
+  Gateway-Inbound-Outbound/Gateway1.rst
