@@ -17,8 +17,3 @@ Zoiper
 |
 
 
-.. toctree::
-  :maxdepth: 3
-  :glob:
-
-  Softphones/softphones.rst
