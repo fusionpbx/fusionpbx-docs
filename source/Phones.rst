@@ -24,7 +24,9 @@ Zoiper
 |
 
 
-
+.. toctree::
+  :maxdepth: 3
+  :glob:
 
 
   Phones/Phones.rst
