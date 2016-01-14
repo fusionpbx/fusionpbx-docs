@@ -1,5 +1,5 @@
 *************
-Gateway Inbound Outbound
+Dialplan
 *************
 
 
