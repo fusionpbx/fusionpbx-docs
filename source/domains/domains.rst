@@ -1,14 +1,19 @@
 ************
 Domains
 ************
+|
 
   Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
-  
+
+|
+|
+
 ===============
 Adding a domain
 ===============
 
-.
+|
+|
 
 
   There are several reasons to create a domain (tenant).  One reason would be to organize customers and so customers have a unique login *ie* superadmin@domain.tld or superadmin@subdomain.domain.tld as the username. 
@@ -35,7 +40,8 @@ Click **save** once entry is complete.
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12263214/4e6107da-b8fb-11e5-990d-94ad3c684965.jpg
 
-
+|
+|
 
 .. toctree::
   :maxdepth: 3
