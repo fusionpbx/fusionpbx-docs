@@ -74,7 +74,6 @@ Getting Started
     :maxdepth: 2
 
     getting-started.rst
-    installation.rst
     domains.rst
     Extensions-IVR.rst
     Gateway-Inbound-Outbound.rst
