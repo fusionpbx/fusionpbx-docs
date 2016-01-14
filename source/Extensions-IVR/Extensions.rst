@@ -22,7 +22,7 @@ on the right.
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153359/86e7c814-b487-11e5-91ef-c1a1d89198c5.jpg
 
 .
-Enter the desired *extension* starting number.  From the dropdown *Range* box you can choose the desired block of extensions to start with.
+Enter the desired *extension* starting number.  From the dropdown *Range* box you can choose the desired block of extensions to start with. This can be done again later if needing more extensions.  Click **save** once entry is completed.  Entry can be customized for each idividual extension after this point.
 .
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12153358/86e71cd4-b487-11e5-8e46-4d78dd358db1.jpg
@@ -32,11 +32,14 @@ Enter the desired *extension* starting number.  From the dropdown *Range* box yo
 
 .
 
-.
+We now have extensions. Each extension has and edit icon beside it.  Click the edit icon
 
-Click the edit icon
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153361/86eba8b2-b487-11e5-9e81-c6bac7fa355b.jpg
+ .. image:: https://cloud.githubusercontent.com/assets/13131198/12153361/86eba8b2-b487-11e5-9e81-c6bac7fa355b.jpg
+
+to customize internal, external, emergency caller id and other fine tuned options.  You can also access **Call Control** from here. 
+
+
 
 .
 
