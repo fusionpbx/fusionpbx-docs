@@ -39,8 +39,6 @@ ICMP (optional)
 ===============
 
 | ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
-| ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
-
 
 Friendly Scanner
 ================
@@ -78,7 +76,7 @@ Block IP address
 Save Changes
 ============
 
-Debian / Ubuntu
+Debian & Ubuntu
 
 | ``apt-get install iptables-persistent``
 | ``service iptables-persistent save``
