@@ -10,6 +10,13 @@ Welcome to the Softphones section.  Here you will find how to configure some of 
 |
 |
 
+Zoiper
+=======
+
+|
+|
+
+
 .. toctree::
   :maxdepth: 3
   :glob:
