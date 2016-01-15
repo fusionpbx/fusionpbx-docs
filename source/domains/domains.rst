@@ -43,6 +43,22 @@ Click **save** once entry is complete.
 |
 |
 
+================
+Domain Selection
+================
+
+|
+Changing to a different domain click the stack of three dashes on the top right
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12345331/87ca93d0-bb15-11e5-9696-4d1ca5d3b9e0.jpg
+
+|
+A menu will pop open on the right of the screen.  Click on the domain that you want to manage.  You will always see the domain you are in by looking at the top right beside the three stacked dashes.
+
+|
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12345332/87cc2862-bb15-11e5-95da-d26f0264d9db.jpg
+
+
 .. toctree::
   :maxdepth: 3
   :glob:
