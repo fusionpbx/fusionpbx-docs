@@ -13,7 +13,7 @@ Follow the menu to the left and you will have a working PBX in no time.
 
 
 .. toctree::
-  :maxdepth: 4
+  :maxdepth: 3
   :glob:
 
   getting-started/installation-recommended.rst
