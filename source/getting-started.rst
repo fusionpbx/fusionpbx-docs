@@ -16,7 +16,7 @@ Follow the menu to the left and you will have a working PBX in no time.
   :maxdepth: 4
   :glob:
 
-  getting-started/pre-installation.rst
+..  getting-started/pre-installation.rst
   getting-started/installation-recommended.rst
   getting-started/post-installation.rst
   iptables.rst
