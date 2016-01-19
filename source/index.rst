@@ -75,7 +75,7 @@ Getting Started
 
     getting-started.rst
     accounts.rst
-    dialplans.rst
+    dialplan.rst
     phones.rst
     domains.rst
     manual.rst
