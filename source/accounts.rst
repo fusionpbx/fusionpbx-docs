@@ -2,6 +2,9 @@
 Accounts
 ************
 
+|
+
+In the accounts menu you have access to devices, extensions, gateways and user manager. 
 
 .. toctree::
   :maxdepth: 3
