@@ -17,4 +17,4 @@ Welcome to the Registering Phones section.  Here you will find how to configure 
   :glob:
 
 
-  Phones/Phones.rst
+  Phones/phones.rst
