@@ -1,6 +1,10 @@
 Inbound Destination setup
 ===========
 
+Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls.
+
+|
+
 Configure Inbound Destinations: (This will auto-configure an Inbound Route also)
 
 *Select* **Dialplan** from the drop-down list and then *click* **Destinations**. 
@@ -42,6 +46,9 @@ button on the right.
 Outbound setup
 ===========
 
+Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes. 
+
+|
 
 Configure Outbound Route. 
 

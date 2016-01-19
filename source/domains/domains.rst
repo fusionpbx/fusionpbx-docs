@@ -15,6 +15,9 @@ Adding a domain
 |
 |
 
+Control the list of domains to manage.
+
+|
 
   There are several reasons to create a domain (tenant).  One reason would be to organize customers and so customers have a unique login *ie* superadmin@domain.tld or superadmin@subdomain.domain.tld as the username. 
 

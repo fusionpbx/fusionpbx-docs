@@ -19,6 +19,8 @@ New Install
      chmod 755 install_fusionpbx.sh 
      ./install_fusionpbx.sh install-both auto 
      
+|
+
     **2.** The install script will apt-get update/upgrade the system and ask you a few questions
      
      
@@ -32,7 +34,9 @@ New Install
       Password:IloveFusionpbx
      
     *It can take between 15-30 minutes to compile and install*
-     
+
+|
+
     **3.** Goto a web browser and enter the ip address
     ::
      
@@ -48,27 +52,38 @@ New Install
      Create Database Username: Leave_Blank
      Create Database Password: Leave_Blank
  
+|
 
      
     **4.** Web browser Installation part
      :Select Language: **Pick your language. Click next**
      .. image:: https://cloud.githubusercontent.com/assets/13131198/11797615/3b84a6aa-a292-11e5-92be-9130fe480f9b.jpg
-     
+
+|
+
      :Freeswitch Detect: **Detecting folder paths used** 
      .. image:: https://cloud.githubusercontent.com/assets/13131198/11802026/c5a78c04-a2b9-11e5-9a79-e77ef3298c49.jpg 
+
      
      **Don't change anything here**
-     
+    
+|
+
      :Database Configuration: **Click Execute**
      .. image:: https://cloud.githubusercontent.com/assets/13131198/11797607/2bfe2fb2-a292-11e5-9d58-e344678f3fdb.jpg 
      
      **Don't change anything here** 
      
+|
+
      :Admin Login Configuration: **Click Next**
      .. image:: https://cloud.githubusercontent.com/assets/13131198/11797659/99b6c424-a292-11e5-81a2-1bfae36ce197.jpg 
      
      This will create the superadmin login that will be used in your web browser.
-     
+
+ 
+|
+
     **5.** Goto Console and press enter 
     ::
      When PostgreSQL is configured come back and press enter.
@@ -90,14 +105,17 @@ New Install
      http://104.233.77.151
      Default login is (whatever you picked in the GUI install):
      User: WhateverUsernameYouPicked
-     Passwd: YourPasswordYouPicked
+     Password: YourPasswordYouPicked
      Checking to see if FreeSWITCH is running!
         
      
     
-    :Install Finished:  **Login!!!**
+|
+
+     :Install Finished:  **Login with the username and password you choose during the install**
+     
+     
+      .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
+      
     
-    .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
-    .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
     
-    .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
