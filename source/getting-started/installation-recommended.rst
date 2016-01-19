@@ -105,14 +105,14 @@ New Install
      http://104.233.77.151
      Default login is (whatever you picked in the GUI install):
      User: WhateverUsernameYouPicked
-     Passwd: YourPasswordYouPicked
+     Password: YourPasswordYouPicked
      Checking to see if FreeSWITCH is running!
         
      
     
 |
 
-    :Install Finished:  **Login!!!**
+    :Install Finished:  **Login with the username and password you choose during the install!!!**
     
     
     .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
