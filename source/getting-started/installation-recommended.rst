@@ -112,9 +112,10 @@ New Install
     
 |
 
-    :Install Finished:  **Login with the username and password you choose during the install!!!**
-    
-    
-    .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
+     :Install Finished:  **Login with the username and password you choose during the install**
+     
+     
+      .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
+      
     
     
