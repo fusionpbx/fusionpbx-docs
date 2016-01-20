@@ -112,6 +112,8 @@ Use this to configure your SIP extensions.
 Grandstream
 ============
 
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12453792/d9aa7b2e-bf62-11e5-9ddd-30ad751e9ce8.jpg
+
 |
 
 Registering an **Extension** using a hardware phone or adapter (ata) using Grandstream. 
