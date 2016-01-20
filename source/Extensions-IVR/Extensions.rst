@@ -162,6 +162,8 @@ In the ever changing world of voip businesses are moving away from hardware phon
 | ``password: thepassword``
 | ``domain: sub.domain.com``
 
+|
+
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12450590/b98d9552-bf52-11e5-9e46-650e8bc846b1.jpg
 
 |
@@ -172,6 +174,14 @@ In the ever changing world of voip businesses are moving away from hardware phon
 
 |
 
+- Troubleshooting tips
+
+|
+
+* Check, double check that the correct extension number and password is being used.
+* Make sure you have created an DNS A record for the domain being used and there are no typos
+* Nat, firewalls and router settings.  Some brands of routers can cause issues.  Google the make and model of router or firewall appliance for common settings or remedies.
+* Visit Zoiper Community Supoprt http://community.zoiper.com/
 |
 |
 
