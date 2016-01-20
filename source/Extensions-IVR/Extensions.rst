@@ -162,11 +162,11 @@ In the ever changing world of voip businesses are moving away from hardware phon
 | ``password: thepassword``
 | ``domain: sub.domain.com``
 
-|
-
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12450590/b98d9552-bf52-11e5-9e46-650e8bc846b1.jpg
 
 |
+
+8. Click ok.  You should have **Registered** at the top right
 
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12450586/b986d690-bf52-11e5-892d-7eb5e96d44a3.jpg
 
