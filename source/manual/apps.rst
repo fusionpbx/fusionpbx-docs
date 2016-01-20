@@ -5,27 +5,27 @@ Apps
 Call Block
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+A list of numbers from which to block calls. 
 
 Call Broadcast
 --------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Call Broadcast 
 
 Call Center
 -----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+List of queues for the call center. 
 
 Call Detail Records
 -------------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Call Detail Records (CDRs) are detailed information on the calls. Use the fields to filter the information for the specific call records that are desired. Then view the calls in the list or download them as comma seperated file by using the 'csv' button.  
 
-Call Forward
+Call Flows
 ------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Direct calls between two destinations by calling a feature code. 
 
 Click to Call
 -------------
@@ -37,20 +37,20 @@ Contact Manager
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
 
-Conferences
------------
+Conference Center
+-----------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Conference Centers are a group of conference rooms. They can be organized by cost center, geographically, or other criteria. 
 
 Fax Server
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+To receive a FAX setup a fax extension and then direct the incoming to it.  
 
-Hunt Group
+Follow Me
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Use the links to configure call forward follow me, or do not disturb. The following list the extensions that have been assigned to this user account. 
 
 IVR Menu
 --------
