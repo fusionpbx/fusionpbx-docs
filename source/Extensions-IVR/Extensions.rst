@@ -113,8 +113,48 @@ Grandstream
 ============
 
 |
+
+Registering an **Extension** using a hardware phone or adapter (ata) using Grandstream. 
+
 |
 
+Granstream is one of the common brand of phone and adapters for voip.  From call centers to offices and home offices Grandstream products can be found.  Grandstream has a large selection of hardware from phones, video phones to analog telephone adapters.
+
+|
+
+In our example we will register an analog telephone adapter (ata) model HT701.
+
+|
+
+1. Goto the device ip address. The default password should be admin. Enter admin and click login
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12453076/8dc6fbcc-bf5f-11e5-89bc-56bcb1bc2d00.jpg
+
+|
+
+2. Click on the **FXS PORT** tab on the top right.
+
+| Primary Sip Server: subdomain.domain.com
+| Failover SIP Server: subdomain1.domain.com (this can be left blank or can use Primary if only 1 sip server)
+| SIP User ID: 1000
+| Authenticated Password: thepassword
+
+|
+
+Click **Update** then click **Apply** at the bottom
+
+|
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12453075/8dc38cf8-bf5f-11e5-9e41-606241e41379.jpg
+
+|
+
+3. Click the **Status** tab on the top left.  You should see the *Registration* as **Registered** and the *User ID* **1000**
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12453074/8dc0ce6e-bf5f-11e5-8f78-95473e500900.jpg
+
+|
+
+|
+|
 
 Zoiper
 =======
