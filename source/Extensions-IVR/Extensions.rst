@@ -122,7 +122,55 @@ Zoiper
 |
 |
 
+Registering an **Extension** using the softphone Zoiper.
 
+|
+
+In the ever changing world of voip businesses are moving away from hardware phones.  From call centers to home offices Zoiper and many other softphones make use of software for communication needs for not only voice but video and faxing. This example will show how to register an extension using Zoiper for Windows. *Note* Zoiper can be used on several operating systems and mobile devices.
+
+|
+1. Download the software. .. Zoiper: http://www.zoiper.com/
+2. Install the software.
+3. If the software isn't open click the Zoiper icon to open from the desktop or start menu.
+
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12450587/b9878e46-bf52-11e5-99bb-8744091d62c8.jpg
+
+|
+
+4. Click on **Settings**
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12450588/b98939da-bf52-11e5-807d-bd29b612671b.jpg
+
+|
+
+5. Click on **Preferences**
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12450591/b98e0366-bf52-11e5-8633-b4079385940b.jpg
+
+|
+
+6. Click on **Create account**
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12450589/b98abf76-bf52-11e5-9f57-e77adabd3ea8.jpg
+
+|
+
+7. Enter the user, password and domain name.
+
+| ``user: 1000``
+| ``password: thepassword``
+| ``domain: sub.domain.com``
+
+|
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12450590/b98d9552-bf52-11e5-9e46-650e8bc846b1.jpg
+
+|
+
+.. image:: https://cloud.githubusercontent.com/assets/13131198/12450586/b986d690-bf52-11e5-892d-7eb5e96d44a3.jpg
+
+|
 
 |
 |
