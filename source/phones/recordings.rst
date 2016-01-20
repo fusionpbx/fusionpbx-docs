@@ -33,3 +33,12 @@ Create a Recording
 .. image:: https://cloud.githubusercontent.com/assets/13131198/12456822/903aa236-bf6f-11e5-9fb7-f9545b7add10.jpg
 
 |
+
+Applying Recordings
+-------------------
+
+|
+
+Once you have a recording made you can use the recordings in different area's of FusionPBX.  Custom IVR's and phrases would be the typical uses.
+
+|
