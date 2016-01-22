@@ -2,77 +2,118 @@
 Advanced
 ********
 
+Access Controls
+---------------
+
+Access control list can allow or deny ranges of IP addresses.
+
+Adminer
+-------
+
+GUI to view and edit databases.
+
+App Manager
+-----------
+
+Manage the applications that are installed.
+
+Backup
+------
+
+To create a backup of the Source Paths below (defined in Default Settings), select the desired File Format and Target Type.
+
 Command
 -------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Provides a conventient way to execute system, PHP, and switch commands. 
 
-Content Manager
+Databases
 ---------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Database information. 
+
+Default Settings	
+----------------
+
+Settings used for all domains.
+
+Domains
+-------
+Control the list of domains to manage.
 
 Grammar Editor
 --------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Edit Grammar 
 
 Group Manager
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Create users, set users permission levels and set options to make fields visible for edit or entry. 
 
 Menu Manager
 ------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Used to customize one or more menus.
 
-Menu Manager
-------------
+Modules
+-------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Modules extend the features of the system. Use this page to enable or disable modules.
+
+Notifications
+-------------
+
+Set notification preferences for FusionPBX project-related communication and other local system alerts.
 
 PHP Editor
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI editor to edit PHP files. 
 
-PHP Service
+Provision Editor
 -----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI editor to edit phone config files.
 
 Script Editor
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI editor to edit scripts. 
+
+Settings
+--------
+
+Advanced settings
 
 SIP Profiles
 ------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Manage settings for SIP profiles. 
 
 SQL Query
 ---------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Make SQL queries. 
 
-System Settings
----------------
+Upgrade
+-------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Select the actions below you wish to perform.
 
-Upgrade Schema
---------------
+| **Source Code:** Updates FusionPBX source files from the respository.
+| **Schema:** Checks to ensure table and field integrity in the database. 
+| **Data Types:** Detects and updates incorrect field data types.
+| **App Defaults:** Executes the default settings for each application. 
+| **Menu Defaults:** Restores the default items in the selected menu.
+| **Permission Defaults:** Restores default group permissions.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Variables
+---------
+
+Define preprocessor variables here.  
 
 XML Editor
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
-
-Convert to MySQL
-----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI to edit XML files 
