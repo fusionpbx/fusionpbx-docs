@@ -45,37 +45,59 @@ Create users, set users permission levels and set options to make fields visible
 Menu Manager
 ------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Used to customize one or more menus.
 
-Menu Manager
-------------
+Modules
+-------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Modules extend the features of the system. Use this page to enable or disable modules.
+
+Notifications
+-------------
+
+Set notification preferences for FusionPBX project-related communication and other local system alerts.
 
 PHP Editor
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI editor to edit PHP files. 
 
-PHP Service
+Provision Editor
 -----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI editor to edit phone config files.
 
 Script Editor
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI editor to edit scripts. 
+
+Settings
+--------
+
+Advanced settings
 
 SIP Profiles
 ------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Manage settings for SIP profiles. 
 
 SQL Query
 ---------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Make SQL queries. 
+
+Upgrade
+-------
+
+Select the actions below you wish to perform.
+
+| Source Code: Updates FusionPBX source files from the respository.
+| Schema: Checks to ensure table and field integrity in the database. 
+| Data Types: Detects and updates incorrect field data types.
+| App Defaults Executes the default settings for each application. 
+| Menu Defaults: Restores the default items in the selected menu.
+| Permission Defaults: Restores default group permissions.
 
 System Settings
 ---------------
