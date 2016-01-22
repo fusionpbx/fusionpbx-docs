@@ -32,6 +32,15 @@ Databases
 
 Database information. 
 
+Default Settings	
+----------------
+
+Settings used for all domains.
+
+Domains
+-------
+Control the list of domains to manage.
+
 Grammar Editor
 --------------
 
