@@ -92,29 +92,19 @@ Upgrade
 
 Select the actions below you wish to perform.
 
-| Source Code: Updates FusionPBX source files from the respository.
-| Schema: Checks to ensure table and field integrity in the database. 
-| Data Types: Detects and updates incorrect field data types.
-| App Defaults Executes the default settings for each application. 
-| Menu Defaults: Restores the default items in the selected menu.
-| Permission Defaults: Restores default group permissions.
+| **Source Code:** Updates FusionPBX source files from the respository.
+| **Schema:** Checks to ensure table and field integrity in the database. 
+| **Data Types:** Detects and updates incorrect field data types.
+| **App Defaults:** Executes the default settings for each application. 
+| **Menu Defaults:** Restores the default items in the selected menu.
+| **Permission Defaults:** Restores default group permissions.
 
-System Settings
----------------
+Variables
+---------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
-
-Upgrade Schema
---------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Define preprocessor variables here.  
 
 XML Editor
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
-
-Convert to MySQL
-----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+GUI to edit XML files 
