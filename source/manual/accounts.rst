@@ -3,7 +3,7 @@ Accounts
 ********
 
 **Accounts** - clicking directly on Accounts without selecting a
-sub-menu will take you to the `Extensions </en/latest/Extensions-IVR/Extensions.rst>`__ page
+sub-menu will take you to the `Extensions </en/latest/Extensions-IVR/Extensions.html>`__ page
 
 Devices
 -------
@@ -13,7 +13,7 @@ Devices are endpoints that register to one or more extensions. They are added to
 Extensions
 ----------
 
--  `Extensions </en/latest/Extensions-IVR/Extensions.rst>`__ - where you configure the extensions for the phones attached to your system
+-  `Extensions </en/latest/Extensions-IVR/Extensions.html>`__ - where you configure the extensions for the phones attached to your system
   
 
 
