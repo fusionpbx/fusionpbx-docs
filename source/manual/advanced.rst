@@ -2,25 +2,45 @@
 Advanced
 ********
 
+Access Controls
+---------------
+
+Access control list can allow or deny ranges of IP addresses.
+
+Adminer
+-------
+
+GUI to view and edit databases.
+
+App Manager
+-----------
+
+Manage the applications that are installed.
+
+Backup
+------
+
+To create a backup of the Source Paths below (defined in Default Settings), select the desired File Format and Target Type.
+
 Command
 -------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Provides a conventient way to execute system, PHP, and switch commands. 
 
-Content Manager
+Databases
 ---------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Database information. 
 
 Grammar Editor
 --------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Edit Grammar 
 
 Group Manager
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Create users, set users permission levels and set options to make fields visible for edit or entry. 
 
 Menu Manager
 ------------
