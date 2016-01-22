@@ -30,3 +30,55 @@ hot_desking
 
 Code integrated starting version 4.0.0 (Goto Accounts > Devices for current hot_desking) 
 
+hunt_groups
+-----------
+
+invoices
+--------
+
+languages
+---------
+
+php_service
+-----------
+
+profiles
+--------
+
+roku
+-----
+
+schemas
+-------
+
+servers
+-------
+
+signup
+-------
+
+sipml5
+-------
+
+soft_phone
+-----------
+
+tickets
+--------
+
+users_bulk_add
+---------------
+
+voicemail_msgs
+--------------
+
+voicemail_status
+----------------
+
+xmpp
+----
+
+zoiper
+-------
+
+QR provisioning with Zoiper
