@@ -6,7 +6,7 @@ Domains
   Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
 
 
- .. image:: https://cloud.githubusercontent.com/assets/13131198/12263211/4e5f9e7c-b8fb-11e5-8765-2088871e3abb.jpg
+ .. image:: _static/images/fusionpbx-domain.jpg
 
 |
 
