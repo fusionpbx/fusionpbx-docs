@@ -32,7 +32,10 @@ Control the list of domains to manage.
 
 Goto advanced then click Domains.
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12263211/4e5f9e7c-b8fb-11e5-8765-2088871e3abb.jpg
+.. image:: ../_static/images/fusionpbx-domain.jpg
+        :width: 93pt
+        :align: left
+        :height: 175.5pt
 
 Then click the
 
