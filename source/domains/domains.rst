@@ -8,7 +8,7 @@ Domains
 
 |
 
-.. image:: ../_static/images/fusionpbx-domain.jpg
+.. image:: ../_static/images/fusionpbx_domain.jpg
         :width: 93pt
         :height: 175.5pt
 
@@ -31,13 +31,15 @@ Control the list of domains to manage.
 
 Goto advanced then click Domains.
 
-.. image:: ../_static/images/fusionpbx-domain.jpg
+.. image:: ../_static/images/fusionpbx_domain.jpg
         :width: 93pt
         :height: 175.5pt
 
 Then click the
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+.. image:: ../_static/images/plus.png
+        :width: 40pt
+        :height: 40pt
 
 on the right.
 
