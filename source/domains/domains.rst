@@ -4,19 +4,12 @@ Domains
 
 |
 
-.. sidebar:: Sidebar Title
-   :subtitle: Optional Sidebar Subtitle
-
-   Subsequent indented lines comprise
-   the body of the sidebar, and are
-   interpreted as body elements.
-
   Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
 
 |
 
 .. image:: ../_static/images/fusionpbx_domain.jpg
-        :scale: 75%
+        :scale: 85%
   
 
 |
@@ -39,7 +32,7 @@ Control the list of domains to manage.
 Goto advanced then click Domains.
 
 .. image:: ../_static/images/fusionpbx_domain.jpg
-        :scale: 75%
+        :scale: 85%
   
 
 
