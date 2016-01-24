@@ -38,8 +38,7 @@ Goto advanced then click Domains.
 Then click the
 
 .. image:: ../_static/images/plus.png
-        :width: 40pt
-        :height: 40pt
+ 
 
 on the right.
 
