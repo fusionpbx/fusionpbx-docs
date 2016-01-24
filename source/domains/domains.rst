@@ -10,7 +10,6 @@ Domains
 
 .. image:: ../_static/images/fusionpbx-domain.jpg
         :width: 93pt
-        :align: left
         :height: 175.5pt
 
 |
@@ -34,7 +33,6 @@ Goto advanced then click Domains.
 
 .. image:: ../_static/images/fusionpbx-domain.jpg
         :width: 93pt
-        :align: left
         :height: 175.5pt
 
 Then click the
