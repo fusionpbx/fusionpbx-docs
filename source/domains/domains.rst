@@ -6,11 +6,12 @@ Domains
 
   Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
 
+|
 
 .. image:: ../_static/images/fusionpbx-domain.jpg
-        :width: 124pt
+        :width: 93pt
         :align: left
-        :height: 234pt
+        :height: 175.5pt
 
 |
 
