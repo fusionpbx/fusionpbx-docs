@@ -9,8 +9,8 @@ Domains
 |
 
 .. image:: ../_static/images/fusionpbx_domain.jpg
-        :width: 93pt
-        :height: 175.5pt
+        :scale: 75%
+  
 
 |
 
@@ -32,8 +32,8 @@ Control the list of domains to manage.
 Goto advanced then click Domains.
 
 .. image:: ../_static/images/fusionpbx_domain.jpg
-        :width: 93pt
-        :height: 175.5pt
+        :scale: 75%
+  
 
 
 Then click the
@@ -45,7 +45,7 @@ Then click the
 on the right.
 
 .. image:: ../_static/images/fusionpbx_domain1.jpg
-        :scale: 100%
+        :scale: 75%
 
 
 
