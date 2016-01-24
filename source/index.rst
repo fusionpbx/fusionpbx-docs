@@ -1,6 +1,7 @@
 
 .. image:: _static/images/logo.png
         :width: 130pt
+        :align: center
         :height: 76.5pt
 
 |
