@@ -35,6 +35,7 @@ Goto advanced then click Domains.
         :width: 93pt
         :height: 175.5pt
 
+
 Then click the
 
 .. image:: ../_static/images/plus.png
@@ -43,17 +44,19 @@ Then click the
 
 on the right.
 
-.. image:: ../_static/images/fusion_domain1.jpg
-        :scale: 75%
+.. image:: ../_static/images/fusionpbx_domain1.jpg
+        :scale: 100%
+
+
 
 This will bring you to enter domain info. (Be sure to create an "A record" from your domain hosting account)
 
-.. image:: ../_static/images/fusion_domain2.jpg
+.. image:: ../_static/images/fusionpbx_domain2.jpg
         :scale: 75%
 
 Click **save** once entry is complete.
 
-.. image:: ../_static/images/fusion_domain1.jpg
+.. image:: ../_static/images/fusionpbx_domain1.jpg
         :scale: 75%
 
 |
@@ -66,14 +69,14 @@ Domain Selection
 |
 Changing to a different domain click the stack of three dashes on the top right
 
-.. image:: ../_static/images/fusion_domain5.jpg
+.. image:: ../_static/images/fusionpbx_domain5.jpg
         :scale: 75%
 
 |
 A menu will pop open on the right of the screen.  Click on the domain that you want to manage.  You will always see the domain you are in by looking at the top right beside the three stacked dashes.
 
 |
-.. image:: ../_static/images/fusion_domain4.jpg
+.. image:: ../_static/images/fusionpbx_domain6.jpg
         :scale: 75%
 
 
