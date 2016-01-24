@@ -8,9 +8,9 @@ Domains
 
 
 .. image:: ../_static/images/fusionpbx-domain.jpg
-        :width: 124px
+        :width: 124pt
         :align: left
-        :height: 234px
+        :height: 234pt
 
 |
 
