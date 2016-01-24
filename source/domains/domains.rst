@@ -38,7 +38,7 @@ Goto advanced then click Domains.
 Then click the
 
 .. image:: ../_static/images/plus.png
-        :scale: 100%
+        :scale: 75%
  
 
 on the right.
