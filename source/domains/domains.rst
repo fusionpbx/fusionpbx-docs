@@ -43,15 +43,18 @@ Then click the
 
 on the right.
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12263214/4e6107da-b8fb-11e5-990d-94ad3c684965.jpg
+.. image:: ../_static/images/fusion_domain1.jpg
+        :scale: 75%
 
 This will bring you to enter domain info. (Be sure to create an "A record" from your domain hosting account)
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12263212/4e601550-b8fb-11e5-806c-927c6f2ee3eb.jpg
+.. image:: ../_static/images/fusion_domain2.jpg
+        :scale: 75%
 
 Click **save** once entry is complete.
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12263214/4e6107da-b8fb-11e5-990d-94ad3c684965.jpg
+.. image:: ../_static/images/fusion_domain1.jpg
+        :scale: 75%
 
 |
 |
@@ -63,13 +66,15 @@ Domain Selection
 |
 Changing to a different domain click the stack of three dashes on the top right
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12345331/87ca93d0-bb15-11e5-9696-4d1ca5d3b9e0.jpg
+.. image:: ../_static/images/fusion_domain5.jpg
+        :scale: 75%
 
 |
 A menu will pop open on the right of the screen.  Click on the domain that you want to manage.  You will always see the domain you are in by looking at the top right beside the three stacked dashes.
 
 |
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12345332/87cc2862-bb15-11e5-95da-d26f0264d9db.jpg
+.. image:: ../_static/images/fusion_domain4.jpg
+        :scale: 75%
 
 
 .. toctree::
