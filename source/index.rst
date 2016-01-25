@@ -87,7 +87,7 @@ Getting Started
     domains.rst
     manual.rst
     contributing.rst
-    doc-guide.rst
+    doc_guide.rst
 
 
 
