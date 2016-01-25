@@ -80,7 +80,7 @@ Getting Started
 .. toctree::
     :maxdepth: 2
 
-    getting-started.rst
+    getting_started.rst
     accounts.rst
     dialplan.rst
     phones.rst
