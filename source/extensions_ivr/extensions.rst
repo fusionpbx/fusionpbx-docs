@@ -13,7 +13,8 @@ Welcome to the adding Extensions section.  Here you will find how to add Extensi
 
 Goto **Accounts** then click **Extensions**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153364/86f061b8-b487-11e5-8667-5a753994a3b9.jpg
+.. image:: ../_static/images/fusionpbx_ext.jpg
+        :scale: 85% 
 
 |
 |
@@ -21,14 +22,16 @@ Goto **Accounts** then click **Extensions**
 
 Then click the
 
- .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+ .. image:: ../_static/images/plus.png
+        :scale: 85%
 
 on the right.
 
 |
 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153359/86e7c814-b487-11e5-91ef-c1a1d89198c5.jpg
+.. image:: ../_static/images/fusionpbx_ext1.jpg
+        :scale: 85%
 
 |
 |
@@ -38,7 +41,8 @@ Enter the desired *extension* starting number.  From the dropdown *Range* box yo
 |
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153358/86e71cd4-b487-11e5-8e46-4d78dd358db1.jpg
+.. image:: ../_static/images/fusionpbx_ext2.jpg
+        :scale: 85%
 
 |
 |
@@ -51,7 +55,8 @@ We now have extensions. Each extension has and edit icon beside it.  Click the e
 |
 |
 
- .. image:: https://cloud.githubusercontent.com/assets/13131198/12153361/86eba8b2-b487-11e5-9e81-c6bac7fa355b.jpg
+ .. image:: ../_static/images/fusionpbx_edit.jpg
+        :scale: 85%
 
 to customize internal, external, emergency caller id and other fine tuned options.  You can also access **Call Control** from here. 
 
@@ -61,7 +66,8 @@ to customize internal, external, emergency caller id and other fine tuned option
 |
 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153360/86ea9db4-b487-11e5-8b6a-2c6bf8768e74.jpg
+.. image:: ../_static/images/fusionpbx_ext3.jpg
+        :scale: 85%
 
 |
 |
@@ -87,7 +93,8 @@ Enter information as needed.
 - **Emergency Caller ID Name:** Can be set to a national standard or local emergency entity
 - **Emergency Caller ID Number:** Can be set to a national standard or local emergency entity
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153357/86e5a980-b487-11e5-81ad-2944bff0f0bf.jpg
+.. image:: ../_static/images/fusionpbx_ext4.jpg
+        :scale: 85%
 
 |
 |
@@ -112,7 +119,8 @@ Use this to configure your SIP extensions.
 Grandstream
 ============
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453792/d9aa7b2e-bf62-11e5-9ddd-30ad751e9ce8.jpg
+.. image:: ../_static/images/fusionpbx_grandstream4.jpg
+        :scale: 85%
 
 |
 
@@ -130,7 +138,8 @@ In our example we will register an analog telephone adapter (ata) model HT701.
 
 1. Goto the device ip address. The default password should be admin. Enter admin and click login
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453076/8dc6fbcc-bf5f-11e5-89bc-56bcb1bc2d00.jpg
+.. image:: ../_static/images/fusionpbx_grandstream.jpg
+        :scale: 85%
 
 |
 
@@ -147,13 +156,15 @@ Click **Update** then click **Apply** at the bottom
 
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453075/8dc38cf8-bf5f-11e5-9e41-606241e41379.jpg
+.. image:: ../_static/images/fusionpbx_grandstream2.jpg
+        :scale: 85%
 
 |
 
 3. Click the **Status** tab on the top left.  You should see the *Registration* as **Registered** and the *User ID* **1000**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453074/8dc0ce6e-bf5f-11e5-8f78-95473e500900.jpg
+.. image:: ../_static/images/fusionpbx_grandstream1.jpg
+        :scale: 85%
 
 |
 
@@ -188,25 +199,29 @@ In the ever changing world of voip businesses are moving away from hardware phon
 3. If the software isn't open click the Zoiper icon to open from the desktop or start menu.
 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450587/b9878e46-bf52-11e5-99bb-8744091d62c8.jpg
+.. image:: ../_static/images/fusionpbx_zoiper.jpg
+        :scale: 85%
 
 |
 
 4. Click on **Settings**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450588/b98939da-bf52-11e5-807d-bd29b612671b.jpg
+.. image:: ../_static/images/fusionpbx_zoiper1.jpg
+        :scale: 85%
 
 |
 
 5. Click on **Preferences**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450591/b98e0366-bf52-11e5-8633-b4079385940b.jpg
+.. image:: ../_static/images/fusionpbx_zoiper2.jpg
+        :scale: 85%
 
 |
 
 6. Click on **Create account**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450589/b98abf76-bf52-11e5-9f57-e77adabd3ea8.jpg
+.. image:: ../_static/images/fusionpbx_zoiper3.jpg
+        :scale: 85%
 
 |
 
@@ -218,13 +233,15 @@ In the ever changing world of voip businesses are moving away from hardware phon
 
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450590/b98d9552-bf52-11e5-9e46-650e8bc846b1.jpg
+.. image:: ../_static/images/fusionpbx_zoiper4.jpg
+        :scale: 85%
 
 |
 
 8. Click ok.  You should have **Registered** at the top right
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450586/b986d690-bf52-11e5-892d-7eb5e96d44a3.jpg
+.. image:: ../_static/images/fusionpbx_zoiper5.jpg
+        :scale: 85%
 
 |
 
@@ -249,4 +266,4 @@ In the ever changing world of voip businesses are moving away from hardware phon
   :maxdepth: 3
   :glob:
 
-  Extensions-IVR/Extensions.rst
+  extensions_ivr/extensions.rst

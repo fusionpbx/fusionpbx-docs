@@ -9,19 +9,23 @@ Configure Inbound Destinations: (This will auto-configure an Inbound Route also)
 
 *Select* **Dialplan** from the drop-down list and then *click* **Destinations**. 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153363/86efa890-b487-11e5-8628-0b7358797493.jpg
+.. image:: ../_static/images/fusionpbx_inboundd.jpg
+        :scale: 85%
 
 Click on the
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+.. image:: ../_static/images/plus.png
+        :scale: 85%
 
 button on the right. 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153365/86f0df3a-b487-11e5-967d-4820f7c77f77.jpg
+.. image:: ../_static/images/fusionpbx_inboundd1.jpg
+        :scale: 85%
 
 *Enter* the route information below and *Click* **Save** once complete.
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153362/86ef406c-b487-11e5-9b63-af8d485cb4e1.jpg
+.. image:: ../_static/images/fusionpbx_inboundd2.jpg
+        :scale: 85%
 
 ::
 
@@ -55,25 +59,32 @@ Configure Outbound Route.
 
 Select **Dialplan** from the drop-down list and then click **Outbound Routes** . 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12156744/e8fd860c-b49a-11e5-9136-2025ed9b9cd2.jpg
+.. image:: ../_static/images/fusionpbx_outbound.jpg
+        :scale: 85%
 
 Click the 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+.. image:: ../_static/images/plus.png
+        :scale: 85%
 
 
 
-button on the right. Enter the route information below and Click **Save** once complete.
-
-|
-|
-
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12156743/e8f91c0c-b49a-11e5-88c5-f2475fc1bfad.jpg
+button on the right. Enter the route information below and Click **Save** once entry is complete.
 
 |
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12157521/633bfb4c-b4a0-11e5-9019-8217560076cc.jpg
+.. image:: ../_static/images/fusionpbx_outbound1.jpg
+        :scale: 85%
+
+|
+
+
+
+|
+
+.. image:: ../_static/images/fusionpbx_outbound2.jpg
+        :scale: 85%
 
 |
 |
