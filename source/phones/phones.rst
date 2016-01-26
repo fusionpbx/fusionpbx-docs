@@ -7,8 +7,6 @@ Welcome to the adding IVR section.  Here you will find how to add IVR's.
 |
 |
 
-
-
 Click on **Apps** then **IVR Menu**
 
 .. image:: ../_static/images/fusionpbx_ivr.jpg
@@ -17,16 +15,12 @@ Click on **Apps** then **IVR Menu**
 |
 |
 
-
-
-
 Then click the
 
  .. image:: ../_static/images/plus.png
         :scale: 85%
 
 on the right. 
-
 
 
 .. image:: ../_static/images/fusionpbx_ivr1.jpg
@@ -55,8 +49,3 @@ on the right.
 
 |
 |
-
-
-
-
-
