@@ -22,7 +22,7 @@ Goto **Accounts** then click **Extensions**
 
 Then click the
 
- .. image:: ../_static/images/plus.jpg
+ .. image:: ../_static/images/plus.png
         :scale: 85%
 
 on the right.
@@ -119,7 +119,8 @@ Use this to configure your SIP extensions.
 Grandstream
 ============
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453792/d9aa7b2e-bf62-11e5-9ddd-30ad751e9ce8.jpg
+.. image:: ../_static/images/fusionpbx_grandstream4.jpg
+        :scale: 85%
 
 |
 
@@ -137,7 +138,8 @@ In our example we will register an analog telephone adapter (ata) model HT701.
 
 1. Goto the device ip address. The default password should be admin. Enter admin and click login
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453076/8dc6fbcc-bf5f-11e5-89bc-56bcb1bc2d00.jpg
+.. image:: ../_static/images/fusionpbx_grandstream.jpg
+        :scale: 85%
 
 |
 
@@ -154,13 +156,15 @@ Click **Update** then click **Apply** at the bottom
 
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453075/8dc38cf8-bf5f-11e5-9e41-606241e41379.jpg
+.. image:: ../_static/images/fusionpbx_grandstream1.jpg
+        :scale: 85%
 
 |
 
 3. Click the **Status** tab on the top left.  You should see the *Registration* as **Registered** and the *User ID* **1000**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12453074/8dc0ce6e-bf5f-11e5-8f78-95473e500900.jpg
+.. image:: ../_static/images/fusionpbx_grandstream2.jpg
+        :scale: 85%
 
 |
 
@@ -195,25 +199,29 @@ In the ever changing world of voip businesses are moving away from hardware phon
 3. If the software isn't open click the Zoiper icon to open from the desktop or start menu.
 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450587/b9878e46-bf52-11e5-99bb-8744091d62c8.jpg
+.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper.jpg
+        :scale: 85%
 
 |
 
 4. Click on **Settings**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450588/b98939da-bf52-11e5-807d-bd29b612671b.jpg
+.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper1.jpg
+        :scale: 85%
 
 |
 
 5. Click on **Preferences**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450591/b98e0366-bf52-11e5-8633-b4079385940b.jpg
+.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper2.jpg
+        :scale: 85%
 
 |
 
 6. Click on **Create account**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450589/b98abf76-bf52-11e5-9f57-e77adabd3ea8.jpg
+.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper3.jpg
+        :scale: 85%
 
 |
 
@@ -225,13 +233,15 @@ In the ever changing world of voip businesses are moving away from hardware phon
 
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450590/b98d9552-bf52-11e5-9e46-650e8bc846b1.jpg
+.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper4.jpg
+        :scale: 85%
 
 |
 
 8. Click ok.  You should have **Registered** at the top right
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12450586/b986d690-bf52-11e5-892d-7eb5e96d44a3.jpg
+.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper5.jpg
+        :scale: 85%
 
 |
 
