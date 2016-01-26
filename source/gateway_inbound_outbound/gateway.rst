@@ -69,7 +69,7 @@ Click the
 
 
 
-button on the right. Enter the route information below and Click **Save** once complete.
+button on the right. Enter the route information below and Click **Save** once entry is complete.
 
 |
 |
