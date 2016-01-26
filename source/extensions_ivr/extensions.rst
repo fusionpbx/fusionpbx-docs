@@ -13,7 +13,8 @@ Welcome to the adding Extensions section.  Here you will find how to add Extensi
 
 Goto **Accounts** then click **Extensions**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153364/86f061b8-b487-11e5-8667-5a753994a3b9.jpg
+.. image:: ../_static/images/fusionpbx_ext.jpg
+        :scale: 85% 
 
 |
 |
@@ -21,14 +22,16 @@ Goto **Accounts** then click **Extensions**
 
 Then click the
 
- .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+ .. image:: ../_static/images/plus.jpg
+        :scale: 85%
 
 on the right.
 
 |
 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153359/86e7c814-b487-11e5-91ef-c1a1d89198c5.jpg
+.. image:: ../_static/images/fusionpbx_ext.jpg
+        :scale: 85%
 
 |
 |
@@ -38,7 +41,8 @@ Enter the desired *extension* starting number.  From the dropdown *Range* box yo
 |
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153358/86e71cd4-b487-11e5-8e46-4d78dd358db1.jpg
+.. image:: ../_static/images/fusionpbx_ext1.jpg
+        :scale: 85%
 
 |
 |
@@ -51,7 +55,8 @@ We now have extensions. Each extension has and edit icon beside it.  Click the e
 |
 |
 
- .. image:: https://cloud.githubusercontent.com/assets/13131198/12153361/86eba8b2-b487-11e5-9e81-c6bac7fa355b.jpg
+ .. image:: ../_static/images/fusionpbx_ext2.jpg
+        :scale: 85%
 
 to customize internal, external, emergency caller id and other fine tuned options.  You can also access **Call Control** from here. 
 
@@ -61,7 +66,8 @@ to customize internal, external, emergency caller id and other fine tuned option
 |
 
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153360/86ea9db4-b487-11e5-8b6a-2c6bf8768e74.jpg
+.. image:: ../_static/images/fusionpbx_ext3.jpg
+        :scale: 85%
 
 |
 |
@@ -87,7 +93,8 @@ Enter information as needed.
 - **Emergency Caller ID Name:** Can be set to a national standard or local emergency entity
 - **Emergency Caller ID Number:** Can be set to a national standard or local emergency entity
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12153357/86e5a980-b487-11e5-81ad-2944bff0f0bf.jpg
+.. image:: ../_static/images/fusionpbx_ext4.jpg
+        :scale: 85%
 
 |
 |
