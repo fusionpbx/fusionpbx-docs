@@ -8,7 +8,7 @@ Open Source at FusionPBX
 ==============================================
 
 This repository serves as the umbrella project to represent the
-various open source efforts at [&nbsp;Mark J. Crane&nbsp;](https://fusionpbx.com).
+various open source efforts of Mark J. Crane(https://fusionpbx.com).
 Come here to get an overview of the various projects, to learn how to
 contribute to them, and to sign up as a contributor.
 
@@ -20,7 +20,7 @@ Table Of Contents
 * [Contributors](https://github.com/Fusionpbx/opensource/blob/master/contributors) - [List of Contributors]
 * [Contributor License Agreement 2.0](https://github.com/Fusionpbx/opensource/blob/master/cla-2.0.md) - [The Actual CLA]
 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 
 Note to External Contributors
 -----------------------------
@@ -53,7 +53,7 @@ page.
 
 Thanks, FusionPBX!
 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 
 List of Projects
 ----------------
