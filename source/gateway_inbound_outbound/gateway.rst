@@ -74,12 +74,17 @@ button on the right. Enter the route information below and Click **Save** once c
 |
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12156743/e8f91c0c-b49a-11e5-88c5-f2475fc1bfad.jpg
+.. image:: ../_static/images/fusionpbx_outbound1.jpg
+        :scale: 85%
 
 |
+
+
+
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12157521/633bfb4c-b4a0-11e5-9019-8217560076cc.jpg
+.. image:: ../_static/images/fusionpbx_outbound2.jpg
+        :scale: 85%
 
 |
 |
