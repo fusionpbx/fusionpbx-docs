@@ -1,7 +1,8 @@
 *****************
 New Install
 *****************
-.. image:: https://cloud.githubusercontent.com/assets/13131198/11903431/270a6c1c-a587-11e5-8473-f7e84e02bf0c.png
+.. image:: ../_static/images/logo_right.jpg
+        :scale: 85% 
 *************
 
 
