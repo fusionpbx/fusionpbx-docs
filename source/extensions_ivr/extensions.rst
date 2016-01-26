@@ -156,14 +156,14 @@ Click **Update** then click **Apply** at the bottom
 
 |
 
-.. image:: ../_static/images/fusionpbx_grandstream1.jpg
+.. image:: ../_static/images/fusionpbx_grandstream2.jpg
         :scale: 85%
 
 |
 
 3. Click the **Status** tab on the top left.  You should see the *Registration* as **Registered** and the *User ID* **1000**
 
-.. image:: ../_static/images/fusionpbx_grandstream2.jpg
+.. image:: ../_static/images/fusionpbx_grandstream1.jpg
         :scale: 85%
 
 |
@@ -199,28 +199,28 @@ In the ever changing world of voip businesses are moving away from hardware phon
 3. If the software isn't open click the Zoiper icon to open from the desktop or start menu.
 
 
-.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper.jpg
+.. image:: ../_static/images/fusionpbx_zoiper.jpg
         :scale: 85%
 
 |
 
 4. Click on **Settings**
 
-.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper1.jpg
+.. image:: ../_static/images/fusionpbx_zoiper1.jpg
         :scale: 85%
 
 |
 
 5. Click on **Preferences**
 
-.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper2.jpg
+.. image:: ../_static/images/fusionpbx_zoiper2.jpg
         :scale: 85%
 
 |
 
 6. Click on **Create account**
 
-.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper3.jpg
+.. image:: ../_static/images/fusionpbx_zoiper3.jpg
         :scale: 85%
 
 |
@@ -233,14 +233,14 @@ In the ever changing world of voip businesses are moving away from hardware phon
 
 |
 
-.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper4.jpg
+.. image:: ../_static/images/fusionpbx_zoiper4.jpg
         :scale: 85%
 
 |
 
 8. Click ok.  You should have **Registered** at the top right
 
-.. image:: ../_static/images/fusionpbx_fusionpbx_zoiper5.jpg
+.. image:: ../_static/images/fusionpbx_zoiper5.jpg
         :scale: 85%
 
 |
