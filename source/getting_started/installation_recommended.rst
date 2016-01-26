@@ -72,7 +72,7 @@ New Install
 |
 
      :Database Configuration: **Click Execute**
-     .. image:: ../_static/images/install_detect_config.jpg
+     .. image:: ../_static/images/install_database_config.jpg
         :scale: 85% 
      
      **Don't change anything here** 
