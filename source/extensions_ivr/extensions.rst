@@ -30,7 +30,7 @@ on the right.
 |
 
 
-.. image:: ../_static/images/fusionpbx_ext.jpg
+.. image:: ../_static/images/fusionpbx_ext1.jpg
         :scale: 85%
 
 |
@@ -41,7 +41,7 @@ Enter the desired *extension* starting number.  From the dropdown *Range* box yo
 |
 |
 
-.. image:: ../_static/images/fusionpbx_ext1.jpg
+.. image:: ../_static/images/fusionpbx_ext2.jpg
         :scale: 85%
 
 |
@@ -55,7 +55,7 @@ We now have extensions. Each extension has and edit icon beside it.  Click the e
 |
 |
 
- .. image:: ../_static/images/fusionpbx_ext2.jpg
+ .. image:: ../_static/images/fusionpbx_edit.jpg
         :scale: 85%
 
 to customize internal, external, emergency caller id and other fine tuned options.  You can also access **Call Control** from here. 
