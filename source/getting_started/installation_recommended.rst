@@ -120,7 +120,7 @@ New Install
      
      
       .. image:: ../_static/images/ilogin.jpg
-        :scale: 85%
+        :scale: 50%
       
     
     
