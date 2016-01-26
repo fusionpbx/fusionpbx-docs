@@ -249,4 +249,4 @@ In the ever changing world of voip businesses are moving away from hardware phon
   :maxdepth: 3
   :glob:
 
-  Extensions-IVR/Extensions.rst
+  extensions_ivr/extensions.rst

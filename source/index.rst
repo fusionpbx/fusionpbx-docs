@@ -80,14 +80,14 @@ Getting Started
 .. toctree::
     :maxdepth: 2
 
-    getting-started.rst
+    getting_started.rst
     accounts.rst
     dialplan.rst
     phones.rst
     domains.rst
     manual.rst
     contributing.rst
-    doc-guide.rst
+    doc_guide.rst
 
 
 

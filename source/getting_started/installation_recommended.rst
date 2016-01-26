@@ -57,12 +57,14 @@ New Install
      
     **4.** Web browser Installation part
      :Select Language: **Pick your language. Click next**
-     .. image:: https://cloud.githubusercontent.com/assets/13131198/11797615/3b84a6aa-a292-11e5-92be-9130fe480f9b.jpg
+     .. image:: ../_static/images/install_lang.jpg
+        :scale: 85%
 
 |
 
      :Freeswitch Detect: **Detecting folder paths used** 
-     .. image:: https://cloud.githubusercontent.com/assets/13131198/11802026/c5a78c04-a2b9-11e5-9a79-e77ef3298c49.jpg 
+     .. image:: ../_static/images/install_detect_freeswitch.jpg
+        :scale: 85% 
 
      
      **Don't change anything here**
@@ -70,14 +72,16 @@ New Install
 |
 
      :Database Configuration: **Click Execute**
-     .. image:: https://cloud.githubusercontent.com/assets/13131198/11797607/2bfe2fb2-a292-11e5-9d58-e344678f3fdb.jpg 
+     .. image:: ../_static/images/install_database_config.jpg
+        :scale: 85% 
      
      **Don't change anything here** 
      
 |
 
      :Admin Login Configuration: **Click Next**
-     .. image:: https://cloud.githubusercontent.com/assets/13131198/11797659/99b6c424-a292-11e5-81a2-1bfae36ce197.jpg 
+     .. image:: ../_static/images/install_admin_username.jpg
+        :scale: 85% 
      
      This will create the superadmin login that will be used in your web browser.
 
@@ -115,7 +119,8 @@ New Install
      :Install Finished:  **Login with the username and password you choose during the install**
      
      
-      .. image:: https://cloud.githubusercontent.com/assets/13131198/11797604/25935530-a292-11e5-8612-7dba48d65bde.jpg
+      .. image:: ../_static/images/ilogin.jpg
+        :scale: 50%
       
     
     

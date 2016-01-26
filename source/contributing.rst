@@ -34,9 +34,9 @@ How to Get Started:
   :maxdepth: 4
   :glob:
 
-  contributing/contributing-code.rst
-  contributing/contributing-documentation.rst
-  contributing/contributing-translations.rst
-  contributing/qa-testing.rst
-  #contributing/coding-standards
-  #contributing/directory-structure  
+  contributing/contributing_code.rst
+  contributing/contributing_documentation.rst
+  contributing/contributing_translations.rst
+  contributing/qa_testing.rst
+  #contributing/coding_standards
+  #contributing/directory_structure  

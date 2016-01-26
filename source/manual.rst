@@ -14,4 +14,4 @@ User Manual
   manual/apps
   manual/status
   manual/advanced
-  manual/multi-tenant
+  manual/multi_tenant

@@ -10,4 +10,4 @@ In the **Dialplan** menu you have access to Destinations, Dialplan Manager, Inbo
   :maxdepth: 2
   :glob:
   
-  Gateway-Inbound-Outbound/Gateway.rst
+  gateway_inbound_outbound/gateway.rst

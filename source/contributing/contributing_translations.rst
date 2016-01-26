@@ -1,5 +1,5 @@
 *************************
-Quality Assurance Testing
+Contributing Translations
 *************************
 
 Lorem Ipsum

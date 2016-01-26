@@ -10,5 +10,5 @@ In the **Accounts** menu you have access to devices, extensions, gateways and us
   :maxdepth: 3
   :glob:
 
-  Extensions-IVR/Extensions.rst
-  Gateway-Inbound-Outbound/Gateway1.rst
+  extensions_ivr/extensions.rst
+  gateway_inbound_outbound/gateway1.rst
