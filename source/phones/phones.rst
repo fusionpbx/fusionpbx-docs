@@ -47,6 +47,9 @@ on the right.
         :scale: 85%
 
 |
+
+In the example below we **name** the IVR "IVR Main" , **Extension** "200" , **Greet Long** a phrase that was made from the **phrase section** under **apps** , entry in options for sales, billing, tech support, and after hours, made the **timeout** 3000 milliseconds, Exit Action to the extension 109 (after hours) , **Direct Dial** to False and Ring back to Default.
+
 |
 
 
