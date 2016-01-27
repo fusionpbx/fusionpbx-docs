@@ -2,30 +2,25 @@
 Status
 ******
 
-Active Calls
-------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
-
 Active Call Center
 ------------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Select a Call Center Queue from the list below to view its activity.
 
-Active Extensions
------------------
+Active Calls
+------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Use this to monitor and interact with the active calls. 
 
 Active Conferences
 ------------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+List all the conferences that are currently active with one or more members. 
 
 Active Queues
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+List all the queues that are currently active with one or more callers. 
 
 Registrations
 -------------
