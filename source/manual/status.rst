@@ -61,24 +61,15 @@ Shows a list of processes, the status of the process and provides control to sta
 SIP Status
 ----------
 
-This will show sofia status of internal, internal-ipv6, external, and external-ipv6 profiles.  With profiles you can see REGISTRATIONS, and START/RESTART/RESCAN/FLUSH REGISTRATIONS.  You can also FLUSH MEMCACHE, RELOAD ACL, RELOAD XML and REFRESH. 
+This will show sofia status of internal, internal-ipv6, external, and external-ipv6 profiles.  With profiles you can see REGISTRATIONS, and START/RESTART/RESCAN/FLUSH REGISTRATIONS.  You can also FLUSH MEMCACHE, RELOAD ACL, RELOAD XML and REFRESH. View UP time, sessions since startup, max sessions, and current stack size/max. 
 
 System Status
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
-
-Log Viewer
-----------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+System Information, FusionPBX Version, Git Version, Switch Version, Memory Information, CPU Information, Hard Drive Information and Memcache Information.  
 
 Traffic Graph
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+A browser (or plugin) that supports Scalable Vector Graphics (SVG) is required to view the traffic graph. 
 
-Voicemail Status
-----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
