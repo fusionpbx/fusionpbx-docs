@@ -22,20 +22,46 @@ Active Queues
 
 List all the queues that are currently active with one or more callers. 
 
+Agent Status
+------------
+
+List all the call center agents with the option to change the status of one or more agents.
+
+
+CDR Statistics
+--------------
+
+Call Detail Records Statics summarize the call information.
+
+Emails
+------
+
+Manage failed email messages.
+
+Extension Summary
+-----------------
+
+Extenson number, Number Alias, Missed, No Answer, Busy, ALOC, Inbound Calls, Inbound Duration, Outbound Calls, Outbound Duration and Description.
+
+Log Viewer
+----------
+
+View recent PBX activity and option to download the logs.
+
 Registrations
 -------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+View the devices that are registered. This will show User, Agent, IP, Port Number, Hostname and Status.  You can also UNREGISTER, PROVISION and REBOOT supported devices from here. 
 
 Services
 --------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+Shows a list of processes, the status of the process and provides control to start and stop the process. 
 
 SIP Status
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. His singulis copiose responderi solet, sed quae perspicua sunt longa esse 
+This will show sofia status of internal, internal-ipv6, external, and external-ipv6 profiles.  With profiles you can see REGISTRATIONS, and START/RESTART/RESCAN/FLUSH REGISTRATIONS.  You can also FLUSH MEMCACHE, RELOAD ACL, RELOAD XML and REFRESH. 
 
 System Status
 -------------
