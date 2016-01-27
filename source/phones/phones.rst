@@ -48,7 +48,7 @@ on the right.
 
 |
 
-In the example below we **name** the IVR "IVR Main" , **Extension** "200" , **Greet Long** a phrase that was made from the **phrase section** under **apps** , entry in options for sales, billing, tech support, and after hours, made the **timeout** 3000 milliseconds, Exit Action to the extension 109 (after hours) , **Direct Dial** to False and Ring back to Default.
+You can get very creative with IVR's and are almost limitless in possibilities. In the basic example below we **name** the IVR "IVR Main" , **Extension** "200" , **Greet Long** a phrase that was made from the **phrase section** under **apps** , entry in options for sales, billing, tech support, and after hours, made the **timeout** 3000 milliseconds, Exit Action to the extension 109 (after hours) , **Direct Dial** to False and Ring back to Default.
 
 |
 
@@ -57,6 +57,9 @@ In the example below we **name** the IVR "IVR Main" , **Extension** "200" , **Gr
         :scale: 85%
 
 |
+
+You now have a list of IVR's to go back to and edit or delete as needed.
+
 |
 
 
