@@ -2,7 +2,7 @@
 User Manual
 ***********
 
- 
+Here you will find information on every menu item in FusionPBX 
 
 .. toctree::
   :maxdepth: 2
