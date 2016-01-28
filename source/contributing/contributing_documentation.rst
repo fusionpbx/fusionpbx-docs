@@ -2,9 +2,6 @@
 Contributing Documentation
 **************************
 
-*****************
-Contributing Code
-*****************
 
 https://github.com/fusionpbx/open-source
 
