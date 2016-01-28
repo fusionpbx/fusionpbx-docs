@@ -7,50 +7,64 @@ Welcome to the adding IVR section.  Here you will find how to add IVR's.
 |
 |
 
-
-
 Click on **Apps** then **IVR Menu**
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12327857/a5afd258-baa6-11e5-8f95-d88ce89620f1.jpg
+.. image:: ../_static/images/fusionpbx_ivr.jpg
+        :scale: 85%
 
 |
 |
-
-
-
 
 Then click the
 
- .. image:: https://cloud.githubusercontent.com/assets/13131198/11783217/fbb7a2e6-a243-11e5-9c06-e3a55882ea51.png
+ .. image:: ../_static/images/plus.png
+        :scale: 85%
 
 on the right. 
 
 
-
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12327856/a5ad2666-baa6-11e5-9480-325a5466e360.jpg
-
-|
-|
-
-
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12327858/a5af734e-baa6-11e5-9b92-af7ead13206b.jpg
+.. image:: ../_static/images/fusionpbx_ivr1.jpg
+        :scale: 85%
 
 |
-|
+| *Options in* **bold** *are mandatory.*
+| **Name:** Enter a name for the IVR menu
+| **Extension:** Enter the extension number (This must a new extension that isn't allready created)
+| **Greet Long:** The long greeting when entering the menu.
+| Greet Short: The short greeting is played when returning to the menu.
+| Options: Define caller options for the IVR menu.
+| **Timeout:** The number of milliseconds to wait after playing the greeting or the confirm macro.
+| Exit Action: Select the exit action to be performed if the ivr exists.
+| **Direct Dial:** Define whether the callers can dial directly to registered extensions.
+| Ring Back: Defines what the caller will hear while the destination is being called.
+| Caller ID Name Prefix: Set a prefix on the caller ID name.
+| Enabled: set the status of the IVR Menu.
 
-
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12327855/a5ab18ee-baa6-11e5-9b0b-19a0a3e91cf2.jpg
-
-|
-|
-
-
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12327859/a5b410d4-baa6-11e5-9580-60184aab32ff.jpg
-
-|
 |
 
 
+.. image:: ../_static/images/fusionpbx_ivr2.jpg
+        :scale: 85%
+
+|
+
+You can get very creative with IVR's and are almost limitless in possibilities. In the basic example below we **name** the IVR "IVR Main" , **Extension** "200" , **Greet Long** a phrase that was made from the **phrase section** under **apps** , entry in options for sales, billing, tech support, and after hours, made the **timeout** 3000 milliseconds, Exit Action to the extension 109 (after hours) , **Direct Dial** to False and Ring back to Default.
+
+|
 
 
+.. image:: ../_static/images/fusionpbx_ivr3.jpg
+        :scale: 85%
 
+|
+
+You now have a list of IVR's to go back to and edit or delete as needed.
+
+|
+
+
+.. image:: ../_static/images/fusionpbx_ivr4.jpg
+        :scale: 85%
+
+|
+|

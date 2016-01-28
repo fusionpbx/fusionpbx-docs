@@ -12,7 +12,8 @@ To view and set the pin number goto Dialplan > Dialplan Manager > Click on Recor
 
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12456821/9038d3a2-bf6f-11e5-96e3-ee3bef9f5233.jpg
+.. image:: ../_static/images/fusionpbx_recordings.jpg
+        :scale: 85%
 
 |
 
@@ -30,7 +31,8 @@ Create a Recording
 
 |
 
-.. image:: https://cloud.githubusercontent.com/assets/13131198/12456822/903aa236-bf6f-11e5-9fb7-f9545b7add10.jpg
+.. image:: ../_static/images/fusionpbx_recordings1.jpg
+        :scale: 85%
 
 |
 
