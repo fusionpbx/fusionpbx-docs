@@ -2,9 +2,6 @@
 Quality Assurance Testing
 *************************
 
-*****************
-Contributing Code
-*****************
 
 https://github.com/fusionpbx/open-source
 
