@@ -2,10 +2,6 @@
 Contributing Translations
 *************************
 
-*****************
-Contributing Code
-*****************
-
 https://github.com/fusionpbx/open-source
 
 Open Source at FusionPBX
