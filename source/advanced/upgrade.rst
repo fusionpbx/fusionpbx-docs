@@ -156,6 +156,45 @@ Beyond the standard upgrade procedure just described, the following will also ne
     or group_name = 'agent'
     or group_name = 'public'
  
+|
+| For group users with a null group_uuid, insert the group_uuid of the global group that matches the group_name value...
+| Run this code from **Advanced -> Command -> PHP Command.**
+
+::
+
+ $sql = "select group_user_uuid, group_name ";
+    $sql .= "from v_group_users where group_uuid is null";
+    $prep_statement = $db->prepare(check_sql($sql));
+    $prep_statement->execute();
+    $result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+    $result_count = count($result);
+    unset($prep_statement);
+    if ($result_count > 0) {
+        foreach($result as $field) {
+            //note group user uuid
+                $group_user_uuid = $field['group_user_uuid'];
+                $group_name = $field['group_name'];
+            //get global group uuid
+                $sql = "select group_uuid from v_groups ";
+                $sql .= "where domain_uuid is null ";
+                $sql .= "and group_name = '".$group_name."' ";
+                $prep_statement = $db->prepare($sql);
+                $prep_statement->execute();
+                $sub_result = $prep_statement->fetch(PDO::FETCH_ASSOC);
+                $sub_result_count = count($sub_result);
+                unset ($prep_statement);
+            //set group uuid
+                if ($sub_result_count > 0) {
+                    $sql = "update v_group_users ";
+                    $sql .= "set group_uuid = '".$sub_result['group_uuid']."' ";
+                    $sql .= "where group_user_uuid = '".$group_user_uuid."' ";
+                    $count = $db->exec(check_sql($sql));
+                    unset($sql);
+                }
+        }
+    }
+
+
  
 Version 3.5 to 3.6
 ^^^^^^^^^^^^^^^^^^
