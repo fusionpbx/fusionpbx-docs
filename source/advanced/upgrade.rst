@@ -76,9 +76,11 @@ Version 3.8 to 4.0
 ^^^^^^^^^^^^^^^^^^
 
 |
+
 Remove the comments from the script-directory in **/usr/local/freeswitch/conf/autoload_configs/lua.conf.xml**
 
 If using the FreesWITCH package then remove $${base_dir} and set the full path to the scripts directory. 
+
 |
 
 ::
@@ -95,10 +97,10 @@ Version 3.6 to 3.8
 ^^^^^^^^^^^^^^^^^^
 
 |
-**Note: Upgrading can get very complex. If the production system is critical or you are intimidated from these upgrade instructions you may want FusionPBX paid support at http://www.fusionpbx.com/support.php**
+| **Note: Upgrading can get very complex. If the production system is critical or you are intimidated from these upgrade instructions you may want FusionPBX paid support at http://www.fusionpbx.com/support.php**
 
-|A standard 'upgrade' procedure should always be followed:
-|(1. Make a Backup!, 2. Advanced > Upgrade steps, 3. Update switch scripts, 4. Restart FreeSWITCH).
+| A standard 'upgrade' procedure should always be followed:
+| (1. Make a Backup!, 2. Advanced > Upgrade steps, 3. Update switch scripts, 4. Restart FreeSWITCH).
 
 Beyond the standard upgrade procedure just described, the following will also need to be performed:
 
