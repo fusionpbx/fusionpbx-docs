@@ -38,6 +38,127 @@ A Maintenance Upgrade can be done daily depending on development activity.  This
  *Logout and back in
 
 
+How to Upgrade
+##############
+
+| To upgrade, you will need to get the latest source code.
+
+| Depending on how extreme the changes have been since your last update, you may need to run one-time special commands to bring your install up to date.
+
+
+| **Potential issue with call recording after upgrading/switch to latest 3.6 stable.**
+
+| After upgrading to 3.6 stable from 3.5 dev I noticed that calls were no longer being recorded. This was due to the file extension being missing from the recording path. If this is happening to you it is an easy fix.
+
+| Go to system -> variables -> category default and add the variable record_ext and set it to either wav or mp3. Choosing mp3 depends upon whether or not you have mod_shout installed and enabled.
+
+
+**Step 1: Update FusionPBX Source**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+<!--1. Menu -> System -> Upgrade (doesn't update all files)
+Used to update FusionPBX to the latest release.<br/> <span style="color:#FF0000">Note that this menu option has been removed in release 1.2 (and is expected to return in the future once it is reliable - so for now your only option is svn - see 2 below)</span>
+--(currently the preferred method to use)
+-->
+
+'''Upgrade the code via Subversion/SVN'''
+
+*'''Login into the web interface''' with a user account assigned to the superadmin group.
+*'''Login to the console''' with either the ssh, the locally.
+*'''Backup''' It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
+ cd /var/www
+ cp -R fusionpbx fusionpbx_backup
+*'''Change the directory''' to the FusionPBX directory
+ cd /var/www/fusionpbx
+
+*'''Update the source code''' (example assumes fusionpbx is in /var/www/fusionpbx)
+ svn update
+*'''Permissions''' re-set the permissions on the fusionpbx directory tree - when you do svn update it sets the permissions on any updated files to match the account that you are running svn update with, therefore if that account is different to the web server account it will result in some files no longer being accessible.  Therefore to fix this you should re-apply the permissions in fusionpbx and recursively in all directories inside it. The example assumes the web server runs as user 'www-data' and fusionpbx is installed to /var/www/fusionpbx. (chown -Rv Ownername:GroupName /var/www/fusionpbx) 
+ chown -Rv www-data:www-data /var/www/fusionpbx
+
+**Step 2: Update Freeswitch Scripts**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+'''NOTE: As of FusionPBX 3.8.3 (Stable Branch), the scripts should be automatically updated when updating the Source Code, using the Advanced > Upgrade page.''' Any customized scripts, having the same name as the default scripts, will be overwritten. (An option to disable this default behavior is available using a Default Setting: switch > scripts_update > false) Missing scripts will be restored, and any additional files within the scripts folder will remain untouched.
+
+
+FusionPBX is a fast moving project where features are constantly being added and bugs are being fixed on a daily basis so I would also suggest upgrading the Freeswitch scripts directory as part of any normal upgrade process.
+
+'''Subversion''' 
+Use subversion to get the updated files. You have to do this from an empty directory.
+ cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
+ rm -Rf /usr/local/freeswitch/scripts/
+ cd /usr/local/freeswitch
+ svn checkout http://fusionpbx.googlecode.com/svn/branches/dev/fusionpbx/resources/install/scripts/
+ chown -R www-data:www-data /usr/local/freeswitch/scripts
+ cp /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
+(The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
+
+*'''Clean out this scripts directory'''
+An alternative is to remove the Lua scripts. Only do this if you haven't customized any LUA scripts
+ cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
+ rm -rf /usr/local/freeswitch/scripts/*
+
+*'''Pull the most recent scripts down'''
+Here you need to go directly to section 3 and make sure you run upgrade schema from the GUI immediately otherwise your calls will not complete.
+
+*'''Restore the config.lua file (IMPORTANT!!)'''
+If your config.lua file was located in scripts/resources/, then you'll need to restore it (from the backup previously performed) to scripts/resources/config.lua.
+
+| **Step 3: Upgrade Schema**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| Many updates have changes to the database and to the Freeswitch scripts. The upgrade_schema script 
+
+*'''Upgrade from the GUI''' 
+** From within the web site, run Advanced -> '''[[Upgrade Schema]]''' which will add any needed newer tables or columns.
+** Then run App Defaults. If you removed the scripts on Step 2 then run this twice.
+
+*'''Upgrade from the Command Line''' An alternative to running upgrade_schema.php from the GUI is to run the upgrade.php from the command line. It was designed to make the upgrade easier. If you did not login when updating the FusionPBX source code then you will need to run the upgrade.php file from the command line. Make sure to use the full path to the PHP file.
+
+ #as root run the following
+ cd /var/www/fusionpbx
+ /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
+
+*If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
+  http://domain_or_ip/mod/users/usersupdate.php
+Then scroll down to where it says "Template" and select one of the valid templates from the drop down list.  Then press Save.  It will be fixed now and you can continue with the remaining steps below.  (Note that any users who have invalid templates selected will also have the same problem you did - but you can fix them from the user manager option in the accounts menu)
+
+**Step 4: Apply permissions and Restart Freeswitch**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+*'''Make sure that the freeswitch directory has the correct permissions'''
+ chown -Rv www-data:www-data /usr/local/freeswitch/
+
+*'''Restart Freeswitch'''
+ service freeswitch restart
+
+**Step 5: Menu**
+^^^^^^^^^^^^^^^^^
+
+especially needed if your menu disappeared.
+**v1 and v2**
+Now update the menu to the latest version.
+
+  http://domain_or_ip/core/menu/menu_restore_default.php
+
+Press 'Restore Default' on the top right.
+**v3**
+# https://your.ip/core/menu/menu.php
+# click 'e' next to the default menu
+# click the restore default button.
+# https://your.ip/logout.php
+# https://your.ip/login.php
+
+**Step 6: Re-generate Settings**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| Sometimes variable names changes. In rev 1877 **v_config_cli.php** variable names changed which caused no fax to email emails or voicemail emails to be sent as the SMTP details did not exist.
+
+| Go to **System -> Settings** and then **click save**. This will re-generate v_config_cli.php and any other needs config files.
+
+
+
 
 Version Upgrade
 ################
