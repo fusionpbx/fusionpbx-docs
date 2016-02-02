@@ -41,38 +41,48 @@ A Maintenance Upgrade can be done daily depending on development activity.  This
 How to Upgrade
 ##############
 
+.. image:: ../_static/images/fusionpbx_upgrade_green.jpg
+        :scale: 100%
+
+|
+
 | To upgrade, you will need to get the latest source code. Depending on how extreme the changes have been since your last update, you may need to run one-time special commands to bring your install up to date.
-
-
-| **Potential issue with call recording after upgrading/switch to latest 3.6 stable.**
-
-| After upgrading to 3.6 stable from 3.5 dev I noticed that calls were no longer being recorded. This was due to the file extension being missing from the recording path. If this is happening to you it is an easy fix.
-
-| Go to system -> variables -> category default and add the variable record_ext and set it to either wav or mp3. Choosing mp3 depends upon whether or not you have mod_shout installed and enabled.
 
 
 **Step 1: Update FusionPBX Source**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-<!--1. Menu -> System -> Upgrade (doesn't update all files)
-Used to update FusionPBX to the latest release.<br/> <span style="color:#FF0000">Note that this menu option has been removed in release 1.2 (and is expected to return in the future once it is reliable - so for now your only option is svn - see 2 below)</span>
---(currently the preferred method to use)
--->
+<!--1. GUI -> Advanced -> Upgrade (doesn't update all files)
+Used to update FusionPBX to the latest release.
 
-'''Upgrade the code via Subversion/SVN'''
+**Upgrade the code via Github/GIT**
 
-*'''Login into the web interface''' with a user account assigned to the superadmin group.
-*'''Login to the console''' with either the ssh, the locally.
-*'''Backup''' It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
+| *Login into the web interface with a user account assigned to the superadmin group.
+| *Login to the console with either the ssh, the locally.
+| *Backup It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
+ 
+:: 
  cd /var/www
  cp -R fusionpbx fusionpbx_backup
-*'''Change the directory''' to the FusionPBX directory
+ Change the directory''' to the FusionPBX directory
  cd /var/www/fusionpbx
 
-*'''Update the source code''' (example assumes fusionpbx is in /var/www/fusionpbx)
- svn update
-*'''Permissions''' re-set the permissions on the fusionpbx directory tree - when you do svn update it sets the permissions on any updated files to match the account that you are running svn update with, therefore if that account is different to the web server account it will result in some files no longer being accessible.  Therefore to fix this you should re-apply the permissions in fusionpbx and recursively in all directories inside it. The example assumes the web server runs as user 'www-data' and fusionpbx is installed to /var/www/fusionpbx. (chown -Rv Ownername:GroupName /var/www/fusionpbx) 
- chown -Rv www-data:www-data /var/www/fusionpbx
+**Update the source code** (example assumes fusionpbx is in /var/www/fusionpbx)
+ 
+::
+
+ cd /var/www/fusionpbx
+ git pull
+ 
+**Permissions** re-set the permissions on the fusionpbx directory tree. When you do *git pull** it sets the permissions on any updated files to match the account that you are running **git pull** with. If that account is different to the web server account it will result in some files no longer being accessible.  To fix this you should re-apply the permissions in fusionpbx and recursively in all directories inside it.
+
+| The example assumes the web server runs as user 'www-data' and fusionpbx is installed to /var/www/fusionpbx. (chown -Rv Ownername:GroupName /var/www/fusionpbx)
+
+::
+
+ cd /var/www/fusionpbx
+ chown -R www-data:www-data *
+
 
 **Step 2: Update Freeswitch Scripts**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -356,6 +366,12 @@ Version 3.5 to 3.6
 
 | See https://github.com/fusionpbx/fusionpbx/issues/655 for more details.
 |
+
+| **Potential issue with call recording after upgrading/switch to latest 3.6 stable.**
+
+| After upgrading to 3.6 stable from 3.5 dev I noticed that calls were no longer being recorded. This was due to the file extension being missing from the recording path. If this is happening to you it is an easy fix.
+
+| Go to system -> variables -> category default and add the variable record_ext and set it to either wav or mp3. Choosing mp3 depends upon whether or not you have mod_shout installed and enabled.
 
 Version 3.4 to 3.5
 ^^^^^^^^^^^^^^^^^^
