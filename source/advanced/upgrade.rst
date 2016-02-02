@@ -17,6 +17,26 @@ A Maintenance Upgrade can be done daily depending on development activity.  This
 .. image:: ../_static/images/fusionpbx_upgrade.jpg
         :scale: 85%
 
+|
+
+| **Update the source from command line**
+
+::
+
+ * cd /var/www/fusionpbx 
+ git pull
+ chown -R www-data:www-data *
+
+
+| **Back to the GUI**
+
+::
+
+ *Upgrade Database with advanced -> upgrade schema
+ *Update permissions
+ *Update the menu
+ *Logout and back in
+
 
 
 Version Upgrade
