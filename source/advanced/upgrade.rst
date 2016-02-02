@@ -8,7 +8,7 @@ The FusionPBX code is constantly evolving. Bug fixes being submitted, additions 
 |
 
 Maintenance Upgrade
---------------------
+####################
 
 |
 A Maintenance Upgrade can be done daily depending on development activity.  This is typically for bug fixes, added features, security patches or small version upgrades.
@@ -40,7 +40,7 @@ A Maintenance Upgrade can be done daily depending on development activity.  This
 
 
 Version Upgrade
-------------------
+################
 
 |
 
