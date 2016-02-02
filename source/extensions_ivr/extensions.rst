@@ -3,13 +3,10 @@ Extensions
 ************
 
 |
-|
 
 Welcome to the adding Extensions section.  Here you will find how to add Extensions. 
 
 |
-|
-
 
 Goto **Accounts** then click **Extensions**
 
@@ -17,8 +14,6 @@ Goto **Accounts** then click **Extensions**
         :scale: 85% 
 
 |
-|
-
 
 Then click the
 
@@ -29,30 +24,22 @@ on the right.
 
 |
 
-
 .. image:: ../_static/images/fusionpbx_ext1.jpg
         :scale: 85%
 
 |
-|
 
 Enter the desired *extension* starting number.  From the dropdown *Range* box you can choose the desired block of extensions to start with. This can be done again later if needing more extensions.  Click **save** once entry is completed.  Entry can be customized for each idividual extension after this point.
 
-|
 |
 
 .. image:: ../_static/images/fusionpbx_ext2.jpg
         :scale: 85%
 
 |
-|
-
-
-
 
 We now have extensions. Each extension has and edit icon beside it.  Click the edit icon
 
-|
 |
 
  .. image:: ../_static/images/fusionpbx_edit.jpg
@@ -60,20 +47,12 @@ We now have extensions. Each extension has and edit icon beside it.  Click the e
 
 to customize internal, external, emergency caller id and other fine tuned options.  You can also access **Call Control** from here. 
 
-
-
 |
-|
-
 
 .. image:: ../_static/images/fusionpbx_ext3.jpg
         :scale: 85%
 
 |
-|
-
-
-
 
 Enter information as needed.
 
@@ -97,15 +76,11 @@ Enter information as needed.
         :scale: 85%
 
 |
-|
-
-
 
 ************
 Registering Phones
 ************
 
-|
 |
 
 Welcome to the Registering Phones section.  Here you will find how to configure some of the most popular phones to use with FusionPBX. 
@@ -179,12 +154,10 @@ Click **Update** then click **Apply** at the bottom
 * Nat, firewalls and router settings.  Some brands of routers can cause issues.  Google the make and model of router or firewall appliance for common settings or remedies.
 * Visit Grandstream Supoprt http://www.grandstream.com/support
 |
-|
 
 Zoiper
 =======
 
-|
 |
 
 Registering an **Extension** using the softphone Zoiper.
@@ -197,7 +170,6 @@ In the ever changing world of voip businesses are moving away from hardware phon
 1. Download the software. .. Zoiper: http://www.zoiper.com/
 2. Install the software.
 3. If the software isn't open click the Zoiper icon to open from the desktop or start menu.
-
 
 .. image:: ../_static/images/fusionpbx_zoiper.jpg
         :scale: 85%
@@ -254,13 +226,8 @@ In the ever changing world of voip businesses are moving away from hardware phon
 * Make sure you have created an DNS A record for the domain being used and there are no typos
 * Nat, firewalls and router settings.  Some brands of routers can cause issues.  Google the make and model of router or firewall appliance for common settings or remedies.
 * Visit Zoiper Community Supoprt http://community.zoiper.com/
+
 |
-|
-
-
-
-
-
 
 .. toctree::
   :maxdepth: 3

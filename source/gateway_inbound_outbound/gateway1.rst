@@ -1,8 +1,6 @@
 Gateway setup
 ===========
 
-
-
 .. image:: ../_static/images/logo_right.png
         :scale: 85%
   
@@ -13,10 +11,6 @@ Gateways provide access into other voice networks. These can be voice providers 
 |
 
 **In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
-   
-    
-
-
 
 .. image:: ../_static/images/fusionpbx_voicetel.jpg
         :scale: 85% 
@@ -24,9 +18,6 @@ Gateways provide access into other voice networks. These can be voice providers 
 `Click to visit <http://tiny.cc/voicetel>`_  
     
 |
-|
-    
-
 
 Select **Accounts** from the drop-down list and click on **Gateways**. 
 
@@ -59,8 +50,6 @@ button on the right. Enter the gateway information below and Click on **Save** o
   Enabled: true 
 
 |
-|
 
 .. image:: ../_static/images/fusionpbx_gateway2.jpg
         :scale: 85%
-

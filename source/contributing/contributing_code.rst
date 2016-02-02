@@ -58,8 +58,8 @@ Thanks, FusionPBX!
 List of Projects
 ----------------
 
-* [FusionPBX](https://github.com/Fusionpbx/fusionpbx)&#8201;&mdash;&#8201;The Official FusionPBX Repo.
-* [FusionPBX Apps](https://github.com/Fusionpbx/opensource)&#8201;&mdash;&#8201;Applications for FusionPBX.
-* [FusionPBX Scripts](https://github.com/Fusionpbx/opensource)&#8201;&mdash;&#8201;Install and Upgrade Scripts for FusionPBX.
-* [Open Source Umbrella Project](https://github.com/Fusionpbx/opensource)&#8201;&mdash;&#8201;This site.
+* [FusionPBX](https://github.com/Fusionpbx/fusionpbx) The Official FusionPBX Repo.
+* [FusionPBX Apps](https://github.com/Fusionpbx/opensource) Applications for FusionPBX.
+* [FusionPBX Scripts](https://github.com/Fusionpbx/opensource) Install and Upgrade Scripts for FusionPBX.
+* [Open Source Umbrella Project](https://github.com/Fusionpbx/opensource) This site.
 
