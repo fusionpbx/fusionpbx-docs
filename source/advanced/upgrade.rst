@@ -41,9 +41,7 @@ A Maintenance Upgrade can be done daily depending on development activity.  This
 How to Upgrade
 ##############
 
-| To upgrade, you will need to get the latest source code.
-
-| Depending on how extreme the changes have been since your last update, you may need to run one-time special commands to bring your install up to date.
+| To upgrade, you will need to get the latest source code. Depending on how extreme the changes have been since your last update, you may need to run one-time special commands to bring your install up to date.
 
 
 | **Potential issue with call recording after upgrading/switch to latest 3.6 stable.**
