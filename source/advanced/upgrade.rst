@@ -220,6 +220,27 @@ Version 3.4 to 3.5
 ^^^^^^^^^^^^^^^^^^
 
 |
+| Gateways now use the gateway_uuid as the name that is used when interacting with FreeSWITCH. This script is needed to help change the gateway names used in the outbound routes. You may need to remove the old gateway file names from the conf/sip_profiles/external directory.
+
+::
+
+ cd /var/www/fusionpbx
+ wget http://fusionpbx.googlecode.com/svn/branches/dev/scripts/upgrade/gateway_uuid.php
+ http://x.x.x.x/gateway_uuid.php
+ rm gateway_uuid.php
+
+| * Go To **Advanced -> Default Settings -> Switch Category -> Sub category gateways change to sip_profiles**
+
+| **Permissions Issues** - (access denied errors)
+| Due to changes which improve consistency throughout the product, some Users have had problem with superadmin receiving "access denied" errors after the upgrade.   
+
+| * Go To **Advanced -> Group Manager**
+| * On **superadmin** click **Permissions** and then **Restore Default**
+
+| You may need to execute this operation for each group.
+
+| **Default Settings**'
+| In the **switch category change gateways to sip_profiles**
 
 |
 
