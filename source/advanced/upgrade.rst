@@ -83,7 +83,8 @@ Beyond the standard upgrade procedure just described, the following will also ne
 
 ::
 
- uncomment <param name="script-directory" value="$${base_dir}/scripts/?.lua"/> in /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
+ uncomment: <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
+ in: /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
 |
 
 Version 3.5 to 3.6
