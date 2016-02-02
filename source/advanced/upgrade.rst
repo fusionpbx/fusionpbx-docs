@@ -103,7 +103,7 @@ Here you need to go directly to section 3 and make sure you run upgrade schema f
 *'''Restore the config.lua file (IMPORTANT!!)'''
 If your config.lua file was located in scripts/resources/, then you'll need to restore it (from the backup previously performed) to scripts/resources/config.lua.
 
-| **Step 3: Upgrade Schema**
+**Step 3: Upgrade Schema**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | Many updates have changes to the database and to the Freeswitch scripts. The upgrade_schema script 
