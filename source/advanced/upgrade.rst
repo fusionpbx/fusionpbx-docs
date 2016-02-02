@@ -234,8 +234,12 @@ Version 3.4 to 3.5
 | **Permissions Issues** - (access denied errors)
 | Due to changes which improve consistency throughout the product, some Users have had problem with superadmin receiving "access denied" errors after the upgrade.   
 
+|
+
 | * Go To **Advanced -> Group Manager**
 | * On **superadmin** click **Permissions** and then **Restore Default**
+
+|
 
 | You may need to execute this operation for each group.
 
@@ -249,20 +253,95 @@ Version 3.3 to 3.4
 
 |
 
+| Update the source as described on this page, menu manager **restore default**, group manager edit a group **restore default**, advanced -> upgrade schema.
+
+|
+
+| FusionPBX 3.4 hunt groups have been deprecated. Use the following script run it only one time to move existing hunt groups to ring groups.
+
+::
+
+ cd /var/www/fusionpbx
+ wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/hunt_group_export.php
+ http://x.x.x.x/hunt_group_export.php
+ rm -r hunt_group_export.php
+
+|
+
+| Ring groups were expanded to add ability to call external numbers and match other missing hunt group features. A new table was created to accomodate this.
+
+::
+
+ cd /var/www/fusionpbx
+ wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/ring_group_extensions.php
+ http://x.x.x.x/ring_group_extensions.php
+ rm ring_group_extensions.php
+
 |
 
 Version 3.2 to 3.3
 ^^^^^^^^^^^^^^^^^^
 
 |
-
+| FreeSWITCH changed the syntax to connect to the database so numerous LUA scripts had to be updated. If you customized any of the lua scripts make a backup of the FreeSWITCH scripts directory. Then remove the contents of the **freeswitch/scripts directory** and then run **advanced -> upgrade schema** (which will detect the missing scripts and replace them).
 |
 
 Version 3.1.4 to 3.2
 ^^^^^^^^^^^^^^^^^^^^
 
 |
+| Ubuntu/Debian
 
+::
+
+ cd /var/www/fusionpbx
+ git pull
+ Advanced -> Upgrade Schema
+
+| **Menu**
+
+| If you cant see the menu after upgrading try the following in your browser replace x.x.x.x with your ip or domain name.
+ 
+::
+
+ x.x.x.x/core/menu/menu.php
+ Edit the menu make sure the language is set to en-us.
+ Press **Restore Default**
+
+| **Default settings**
+
+::
+
+ x.x.x.x/core/default_settings/default_settings.php
+ category: language 
+ type: code 
+ value: en-us
+
+| **Email**
+
+Migrating email to the new FusionPBX native voicemail.
+
+::
+
+ wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/voicemail_export.php
+
+
+| Run from the browser it will take the voicemail data from the FreeSWITCH database and copy the information into the FusionPBX database.
+
+::
+
+ http://x.x.x.x/voicemail_export.php
+
+Remove the export file
+
+::
+
+ rm voicemail_export.php
+
+
+| **Call Forward / Follow Me**
+
+| No longer using hunt groups. So the backend has changed so keep in mind that you need to reset call forward and follow me settings. They are still listed in **app -> hunt groups**. After updating the info in call forward, follow me you should delete the hunt group.
 |
 
 Version 2 to 3.0
