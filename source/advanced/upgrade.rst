@@ -52,7 +52,7 @@ How to Upgrade
 **Step 1: Update FusionPBX Source**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-<!--1. GUI -> Advanced -> Upgrade (doesn't update all files)
+| 1. GUI -> Advanced -> Upgrade (doesn't update all files)
 Used to update FusionPBX to the latest release.
 
 **Upgrade the code via Github/GIT**
@@ -87,50 +87,72 @@ Used to update FusionPBX to the latest release.
 **Step 2: Update Freeswitch Scripts**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-'''NOTE: As of FusionPBX 3.8.3 (Stable Branch), the scripts should be automatically updated when updating the Source Code, using the Advanced > Upgrade page.''' Any customized scripts, having the same name as the default scripts, will be overwritten. (An option to disable this default behavior is available using a Default Setting: switch > scripts_update > false) Missing scripts will be restored, and any additional files within the scripts folder will remain untouched.
+| NOTE: As of FusionPBX 3.8.3 (Stable Branch), the scripts should be automatically updated when updating the Source Code, using the **Advanced > Upgrade** page. Any customized scripts, having the same name as the default scripts, **will be overwritten.** (An option to disable this default behavior is available using **Default Setting: switch > scripts_update > false**) Missing scripts will be restored, and any additional files within the scripts folder will remain untouched.
 
 
-FusionPBX is a fast moving project where features are constantly being added and bugs are being fixed on a daily basis so I would also suggest upgrading the Freeswitch scripts directory as part of any normal upgrade process.
+| FusionPBX is a fast moving project where features are constantly being added and bugs are being fixed on a daily basis so I would also suggest upgrading the Freeswitch scripts directory as part of any normal upgrade process.
 
-'''Subversion''' 
-Use subversion to get the updated files. You have to do this from an empty directory.
+**Update Freeswitch** 
+
+|Use github to get the updated files. **You have to do this from an empty directory**.
+ 
+::
+
  cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
  rm -Rf /usr/local/freeswitch/scripts/
  cd /usr/local/freeswitch
- svn checkout http://fusionpbx.googlecode.com/svn/branches/dev/fusionpbx/resources/install/scripts/
+ git checkout https://github.com/fusionpbx/fusionpbx/tree/master/resources/install/scripts/
  chown -R www-data:www-data /usr/local/freeswitch/scripts
  cp /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
+
 (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
 
-*'''Clean out this scripts directory'''
-An alternative is to remove the Lua scripts. Only do this if you haven't customized any LUA scripts
+| **Clean out this scripts directory'''
+| An alternative is to remove the Lua scripts. **Only do this if you haven't customized any LUA scripts**
+
+::
+
  cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
  rm -rf /usr/local/freeswitch/scripts/*
 
-*'''Pull the most recent scripts down'''
-Here you need to go directly to section 3 and make sure you run upgrade schema from the GUI immediately otherwise your calls will not complete.
 
-*'''Restore the config.lua file (IMPORTANT!!)'''
-If your config.lua file was located in scripts/resources/, then you'll need to restore it (from the backup previously performed) to scripts/resources/config.lua.
+| **Pull the most recent scripts down**
+
+| Here you need to go directly to step 3 and make sure you run upgrade schema from the GUI immediately otherwise your calls will not complete.
+
+| **Restore the config.lua file (IMPORTANT!!)**
+
+| If your config.lua file was located in scripts/resources/, then you'll need to restore it (from the backup previously performed) to scripts/resources/config.lua.
 
 **Step 3: Upgrade Schema**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | Many updates have changes to the database and to the Freeswitch scripts. The upgrade_schema script 
 
-*'''Upgrade from the GUI''' 
-** From within the web site, run Advanced -> '''[[Upgrade Schema]]''' which will add any needed newer tables or columns.
-** Then run App Defaults. If you removed the scripts on Step 2 then run this twice.
+| **Upgrade from the GUI** 
 
-*'''Upgrade from the Command Line''' An alternative to running upgrade_schema.php from the GUI is to run the upgrade.php from the command line. It was designed to make the upgrade easier. If you did not login when updating the FusionPBX source code then you will need to run the upgrade.php file from the command line. Make sure to use the full path to the PHP file.
+| From the GUI, run **Advanced -> Upgrade Schema** which will add any needed newer tables or columns.
+| Then run **App Defaults**. *If you removed the scripts on Step 2 then run this* **twice**.
 
- #as root run the following
+|
+
+| Upgrade from the Command Line An alternative to running upgrade_schema.php from the GUI is to run the upgrade.php from the command line. It was designed to make the upgrade easier. If you did not login when updating the FusionPBX source code then you will need to run the upgrade.php file from the command line. Make sure to use the full path to the PHP file.
+
+ | As root run the following
+ 
+ ::
+ 
  cd /var/www/fusionpbx
  /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
 
 *If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
-  http://domain_or_ip/mod/users/usersupdate.php
-Then scroll down to where it says "Template" and select one of the valid templates from the drop down list.  Then press Save.  It will be fixed now and you can continue with the remaining steps below.  (Note that any users who have invalid templates selected will also have the same problem you did - but you can fix them from the user manager option in the accounts menu)
+
+::
+
+ http://domain_or_ip/mod/users/usersupdate.php
+ 
+| Then scroll down to where it says **"Template"** and select one of the valid templates from the drop down list.  Then press Save.  It will be fixed now and you can continue with the remaining steps below.
+| (Note that any users who have invalid templates selected will also have the same problem you did. You can fix them from the user manager option in the accounts menu)
 
 **Step 4: Apply permissions and Restart Freeswitch**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
