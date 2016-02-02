@@ -61,7 +61,8 @@ Used to update FusionPBX to the latest release.
 | *Login to the console with either the ssh, the locally.
 | *Backup It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
  
-:: 
+::
+
  cd /var/www
  cp -R fusionpbx fusionpbx_backup
  Change the directory''' to the FusionPBX directory
@@ -74,7 +75,7 @@ Used to update FusionPBX to the latest release.
  cd /var/www/fusionpbx
  git pull
  
-**Permissions** re-set the permissions on the fusionpbx directory tree. When you do *git pull** it sets the permissions on any updated files to match the account that you are running **git pull** with. If that account is different to the web server account it will result in some files no longer being accessible.  To fix this you should re-apply the permissions in fusionpbx and recursively in all directories inside it.
+**Permissions** re-set the permissions on the fusionpbx directory tree. When you do **git pull** it sets the permissions on any updated files to match the account that you are running **git pull** with. If that account is different to the web server account it will result in some files no longer being accessible.  To fix this you should re-apply the permissions in fusionpbx and recursively in all directories inside it.
 
 | The example assumes the web server runs as user 'www-data' and fusionpbx is installed to /var/www/fusionpbx. (chown -Rv Ownername:GroupName /var/www/fusionpbx)
 
@@ -94,7 +95,7 @@ Used to update FusionPBX to the latest release.
 
 **Update Freeswitch** 
 
-|Use github to get the updated files. **You have to do this from an empty directory**.
+| Use github to get the updated files. **You have to do this from an empty directory**.
  
 ::
 
@@ -107,7 +108,7 @@ Used to update FusionPBX to the latest release.
 
 (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
 
-| **Clean out this scripts directory'''
+| **Clean out this scripts directory**
 | An alternative is to remove the Lua scripts. **Only do this if you haven't customized any LUA scripts**
 
 ::
