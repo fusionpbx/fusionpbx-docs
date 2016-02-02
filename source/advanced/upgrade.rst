@@ -111,7 +111,7 @@ Beyond the standard upgrade procedure just described, the following will also ne
 | * Delete all previous FAX dialplans
 | * Resave each fax server in the GUI.
 | * cd /var/www/fusionpbx/app/fax
-| * wget https://fusionpbx.googlecode.com/svn/branches/dev/scripts/upgrade/fax_import.php
+| * wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/fax_import.php
 | * chown -R www-data:www-data fax_import.php
 | * Login into the GUI and use this path in your browser http://<domain-or-ip>/app/fax/fax_import.php
 | * rm /var/www/fusionpbx/app/fax/fax_import.php
@@ -194,13 +194,26 @@ Beyond the standard upgrade procedure just described, the following will also ne
         }
     }
 
+|
+| **Apps menu disappeared**
+
+| If your apps menu disappeared check that it wasn't set to protected in the menu manager.
+| **(advanced -> menu manager)**. If protected is true, it won't show up.
 
  
 Version 3.5 to 3.6
 ^^^^^^^^^^^^^^^^^^
 
 |
+| When running **Upgrade -> Schema**
+| If you see **ALTER TABLE v_xml_cdr ADD json json;** every time you run the upgrade schema then you likely have an old version of Postgres. To fix this either upgrade to the latest Postgres server or run the following **SQL statement from advanced -> sql query.**
 
+::
+
+ ALTER TABLE v_xml_cdr ADD json text;
+
+
+| See https://github.com/fusionpbx/fusionpbx/issues/655 for more details.
 |
 
 Version 3.4 to 3.5
