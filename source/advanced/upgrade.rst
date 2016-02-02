@@ -63,6 +63,9 @@ Used to update FusionPBX to the latest release.
  
 ::
 
+ mkdir /etc/fusionpbx
+ mv /var/www/fusionpbx/resources/config.php /etc/fusionpbx
+ mv /usr/local/freeswitch/scripts/resources/config.lua /etc/fusionpbx
  cd /var/www
  cp -R fusionpbx fusionpbx_backup
  Change the directory''' to the FusionPBX directory
