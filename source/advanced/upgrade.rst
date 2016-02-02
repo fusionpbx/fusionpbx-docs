@@ -56,16 +56,16 @@ Version 3.8 to 4.0
 ^^^^^^^^^^^^^^^^^^
 
 |
-Remove the comments from the script-directory in /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml
+Remove the comments from the script-directory in **/usr/local/freeswitch/conf/autoload_configs/lua.conf.xml**
 
 If using the FreesWITCH package then remove $${base_dir} and set the full path to the scripts directory. 
 |
 
-   ::
+::
  
-   before:  <!--<param name="script-directory" value="$${base_dir}/scripts/?.lua"/>-->
+ before:  <!--<param name="script-directory" value="$${base_dir}/scripts/?.lua"/>-->
    
-   after:   <param name="script-directory" value="/usr/local/freeswitch/scripts/?.lua"/>
+ after:   <param name="script-directory" value="/usr/local/freeswitch/scripts/?.lua"/>
 
 Rebooting FreeSWITCH is required for this to take effect.
 
@@ -75,7 +75,15 @@ Version 3.6 to 3.8
 ^^^^^^^^^^^^^^^^^^
 
 |
+**Note: If the production system is critical or you are intimidated about these upgrade instructions you might FusionPBX paid support at http://www.fusionpbx.com/support.php**
 
+|A standard 'upgrade' procedure should always be followed (1. Make a Backup!, 2. Advanced > Upgrade steps, 3. Update switch scripts, 4. Restart FreeSWITCH).
+
+Beyond the standard upgrade procedure just described, the following will also need to be performed:
+
+::
+
+ uncomment <param name="script-directory" value="$${base_dir}/scripts/?.lua"/> in /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
 |
 
 Version 3.5 to 3.6
@@ -117,7 +125,7 @@ Version 2 to 3.0
 ^^^^^^^^^^^^^^^^
 
 |
-|LESS than or EQUAL to revision 1877, use the migration tool.
+|LESS than or EQUAL to revision 1877, use the migration tool. https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade
 |If greater than revision 1877, use latest. 
 
 ::
