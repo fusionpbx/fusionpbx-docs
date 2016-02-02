@@ -348,12 +348,28 @@ Version 2 to 3.0
 ^^^^^^^^^^^^^^^^
 
 |
-|LESS than or EQUAL to revision 1877, use the migration tool. https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade
-|If greater than revision 1877, use latest. 
+| LESS than or EQUAL to revision 1877, use the migration tool. https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade
+| If greater than revision 1877, use latest. 
 
 ::
 
+| When upgrading from previous versions, you may encounter the following issues:
 
+| **Changes to your dial plan or extensions don't take effect**
+| * Go to the **Advanced -> Default Settings** page
+| * Remove **"/default"** from the end of your dialplan and extensions directories
+
+|
+
+| **Missing menus**
+| * Go to hxxps://yourdomain.com/core/menu/menu.php
+| * Click the edit (e) button beside default
+| * Click the Restore Default button
+| * Check that all the entries in the list are accessible by the appropriate groups
+
+| **Emails not being sent for voicemail or fax**
+| * Double check the SMTP settings on the System -> Settings page
+| * Save it, even if you haven't changed anything
 
 |
 
