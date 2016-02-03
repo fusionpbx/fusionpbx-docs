@@ -140,11 +140,15 @@ Used to update FusionPBX to the latest release.
 | From the GUI, run **Advanced -> Upgrade Schema** which will add any needed newer tables or columns.
 | Then run **App Defaults**. *If you removed the scripts on Step 2 then run this* **twice**.
 
+.. image:: ../_static/images/fusionpbx_upgrade_schema_data_types.jpg
+        :scale: 85%
+
 |
 
-| Upgrade from the Command Line An alternative to running upgrade_schema.php from the GUI is to run the upgrade.php from the command line. It was designed to make the upgrade easier. If you did not login when updating the FusionPBX source code then you will need to run the upgrade.php file from the command line. Make sure to use the full path to the PHP file.
+| **Upgrade from the Command Line**
+| An alternative to running upgrade_schema.php from the GUI is to run the upgrade.php from the command line. It was designed to make the upgrade easier. If you did not login when updating the FusionPBX source code then you will need to run the upgrade.php file from the command line. Make sure to use the full path to the PHP file.
 
- | As root run the following
+| As root run the following
  
  ::
  
