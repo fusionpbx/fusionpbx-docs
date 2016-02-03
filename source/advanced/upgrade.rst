@@ -190,8 +190,9 @@ Used to update FusionPBX to the latest release.
 
  http://domain_or_ip/core/menu/menu_restore_default.php
 
+
 | Press 'Restore Default' on the top right.
-**v3**
+| **v3**
 | https://your.ip/core/menu/menu.php
 | click 'e' next to the default menu
 | click the restore default button.
