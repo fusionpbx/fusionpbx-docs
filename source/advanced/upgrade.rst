@@ -149,7 +149,7 @@ Used to update FusionPBX to the latest release.
  cd /var/www/fusionpbx
  /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
 
-*If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
+| *If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
 
 ::
 
@@ -161,11 +161,17 @@ Used to update FusionPBX to the latest release.
 **Step 4: Apply permissions and Restart Freeswitch**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*'''Make sure that the freeswitch directory has the correct permissions'''
+| **Make sure that the freeswitch directory has the correct permissions**
+
+::
+
  chown -Rv www-data:www-data /usr/local/freeswitch/
 
-*'''Restart Freeswitch'''
- service freeswitch restart
+| **Restart Freeswitch**
+
+::
+
+ systemctl restart freeswitch
 
 **Step 5: Menu**
 ^^^^^^^^^^^^^^^^^
