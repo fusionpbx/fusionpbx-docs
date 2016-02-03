@@ -80,7 +80,7 @@ Used to update FusionPBX to the latest release.
  
 | **Permissions**
 | Reset the permissions on the fusionpbx directory tree. When you do **git pull** it sets the permissions on any updated files to match the account that you are running **git pull** with. If that account is different to the web server account it will result in some files no longer being accessible and a red bar error at the top of the upgrade screen on the GUI.  To fix this you should reapply the permissions in fusionpbx and recursively in all directories inside it.
-
+|
 | The example assumes the web server runs as user 'www-data' and fusionpbx is installed to /var/www/fusionpbx. (chown -Rv Ownername:GroupName /var/www/fusionpbx)
 
 ::
@@ -105,8 +105,9 @@ Used to update FusionPBX to the latest release.
 
  cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
  rm -Rf /usr/local/freeswitch/scripts/
- cd /usr/local/freeswitch
- svn checkout http://fusionpbx.googlecode.com/svn/branches/dev/fusionpbx/resources/install/scripts
+ cd /usr/src
+ git clone https://github.com/fusionpbx/fusionpbx.git
+ cp /fusionpbx/resources/install/scripts /usr/local/freeswitch
  chown -R www-data:www-data /usr/local/freeswitch/scripts
  cp /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
 
