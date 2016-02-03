@@ -150,7 +150,7 @@ Used to update FusionPBX to the latest release.
 
 | As root run the following
  
- ::
+::
  
  cd /var/www/fusionpbx
  /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
@@ -182,26 +182,28 @@ Used to update FusionPBX to the latest release.
 **Step 5: Menu**
 ^^^^^^^^^^^^^^^^^
 
-especially needed if your menu disappeared.
-**v1 and v2**
-Now update the menu to the latest version.
+| Needed if your menu disappeared.
+| **v1 and v2**
+| Now update the menu to the latest version.
 
-  http://domain_or_ip/core/menu/menu_restore_default.php
+::
 
-Press 'Restore Default' on the top right.
+ http://domain_or_ip/core/menu/menu_restore_default.php
+
+| Press 'Restore Default' on the top right.
 **v3**
-# https://your.ip/core/menu/menu.php
-# click 'e' next to the default menu
-# click the restore default button.
-# https://your.ip/logout.php
-# https://your.ip/login.php
+| https://your.ip/core/menu/menu.php
+| click 'e' next to the default menu
+| click the restore default button.
+| https://your.ip/logout.php
+| https://your.ip/login.php
 
 **Step 6: Re-generate Settings**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| Sometimes variable names changes. In rev 1877 **v_config_cli.php** variable names changed which caused no fax to email emails or voicemail emails to be sent as the SMTP details did not exist.
+| Sometimes variable names changes. In rev 1877 **v_config_cli.php** variable names changed which caused no fax to email emails or voicemail emails to be sent. Problem was the SMTP details did not exist.
 
-| Go to **System -> Settings** and then **click save**. This will re-generate v_config_cli.php and any other needs config files.
+| Go to **Advanced -> Settings** and then **click save**. This will re-generate v_config_cli.php and any other needs config files.
 
 
 
@@ -409,7 +411,7 @@ Version 3.5 to 3.6
 
 | After upgrading to 3.6 stable from 3.5 dev I noticed that calls were no longer being recorded. This was due to the file extension being missing from the recording path. If this is happening to you it is an easy fix.
 
-| Go to system -> variables -> category default and add the variable record_ext and set it to either wav or mp3. Choosing mp3 depends upon whether or not you have mod_shout installed and enabled.
+| Go to Advanced -> variables -> category default and add the variable record_ext and set it to either wav or mp3. Choosing mp3 depends upon whether or not you have mod_shout installed and enabled.
 
 Version 3.4 to 3.5
 ^^^^^^^^^^^^^^^^^^
