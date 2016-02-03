@@ -105,7 +105,7 @@ Used to update FusionPBX to the latest release.
  cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
  rm -Rf /usr/local/freeswitch/scripts/
  cd /usr/local/freeswitch
- git checkout https://github.com/fusionpbx/fusionpbx/tree/master/resources/install/scripts/
+ svn checkout http://fusionpbx.googlecode.com/svn/branches/dev/fusionpbx/resources/install/scripts
  chown -R www-data:www-data /usr/local/freeswitch/scripts
  cp /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
 
