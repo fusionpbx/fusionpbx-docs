@@ -78,7 +78,15 @@ XMPP Manager
  Advanced -> Context: your.domain.com
 
 | Save the settings and restart the module. Restart the 'XMPP' module from Advanced -> Modules page. 
-Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are ready to go. **Note** If you are not getting Authorized you might need to goto the google account settings and choose "Allow less secure apps: ON" under the Sign-in & security section.
+Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are ready to go.
+| **Note** If you are not getting AUTHORIZED you might need to goto the google account settings and choose "Allow less secure apps: ON" under the Sign-in & security section.
+
+|
+
+.. image:: ../_static/images/fusionpbx_xmpp5.jpg
+        :scale: 85%
+
+|
 
 | **Outbound Routes**
 
