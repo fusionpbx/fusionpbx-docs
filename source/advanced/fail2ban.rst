@@ -44,32 +44,20 @@ Fail2Ban
 
 | Every jail can be customized by tuning following options:
 
-::
++-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| Name                  | Default               |                                Description                                                                                        |
++=======================+=======================+===================================================================================================================================+
+| filter                | Campground            | Name of the filter to be used by the jail to detect matches. Each single match by a filter increments the counter within the jail |
++-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| logpath               | /var/log/messages     | Path to the log file which is provided to the filter                                                                              |
++-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| maxretry              | 3                     | Number of matches (i.e. value of the counter) which triggers ban action on the IP.                                                |
++-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| findtime              | 600 sec               | The counter is set to zero if no match is found within "findtime" seconds.                                                        |
++-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| bantime               | 600 sec               | Duration (in seconds) for IP to be banned for.                                                                                    |
++-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
- {| border="1"
- |+ Jail Options
- ! Name !! Default !! Description
- -
- ! filter ||
-
-
-| Name of the filter to be used by the jail to detect matches. Each single match by a filter increments the counter within the jail.
-
-::
-
- |-
- ! logpath || /var/log/messages
- | Path to the log file which is provided to the filter
- |-
- ! maxretry || 3
- | Number of matches (i.e. value of the counter) which triggers ban action on the IP.
- |-
- ! findtime || 600 sec
- | The counter is set to zero if no match is found within "findtime" seconds.
- |-
- ! bantime || 600 sec
- | Duration (in seconds) for IP to be banned for.
- |}
 
 |
 
