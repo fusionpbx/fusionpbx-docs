@@ -24,6 +24,13 @@ XMPP Manager
 
 | Accounts -> XMPP manager.
 
+| Click the
+
+.. image:: ../_static/images/plus.png
+        :scale: 75%
+        
+| on the right to create a profile.         
+
 | In this example we will setup Google Talk and by creating a profile called gtalk.
 
 ::
@@ -36,6 +43,10 @@ XMPP Manager
 
 |
 
+.. image:: ../_static/images/fusionpbx_xmpp2.jpg
+        :scale: 85%
+
+
 | Two approaches can be used for the next part.
 
 | **Option 1.**
@@ -45,7 +56,7 @@ XMPP Manager
 ::
 
  Default extension: 13051231234
- Advanced->Context: public
+ Advanced -> Context: public
 
 
 | **Option 2.**
