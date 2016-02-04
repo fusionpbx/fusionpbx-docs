@@ -62,9 +62,11 @@ click Schema, Data Types, and Permission Defaults then click execute
 
 |
 **XMPP Profile**
+
 | FusionPBX menu.
+
 | Accounts -> XMPP manager.
-|
+
 | In this example we will setup Google Talk and by creating a profile called gtalk.
 
 ::
@@ -86,20 +88,28 @@ click Schema, Data Types, and Permission Defaults then click execute
 
 
 | **Option 2.**
+
 | On a single tenant system. This will send the call to extension 1001 in the default context.
-Default extension: 1001
-Advanced -> Context: default
+
+::
+
+ Default extension: 1001
+ Advanced -> Context: default
 
 **Option 3.**
+
 | On a single tenant system. This will send the call to extension 1001 in the multi-tenant domain name.
-Default extension: 1001
-Advanced -> Context: your.domain.com
+
+::
+
+ Default extension: 1001
+ Advanced -> Context: your.domain.com
 
 | Save the settings and restart the module. Restart the 'XMPP' module from Advanced -> Modules page. 
 Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are ready to go.
 
 | **Outbound Routes**
-|
+
 | For this example we will use 11 digit dialing.
 
 ::
