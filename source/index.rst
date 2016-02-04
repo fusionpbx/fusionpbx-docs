@@ -79,7 +79,7 @@ Getting Started
     advanced.rst
     manual.rst
     advanced/fail2ban.rst
-    advanced/compile.rst
+    advanced/freeswitch.rst
     testimonials.rst
     contributing.rst
     doc_guide.rst
