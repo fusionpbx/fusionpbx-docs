@@ -16,60 +16,8 @@ XMPP Manager
 .. image:: ../_static/images/fusionpbx_xmpp1.jpg
         :scale: 85%
 
-
-
-
-
-
-
-
-
-############
-Enable XMPP
-############
-
-
 |
 
-| XMPP manager is used to configure client side XMPP profiles. It can be used as a client to register to make and receive call with Google Talk or other XMPP servers.
-
-|
-
-| **GIT Manually add XMPP**
-|
-| After version 3.8 XMPP is optional.  To add XMPP do the following
-
-| Goto command line
-
-::
-
- cd /tmp
- git clone https://github.com/fusionpbx/fusionpbx-apps.git 
- cd fusionpbx-apps/
- mv xmpp/ /var/www/fusionpbx/app/
- cd /var/www/fusionpbx/app
- chown www-data:www-data -R xmpp/
-
-
-
-Goto Fusionpbx GUI
-
-| Goto the GUI and click advanced > menu manager > edit icon > click "Restore Defaults" at top right
-|
-
-| Then goto Advanced > Upgrade
-click Schema, Data Types, and Permission Defaults then click execute
-
-|
-| Click status > sip status > Flush Memcache
-
-|
-| Log out then back in
-
-|
-| You should now have XMPP Manager under Accounts
-
-|
 **XMPP Profile**
 
 | FusionPBX menu.
@@ -134,3 +82,55 @@ Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are rea
 
 | If your XMPP profile is named something other than gtalk edit the outbound route you just created.
 Bridge statement should look like: dingaling/gtalk/+$1@voice.google.com replace gtalk with the profile name you chose and then save it.
+
+|
+
+
+
+############
+Enable XMPP
+############
+
+
+|
+
+| XMPP manager is used to configure client side XMPP profiles. It can be used as a client to register to make and receive call with Google Talk or other XMPP servers.
+
+|
+
+| **GIT Manually add XMPP**
+|
+| After version 3.8 XMPP is optional.  To add XMPP do the following
+
+| Goto command line
+
+::
+
+ cd /tmp
+ git clone https://github.com/fusionpbx/fusionpbx-apps.git 
+ cd fusionpbx-apps/
+ mv xmpp/ /var/www/fusionpbx/app/
+ cd /var/www/fusionpbx/app
+ chown www-data:www-data -R xmpp/
+
+
+
+Goto Fusionpbx GUI
+
+| Goto the GUI and click advanced > menu manager > edit icon > click "Restore Defaults" at top right
+|
+
+| Then goto Advanced > Upgrade
+click Schema, Data Types, and Permission Defaults then click execute
+
+|
+| Click status > sip status > Flush Memcache
+
+|
+| Log out then back in
+
+|
+| You should now have XMPP Manager under Accounts
+
+|
+
