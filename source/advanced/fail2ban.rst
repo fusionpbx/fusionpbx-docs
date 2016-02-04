@@ -13,14 +13,15 @@ Fail2Ban
 
 | **Examples**
 | **GUI Login**
+
 | incorrect username
 
 ::
 
  Feb  1 11:35:11 your_hostname FusionPBX: [w.x.y.z] authentication failed for login_username
  
- 
- | incorrect password
+
+| incorrect password
  
  ::
  
