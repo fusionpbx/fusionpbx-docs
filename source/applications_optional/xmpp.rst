@@ -2,10 +2,16 @@
 XMPP Manager
 ############
 
+|
+
+.. image:: ../_static/images/fusionpbx_xmpp.jpg
+        :scale: 85%
 
 
+|
 
-
+.. image:: ../_static/images/fusionpbx_xmpp1.jpg
+        :scale: 85%
 
 
 
