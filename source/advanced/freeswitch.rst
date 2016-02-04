@@ -136,7 +136,8 @@ Freeswitch install
  chmod -R o-rwx /usr/local/freeswitch/
 
 
-**Install Sound Files**
+| **Install Sound Files**
+
 | Run this on new installs.
 
 ::
@@ -147,7 +148,8 @@ Freeswitch install
  make cd-sounds-install cd-moh-install
 
 **Startup Script**
-Run on new install only. Create the file '/etc/init.d/freeswitch' with the following code:
+
+| Run on new install only. Create the file '/etc/init.d/freeswitch' with the following code:
 
 ::
 
