@@ -78,6 +78,8 @@ Getting Started
     applications.rst
     advanced.rst
     manual.rst
+    advanced/fail2ban.rst
+    advanced/compile.rst
     testimonials.rst
     contributing.rst
     doc_guide.rst
