@@ -17,3 +17,4 @@ In the **Accounts** menu you have access to devices, extensions, gateways and us
 
   extensions_ivr/extensions.rst
   gateway_inbound_outbound/gateway1.rst
+  accounts_optional/xmpp.rst
