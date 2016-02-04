@@ -34,17 +34,12 @@ Enable XMPP
 
 ::
 
- '''cd /tmp'''
-
- '''git clone https://github.com/fusionpbx/fusionpbx-apps.git 
-
- '''cd fusionpbx-apps/'''
-
- '''mv xmpp/ /var/www/fusionpbx/app/'''
-
- '''cd /var/www/fusionpbx/app'''
-
- '''chown www-data:www-data -R xmpp/'''
+ cd /tmp
+ git clone https://github.com/fusionpbx/fusionpbx-apps.git 
+ cd fusionpbx-apps/
+ mv xmpp/ /var/www/fusionpbx/app/
+ cd /var/www/fusionpbx/app
+ chown www-data:www-data -R xmpp/
 
 
 
@@ -52,14 +47,19 @@ Goto Fusionpbx GUI
 
 | Goto the GUI and click advanced > menu manager > edit icon > click "Restore Defaults" at top right
 |
+
 | Then goto Advanced > Upgrade
 click Schema, Data Types, and Permission Defaults then click execute
+
 |
 | Click status > sip status > Flush Memcache
+
 |
 | Log out then back in
+
 |
 | You should now have XMPP Manager under Accounts
+
 |
 **XMPP Profile**
 | FusionPBX menu.
