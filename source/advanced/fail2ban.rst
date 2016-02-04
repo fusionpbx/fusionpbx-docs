@@ -49,8 +49,8 @@ Fail2Ban
  {| border="1"
  |+ Jail Options
  ! Name !! Default !! Description
--
-! filter ||
+ -
+ ! filter ||
 
 
 | Name of the filter to be used by the jail to detect matches. Each single match by a filter increments the counter within the jail.
