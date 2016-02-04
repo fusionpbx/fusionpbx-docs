@@ -14,42 +14,62 @@ Fail2Ban
 | **Examples**
 | **GUI Login**
 | incorrect username
-| Feb  1 11:35:11 your_hostname FusionPBX: [w.x.y.z] authentication failed for login_username
-| incorrect password
-| Feb  1 12:07:27 your_hostname FusionPBX: [w.x.y.z] authentication failed for superadmin
-| **=Provisioning**=
+
+::
+
+ Feb  1 11:35:11 your_hostname FusionPBX: [w.x.y.z] authentication failed for login_username
+ incorrect password
+ Feb  1 12:07:27 your_hostname FusionPBX: [w.x.y.z] authentication failed for superadmin
+
+
+| **Provisioning**
 | Created from the code in /fusionpbx/mod/provision/index.php Please doublecheck this!
-|  Feb  1 12:07:27 your_hostname FusionPBX: [w.x.y.z] provision attempt bad password for AA:BB:CC:DD:EE:FF
+
+::
+
+ Feb  1 12:07:27 your_hostname FusionPBX: [w.x.y.z] provision attempt bad password for AA:BB:CC:DD:EE:FF
 
 | **Setting up Fail2Ban**
 | **RegEx**
 | You can test the regex with fail2ban-regex
-| '[hostname] FusionPBX: \[<HOST>\] authentication failed'
+
+::
+
+ '[hostname] FusionPBX: \[<HOST>\] authentication failed'
+
 |
+
 | **Configuration**
 | **Jail Options**
-|
+
 | Every jail can be customized by tuning following options:
 
-| {| border="1"
-| |+ Jail Options
-| ! Name !! Default !! Description
-|-
-! filter || 
-| Name of the filter to be used by the jail to detect matches. Each single match by a filter increments the counter within the jail
-| |-
-| ! logpath || /var/log/messages
-| | Path to the log file which is provided to the filter
-| |-
-| ! maxretry || 3
-| | Number of matches (i.e. value of the counter) which triggers ban action on the IP.
-| |-
-| ! findtime || 600 sec
-| | The counter is set to zero if no match is found within "findtime" seconds.
-| |-
-| ! bantime || 600 sec
-| | Duration (in seconds) for IP to be banned for.
-| |}
+::
+
+ {| border="1"
+ |+ Jail Options
+ ! Name !! Default !! Description
+-
+! filter ||
+
+
+| Name of the filter to be used by the jail to detect matches. Each single match by a filter increments the counter within the jail.
+
+::
+
+ |-
+ ! logpath || /var/log/messages
+ | Path to the log file which is provided to the filter
+ |-
+ ! maxretry || 3
+ | Number of matches (i.e. value of the counter) which triggers ban action on the IP.
+ |-
+ ! findtime || 600 sec
+ | The counter is set to zero if no match is found within "findtime" seconds.
+ |-
+ ! bantime || 600 sec
+ | Duration (in seconds) for IP to be banned for.
+ |}
 
 |
 
