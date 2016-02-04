@@ -77,9 +77,13 @@ click Schema, Data Types, and Permission Defaults then click execute
  Auto-Login: yes
  XMPP Server: talk.google.com
 
+|
+
 | Two approaches can be used for the next part.
 
-| **Option 1.** Lets say my gmail number was 13051231234. This approach will send the inbound calls to the inbound routes with a destination number that is the default extension number that is set.
+| **Option 1.**
+
+| Lets say my gmail number was 13051231234. This approach will send the inbound calls to the inbound routes with a destination number that is the default extension number that is set.
 
 ::
 
@@ -96,7 +100,7 @@ click Schema, Data Types, and Permission Defaults then click execute
  Default extension: 1001
  Advanced -> Context: default
 
-**Option 3.**
+| **Option 3.**
 
 | On a single tenant system. This will send the call to extension 1001 in the multi-tenant domain name.
 
