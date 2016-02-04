@@ -15,6 +15,6 @@ In the **Applications** menu (Apps) section you will find Call Block, Call Broad
   :glob:
 
 
-  phones/phones.rst
-  phones/recordings.rst
+  applications/ivr.rst
+  applications/recordings.rst
   
