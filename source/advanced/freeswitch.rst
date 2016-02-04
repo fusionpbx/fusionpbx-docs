@@ -92,6 +92,8 @@ Freeswitch install
 
 | **Run Make**
 
+::
+
  make
 
 | **Remove FreeSWITCH files**
