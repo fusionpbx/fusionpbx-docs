@@ -165,7 +165,12 @@ Fail2Ban
 ::
 
  2011-02-01 12:32:18,151 fail2ban.actions: WARNING [fusionpbx] Ban 192.168.100.1
- hostname # iptables -n -L fail2ban-fusionpbx
+ 
+
+| hostname # iptables -n -L fail2ban-fusionpbx
+
+::
+
  Chain fail2ban-fusionpbx (1 referecnes)
  target    prot opt source        destination
  DROP      all  --  192.168.100.1 anywhere
