@@ -75,9 +75,10 @@ Getting Started
     getting_started.rst
     accounts.rst
     dialplan.rst
-    phones.rst
+    applications.rst
     advanced.rst
     manual.rst
+    testimonials.rst
     contributing.rst
     doc_guide.rst
 
