@@ -42,7 +42,7 @@ Fail2Ban
 | **Configuration**
 | **Jail Options**
 
-| Every jail can be customized by tuning following options:
+| Every jail can be customized by tuning the following options:
 
 +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 | Name                  | Default               |                                Description                                                                                        |
