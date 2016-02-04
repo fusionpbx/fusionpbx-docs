@@ -18,7 +18,12 @@ Fail2Ban
 ::
 
  Feb  1 11:35:11 your_hostname FusionPBX: [w.x.y.z] authentication failed for login_username
- incorrect password
+ 
+ 
+ | incorrect password
+ 
+ ::
+ 
  Feb  1 12:07:27 your_hostname FusionPBX: [w.x.y.z] authentication failed for superadmin
 
 
