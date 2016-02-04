@@ -10,7 +10,7 @@ Freeswitch install
 
  mv /usr/src/freeswitch freeswitch-version
 
-| **Git Release **
+| **Git Release**
 
 ::
 
@@ -21,7 +21,7 @@ Freeswitch install
 
 | or
 
-| **Git Head **
+| **Git Head**
 
 ::
 
