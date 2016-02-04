@@ -195,12 +195,16 @@ Fail2Ban
 
 | **Errors**
 | If you're seeing something like this in your fail2ban logfile:
-| 2011-02-27 14:11:42,326 fail2ban.actions.action: ERROR  iptables -N fail2ban-freeswitch-tcp
-| add the:
+
+::
+ 
+ 2011-02-27 14:11:42,326 fail2ban.actions.action: ERROR  iptables -N fail2ban-freeswitch-tcp
+
+
+| add the time.sleep(0.1) to /usr/bin/fail2ban-client
 
 ::
 
- time.sleep(0.1) to /usr/bin/fail2ban-client
  def __processCmd(self, cmd, showRet = True):
  beautifier = Beautifier()
  for c in cmd:
