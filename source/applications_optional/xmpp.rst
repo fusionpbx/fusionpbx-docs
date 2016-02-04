@@ -7,6 +7,9 @@ XMPP Manager
 .. image:: ../_static/images/fusionpbx_xmpp.jpg
         :scale: 85%
 
+|
+
+| XMPP Manager is an optional menu item.  In order to have the option for XMPP Manager there are a few step to take to enble XMPP.
 
 |
 
@@ -25,7 +28,7 @@ XMPP Manager
 Enable XMPP
 ############
 
-| XMPP Manager is an optional menu item.  In order to have the option for XMPP Manager there are a few step to take to enble XMPP.
+
 |
 
 | XMPP manager is used to configure client side XMPP profiles. It can be used as a client to register to make and receive call with Google Talk or other XMPP servers.
