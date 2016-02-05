@@ -75,9 +75,12 @@ Getting Started
     getting_started.rst
     accounts.rst
     dialplan.rst
-    phones.rst
-    domains.rst
+    applications.rst
+    advanced.rst
     manual.rst
+    advanced/fail2ban.rst
+    advanced/freeswitch.rst
+    testimonials.rst
     contributing.rst
     doc_guide.rst
 

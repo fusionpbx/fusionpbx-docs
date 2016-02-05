@@ -17,6 +17,6 @@ the multi-tenant domain side menu to configure and allow secure administration f
   :maxdepth: 3
   :glob:
 
-  domains/domains.rst
+  advanced/domains.rst
   advanced/upgrade.rst
 
