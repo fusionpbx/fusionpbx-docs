@@ -30,24 +30,24 @@ Benefits of FusionPBX
 
 | FusionPBX provides:
 
-| * Call Block
-| * Call Broadcast
-| * Call Flows
-| * Call Center
-| * Call Detail Records
-| * Conference Center
-| * Contacts
-| * Fax Server
-| * Follow-Me
-| * Hot Desking
-| * IVR Menus
-| * Multi-Tenant
-| * Music on Hold
-| * Queues
-| * Recording
-| * Time Groups
-| * Voicemail
-| * and lots more...
+* Call Block
+* Call Broadcast
+* Call Flows
+* Call Center
+* Call Detail Records
+* Conference Center
+* Contacts
+* Fax Server
+* Follow-Me
+* Hot Desking
+* IVR Menus
+* Multi-Tenant
+* Music on Hold
+* Queues
+* Recording
+* Time Groups
+* Voicemail
+* and lots more...
 
 Our Eco-System
 --------------
