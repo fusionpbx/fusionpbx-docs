@@ -28,7 +28,7 @@ New Install
     ::
      
      The pgsql username is fusionpbx
-     The pgsql database name is freeswitch
+     The pgsql database name is fusionpbx
      Please provide a password for the fusionpbx user
       Password:IloveFusionpbx
      Let's repeat that
