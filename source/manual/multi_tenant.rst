@@ -87,7 +87,9 @@ zoiper
 
 | We will walk through the process
 
-* **Zoiper.com account setup**
+
+Zoiper.com account setup
+========================
 
 | There are two parts to make this function. http://oem.zoiper.com and Fusionpbx menu add-on.
 
@@ -105,7 +107,8 @@ zoiper
 
 |
 
-* **Zoiper menu add-on for Fusionpbx**
+Zoiper menu add-on for Fusionpbx
+================================
 
 | On your server
 
