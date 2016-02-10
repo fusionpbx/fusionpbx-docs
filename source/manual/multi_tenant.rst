@@ -95,13 +95,13 @@ zoiper
 
 | This can be done with the FREE Zoiper OEM account or can use the paid versions for more customization like branding.
 
-| Go to: https://oem.zoiper.com/
-| Sign up for Login
-| Configure your Desktop and Mobile Apps with the information you want.
-| Then click "CONFIGURE" Under Desktop. 
-| This will give you a LINK with a PAGE ID:
-| https://www.zoiper.com/en/page/MYPAGEID?u=&h=&p=&o=&t=&x=&a=&tr="
-| Copy the page ID
+| 1. Go to: https://oem.zoiper.com/
+| 2. Sign up for Login
+| 3. Configure your Desktop and Mobile Apps with the information you want.
+| 4. Then click "CONFIGURE" Under Desktop. 
+| 5. This will give you a LINK with a PAGE ID:(32 character)
+| 6. https://www.zoiper.com/en/page/MYPAGEID?u=&h=&p=&o=&t=&x=&a=&tr="
+| 7. Copy the page ID
 
 |
 
@@ -122,13 +122,34 @@ zoiper
 
 | Advanced -> Default Settings
 
+| **Note** **MYPAGEID** and **provider_id** are two different sets of characters.  You can also find these by going into the oem.zoiper.com login and click "view" on the moblie section
+
+| **provider_id**
+
+::
+
+ provider_id
+ The Do It Yourself way: make your own page with instructions
+ 
+ If you want to customize this page, you can do so, just make sure to embed this html code on your website:
+ <img src="https://oem.zoiper.com/qr.php?provider_id=>>>>>>>09876543210987654321098765432199<<<<<<<&u=&h=&p=&o=&t=&x=&a=&tr=" alt="QR image"  />
+
+| **MYPAGEID**
+
+::
+
+ MYPAGEID
+ The easy way: send your customers to our landing page
+ Add a link on your website to this step by step tutorial on our website : (**click here** to see it in action).
+ <a href="https://www.zoiper.com/en/page/>>>>>>>>c1234567890123456789012345678901<<<<<<<?u=&h=&p=&o=&t=&x=&a=&tr=">Configuration instructions for Android and iOS</a>
+
 ::
 
  Add a Default Setting
  Category: zoiper
- Subcategory: page_id
+ Subcategory: provider_id(32 character)
  Type: text
- Value: MYPAGEID
+ Value: MYPAGEID(32 character)
  Enabled: True
  Save
 
