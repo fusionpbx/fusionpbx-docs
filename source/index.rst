@@ -60,7 +60,6 @@ Our Eco-System
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
 
-|
 Getting Started
 -------------------
 
