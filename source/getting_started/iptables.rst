@@ -22,7 +22,7 @@ Optional Rules
 ===============
 
 | OPENVPN: ``iptables -A INPUT -p udp --dport 1194 -j ACCEPT`` 
-| ICMP: `` iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
+| ICMP: ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
 
 Friendly Scanner
 ================
