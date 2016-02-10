@@ -18,4 +18,4 @@ Here you will find information on every menu item in FusionPBX
   manual/apps
   manual/status
   manual/advanced
-  manual/multi_tenant
+  manual/menu_add_ons
