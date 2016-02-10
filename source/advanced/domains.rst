@@ -60,6 +60,7 @@ Domain Selection
 | A menu will pop open on the right of the screen.  Click on the domain that you want to manage.  You will always see the domain you are in by looking at the top right beside the three stacked dashes.
 
 |
+
 .. image:: ../_static/images/fusionpbx_domain6.jpg
         :scale: 75%
 
