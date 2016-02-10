@@ -11,7 +11,7 @@ the multi-tenant domain side menu to configure and allow secure administration f
 
 .. image:: _static/images/fusionpbx_advanced_menu.jpg
         :scale: 85%
-        :align: top
+        :align: right
 
 
 .. toctree::
