@@ -78,7 +78,7 @@ voicemail_status
 xmpp
 ----
 
-zoiper
+Zoiper
 -------
 
 | QR and app provisioning with Zoiper
