@@ -104,11 +104,8 @@ Bridge statement should look like: dingaling/gtalk/+$1@voice.google.com replace 
 
 |
 
-
-
-############
 Enable XMPP
-############
+===========
 
 
 |
