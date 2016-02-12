@@ -128,7 +128,7 @@ Zoiper menu add-on for Fusionpbx
 | **Note** **MYPAGEID** and **provider_id** are two different sets of characters.  You can also find these by going into the oem.zoiper.com login and click "view" on the moblie section.
 
 
-.. image:: ../../_static/images/fusionpbx_zoiper9.jpg
+.. image:: ../_static/images/fusionpbx_zoiper9.jpg
         :scale: 85%
 
 | **provider_id**
