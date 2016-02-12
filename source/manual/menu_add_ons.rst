@@ -129,7 +129,7 @@ Zoiper menu add-on for Fusionpbx
 
 
 .. image:: ../_static/images/fusionpbx_zoiper9.jpg
-        :scale: 85%
+        :scale: 75%
 
 | **provider_id**
 
