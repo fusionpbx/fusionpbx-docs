@@ -1,6 +1,6 @@
 
 Registering Phones
-==================
+-------------------
 
 |
 
@@ -13,7 +13,7 @@ Use this to configure your SIP extensions.
 |
 
 Grandstream
-============
+^^^^^^^^^^^^
 
 .. image:: ../_static/images/fusionpbx_grandstream4.jpg
         :scale: 85%
@@ -77,7 +77,7 @@ Click **Update** then click **Apply** at the bottom
 |
 
 Zoiper
-=======
+^^^^^^^
 
 |
 
