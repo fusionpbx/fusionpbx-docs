@@ -73,6 +73,7 @@ Getting Started
     advanced.rst
     manual.rst
     additional_information.rst
+    contributing.rst
     doc_guide.rst
 
 
