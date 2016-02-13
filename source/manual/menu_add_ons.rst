@@ -74,14 +74,23 @@ servers
 signup
 -------
 
+| Allows customers on the internet to signup for a user account.
+
 sipml5
 -------
+
+| Add sipml5 an optional webrtc client.
 
 soft_phone
 -----------
 
+| Freeswitch Softphone used with  mod_portaudio.
+| See http://wiki.freeswitch.org/wiki/Mod_portaudio and http://wiki.freeswitch.org/wiki/Freeswitch_softphone
+
 tickets
 --------
+
+| Simple Ticket Tracking System To allow customer Support
 
 users_bulk_add
 ---------------
@@ -89,11 +98,18 @@ users_bulk_add
 voicemail_msgs
 --------------
 
+| Voicemails can be listed, played, downloaded and deleted. (Now part of Apps -> Voicemail
+
 voicemail_status
 ----------------
 
+| Shows which extensions have voicemails and how many.
+
 xmpp
 ----
+
+| XMPP Manager is an optional menu item. In order to have the option for XMPP Manager there are a few step to take to enble XMPP. Utilizes the Jingle protocol. Jingle is an extension to the Jabber/XMPP protocol.
+| http://docs.fusionpbx.com/en/latest/applications_optional/xmpp.html
 
 Zoiper
 -------
@@ -106,7 +122,7 @@ Zoiper
 
 
 Zoiper.com account setup
-========================
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 | There are two parts to make this function. http://oem.zoiper.com and Fusionpbx menu add-on.
 
@@ -125,7 +141,7 @@ Zoiper.com account setup
 |
 
 Zoiper menu add-on for Fusionpbx
-================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | On your server
 
