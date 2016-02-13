@@ -72,9 +72,7 @@ Getting Started
     applications.rst
     advanced.rst
     manual.rst
-    advanced/fail2ban.rst
-    advanced/freeswitch.rst
-    testimonials.rst
+    additional_information.rst
     contributing.rst
     doc_guide.rst
 

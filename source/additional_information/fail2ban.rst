@@ -2,7 +2,7 @@
 Fail2Ban
 ##########
 
-| For information about Fail2Ban on FreeSWITCH, http://wiki.freeswitch.org/wiki/Fail2ban see their wiki
+| For information about Fail2Ban on FreeSWITCH, http://wiki.freeswitch.org/wiki/Fail2ban see their wiki.
 
 | **Logs**
 | This will log FusionPBX authentication failures to syslog (AUTH_LOG). This file can be in different places depending on how rsyslog, or syslog is configured.
