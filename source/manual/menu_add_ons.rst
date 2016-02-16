@@ -2,28 +2,33 @@
 Menu Add-ons
 *************
 
-  Menu add-ons are apps thats are either not in the menu by default or archived and could be deprecated.  https://github.com/fusionpbx/fusionpbx-apps
+|  Menu add-ons are apps thats are either not in the menu by default or archived and could be deprecated.  https://github.com/fusionpbx/fusionpbx-apps
   
 |
 
-Acl
+*Acl*
 ----
 
-Move the acl to the optional Apps directory as it isn't completed yet
+| **deprecated** (Now part of Advanced -> Access Controls)
 
 cdr
 ----
 
-Content placeholder
+| Optional version of Apps -> Call Detail Records.
+
 
 content
 -------
+
+| Manage Content for any page in the interface.
 
 fifo_agents
 -----------
 
 get_call_details
 ----------------
+
+| Get call details for active calls results are in json.
 
 hot_desking
 -----------
@@ -33,17 +38,27 @@ Code integrated starting version 4.0.0 (Goto Accounts > Devices for current hot_
 hunt_groups
 -----------
 
+|  **deprecated** (Now part of Appsv-> Ring Groups) A Hunt Group is a list of destinations that can be called in sequence or simultaneously.
+
 invoices
 --------
+
+| A handy way to make an invoice or quote PDF for clients.
 
 languages
 ---------
 
+| initial version of languages.
+
 php_service
 -----------
 
+| Manages multiple dynamic and customizable services. There are many possible uses including alerts, ssh access control, scheduling commands to run, and many others uses that are yet to be discovered.
+
 profiles
 --------
+
+| Use this to configure your SIP profiles.
 
 roku
 -----
@@ -51,20 +66,31 @@ roku
 schemas
 -------
 
+| Provides the ability to quickly define information to store and dynamically makes tools available to view, add, edit, delete, and search.
+
 servers
 -------
 
 signup
 -------
 
+| Allows customers on the internet to signup for a user account.
+
 sipml5
 -------
+
+| Add sipml5 an optional webrtc client.
 
 soft_phone
 -----------
 
+| Freeswitch Softphone used with  mod_portaudio.
+| See http://wiki.freeswitch.org/wiki/Mod_portaudio and http://wiki.freeswitch.org/wiki/Freeswitch_softphone
+
 tickets
 --------
+
+| Simple Ticket Tracking System To allow customer Support
 
 users_bulk_add
 ---------------
@@ -72,11 +98,18 @@ users_bulk_add
 voicemail_msgs
 --------------
 
+| Voicemails can be listed, played, downloaded and deleted. (Now part of Apps -> Voicemail
+
 voicemail_status
 ----------------
 
+| Shows which extensions have voicemails and how many.
+
 xmpp
 ----
+
+| XMPP Manager is an optional menu item. In order to have the option for XMPP Manager there are a few step to take to enble XMPP. Utilizes the Jingle protocol. Jingle is an extension to the Jabber/XMPP protocol.
+| http://docs.fusionpbx.com/en/latest/applications_optional/xmpp.html
 
 Zoiper
 -------
@@ -89,7 +122,7 @@ Zoiper
 
 
 Zoiper.com account setup
-========================
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 | There are two parts to make this function. http://oem.zoiper.com and Fusionpbx menu add-on.
 
@@ -108,7 +141,7 @@ Zoiper.com account setup
 |
 
 Zoiper menu add-on for Fusionpbx
-================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | On your server
 
