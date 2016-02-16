@@ -46,6 +46,7 @@ Feature Codes
 | *925                   | Wakeup Call             | Schedule a wakeup call                                                        |
 +------------------------+-------------------------+-------------------------------------------------------------------------------+
 
+| **Administrative PIN** (Recordings pin) can be found here `Administrative PIN </en/latest/applications/recordings.html>`__ page
 
 **Voicemail**
 ^^^^^^^^^^^^^
