@@ -5,6 +5,8 @@ Password Reset
 
 | Here some rough steps to change the password of the database. The password can only be changed and not recovered.
 
+|
+
 | The database contains a table called v_users which contains the username, password and salt. The password is the md5 hash of the password and the salt. 
 
 **Password Hash**
