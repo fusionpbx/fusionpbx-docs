@@ -2,9 +2,7 @@
 Extensions
 ************
 
-|
-
-Welcome to the adding Extensions section.  Here you will find how to add Extensions. 
+| Welcome to the adding Extensions section.  Here you will find how to add Extensions. 
 
 |
 
