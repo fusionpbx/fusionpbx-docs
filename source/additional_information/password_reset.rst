@@ -7,7 +7,7 @@ Password Reset
 
 |
 
-| The database contains a table called v_users which contains the username, password and salt. The password is the md5 hash of the password and the salt. 
+| The database contains a table called **v_users** which contains the username, password and salt. The password is the md5 hash of the password and the salt. 
 
 **Password Hash**
 ^^^^^^^^^^^^^^^^^
