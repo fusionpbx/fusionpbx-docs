@@ -1,6 +1,4 @@
-#######
-Home
-#######
+| 
 
 
 .. image:: _static/images/fusionpbx_home_menu.jpg
