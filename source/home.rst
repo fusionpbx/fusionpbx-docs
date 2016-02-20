@@ -7,7 +7,7 @@ Home
         :scale: 85%
 
 
-
+| In the home menu you have the options for **Account Settings**, **Logout** and **User Dashboard**. 
 
 
 
