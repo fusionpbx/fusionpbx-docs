@@ -20,7 +20,7 @@ Extensions
 Gateways
 --------
 
--  `Gateways </en/latest/Gateways>`__ - to define the outbound gateways that are used to make calls to destinations outside of your FusionPBX/FreeSWITCH server
+-  `Gateways </en/latest/Gateways/gateway_inbound_outbound/gateway1.html>`__ - to define the outbound gateways that are used to make calls to destinations outside of your FusionPBX/FreeSWITCH server
 
 User Manager
 ------------

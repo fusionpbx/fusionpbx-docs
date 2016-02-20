@@ -7,7 +7,7 @@ Password Reset
 
 |
 
-| The database contains a table called v_users which contains the username, password and salt. The password is the md5 hash of the password and the salt. 
+| The database contains a table called **v_users** which contains the username, password and salt. The password is the md5 hash of the password and the salt. 
 
 **Password Hash**
 ^^^^^^^^^^^^^^^^^
@@ -38,7 +38,11 @@ Password Reset
 **PostgreSQL**
 ^^^^^^^^^^^^^^^
 
-| Connect to the PostgreSQL database. Once you are running psql you can use \l to list the databases and \c to connect to one of them. After running the SQL Query then use \q to quit.
+| Connect to the PostgreSQL database. Once you are running psql you can use:
+
+* \\l to list the databases.
+* \\c to connect to one of them.
+* After running the SQL Query then use \q to quit.
 
 ::
 

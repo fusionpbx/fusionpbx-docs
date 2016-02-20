@@ -67,11 +67,13 @@ Getting Started
     :maxdepth: 2
 
     getting_started.rst
+    home.rst
     accounts.rst
     dialplan.rst
     applications.rst
+    status.rst
     advanced.rst
-    manual.rst
+    manual/menu_add_ons.rst
     additional_information.rst
     contributing.rst
     doc_guide.rst
