@@ -24,7 +24,7 @@ Create a Recording
 |
 
 1. Dial *732 and wait for the voice prompt
-2. Enter the passowrd (pin_number) followed by the pound sign# 
+2. Enter the password (pin_number) followed by the pound sign# 
    Enter at least a 3 digit number.  This will label the recording file. (recording100.wav)
 3. start talking to make the recording after the voice prompt and press the pound key #
 4. Press 1 to accept the recording then hang up or press 2 to start over.
