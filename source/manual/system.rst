@@ -5,7 +5,7 @@ Home
 Account Settings
 ----------------
 
-The account settings for the currently logged on user. Status, Language, Time Zone and Passowrd
+The account settings for the currently logged on user. Status, Language, Time Zone and Password
 
 Logout
 ------
