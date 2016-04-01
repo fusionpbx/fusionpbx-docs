@@ -128,5 +128,5 @@ New Install
 
 ::
 
-  go to advanced -> default settings >  menu style >  set to inline
+  go to advanced -> default settings >  menu_style >  set to inline
 
