@@ -122,4 +122,11 @@ New Install
         :scale: 50%
       
     
-    
+|
+
+**Note**: To display the logo at the top and not in the menu
+
+::
+
+  go to advanced -> default settings >  menu style >  set to inline
+
