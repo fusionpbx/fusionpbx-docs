@@ -63,12 +63,13 @@ Delete line 2
 Block IP address
 ================
 
-iptables -I INPUT -s 62.210.245.132 -j DROP
+``iptables -I INPUT -s 62.210.245.132 -j DROP``
 
 Save Changes
 ============
 
 Debian / Ubuntu
 
-| `` apt-get install iptables-persistent``
-| `` service iptables-persistent save``
+| ``apt-get install iptables-persistent``
+| ``service iptables-persistent save``
+| ``dpkg-reconfigure iptables-persistent``
