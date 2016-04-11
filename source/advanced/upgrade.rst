@@ -571,3 +571,40 @@ Version 2 to 3.0
 
 |
 
+SQLite
+^^^^^^
+
+SQLite is the FreeSWITCH default. Databases are located in the freeswitch/db directory.
+
+ODBC
+^^^^^
+
+http://wiki.freeswitch.org/wiki/ODBC
+
+Postgres
+^^^^^^^^^
+
+Postgres native support will be in FreeSWITCH 1.2.4 but has been available in the Main GIT branch.
+
+Dependencies
+^^^^^^^^^^^^^
+
+libpq and the associated dev packages are required
+
+Configure
+^^^^^^^^^^
+
+To enable PostgresSQL as a native client in FreeSWITCH you must enable it during the build when running configure.
+** ./configure --enable-core-pgsql-support **
+
+switch.conf.xml
+^^^^^^^^^^^^^^^^^
+
+Under the Settings area insert the following line
+
+ <param name="core-db-dsn" value="pgsql;hostaddr=127.0.0.1 dbname=freeswitch user=freeswitch password='' options='-c client_min_messages=NOTICE' application_name='freeswitch'" />
+
+Additional Information
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+http://wiki.freeswitch.org/wiki/PostgreSQL_in_the_core
