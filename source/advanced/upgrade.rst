@@ -107,9 +107,9 @@ Used to update FusionPBX to the latest release.
  rm -Rf /usr/local/freeswitch/scripts/
  cd /usr/src
  git clone https://github.com/fusionpbx/fusionpbx.git
- cp /fusionpbx/resources/install/scripts /usr/local/freeswitch
+ cp -R /var/www/fusionpbx/resources/install/scripts /usr/local/freeswitch
  chown -R www-data:www-data /usr/local/freeswitch/scripts
- cp /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
+ cp -R /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
 
 (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
 
