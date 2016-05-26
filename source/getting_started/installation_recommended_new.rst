@@ -9,31 +9,31 @@ New Install
     Welcome to the FUSIONPBX getting started guide.  In this section we will show how to install FUSIONPBX.  FUSIONPBX can be used on multiple different operating systems, databases, and web servers.  In this guide we will show on Debian 8 (Jessie), Postgresql and NGINX.  **Please note to have a clean install.  The install script will install everthing but the Operating System**
     
     
-    **1.** Goto a console and follow the recomended steps from http://fusionpbx.com/download.php  
+    **1.** Goto a console and follow the recomended steps from http://fusionpbx.com/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh readme section for more details.  
+        This install script that has been designed to be an fast, simple, and modular way to to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. It installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM, and PostgreSQL.
      
     ::
      
-     cd /usr/src 
-     apt-get install wget  
-     wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/install/debian/install_fusionpbx.sh  
-     chmod 755 install_fusionpbx.sh 
-     ./install_fusionpbx.sh install-both auto 
+     apt-get update && apt-get upgrade && apt-get install -y git
+     cd /usr/src
+     git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
+     chmod 755 -R /usr/src/fusionpbx-install.sh
+     cd /usr/src/fusionpbx-install.sh/debian
+     ./install.sh 
      
 |
 
-    **2.** The install script will apt-get update/upgrade the system and ask you a few questions
+    **2.** At the end of the install it will instruct you to go to the ip address of the server in your web browser to finish the install. It will also provide a random database password for you to use during the web based phase of the install. The install script builds the fusionpbx database so you will not need to use the create database username and password on the last page of the web based install.
+
+        After you have completed the install you can login with the username and password you chose during the install. After you login go to them menu then Advanced -> Upgrade select the checkbox for App defaults. 
      
      
     ::
      
-     The pgsql username is fusionpbx
-     The pgsql database name is fusionpbx
-     Please provide a password for the fusionpbx user
-      Password:IloveFusionpbx
-     Let's repeat that
-      Password:IloveFusionpbx
+     systemctl daemon-reload
+     systemctl restart freeswitch
      
-    *It can take between 15-30 minutes to compile and install*
+    *It can take between 15-20 minutes to install*
 
 |
 
@@ -48,7 +48,7 @@ New Install
      ON the Second Page:
      Database Name: fusionpbx
      Database Username: fusionpbx
-     Database Password: whateveryouentered
+     Database Password: generated_password
      Create Database Username: Leave_Blank
      Create Database Password: Leave_Blank
  
@@ -124,6 +124,7 @@ New Install
       
     
 |
+Then go to Status -> SIP Status and start the SIP profiles, after this, go to Advanced -> Modules and find the module Memcached and click start.
 
 **Note**: To display the logo at the top and not in the menu
 
