@@ -11,14 +11,14 @@ Welcome to the FUSIONPBX getting started guide.  In this section we will show ho
 **1.** Goto a console and follow the recomended steps from http://fusionpbx.com/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh readme section for more details.  
 This install script that has been designed to be an fast, simple, and modular way to to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. It installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM, and PostgreSQL.
      
-    ::
+::
      
-     apt-get update && apt-get upgrade && apt-get install -y git
-     cd /usr/src
-     git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
-     chmod 755 -R /usr/src/fusionpbx-install.sh
-     cd /usr/src/fusionpbx-install.sh/debian
-     ./install.sh 
+  apt-get update && apt-get upgrade && apt-get install -y git
+  cd /usr/src
+  git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
+  chmod 755 -R /usr/src/fusionpbx-install.sh
+  cd /usr/src/fusionpbx-install.sh/debian
+  ./install.sh 
      
 |
 
@@ -27,12 +27,12 @@ This install script that has been designed to be an fast, simple, and modular wa
 After you have completed the install you can login with the username and password you chose during the install. After you login go to them menu then Advanced -> Upgrade select the checkbox for App defaults. 
      
      
-    ::
+::
      
      systemctl daemon-reload
      systemctl restart freeswitch
      
-    *It can take between 15-20 minutes to install*
+*It can take between 15-20 minutes to install*
 
 |
 
