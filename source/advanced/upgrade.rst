@@ -107,9 +107,9 @@ Used to update FusionPBX to the latest release.
  rm -Rf /usr/local/freeswitch/scripts/
  cd /usr/src
  git clone https://github.com/fusionpbx/fusionpbx.git
- cp /fusionpbx/resources/install/scripts /usr/local/freeswitch
+ cp -R /var/www/fusionpbx/resources/install/scripts /usr/local/freeswitch
  chown -R www-data:www-data /usr/local/freeswitch/scripts
- cp /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
+ cp -R /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
 
 (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
 
@@ -571,3 +571,40 @@ Version 2 to 3.0
 
 |
 
+SQLite
+^^^^^^
+
+SQLite is the FreeSWITCH default. Databases are located in the freeswitch/db directory.
+
+ODBC
+^^^^^
+
+http://wiki.freeswitch.org/wiki/ODBC
+
+Postgres
+^^^^^^^^^
+
+Postgres native support will be in FreeSWITCH 1.2.4 but has been available in the Main GIT branch.
+
+Dependencies
+^^^^^^^^^^^^^
+
+libpq and the associated dev packages are required
+
+Configure
+^^^^^^^^^^
+
+To enable PostgresSQL as a native client in FreeSWITCH you must enable it during the build when running configure.
+** ./configure --enable-core-pgsql-support **
+
+switch.conf.xml
+^^^^^^^^^^^^^^^^^
+
+Under the Settings area insert the following line
+
+ <param name="core-db-dsn" value="pgsql;hostaddr=127.0.0.1 dbname=freeswitch user=freeswitch password='' options='-c client_min_messages=NOTICE' application_name='freeswitch'" />
+
+Additional Information
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+http://wiki.freeswitch.org/wiki/PostgreSQL_in_the_core

@@ -16,3 +16,6 @@ User Dashboard
 --------------
 
 Quickly access information and tools related to your account. 
+
+.. image:: ../_static/images/fusionpbx_dashboard.jpg
+        :scale: 50%
