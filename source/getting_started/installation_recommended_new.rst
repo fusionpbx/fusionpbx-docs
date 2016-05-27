@@ -87,7 +87,6 @@ After you have completed the install you can login with the GUI username and pas
      .. image:: ../_static/images/install_database_config_new.jpg
         :scale: 85% 
      
-     **Don't change anything here** 
      
 |
 
