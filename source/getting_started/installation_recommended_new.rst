@@ -27,6 +27,18 @@ This install script is designed to be an fast, simple, and in a modular way to i
 
 After you have completed the install you can login with the GUI username and password you chose during the install. After you login, go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute. 
      
+
+::
+
+   PostgreSQL
+   Database name: fusionpbx
+   Database username: fusionpbx
+   Database password: PasswordSuperSecureFusionPBX
+
+   Complete the install by by going to the IP address of this server
+   in your web browser or with a domain name for this server.
+   https://000.000.000.000
+
      
 ::
      
@@ -57,13 +69,13 @@ After you have completed the install you can login with the GUI username and pas
      
 **4.** Web browser Installation part
      :Select Language: **Pick your language. Click next**
-     .. image:: ../_static/images/install_lang.jpg
+     .. image:: ../_static/images/install_lang_new.jpg
         :scale: 85%
 
 |
 
      :Freeswitch Detect: **Detecting folder paths used** 
-     .. image:: ../_static/images/install_detect_freeswitch.jpg
+     .. image:: ../_static/images/install_detect_freeswitch_new.jpg
         :scale: 85% 
 
      
@@ -72,7 +84,7 @@ After you have completed the install you can login with the GUI username and pas
 |
 
      :Database Configuration: **Click Execute**
-     .. image:: ../_static/images/install_database_config.jpg
+     .. image:: ../_static/images/install_database_config_new.jpg
         :scale: 85% 
      
      **Don't change anything here** 
@@ -80,40 +92,12 @@ After you have completed the install you can login with the GUI username and pas
 |
 
      :Admin Login Configuration: **Click Next**
-     .. image:: ../_static/images/install_admin_username.jpg
+     .. image:: ../_static/images/install_admin_username_new.jpg
         :scale: 85% 
      
      This will create the superadmin login that will be used in your web browser.
 
- 
-|
 
-    **5.** Goto Console and press enter 
-    ::
-     When PostgreSQL is configured come back and press enter.
-     
-     The FusionPBX installation changed permissions of /usr/local/freeswitch/storage
-     Waiting on you to finish installation (via browser), I'll clean up
-     the last bit of permissions when you finish.Waiting on /var/www/fusionpbx/resources/config.php
-     
-     /var/www/fusionpbx/resources/config.php Found!
-     Waiting 5 more seconds to be sure.
-     .....   Fixing...
-     FIXED
-     Setting up Fail2Ban for FusionPBX
-     
-     
-     
-     Installation Completed.  Now configure FreeSWITCH via the FusionPBX browser interface
-     
-     http://104.233.77.151
-     Default login is (whatever you picked in the GUI install):
-     User: WhateverUsernameYouPicked
-     Password: YourPasswordYouPicked
-     Checking to see if FreeSWITCH is running!
-        
-     
-    
 |
 
      :Install Finished:  **Login with the username and password you choose during the install**
