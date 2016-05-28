@@ -77,7 +77,7 @@ After you have completed the install you can login with the GUI username and pas
     
 |
 
-     :Database Configuration: **Click Execute**
+     :Database Configuration: **Click Next**
      .. image:: ../_static/images/install_database_config_new.jpg
         :scale: 85% 
      
@@ -97,11 +97,33 @@ After you have completed the install you can login with the GUI username and pas
      
      
       .. image:: ../_static/images/ilogin.jpg
-        :scale: 50%
+        :scale: 80%
       
     
 |
-Then go to Status -> SIP Status and start the SIP profiles, after this, go to Advanced -> Modules and find the module Memcached and click start.
+Start Sip Profiles
+
+::
+
+  Go to Status -> SIP Status and start the SIP profiles
+
+.. image:: ../_static/images/fusionpbx_sip_status.jpg
+        :scale: 85%
+
+Start Memcached
+
+::
+
+    Go to Advanced -> Modules and find the module Memcached and click start.
+
+Run App defaults
+
+::
+
+  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
+  
+.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
+        :scale: 85%  
 
 **Note**: To display the logo at the top and not in the menu
 
