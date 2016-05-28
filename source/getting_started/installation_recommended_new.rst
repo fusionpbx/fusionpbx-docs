@@ -10,7 +10,7 @@ Welcome to the FUSIONPBX getting started guide.  In this section we will show ho
     
 **1.** Goto a console and follow the recomended steps from http://fusionpbx.com/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh readme section for more details.
 
-This install script is designed to be an fast, simple, and in a modular way to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. It installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
+This install script is designed to be an fast, simple, and in a modular way to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
      
 ::
      
@@ -23,7 +23,7 @@ This install script is designed to be an fast, simple, and in a modular way to i
      
 |
 
-**2.** At the end of the install it will instruct you to go to the ip address of the server in your web browser to finish the install. The script will also provide a secure random database password for you to use during the web based phase of the install. The install script builds the fusionpbx database so you will not need to use the create database username and password on the last page of the web based install.
+**2.** At the end of the install the script will instruct you to go to the ip address of the server in your web browser to finish the install. The script will also provide a secure random database password for you to use during the web based phase of the install. The install script builds the fusionpbx database so you will not need to use the create database username and password on the last page of the web based install.
 
 After you have completed the install you can login with the GUI username and password you chose during the install. After you login, go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute. 
      
@@ -39,12 +39,6 @@ After you have completed the install you can login with the GUI username and pas
    in your web browser or with a domain name for this server.
    https://000.000.000.000
 
-     
-::
-     
-     systemctl daemon-reload
-     systemctl restart freeswitch
-     
 *It can take between 15-20 minutes to install*
 
 |
@@ -55,7 +49,7 @@ After you have completed the install you can login with the GUI username and pas
      Now you'll need to manually finish the install and come back
      This way I can finish up the last bit of permissions issues
      Just go to
-     http://ur_domain_or_ip.com
+     https://000.000.000.000
      MAKE SURE YOU CHOOSE PostgreSQL as your Database on the first page!!!
      ON the Second Page:
      Database Name: fusionpbx
@@ -83,11 +77,10 @@ After you have completed the install you can login with the GUI username and pas
     
 |
 
-     :Database Configuration: **Click Execute**
+     :Database Configuration: **Click Next**
      .. image:: ../_static/images/install_database_config_new.jpg
         :scale: 85% 
      
-     **Don't change anything here** 
      
 |
 
@@ -104,11 +97,36 @@ After you have completed the install you can login with the GUI username and pas
      
      
       .. image:: ../_static/images/ilogin.jpg
-        :scale: 50%
+        :scale: 80%
       
     
 |
-Then go to Status -> SIP Status and start the SIP profiles, after this, go to Advanced -> Modules and find the module Memcached and click start.
+Start Sip Profiles
+
+::
+
+  Go to Status -> SIP Status and start the SIP profiles
+
+.. image:: ../_static/images/fusionpbx_sip_status.jpg
+        :scale: 85%
+
+Start Memcached
+
+::
+
+    Go to Advanced -> Modules and find the module Memcached and click start.
+    
+.. image:: ../_static/images/fusionpbx_start_memcached.jpg
+        :scale: 85%
+
+Run App defaults
+
+::
+
+  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
+  
+.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
+        :scale: 85%  
 
 **Note**: To display the logo at the top and not in the menu
 

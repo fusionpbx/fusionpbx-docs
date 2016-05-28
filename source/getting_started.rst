@@ -17,7 +17,7 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
   :maxdepth: 3
   :glob:
 
-  getting_started/installation_recommended.rst
+  getting_started/installation_recommended_new.rst
   getting_started/register_phones.rst
   getting_started/post_installation.rst
   iptables.rst
