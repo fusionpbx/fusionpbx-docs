@@ -115,6 +115,9 @@ Start Memcached
 ::
 
     Go to Advanced -> Modules and find the module Memcached and click start.
+    
+.. image:: ../_static/images/fusionpbx_start_memcached.jpg
+        :scale: 85%
 
 Run App defaults
 
