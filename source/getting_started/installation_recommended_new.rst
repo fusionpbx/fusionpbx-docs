@@ -110,6 +110,7 @@ Start Sip Profiles
 .. image:: ../_static/images/fusionpbx_sip_status.jpg
         :scale: 85%
 
+|
 Start Memcached
 
 ::
@@ -119,6 +120,7 @@ Start Memcached
 .. image:: ../_static/images/fusionpbx_start_memcached.jpg
         :scale: 85%
 
+|
 Run App defaults
 
 ::
@@ -128,6 +130,7 @@ Run App defaults
 .. image:: ../_static/images/fusionpbx_upgrade_page.jpg
         :scale: 85%  
 
+|
 **Note**: To display the logo at the top and not in the menu
 
 ::
