@@ -70,23 +70,24 @@ After you have completed the install you can login with the GUI username and pas
 |
 Freeswitch Detect **Detecting folder paths used**
     
-    .. image:: ../_static/images/install_detect_freeswitch_new.jpg
+.. image:: ../_static/images/install_detect_freeswitch_new.jpg
         :scale: 85% 
 
-     
-     **Don't change anything here**
+**Don't change anything here**
     
 |
 
-    :Database Configuration: **Click Next**
-    .. image:: ../_static/images/install_database_config_new.jpg
+Database Configuration **Click Next**
+
+.. image:: ../_static/images/install_database_config_new.jpg
         :scale: 85% 
      
      
 |
 
-    :Admin Login Configuration: **Click Next**
-    .. image:: ../_static/images/install_admin_username_new.jpg
+Admin Login Configuration **Click Next**
+
+.. image:: ../_static/images/install_admin_username_new.jpg
         :scale: 85% 
      
      This will create the superadmin login that will be used in your web browser.
@@ -94,10 +95,10 @@ Freeswitch Detect **Detecting folder paths used**
 
 |
 
-    :Install Finished:  **Login with the username and password you choose during the install**
+Install Finished  **Login with the username and password you choose during the install**
      
      
-     .. image:: ../_static/images/ilogin.jpg
+.. image:: ../_static/images/ilogin.jpg
         :scale: 80%
       
     
