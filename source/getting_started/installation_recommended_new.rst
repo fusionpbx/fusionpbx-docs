@@ -62,13 +62,14 @@ After you have completed the install you can login with the GUI username and pas
 
      
 **4.** Web browser Installation part
-    :Select Language: **Pick your language. Click next**
+    Select Language **Pick your language. Click next**
+    
     .. image:: ../_static/images/install_lang_new.jpg
         :scale: 85%
 
 |
-
-    :Freeswitch Detect: **Detecting folder paths used** 
+Freeswitch Detect **Detecting folder paths used**
+    
     .. image:: ../_static/images/install_detect_freeswitch_new.jpg
         :scale: 85% 
 
