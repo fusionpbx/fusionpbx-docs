@@ -90,8 +90,7 @@ Admin Login Configuration **Click Next**
 .. image:: ../_static/images/install_admin_username_new.jpg
         :scale: 85% 
      
-     This will create the superadmin login that will be used in your web browser.
-
+This will create the superadmin login that will be used in your web browser.
 
 |
 
