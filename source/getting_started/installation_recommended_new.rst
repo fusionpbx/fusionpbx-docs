@@ -39,7 +39,7 @@ After you have completed the install you can login with the GUI username and pas
    in your web browser or with a domain name for this server.
    https://000.000.000.000
 
-*It can take between 15-20 minutes to install*
+*It can take between 2-10 minutes to install* (Depending on internet speed)
 
 |
 
@@ -62,41 +62,42 @@ After you have completed the install you can login with the GUI username and pas
 
      
 **4.** Web browser Installation part
-     :Select Language: **Pick your language. Click next**
-     .. image:: ../_static/images/install_lang_new.jpg
+    Select Language **Pick your language. Click next**
+    
+    .. image:: ../_static/images/install_lang_new.jpg
         :scale: 85%
 
 |
-
-     :Freeswitch Detect: **Detecting folder paths used** 
-     .. image:: ../_static/images/install_detect_freeswitch_new.jpg
+Freeswitch Detect **Detecting folder paths used**
+    
+.. image:: ../_static/images/install_detect_freeswitch_new.jpg
         :scale: 85% 
 
-     
-     **Don't change anything here**
+**Don't change anything here**
     
 |
 
-     :Database Configuration: **Click Next**
-     .. image:: ../_static/images/install_database_config_new.jpg
+Database Configuration **Click Next**
+
+.. image:: ../_static/images/install_database_config_new.jpg
         :scale: 85% 
      
      
 |
 
-     :Admin Login Configuration: **Click Next**
-     .. image:: ../_static/images/install_admin_username_new.jpg
+Admin Login Configuration **Click Next**
+
+.. image:: ../_static/images/install_admin_username_new.jpg
         :scale: 85% 
      
-     This will create the superadmin login that will be used in your web browser.
-
+This will create the superadmin login that will be used in your web browser.
 
 |
 
-     :Install Finished:  **Login with the username and password you choose during the install**
+Install Finished  **Login with the username and password you choose during the install**
      
      
-      .. image:: ../_static/images/ilogin.jpg
+.. image:: ../_static/images/ilogin.jpg
         :scale: 80%
       
     
@@ -110,6 +111,7 @@ Start Sip Profiles
 .. image:: ../_static/images/fusionpbx_sip_status.jpg
         :scale: 85%
 
+|
 Start Memcached
 
 ::
@@ -119,6 +121,7 @@ Start Memcached
 .. image:: ../_static/images/fusionpbx_start_memcached.jpg
         :scale: 85%
 
+|
 Run App defaults
 
 ::
@@ -128,6 +131,7 @@ Run App defaults
 .. image:: ../_static/images/fusionpbx_upgrade_page.jpg
         :scale: 85%  
 
+|
 **Note**: To display the logo at the top and not in the menu
 
 ::
