@@ -39,7 +39,7 @@ After you have completed the install you can login with the GUI username and pas
    in your web browser or with a domain name for this server.
    https://000.000.000.000
 
-*It can take between 15-20 minutes to install*
+*It can take between 2-10 minutes to install* (Depending on internet speed)
 
 |
 
