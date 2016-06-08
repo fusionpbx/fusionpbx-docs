@@ -7,7 +7,7 @@ New Install
 Welcome to the FUSIONPBX getting started guide.  In this section we will show how to install FUSIONPBX.  FUSIONPBX can be used on multiple different operating systems, databases, and web servers.  In this guide we will show on Debian 8 (Jessie), Postgresql and NGINX.  **Please note to have a clean install.  The install script will install everything but the Operating System**
     
     
-**1.** Goto a console and follow the recommended steps from http://fusionpbx.com/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh Readme section for more details.
+**1.** Goto a console and follow the recommended steps from https://fusionpbx.com/app/www/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh Readme section for more details.
 
 This install script is designed to be an fast, simple, and in a modular way to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
 
@@ -15,12 +15,7 @@ Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://
      
 ::
      
-  apt-get update && apt-get upgrade && apt-get install -y git
-  cd /usr/src
-  git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
-  chmod 755 -R /usr/src/fusionpbx-install.sh
-  cd /usr/src/fusionpbx-install.sh/debian
-  ./install.sh 
+  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/install.sh -O install.sh && sh install.sh
      
 |
 
