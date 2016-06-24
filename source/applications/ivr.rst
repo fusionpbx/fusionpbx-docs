@@ -7,7 +7,7 @@ Welcome to the adding IVR section.  Here you will find how to add IVR's.
 |
 |
 
-Click on **Apps** then **IVR Menu**
+点击菜单 **Apps** 然后 **IVR Menu**
 
 .. image:: ../_static/images/fusionpbx_ivr.jpg
         :scale: 85%
@@ -15,12 +15,12 @@ Click on **Apps** then **IVR Menu**
 |
 |
 
-Then click the
+然后点击右边的
 
  .. image:: ../_static/images/plus.png
         :scale: 85%
 
-on the right. 
+
 
 
 .. image:: ../_static/images/fusionpbx_ivr1.jpg
@@ -28,7 +28,7 @@ on the right.
 
 |
 | *Options in* **bold** *are mandatory.*
-| **Name:** Enter a name for the IVR menu
+| **Name:** 输入IVR名称
 | **Extension:** Enter the extension number (This must a new extension that isn't allready created)
 | **Greet Long:** The long greeting when entering the menu.
 | Greet Short: The short greeting is played when returning to the menu.
