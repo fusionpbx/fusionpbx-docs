@@ -101,6 +101,17 @@ Install Finished  **Login with the username and password you choose during the i
         :scale: 80%
       
     
+
+|
+Run App defaults
+
+::
+
+  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
+  
+.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
+        :scale: 85%  
+
 |
 Start Sip Profiles
 
@@ -120,17 +131,7 @@ Start Memcached
     
 .. image:: ../_static/images/fusionpbx_start_memcached.jpg
         :scale: 85%
-
-|
-Run App defaults
-
-::
-
-  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
-  
-.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
-        :scale: 85%  
-
+        
 |
 **Note**: To display the logo at the top and not in the menu
 
