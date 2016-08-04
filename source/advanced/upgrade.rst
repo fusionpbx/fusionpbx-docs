@@ -221,18 +221,11 @@ Version 4.0 to 4.2
 
 Many updates in code from 4.0 to 4.2
 
-*  Applications > Conference Controls and Conference Profiles have their own tables and data loaded from conference.conf
-*  Applications > Music on hold now stores meta data about music files in the database.
-*  Bootstrap Menu. Menu adjusts to screen size and device types.
-*  Highly customizable theme options.
-*  Uses freeswitch IVR now.
-*  Check http://github.com/fusionpbx/fusionpbx for more details.
-
 1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
 
 ::
 
- *Note* If you get a red bar error at the top when trying to upgrade
+ [Note] If you get a red bar error at the top when trying to upgrade
  you will need SSH access to the install and run these commands.
 
 ::
