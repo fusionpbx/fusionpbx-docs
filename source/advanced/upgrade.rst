@@ -221,6 +221,13 @@ Version 4.0 to 4.2
 
 Many updates in code from 4.0 to 4.2
 
+*  Applications > Conference Controls and Conference Profiles have their own tables and data loaded from conference.conf
+*  Applications > Music on hold now stores meta data about music files in the database.
+*  Bootstrap Menu. Menu adjusts to screen size and device types.
+*  Highly customizable theme options.
+*  Uses freeswitch IVR now.
+*  Check http://github.com/fusionpbx/fusionpbx for more details.
+
 1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
 
 ::
@@ -239,7 +246,7 @@ Many updates in code from 4.0 to 4.2
 
 |
 
-3. You will notice a big difference in the menu.
+3. You will notice a big difference in the menu. (Logo can be placed above the menu also)
 
 .. image:: ../_static/images/fusionpbx_new_menu.jpg
         :scale: 85%
