@@ -219,8 +219,6 @@ Version Upgrade can take several steps to perform. Below will show how to upgrad
 Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^
 
-Many updates in code from 4.0 to 4.2
-
 1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
 
 ::
