@@ -241,6 +241,29 @@ Many updates in code from 4.0 to 4.2
 
 3. You will notice a big difference in the menu.
 
+.. image:: ../_static/images/fusionpbx_new_menu.jpg
+        :scale: 85%
+
+|
+
+4. Check box Default Settings. (Only check this box then click execute)
+
+|
+
+5. If the page goes blank type in the url http://domain.tld/logout.php  This should bring you back to the login screen. Login.
+
+|
+
+6. Goto Dialplan > Dialplan Manager and delete "local_extension".  Then goto Advanced > Upgrade and only check box App Defaults and click execute. This will regenerate the new local_extension version.
+
+|
+
+7. Goto Applications > Conference profiles. Edit each profile and replace $${hold_music} with local_stream://default
+
+|
+
+8. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
+
 |
 
 Version 3.8 to 4.0
