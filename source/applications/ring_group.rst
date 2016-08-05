@@ -1,5 +1,5 @@
 ***********
-Ring Groups
+Ring Group
 ***********
 
 |
