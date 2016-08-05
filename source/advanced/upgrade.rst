@@ -213,32 +213,54 @@ Version Upgrade
 ################
 
 |
-
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
-Release Revisions
-
-* r0001 is 1.0 release - 6 Nov 2009
-* r2523 is 3.0 release - 3 May 2012
-* r2585 is 3.0.4 release - 24 May 2012
-* r2757 is 3.1 release - 18 Aug 2012
-* r2777 is 3.1.1 release - 26 Aug 2012
-* r2827 is 3.1.2 release - 12 Sep 2012
-* r2897 is 3.1.3 release - 26 Sep 2012
-* r2907 is 3.1.4 release - 27 Sep 2012
-* r3694 is 3.2 release - 19 Jan 2013
-* r3978 is 3.3 release - 1 May 2013
-* r4605 is 3.4 release - 28 Sep 2013
-* r6747 is 3.6.1 release - 22 Aug 2014
-* r8481 is 3.8.3 release - 11 May 2014
-* r793d386 is 4.0 release - Aug 2015
-* r4fdb6e9 is 4.1 release - Dec 2015
-
 |
-Version 4.0 to 4.1
+Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^
 
+1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
+
+::
+
+ [Note] If you get a red bar error at the top when trying to upgrade
+ you will need SSH access to the install and run these commands.
+
+::
+
+ cd /var/www/freeswitch
+ git stash
+ git pull
+ chown -R www-data:www-data *
+ 
+2. Check box Schema (Only check this box then click execute)
+
 |
+
+3. You will notice a big difference in the menu. (Logo can be placed above the menu also)
+
+.. image:: ../_static/images/fusionpbx_new_menu.jpg
+        :scale: 85%
+
+|
+
+4. Check box Default Settings. (Only check this box then click execute)
+
+|
+
+5. If the page goes blank type in the url http://domain.tld/logout.php  This should bring you back to the login screen. Login.
+
+|
+
+6. Goto Dialplan > Dialplan Manager and delete "local_extension".  Then goto Advanced > Upgrade and only check box App Defaults and click execute. This will regenerate the new local_extension version.
+
+|
+
+7. Goto Applications > Conference profiles. Edit each profile and replace $${hold_music} with local_stream://default
+
+|
+
+8. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
 
 |
 
@@ -568,6 +590,25 @@ Version 2 to 3.0
 | **Emails not being sent for voicemail or fax**
 | * Double check the SMTP settings on the System -> Settings page
 | * Save it, even if you haven't changed anything
+
+Release Revisions
+
+* r0001 is 1.0 release - 6 Nov 2009
+* r2523 is 3.0 release - 3 May 2012
+* r2585 is 3.0.4 release - 24 May 2012
+* r2757 is 3.1 release - 18 Aug 2012
+* r2777 is 3.1.1 release - 26 Aug 2012
+* r2827 is 3.1.2 release - 12 Sep 2012
+* r2897 is 3.1.3 release - 26 Sep 2012
+* r2907 is 3.1.4 release - 27 Sep 2012
+* r3694 is 3.2 release - 19 Jan 2013
+* r3978 is 3.3 release - 1 May 2013
+* r4605 is 3.4 release - 28 Sep 2013
+* r6747 is 3.6.1 release - 22 Aug 2014
+* r8481 is 3.8.3 release - 11 May 2014
+* r793d386 is 4.0 release - Aug 2015
+* r4fdb6e9 is 4.1 release - Dec 2015
+* rxxxxxxx is 4.2 release - xxx 2016
 
 |
 
