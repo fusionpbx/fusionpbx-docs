@@ -19,7 +19,7 @@ To add a ring group click the plus.
 -      **Sequence**  Where order that is lower goes first
 -      **Enterprise** 
 -      **Rollover** 
--      **Random**
+-      **Random** A random destination will ring.
 *  **Destinations** The extensions that this ring group applies to.
 *  **Prompt** Where you determine if the call must have a dial to confirm before a pickup event.
 *  **CID Name Prefix** The string that is added to the caller ID when it displays on the ringing extension.
