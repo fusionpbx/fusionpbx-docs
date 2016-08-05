@@ -70,7 +70,6 @@ Getting Started
     home.rst
     accounts.rst
     dialplan.rst
-    applications.rst
     status.rst
     advanced.rst
     manual/menu_add_ons.rst
