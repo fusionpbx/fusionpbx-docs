@@ -7,6 +7,7 @@ Applications
 .. image:: _static/images/fusionpbx_apps.jpg
         :scale: 85%
         :align: left
+
 |
 
 .. toctree::
@@ -14,9 +15,6 @@ Applications
     :maxdepth: 4
     :glob:
 
-
   applications/ring_group.rst
-  applications/ivr.rst
-  applications/recordings.rst
   applications/time_conditions.rst
   
