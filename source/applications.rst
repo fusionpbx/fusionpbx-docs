@@ -10,8 +10,9 @@ Applications
 |
 
 .. toctree::
-  :maxdepth: 4
-  :glob:
+    :titlesonly:
+    :maxdepth: 4
+    :glob:
 
 
   applications/ring_group.rst
