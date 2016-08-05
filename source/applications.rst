@@ -16,5 +16,6 @@ Applications
 
   applications/ivr.rst
   applications/recordings.rst
-  applications/ringgroup.rst
+  applications/ring_group.rst
+  applications/time_conditions.rst
   
