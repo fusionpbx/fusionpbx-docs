@@ -10,11 +10,5 @@ Applications
 
 |
 
-.. toctree::
-    :titlesonly:
-    :maxdepth: 4
-    :glob:
 
-  applications/ring_group.rst
-  applications/time_conditions.rst
   
