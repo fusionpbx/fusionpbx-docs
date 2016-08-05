@@ -14,8 +14,8 @@ Applications
   :glob:
 
 
+  applications/ring_group.rst
   applications/ivr.rst
   applications/recordings.rst
-  applications/ring_group.rst
   applications/time_conditions.rst
   
