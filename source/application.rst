@@ -10,7 +10,7 @@ Applications
 
 |
 
-.. toctree::
+ .. toctree::
     :titlesonly:
     :maxdepth: 3
     :glob:
