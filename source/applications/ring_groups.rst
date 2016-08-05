@@ -15,12 +15,11 @@ To add a ring group click the plus.
 *  **Name** Simply the meaningful name of the Ring group (shows after the Extension in menu selections).
 *  **Extension** The Dial-able extension for this group standard config states as a 2-7 number extension.
 *  **Strategy** The selectable way in which the destinations are being used.
-        **Simultaneous** Rings all defined Destinations
-        **Sequence**  Where order that is lower goes first
-        **Enterprise** 
-        **Rollover** 
-        **Random**
-
+-      **Simultaneous** Rings all defined Destinations
+-      **Sequence**  Where order that is lower goes first
+-      **Enterprise** 
+-      **Rollover** 
+-      **Random**
 *  **Destinations** The extensions that this ring group applies to.
 *  **Prompt** Where you determine if the call must have a dial to confirm before a pickup event.
 *  **CID Name Prefix** The string that is added to the caller ID when it displays on the ringing extension.
