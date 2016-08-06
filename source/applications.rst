@@ -18,6 +18,3 @@ Applications
   application/recordings.rst
   applications/ring_group.rst
   applications/time_conditions.rst
-
-
-  
