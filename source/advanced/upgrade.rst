@@ -225,15 +225,10 @@ Version 4.0 to 4.2
 1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
 
 
-.. note::
+  .. note::
  
-  If you get a red bar error at the top when trying to upgrade you will need SSH access to the install and run these commands.
-
-.. note::
-
-  If you are planning to contribute to any of our github repos we require that you sign the FusionPBX Contributor License Agreement.
-  This mainly protects FusionPBX and our users **read: you** from code that could be inserted that might pose a legal problem.
-  It does this by verifying that the code you are contributing is yours to give and the you give it freely and irrevocably to the project.
+  If you get a red bar error at the top when trying to upgrade
+  you will need SSH access to the install and run these commands.
 
 
 ::
