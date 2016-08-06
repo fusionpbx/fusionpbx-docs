@@ -1,9 +1,9 @@
-*****************
+*************
 Old Install
-*****************
+*************
 .. image:: ../_static/images/logo_right.png
         :scale: 85% 
-*************
+
 
 
 CLICK HERE FOR THE NEW INSTALL http://docs.fusionpbx.com/en/latest/getting_started/installation_recommended_new.html
@@ -60,12 +60,14 @@ CLICK HERE FOR THE NEW INSTALL http://docs.fusionpbx.com/en/latest/getting_start
      
     **4.** Web browser Installation part
      :Select Language: **Pick your language. Click next**
+
      .. image:: ../_static/images/install_lang.jpg
         :scale: 85%
 
 |
 
-     :Freeswitch Detect: **Detecting folder paths used** 
+     :Freeswitch Detect: **Detecting folder paths used**
+ 
      .. image:: ../_static/images/install_detect_freeswitch.jpg
         :scale: 85% 
 
@@ -75,6 +77,7 @@ CLICK HERE FOR THE NEW INSTALL http://docs.fusionpbx.com/en/latest/getting_start
 |
 
      :Database Configuration: **Click Execute**
+
      .. image:: ../_static/images/install_database_config.jpg
         :scale: 85% 
      
@@ -83,6 +86,7 @@ CLICK HERE FOR THE NEW INSTALL http://docs.fusionpbx.com/en/latest/getting_start
 |
 
      :Admin Login Configuration: **Click Next**
+
      .. image:: ../_static/images/install_admin_username.jpg
         :scale: 85% 
      
@@ -93,6 +97,7 @@ CLICK HERE FOR THE NEW INSTALL http://docs.fusionpbx.com/en/latest/getting_start
 
     **5.** Goto Console and press enter 
     ::
+
      When PostgreSQL is configured come back and press enter.
      
      The FusionPBX installation changed permissions of /usr/local/freeswitch/storage

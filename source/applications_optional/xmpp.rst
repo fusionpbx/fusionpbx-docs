@@ -78,7 +78,8 @@ XMPP Manager
  Advanced -> Context: your.domain.com
 
 | Save the settings and restart the module. Restart the 'XMPP' module from Advanced -> Modules page. 
-Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are ready to go.
+| Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are ready to go.
+
 | **Note** If you are not getting AUTHORIZED you might need to goto the google account settings and choose "Allow less secure apps: ON" under the Sign-in & security section.
 
 |
@@ -100,7 +101,7 @@ Go back to Accounts -> XMPP if the status says **'AUTHORIZED'** then you are rea
  Press Save
 
 | If your XMPP profile is named something other than gtalk edit the outbound route you just created.
-Bridge statement should look like: dingaling/gtalk/+$1@voice.google.com replace gtalk with the profile name you chose and then save it.
+| Bridge statement should look like: dingaling/gtalk/+$1@voice.google.com replace gtalk with the profile name you chose and then save it.
 
 |
 
@@ -136,8 +137,7 @@ Goto Fusionpbx GUI
 | Goto the GUI and click advanced > menu manager > edit icon > click "Restore Defaults" at top right
 |
 
-| Then goto Advanced > Upgrade
-click Schema, Data Types, and Permission Defaults then click execute
+| Then goto Advanced > Upgrade click Schema, Data Types, and Permission Defaults then click execute
 
 |
 | Click status > sip status > Flush Memcache

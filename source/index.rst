@@ -5,6 +5,7 @@
         :height: 76.5pt
 
 |
+
 Welcome to FusionPBX Docs
 =========================
 
@@ -64,19 +65,19 @@ Getting Started
 -------------------
 
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    getting_started.rst
-    home.rst
-    accounts.rst
-    dialplan.rst
-    applications.rst
-    status.rst
-    advanced.rst
-    manual/menu_add_ons.rst
-    additional_information.rst
-    contributing.rst
-    doc_guide.rst
+   getting_started.rst
+   home.rst
+   accounts.rst
+   dialplan.rst
+   applications.rst
+   status.rst
+   advanced.rst
+   manual/menu_add_ons.rst
+   additional_information.rst
+   contributing.rst
+   doc_guide.rst
 
 
 

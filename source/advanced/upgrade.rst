@@ -1,6 +1,6 @@
-##########
+**********
 Upgrade
-##########
+**********
 
 
 The FusionPBX code is constantly evolving. Bug fixes being submitted, additions to improve security, making FusionPBX look nicer, to be more flexible, and best of all new features. A complete summary of the changes can be found on the github code page https://github.com/fusionpbx/fusionpbx/commits/master .  Initially google code svn was the place to download code from but since that has closed github is where the code now lives.  
@@ -10,10 +10,10 @@ The FusionPBX code is constantly evolving. Bug fixes being submitted, additions 
 Maintenance Upgrade
 ####################
 
-|
-A Maintenance Upgrade can be done daily depending on development activity.  This is typically for bug fixes, added features, security patches or small version upgrades.
 
-|
+| A Maintenance Upgrade can be done daily depending on development activity.  This is typically for bug fixes, added features, security patches or small version upgrades.
+
+
 .. image:: ../_static/images/fusionpbx_upgrade.jpg
         :scale: 85%
 
@@ -53,13 +53,14 @@ How to Upgrade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | 1. GUI -> Advanced -> Upgrade (doesn't update all files)
+
 Used to update FusionPBX to the latest release.
 
 **Upgrade the code via Github/GIT**
 
-| *Login into the web interface with a user account assigned to the superadmin group.
-| *Login to the console with either the ssh, the locally.
-| *Backup It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
+| Login into the web interface with a user account assigned to the superadmin group.
+| Login to the console with either the ssh, the locally.
+| Backup It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
  
 ::
 
@@ -155,7 +156,7 @@ Used to update FusionPBX to the latest release.
  cd /var/www/fusionpbx
  /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
 
-| *If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
+| If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
 
 ::
 
@@ -213,18 +214,22 @@ Version Upgrade
 ################
 
 |
+
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
 |
+
 Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^
 
 1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
 
-::
 
- [Note] If you get a red bar error at the top when trying to upgrade
- you will need SSH access to the install and run these commands.
+ .. note::
+ 
+  If you get a red bar error at the top when trying to upgrade
+  you will need SSH access to the install and run these commands.
+
 
 ::
 
@@ -288,7 +293,7 @@ Rebooting FreeSWITCH is required for this to take effect.
 Version 3.6 to 3.8
 ^^^^^^^^^^^^^^^^^^
 
-|
+
 | **Note: Upgrading can get very complex. If the production system is critical or you are intimidated from these upgrade instructions you may want FusionPBX paid support at http://www.fusionpbx.com/support.php**
 
 | A standard 'upgrade' procedure should always be followed:
@@ -300,19 +305,20 @@ Beyond the standard upgrade procedure just described, the following will also ne
 
  uncomment: <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
  in: /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
+
 |
 
 | * Rebuild all time conditions. 
-| *After you edit a particular time condition, click the Dialplan button on the top right to see what was there originally. 
+| * After you edit a particular time condition, click the Dialplan button on the top right to see what was there originally. 
 | * Delete the following dialplans from each domain then run Advanced -> Upgrade -> App Defaults. If using XML handler for the dialplan flush memcache. If using dialplans XML on the file system resave one of the dialplans to have FusionPBX rewrite the XML files. 
 | * user_exists - call_timeout variable was added
 | * extension-intercom - It has been renamed to 'page-extension'
-| * eavesdrop - Change *88[ext] to *33[ext] so that it doesn't conflict with page-extension at *8[ext] 
+| * eavesdrop - Change '*'88[ext] to '*'33[ext] so that it doesn't conflict with page-extension at '*'8[ext] 
 | * user_status - Has been renamed to 'agent_status'
 | * page - Dialplan has been simplified.
 | * valet_park_out - Changed regex variable from $1 to $2
 | * local_extension - failure handler was added to support call forward on busy and no answer
-| * If using call center feature code *22 edit each agent and add an agent id and password (pin number)
+| * If using call center feature code '*'22 edit each agent and add an agent id and password (pin number)
 | * Delete any dialplan with the 'features' context. These have been moved into the dialplan domain contexts.
 | * If using App -> XMPP, Content Manager, or Schema they have been moved dev -> branches -> apps directory need to pull files from there if you want to use any of them.
 | * For single tenant systems 'default' context is no longer used by default. 
@@ -333,7 +339,9 @@ Beyond the standard upgrade procedure just described, the following will also ne
 | If you go to Advanced Group Manager -> And you see what looks like duplicates of user, admin and superadmin groups then you need do the following instructions.
 
 |
+
 | Remove permissions associated with all domain groups with names that match default global groups...
+
 | Use the **Advanced -> SQL Query tool** to do the following.
 
 ::

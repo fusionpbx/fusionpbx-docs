@@ -1,10 +1,11 @@
 Gateway setup
-===========
+==============
 
 .. image:: ../_static/images/logo_right.png
         :scale: 85%
   
 |
+
 Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.
   
 |

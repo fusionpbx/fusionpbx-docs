@@ -1,7 +1,6 @@
-
-*****************
+*************
 New Install
-*****************
+*************
 .. image:: ../_static/images/logo_right.png
         :scale: 85% 
 
@@ -70,6 +69,7 @@ After you have completed the install you can login with the GUI username and pas
         :scale: 85%
 
 |
+
 Freeswitch Detect **Detecting folder paths used**
     
 .. image:: ../_static/images/install_detect_freeswitch_new.jpg
@@ -105,6 +105,7 @@ Install Finished  **Login with the username and password you choose during the i
     
 
 |
+
 Run App defaults
 
 ::
@@ -115,6 +116,7 @@ Run App defaults
         :scale: 85%  
 
 |
+
 Start Sip Profiles
 
 ::
@@ -125,6 +127,7 @@ Start Sip Profiles
         :scale: 85%
 
 |
+
 Start Memcached
 
 ::
@@ -135,6 +138,7 @@ Start Memcached
         :scale: 85%
         
 |
+
 **Note**: To display the logo at the top and not in the menu
 
 ::
