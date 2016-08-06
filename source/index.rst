@@ -69,7 +69,6 @@ Getting Started
 
    getting_started.rst
    home.rst
-   test.rst
    accounts.rst
    dialplan.rst
    applications.rst
