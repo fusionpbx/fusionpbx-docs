@@ -5,6 +5,7 @@
         :height: 76.5pt
 
 |
+
 Welcome to FusionPBX Docs
 =========================
 
@@ -68,6 +69,7 @@ Getting Started
 
     getting_started.rst
     home.rst
+    test.rst
     accounts.rst
     dialplan.rst
     applications.rst
