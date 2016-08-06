@@ -226,11 +226,3 @@ In the ever changing world of voip businesses are moving away from hardware phon
 * Make sure you have created an DNS A record for the domain being used and there are no typos
 * Nat, firewalls and router settings.  Some brands of routers can cause issues.  Google the make and model of router or firewall appliance for common settings or remedies.
 * Visit Zoiper Community Supoprt http://community.zoiper.com/
-
-|
-
-.. toctree::
-  :maxdepth: 3
-  :glob:
-
-  extensions_ivr/extensions.rst

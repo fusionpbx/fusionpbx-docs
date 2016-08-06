@@ -14,7 +14,7 @@ Applications
   :maxdepth: 3
   :glob:
 
-  application/ivr.rst
-  application/recordings.rst
+  applications/ivr.rst
+  applications/recordings.rst
   applications/ring_group.rst
   applications/time_conditions.rst
