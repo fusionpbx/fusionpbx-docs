@@ -27,7 +27,7 @@ Time Conditions Example
         :scale: 85%
 
 
-|  The next dropdown choose the extension where the call is intended for.  If the call is outside the date and time specified the call will goto the **Alternate Destination** dropdown.  Be sure **Enabled is set *True* and click save.
+|  The next dropdown choose the extension where the call is intended for.  If the call is outside the date and time specified the call will goto the **Alternate Destination** dropdown.  Be sure **Enabled** is set *True* and click save.
  
  .. image:: ../_static/images/fusionpbx_time_conditions2.jpg
         :scale: 85%
