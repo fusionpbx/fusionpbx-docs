@@ -65,8 +65,3 @@ Domain Selection
         :scale: 75%
 
 
-.. toctree::
-  :maxdepth: 3
-  :glob:
-
-  domains/domains.rst
