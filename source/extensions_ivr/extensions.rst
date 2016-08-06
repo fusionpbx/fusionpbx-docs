@@ -1,6 +1,6 @@
-************
+===========
 Extensions
-************
+===========
 
 | Welcome to the adding Extensions section.  Here you will find how to add Extensions. 
 
@@ -75,9 +75,9 @@ Enter information as needed.
 
 |
 
-************
+==================
 Registering Phones
-************
+==================
 
 |
 
@@ -141,9 +141,9 @@ Click **Update** then click **Apply** at the bottom
 
 |
 
-- Troubleshooting tips
+Troubleshooting tips
+~~~~~~~~~~~~~~~~~~~~
 
-|
 
 * Check, double check that the correct extension number and password is being used.
 * Reboot the device.
@@ -151,6 +151,7 @@ Click **Update** then click **Apply** at the bottom
 * Make sure you have created an DNS A record for the domain being used and there are no typos
 * Nat, firewalls and router settings.  Some brands of routers can cause issues.  Google the make and model of router or firewall appliance for common settings or remedies.
 * Visit Grandstream Supoprt http://www.grandstream.com/support
+
 |
 
 Zoiper
@@ -165,6 +166,7 @@ Registering an **Extension** using the softphone Zoiper.
 In the ever changing world of voip businesses are moving away from hardware phones.  From call centers to home offices Zoiper and many other softphones make use of software for communication needs for not only voice but video and faxing. This example will show how to register an extension using Zoiper for Windows. *Note* Zoiper can be used on several operating systems and mobile devices.
 
 |
+
 1. Download the software. .. Zoiper: http://www.zoiper.com/
 2. Install the software.
 3. If the software isn't open click the Zoiper icon to open from the desktop or start menu.
