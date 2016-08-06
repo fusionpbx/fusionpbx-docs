@@ -25,6 +25,7 @@ on the right.
         :scale: 85%
 
 |
+
 *  *Options in* **bold** *are mandatory.*
 *  **Name:** Enter a name for the IVR menu
 *  **Extension:** Enter the extension number (This must a new extension that isn't allready created)
