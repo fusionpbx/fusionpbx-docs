@@ -227,8 +227,12 @@ Version 4.0 to 4.2
 
   .. note::
  
+<<<<<<< HEAD
   If you get a red bar error at the top when trying to upgrade
   you will need SSH access to the install and run these commands.
+=======
+  If you get a red bar error at the top when trying to upgrade you will need SSH access to the install and run these commands.
+>>>>>>> origin/master
 
 
 ::
@@ -644,13 +648,18 @@ Configure
 ^^^^^^^^^^
 
 To enable PostgresSQL as a native client in FreeSWITCH you must enable it during the build when running configure.
-** ./configure --enable-core-pgsql-support **
+
+ ::
+ 
+ ** ./configure --enable-core-pgsql-support **
 
 switch.conf.xml
 ^^^^^^^^^^^^^^^^^
 
 Under the Settings area insert the following line
 
+ ::
+ 
  <param name="core-db-dsn" value="pgsql;hostaddr=127.0.0.1 dbname=freeswitch user=freeswitch password='' options='-c client_min_messages=NOTICE' application_name='freeswitch'" />
 
 Additional Information
