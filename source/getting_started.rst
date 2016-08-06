@@ -1,6 +1,6 @@
-***************
+****************
 Getting Started
-***************
+****************
 
 Welcome! 
 Let's install FusionPBX.
