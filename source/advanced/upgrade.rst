@@ -10,10 +10,10 @@ The FusionPBX code is constantly evolving. Bug fixes being submitted, additions 
 Maintenance Upgrade
 ####################
 
-|
-A Maintenance Upgrade can be done daily depending on development activity.  This is typically for bug fixes, added features, security patches or small version upgrades.
 
-|
+| A Maintenance Upgrade can be done daily depending on development activity.  This is typically for bug fixes, added features, security patches or small version upgrades.
+
+
 .. image:: ../_static/images/fusionpbx_upgrade.jpg
         :scale: 85%
 
@@ -53,13 +53,14 @@ How to Upgrade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | 1. GUI -> Advanced -> Upgrade (doesn't update all files)
+
 Used to update FusionPBX to the latest release.
 
 **Upgrade the code via Github/GIT**
 
-| *Login into the web interface with a user account assigned to the superadmin group.
-| *Login to the console with either the ssh, the locally.
-| *Backup It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
+| Login into the web interface with a user account assigned to the superadmin group.
+| Login to the console with either the ssh, the locally.
+| Backup It's a good idea to make a backup. If using sqlite, your backup will easily include the SQL database.
  
 ::
 
@@ -155,7 +156,7 @@ Used to update FusionPBX to the latest release.
  cd /var/www/fusionpbx
  /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
 
-| *If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
+| If your screen was nicely formatted with a fusionpbx theme, and suddenly now goes to a black and white screen with familiar text but no theme, it is because you were using a theme which no longer exists in the latest version of the code.  If this happens to you navigate to:
 
 ::
 
@@ -216,29 +217,59 @@ Version Upgrade
 
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
-Release Revisions
-
-* r0001 is 1.0 release - 6 Nov 2009
-* r2523 is 3.0 release - 3 May 2012
-* r2585 is 3.0.4 release - 24 May 2012
-* r2757 is 3.1 release - 18 Aug 2012
-* r2777 is 3.1.1 release - 26 Aug 2012
-* r2827 is 3.1.2 release - 12 Sep 2012
-* r2897 is 3.1.3 release - 26 Sep 2012
-* r2907 is 3.1.4 release - 27 Sep 2012
-* r3694 is 3.2 release - 19 Jan 2013
-* r3978 is 3.3 release - 1 May 2013
-* r4605 is 3.4 release - 28 Sep 2013
-* r6747 is 3.6.1 release - 22 Aug 2014
-* r8481 is 3.8.3 release - 11 May 2014
-* r793d386 is 4.0 release - Aug 2015
-* r4fdb6e9 is 4.1 release - Dec 2015
-
 |
-Version 4.0 to 4.1
+
+Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^
 
+1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
+
+
+  .. note::
+ 
+<<<<<<< HEAD
+  If you get a red bar error at the top when trying to upgrade
+  you will need SSH access to the install and run these commands.
+=======
+  If you get a red bar error at the top when trying to upgrade you will need SSH access to the install and run these commands.
+>>>>>>> origin/master
+
+
+::
+
+ cd /var/www/freeswitch
+ git stash
+ git pull
+ chown -R www-data:www-data *
+ 
+2. Check box Schema (Only check this box then click execute)
+
 |
+
+3. You will notice a big difference in the menu. (Logo can be placed above the menu also)
+
+.. image:: ../_static/images/fusionpbx_new_menu.jpg
+        :scale: 85%
+
+|
+
+4. Check box Default Settings. (Only check this box then click execute)
+
+|
+
+5. If the page goes blank type in the url http://domain.tld/logout.php  This should bring you back to the login screen. Login.
+
+|
+
+6. Goto Dialplan > Dialplan Manager and delete "local_extension".  Then goto Advanced > Upgrade and only check box App Defaults and click execute. This will regenerate the new local_extension version.
+
+|
+
+7. Goto Applications > Conference profiles. Edit each profile and replace $${hold_music} with local_stream://default
+
+|
+
+8. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
 
 |
 
@@ -266,7 +297,7 @@ Rebooting FreeSWITCH is required for this to take effect.
 Version 3.6 to 3.8
 ^^^^^^^^^^^^^^^^^^
 
-|
+
 | **Note: Upgrading can get very complex. If the production system is critical or you are intimidated from these upgrade instructions you may want FusionPBX paid support at http://www.fusionpbx.com/support.php**
 
 | A standard 'upgrade' procedure should always be followed:
@@ -278,19 +309,20 @@ Beyond the standard upgrade procedure just described, the following will also ne
 
  uncomment: <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
  in: /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
+
 |
 
 | * Rebuild all time conditions. 
-| *After you edit a particular time condition, click the Dialplan button on the top right to see what was there originally. 
+| * After you edit a particular time condition, click the Dialplan button on the top right to see what was there originally. 
 | * Delete the following dialplans from each domain then run Advanced -> Upgrade -> App Defaults. If using XML handler for the dialplan flush memcache. If using dialplans XML on the file system resave one of the dialplans to have FusionPBX rewrite the XML files. 
 | * user_exists - call_timeout variable was added
 | * extension-intercom - It has been renamed to 'page-extension'
-| * eavesdrop - Change *88[ext] to *33[ext] so that it doesn't conflict with page-extension at *8[ext] 
+| * eavesdrop - Change '*'88[ext] to '*'33[ext] so that it doesn't conflict with page-extension at '*'8[ext] 
 | * user_status - Has been renamed to 'agent_status'
 | * page - Dialplan has been simplified.
 | * valet_park_out - Changed regex variable from $1 to $2
 | * local_extension - failure handler was added to support call forward on busy and no answer
-| * If using call center feature code *22 edit each agent and add an agent id and password (pin number)
+| * If using call center feature code '*'22 edit each agent and add an agent id and password (pin number)
 | * Delete any dialplan with the 'features' context. These have been moved into the dialplan domain contexts.
 | * If using App -> XMPP, Content Manager, or Schema they have been moved dev -> branches -> apps directory need to pull files from there if you want to use any of them.
 | * For single tenant systems 'default' context is no longer used by default. 
@@ -311,7 +343,9 @@ Beyond the standard upgrade procedure just described, the following will also ne
 | If you go to Advanced Group Manager -> And you see what looks like duplicates of user, admin and superadmin groups then you need do the following instructions.
 
 |
+
 | Remove permissions associated with all domain groups with names that match default global groups...
+
 | Use the **Advanced -> SQL Query tool** to do the following.
 
 ::
@@ -569,6 +603,25 @@ Version 2 to 3.0
 | * Double check the SMTP settings on the System -> Settings page
 | * Save it, even if you haven't changed anything
 
+Release Revisions
+
+* r0001 is 1.0 release - 6 Nov 2009
+* r2523 is 3.0 release - 3 May 2012
+* r2585 is 3.0.4 release - 24 May 2012
+* r2757 is 3.1 release - 18 Aug 2012
+* r2777 is 3.1.1 release - 26 Aug 2012
+* r2827 is 3.1.2 release - 12 Sep 2012
+* r2897 is 3.1.3 release - 26 Sep 2012
+* r2907 is 3.1.4 release - 27 Sep 2012
+* r3694 is 3.2 release - 19 Jan 2013
+* r3978 is 3.3 release - 1 May 2013
+* r4605 is 3.4 release - 28 Sep 2013
+* r6747 is 3.6.1 release - 22 Aug 2014
+* r8481 is 3.8.3 release - 11 May 2014
+* r793d386 is 4.0 release - Aug 2015
+* r4fdb6e9 is 4.1 release - Dec 2015
+* rxxxxxxx is 4.2 release - xxx 2016
+
 |
 
 SQLite
@@ -595,13 +648,18 @@ Configure
 ^^^^^^^^^^
 
 To enable PostgresSQL as a native client in FreeSWITCH you must enable it during the build when running configure.
-** ./configure --enable-core-pgsql-support **
+
+ ::
+ 
+ ** ./configure --enable-core-pgsql-support **
 
 switch.conf.xml
 ^^^^^^^^^^^^^^^^^
 
 Under the Settings area insert the following line
 
+ ::
+ 
  <param name="core-db-dsn" value="pgsql;hostaddr=127.0.0.1 dbname=freeswitch user=freeswitch password='' options='-c client_min_messages=NOTICE' application_name='freeswitch'" />
 
 Additional Information

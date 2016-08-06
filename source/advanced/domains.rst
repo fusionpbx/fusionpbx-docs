@@ -1,6 +1,6 @@
-************
+###########
 Domains
-************
+###########
 
 |  Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
 
@@ -9,9 +9,9 @@ Domains
   
 |
 
-***************
+===============
 Adding a domain
-***************
+===============
 
 | Control the list of domains to manage.
 
@@ -65,8 +65,3 @@ Domain Selection
         :scale: 75%
 
 
-.. toctree::
-  :maxdepth: 3
-  :glob:
-
-  domains/domains.rst

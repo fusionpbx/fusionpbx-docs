@@ -11,6 +11,8 @@ Welcome to the FUSIONPBX getting started guide.  In this section we will show ho
 **1.** Goto a console and follow the recomended steps from http://fusionpbx.com/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh readme section for more details.
 
 This install script is designed to be an fast, simple, and in a modular way to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
+
+Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://www.youtube.com/embed/kejAxlYSW3o FusionPBX is installed and more!
      
 ::
      
@@ -101,6 +103,17 @@ Install Finished  **Login with the username and password you choose during the i
         :scale: 80%
       
     
+
+|
+Run App defaults
+
+::
+
+  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
+  
+.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
+        :scale: 85%  
+
 |
 Start Sip Profiles
 
@@ -120,17 +133,7 @@ Start Memcached
     
 .. image:: ../_static/images/fusionpbx_start_memcached.jpg
         :scale: 85%
-
-|
-Run App defaults
-
-::
-
-  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
-  
-.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
-        :scale: 85%  
-
+        
 |
 **Note**: To display the logo at the top and not in the menu
 
