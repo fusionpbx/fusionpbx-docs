@@ -224,7 +224,6 @@ Version 4.0 to 4.2
 
 1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
 
-::
 
   .. note::
  
