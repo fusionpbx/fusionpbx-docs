@@ -226,8 +226,11 @@ Version 4.0 to 4.2
 
 ::
 
- [Note] If you get a red bar error at the top when trying to upgrade
- you will need SSH access to the install and run these commands.
+  .. note::
+ 
+  If you get a red bar error at the top when trying to upgrade
+  you will need SSH access to the install and run these commands.
+
 
 ::
 
