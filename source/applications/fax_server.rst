@@ -25,6 +25,7 @@ To send a fax the items in **bold** are required.  To send a proper fax it is be
 Inbox
 ======
 
+You can click **PDF** to view the fax or right click on **PDF** and left click on **Save Link As**.
 
 
 .. image:: ../_static/images/fusionpbx_fax4.jpg
@@ -35,6 +36,9 @@ Inbox
 
 Sent
 =====
+
+You can click **PDF** to view the fax or right click on **PDF** and left click on **Save Link As**.
+
 
 .. image:: ../_static/images/fusionpbx_fax3.jpg
         :scale: 85%
