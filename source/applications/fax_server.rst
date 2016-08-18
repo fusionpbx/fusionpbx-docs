@@ -16,9 +16,26 @@ To receive a FAX setup a fax extension and then direct the incoming to it.
 New
 ====
 
-
+To send a fax the items in **bold** are required.  To send a proper fax it is best to fill out all fields and attach any documents.  Keep in mind that the upload max MB is limited by Nginx and PHP config files.
 
 .. image:: ../_static/images/fusionpbx_fax1.jpg
         :scale: 85%
 
+
+Inbox
+======
+
+
+
+.. image:: ../_static/images/fusionpbx_fax4.jpg
+        :scale: 85%
+
+
+
+
+Sent
+=====
+
+.. image:: ../_static/images/fusionpbx_fax3.jpg
+        :scale: 85%
 
