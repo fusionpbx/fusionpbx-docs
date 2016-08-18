@@ -47,7 +47,8 @@ Click **PDF** to view the fax or right click on **PDF** and left click on **Save
 Trouble shooting tips
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Faxing will fail at times. There are different combinations like;
+Faxing will fail at times. Fax Server should automatically try different methods for sending. There are different combinations like;
+
 * With T-38 on/off
 * ECC on/off
 * Sending a wav file
