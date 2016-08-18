@@ -52,3 +52,5 @@ Faxing will fail at times. Fax Server should automatically try different methods
 * With T-38 on/off
 * ECC on/off
 * Sending a wav file
+* Send a fax to HP faxback.  This will test sending and receiving 1-888-473-2963
+* Test sending with Faxtoy.net This will display what is faxed on their website. 1-855-330-1239 or 1-213-294-2943
