@@ -43,3 +43,11 @@ Click **PDF** to view the fax or right click on **PDF** and left click on **Save
 .. image:: ../_static/images/fusionpbx_fax3.jpg
         :scale: 85%
 
+
+Trouble shooting tips
+~~~~~~~~~~~~~~~~~~~~~~
+
+Faxing will fail at times. There are different combinations like;
+* With T-38 on/off
+* ECC on/off
+* Sending a wav file
