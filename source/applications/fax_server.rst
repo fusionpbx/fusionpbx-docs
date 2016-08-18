@@ -2,7 +2,9 @@
 Fax Server
 ************
 
-To receive a FAX setup a fax extension and then direct the incoming to it. 
+To receive a FAX setup a fax extension and then direct the incoming to it.
+
+
 
 .. image:: ../_static/images/fusionpbx_fax.jpg
         :scale: 85%
@@ -12,6 +14,17 @@ To receive a FAX setup a fax extension and then direct the incoming to it.
 * Sent: Faxes sent.
 * Log: Sucessful and failed attempts for both incoming and outgoing.
 * Active: Shows the faxes in queue.
+
+There are more settings for fax under Advanced > Default Settings then fax category.
+
+To create a fax server goto App > Fax Server.  Click the + on the right. **Leave the Destination Number blank** or faxing wont work.  Destination Number is used in the Fax Server Dial Plan.  Define the fields, the ones in **bold** are required.  It is a good idea to organize so define the name thoughtfully.  The extension you must use one that is not allready created.  Account Code should autofill.  Again, **leave the Destination Number blank**.  A prefix can be defined when sending a fax.  Email is for inbound faxes and will be on the server and sent to the defines email. Define the Caller ID Name and Number.  Leave the Forward Number and Greeting blank for normal settings.  Number of channels define with a numerical value.  Keep organized by adding a Description.
+
+
+
+.. image:: ../_static/images/fusionpbx_fax5.jpg
+        :scale: 85%
+
+
 
 New
 ====
