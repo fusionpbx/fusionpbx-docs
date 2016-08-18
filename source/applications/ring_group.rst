@@ -30,3 +30,13 @@ To add a ring group click the plus.
 .. image:: ../_static/images/fusionpbx_ring_group1.jpg
         :scale: 85%
 
+
+Ring Group Example
+~~~~~~~~~~~~~~~~~~~~
+
+In our example we will have 4 extensions all ring at the same time until one of them pick up first.  Click the + to create a ring group.  Fill in the fields that are in **bold**.  In the Extension box type a number that is **NOT** allready created.  This new extention won't be in the extension list.  The strategy will be Simultaneous. Enter in the destination the 4 extensions 1001, 1002, 1003, 1004.
+
+
+.. image:: ../_static/images/fusionpbx_ring_group2.jpg
+        :scale: 85%
+
