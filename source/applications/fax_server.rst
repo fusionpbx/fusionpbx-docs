@@ -10,7 +10,7 @@ To receive a FAX setup a fax extension and then direct the incoming to it.
 * New: Create a new fax to send.
 * Inbox: Faxes received.
 * Sent: Faxes sent.
-* Log: log of sucessful and failed attempts for both incoming and outgoing.
+* Log: Sucessful and failed attempts for both incoming and outgoing.
 * Active: Shows the faxes in queue.
 
 New
@@ -25,7 +25,7 @@ To send a fax the items in **bold** are required.  To send a proper fax it is be
 Inbox
 ======
 
-Click **PDF** to view the fax or right click on **PDF** and left click on **Save Link As**.
+Click **PDF** to view the fax or right click on **PDF** and left click on **Save Link As**. If you defined and email address in the **email** field you will receive the fax also to that email address.
 
 
 .. image:: ../_static/images/fusionpbx_fax4.jpg
