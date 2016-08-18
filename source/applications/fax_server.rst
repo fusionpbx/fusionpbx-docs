@@ -14,9 +14,11 @@ To receive a FAX setup a fax extension and then direct the incoming to it.
 * Active: Shows the faxes in queue.
 
 New
-^^^^
+~~~~
 
 
 
 .. image:: ../_static/images/fusionpbx_fax1.jpg
         :scale: 85%
+
+
