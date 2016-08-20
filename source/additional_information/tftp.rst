@@ -21,13 +21,13 @@ Several models of phone out there that still only use TFTP for provisioning.  Ev
 
 Goto Advanced > Default Settings > Provision
  
-Set to **True** and define the path to where the TFTP files will be.
+Set Enabled to **True** and define the path to where the TFTP files will be.
  
 .. image:: ../_static/images/fusionpbx_tftp.jpg
         :scale: 85%
 
 
-Test TFTP
+**Test TFTP**
 
 ::
 
