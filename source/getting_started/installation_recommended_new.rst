@@ -47,12 +47,10 @@ After you have completed the install you can login with the GUI username and pas
 **3.** Goto a web browser and enter the ip address
     ::
      
-     Now you'll need to manually finish the install and come back
-     This way I can finish up the last bit of permissions issues
-     Just go to
+     Go to
      https://000.000.000.000
-     MAKE SURE YOU CHOOSE PostgreSQL as your Database on the first page!!!
-     ON the Second Page:
+     When you get to the database part choose
+     Postgresql
      Database Name: fusionpbx
      Database Username: fusionpbx
      Database Password: generated_password
