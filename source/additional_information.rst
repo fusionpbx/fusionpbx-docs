@@ -18,3 +18,5 @@ Additional Information
   additional_information/testimonials.rst
   additional_information/password_reset.rst
   additional_information/feature_codes.rst
+  additional_information/tftp.rst
+
