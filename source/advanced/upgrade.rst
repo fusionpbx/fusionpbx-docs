@@ -267,7 +267,10 @@ Version 4.0 to 4.2
 
 8. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
 
-|
+
+ .. note::
+ 
+  Many of the provisioning templates were updated.  If you use custom provisioning templates you should consider updating them with the new versions. 
 
 Version 3.8 to 4.0
 ^^^^^^^^^^^^^^^^^^
