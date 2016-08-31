@@ -4,7 +4,7 @@
    :target: https://github.com/fusionpbx/fusionpbx-docs
 
 Basic Rules
-===========
+~~~~~~~~~~~~
 
 | ``iptables -A INPUT -i lo -j ACCEPT``
 | ``iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT``
@@ -24,7 +24,7 @@ Basic Rules
 
 
 Friendly Scanner
-================
+~~~~~~~~~~~~~~~~~
 
 Rules to block not so friendly scanner
 
@@ -34,29 +34,37 @@ Rules to block not so friendly scanner
 | ``iptables -I INPUT -j DROP -p udp --dport 5080 -m string --string "friendly-scanner" --algo bm``
 
 Show iptable rules
-==================
+~~~~~~~~~~~~~~~~~~~
 
 | ``sudo iptables -L -v``
 
 Show line numbers
-=================
+~~~~~~~~~~~~~~~~~~
 
 | ``iptables -L -v --line-numbers``
 
 Delete a line
-=============
+~~~~~~~~~~~~~~
 
 Delete line 2
+
+Flush out iptables
+~~~~~~~~~~~~~~~~~~~
+
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -F
 
 | ``iptables -D INPUT 2``
 
 Block IP address
-================
+~~~~~~~~~~~~~~~~~
 
 | ``iptables -I INPUT -s 62.210.245.132 -j DROP``
 
 Save Changes
-============
+~~~~~~~~~~~~~
 
 Debian & Ubuntu
 
