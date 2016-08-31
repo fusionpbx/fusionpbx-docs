@@ -47,16 +47,16 @@ Delete a line
 ~~~~~~~~~~~~~~
 
 Delete line 2
+``iptables -D INPUT 2`
 
 Flush out iptables
 ~~~~~~~~~~~~~~~~~~~
 
-iptables -P INPUT ACCEPT
-iptables -P FORWARD ACCEPT
-iptables -P OUTPUT ACCEPT
-iptables -F
+| ``iptables -P INPUT ACCEPT``
+| ``iptables -P FORWARD ACCEPT``
+| ``iptables -P OUTPUT ACCEPT``
+| ``iptables -F``
 
-| ``iptables -D INPUT 2``
 
 Block IP address
 ~~~~~~~~~~~~~~~~~
