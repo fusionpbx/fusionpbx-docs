@@ -47,7 +47,8 @@ Delete a line
 ~~~~~~~~~~~~~~
 
 Delete line 2
-``iptables -D INPUT 2`
+
+|``iptables -D INPUT 2`
 
 Flush out iptables
 ~~~~~~~~~~~~~~~~~~~
