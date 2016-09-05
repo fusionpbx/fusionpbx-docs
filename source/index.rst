@@ -9,7 +9,10 @@
 Welcome to FusionPBX Docs
 =========================
 
-| **FusionPBX** is an open source project that provides a customizable and
+**FusionPBX**
+---------------
+
+An open source project that provides a customizable and
 flexible web interface to the very powerful and highly scalable
 multi-platform voice switch called `FreeSWITCH`_.
 
@@ -29,7 +32,8 @@ Benefits of FusionPBX
 3. Gives your users and tenants an attractive GUI interface to interact with. 
 
 
-| FusionPBX provides:
+FusionPBX Features
+--------------------
 
 * Call Block
 * Call Broadcast
