@@ -38,15 +38,16 @@ Benefits of FusionPBX
 * Call Detail Records
 * Conference Center
 * Contacts
-* Fax Server
+* `Fax Server`_
 * Follow-Me
 * Hot Desking
 * `IVR Menus`_
+* `Ring Groups`_
 * Multi-Tenant
 * Music on Hold
 * Queues
-* Recording
-* Time Groups
+* `Recordings`_
+* `Time Conditions`_
 * Voicemail
 * and lots more...
 
@@ -60,7 +61,7 @@ Our Eco-System
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
-.. _IVR Menu: IVR_Menu
+.. _IVR Menus: /source/applications/ivr.rst
 .. _Call Broadcast: Call_Broadcast
 .. _Call Block: Call_Block
 .. _Call Detail Records: Call_Detail_Records
@@ -69,10 +70,15 @@ Our Eco-System
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
 .. _Queues: Queues
-.. _Call Recordings: Call_Recordings
+.. _Recordings: /source/applications/recordings.rst
+.. _Call Recordings: /source/applications/recordings.rst
 .. _Active Calls: Active_Calls
 .. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
+.. _Fax Server: /source/applications/fax_server.rst
+.. _Time Conditions: /source/applications/time_conditions.rst
+.. _Ring Groups: /source/applications/ring_groups.rst
+.. _Recordings: /source/applications/recordings.rst
 
 Getting Started
 -------------------
