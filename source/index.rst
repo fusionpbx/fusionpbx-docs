@@ -76,8 +76,8 @@ Getting Started
    advanced.rst
    fail_over/fail_over.rst
    high_availability/high_availability.rst
-   load_balancing/load_balancing.rst
-   multi_master/multi_master.rst
+   load_balancing.rst
+   multi_master.rst
    scalability/scalability.rst
    tenant_domain_lmits/tenant_domain_limits.rst
    manual/menu_add_ons.rst
