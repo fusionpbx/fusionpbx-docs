@@ -75,6 +75,7 @@ Getting Started
    status.rst
    advanced.rst
    fail_over/fail_over.rst
+   high_availability/high_availability.rst
    load_balancing/load_balancing.rst
    multi_master/multi_master.rst
    scalability/scalability.rst
