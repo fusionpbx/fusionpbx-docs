@@ -30,8 +30,9 @@ Features
 
 * **Call Transfer:**
 
-| * **Announced Transfer**
-| * **Blind Transfer:**
+* **Announced Transfer:**
+
+* **Blind Transfer:**
 
 * **Call Waiting:**
 
