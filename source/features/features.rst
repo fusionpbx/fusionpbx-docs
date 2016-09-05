@@ -6,17 +6,17 @@ Features
 
 * **Announcements:** setup a recording for the auto attendant that provides announcement to callers. (See `IVR Menus`_ )
 
+* **`Call Block`_:** Block inbound calls by the caller id.
+
 * **`Call Broadcast`_:** Create a recording and select one or more groups to have the system call and play the recording.
 
-* **`Call Block`_:** Block inbound calls by the caller id.
+* **Call Center:**
 
 * **`Call Detail Records`_:** various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-* **`Call Forward`_:** forward to another extension or to any phone number.
-
 * **`Call Flows`_:** Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
-* **`Contact Manager`_** Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
+* **`Call Forward`_:** forward to another extension or to any phone number.
 
 * **Call Monitoring:** view which extensions are currently in a call. (see `Active Extensions`_)
 
@@ -28,11 +28,11 @@ Features
 
 * **Call Routing:** send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager:`_)
 
+* **Call Announced Transfer:**
+
+* **Call Blind Transfer:**
+
 * **Call Transfer:**
-
-* **Announced Transfer:**
-
-* **Blind Transfer:**
 
 * **Call Waiting:**
 
@@ -44,6 +44,8 @@ Features
 
 * **Configuration:** While the admin configures the system in the web interface. The data is saved to the database and can optionally be deliverd to FreeSWITCH via XML files, or on demand from the database.
 
+* **`Contact Manager`_** Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
+
 * **Customizable:** FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and more...
 
 * **Dial by Name:** search by first name or last name to find extension numbers on the system.
@@ -51,6 +53,28 @@ Features
 * **Direct Inward System Access (DISA):** ability to call into the system, put in a pin code, and then call back outbound.
 
 * **Do Not Disturb (DND):** 
+
+* **`Fax Server`_:**
+
+* **Follow-Me:**
+
+* **Hot Desking:**
+
+* **`IVR Menus`_:**
+
+* **Queues:**
+
+* **Multi-Tenant:**
+
+* **Music on Hold:**
+
+* **`Recordings`_:**
+
+* **`Ring Groups`_:**
+
+* **`Time Conditions`_:**
+
+* **Voicemail:**
 
 .. _IVR Menus: /source/applications/ivr.rst
 .. _Call Broadcast: Call_Broadcast
