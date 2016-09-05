@@ -74,6 +74,11 @@ Getting Started
    applications.rst
    status.rst
    advanced.rst
+   fail_over/fail_over.rst
+   load_balancing/load_balancing.rst
+   multi_master/multi_master.rst
+   scalability/scalability.rst
+   tenant_domain_lmits/tenant_domain_limits.rst
    manual/menu_add_ons.rst
    additional_information.rst
    contributing.rst
