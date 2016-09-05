@@ -41,7 +41,7 @@ Benefits of FusionPBX
 * Fax Server
 * Follow-Me
 * Hot Desking
-* IVR Menus
+* `IVR Menus`_
 * Multi-Tenant
 * Music on Hold
 * Queues
@@ -60,6 +60,19 @@ Our Eco-System
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
+.. _IVR Menu: IVR_Menu
+.. _Call Broadcast: Call_Broadcast
+.. _Call Block: Call_Block
+.. _Call Detail Records: Call_Detail_Records
+.. _Call Forward: Call_Forward
+.. _Call Flows: Call_Flows
+.. _Contact Manager: Contact_Manager
+.. _Active Extensions: Active_Extensions
+.. _Queues: Queues
+.. _Call Recordings: Call_Recordings
+.. _Active Calls: Active_Calls
+.. _Dialplan Manager: Dialplan_Manager
+.. _Conferences: Conferences
 
 Getting Started
 -------------------
