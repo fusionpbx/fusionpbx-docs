@@ -49,7 +49,7 @@ Benefits of FusionPBX
 * `Recordings`_
 * `Time Conditions`_
 * Voicemail
-* and lots more...
+* `and lots more...`_
 
 Our Eco-System
 --------------
@@ -79,6 +79,7 @@ Our Eco-System
 .. _Time Conditions: /source/applications/time_conditions.rst
 .. _Ring Groups: /source/applications/ring_groups.rst
 .. _Recordings: /source/applications/recordings.rst
+.. _and lots more...: /source/features/features.rst
 
 Getting Started
 -------------------
