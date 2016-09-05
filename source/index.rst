@@ -65,7 +65,7 @@ Our Eco-System
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
-.. _IVR Menus: /en/latest/applications/ivr.rst
+.. _IVR Menus: /en/latest/applications/ivr.html
 .. _Call Broadcast: Call_Broadcast
 .. _Call Block: Call_Block
 .. _Call Detail Records: Call_Detail_Records
@@ -74,16 +74,16 @@ Our Eco-System
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
 .. _Queues: Queues
-.. _Recordings: /en/latest/applications/recordings.rst
-.. _Call Recordings: /en/latest/applications/recordings.rst
+.. _Recordings: /en/latest/applications/recordings.html
+.. _Call Recordings: /en/latest/applications/recordings.html
 .. _Active Calls: Active_Calls
 .. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
-.. _Fax Server: /en/latest/applications/fax_server.rst
-.. _Time Conditions: /en/latest/applications/time_conditions.rst
-.. _Ring Groups: /en/latest/applications/ring_groups.rst
-.. _Recordings: /en/latest/applications/recordings.rst
-.. _and lots more...: /en/latest/features/features.rst
+.. _Fax Server: /en/latest/applications/fax_server.html
+.. _Time Conditions: /en/latest/applications/time_conditions.html
+.. _Ring Groups: /en/latest/applications/ring_groups.html
+.. _Recordings: /en/latest/applications/recordings.html
+.. _and lots more...: /en/latest/features/features.html
 
 Getting Started
 -------------------
