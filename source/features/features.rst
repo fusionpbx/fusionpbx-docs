@@ -2,7 +2,7 @@
 enable easy database access.
 
 **Announcements:** setup a recording for the auto attendant that
-provides announcement to callers. (See `IVR Menu`_)
+provides announcement to callers. (See `IVR Menus`_ )
 
 **`Call Broadcast`_:** Create a recording and select one or more groups
 to have the system call and play the recording.
@@ -34,19 +34,19 @@ currently ringing.
 **Call Queuing:** can load calls into queues so they can be answered in
 the order they came into the queue. (see `Queues`_)
 
-**`Call Recordings`_:** to record all or some calls or parts of the
+**Call Recordings:** to record all or some calls or parts of the
 call. (See `Active Calls`_ and `Active Extensions`_)
 
 **Call Routing:** send the call different directions or perform actions
 based on reading the caller id info or other call information. (see
-`Dialplan Manager`_)
+`Dialplan Manager:`_)
 
-**Call Transfer**
+**Call Transfer:**
 
-| * Announced Transfer
-| * Blind Transfer
+| * **Announced Transfer**
+| * **Blind Transfer:**
 
-**Call Waiting**
+**Call Waiting:**
 
 **Caller ID:** support and customization for supporting providers.
 
@@ -74,9 +74,9 @@ numbers on the system.
 **Direct Inward System Access (DISA):** ability to call into the system,
 put in a pin code, and then call back outbound.
 
-**Do Not Disturb (DND):** sen
+**Do Not Disturb (DND):** 
 
-.. _IVR Menu: IVR_Menu
+.. _IVR Menus: /source/applications/ivr.rst
 .. _Call Broadcast: Call_Broadcast
 .. _Call Block: Call_Block
 .. _Call Detail Records: Call_Detail_Records
@@ -85,7 +85,13 @@ put in a pin code, and then call back outbound.
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
 .. _Queues: Queues
-.. _Call Recordings: Call_Recordings
+.. _Recordings: /source/applications/recordings.rst
+.. _Call Recordings: /source/applications/recordings.rst
 .. _Active Calls: Active_Calls
 .. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
+.. _Fax Server: /source/applications/fax_server.rst
+.. _Time Conditions: /source/applications/time_conditions.rst
+.. _Ring Groups: /source/applications/ring_groups.rst
+.. _Recordings: /source/applications/recordings.rst
+.. _and lots more...: /source/features/features.rst
