@@ -2,17 +2,26 @@
 Features
 **********
 
-* **Adminer** integrated for an administrator in the superadmin group to enable easy database access.
+Adminer
+----------------
 
-* **Announcements:** setup a recording for the auto attendant that provides announcement to callers. (See `IVR Menus`_ )
+Integrated for an administrator in the superadmin group to enable easy database access.
 
-* **`Call Block`_:** Block inbound calls by the caller id.
+* **Announcements:**
+----------------------
 
-* **`Call Broadcast`_:** Create a recording and select one or more groups to have the system call and play the recording.
+Setup a recording for the auto attendant that provides announcement to callers. (See `IVR Menus`_ )
+
+* **`Call Block`_:**
+Block inbound calls by the caller id.
+
+* **`Call Broadcast`_:**
+Create a recording and select one or more groups to have the system call and play the recording.
 
 * **Call Center:**
 
-* **`Call Detail Records`_:** various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
+* **`Call Detail Records`_:**
+Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
 * **`Call Flows`_:** Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
