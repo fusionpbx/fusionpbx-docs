@@ -12,6 +12,10 @@ Announcements
 
 Setup a recording for the auto attendant that provides announcement to callers. (See `IVR Menus`_ )
 
+Call Barge / Eavesdrop / Intercept
+-----------------------------------
+
+
 `Call Block`_
 ---------------
 
@@ -32,8 +36,8 @@ Creates a robust call center environment with agent tiers.
 
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-`Call Flows`_
-----------------
+`Call Flows`_ (Day Night Mode)
+--------------------------------
 
 Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
@@ -113,6 +117,9 @@ Customizable
 
 FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and more...
 
+Dialplan
+-----------
+
 Dial by Name
 --------------------
 
@@ -127,6 +134,13 @@ Do Not Disturb (DND)
 ----------------------
 
 
+Domain Based Multi-Tenant
+--------------------------
+
+Extensions
+-----------
+
+
 `Fax Server`_
 ----------------
 
@@ -139,20 +153,44 @@ Hot Desking
 ------------
 
 
-`IVR Menus`_
---------------
+Inbound and Outbound Call Routing
+----------------------------------
+
+
+`IVR Menus`_ (Auto Attendant)
+------------------------------
 
 
 Queues
 --------
 
 
-Multi-Tenant
--------------
-
-
 Music on Hold
 --------------
+
+Multi-Category / Multi-tenant Music on Hold
+--------------------------------------------
+
+
+Operator Panel
+---------------
+
+Paging
+--------
+
+
+Parking
+---------
+
+Phone Setup and Provisioning
+------------------------------
+
+
+Provider Setup
+----------------
+
+Re-branding and Customize
+--------------------------
 
 
 `Recordings`_
@@ -166,6 +204,11 @@ Music on Hold
 
 `Time Conditions`_
 --------------------
+
+
+User and Group Management
+--------------------------
+
 
 Voicemail
 -----------
