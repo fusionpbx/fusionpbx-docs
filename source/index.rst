@@ -79,3 +79,25 @@ Our Eco-System
 .. _and lots more...: /en/latest/features/features.html
 .. _FusionPBX Features: /en/latest/features/features.html
 
+
+.. toctree::
+   :maxdepth: 2
+
+   getting_started.rst
+   home.rst
+   accounts.rst
+   dialplan.rst
+   applications.rst
+   status.rst
+   advanced.rst
+   manual/menu_add_ons.rst
+   fail_over/fail_over.rst
+   high_availability/high_availability.rst
+   load_balancing.rst
+   multi_master.rst
+   scalability/scalability.rst
+   tenant_domain_lmits/tenant_domain_limits.rst
+   additional_information.rst
+   contributing.rst
+   doc_guide.rst
+
