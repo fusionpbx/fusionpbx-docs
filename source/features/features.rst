@@ -67,89 +67,114 @@ Call Routing
 
 Send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager:`_)
 
-* **Call Announced Transfer:**
+Call Announced Transfer
 --------------------------------
 
 
-* **Call Blind Transfer:**
+Call Blind Transfer
 ---------------------------
 
 
-* **Call Transfer:**
+Call Transfer
 ----------------------
 
 
-* **Call Waiting:**
+Call Waiting
 ---------------------
 
 
-* **Caller ID:**
+Caller ID
 ------------------
 
 Support for customization and supporting providers.
 
-* **Conferencing:**
+Conferencing
 ---------------------
 
 Set up conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, and more. (See `Conferences`_)
 
-* **Conference Center:**
+Conference Center
 -------------------------
 
 Unlimited conference rooms with moderator and paticipants, pin numbers, call recording, mute all, caller announce and more...
 
-* **Configuration:**
+Configuration
 ---------------------
 
 While the admin configures the system in the web interface. The data is saved to the database and can optionally be deliverd to FreeSWITCH via XML files, or on demand from the database.
 
-* **`Contact Manager`_**
+`Contact Manager`_**
 --------------------------
 
 Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
 
-* **Customizable:**
+Customizable
 --------------------
 
 FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and more...
 
-* **Dial by Name:**
+Dial by Name
 --------------------
 
 Search by first name or last name to find extension numbers on the system.
 
-* **Direct Inward System Access (DISA):**
+Direct Inward System Access (DISA)
 -------------------------------------------
 
 Gives ability to call into the system, put in a pin code, and then call back outbound.
 
-* **Do Not Disturb (DND):**
-----------------------------
-
-
-* **`Fax Server`_:**
+Do Not Disturb (DND)
 ----------------------
 
 
-* **Follow-Me:**
+`Fax Server`_
+----------------
 
-* **Hot Desking:**
 
-* **`IVR Menus`_:**
+Follow-Me
+------------
 
-* **Queues:**
 
-* **Multi-Tenant:**
+Hot Desking
+------------
 
-* **Music on Hold:**
 
-* **`Recordings`_:**
+`IVR Menus`_
+--------------
 
-* **`Ring Groups`_:**
 
-* **`Time Conditions`_:**
+Queues
+--------
 
-* **Voicemail:**
+
+Multi-Tenant
+-------------
+
+
+Music on Hold
+--------------
+
+
+`Recordings`_
+----------------
+
+
+`Ring Groups`_:
+-------------------
+
+
+
+`Time Conditions`_
+--------------------
+
+Voicemail
+-----------
+
+
+Voicemail to Email
+-------------------
+
+
 
 .. _IVR Menus: /source/applications/ivr.rst
 .. _Call Broadcast: Call_Broadcast
