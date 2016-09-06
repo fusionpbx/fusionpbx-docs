@@ -11,8 +11,8 @@ Tenant & Domain Lmits
 
 
 .. toctree::
-  :maxdepth: 3
-  :glob:
+ :maxdepth: 3
+ :glob:
 
  tenant_domain_limits/call_center_queues.rst
  tenant_domain_limits/destinations_dids.rst
