@@ -3,39 +3,66 @@ Features
 **********
 
 Adminer
-----------------
+---------
 
 Integrated for an administrator in the superadmin group to enable easy database access.
 
-* **Announcements:**
-----------------------
+Announcements
+---------------
 
 Setup a recording for the auto attendant that provides announcement to callers. (See `IVR Menus`_ )
 
-* **`Call Block`_:**
+`Call Block`_
+---------------
+
 Block inbound calls by the caller id.
 
-* **`Call Broadcast`_:**
+`Call Broadcast`_
+-------------------
+
 Create a recording and select one or more groups to have the system call and play the recording.
 
-* **Call Center:**
+Call Center
 
-* **`Call Detail Records`_:**
+`Call Detail Records`_
+------------------------
+
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-* **`Call Flows`_:** Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
+`Call Flows`_
+----------------
 
-* **`Call Forward`_:** forward to another extension or to any phone number.
+Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
-* **Call Monitoring:** view which extensions are currently in a call. (see `Active Extensions`_)
+`Call Forward`_
+-----------------
 
-* **Call Pickup:** for a particular extension or any extension that is currently ringing.
+Forward to another extension or to any phone number.
 
-* **Call Queuing:** can load calls into queues so they can be answered in the order they came into the queue. (see `Queues`_)
+Call Monitoring
+-----------------
 
-* **Call Recordings:** to record all or some calls or parts of the call. (See `Active Calls`_ and `Active Extensions`_)
+View which extensions are currently in a call. (see `Active Extensions`_)
 
-* **Call Routing:** send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager:`_)
+Call Pickup
+-------------
+
+For a particular extension or any extension that is currently ringing.
+
+Call Queuing
+--------------
+
+Load calls into queues so they can be answered in the order they came into the queue. (see `Queues`_)
+
+Call Recordings
+-----------------
+
+Record all or some calls or parts of the call. (See `Active Calls`_ and `Active Extensions`_)
+
+Call Routing
+--------------
+
+Send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager:`_)
 
 * **Call Announced Transfer:**
 
