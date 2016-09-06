@@ -271,20 +271,20 @@ Version 4.0 to 4.2
 
 9. Update Time Conditions (Bug Fix)
 
- ::
+::
  
-  Goto Advanced > Upgrades page.  Check box Update Source, execute. 
-  Goto Advanced > Default settings > Category > delete the category: time condition presets.
-  Goto Advanced > Upgrade >  check box App Defaults, execute.
-  Goto Advanced > Default settings. Click "Reload" at the top right. (This will get the new presets)
+ Goto Advanced > Upgrades page.  Check box Update Source, execute. 
+ Goto Advanced > Default settings > Category > delete the category: time condition presets.
+ Goto Advanced > Upgrade >  check box App Defaults, execute.
+ Goto Advanced > Default settings. Click "Reload" at the top right. (This will get the new presets)
   
- ::
+::
  
-  Next steps are for existing Time Conditions
-  Goto Apps > Time Conditions and edit the time conditions remove all holidays and hit save.
-  Select the holidays over again.
+ Next steps are for existing Time Conditions
+ Goto Apps > Time Conditions and edit the time conditions remove all holidays and hit save.
+ Select the holidays over again.
   
-
+|
 
  .. note::
  
