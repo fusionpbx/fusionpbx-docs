@@ -32,7 +32,7 @@ Benefits of FusionPBX
 3. Gives your users and tenants an attractive GUI interface to interact with. 
 
 
-FusionPBX Features
+`FusionPBX Features`_
 --------------------
 
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
@@ -40,23 +40,16 @@ FusionPBX Features
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
 | **Call Detail Records** | **Conference Center** |    **Contacts**              |      `Fax Server`_                       |
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
+| **Follow-Me**           | **Hot Desking**       | **`IVR Menus`_**             |       **`Ring Groups`_**                 |
++-------------------------+-----------------------+------------------------------+------------------------------------------+
+| **Multi-Tenant**        | **Music on Hold**     |    **Queues**                |      `Recordings`_                       |
++-------------------------+-----------------------+------------------------------+------------------------------------------+
+| `Time Conditions`_      | **WebRTC ready**      |    **Voicemail**             |      `and lots more...`_                 |
++-------------------------+-----------------------+------------------------------+------------------------------------------+
 
-* Call Block
-* Call Broadcast
-* Call Flows
-* Call Center
-* Call Detail Records
-* Conference Center
-* Contacts
-* `Fax Server`_
-* Follow-Me
-* Hot Desking
-* `IVR Menus`_
-* `Ring Groups`_
-* Multi-Tenant
-* Music on Hold
-* Queues
-* `Recordings`_
+
+
+
 * `Time Conditions`_
 * Voicemail
 * `and lots more...`_
@@ -90,6 +83,7 @@ Our Eco-System
 .. _Ring Groups: /en/latest/applications/ring_groups.html
 .. _Recordings: /en/latest/applications/recordings.html
 .. _and lots more...: /en/latest/features/features.html
+.. _FusionPBX Features: /en/latest/features/features.html
 
 Getting Started
 -------------------
