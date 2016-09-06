@@ -23,6 +23,9 @@ Block inbound calls by the caller id.
 Create a recording and select one or more groups to have the system call and play the recording.
 
 Call Center
+------------
+
+Creates a robust call center environment with agent tiers.
 
 `Call Detail Records`_
 ------------------------
@@ -65,32 +68,68 @@ Call Routing
 Send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager:`_)
 
 * **Call Announced Transfer:**
+--------------------------------
+
 
 * **Call Blind Transfer:**
+---------------------------
+
 
 * **Call Transfer:**
+----------------------
+
 
 * **Call Waiting:**
+---------------------
 
-* **Caller ID:** support and customization for supporting providers.
 
-* **Conferencing:** to set up conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, and more. (See `Conferences`_)
+* **Caller ID:**
+------------------
 
-* **Conference Center:** can have unlimited conference rooms with moderator and paticipants, pin numbers, call recording, mute all, caller announce and more...
+Support for customization and supporting providers.
 
-* **Configuration:** While the admin configures the system in the web interface. The data is saved to the database and can optionally be deliverd to FreeSWITCH via XML files, or on demand from the database.
+* **Conferencing:**
+---------------------
 
-* **`Contact Manager`_** Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
+Set up conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, and more. (See `Conferences`_)
 
-* **Customizable:** FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and more...
+* **Conference Center:**
+-------------------------
 
-* **Dial by Name:** search by first name or last name to find extension numbers on the system.
+Unlimited conference rooms with moderator and paticipants, pin numbers, call recording, mute all, caller announce and more...
 
-* **Direct Inward System Access (DISA):** ability to call into the system, put in a pin code, and then call back outbound.
+* **Configuration:**
+---------------------
 
-* **Do Not Disturb (DND):** 
+While the admin configures the system in the web interface. The data is saved to the database and can optionally be deliverd to FreeSWITCH via XML files, or on demand from the database.
+
+* **`Contact Manager`_**
+--------------------------
+
+Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
+
+* **Customizable:**
+--------------------
+
+FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and more...
+
+* **Dial by Name:**
+--------------------
+
+Search by first name or last name to find extension numbers on the system.
+
+* **Direct Inward System Access (DISA):**
+-------------------------------------------
+
+Gives ability to call into the system, put in a pin code, and then call back outbound.
+
+* **Do Not Disturb (DND):**
+----------------------------
+
 
 * **`Fax Server`_:**
+----------------------
+
 
 * **Follow-Me:**
 
