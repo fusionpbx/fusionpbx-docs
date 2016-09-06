@@ -96,7 +96,7 @@ Our Eco-System
    load_balancing.rst
    multi_master.rst
    scalability/scalability.rst
-   tenant_domain_lmits/tenant_domain_limits.rst
+   tenant_domain_limits.rst
    additional_information.rst
    contributing.rst
    doc_guide.rst
