@@ -28,6 +28,8 @@ How to Get Started:
   Contributing Code or Documentation requires knowledge of Git, Github and how to create pull requests on Github.
   This is not as bad as it sounds and if you are willing to learn we will help you through it. 
 
+|
+
 
 
  .. toctree::
