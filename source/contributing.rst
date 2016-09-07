@@ -30,14 +30,13 @@ How to Get Started:
 
 
 
-.. toctree::
+ .. toctree::
   :maxdepth: 4
   :glob:
 
-    
-contributing/contributing_code.rst
-contributing/contributing_documentation.rst
-contributing/contributing_translations.rst
-contributing/qa_testing.rst
-#contributing/coding_standards
-#contributing/directory_structure
+ contributing/contributing_code.rst
+ contributing/contributing_documentation.rst
+ contributing/contributing_translations.rst
+ contributing/qa_testing.rst
+ contributing/coding_standards
+ contributing/directory_structure
