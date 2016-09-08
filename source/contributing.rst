@@ -39,6 +39,7 @@ How to Get Started:
   contributing/contributing_documentation.rst
   contributing/contributing_translations.rst
   contributing/qa_testing.rst
+  contributing/github_rebase.rst
   contributing/coding_standards
   contributing/directory_structure
 
