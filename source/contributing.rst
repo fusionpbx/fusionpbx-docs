@@ -10,6 +10,7 @@ What We Need:
 2. Technical Writers
 3. Translators
 4. Quality Assurance Testers
+5. Documentors
 
 .. note::
 
@@ -36,10 +37,11 @@ How to Get Started:
   :glob:
 
   contributing/contributing_code.rst
+  contributing/signing_the_cla.rst
   contributing/contributing_documentation.rst
   contributing/contributing_translations.rst
   contributing/qa_testing.rst
   contributing/github_rebase.rst
   contributing/coding_standards
-  contributing/directory_structure
+#  contributing/directory_structure
 
