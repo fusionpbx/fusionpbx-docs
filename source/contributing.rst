@@ -28,17 +28,18 @@ How to Get Started:
   Contributing Code or Documentation requires knowledge of Git, Github and how to create pull requests on Github.
   This is not as bad as it sounds and if you are willing to learn we will help you through it. 
 
+|
 
 
 .. toctree::
-  :maxdepth: 4
+  :maxdepth: 3
   :glob:
 
-    
-contributing/contributing_code.rst
-contributing/contributing_documentation.rst
-contributing/contributing_translations.rst
-contributing/qa_testing.rst
-contributing/github_rebase.rst
-#contributing/coding_standards
-#contributing/directory_structure
+  contributing/contributing_code.rst
+  contributing/contributing_documentation.rst
+  contributing/contributing_translations.rst
+  contributing/qa_testing.rst
+  contributing/github_rebase.rst
+  contributing/coding_standards
+  contributing/directory_structure
+
