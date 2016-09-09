@@ -15,7 +15,7 @@ Select the setting icon and choose Open on Git Shell
 
 You will be presented with a new shell
 
-.. image:: ../_static/images/contributing/github_rebase-new-shell.png
+.. image:: ../_static/images/contributing/github_rebase_new_shell.png
 
 **2.** Next execute the following two commands and notepad will appear
 

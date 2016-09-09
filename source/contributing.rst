@@ -35,21 +35,11 @@ How to Get Started:
   :maxdepth: 3
   :glob:
 
-<<<<<<< HEAD
-    
-contributing/contributing_code.rst
-contributing/contributing_documentation.rst
-contributing/contributing_translations.rst
-contributing/qa_testing.rst
-contributing/github_rebase.rst
-#contributing/coding_standards
-#contributing/directory_structure
-=======
   contributing/contributing_code.rst
   contributing/contributing_documentation.rst
   contributing/contributing_translations.rst
   contributing/qa_testing.rst
+  contributing/github_rebase.rst
   contributing/coding_standards
   contributing/directory_structure
 
->>>>>>> refs/remotes/origin/master
