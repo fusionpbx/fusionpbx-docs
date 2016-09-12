@@ -233,7 +233,7 @@ Version 4.0 to 4.2
 
 ::
 
- cd /var/www/freeswitch
+ cd /var/www/fusionpbx
  git stash
  git pull
  chown -R www-data:www-data *
