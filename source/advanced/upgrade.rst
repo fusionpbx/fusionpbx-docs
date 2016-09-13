@@ -269,7 +269,32 @@ Version 4.0 to 4.2
 
 |
 
-9. Update Time Conditions (Bug Fix)
+9. Remove .xml from the end of the following file names
+
+::
+ 
+ **Before**
+ autoload_configs/callcenter.conf.xml
+ autoload_configs/conference.conf.xml
+ autoload_configs/local_stream.conf.xml
+ 
+
+::
+ 
+ **After**
+ autoload_configs/callcenter.conf
+ autoload_configs/conference.conf
+ autoload_configs/local_stream.conf
+
+10. Edit lua.conf.xml adding "languages"
+
+::
+
+ <param name="xml-handler-bindings" value="configuration,dialplan,directory,languages"/>
+
+11. From the Gui Goto ``Advanced > Upgrade and execute App Defaults`` Then from Cli Restart Freeswitch.
+
+12. Update Time Conditions (Bug Fix)
 
 ::
  
