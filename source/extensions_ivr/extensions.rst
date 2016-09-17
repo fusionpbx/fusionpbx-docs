@@ -70,10 +70,21 @@ Enter information as needed.
 - **Emergency Caller ID Name:** Can be set to a national standard or local emergency entity
 - **Emergency Caller ID Number:** Can be set to a national standard or local emergency entity
 
+==================
+SRTP 
+==================
+SRTP can be forced for an extension by specifying rtp_secure_meda in the Dial String as follows
+
+
+{rtp_secure_media=true,sip_invite_domain=${domain_name},leg_timeout=${call_timeout},presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})}
+
+
+
 .. image:: ../_static/images/fusionpbx_ext4.jpg
         :scale: 85%
 
 |
+
 
 ==================
 Registering Phones
