@@ -267,6 +267,15 @@ Version 4.0 to 4.2
 
 8. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
 
+::
+
+ Check Applications > Music On Hold to see if music is listed properly.
+ If not, do the following
+ *
+ *
+ *
+ *
+ 
 |
 
 9. Update Time Conditions (Bug Fix)
