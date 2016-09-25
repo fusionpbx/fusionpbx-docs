@@ -270,6 +270,16 @@ https://domain.com/core/upgrade/index.php
 
 9. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
 
+::
+
+ Check Applications > Music On Hold to see if music is listed properly. 
+ You should see in red default for the category and the kHz sub categories should be in blue.
+ If not, do the following
+ 
+ * Edit (Pencil icon on the right) the Category names to reflect default for 8, 16, 32, and 48kHz.
+ * After you click the pencil icon choose at the bottom the domain for the rates and click save.
+ * If the categor is blank, you may have missed running Advanced > check box app defaults > execute.
+
 |
 
 10. Remove .xml from the end of the following file names
