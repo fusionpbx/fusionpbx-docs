@@ -272,13 +272,14 @@ https://domain.com/core/upgrade/index.php
 
 ::
 
- Check Applications > Music On Hold to see if music is listed properly. 
+ Check Applications > Music On Hold to see if music is listed properly.
  You should see in red default for the category and the kHz sub categories should be in blue.
  If not, do the following
  
  * Edit (Pencil icon on the right) the Category names to reflect default for 8, 16, 32, and 48kHz.
  * After you click the pencil icon choose at the bottom the domain for the rates and click save.
- * If the categor is blank, you may have missed running Advanced > check box app defaults > execute.
+ * If the category is blank, you may have missed running Advanced > check box app defaults > execute or you may not have renamed autoload_configs/local_stream.conf.xml file to local_stream.conf.
+ * For custom music on hold check the path for the domain name and set select for the domain name to match the domain used in the path.
 
 |
 
