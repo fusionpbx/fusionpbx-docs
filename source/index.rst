@@ -17,9 +17,9 @@ flexible web interface to the very powerful and highly scalable
 multi-platform voice switch called `FreeSWITCH`_.
 
 FusionPBX will run on a variety of operating systems (Optimized for Debian 8) and
-hardware of your choice. FusionPBX provides a GUI for for unlimited
+hardware of your choice. FusionPBX provides a GUI for unlimited
 extensions, voicemail-to-email, music on hold, call parking, analog
-lines or high density T1/E1 circuits, and many other Features. FusionPBX
+lines or high density T1/E1 circuits, and many other features. FusionPBX
 provides the functionality that business need and provides corporate
 level phone system features to small, medium and large businesses.
 
