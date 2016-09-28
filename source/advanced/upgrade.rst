@@ -222,50 +222,84 @@ Version Upgrade can take several steps to perform. Below will show how to upgrad
 Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^
 
-1. Update code from the GUI. Advanced > Upgrade page (Only check this box then click execute)
-
-
- .. note::
- 
-  If you get a red bar error at the top when trying to upgrade
-  you will need SSH access to the install and run these commands.
-
+1. Update the source code. 
+From the web interface go to the Menu -> Advanced > Upgrade page. Check the source box and the press execute. If you see a red bar it indicates there was a git conflict and you will need to update from console instead. If you don't see the source box then you will need to update from the console.
 
 ::
 
- cd /var/www/freeswitch
+ cd /var/www/fusionpbx
  git stash
  git pull
- chown -R www-data:www-data *
- 
-2. Check box Schema (Only check this box then click execute)
+ chown -R www-data:www-data /var/www/fusionpbx
 
 |
 
-3. You will notice a big difference in the menu. (Logo can be placed above the menu also)
+2. If the page goes blank type in the url http://domain.com/logout.php  This should bring you back to the login screen.  
+
+|
+
+3. Udate the Schema. Advanced -> Upgrade Check the Schema box and then then press execute.
+https://domain.com/core/upgrade/index.php
+
+|
+
+4. Check the box for App Defaults and run execute.
+
+|
+
+5. Check the box for Menu Defaults and run execute. This will update the menu to the default menu. The menu should now look like this.
+
+|
 
 .. image:: ../_static/images/fusionpbx_new_menu.jpg
         :scale: 85%
 
-|
+|      
 
-4. Check box Default Settings. (Only check this box then click execute)
-
-|
-
-5. If the page goes blank type in the url http://domain.tld/logout.php  This should bring you back to the login screen. Login.
+6. Check the box for Permission Defaults and run execute. Permissions are store in a session to get new permissions logout and back in.
 
 |
 
-6. Goto Dialplan > Dialplan Manager and delete "local_extension".  Then goto Advanced > Upgrade and only check box App Defaults and click execute. This will regenerate the new local_extension version.
+7. Goto Dialplan > Dialplan Manager and delete "local_extension".  Then goto Advanced > Upgrade and only check box App Defaults and click execute. This will regenerate the new local_extension version.
 
 |
 
-7. Goto Applications > Conference profiles. Edit each profile and replace $${hold_music} with local_stream://default
+8. Go to Applications > Conference profiles. Edit each profile and replace $${hold_music} with local_stream://default
 
 |
 
-8. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
+9. Goto Advanced > Variables hold_music. Make sure it's value is set as local_stream://default
+
+::
+
+ Check Applications > Music On Hold to see if music is listed properly.
+ You should see in red default for the category and the kHz sub categories should be in blue.
+ If not, do the following
+ 
+ * Edit (Pencil icon on the right) the Category names to reflect default for 8, 16, 32, and 48kHz.
+ * After you click the pencil icon choose at the bottom the domain for the rates and click save.
+ * If the category is blank, you may have missed running Advanced > check box app defaults > execute or you may not have renamed autoload_configs/local_stream.conf.xml file to local_stream.conf.
+ * For custom music on hold check the path for the domain name and set select for the domain name to match the domain used in the path.
+
+|
+
+10. Remove .xml from the end of the following file names
+
+::
+
+ **Before**
+ autoload_configs/callcenter.conf.xml
+ autoload_configs/conference.conf.xml
+ autoload_configs/local_stream.conf.xml
+
+|
+
+::
+
+ **After**
+ autoload_configs/callcenter.conf
+ autoload_configs/conference.conf
+ autoload_configs/local_stream.conf
 
 ::
 
@@ -278,26 +312,37 @@ Version 4.0 to 4.2
  
 |
 
-9. Update Time Conditions (Bug Fix)
+10. Edit autoload_configs/lua.conf.xml adding "languages". Restart of FreeSWITCH is required.
 
 ::
+
+ <param name="xml-handler-bindings" value="configuration,dialplan,directory,languages"/>
+
+|
+
+11. Update Time Conditions (Bug Fix)
+ 
+ ::
  
  Goto Advanced > Upgrades page.  Check box Update Source, execute. 
  Goto Advanced > Default settings > Category > delete the category: time condition presets.
  Goto Advanced > Upgrade >  check box App Defaults, execute.
  Goto Advanced > Default settings. Click "Reload" at the top right. (This will get the new presets)
-  
-::
+
+ ::
  
  Next steps are for existing Time Conditions
  Goto Apps > Time Conditions and edit the time conditions remove all holidays and hit save.
  Select the holidays over again.
-  
+
 |
 
  .. note::
- 
+
+|
+
   Many of the provisioning templates were updated.  If you use custom provisioning templates you should consider updating them with the new versions. 
+
 
 Version 3.8 to 4.0
 ^^^^^^^^^^^^^^^^^^
