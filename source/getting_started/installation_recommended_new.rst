@@ -108,9 +108,9 @@ Run App defaults
 
 ::
 
-  Go to the menu and choose Advanced -> Upgrade select the checkbox for App defaults then execute.
+  Go to the menu and choose Advanced -> Upgrade select the checkbox for App Defaults then execute.
   
-.. image:: ../_static/images/fusionpbx_upgrade_page.jpg
+.. image:: ../_static/images/fusionpbx_upgrade_app_defaults.jpg
         :scale: 85%  
 
 |
