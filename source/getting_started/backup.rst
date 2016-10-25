@@ -55,6 +55,6 @@ Setting crontab -e
  chmod 755 fusionpbx-backup.sh
 
 
-Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. From Advanced > Backup you can download the backup also. (If you get "504 Gateway Time-out" just keep reloading the page untill the the download box appears)
+Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. From Advanced > Backup you can download the backup also. 
 
 
