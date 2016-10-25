@@ -69,13 +69,13 @@ Setting crontab -e
 
 Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. From Advanced > Backup you can download the backup also. 
 
-FreeSWITCH Source install paths.
+**FreeSWITCH Source install paths.**
 
 .. image:: ../_static/images/fusionpbx_backup_source.jpg
         :scale: 85%
 
 
-FreeSWITCH Package install paths.
+**FreeSWITCH Package install paths.**
 
 .. image:: ../_static/images/fusionpbx_backup_package1.jpg
         :scale: 85%
