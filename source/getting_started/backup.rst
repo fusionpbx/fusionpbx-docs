@@ -8,11 +8,18 @@ It's always good to have a backup method in place.  Here are the steps to a basi
 
 From the Gui.
 
-FreeSWITCH Source install paths.
+**FreeSWITCH Source install paths.**
 
 .. image:: ../_static/images/fusionpbx_backup_source1.jpg
         :scale: 85%
 
+
+
+**FreeSWITCH Package install paths.**
+
+.. image:: ../_static/images/fusionpbx_backup_source1.jpg
+        :scale: 85%
+        
 ::
 
  Goto Advanced > Default Settings.
@@ -65,4 +72,10 @@ Once this is complete you will have the backup ready to execute by ./fusion-back
 FreeSWITCH Source install paths.
 
 .. image:: ../_static/images/fusionpbx_backup_source.jpg
+        :scale: 85%
+
+
+FreeSWITCH Package install paths.
+
+.. image:: ../_static/images/fusionpbx_backup_package1.jpg
         :scale: 85%
