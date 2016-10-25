@@ -8,6 +8,11 @@ It's always good to have a backup method in place.  Here are the steps to a basi
 
 From the Gui.
 
+FreeSWITCH Source install paths.
+
+.. image:: ../_static/images/fusionpbx_backup_source1.jpg
+        :scale: 85%
+
 ::
 
  Goto Advanced > Default Settings.
@@ -57,4 +62,7 @@ Setting crontab -e
 
 Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. From Advanced > Backup you can download the backup also. 
 
+FreeSWITCH Source install paths.
 
+.. image:: ../_static/images/fusionpbx_backup_source.jpg
+        :scale: 85%
