@@ -70,6 +70,13 @@ From the Gui.
  Goto Advanced > Default Settings.
  
  Settings for FreeSWITCH package installs are allready in place.
+ path		array  /var/backups/fusionpbx/postgresql		True	postgresql
+ path		array  /usr/share/freeswitch/scripts			True 	scripts
+ path		array  /var/www/fusionpbx	             	 	True 	fusionpbx
+ path		array  /var/lib/freeswitch/storage	          	True 	storage
+ path		array  /var/lib/freeswitch/recordings			True 	recordings
+ path		array  /etc/freeswitch/conf 				True 	conf 
+ 
  
  For FreeSWITCH Source edit the backup paths
  path           array   /var/backups/fusionpbx/postgresql       True    postgresql
