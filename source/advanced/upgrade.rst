@@ -301,6 +301,15 @@ https://domain.com/core/upgrade/index.php
  autoload_configs/conference.conf
  autoload_configs/local_stream.conf
 
+::
+
+ Check Applications > Music On Hold to see if music is listed properly.
+ If not, do the following
+ *
+ *
+ *
+ *
+ 
 |
 
 10. Edit autoload_configs/lua.conf.xml adding "languages". Restart of FreeSWITCH is required.
