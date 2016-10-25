@@ -19,5 +19,6 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
 
   getting_started/installation_recommended_new.rst
   getting_started/security.rst
+  getting_started/backup.rst
   getting_started/register_phones.rst
   getting_started/post_installation.rst
