@@ -6,7 +6,7 @@ Backup
 
 It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX. This is one of the many ways you can backup.
 
-From the command line.
+**From the command line.**
 
 ::
  
@@ -51,7 +51,7 @@ Once this is complete you will have the backup ready to execute by ./fusion-back
         :scale: 85%
 
 
-From the Gui.
+**From the Gui.**
 
 **FreeSWITCH Source install paths.**
 
@@ -64,12 +64,13 @@ From the Gui.
 
 .. image:: ../_static/images/fusionpbx_backup_source1.jpg
         :scale: 85%
-        
+
+**Goto Advanced > Default Settings.**
+
 ::
 
- Goto Advanced > Default Settings.
- 
  Settings for FreeSWITCH package backup paths.
+ 
  path		array  /var/backups/fusionpbx/postgresql		True	postgresql
  path		array  /usr/share/freeswitch/scripts			True 	scripts
  path		array  /var/www/fusionpbx	             	 	True 	fusionpbx
@@ -77,8 +78,12 @@ From the Gui.
  path		array  /var/lib/freeswitch/recordings			True 	recordings
  path		array  /etc/freeswitch/conf 				True 	conf 
  
+ Click "Reload" at the top of the page.
+
+:: 
  
  Settings for FreeSWITCH source backup paths.
+ 
  path           array   /var/backups/fusionpbx/postgresql       True    postgresql
  path		array  	/usr/local/freeswitch/scripts 		True 	scripts  	 	
  path		array  	/usr/local/freeswitch/recordings 	True 	recordings  	
