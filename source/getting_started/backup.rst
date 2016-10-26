@@ -6,6 +6,9 @@ Backup
 
 It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX. This is one of the many ways you can backup.
 
+Command line settings
+^^^^^^^^^^^^^^^^^^^^^^
+
 **From the command line.**
 
 ::
@@ -22,6 +25,9 @@ It's always good to have a backup method in place.  Here are the steps to a basi
  
 You should have the script ready to execute. (Default the script will use FreeSWITCH package paths.  If you have an older install using source be sure to change this by commenting the package line #22 and uncomment the source line #25.)
  
+Crontab settings
+^^^^^^^^^^^^^^^^^
+
 Setting crontab -e
  
 ::
@@ -37,19 +43,10 @@ Setting crontab -e
  chmod 755 fusionpbx-backup.sh
 
 
-Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. From Advanced > Backup you can download the backup also. 
+Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. 
 
-**FreeSWITCH Source install paths.**
-
-.. image:: ../_static/images/fusionpbx_backup_source.jpg
-        :scale: 85%
-
-
-**FreeSWITCH Package install paths.**
-
-.. image:: ../_static/images/fusionpbx_backup_package1.jpg
-        :scale: 85%
-
+Gui settings
+^^^^^^^^^^^^^
 
 **From the Gui.**
 
@@ -93,4 +90,18 @@ Once this is complete you will have the backup ready to execute by ./fusion-back
  
  Click "Reload" at the top of the page.
 
+Download Backups
+^^^^^^^^^^^^^^^^^
 
+From Advanced > Backup you can download the backup also. 
+
+**FreeSWITCH Source install paths.**
+
+.. image:: ../_static/images/fusionpbx_backup_source.jpg
+        :scale: 85%
+
+
+**FreeSWITCH Package install paths.**
+
+.. image:: ../_static/images/fusionpbx_backup_package1.jpg
+        :scale: 85%
