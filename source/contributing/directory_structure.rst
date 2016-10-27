@@ -2,8 +2,6 @@
 File & Directory Structure
 **************************
 
-
-
 HMVC
 -------------
 

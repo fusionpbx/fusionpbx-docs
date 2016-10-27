@@ -17,9 +17,9 @@ flexible web interface to the very powerful and highly scalable
 multi-platform voice switch called `FreeSWITCH`_.
 
 FusionPBX will run on a variety of operating systems (Optimized for Debian 8) and
-hardware of your choice. FusionPBX provides a GUI for for unlimited
+hardware of your choice. FusionPBX provides a GUI for unlimited
 extensions, voicemail-to-email, music on hold, call parking, analog
-lines or high density T1/E1 circuits, and many other Features. FusionPBX
+lines or high density T1/E1 circuits, and many other features. FusionPBX
 provides the functionality that business need and provides corporate
 level phone system features to small, medium and large businesses.
 
@@ -40,7 +40,7 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
 | **Call Detail Records** | **Conference Center** |    **Contacts**              |      `Fax Server`_                       |
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
-| **Follow-Me**           | **Hot Desking**       |     `IVR Menus`_             |           `Ring Groups`_                 |
+| **Follow-Me**           | **Hot Desking**       |    `IVR Menus`_              |      `Ring Groups`_                      |
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
 | **Multi-Tenant**        | **Music on Hold**     |    **Queues**                |      `Recordings`_                       |
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
@@ -48,10 +48,10 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+------------------------------+------------------------------------------+
 
 
-Our Eco-System
---------------
+Our Ecosystem
+-------------
 
-| We are a **global community** that has an open and **very friendly** eco-system.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
+| We are a **global community** that has an open and **very friendly** ecosystem.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
 
 
 | Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Come join us and meet the team.

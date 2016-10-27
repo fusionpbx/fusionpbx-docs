@@ -1,3 +1,11 @@
+*****************
+Iptables
+*****************
+
+|
+
+After The install is complete please keep the login details from the install in a safe and secure place.  Just in case you need them later.
+
 iptables
 ===========
 
@@ -38,8 +46,8 @@ Rules to block not so friendly scanner
 
 
 | ``iptables -I INPUT -j DROP -p tcp --dport 5060 -m string--string "VaxSIPUserAgent" --algo bm``
-| ``iptables -I INPUT -j DROP -p tcp --dport 5060 -m string --string "VaxIPUserAgent" --algo bm``
-| ``iptables -I INPUT -j DROP -p tcp --dport 5080 -m string --string "VaxSIPUserAgent" --algo bm``
+| ``iptables -I INPUT -j DROP -p udp --dport 5060 -m string --string "VaxIPUserAgent" --algo bm``
+| ``iptables -I INPUT -j DROP -p udp --dport 5080 -m string --string "VaxSIPUserAgent" --algo bm``
 | ``iptables -I INPUT -j DROP -p tcp --dport 5080 -m string --string "VaxIPUserAgent" --algo bm``
 
 
