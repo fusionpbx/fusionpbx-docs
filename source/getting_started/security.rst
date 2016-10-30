@@ -48,11 +48,17 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
  mkdir -p configs
  cd configs
  
-**Copy code example from `link`_ in step #2 section and edit domains, key size, email then put into: /etc/letsencrypt/configs/domain.tld.conf**
+**Copy code example from** `link`_ **in step #2 section and edit domains, key size, email then put into: /etc/letsencrypt/configs/domain.tld.conf** (Edit domain.tld to reflect your domain)
 
 ::
 
  touch /etc/letsencrypt/configs/domain.tld.conf
+ vim /etc/letsencrypt/configs/domain.tld.conf
+ 
+**Edit /etc/nginx/sites-available/fusionpbx**
+
+::
+
  Vim  /etc/nginx/sites-available/fusionpbx
  Add this after the ssl_ciphers line
  
@@ -94,11 +100,12 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
  cd /etc/fusionpbx/
  touch renew-letsencrypt.sh
  Put code example from Automating Renewal section step#1 into renew-letsencrypt.sh
- Edit the my-domain.conf with the domain name you made a few steps earlier
+ Edit the my-domain.conf with the domain name you used a few steps earlier
  Create crontab -e
  0 0 1 JAN,MAR,MAY,JUL,SEP,NOV * /path/to/renew-letsencrypt.sh
- This runs every two months
+ This executes every two months
 
+Now check the padlock and see if it's green!
 
 Upgrade
 ^^^^^^^^
