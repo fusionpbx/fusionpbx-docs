@@ -26,7 +26,7 @@ SSL and TLS are very necessary in today's internet applications from VOIP to Web
 Let's Encrypt
 ==============
 
-Let's Encrypt is one of the most recent and widely used form of free SSL security.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
+Let's Encrypt is one of the most recent and widely used form of free SSL security but doesn't support wildcard DNS.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
 
 More info on NGINX with Let's Encrypt
 https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
