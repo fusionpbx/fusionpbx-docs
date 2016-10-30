@@ -21,7 +21,7 @@ Although the new install script configured IPTables for you it is recommended th
 SSL / TLS
 ^^^^^^^^^^
 
-SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  Let's Encrypt one of the free options.
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  `Let's Encrypt`_ is one of the free options.
 
 * `Setup Let's Encrypt with FusionPBX`_ 
 
@@ -79,3 +79,4 @@ Use strong passwords with SSH or even better use SSH keys for better protection 
 .. _iptables: /en/latest/getting_started/iptables.html#iptables
 .. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
 .. _Setup Let's Encrypt with FusionPBX: /en/latest/getting_started/lets_encrypt.html
+.. _Let's Encrypt: https://letsencrypt.org/docs
