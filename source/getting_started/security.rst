@@ -21,12 +21,12 @@ Although the new install script configured IPTables for you it is recommended th
 SSL / TLS
 ^^^^^^^^^^
 
-SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates and free options.  We'll cover one of the free options.
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  We'll cover one of the free options.
 
 Let's Encrypt
 ==============
 
-Let's Encrypt is one of the most recent and widely used form of free SSL security.  You can use Let's Encrypt with your FusionPBX install and WebRTC like Verto Communicator.
+Let's Encrypt is one of the most recent and widely used form of free SSL security.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
 
 More info on NGINX with Let's Encrypt
 https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
@@ -157,3 +157,4 @@ Use strong passwords with SSH or even better use SSH keys for better protection 
 .. _paid support: http://www.fusionpbx.com
 .. _firewall: /en/latest/getting_started/iptables.html#iptables
 .. _iptables: /en/latest/getting_started/iptables.html#iptables
+.. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
