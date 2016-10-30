@@ -18,10 +18,13 @@ Although the new install script configured IPTables for you it is recommended th
 
  iptables -L
 
+
 SSL / TLS
 ^^^^^^^^^^
 
-SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  `Let's Encrypt`_ is one of the free options.
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites. FusionPBX by default uses a self signed certificate. However you can use certificate providers where you can purchase certificates and there are free options as well. With domain based multi-tenant wildcard certificates can be useful.
+
+`Let's Encrypt`_ provides free secure certificates. They don't support wildcard certificates.
 
 * `Setup Let's Encrypt with FusionPBX`_ 
 
