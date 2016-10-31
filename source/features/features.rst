@@ -69,7 +69,7 @@ Record all or some calls or parts of the call. (See `Active Calls`_ and `Active 
 Call Routing
 --------------
 
-Send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager:`_)
+Send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager`_)
 
 Call Announced Transfer
 --------------------------------
@@ -228,12 +228,12 @@ Have voicemails sent to email.
 .. _Call Forward: Call_Forward
 .. _Call Flows: Call_Flows
 .. _Contact Manager: Contact_Manager
+.. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
 .. _Active Extensions: Active_Extensions
 .. _Queues: Queues
 .. _Recordings: /source/applications/recordings.rst
 .. _Call Recordings: /source/applications/recordings.rst
 .. _Active Calls: Active_Calls
-.. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
 .. _Fax Server: /source/applications/fax_server.rst
 .. _Time Conditions: /source/applications/time_conditions.rst
