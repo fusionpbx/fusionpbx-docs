@@ -186,12 +186,17 @@ Domain based multi-tenant using subdomains such as red.pbxhosting.tld green.pbxh
 Operator Panel
 ---------------
 
+A virtual panel that agents can drag and drop transfer calls. Adjust call state from available, on break, do not disturb and logged out. 
+
 Paging
 --------
 
+Page another extension with or without password
 
 Parking
 ---------
+
+Park calls.
 
 Phone Setup and Provisioning
 ------------------------------
