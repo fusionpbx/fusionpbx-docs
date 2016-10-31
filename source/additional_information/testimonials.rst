@@ -7,6 +7,6 @@ Businesses of all sizes use FusionPBX daily.  We love to see folks happy saving 
 |
 
 
-*Just want to give a thankful shout out to everyone here that have helped in education, contribution and support, mcrane DigiDaz Len_ and many more. mcrane and team have developed a leading product with FusionPBX. Its been a joy from day one joining this community and I look forward to the road ahead.*
+*Just want to give a thankful shout out to everyone at FusionPBX that have helped in education, contribution and support. The FusionPBX team have developed a leading product. It's been a joy from day one joining this community and I look forward to the road ahead.*
 
 -kissvoice
