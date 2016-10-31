@@ -84,7 +84,7 @@ Now check the padlock and see if it's green!
 
 
 .. _link: https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
-
+.. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
 
 
 
