@@ -90,7 +90,7 @@ Our Ecosystem
    applications.rst
    status.rst
    advanced.rst
-   manual/menu_add_ons.rst
+   #manual/menu_add_ons.rst
    additional_information.rst
    contributing.rst
    doc_guide.rst
