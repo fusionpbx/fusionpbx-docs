@@ -153,6 +153,7 @@ Extensions
 Follow-Me
 ------------
 
+Allows calling multiple extensions or external numbers.
 
 Hot Desking
 ------------
@@ -175,10 +176,12 @@ Queues
 Music on Hold
 --------------
 
+Allows multiple categories of music on hold that can be set globally or per domain. Can inject additional audio on intervals such as 'Your call is very important to us please stand by'.
+
 Multi-Tenant
 --------------------------------------------
 
-domain based multi-tenant using subdomains such as red.pbxhosting.tld green.pbxhosting.tld blue.pbxhosting.tld
+Domain based multi-tenant using subdomains such as red.pbxhosting.tld green.pbxhosting.tld blue.pbxhosting.tld
 
 Operator Panel
 ---------------
@@ -229,22 +232,21 @@ Voicemail to Email
 Have voicemails sent to email.
 
 
-.. _IVR Menus: /source/applications/ivr.rst
-.. _Call Broadcast: Call_Broadcast
-.. _Call Block: Call_Block
-.. _Call Detail Records: Call_Detail_Records
-.. _Call Forward: Call_Forward
-.. _Call Flows: Call_Flows
-.. _Contact Manager: Contact_Manager
+.. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
+.. _Call Broadcast: http://docs.fusionpbx.com/en/latest
+.. _Call Block: http://docs.fusionpbx.com/en/latest
+.. _Call Detail Records: http://docs.fusionpbx.com/en/latest
+.. _Call Forward: http://docs.fusionpbx.com/en/latest
+.. _Call Flows: http://docs.fusionpbx.com/en/latest
+.. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
-.. _Active Extensions: Active_Extensions
-.. _Queues: Queues
-.. _Recordings: /source/applications/recordings.rst
-.. _Call Recordings: /source/applications/recordings.rst
-.. _Active Calls: Active_Calls
-.. _Conferences: Conferences
-.. _Fax Server: /source/applications/fax_server.rst
-.. _Time Conditions: /source/applications/time_conditions.rst
-.. _Ring Groups: /source/applications/ring_groups.rst
-.. _Recordings: /source/applications/recordings.rst
-.. _and lots more...: /source/features/features.rst
+.. _Active Extensions: http://docs.fusionpbx.com/en/latest
+.. _Queues: http://docs.fusionpbx.com/en/latest
+.. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
+.. _Active Calls: http://docs.fusionpbx.com/en/latest
+.. _Conferences: http://docs.fusionpbx.com/en/latest
+.. _Fax Server: http://docs.fusionpbx.com/en/latest/applications/fax_server.html
+.. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
+.. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
+.. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
+.. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
