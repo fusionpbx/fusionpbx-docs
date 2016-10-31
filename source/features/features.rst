@@ -107,7 +107,7 @@ Configuration
 
 While the admin configures the system in the web interface. The data is saved to the database and can optionally be deliverd to FreeSWITCH via XML files, or on demand from the database.
 
-`Contact Manager`_**
+`Contact Manager`_
 --------------------------
 
 Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
@@ -197,7 +197,7 @@ Re-branding and Customize
 ----------------
 
 
-`Ring Groups`_:
+`Ring Groups`_
 -------------------
 
 
@@ -213,10 +213,12 @@ User and Group Management
 Voicemail
 -----------
 
+Has ability to copy voicemails for other voicemail boxes when receiving a voicemail. Additional features include voicemail to email and voicemail IVR.
 
 Voicemail to Email
 -------------------
 
+Have voicemails sent to email.
 
 
 .. _IVR Menus: /source/applications/ivr.rst
