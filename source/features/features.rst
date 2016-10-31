@@ -12,6 +12,11 @@ Announcements
 
 Setup a recording for the auto attendant that provides announcement to callers. (See `IVR Menus`_ )
 
+Authentication
+----------------
+
+Web interface authentication by default authenticates against the FusionPBX Database. LDAP is one and has also been tested with Microsoft Active Directory an OpenLDAP.
+
 Call Barge / Eavesdrop / Intercept
 -----------------------------------
 
@@ -95,7 +100,7 @@ Support for customization and supporting providers.
 Conferencing
 ---------------------
 
-Set up conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, and more. (See `Conferences`_)
+Set up voice and video conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, and more. (See `Conferences`_)
 
 Conference Center
 -------------------------
@@ -152,6 +157,8 @@ Follow-Me
 Hot Desking
 ------------
 
+A way to login to another phone device and temporarily or permanently become another extension. This is sometimes known as 'hoteling' and 'extension mobility'
+
 
 Inbound and Outbound Call Routing
 ----------------------------------
@@ -168,9 +175,10 @@ Queues
 Music on Hold
 --------------
 
-Multi-Category / Multi-tenant Music on Hold
+Multi-Tenant
 --------------------------------------------
 
+domain based multi-tenant using subdomains such as red.pbxhosting.tld green.pbxhosting.tld blue.pbxhosting.tld
 
 Operator Panel
 ---------------
