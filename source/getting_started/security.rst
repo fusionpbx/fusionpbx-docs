@@ -27,6 +27,17 @@ SSL and TLS are very necessary in today's internet applications from VOIP to Web
 
 
 
+SSL / TLS
+^^^^^^^^^^
+
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites. FusionPBX by default uses a self signed certificate. However you can use certificate providers where you can purchase certificates and there are free options as well. With domain based multi-tenant wildcard certificates can be useful. Also when deciding on which certificate provider to use you should look at the phones manufacturers documentation to find one that is compatible HTTPS provisioning.
+
+`Let's Encrypt`_ provides free certificates for a single domain but they don't support wildcard certificates.
+
+* `Setup Let's Encrypt with FusionPBX`_ 
+
+
+
 Upgrade
 ^^^^^^^^
 
