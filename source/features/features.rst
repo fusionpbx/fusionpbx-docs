@@ -20,13 +20,14 @@ Web interface authentication by default authenticates against the FusionPBX Data
 Call Barge / Eavesdrop / Intercept
 -----------------------------------
 
+Listen into an active call from another extension.
 
-`Call Block`_
+Call Block
 ---------------
 
 Block inbound calls by the caller id.
 
-`Call Broadcast`_
+Call Broadcast
 -------------------
 
 Create a recording and select one or more groups to have the system call and play the recording.
@@ -36,17 +37,17 @@ Call Center
 
 Creates a robust call center environment with agent tiers.
 
-`Call Detail Records`_
+Call Detail Records
 ------------------------
 
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-`Call Flows`_ (Day Night Mode)
+Call Flows (Day Night Mode)
 --------------------------------
 
 Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
-`Call Forward`_
+Call Forward
 -----------------
 
 Forward to another extension or to any phone number.
@@ -54,7 +55,7 @@ Forward to another extension or to any phone number.
 Call Monitoring
 -----------------
 
-View which extensions are currently in a call. (see `Active Extensions`_)
+View which extensions are currently in a call. (see Active Extensions)
 
 Call Pickup
 -------------
@@ -69,7 +70,7 @@ Load calls into queues so they can be answered in the order they came into the q
 Call Recordings
 -----------------
 
-Record all or some calls or parts of the call. (See `Active Calls`_ and `Active Extensions`_)
+Record all or some calls or parts of the call.
 
 Call Routing
 --------------
@@ -147,6 +148,7 @@ Create extensions for phones to register to.
 `Fax Server`_
 ----------------
 
+A virtual fax machine that can send and receive faxes with advanced features.
 
 Follow-Me
 ------------
@@ -220,15 +222,17 @@ Create and manage personalized recordings.
 `Ring Groups`_
 -------------------
 
-
+Make one extension ring several extensions.
 
 `Time Conditions`_
 --------------------
 
+A extension that can be timed to route calls.
 
 User and Group Management
 --------------------------
 
+Edit, change or add users of all permission levels.
 
 Voicemail
 -----------
