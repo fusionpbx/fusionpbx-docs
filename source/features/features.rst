@@ -117,8 +117,8 @@ Configuration
 
 While the admin configures the system in the web interface. The data is saved to the database and can optionally be deliverd to FreeSWITCH via XML files, or on demand from the database.
 
-`Contact Manager`_
---------------------------
+Contacts
+-----------
 
 Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
 
@@ -155,10 +155,10 @@ Direct calls to voicemail by default however there is an option when using do no
 
 Create extensions for phones to register to and an option to receive emails on missed calls.
 
-Extensions Summary
+Extension Summary
 -------------------
 
-Summary of extensions. Can also download to csv.
+Summary of extension activity per domain. The summarized information can be downloaded as a CSV file.
 
 Editor
 -------
@@ -298,4 +298,4 @@ Make and receive video calls with a web browser.
 .. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
-.. _ Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
+.. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
