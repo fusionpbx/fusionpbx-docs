@@ -244,6 +244,11 @@ Voicemail to Email
 
 Have voicemails sent to email.
 
+WebRTC
+-------
+
+Make and receive video calls with a web browser.
+
 
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
 .. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/gateway_inbound_outbound/gateway.html
