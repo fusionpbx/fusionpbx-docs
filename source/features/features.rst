@@ -142,8 +142,9 @@ Do Not Disturb (DND)
 Domain Based Multi-Tenant
 --------------------------
 
-Extensions
+`Extensions`_
 -----------
+
 
 
 `Fax Server`_
@@ -161,17 +162,20 @@ Hot Desking
 A way to login to another phone device and temporarily or permanently become another extension. This is sometimes known as 'hoteling' and 'extension mobility'
 
 
-Inbound and Outbound Call Routing
+`Inbound and Outbound Call Routing`_
 ----------------------------------
 
+Routes used to receive or send calls in or out of FusionPBX.
 
 `IVR Menus`_ (Auto Attendant)
 ------------------------------
 
+Create a structured interactive voice prompt for callers to use.
 
 Queues
 --------
 
+Like Call Center but more flexable.
 
 Music on Hold
 --------------
@@ -201,6 +205,7 @@ Park calls.
 Phone Setup and Provisioning
 ------------------------------
 
+From Advanced > Default Settings you can enable provisioning for devices.
 
 Provider Setup
 ----------------
@@ -238,7 +243,9 @@ Have voicemails sent to email.
 
 
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
+.. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/gateway_inbound_outbound/gateway.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest
+.. _Extensions: http://docs.fusionpbx.com/en/latest/extensions_ivr/extensions.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
