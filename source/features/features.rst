@@ -15,7 +15,7 @@ Setup a recording for the auto attendant that provides announcement to callers. 
 Authentication
 ----------------
 
-Web interface authentication by default authenticates against the FusionPBX Database. LDAP is one and has also been tested with Microsoft Active Directory an OpenLDAP.
+Extendable with plugin support. Web interface authentication by default authenticates against the FusionPBX Database. LDAP is one and has also been tested with Microsoft Active Directory an OpenLDAP.
 
 Call Barge / Eavesdrop / Intercept
 -----------------------------------
@@ -105,7 +105,7 @@ Support for customization and supporting providers.
 Conferencing
 ---------------------
 
-Set up voice and video conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, and more. (See `Conferences`_)
+Set up voice and video conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, profiles and controls. (See `Conferences`_)
 
 Conference Center
 -------------------------
@@ -169,7 +169,8 @@ Routes used to receive or send calls in or out of FusionPBX.
 `IVR Menus`_ (Auto Attendant)
 ------------------------------
 
-Create a structured interactive voice prompt for callers to use.
+Create a structured interactive voice prompt for callers to use. Uses FreeSWITCH IVR and delivered from Database on Demand. Cached to memcache with IVR Menu Options all editable at once. Also works with Text to Speech.
+
 
 Queues
 --------
@@ -204,7 +205,13 @@ Park calls.
 Phone Setup and Provisioning
 ------------------------------
 
-From Advanced > Default Settings you can enable provisioning for devices.
+From Advanced > Default Settings you can enable provisioning for devices. Contacts used as Directory for the phones, vendor list and functions can be enabled or disabled. Support for memory, expansion (side cars), and programmable keys.
+
+Phrases
+--------
+
+Using xml handler and xml from file system you can string together multiple voice files.
+
 
 Provider Setup
 ----------------
@@ -212,7 +219,7 @@ Provider Setup
 Re-branding and Customize
 --------------------------
 
-FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and more...
+FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and Hundreds of Default Settings to control the theme.
 
 `Recordings`_
 ----------------
@@ -227,7 +234,7 @@ Make one extension ring several extensions.
 `Time Conditions`_
 --------------------
 
-A extension that can be timed to route calls.
+A extension that can be timed to route calls based on domain select, global option, move to other domains, and holiday presets.
 
 User and Group Management
 --------------------------
@@ -237,7 +244,8 @@ Edit, change or add users of all permission levels.
 Voicemail
 -----------
 
-Has ability to copy voicemails for other voicemail boxes when receiving a voicemail. Additional features include voicemail to email and voicemail IVR.
+Has ability to copy voicemails for other voicemail boxes when receiving a voicemail. Additional features include voicemail to email and voicemail IVR. Forward add intro, check box for multi-delete.
+
 
 Voicemail to Email
 -------------------
