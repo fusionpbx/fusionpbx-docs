@@ -122,6 +122,10 @@ While the admin configures the system in the web interface. The data is saved to
 
 Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
 
+Command
+
+Area to execute commands from the gui. Merged with SQL Query tool with a clip library.
+
 Dialplan
 -----------
 
@@ -144,6 +148,16 @@ Phone won't ring.
 -----------
 
 Create extensions for phones to register to.
+
+Extensions Summary
+-------------------
+
+Summary of extensions. Can also download to csv.
+
+Editor
+-------
+
+File editor for PHP, XML, and Provisioning files. 
 
 `Fax Server`_
 ----------------
