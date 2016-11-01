@@ -246,7 +246,7 @@ Create and manage personalized recordings.
 
 Make one extension ring several extensions and an option to receive emails on missed calls.
 
-` Scalable and Redundant`_
+`Scalable and Redundant`_
 --------------------
 
 Can be configured for multi-master database replication, file replication. FusionPBX, Database, and FreeSWITCH can be distributed across multiple servers for large enterprise scale systems.
