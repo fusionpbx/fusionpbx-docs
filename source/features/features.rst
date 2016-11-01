@@ -79,18 +79,22 @@ Send the call different directions or perform actions based on reading the calle
 Call Announced Transfer
 --------------------------------
 
+Transfer the active call to another internal or external call.  Also known as a warm transfer.
 
 Call Blind Transfer
 ---------------------------
 
+Transfer a call like the call was going into a call queue or from an ivr.
 
 Call Transfer
 ----------------------
 
+Transfer a call.
 
 Call Waiting
 ---------------------
 
+A beep while on a call and to toggle between two different calls.
 
 Caller ID
 ------------------
