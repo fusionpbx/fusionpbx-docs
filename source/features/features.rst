@@ -139,15 +139,20 @@ Direct Inward System Access (DISA)
 
 Gives ability to call into the system, put in a pin code, and then call back outbound.
 
+Device Provisioning
+--------------------
+
+From Advanced > Default Settings you can enable provisioning for devices. Contacts used as Directory for the phones, vendor list and functions can be enabled or disabled. Support for memory, expansion (side cars), and programmable keys. Configure SIP endpoints for Yealink, Polycom, Cisco, Aastra and several other brands.
+
 Do Not Disturb (DND)
 ----------------------
 
-Phone won't ring.
+Direct calls to voicemail by default however there is an option when using do not disturb to send the call to an alternative destination.
 
 `Extensions`_
 -----------
 
-Create extensions for phones to register to.
+Create extensions for phones to register to and an option to receive emails on missed calls.
 
 Extensions Summary
 -------------------
@@ -216,11 +221,6 @@ Parking
 
 Park calls.
 
-Phone Setup and Provisioning
-------------------------------
-
-From Advanced > Default Settings you can enable provisioning for devices. Contacts used as Directory for the phones, vendor list and functions can be enabled or disabled. Support for memory, expansion (side cars), and programmable keys.
-
 Phrases
 --------
 
@@ -243,7 +243,7 @@ Create and manage personalized recordings.
 `Ring Groups`_
 -------------------
 
-Make one extension ring several extensions.
+Make one extension ring several extensions and an option to receive emails on missed calls.
 
 `Time Conditions`_
 --------------------
