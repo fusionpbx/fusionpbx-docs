@@ -18,6 +18,14 @@ Although the new install script configured IPTables for you it is recommended th
 
  iptables -L
 
+SSL / TLS
+^^^^^^^^^^
+
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  `Let's Encrypt`_ is one of the free options.
+
+* `Setup Let's Encrypt with FusionPBX`_ 
+
+
 
 SSL / TLS
 ^^^^^^^^^^
