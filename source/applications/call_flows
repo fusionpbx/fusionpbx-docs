@@ -5,7 +5,7 @@ Call Flows
 Direct calls between two destinations by calling a feature code.
 
 
-.. image:: ../_static/images/fusionpbx_call_flow.jpg
+.. image:: ../_static/images/fusionpbx_call_flow1.jpg
         :scale: 85%
 
 
@@ -25,5 +25,5 @@ Direct calls between two destinations by calling a feature code.
 
 
 
-.. image:: ../_static/images/fusionpbx_call_flow1.jpg
+.. image:: ../_static/images/fusionpbx_call_flow.jpg
         :scale: 85%
