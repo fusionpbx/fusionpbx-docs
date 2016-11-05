@@ -38,3 +38,6 @@ In the Call Flow example below we have the name as Call Flow.  Made the Extensio
 
 .. image:: ../_static/images/fusionpbx_call_flow.jpg
         :scale: 50%
+
+
+.. _training.fusionpbx.com: https://fusionpbx.com/app/www/training_detail.php
