@@ -9,9 +9,10 @@ Direct calls between two destinations by calling a feature code.
         :scale: 85%
 
 
+
 *  **Name:** Define the name of the call flow
 *  **Extension:** Define what extension to use. (This will make an extension not allready created)
-*  **Feature Code:* Define what *  number to use
+*  **Feature Code:** Define what *  number to use
 *  **Context:** Domain context (typically leave as is)
 *  Status: Define what currently is in use.
 *  Pin Number: Define a pin number in order to execute either mode.
