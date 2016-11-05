@@ -1,0 +1,24 @@
+*****************
+Call Flows
+*****************
+
+Direct calls between two destinations by calling a feature code.
+
+
+
+
+
+* Name: Define the name of the call flow
+* Extension: Define what extension to use. (This will make an extension not allready created)
+* Feature Code: Define what *  number to use
+* Context: Domain context (typically leave as is)
+* Status: Define what currently is in use.
+* Pin Number: Define a pin number in order to execute either mode.
+* Destination: Define where the call will go in the intial mode.
+* Sound: Define the sound that will play once mode is engaged.
+* Destination: Define what the destination will be.
+* Alternative Label: Label that will show when alternative mode is in use.
+* Alternative Sound: Define the sound that will play once alternative mode is engaged.
+* Alternative Destination: Define where the call will go in the alternative mode.
+* Description: Label what this call flow does.
+
