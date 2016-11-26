@@ -11,14 +11,21 @@ Sign up and language information is located on `Microsoft Site <https://www.micr
 .. warning:: We cannot use mod_shout to record Voicemails because the transcription service needs an uncompressed version of the audio. Therefore we will record in WAV and then use LAME to re-encode in MP3. This could cause added resource utilization to your system.
 
 **Goto Advanced > Default Settings.**
+Add the following entries
 
-::
-  Category     Subcategory         Type		Value									Enabled
-  voicemail		microsoft_key1      text		{your microsoft key}					True
-  voicemail		microsoft_key2	    text		{your microsoft key}					True
-  voicemail		transcribe_enabled	boolean		true		True
-  voicemail		transcribe_language	text		en-US		True
-  voicemail		transcribe_provider	text		microsoft		True
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  Category   |  Subcategory          |  Type     |  Value                    |  Enabled  |
+  +=============+=======================+===========+===========================+===========+
+  |  voicemail  |  transcribe_provider  |  text     |  microsoft                |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  microsoft_key1       |  text     |  {your microsoft key #1}  |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  microsoft_key2       |  text     |  {your microsoft key #2}  |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  transcribe_language  |  text     |  en-US                    |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  transcribe_enabled   |  boolean  |  true                     |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
  
  Click "Reload" at the top of the page.
  
