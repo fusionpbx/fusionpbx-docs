@@ -1,9 +1,9 @@
 Inbound Destination setup
 ==========================
 
-Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls.
+Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls. `Click here for the youtube video`_
 
-|
+
 
 Configure Inbound Destinations: (This will auto-configure an Inbound Route also)
 
@@ -102,3 +102,5 @@ button on the right. Enter the route information below and Click **Save** once e
 
 **By using** `VoiceTel <http://tiny.cc/voicetel>`_ **you help support FusionPBX.  Thank you for your support!**
 
+
+.. _Click here for the youtube video: https://youtu.be/8-EJM0hd-J8
