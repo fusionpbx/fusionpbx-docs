@@ -21,7 +21,7 @@ hardware of your choice. FusionPBX provides a GUI for unlimited
 extensions, voicemail-to-email, music on hold, call parking, analog
 lines or high density T1/E1 circuits, and many other features. FusionPBX
 provides the functionality that business need and provides corporate
-level phone system features to small, medium and large businesses.
+level phone system features to small, medium and large businesses. `Click here for the FusionPBX youtube channel`_ .
 
 Benefits of FusionPBX
 ---------------------
@@ -58,6 +58,7 @@ Our Ecosystem
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
+.. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
 .. _IVR Menus: /en/latest/applications/ivr.html
 .. _Call Broadcast: Call_Broadcast
 .. _Call Block: Call_Block
