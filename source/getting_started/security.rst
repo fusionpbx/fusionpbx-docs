@@ -2,7 +2,7 @@
 Security
 ***********
 
-Similar to medieval fortifications it is recommended to provide your servers with multiple layers of defenses. Be sure to use Firewalls, Strong passwords, SSH, and make sure your servers are kept up to date for all software being used. This inlcudes the operating system, FreeSWITCH and FusionPBX.
+Similar to medieval fortifications it is recommended to provide your servers with multiple layers of defenses. Be sure to use Firewalls, Strong passwords, SSH, and make sure your servers are kept up to date for all software being used. This includes the operating system, FreeSWITCH and FusionPBX.
 
 
 FusionPBX
@@ -17,14 +17,6 @@ Although the new install script configured IPTables for you it is recommended th
 ::
 
  iptables -L
-
-SSL / TLS
-^^^^^^^^^^
-
-SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  `Let's Encrypt`_ is one of the free options.
-
-* `Setup Let's Encrypt with FusionPBX`_ 
-
 
 
 SSL / TLS
