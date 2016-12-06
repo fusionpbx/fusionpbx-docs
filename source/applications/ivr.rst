@@ -2,7 +2,7 @@
 IVR's
 **********
 
-Welcome to the adding IVR section.  Here you will find how to add IVR's.
+Welcome to the adding IVR section.  Here you will find how to add IVR's. `Click here for the youtube video`_
 
 |
 
@@ -74,3 +74,5 @@ You now have a list of IVR's to go back to and edit or delete as needed.
 
 |
 |
+
+.. _Click here for the youtube video: https://youtu.be/Xnc9ExYKR8s
