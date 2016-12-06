@@ -4,7 +4,7 @@ Recordings
 
 |
 
-Dial '*'732 to create a recording, or (for best results) upload a 16bit 8khz/16khz mono WAV file.
+Dial '*'732 to create a recording, or (for best results) upload a 16bit 8khz/16khz mono WAV file. `Click here for the youtube video.`_
 
 |
 
@@ -44,3 +44,5 @@ Applying Recordings
 Once you have a recording made you can use the recordings in different area's of FusionPBX.  Custom IVR's and phrases would be the typical uses.
 
 |
+
+.. _Click here for the youtube video.: https://youtu.be/CkqlsVvvv2U
