@@ -2,7 +2,7 @@
 Fax Server
 ************
 
-To receive a FAX setup a fax extension and then direct the incoming to it.
+To receive a FAX setup a fax extension and then direct the incoming to it. `Click here for the Youtube video <https://youtu.be/AJHcle2U3n4>`_
 
 
 
