@@ -6,7 +6,7 @@ Gateway setup
   
 |
 
-Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.
+Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
   
 |
 |
