@@ -50,7 +50,7 @@ button on the right.
 Outbound setup
 ===============
 
-Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes. 
+Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes. `Check out the youtube video <https://youtu.be/rhyfCKLBI-Y>`_ .
 
 |
 
