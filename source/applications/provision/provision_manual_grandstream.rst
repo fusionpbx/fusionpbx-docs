@@ -1,7 +1,7 @@
 GrandStream
 ============
 
-.. image:: ../_static/images/fusionpbx_grandstream4.jpg
+.. image:: ../../_static/images/fusionpbx_grandstream4.jpg
         :scale: 85%
 
 |
@@ -20,7 +20,7 @@ In our example we will register an analog telephone adapter (ata) model HT701.
 
 1. Goto the device ip address. The default password should be admin. Enter admin and click login
 
-.. image:: ../_static/images/fusionpbx_grandstream.jpg
+.. image:: ../../_static/images/fusionpbx_grandstream.jpg
         :scale: 85%
 
 |
@@ -38,14 +38,14 @@ Click **Update** then click **Apply** at the bottom
 
 |
 
-.. image:: ../_static/images/fusionpbx_grandstream2.jpg
+.. image:: ../../_static/images/fusionpbx_grandstream2.jpg
         :scale: 85%
 
 |
 
 3. Click the **Status** tab on the top left.  You should see the *Registration* as **Registered** and the *User ID* **1000**
 
-.. image:: ../_static/images/fusionpbx_grandstream1.jpg
+.. image:: ../../_static/images/fusionpbx_grandstream1.jpg
         :scale: 85%
 
 |
