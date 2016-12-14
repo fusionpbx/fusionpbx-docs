@@ -17,6 +17,7 @@ Applications
   applications/ivr.rst
   applications/call_flows.rst
   applications/fax_server.rst
+  applications/provision.rst
   applications/recordings.rst
   applications/ring_group.rst
   applications/time_conditions.rst
