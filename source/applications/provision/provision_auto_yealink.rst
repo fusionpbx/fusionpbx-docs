@@ -9,7 +9,7 @@ To auto provision Yealink
 * Login to the phone
 * Goto the Security tab at the top right
 * On the left vertical menu click **Trusted Certificates**
-* On the dropdown box near the bottom choose **Disabled** for "Only Accept Trusted Certificates".  If you have a Certificate that is not self-singned and Approved by Yealink and installed on your FusionPBX server, you can keep this enabled
+* On the dropdown box near the bottom choose **Disabled** for "Only Accept Trusted Certificates".  If you have a Certificate that is not self-signed and Approved by Yealink and installed on your FusionPBX server, you can keep this enabled
 * Click **Confirm**
 
 .. image:: ../../_static/images/fusionpbx_provision_auto_yealink1.jpg
