@@ -3,6 +3,8 @@ Password Reset
 ##############
 
 
+The steps below are outdated but useful for older installations. `Click here for the new youtube video on password recovery. <https://youtu.be/YrlfscQ_3ew>`_ 
+
 | Here some rough steps to change the password of the database. The password can only be changed and not recovered.
 
 |
