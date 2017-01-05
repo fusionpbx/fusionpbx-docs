@@ -9,6 +9,7 @@ Access control list can allow or deny ranges of IP addresses.  There are several
 *  Most common mistakes result in calls not working between extensions and other undesirable results. 
 *  Be sure to keep Domains access control to default deny.
 *  Do not put your public ip or phone IP addresses in the domains access control list.
+*  Don't supply both the domain and the cidr on the same node.
 *  If adding a single IP address to the CIDR field make sure to add /32 on the end of the IP address.
 
 
