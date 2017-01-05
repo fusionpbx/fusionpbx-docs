@@ -2,11 +2,14 @@
 Access Controls
 ****************
 
-Access control list can allow or deny ranges of IP addresses.  There are several purposes for using the ACL.  
+Access control list can allow or deny ranges of IP addresses.  There are several purposes for using the ACL.
+
 *  The main purpose is for your carriers ip addresses.  
 *  Be careful with what and how you use ACL.
 *  Most common mistakes result in calls not working between extensions and other undesirable results. 
 *  Be sure to keep Domains access control to default deny.
+*  Do not put your public ip or phone IP addresses in the domains access control list.
+*  If adding a single IP address to the CIDR field make sure to add /32 on the end of the IP address.
 
 
 Access Control Example
