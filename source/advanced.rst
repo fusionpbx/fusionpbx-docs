@@ -17,6 +17,7 @@ Advanced
   :maxdepth: 3
   :glob:
 
+  advanced/access_controls.rst
   advanced/domains.rst
   advanced/upgrade.rst
 
