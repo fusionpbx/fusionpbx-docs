@@ -4,12 +4,13 @@ Backup
 
 |
 
-It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX. This is one of the many ways you can backup.
+It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX.
 
 Command line settings
 ^^^^^^^^^^^^^^^^^^^^^^
 
-**From the command line.**
+Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz" with your password.
+
 
 ::
  
@@ -17,12 +18,23 @@ Command line settings
  cd /usr/src/fusionpbx-install.sh
  git pull
  cd debian/resources/backup/
- nano fusionpbx-backup.sh
+ vim fusionpbx-backup.sh
  
- You will need to provide the database password
- Edit line #3 with the database passsword
- Save settings and exit
+ #!/bin/sh
+ now=$(date +%Y-%m-%d)
+ echo "Server Backup"
+ export PGPASSWORD="zzzzzzzz"
+ mkdir -p /var/backups/fusionpbx/postgresql
+ #delete postgres logs older than 7 days
+ find /var/log/postgresql/postgresql-9.4-main* -mtime +7 -exec rm {} \;
+ #delete freeswitch logs older 3 days
+ find /usr/local/freeswitch/log/freeswitch.log.* -mtime +2 -exec rm {} \;
+ pg_dump --verbose -Fc --host=$database_host --port=$database_port -U fusionpbx fusionpbx --schema=public -f /var/backups/fusionpbx/postgresql/fusionpbx_pgsql_$now.sql
+ echo "Backup Complete";
  
+To save the file press escape then :wq for write and quite
+
+
 You should have the script ready to execute. (Default the script will use FreeSWITCH package paths.  If you have an older install using source be sure to change this by commenting the package line #22 and uncomment the source line #25.)
  
 Crontab settings
