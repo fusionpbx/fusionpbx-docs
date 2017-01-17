@@ -71,13 +71,11 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
       http://docs.fusionpbx.com
 
 
-
-
 |
-
-After the install script has completed go to your web browser and login with the information provided by the install script.
-     
      
 .. image:: ../_static/images/ilogin.jpg
         :scale: 80%
-      
+|
+
+After the install script has completed go to your web browser and login with the information provided by the install script.
+  
