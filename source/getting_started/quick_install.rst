@@ -19,7 +19,7 @@ This install script is designed to be a fast, simple, and modular way to install
 
 Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://www.youtube.com/embed/kejAxlYSW3o FusionPBX is installed and more!
 
-Paste in the following commands in the SSH window.
+Paste the following commands in the SSH window.
 
 ::
      
@@ -33,7 +33,7 @@ Paste in the following commands in the SSH window.
      
 |
 
-**2.** At the end of the install the script will instruct you to go to the ip address of the server in your web browser to login. The script will also provides a username and secure random password for you to use. This can be changed after you login. The install script builds the fusionpbx database so you will not need to use the create database username and password. If you need the database password it is located in /etc/fusionpbx/config.php .
+**2.** At the end of the install, the script will instruct you to go to the ip address of the server (or domain name) in your web browser to login. The script will also provide a username and secure random password for you to use. This can be changed after you login. The install script builds the fusionpbx database. If you need the database password it is located in /etc/fusionpbx/config.php .
 
    
 
