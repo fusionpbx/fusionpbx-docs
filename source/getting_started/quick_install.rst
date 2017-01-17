@@ -67,7 +67,7 @@ Paste the following commands in the console window.
 |
 
 
-Install Finished  **Login with the username and password.  Make sure it is admin@ip or admin@domain.tld**
+**Login with the username and password.  Make sure it is admin@ip or admin@domain.tld**
      
      
 .. image:: ../_static/images/ilogin.jpg
