@@ -19,7 +19,7 @@ This install script is designed to be a fast, simple, and modular way to install
 
 Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://www.youtube.com/embed/kejAxlYSW3o FusionPBX is installed and more!
 
-Paste the following commands in the console window.
+Paste the following commands in the console window **one line at a time**.
 
 ::
      
