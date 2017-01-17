@@ -35,20 +35,20 @@ Paste the following commands in the console window **one line at a time**.
 
 **2.** At the end of the install, the script will instruct you to go to the ip address of the server (or domain name) in your web browser to login. The script will also provide a username and secure random password for you to use. This can be changed after you login. The install script builds the fusionpbx database. If you need the database password it is located in /etc/fusionpbx/config.php .
 
-   
+*The new install has been optimized to be simple to use and quick to install. On many systems it will install in 5 minutes or less.  Installation times depends on CPU, RAM and bandwidth to the internet.)  
 
 ::
 
    Installation has completed.
 
    Use a web browser to login.
-      domain name: https://108.61.158.12
+      domain name: https://000.000.000.000
       username: admin
       password: zxP5yatwMxejKXd
 
    The domain name in the browser is used by default as part of the authentication.
    If you need to login to a different domain then use username@domain.
-      username: admin@108.61.158.12
+      username: admin@000.000.000.000
 
    Official FusionPBX Training
       Admin Training    24 - 26 Jan (3 Days)
@@ -62,7 +62,7 @@ Paste the following commands in the console window **one line at a time**.
       http://docs.fusionpbx.com
 
 
-*The new install has been optimized to be simple to use and quick to install. On manysystems it will install in 5 minutes or less.  Installation times depends on CPU, RAM and bandwidth to the internet.)
+
 
 |
 
