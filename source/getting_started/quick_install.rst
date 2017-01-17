@@ -21,7 +21,13 @@ Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://
      
 ::
      
-  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/install.sh -O install.sh && sh install.sh
+ apt-get update && apt-get upgrade -y --force-yes
+ apt-get install -y --force-yes git
+ cd /usr/src
+ git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
+ chmod 755 -R /usr/src/fusionpbx-install.sh
+ cd /usr/src/fusionpbx-install.sh/debian
+ ./install.sh
      
 |
 
@@ -59,7 +65,7 @@ Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://
 |
 
 
-Install Finished  **Login with the username and password you choose during the install**
+Install Finished  **Login with the username and password.  Make sure it is admin@ip or admin@domain.tld**
      
      
 .. image:: ../_static/images/ilogin.jpg
