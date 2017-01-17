@@ -6,7 +6,11 @@ Quick Install
 
 |
 
-Welcome to the FUSIONPBX installation guide. FUSIONPBX can be several different operating systems. However this install is focused on a **minimal** install of Debian 8 with SSH enabled. This install has been designed to be fast, simple and modular. On many systems it will install in 5 minutes or less. Installation times depend on CPU, RAM and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
+Welcome to the FUSIONPBX installation guide. 
+
+|
+
+FUSIONPBX can be several different operating systems. However this install is focused on a **minimal** install of Debian 8 with SSH enabled. This install has been designed to be fast, simple and modular. On many systems it will install in 5 minutes or less. Installation times depend on CPU, RAM and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
 
 |
     
@@ -25,6 +29,18 @@ Paste the following commands in the console window **one line at a time**.
  cd /usr/src/fusionpbx-install.sh/debian
  ./install.sh
      
+|
+
+If using **Debian on Proxmox LXC** containers please run the following **BEFORE** starting the FusionPBX install.
+
+::
+
+ apt-get update && apt-get upgrade
+ apt-get install systemd
+ apt-get install systemd-sysv
+ apt-get install ca-certificates
+ reboot
+
 |
 
 **2.** At the end of the install, the script will instruct you to go to the ip address of the server (or domain name) in your web browser to login. The script will also provide a username and secure random password for you to use. This can be changed after you login. The install script builds the fusionpbx database. If you need the database password it is located in /etc/fusionpbx/config.php .
