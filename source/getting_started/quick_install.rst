@@ -13,7 +13,7 @@ Quick Install Video https://youtu.be/YmIht8hEHYU
 Welcome to the FUSIONPBX getting started guide.  In this section we will show how to install FUSIONPBX.  FUSIONPBX can be used on multiple different operating systems, databases, and web servers.  In this guide we will show on Debian 8 (Jessie), Postgresql and NGINX.  **Please note to have a clean install.  The install script will install everything but the Operating System**
     
     
-**1.** Goto a console and follow the recommended steps from https://fusionpbx.com/app/www/download.php for a standard installation.  Some installations require special considerations.  Visit https://github.com/fusionpbx/fusionpbx-install.sh Readme section for more details.
+**1.** Goto a console and follow the recommended steps from https://fusionpbx.com/download.php for a standard installation.  
 
 This install script is designed to be a fast, simple, and modular way to install FusionPBX. Start with a minimal install of Debian 8 with SSH enabled. Run the following commands under root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
 
@@ -80,30 +80,5 @@ Paste the following commands in the console window.
 ::
 
   go to advanced -> default settings >  menu_style >  set to inline
-
-Voicemail to Email
-====================
-
-Settings for voicemail to email and for fax notifications.
-
-
-Goto Advanced > Default Settings and under the ``Email`` Section. Make sure these settings are enabled. Once these values are set press the **Reload** button at the top right of the page.
-::
-
- method			text  	smtp 	
- smtp_auth		var  	true  	
- smtp_from		var  	username@gmail.com 	  	
- smtp_from_name	var  	Voicemail	  	
- smtp_host		var  	smtp.gmail.com 	  	
- smtp_password	var  	******* 	  	
- smtp_port		numeric  	587	
- smtp_secure		var  	tls	
- smtp_username	var  	username@gmail.com 
-
-
-To see if there are any failed email attempts goto Status > Emails.  Once the issue causing the emails to fail is found you can click to resent them.
-
-**Note**: The log is stored in the /tmp directory.
-
 
 
