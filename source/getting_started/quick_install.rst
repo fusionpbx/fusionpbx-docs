@@ -75,21 +75,9 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
 
 |
 
-
-**Login with the username and password.  Make sure it is admin@ip or admin@domain.tld**
+After the install script has completed go to your web browser and login with the information provided by the install script.
      
      
 .. image:: ../_static/images/ilogin.jpg
         :scale: 80%
       
-
-
-**Note**: To display the logo at the top and not in the menu
-
-::
-
-  go to advanced -> default settings >  menu_style >  set to inline
-
-
-
-Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly https://www.youtube.com/embed/kejAxlYSW3o FusionPBX is installed and more!
