@@ -60,7 +60,7 @@ Click **PDF** to view the fax or right click on **PDF** and left click on **Save
         :scale: 85%
 
 
-Trouble Shooting Tips
+Troubleshooting Tips
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Faxing will fail at times. Fax Server should automatically try different methods for sending. There are different combinations like;
