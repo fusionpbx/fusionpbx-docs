@@ -34,7 +34,7 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 
 ::
 
- Vim  /etc/nginx/sites-available/fusionpbx
+ vim  /etc/nginx/sites-available/fusionpbx
  Add this after the ssl_ciphers line
  
  location /.well-known/acme-challenge {
