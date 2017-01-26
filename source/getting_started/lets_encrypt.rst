@@ -62,7 +62,7 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 ::
 
  Comment out and add
- Vim  /etc/nginx/sites-available/fusionpbx
+ vim  /etc/nginx/sites-available/fusionpbx
         #ssl_certificate         /etc/ssl/certs/nginx.crt;
         #ssl_certificate_key     /etc/ssl/private/nginx.key;
         ssl_certificate /etc/letsencrypt/live/domain.tld/fullchain.pem;
