@@ -48,6 +48,8 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
  nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 **Execute Let's Encrypt script**  (Edit domain.tld to reflect your domain)
+You can make up to 100 subdomain requests with using -d sub.domain.tld -d sub1.domain.tld
+
 
 ::
 
