@@ -10,7 +10,7 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 
 ::
 
- cd /usr/src/
+ 
  git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 
 **Execute certbot-auto**
