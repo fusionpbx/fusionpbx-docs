@@ -71,6 +71,8 @@ You can make up to 100 subdomain requests with using -d sub.domain.tld -d sub1.d
         ssl_certificate /etc/letsencrypt/live/domain.tld/fullchain.pem;
         ssl_certificate_key /etc/letsencrypt/live/domain.tld/privkey.pem;
 
+Systemctl restart nginx
+
 **Auto Renew certificate**
 
 ::
