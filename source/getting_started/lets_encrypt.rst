@@ -17,6 +17,7 @@ https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 
 ::
 
+ cd /opt/letsencrypt
  chmod a+x ./certbot-auto
  ./certbot-auto
  cd /etc/letsencrypt/
