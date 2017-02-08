@@ -19,4 +19,5 @@ Additional Information
   additional_information/password_reset.rst
   additional_information/feature_codes.rst
   additional_information/tftp.rst
+  additional_information/nat.rst
 
