@@ -148,9 +148,6 @@ Feature Codes
 | *5000                 | Default Attendant       | Call the default auto-attendant                                               |
 +-----------------------+-------------------------+-------------------------------------------------------------------------------+
 
-**Adding extra feature codes**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-https://wiki.freeswitch.org/wiki/Misc._Dialplan_Tools_say#Talking_Clock
+*You can also add extra feature codes
 
 
