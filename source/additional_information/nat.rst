@@ -9,9 +9,12 @@ Freeswitch NAT
 
 `FreeSWITCH documented infomation on NAT`_
 
-NAT Example: If you have a static ip and freeswitch is behind a firewall
+NAT Example: If you have a static ip.
 
 * autonat:xxx.xxx.xxx.xxx  (for the static ip)
+
+
+NAT Example: FreeSWITCH is behind a firewall
 
 * If using UPnP or PMP on the firewall
 * Some routers you would need to disable or enable (usually disable) SIP ALG
