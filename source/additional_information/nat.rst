@@ -7,11 +7,10 @@ NAT is Network Address Translation. When your FusionPBX and/or FreeSWITCH are in
 
 Default config
 ^^^^^^^^^^^^^^^
-The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -> Variables by default.
+The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -> Variables by default. The local_ip_v4 variable is auto detected by FreeSWITCH. The variable can be also be overidden as a preset variable before it is used if you want to control the IP address that it represents.
 
 * This works good when the server has a public IP address.
-* Also works good when all phones are inside the same network.
-* The local_ip_v4 variable auto detects the IP address and sets it. This works well for systems that are inside NAT but using a SIP to TDM gateway. 
+* It also works well when all phones are inside the same network and nothing needs to traverse the NAT. For example if you are using a SIP to TDM gateway and all your phones are in the same network.
 
 
 SIP ALG
@@ -23,7 +22,8 @@ Static IP
 ^^^^^^^^^^^^^^^
 FusionPBX is behind NAT and you have a static public IP address and you have phones on the same network and/or outside the network.
 
-* autonat:xxx.xxx.xxx.xxx
+* Set external_rtp_ip to autonat:xxx.xxx.xxx.xxx
+* Set external_sip_ip to autonat:xxx.xxx.xxx.xxx
 * If you don't register a gateway to the carrier you may need to port forward SIP and RTP.
 
 
@@ -34,11 +34,7 @@ FusionPBX is behind NAT and you don't have a static ip address. You do have a fi
 * Enable UPnP or PMP in your firewall
 * In Debian OS /etc/default/freeswitch  remove -nonat
 * Make systemd aware of the changes.  systemctl daemon-reload
-* Set external_rtp_ip and external_sip_ip to auto-nat in Advanced -> Variables.
+* Set external_rtp_ip to auto-nat
+* Set external_sip_ip to auto-nat
 * Restart FreeSWITCH.   service freeswitch restart
 
-
-
-
-
-.. _FreeSWITCH documented infomation on NAT: https://freeswitch.org/confluence/dosearchsite.action?queryString=nat
