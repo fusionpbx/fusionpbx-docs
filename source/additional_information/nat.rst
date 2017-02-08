@@ -21,9 +21,10 @@ A SIP Application Layer Gateway is a tool designed to help SIP traverse NAT. Whi
 
 Static IP
 ^^^^^^^^^^^^^^^
-FusionPBX is behind NAT and you have a static public IP address.
+FusionPBX is behind NAT and you have a static public IP address and you have phones on the same network and/or outside the network.
 
 * autonat:xxx.xxx.xxx.xxx
+* If you don't register a gateway to the carrier you may need to port forward SIP and RTP.
 
 
 UPnP or PMP
