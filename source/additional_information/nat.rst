@@ -1,28 +1,40 @@
 #####
-NAT
+Network Address Translation
 #####
 
-NAT is Network Address Translation.  When problems happen with VOIP the usual suspect is NAT.
+NAT is Network Address Translation. When your FusionPBX and/or FreeSWITCH are inside NAT then then you may experience one way audio or no audio in either direction the following information can help you get audio working in both directions.
 
-Freeswitch NAT
+
+Default config
 ^^^^^^^^^^^^^^^
+The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -> Variables by default.
 
-`FreeSWITCH documented infomation on NAT`_
-
-NAT Example: If you have a static ip.
-
-* autonat:xxx.xxx.xxx.xxx  (for the static ip)
+* This works good when the server has a public IP address.
+* Also works good when all phones are inside the same network.
+* The local_ip_v4 variable auto detects the IP address and sets it. This works well for systems that are inside NAT but using a SIP to TDM gateway. 
 
 
-NAT Example: FreeSWITCH is behind a firewall
+SIP ALG
+^^^^^^^^^^^^^^^
+A SIP Application Layer Gateway is a tool designed to help SIP traverse NAT. While the SIP ALG is good in theory it is often causes more problems than it solves because of this its usually best to disable the SIP ALG on your firewall. An alternative way to disable it is to move SIP to a non standard port.
 
-* If using UPnP or PMP on the firewall
-* Some routers you would need to disable or enable (usually disable) SIP ALG
 
+Static IP
+^^^^^^^^^^^^^^^
+FusionPBX is behind NAT and you have a static public IP address.
+
+* autonat:xxx.xxx.xxx.xxx
+
+
+UPnP or PMP
+^^^^^^^^^^^^^^^
+FusionPBX is behind NAT and you don't have a static ip address. You do have a firewall that is capable of UPnP or PMP.
+
+* Enable UPnP or PMP in your firewall
 * In Debian OS /etc/default/freeswitch  remove -nonat
-* Set external rtp and sip ip to auto-nat in advanced -> variables
-
-If server is **not** behind NAT then default config works
+* Make systemd aware of the changes.  systemctl daemon-reload
+* Set external_rtp_ip and external_sip_ip to auto-nat in Advanced -> Variables.
+* Restart FreeSWITCH.   service freeswitch restart
 
 
 
