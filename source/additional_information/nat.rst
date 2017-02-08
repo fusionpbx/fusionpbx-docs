@@ -14,6 +14,7 @@ NAT Example: If you have a static ip and freeswitch is behind a firewall
 * autonat:xxx.xxx.xxx.xxx  (for the static ip)
 
 * If using UPnP or PMP on the firewall
+* Some routers you would need to disable or enable (usually disable) SIP ALG
 
 * In Debian OS /etc/default/freeswitch  remove -nonat
 * Set external rtp and sip ip to auto-nat in advanced -> variables
