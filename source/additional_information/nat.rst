@@ -1,0 +1,27 @@
+#####
+NAT
+#####
+
+NAT is Network Address Translation.  When problems happen with VOIP the usual suspect is NAT.
+
+Freeswitch NAT
+^^^^^^^^^^^^^^^
+
+`FreeSWITCH documented infomation on NAT`_
+
+NAT Example: If you have a static ip and freeswitch is behind a firewall
+
+* autonat:xxx.xxx.xxx.xxx  (for the static ip)
+
+* If using UPnP or PMP on the firewall
+
+* In Debian OS /etc/default/freeswitch  remove -nonat
+* Set external rtp and sip ip to auto-nat in advanced -> variables
+
+If server is **not** behind NAT then default config works
+
+
+
+
+
+.. _FreeSWITCH documented infomation on NAT: https://freeswitch.org/confluence/dosearchsite.action?queryString=nat
