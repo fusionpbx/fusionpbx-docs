@@ -1,7 +1,5 @@
-
-
-Options
-=======
+Extension
+==========
 
 | **Extension** What is used to register the phone (typically your
   extension number but can be any alphanumeric) used to register phone
