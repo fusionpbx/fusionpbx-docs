@@ -22,6 +22,7 @@ On some installations this example file will be present in /usr/local/freeswitch
 PERMIT TOLL CALLS
 ^^^^^^^^^^^^^^^^^^ 
 
+This example assumes all calls are bad (except internal) unless they are flagged as good by the value of the toll_allow variable.
 
 ::
 
@@ -59,7 +60,9 @@ PERMIT TOLL CALLS
 PREVENT TOLL CALLS
 ^^^^^^^^^^^^^^^^^^ 
 
-The example below takes theopposite approach and is how to PREVENT calls. Effectively, the above example assumes all calls are bad (except internal) unless they are flagged as good by the value of the toll_allow variable. The below example takes the opposite approach. It assumes that all calls are good unless they are flagged as bad.
+ 
+This example takes the opposite approach and is how to PREVENT toll calls.
+The below example takes the opposite approach. It assumes that all calls are good unless they are flagged as bad.
 
 Put this in your advanced dialplan. In the toll allow of whatever extension you wanted to restrict put the value 'local'.  This example **restricts from calling 10 or 11 digit numbers.**
 
