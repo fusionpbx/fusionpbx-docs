@@ -18,11 +18,11 @@ understands it or has used it:
 | ``You can then add information to your dialplan to process this variable.  In the example XML below, if the valid allow value isn't present then``
 | ``an extension shouldn't be able to dial out.  However extension -> extension should still work.``
 
-| ``The following code are example XML for standard outbound routes (Dialplan->OutboundRoutes).  Effectively you are applying an additional  ``
-| ``condition to EACH outbound route that you want to limit.  So in the FusionPBX GUI select an outbound route and add a condition, type  ``
+| ``The following code are example XML for standard outbound routes (Dialplan->OutboundRoutes).  Effectively you are applying an additional``
+| ``condition to EACH outbound route that you want to limit.  So in the FusionPBX GUI select an outbound route and add a condition, type``
 | ``"${toll_allow}", data "local".  Order is important, this should be the FIRST condition of your outbound route.``
 | ``You'll need to do that for all of your outbound routes, tag them local, domestic, or international depending on what they are.``
-| ``On some installations this example file will be present in /usr/local/freeswitch/conf/dialplan/default/01_example.com.xml: ``
+| ``On some installations this example file will be present in /usr/local/freeswitch/conf/dialplan/default/01_example.com.xml:``
 
 | 
 
@@ -66,7 +66,7 @@ flagged as good by the value of the toll\_allow variable. The below
 example takes the opposite approach - it assumes that all calls are good
 unless they are flagged as bad.
 
-| ``Put this in your advanced dialplan. In the toll allow of whatever extension you wanted to restrict put the value 'local'.  This example ``
+| ``Put this in your advanced dialplan. In the toll allow of whatever extension you wanted to restrict put the value 'local'.  This example``
 | ``restricts from calling 10 or 11 digit numbers.``
 
 | 
