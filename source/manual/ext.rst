@@ -1,39 +1,3 @@
-Each phone on the PBX is setup to register to one or more extension
-numbers.
-
-Basic Setup
-===========
-
--  To add an extension go to the Menu -> Accounts -> Extensions and
-   press the add button.
--  Set an extension number
--  the rest of the defaults are fine for a basic example.
--  Press save.
--  Hover over the password input, it will allow you to see/copy the
-   password
-
-Passwords
----------
-
-FusionBPX automatically generates a password for the extension. It is
-randomly created (symbols, letters, numbers). You can find this password
-after you create the extension.
-
--  Menu -> Accounts -> Extensions
-
-   -  click 'e' to edit the extension you need to see
-
-      -  find the password field
-      -  click inside the field of bullets
-
-         -  FusionPBX will display the password to you so you can see it
-            and copy/paste on the line below.
-
--  Alternatively, you can do:
-
-   -  less
-      [freeswitch\_config\_dir]/directory/default/v\_ExtensionNumber.xml
-
 
 
 Options
@@ -80,25 +44,8 @@ accountcode <http://wiki.freeswitch.org/wiki/Variable_accountcode>`__
 for more information. Note that it can be used to affect the operation
 of CDR.
 
-``Functionality for phone provisioning is now provided on this screen, but has not yet been documented here.``
 
 *' Directory Full Name*' This is the name that will be used for a \*411
 or Company Directory lookup as often used in IVR.
 
-Notes
-=====
-
-The password is set automatically using a combination of random
-characters that are:
-
--  upper and lower case letters,
--  numbers
--  symbols
-
-Rather than changing the password to something simple it is much wiser
-to keep it as it was automatically set and to use that password to
-connect the phone with. To view the password that has been automatically
-set, open the extension page again and click on the obfuscated password
-in the password field. The actual password will be revealed just below
-the password field.
 
