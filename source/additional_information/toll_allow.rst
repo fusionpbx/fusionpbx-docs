@@ -77,4 +77,3 @@ Put this in your advanced dialplan. In the toll allow of whatever extension you 
    </condition>
    </extension>
   
-|
