@@ -24,8 +24,9 @@ understands it or has used it:
 ``You'll need to do that for all of your outbound routes, tag them local, domestic, or international depending on what they are.``
 ``On some installations this example file will be present in /usr/local/freeswitch/conf/dialplan/default/01_example.com.xml:``
 
- PERMIT TOLL CALLS
- ^^^^^^^^^^^^^^^^^^
+PERMIT TOLL CALLS
+^^^^^^^^^^^^^^^^^^ 
+
 
 ::
 
@@ -60,7 +61,10 @@ understands it or has used it:
 
 | 
 
-The above example is how to PERMIT calls. The example below takes theopposite approach and is how to PREVENT calls. Effectively, the above example assumes all calls are bad (except internal) unless they are flagged as good by the value of the toll\_allow variable. The below example takes the opposite approach - it assumes that all calls are good unless they are flagged as bad.
+PREVENT TOLL CALLS
+^^^^^^^^^^^^^^^^^^ 
+
+The example below takes theopposite approach and is how to PREVENT calls. Effectively, the above example assumes all calls are bad (except internal) unless they are flagged as good by the value of the toll_allow variable. The below example takes the opposite approach. It assumes that all calls are good unless they are flagged as bad.
 
 ``Put this in your advanced dialplan. In the toll allow of whatever extension you wanted to restrict put the value 'local'.  This example``
 ``restricts from calling 10 or 11 digit numbers.``
