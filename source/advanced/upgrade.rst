@@ -303,7 +303,7 @@ https://domain.com/core/upgrade/index.php
 
 |
 
-10. Edit autoload_configs/lua.conf.xml adding "languages". Restart of FreeSWITCH is required.
+11. Edit autoload_configs/lua.conf.xml adding "languages". Restart of FreeSWITCH is required.
 
 ::
 
@@ -311,7 +311,7 @@ https://domain.com/core/upgrade/index.php
 
 |
 
-11. Update Time Conditions (Bug Fix)
+12. Update Time Conditions (Bug Fix)
  
  ::
  
