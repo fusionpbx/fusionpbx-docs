@@ -24,4 +24,4 @@ Businesses of all sizes use FusionPBX daily.  We love to see folks happy saving 
 
 
 
-We would love to hear from you!  Please reach out to us at http://fusionpbx.com/support if you would like to be featured on this page. 
+We would love to hear from you!  Please reach out to us at http://fusionpbx.com/support.php if you would like to be featured on this page. 
