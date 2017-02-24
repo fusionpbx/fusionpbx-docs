@@ -2,6 +2,13 @@
 Testimonials
 ############
 
+
+.. image:: ../_static/images/logo.png
+        :width: 130pt
+        :align: center
+        :height: 76.5pt
+
+
 Businesses of all sizes use FusionPBX daily.  We love to see folks happy saving money using FusionPBX.  Here are some of the testimonials we received.
 
 ------------
