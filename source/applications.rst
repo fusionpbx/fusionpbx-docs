@@ -21,3 +21,4 @@ Applications
   applications/recordings.rst
   applications/ring_group.rst
   applications/time_conditions.rst
+  applications/voicemail.rst
