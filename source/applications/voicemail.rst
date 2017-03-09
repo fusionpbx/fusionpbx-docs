@@ -15,7 +15,7 @@ To edit voicemail settings click the pencil edit icon on the right of the extens
         :scale: 85%
 
 
-Voicemail Menu Tree
+Voicemail Options
 ====================
 
 
@@ -28,3 +28,27 @@ Access an extensions voicemail **away** from the extension dial the extension an
 +-------------+-----------------------+------------------------------+-----------------------------------+
 | ***99[ext]**| To access **a specific** extension voicemail                                             |
 +-------------+-----------------------+------------------------------+-----------------------------------+
+
+
++-------------+-----------------------+
+|             |   **Main Menu**       |
++-------------+-----------------------+
+| **press 5** | For advanced options  |
++-------------+-----------------------+
+
+
++-------------+-----------------------+
+|             | **Advanced Options**  |
++-------------+-----------------------+
+| **press 1** | Record a greeting     |
++-------------+-----------------------+
+| **press 2** | Choose a greeting     |
++-------------+-----------------------+
+| **press 3** | Record name           |
++-------------+-----------------------+
+| **press 6** | Change password       |
++-------------+-----------------------+
+| **press 0** | For main menu         |
++-------------+-----------------------+
+
+
