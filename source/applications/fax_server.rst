@@ -73,6 +73,12 @@ FAX Default Settings
 =====================
 
 * Goto Menu -> Advanced -> Default Settings then category Fax
+* Variables are used as defaults for the dialplan for sending and receiving faxes
+* *fax_enable_t38_request=false* (Can be true or false)
+* *ignore_early_media=true* (Can be true or false)
+* Some carriers it's better for fax_enable_t38_request=true and for some its better for it to be false.
+* It's best not to make an assumption and to do testing with different settings to get the best results for your particular carrier.
+* The variable *fax_enable_t38_request=false* will send a T38 reinvite when a fax tone is detected. In some cases the re-invite always fails for some carriers which is why it is default to false.
 
 
 Troubleshooting Tips
