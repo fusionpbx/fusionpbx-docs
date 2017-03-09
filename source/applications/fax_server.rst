@@ -60,6 +60,21 @@ Click **PDF** to view the fax or right click on **PDF** and left click on **Save
         :scale: 85%
 
 
+
+Fax ATA
+=========
+
+To connect to a fax machine with an ATA you will most likely need to adjust settings in the ATA web interface and in FusionPBX.
+
+Create an extension for the FAX machine. You can *optionally* set **bypass media to true** under advanced in the extension settings. 
+
+
+FAX Default Settings
+=====================
+
+* Goto Menu -> Advanced -> Default Settings then category Fax
+
+
 Troubleshooting Tips
 ~~~~~~~~~~~~~~~~~~~~~~
 
