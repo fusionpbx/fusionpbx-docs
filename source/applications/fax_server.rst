@@ -72,7 +72,8 @@ Create an extension for the FAX machine. You can *optionally* set **bypass media
 FAX Default Settings
 =====================
 
-* Goto Menu -> Advanced -> Default Settings then category Fax
+Goto Menu -> Advanced -> Default Settings then category Fax
+
 * Variables are used as defaults for the dialplan for sending and receiving faxes
 
 .. image:: ../_static/images/fax_variables.jpg
