@@ -3,7 +3,23 @@ Voicemail
 ##########
 
 
-To access an extensions voicemail **away** from the extension dial the extension and interupt the greeting with the *star key.
+
+
+.. image:: ../_static/images/fusionpbx_voicemail.jpg
+        :scale: 85%
+
+To edit voicemail settings click the pencil edit icon on the right of the extension number.
+
+
+.. image:: ../_static/images/fusionpbx_voicemail1.jpg
+        :scale: 85%
+
+
+Voicemail Menu Tree
+====================
+
+
+Access an extensions voicemail **away** from the extension dial the extension and interupt the greeting with the ***star** key.
 
 +-------------+-----------------------+------------------------------+-----------------------------------+
 | ***97**     | To access **that** extensions voicemail **from the extension** or the voicemail button   |
@@ -12,11 +28,3 @@ To access an extensions voicemail **away** from the extension dial the extension
 +-------------+-----------------------+------------------------------+-----------------------------------+
 | ***99[ext]**| To access **a specific** extension voicemail                                             |
 +-------------+-----------------------+------------------------------+-----------------------------------+
-
-.. image:: ../_static/images/fusionpbx_voicemail.jpg
-        :scale: 85%
-
-
-
-.. image:: ../_static/images/fusionpbx_voicemail1.jpg
-        :scale: 85%
