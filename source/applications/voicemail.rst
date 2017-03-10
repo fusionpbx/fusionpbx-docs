@@ -3,13 +3,21 @@ Voicemail
 ##########
 
 
-
+To edit voicemail settings click the pencil edit icon on the right of the extension number.
 
 .. image:: ../_static/images/fusionpbx_voicemail.jpg
         :scale: 85%
 
-To edit voicemail settings click the pencil edit icon on the right of the extension number.
 
+Here you can edit voicemail settings.
+
+*  Greeting- When you dial *97 and record a greeting and set a number you can choose which greeting to use
+*  Options- Can create a voicemail IVR
+*  Mail to- have voicemails emailed to this address
+*  Voicemail File- Auto File Attachment, Listen Link, Download Link
+*  Keep Local- To keep the voicemail on the server after being emailed or not
+*  Forward Destinations- Forward voicemail messages to additional destinations
+*  Enabled- Enable or disable the voicemail box
 
 .. image:: ../_static/images/fusionpbx_voicemail1.jpg
         :scale: 85%
