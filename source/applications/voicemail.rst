@@ -11,7 +11,7 @@ To edit voicemail settings click the pencil edit icon on the right of the extens
 
 Here you can edit voicemail settings.
 
-*  Greeting- When you dial *97 and record a greeting and set a number you can choose which greeting to use
+*  Greeting- When you dial *97, record a greeting and set a number you can choose which greeting to use
 *  Options- Can create a voicemail IVR
 *  Mail to- have voicemails emailed to this address
 *  Voicemail File- Auto File Attachment, Listen Link, Download Link
