@@ -20,9 +20,9 @@ Once you have that done
 
 * Click the **Settings** tab at the top
 * On the left vertical menu click  **Auto Provision**
-* Fill in the **Server URL** field.  This will be https://domain.tld/app/provison  Replace domain.tld with your actual domain name
+* Fill in the **Server URL** field.  This will be https://domain.tld/app/provision  Replace domain.tld with your actual domain name
 * Click **Confirm** at the bottom
-* Click **Auto Provison Now** at the bottom
+* Click **Auto Provision Now** at the bottom
 
 
 .. image:: ../../_static/images/fusionpbx_provision_auto_yealink.jpg
