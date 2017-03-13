@@ -1,5 +1,5 @@
-Gateway setup
-==============
+Gateway
+=========
 
 .. image:: ../_static/images/logo_right.png
         :scale: 85%
