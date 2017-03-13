@@ -37,7 +37,8 @@ button on the right.
 
  Type: Inbound
  Destination Number: ^(?:\+?1)?(\d{10})$
- Action: Select desired destination from the drop-down list.  We choose "Extension 100" in our example.  This is where the call will route to.
+ Action: Select desired destination from the drop-down list.  We choose "Extension 100" in our example.
+ This is where the call will route to.
  Enabled: true
  Description: VoiceTel-in
  
@@ -46,5 +47,6 @@ button on the right.
  
 ::
 
- Optional: Replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.
+ Optional: Replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number
+ depending on the Route Destination setting.
  
