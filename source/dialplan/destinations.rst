@@ -3,8 +3,6 @@ Destinations
 #############
 
 
-Inbound Destinations
-=====================
 
 
 Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls. `Click here for the youtube video`_
