@@ -1,5 +1,5 @@
-Inbound Destination setup
-==========================
+Inbound Destinations
+=====================
 
 Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls. `Click here for the youtube video`_
 
@@ -47,8 +47,8 @@ button on the right.
 |
 
 
-Outbound setup
-===============
+Outbound Routes
+================
 
 Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes. `Check out the youtube video <https://youtu.be/rhyfCKLBI-Y>`_ .
 
