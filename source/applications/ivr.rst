@@ -1,5 +1,5 @@
 **********
-IVR's
+IVR Menu
 **********
 
 Welcome to the adding IVR section.  Here you will find how to add IVR's. `Click here for the youtube video`_
