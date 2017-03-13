@@ -6,5 +6,5 @@ Route incoming calls to destinations based on one or more conditions. It can sen
 
 **Inbound routes can be used for advanced reasons.  Dialplan > Destinations will create and configure the Inbound Route for you.**
 
-.. image:: _static/images/fusionpbx_inbound_routes.jpg
+.. image:: ../_static/images/fusionpbx_inbound_routes.jpg
         :scale: 85%
