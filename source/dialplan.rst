@@ -12,4 +12,6 @@ Dialplan
   :maxdepth: 2
   :glob:
   
-  gateway_inbound_outbound/gateway.rst
+  dialplan/destinations.rst
+  dialplan/inbound_routes.rst
+  dialplan/outbound_routes.rst
