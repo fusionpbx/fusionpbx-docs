@@ -2,11 +2,15 @@
 Group Manager
 #################
 
-Permit access levels to different group of users.
+Permit access levels to different group of users.  The group permissions allow customizing permissions for existing groups or custom groups.
 
 .. image:: ../_static/images/fusionpbx_group_manager.jpg
         :scale: 85%
 
+
+*  **superadmin-** the global administrator
+*  **admin-** the domain administrator
+*  **users-** the group for regular users
 
 
 
