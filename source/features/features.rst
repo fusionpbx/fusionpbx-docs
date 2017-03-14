@@ -42,8 +42,8 @@ Call Detail Records
 
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-`Call Flows`_  (Day Night Mode)
---------------------------------
+`Call Flows (Day Night Mode)`_ 
+---------------------
 
 Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
@@ -282,7 +282,7 @@ Make and receive video calls with a web browser.
 .. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/gateway_inbound_outbound/gateway.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest
 .. _Extensions: http://docs.fusionpbx.com/en/latest/extensions_ivr/extensions.html
-.. _Call Flows: /en/latest/applications/call_flows.html
+.. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest
