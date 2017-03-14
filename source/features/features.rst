@@ -37,7 +37,7 @@ Call Center
 
 Creates a robust call center environment with agent tiers.
 
-Call Detail Records
+`Call Detail Records`_
 ------------------------
 
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
@@ -288,6 +288,7 @@ Make and receive video calls with a web browser.
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
+.. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
