@@ -14,7 +14,7 @@ Call Detail Records (CDRs) are detailed information on the calls. Use the fields
 *  **Recording-** A link will appear if the call recorded
 *  **Start-** Time the call entered the system
 *  **TTA-** Time To Answer the call
-*  **Dusation-** How long the call was
+*  **Duration-** How long the call was
 *  **PDD-** Post Dial Delay
 *  **MOS-** Mean Opinion Score is a measure of voice call quality
 *  **Hangup Cause-** Details about the entire calls. Usually will be "Normal Clearing"
