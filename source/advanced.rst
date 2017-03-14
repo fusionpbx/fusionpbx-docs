@@ -19,5 +19,6 @@ Advanced
 
   advanced/access_controls.rst
   advanced/domains.rst
+  advanced/group_manager.rst
   advanced/upgrade.rst
 
