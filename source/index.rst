@@ -76,7 +76,7 @@ Our Ecosystem
 .. _Conferences: Conferences
 .. _Fax Server: /en/latest/applications/fax_server.html
 .. _Time Conditions: /en/latest/applications/time_conditions.html
-.. _Ring Groups: /en/latest/applications/ring_groups.html
+.. _Ring Groups: /en/latest/applications/ring_group.html
 .. _Recordings: /en/latest/applications/recordings.html
 .. _Voicemail: /en/latest/applications/voicemail.html
 .. _Multi-Tenant: /en/latest/advanced/domains.html
