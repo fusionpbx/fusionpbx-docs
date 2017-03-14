@@ -256,8 +256,8 @@ Can be configured for multi-master database replication, file replication. Fusio
 
 A extension that can be timed to route calls based on domain select, global option, move to other domains, and holiday presets.
 
-User and Group Management
---------------------------
+`User and Group Management`_
+------------------------------
 
 Edit, change or add users of all permission levels.
 
@@ -303,3 +303,4 @@ Make and receive video calls with a web browser.
 .. _Voicemail: /en/latest/applications/voicemail.html
 .. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
+.. _User and Group Management: http://docs.fusionpbx.com/en/latest/advanced/group_manager.html
