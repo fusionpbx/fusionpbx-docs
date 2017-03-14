@@ -20,7 +20,7 @@ Define alternate inbound call handling for the following extensions.
 *  **Do Not Disturbe-** (Disabled or Enabled)
 
 
-
+This example has both the extension 1301 itself and and external number to call.  If you don't put the extension itself the extension wont ring when in Follow Me.  This is due to the flexible nature of FusionPBX where if you didn't want that extension to ring like if you were out of the office on a business trip.
 
 
 .. image:: ../_static/images/fusionpbx_follow_me1.jpg
