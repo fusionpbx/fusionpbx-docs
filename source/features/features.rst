@@ -42,7 +42,7 @@ Call Detail Records
 
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-Call Flows (Day Night Mode)
+`Call Flows`_  (Day Night Mode)
 --------------------------------
 
 Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
@@ -170,7 +170,7 @@ File editor for PHP, XML, and Provisioning files.
 
 A virtual fax machine that can send and receive faxes with advanced features.
 
-Follow-Me
+`Follow Me`_
 ------------
 
 Allows calling multiple extensions or external numbers.
@@ -202,7 +202,7 @@ Music on Hold
 
 Allows multiple categories of music on hold that can be set globally or per domain. Can inject additional audio on intervals such as 'Your call is very important to us please stand by'.
 
-Multi-Tenant
+`Multi-Tenant`_
 --------------------------------------------
 
 Domain based multi-tenant using subdomains such as red.pbxhosting.tld green.pbxhosting.tld blue.pbxhosting.tld
@@ -261,7 +261,7 @@ User and Group Management
 
 Edit, change or add users of all permission levels.
 
-Voicemail
+`Voicemail`_
 -----------
 
 Has ability to copy voicemails for other voicemail boxes when receiving a voicemail. Additional features include voicemail to email and voicemail IVR. Forward add intro, check box for multi-delete.
@@ -282,6 +282,8 @@ Make and receive video calls with a web browser.
 .. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/gateway_inbound_outbound/gateway.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest
 .. _Extensions: http://docs.fusionpbx.com/en/latest/extensions_ivr/extensions.html
+.. _Call Flows: /en/latest/applications/call_flows.html
+.. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
@@ -289,6 +291,7 @@ Make and receive video calls with a web browser.
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
+.. _Multi-Tenant: /en/latest/advanced/domains.html
 .. _Queues: http://docs.fusionpbx.com/en/latest
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
@@ -297,5 +300,6 @@ Make and receive video calls with a web browser.
 .. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
 .. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
+.. _Voicemail: /en/latest/applications/voicemail.html
 .. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
