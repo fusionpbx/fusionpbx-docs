@@ -279,7 +279,7 @@ Make and receive video calls with a web browser.
 
 
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
-.. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/gateway_inbound_outbound/gateway.html
+.. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplan.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest
 .. _Extensions: http://docs.fusionpbx.com/en/latest/extensions_ivr/extensions.html
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
