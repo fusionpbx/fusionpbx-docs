@@ -14,6 +14,7 @@ Applications
   :maxdepth: 3
   :glob:
 
+  applications/call_detail_record.rst
   applications/ivr.rst
   applications/call_flows.rst
   applications/fax_server.rst
