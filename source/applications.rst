@@ -18,7 +18,7 @@ Applications
   applications/ivr.rst
   applications/call_flows.rst
   applications/fax_server.rst
-  applications/follow_me.html
+  applications/follow_me.rst
   applications/provision.rst
   applications/recordings.rst
   applications/ring_group.rst
