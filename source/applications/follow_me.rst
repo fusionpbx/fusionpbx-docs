@@ -6,7 +6,7 @@ Define alternate inbound call handling for the following extensions.
 
 
 .. image:: ../_static/images/fusionpbx_follow_me.jpg
-        :scale: 50%
+        :scale: 85%
 
 
 *  **Call Forward-** (Disabled or Enabled) Input the destination number
@@ -24,4 +24,4 @@ This example has both the extension 1301 itself and and external number to call.
 
 
 .. image:: ../_static/images/fusionpbx_follow_me1.jpg
-        :scale: 50%
+        :scale: 85%
