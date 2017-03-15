@@ -27,3 +27,7 @@ Fill in the following fields
 
 .. image:: ../_static/images/fusionpbx_call_broadcast1.jpg
         :scale: 85%
+
+
+*  Once you have everything filled out click the Call Broadcast name you just created. On the top right click the **Send Broadcast** button to start the call broadcast.  To stop the call broadcast click **STOP BROADCAST** on the top right.
+
