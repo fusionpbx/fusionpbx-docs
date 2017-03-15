@@ -27,7 +27,7 @@ Call Block
 
 Block inbound calls by the caller id.
 
-Call Broadcast
+`Call Broadcast`_
 -------------------
 
 Create a recording and select one or more groups to have the system call and play the recording.
@@ -280,7 +280,7 @@ Make and receive video calls with a web browser.
 
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
 .. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplan.html
-.. _Call Broadcast: http://docs.fusionpbx.com/en/latest
+.. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
 .. _Extensions: http://docs.fusionpbx.com/en/latest/extensions_ivr/extensions.html
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
 .. _Follow Me: /en/latest/applications/follow_me.html
