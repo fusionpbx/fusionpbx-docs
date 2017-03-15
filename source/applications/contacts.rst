@@ -12,7 +12,8 @@ Contacts is a list of individuals and organizations.
 
 *  To create a contact click the **plus** and to edit a contact click the **pencil** icon on the right.
 *  Fill out the fields with pertinent information and click save.
-*  Groups can be used to permit access to the contact.
+*  **Users-** Select the users that are allowed to view the contact
+*  **Groups-** Select the group that are allowed access to the contact.
 
 
 
