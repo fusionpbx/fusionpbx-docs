@@ -18,6 +18,7 @@ Applications
   applications/call_detail_record.rst
   applications/ivr.rst
   applications/call_flows.rst
+  applications/contacts.rst
   applications/fax_server.rst
   applications/follow_me.rst
   applications/provision.rst
