@@ -10,7 +10,9 @@ Contacts is a list of individuals and organizations.
         :scale: 85%
 
 
-
+*  To create a contact click the **plus** and to edit a contact click the **pencil** icon on the right.
+*  Fill out the fields with pertinent information and click save.
+*  Groups can be used to permit access to the contact.
 
 
 
@@ -20,11 +22,19 @@ Contacts is a list of individuals and organizations.
 
 
 
-
+*  Go back into the contact to fill out more information that wasn't available when you first created the contact.
 
 
 
 .. image:: ../_static/images/fusionpbx_contacts2.jpg
         :scale: 85%
 
+
+
+*  To generate a QR code click the **QR CODE** button at the top right
+
+
+.. image:: ../_static/images/fusionpbx_qr_code.jpg
+        :scale: 85%
+        :align: center
 
