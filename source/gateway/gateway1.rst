@@ -4,12 +4,8 @@ Gateway
 .. image:: ../_static/images/logo_right.png
         :scale: 85%
   
-|
 
 Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
-  
-|
-|
 
 **In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
 
@@ -17,16 +13,12 @@ Gateways provide access into other voice networks. These can be voice providers 
         :scale: 85% 
 
 `Click to visit <http://tiny.cc/voicetel>`_  
-    
-|
 
 Select **Accounts** from the drop-down list and click on **Gateways**. 
 
 .. image:: ../_static/images/fusionpbx_gateway.jpg
         :scale: 85%
 
-|
-|
 
 .. image:: ../_static/images/fusionpbx_gateway1.jpg
         :scale: 85%
