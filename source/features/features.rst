@@ -197,8 +197,8 @@ Routes used to receive or send calls in or out of FusionPBX.
 Create a structured interactive voice prompt for callers to use. Uses FreeSWITCH IVR and delivered from Database on Demand. Cached to memcache with IVR Menu Options all editable at once. Also works with Text to Speech.
 
 
-Queues
---------
+`Queues`_
+------------
 
 Like Call Center but more flexable.
 
@@ -299,7 +299,7 @@ Make and receive video calls with a web browser.
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Multi-Tenant: /en/latest/advanced/domains.html
-.. _Queues: http://docs.fusionpbx.com/en/latest
+.. _Queues: /en/latest/applications/queues.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
 .. _Conferences: http://docs.fusionpbx.com/en/latest
