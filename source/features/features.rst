@@ -102,7 +102,7 @@ Caller ID
 
 Support for customization and supporting providers.
 
-Conferencing
+`Conference`_
 ---------------------
 
 Set up voice and video conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, profiles and controls. (See `Conferences`_)
@@ -289,6 +289,7 @@ Make and receive video calls with a web browser.
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
 .. _Contacts: /en/latest/applications/contacts.html
+.. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
