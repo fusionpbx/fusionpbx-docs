@@ -17,13 +17,14 @@ Applications
   applications/call_block.rst
   applications/call_broadcast.rst 
   applications/call_detail_record.rst
-  applications/conference.rst
-  applications/ivr.rst
   applications/call_flows.rst
+  applications/conference.rst    
   applications/contacts.rst
   applications/fax_server.rst
   applications/follow_me.rst
+  applications/ivr.rst
   applications/provision.rst
+  applications/queues.rst
   applications/recordings.rst
   applications/ring_group.rst
   applications/time_conditions.rst
