@@ -4,6 +4,8 @@ Conference
 
 Conferences is used to setup conference rooms with a name, description, and optional pin number.
 
+.. note::  For advanced conferencing use Apps -> Conference Center
+
 
 .. image:: ../_static/images/fusionpbx_conferences.jpg
         :scale: 85%
