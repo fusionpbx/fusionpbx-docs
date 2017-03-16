@@ -14,5 +14,5 @@ Accounts
   :glob:
 
   extensions_ivr/extensions.rst
-  gateway_inbound_outbound/gateway1.rst
+  gateway/gateway1.rst
   applications_optional/xmpp.rst
