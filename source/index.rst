@@ -36,7 +36,7 @@ Benefits of FusionPBX
 --------------------
 
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
-| **Call Block**          | `Call Broadcast`_     | `Call Flows`_                   |       **Call Center**                    |
+| `Call Block`_           | `Call Broadcast`_     | `Call Flows`_                   |       **Call Center**                    |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Call Detail Records`_  | `Conference`_         |    `Contacts`_                  |      `Fax Server`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
@@ -61,7 +61,7 @@ Our Ecosystem
 .. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
 .. _IVR Menus: /en/latest/applications/ivr.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
-.. _Call Block: Call_Block
+.. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: Call_Forward
