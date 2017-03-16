@@ -175,6 +175,11 @@ A virtual fax machine that can send and receive faxes with advanced features.
 
 Allows calling multiple extensions or external numbers.
 
+`Gateways`_
+-------------
+
+Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_.
+
 Hot Desking
 ------------
 
@@ -299,6 +304,7 @@ Make and receive video calls with a web browser.
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
 .. _Conferences: http://docs.fusionpbx.com/en/latest
 .. _Fax Server: http://docs.fusionpbx.com/en/latest/applications/fax_server.html
+.. _Gateways: http://docs.fusionpbx.com/en/latest/gateway/gateway1.html
 .. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
 .. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
