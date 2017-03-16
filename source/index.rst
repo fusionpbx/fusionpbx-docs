@@ -42,7 +42,7 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Follow Me`_            | **Hot Desking**       |    `IVR Menus`_                 |      `Ring Groups`_                      |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
-| `Multi-Tenant`_         | **Music on Hold**     |    **Queues**                   |      `Recordings`_                       |
+| `Multi-Tenant`_         | **Music on Hold**     |    `Queues`_                    |      `Recordings`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Time Conditions`_      | **WebRTC ready**      |    `Voicemail`_                 |      `and lots more...`_                 |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
@@ -69,7 +69,7 @@ Our Ecosystem
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
-.. _Queues: Queues
+.. _Queues: /en/latest/applications/queues.html
 .. _Recordings: /en/latest/applications/recordings.html
 .. _Call Recordings: /en/latest/applications/recordings.html
 .. _Contacts: /en/latest/applications/contacts.html
