@@ -38,7 +38,7 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | **Call Block**          | `Call Broadcast`_     | `Call Flows`_                   |       **Call Center**                    |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
-| `Call Detail Records`_  | **Conference Center** |    **Contacts**                 |      `Fax Server`_                       |
+| `Call Detail Records`_  | **Conference Center** |    `Contacts`_                  |      `Fax Server`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Follow Me`_            | **Hot Desking**       |    `IVR Menus`_                 |      `Ring Groups`_                      |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
@@ -71,6 +71,7 @@ Our Ecosystem
 .. _Queues: Queues
 .. _Recordings: /en/latest/applications/recordings.html
 .. _Call Recordings: /en/latest/applications/recordings.html
+.. _Contacts: /en/latest/applications/contacts.html
 .. _Active Calls: Active_Calls
 .. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
