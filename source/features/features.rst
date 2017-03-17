@@ -127,8 +127,10 @@ Command
 
 Area to execute commands from the gui. Merged with SQL Query tool with a clip library.
 
-Dialplan
------------
+`Dialplan Manager`_
+---------------------
+
+The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination. 
 
 Dial by Name
 --------------------
@@ -296,7 +298,7 @@ Make and receive video calls with a web browser.
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
-.. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
+.. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Multi-Tenant: /en/latest/advanced/domains.html
 .. _Music on Hold: /en/latest/applications/music_on_hold.html
