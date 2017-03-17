@@ -202,8 +202,8 @@ Create a structured interactive voice prompt for callers to use. Uses FreeSWITCH
 
 Like Call Center but more flexable.
 
-Music on Hold
---------------
+`Music on Hold`_
+------------------
 
 Allows multiple categories of music on hold that can be set globally or per domain. Can inject additional audio on intervals such as 'Your call is very important to us please stand by'.
 
@@ -299,6 +299,7 @@ Make and receive video calls with a web browser.
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/manual/dialplan.html?#dialplan-manager
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Multi-Tenant: /en/latest/advanced/domains.html
+.. _Music on Hold: /en/latest/applications/music_on_hold.html
 .. _Queues: /en/latest/applications/queues.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
