@@ -12,4 +12,10 @@ Music on hold can be in WAV or MP3 format. To play an MP3 file you must have mod
         :scale: 85%
 
 
+*  Click the edit pencil on the right to customize music on hold options.  This can be done on each kHz group. 
+
+
+.. image:: ../_static/images/fusionpbx_moh1.jpg
+        :scale: 85%
+
 
