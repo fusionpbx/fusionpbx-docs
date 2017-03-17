@@ -1,5 +1,5 @@
 ################
-Music on On Hold
+Music on Hold
 ################
 
 
