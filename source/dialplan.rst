@@ -13,5 +13,6 @@ Dialplan
   :glob:
   
   dialplan/destinations.rst
+  dialplan/dialplan_manager.rst
   dialplan/inbound_routes.rst
   dialplan/outbound_routes.rst
