@@ -8,4 +8,5 @@ The dialplan is used to setup call destinations based on conditions and context.
 
 
 .. image:: ../_static/images/fusionpbx_dialpans.jpg
-:scale: 85%
+         :scale: 85%
+
