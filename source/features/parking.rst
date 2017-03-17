@@ -15,4 +15,5 @@ For example:
 Below is an example of how to provision a Yealink SIP-T32G, which has 3 Line buttons.
 
 .. image:: ../_static/images/call_park_yealink.jpg       
-:scale: 85%
+         :scale: 85%
+
