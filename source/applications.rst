@@ -23,6 +23,7 @@ Applications
   applications/fax_server.rst
   applications/follow_me.rst
   applications/ivr.rst
+  applications/music_on_hold.rst
   applications/provision.rst
   applications/queues.rst
   applications/recordings.rst
