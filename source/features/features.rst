@@ -224,10 +224,10 @@ Paging
 
 Page another extension with or without password
 
-Parking
+`Parking`_
 ---------
 
-Park calls.
+Send a call to an unused "park" extension.  The caller listens to music on hold until another extension connects to the call.
 
 Phrases
 --------
@@ -315,3 +315,4 @@ Make and receive video calls with a web browser.
 .. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
 .. _User and Group Management: http://docs.fusionpbx.com/en/latest/advanced/group_manager.html
+.. _Parking: /en/latest/features/parking.html
