@@ -4,7 +4,7 @@
         :align: center
         :height: 76.5pt
 
-|
+|build-status| |docs|
 
 Welcome to FusionPBX Docs
 =========================
