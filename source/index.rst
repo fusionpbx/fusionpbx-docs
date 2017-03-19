@@ -4,7 +4,10 @@
         :align: center
         :height: 76.5pt
 
-|build-status| |docs|
+.. image:: https://readthedocs.org/projects/fusionpbx-docs/badge/?version=latest
+        :target: http://fusionpbx-docs.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
 
 Welcome to FusionPBX Docs
 =========================
@@ -85,6 +88,7 @@ Our Ecosystem
 .. _Multi-Tenant: /en/latest/advanced/domains.html
 .. _and lots more...: /en/latest/features/features.html
 .. _FusionPBX Features: /en/latest/features/features.html
+
 
 
 .. toctree::
