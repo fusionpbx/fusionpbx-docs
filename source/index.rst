@@ -4,9 +4,7 @@
         :align: center
         :height: 76.5pt
 
-.. image:: https://readthedocs.org/projects/fusionpbx-docs/badge/?version=latest
-        :target: http://fusionpbx-docs.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+|
 
 
 Welcome to FusionPBX Docs
