@@ -85,6 +85,8 @@ Systemctl restart nginx
  0 0 1 JAN,MAR,MAY,JUL,SEP,NOV * /path/to/renew-letsencrypt.sh
  This executes every two months
 
+chmod +x renew-letsencrypt.sh
+
 Now check the padlock and see if it's green!
 
 
