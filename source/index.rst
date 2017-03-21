@@ -41,7 +41,7 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Call Detail Records`_  | `Conference`_         |    `Contacts`_                  |      `Fax Server`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
-| `Follow Me`_            | **Hot Desking**       |    `IVR Menus`_                 |      `Ring Groups`_                      |
+| `Follow Me`_            | `Hot Desking`_        |    `IVR Menus`_                 |      `Ring Groups`_                      |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Multi-Tenant`_         | `Music on Hold`_      |    `Queues`_                    |      `Recordings`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
@@ -71,6 +71,7 @@ Our Ecosystem
 .. _Music on Hold: /en/latest/applications/music_on_hold.html
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
+.. _Hot Desking: /en/latest/accounts/hot_desking.html
 .. _Queues: /en/latest/applications/queues.html
 .. _Recordings: /en/latest/applications/recordings.html
 .. _Call Recordings: /en/latest/applications/recordings.html
