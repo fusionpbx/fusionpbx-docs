@@ -182,8 +182,8 @@ Allows calling multiple extensions or external numbers.
 
 Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_.
 
-Hot Desking
-------------
+`Hot Desking`_
+---------------
 
 A way to login to another phone device and temporarily or permanently become another extension. This is sometimes known as 'hoteling' and 'extension mobility'
 
@@ -314,6 +314,7 @@ Make and receive video calls with a web browser.
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
+.. _Hot Desking: /en/latest/accounts/hot_desking.html
 .. _Multi-Tenant: /en/latest/advanced/domains.html
 .. _Music on Hold: /en/latest/applications/music_on_hold.html
 .. _Queues: /en/latest/applications/queues.html
