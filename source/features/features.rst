@@ -142,8 +142,8 @@ Direct Inward System Access (DISA)
 
 Gives ability to call into the system, put in a pin code, and then call back outbound.
 
-Device Provisioning
---------------------
+`Device Provisioning`_
+------------------------
 
 From Advanced > Default Settings you can enable provisioning for devices. Contacts used as Directory for the phones, vendor list and functions can be enabled or disabled. Support for memory, expansion (side cars), and programmable keys. Configure SIP endpoints for Yealink, Polycom, Cisco, Aastra and several other brands.
 
@@ -300,6 +300,7 @@ Make and receive video calls with a web browser.
 .. _Adminer: /en/latest/advanced/adminer.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
+.. _Device Provisioning: /en/latest/applications/provision.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Multi-Tenant: /en/latest/advanced/domains.html
