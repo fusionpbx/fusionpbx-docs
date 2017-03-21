@@ -279,6 +279,12 @@ Voicemail to Email
 
 Have voicemails sent to email.
 
+`Voicemail Transcription`_
+---------------------------
+
+Converts voicemails to text.
+
+
 WebRTC
 -------
 
@@ -315,6 +321,7 @@ Make and receive video calls with a web browser.
 .. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _Voicemail: /en/latest/applications/voicemail.html
+.. _Voicemail Transcription: /en/latest/applications/voicemail.html#voicemail-transcription
 .. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
 .. _User and Group Management: http://docs.fusionpbx.com/en/latest/advanced/group_manager.html
