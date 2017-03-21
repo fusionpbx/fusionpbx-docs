@@ -285,8 +285,8 @@ Have voicemails sent to email.
 Converts voicemails to text.
 
 
-WebRTC
--------
+`WebRTC`_
+----------
 
 Make and receive video calls with a web browser.
 
@@ -331,3 +331,6 @@ Make and receive video calls with a web browser.
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
 .. _User and Group Management: http://docs.fusionpbx.com/en/latest/advanced/group_manager.html
 .. _Parking: /en/latest/features/parking.html
+.. _WebRTC: /en/latest/applications_optional/webrtc.rst
+
+
