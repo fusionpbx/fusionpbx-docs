@@ -17,8 +17,8 @@ Authentication
 
 Extendable with plugin support. Web interface authentication by default authenticates against the FusionPBX Database. LDAP is one and has also been tested with Microsoft Active Directory an OpenLDAP.
 
-Call Barge / Eavesdrop / Intercept
------------------------------------
+`Call Barge / Eavesdrop / Intercept`_
+----------------------------------------
 
 Listen into an active call from another extension.
 
@@ -292,6 +292,7 @@ Make and receive video calls with a web browser.
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
+.. _Call Barge / Eavesdrop / Intercept: en/latest/additional_information/feature_codes.html
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
