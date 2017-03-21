@@ -72,8 +72,8 @@ Call Recordings
 
 Record all or some calls or parts of the call.
 
-Call Routing
---------------
+`Call Routing`_
+----------------
 
 Send the call different directions or perform actions based on reading the caller id info or other call information. (see `Dialplan Manager`_)
 
@@ -305,6 +305,7 @@ Make and receive video calls with a web browser.
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
+.. _Call Routing: /en/latest/accounts/call_routing.rst
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Adminer: /en/latest/advanced/adminer.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
