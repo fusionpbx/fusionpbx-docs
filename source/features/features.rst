@@ -2,8 +2,8 @@
 Features
 **********
 
-Adminer
----------
+`Adminer`_
+-----------
 
 Integrated for an administrator in the superadmin group to enable easy database access.
 
@@ -296,6 +296,7 @@ Make and receive video calls with a web browser.
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
 .. _Contacts: /en/latest/applications/contacts.html
+.. _Adminer: /en/latest/advanced/adminer.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
