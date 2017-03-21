@@ -17,6 +17,7 @@ Advanced
   :maxdepth: 3
   :glob:
 
+  advanced/adminer.rst
   advanced/access_controls.rst
   advanced/domains.rst
   advanced/group_manager.rst
