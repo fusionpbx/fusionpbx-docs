@@ -47,7 +47,7 @@ Various reporting capabilities to see who called, when, call length, export to a
 
 Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
 
-Call Forward
+`Call Forward`_
 -----------------
 
 Forward to another extension or to any phone number.
@@ -147,8 +147,8 @@ Gives ability to call into the system, put in a pin code, and then call back out
 
 From Advanced > Default Settings you can enable provisioning for devices. Contacts used as Directory for the phones, vendor list and functions can be enabled or disabled. Support for memory, expansion (side cars), and programmable keys. Configure SIP endpoints for Yealink, Polycom, Cisco, Aastra and several other brands.
 
-Do Not Disturb (DND)
-----------------------
+`Do Not Disturb (DND)`_
+-------------------------
 
 Direct calls to voicemail by default however there is an option when using do not disturb to send the call to an alternative destination.
 
@@ -303,7 +303,7 @@ Make and receive video calls with a web browser.
 .. _Call Blind Transfer: /en/latest/additional_information/feature_codes.html
 .. _Call Waiting: /en/latest/additional_information/feature_codes.html
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
-.. _Call Forward: http://docs.fusionpbx.com/en/latest
+.. _Call Forward: /en/latest/accounts/call_routing.html
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
 .. _Call Routing: /en/latest/accounts/call_routing.html
 .. _Contacts: /en/latest/applications/contacts.html
@@ -312,6 +312,7 @@ Make and receive video calls with a web browser.
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Device Provisioning: /en/latest/applications/provision.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
+.. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Multi-Tenant: /en/latest/advanced/domains.html
 .. _Music on Hold: /en/latest/applications/music_on_hold.html
