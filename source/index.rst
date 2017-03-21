@@ -45,7 +45,7 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Multi-Tenant`_         | `Music on Hold`_      |    `Queues`_                    |      `Recordings`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
-| `Time Conditions`_      | **WebRTC ready**      |    `Voicemail`_                 |      `and lots more...`_                 |
+| `Time Conditions`_      | `WebRTC ready`_       |    `Voicemail`_                 |      `and lots more...`_                 |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 
 
@@ -84,6 +84,7 @@ Our Ecosystem
 .. _Recordings: /en/latest/applications/recordings.html
 .. _Voicemail: /en/latest/applications/voicemail.html
 .. _Multi-Tenant: /en/latest/advanced/domains.html
+.. _WebRTC ready: /en/latest/applications_optional/webrtc.html
 .. _and lots more...: /en/latest/features/features.html
 .. _FusionPBX Features: /en/latest/features/features.html
 
