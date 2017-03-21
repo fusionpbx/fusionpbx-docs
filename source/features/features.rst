@@ -92,7 +92,7 @@ Transfer a call like the call was going into a call queue or from an ivr.
 
 Transfer a call.
 
-Call Waiting
+`Call Waiting`_
 ---------------------
 
 A beep while on a call and to toggle between two different calls.
@@ -301,6 +301,7 @@ Make and receive video calls with a web browser.
 .. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
 .. _Call Transfer: /en/latest/additional_information/feature_codes.html
 .. _Call Blind Transfer: /en/latest/additional_information/feature_codes.html
+.. _Call Waiting: /en/latest/additional_information/feature_codes.html
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
