@@ -82,12 +82,12 @@ Call Announced Transfer
 
 Transfer the active call to another internal or external call.  Also known as a warm transfer.
 
-Call Blind Transfer
+`Call Blind Transfer`_
 ---------------------------
 
 Transfer a call like the call was going into a call queue or from an ivr.
 
-Call Transfer
+`Call Transfer`_
 ----------------------
 
 Transfer a call.
@@ -299,6 +299,8 @@ Make and receive video calls with a web browser.
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
 .. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
+.. _Call Transfer: /en/latest/additional_information/feature_codes.html
+.. _Call Blind Transfer: /en/latest/additional_information/feature_codes.html
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
