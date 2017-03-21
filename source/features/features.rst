@@ -305,7 +305,7 @@ Make and receive video calls with a web browser.
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: http://docs.fusionpbx.com/en/latest
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
-.. _Call Routing: /en/latest/accounts/call_routing.rst
+.. _Call Routing: /en/latest/accounts/call_routing.html
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Adminer: /en/latest/advanced/adminer.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
