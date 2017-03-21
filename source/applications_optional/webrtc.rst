@@ -5,7 +5,7 @@ WebRTC
 WebRTC app for FusionPBX is made by editing an existing FusionPBX app code and adding the code from the "Master FreeSWITCH code example".  Also, keep in mind that you will need ssl certs working on the server.
 
 .. image:: ../_static/images/fusionpbx_webrtc.jpg
-        :scale: 50%
+        :scale: 85%
 
 .. Note::
 
