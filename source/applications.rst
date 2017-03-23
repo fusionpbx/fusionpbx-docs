@@ -16,6 +16,7 @@ Applications
 
   applications/call_block.rst
   applications/call_broadcast.rst 
+  applications/call_center.rst
   applications/call_detail_record.rst
   applications/call_flows.rst
   applications/conference.rst    
