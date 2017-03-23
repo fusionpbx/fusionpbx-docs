@@ -32,8 +32,8 @@ Block inbound calls by the caller id.
 
 Create a recording and select one or more groups to have the system call and play the recording.
 
-Call Center
-------------
+`Call Center`_
+---------------
 
 Creates a robust call center environment with agent tiers.
 
@@ -299,6 +299,7 @@ Make and receive video calls with a web browser.
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
 .. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
+.. _Call Center: /en/latest/applications/call_center.html
 .. _Call Transfer: /en/latest/additional_information/feature_codes.html
 .. _Call Blind Transfer: /en/latest/additional_information/feature_codes.html
 .. _Call Waiting: /en/latest/additional_information/feature_codes.html
