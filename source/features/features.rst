@@ -122,8 +122,8 @@ While the admin configures the system in the web interface. The data is saved to
 
 Manage your contacts. Import contacts from Outlook CSV files. Export contacts to your cell phone with QR Codes. It is also possible to add additional features like time cards and invoices that can be related to the contacts.
 
-Command
---------
+`Command`_
+-----------
 
 Area to execute commands from the gui. Merged with SQL Query tool with a clip library.
 
@@ -157,7 +157,7 @@ Direct calls to voicemail by default however there is an option when using do no
 
 Create extensions for phones to register to and an option to receive emails on missed calls.
 
-Extension Summary
+`Extension Summary`_
 -------------------
 
 Summary of extension activity per domain such as misssed calls, answered calls, no answer, inbound duration, outbound duration, number of outboud calls, number of inbound calls and Average length of Conversation (ALOC). The summarized information can be downloaded as a CSV file.
@@ -309,12 +309,14 @@ Make and receive video calls with a web browser.
 .. _Call Routing: /en/latest/accounts/call_routing.html
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Adminer: /en/latest/advanced/adminer.html
+.. _Command: /en/latest/advanced/command.html
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Device Provisioning: /en/latest/applications/provision.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
 .. _Editor: /en/latest/advanced/editors.rst
+.. _Extension Summary: /en/latest/status/extension_summary.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Hot Desking: /en/latest/accounts/hot_desking.html
 .. _Multi-Tenant: /en/latest/advanced/domains.html
