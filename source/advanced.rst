@@ -19,6 +19,8 @@ Advanced
 
   advanced/adminer.rst
   advanced/access_controls.rst
+  getting_started/backup.rst
+  advanced/command.rst
   advanced/domains.rst
   advanced/group_manager.rst
   advanced/upgrade.rst
