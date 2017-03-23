@@ -238,8 +238,8 @@ Using xml handler and xml from file system you can string together multiple voic
 Provider Setup
 ----------------
 
-Re-branding and Customize
---------------------------
+`Re-branding and Customize`_
+-----------------------------
 
 FusionPBX has unprecedented customizability which can be used to meet your needs or the needs of your customers. Customizable themes, menu, dialplan, and Hundreds of Default Settings to control the theme.
 
@@ -334,6 +334,7 @@ Make and receive video calls with a web browser.
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
 .. _User and Group Management: http://docs.fusionpbx.com/en/latest/advanced/group_manager.html
 .. _Parking: /en/latest/features/parking.html
+.. _Re-branding and Customize: http://fusionpbx.com/support.php
 .. _WebRTC: /en/latest/applications_optional/webrtc.html
 
 
