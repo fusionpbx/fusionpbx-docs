@@ -38,8 +38,8 @@ Emails
 
 Manage failed email messages.
 
-Extension Summary
------------------
+`Extension Summary`_
+----------------------
 
 Extenson number, Number Alias, Missed, No Answer, Busy, ALOC, Inbound Calls, Inbound Duration, Outbound Calls, Outbound Duration and Description.
 
@@ -73,3 +73,5 @@ Traffic Graph
 
 A browser (or plugin) that supports Scalable Vector Graphics (SVG) is required to view the traffic graph. 
 
+
+.. _Extension Summary: /en/latest/status/extension_summary.rst
