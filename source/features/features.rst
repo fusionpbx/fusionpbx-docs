@@ -229,8 +229,8 @@ Page another extension with or without password
 
 Send a call to an unused "park" extension.  The caller listens to music on hold until another extension connects to the call.
 
-Phrases
---------
+`Phrases`_
+-----------
 
 Using xml handler and xml from file system you can string together multiple voice files.
 
@@ -318,6 +318,7 @@ Make and receive video calls with a web browser.
 .. _Hot Desking: /en/latest/accounts/hot_desking.html
 .. _Multi-Tenant: /en/latest/advanced/domains.html
 .. _Music on Hold: /en/latest/applications/music_on_hold.html
+.. _Phrases: /en/latest/applications/phrases.html
 .. _Queues: /en/latest/applications/queues.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
