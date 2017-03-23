@@ -162,8 +162,8 @@ Extension Summary
 
 Summary of extension activity per domain such as misssed calls, answered calls, no answer, inbound duration, outbound duration, number of outboud calls, number of inbound calls and Average length of Conversation (ALOC). The summarized information can be downloaded as a CSV file.
 
-Editor
--------
+`Editor`_
+-----------
 
 File editor for PHP, XML, and Provisioning files. 
 
@@ -314,6 +314,7 @@ Make and receive video calls with a web browser.
 .. _Device Provisioning: /en/latest/applications/provision.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
+.. _Editor: /en/latest/advanced/editors.rst
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Hot Desking: /en/latest/accounts/hot_desking.html
 .. _Multi-Tenant: /en/latest/advanced/domains.html
