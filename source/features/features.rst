@@ -315,7 +315,7 @@ Make and receive video calls with a web browser.
 .. _Device Provisioning: /en/latest/applications/provision.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
-.. _Editor: /en/latest/advanced/editors.rst
+.. _Editor: /en/latest/advanced/editors.html
 .. _Extension Summary: /en/latest/status/extension_summary.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
 .. _Hot Desking: /en/latest/accounts/hot_desking.html
