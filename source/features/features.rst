@@ -105,9 +105,9 @@ Support for customization and supporting providers.
 `Conference`_
 ---------------------
 
-Set up voice and video conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, profiles and controls. (See `Conferences`_)
+Set up voice and video conference calls, is optionally secure with a PIN number, and can transfer current calls to a conference.  Interactive conference control provides ability to see the list of callers in the conference and manage the volume, see who is talking, kick, mute, unmute, deaf, undeaf, profiles and controls. (See `Conference`_)
 
-Conference Center
+`Conference Center`_
 -------------------------
 
 Unlimited conference rooms with moderator and paticipants, pin numbers, call recording, mute all, caller announce and more...
@@ -325,7 +325,7 @@ Make and receive video calls with a web browser.
 .. _Queues: /en/latest/applications/queues.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
-.. _Conferences: http://docs.fusionpbx.com/en/latest
+.. _Conference Center: http://docs.fusionpbx.com/en/latest/applications/conference_center.html
 .. _Fax Server: http://docs.fusionpbx.com/en/latest/applications/fax_server.html
 .. _Gateways: http://docs.fusionpbx.com/en/latest/gateway/gateway1.html
 .. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
