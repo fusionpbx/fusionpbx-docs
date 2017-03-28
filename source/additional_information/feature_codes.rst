@@ -87,7 +87,7 @@ Feature Codes
 +---------------+-------------------------+-------------------------------------------------------------------------------+
 | *33 <ext>     | Eavesdrop               | Listen to the call. Press 1 for remote, 2 for local, 3 for full conversation  |
 +---------------+-------------------------+-------------------------------------------------------------------------------+
-| **8 <ext>     | Intercept an extension  | Intercept a specific extension                                                |
+| ** <ext>      | Intercept an extension  | Intercept a specific extension                                                |
 +---------------+-------------------------+-------------------------------------------------------------------------------+
 
 
