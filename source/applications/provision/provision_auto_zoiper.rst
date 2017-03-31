@@ -72,11 +72,23 @@ Zoiper menu add-on for Fusionpbx
 
 ::
 
- Add a Default Setting
+ 
+
+  Goto Advanced -> Default Settings
+  Add a Default Setting
+  
+  Category: zoiper
+  Subcategory: page_id
+  Type: text
+  Value: (32 character MYPAGEID)
+  Enabled: True
+  Save
+
+ 
  Category: zoiper
- Subcategory: provider_id(32 character)
+ Subcategory: provider_id
  Type: text
- Value: MYPAGEID(32 character)
+ Value: (32 character provider_id)
  Enabled: True
  Save
 
