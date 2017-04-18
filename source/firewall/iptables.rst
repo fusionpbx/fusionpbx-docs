@@ -5,7 +5,7 @@ Iptables
 Iptables are used in the Debian install script.
 
 Basic Rules
-===========
+^^^^^^^^^^^^
 
 | ``iptables -A INPUT -i lo -j ACCEPT``
 | ``iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT``
@@ -22,13 +22,13 @@ Basic Rules
 | ``iptables -P OUTPUT ACCEPT``
 
 Optional Rules
-===============
+^^^^^^^^^^^^^^^^
 
 | OPENVPN: ``iptables -A INPUT -p udp --dport 1194 -j ACCEPT`` 
 | ICMP: ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
 
 Friendly Scanner
-================
+^^^^^^^^^^^^^^^^^^
 
 Rules to block not so friendly scanner
 
@@ -47,29 +47,29 @@ Rules to block not so friendly scanner
 
 
 Show iptable rules
-==================
+^^^^^^^^^^^^^^^^^^^
 
 ``sudo iptables -L -v``
 
 Show line numbers
-=================
+^^^^^^^^^^^^^^^^^^
 
 ``iptables -L -v --line-numbers``
 
 Delete a line
-=============
+^^^^^^^^^^^^^^
 
 Delete line 2
 
 ``iptables -D INPUT 2``
 
 Block IP address
-================
+^^^^^^^^^^^^^^^^^
 
 ``iptables -I INPUT -s 62.210.245.132 -j DROP``
 
 Save Changes
-============
+^^^^^^^^^^^^^
 
 Debian / Ubuntu
 
