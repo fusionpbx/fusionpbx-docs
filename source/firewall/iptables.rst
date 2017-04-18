@@ -2,7 +2,7 @@
 Iptables
 *****************
 
-
+Iptables are used in the Debian install script.
 
 Basic Rules
 ===========
