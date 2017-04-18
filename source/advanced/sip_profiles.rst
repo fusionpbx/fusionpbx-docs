@@ -20,5 +20,5 @@ External
 =========
 
 
-External sip profiles (port 5080-5081) allow anonymous connection to FusionPBX but is often targeted by lame spammers.
+External sip profiles (port 5080-5081) allow anonymous connection to FusionPBX and is optional.
 
