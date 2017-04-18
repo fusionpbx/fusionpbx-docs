@@ -24,4 +24,4 @@ Firewall
 
   firewall/iptables.rst
   firewall/pf.rst
-  
+  firewall/router_firewall.rst
