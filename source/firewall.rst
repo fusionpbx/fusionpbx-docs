@@ -3,6 +3,7 @@ Firewall
 ###########
 
 **Basic ports used**
+
 | SIP TCP/UDP 5060
 | SIP TCP/UDP 5080
 | RTP UDP 16384-32768
