@@ -18,6 +18,7 @@ Although the new install script configured IPTables for you it is recommended th
 
  iptables -L
 
+*  `Firewall page`_
 
 SSL / TLS
 ^^^^^^^^^^
@@ -79,6 +80,7 @@ Use strong passwords with SSH or even better use SSH keys for better protection 
 .. _link: https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 .. _paid support: http://www.fusionpbx.com
 .. _firewall: /en/latest/getting_started/iptables.html#iptables
+.. _Firewall page: /en/latest/firewall.html
 .. _iptables: /en/latest/getting_started/iptables.html#iptables
 .. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
 .. _Setup Let's Encrypt with FusionPBX: /en/latest/getting_started/lets_encrypt.html
