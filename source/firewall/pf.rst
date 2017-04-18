@@ -2,6 +2,7 @@
 PF
 #####
 
+Packet Filter is used in the FreeBSD setup script.
 
 Basic Rules
 ===========
