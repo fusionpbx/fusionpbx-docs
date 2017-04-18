@@ -14,5 +14,5 @@ Firewall
   :glob:
 
   firewall/iptables.rst
-  pf.rst
+  firewall/pf.rst
   
