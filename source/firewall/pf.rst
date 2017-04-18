@@ -5,7 +5,7 @@ PF
 Packet Filter is used in the FreeBSD setup script.
 
 Basic Rules
-===========
+^^^^^^^^^^^^
 
 | ``set skip on lo0``
 | ``scrub in all``
