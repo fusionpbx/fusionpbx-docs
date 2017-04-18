@@ -12,7 +12,7 @@ Sip Profiles
 Internal
 =========
 
-Internal sip profiles (port 5060/5061) require registration or access controls cidr rang to allow the IP address in without SIP authentication.
+Internal sip profiles (port 5060/5061) require registration or `access controls <http://docs.fusionpbx.com/en/latest/advanced/access_controls.html>`_ cidr rang to allow the IP address in without SIP authentication.
 
 
 
