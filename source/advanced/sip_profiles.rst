@@ -20,7 +20,7 @@ Internal sip profiles (port 5060/5061) require registration or `access controls 
 =========
 
 
-External sip profiles (port 5080-5081) allow anonymous connection to FusionPBX and is optional.
+External sip profiles (port 5080-5081) allow anonymous connection to FusionPBX and is optional.  External profile is optional when freewitch has a public ip address.  Can be useful when setting behind nat.  Being anonymous doesn't mean totally open due to the inbound routes call conditions.(call filtering)
 
 
 `Internal ipv6 </en/latest/advanced/internal_ipv6_sip_profile.html>`_
