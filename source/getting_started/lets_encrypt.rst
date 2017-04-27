@@ -73,13 +73,13 @@ You can make up to 100 subdomain requests with using -d sub.domain.tld -d sub1.d
 
 Systemctl restart nginx
 
-**Auto Renew certificate**
+**Auto Renew certificate** 
 
 ::
 
  cd /etc/fusionpbx/
  touch renew-letsencrypt.sh
- Put code example from Automating Renewal section step#1 into renew-letsencrypt.sh
+ Put code example from "Automating Renewal" section from https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx into renew-letsencrypt.sh
  Edit the my-domain.conf with the domain name you used a few steps earlier
  Create crontab -e
  0 0 1 JAN,MAR,MAY,JUL,SEP,NOV * /path/to/renew-letsencrypt.sh
