@@ -55,7 +55,7 @@ Setting crontab -e
  chmod 755 fusionpbx-backup.sh
 
 
-Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. 
+Once this is complete you will have the backup ready to execute by ./fusionpbx-backup.sh or from the daily cron job. 
 
 Gui settings
 ^^^^^^^^^^^^^
