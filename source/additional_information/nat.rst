@@ -15,7 +15,7 @@ The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -
 
 SIP ALG
 ^^^^^^^^^^^^^^^
-A SIP Application Layer Gateway is a tool designed to help SIP traverse NAT. While the SIP ALG is good in theory it is often causes more problems than it solves because of this its usually best to disable the SIP ALG on your firewall. An alternative way to disable it is to move SIP to a non standard port.
+A SIP Application Layer Gateway (ALG) is a tool designed to help SIP traverse NAT. While the SIP ALG is good in theory it often causes more problems than it solves. Because of this it's usually best to disable the SIP ALG on your firewall. An alternative way to disable it is to move SIP to a non standard port.
 
 
 Static IP
