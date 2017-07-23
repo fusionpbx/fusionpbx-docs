@@ -713,7 +713,3 @@ Under the Settings area insert the following line
 
  <param name="core-db-dsn" value="pgsql;hostaddr=127.0.0.1 dbname=freeswitch user=freeswitch password='' options='-c client_min_messages=NOTICE' application_name='freeswitch'" />
 
-Additional Information
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-http://wiki.freeswitch.org/wiki/PostgreSQL_in_the_core
