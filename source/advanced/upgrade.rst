@@ -7,7 +7,7 @@ The FusionPBX code is constantly evolving. Bug fixes being submitted, additions 
 
 |
 
-Menu -> Advanced -> Upgrade
+Menu . Advanced . Upgrade
 ####################
 
 
