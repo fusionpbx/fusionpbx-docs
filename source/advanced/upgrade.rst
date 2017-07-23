@@ -7,11 +7,11 @@ The FusionPBX code is constantly evolving. Bug fixes being submitted, additions 
 
 |
 
-Menu . Advanced . Upgrade
+Menu -> Advanced -> Upgrade
 ####################
 
 
-| This tool allows you to update the source code, ensure the database structure is up to date, restore the default menu and  permissions.
+| This tool allows you to update the source code, update the database structure, restore the default menu and  permissions.
 
 
 .. image:: ../_static/images/fusionpbx_upgrade.jpg
