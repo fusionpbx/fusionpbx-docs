@@ -7,11 +7,11 @@ The FusionPBX code is constantly evolving. Bug fixes being submitted, additions 
 
 |
 
-Maintenance Upgrade
+Advanced -> Upgrade
 ####################
 
 
-| A Maintenance Upgrade can be done daily depending on development activity.  This is typically for bug fixes, added features, security patches or small version upgrades.
+| This tool allows you to update the source code, ensure the database structure is up to date, restore the default menu and  permissions.
 
 
 .. image:: ../_static/images/fusionpbx_upgrade.jpg
