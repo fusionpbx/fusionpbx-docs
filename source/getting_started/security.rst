@@ -56,6 +56,11 @@ Mod_xml_rpc allows running remote commands to FreeSWITCH. Ensure you have a fire
 
 Latest Debian install script installs `iptables`_ firewall which prevents public access to the mod_xml_rpc port. If you are not using a firewall on the server you should even if its protected by by an external firewall. Some not informed co-worker could expose the server to the public internet at some point in the future. Multiple layers of security is considered best practice.
 
+Secure by default for 2 reasons.
+ -  The module is disabled by default.
+ -  Install script firewalls xml rpc port 8787 and does not allow access by default outside of 127.0.0.1
+
+If you were to start the module and open port 8787 on the firewall you would want to set a really good password for it under Advanced -> Settings. It would be recommended to use a VPN to like OpenVPN to access XML RPC over port 8787 instead of opening port 8787 on the firewall.
 
 Fail2ban
 ^^^^^^^^
