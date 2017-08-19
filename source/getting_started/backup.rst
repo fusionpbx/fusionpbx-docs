@@ -32,7 +32,7 @@ Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz
  pg_dump --verbose -Fc --host=$database_host --port=$database_port -U fusionpbx fusionpbx --schema=public -f /var/backups/fusionpbx/postgresql/fusionpbx_pgsql_$now.sql
  echo "Backup Complete";
  
-To save the file press escape then :wq for write and quite
+To save the file press escape then :wq for write and quit.
 
 
 You should have the script ready to execute. (Default the script will use FreeSWITCH package paths.  If you have an older install using source be sure to change this by commenting the package line #22 and uncomment the source line #25.)
