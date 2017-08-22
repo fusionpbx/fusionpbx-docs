@@ -10,7 +10,7 @@ It's always good to have a restore method of a backup in place.  Here are the st
 
 *  To create the script use an editor such as vi or nano.
 *  Copy/Paste from the code block below and save the file as fusionpbx-restore.sh
-*  Replace xxx with your database password
+*  Replace zzz with your database password
 *  chmod + x fusionpbx-restore.sh and then run the script ./fusionpbx-restore.sh
 *  edit the script as needed and run this script from the server you are restoring on.
 
