@@ -7,7 +7,7 @@ NAT is Network Address Translation. When your FusionPBX and/or FreeSWITCH are in
 
 Default config
 ^^^^^^^^^^^^^^^
-The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -> Variables by default. The local_ip_v4 variable is auto detected by FreeSWITCH. The variable can be also be overidden as a preset variable before it is used if you want to control the IP address that it represents.
+The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -> Variables by default or Advanced Sip Profile settings. The local_ip_v4 variable is auto detected by FreeSWITCH. The variable can be also be overidden as a preset variable before it is used if you want to control the IP address that it represents.
 
 * This works good when the server has a public IP address.
 * It also works well when all phones are inside the same network and nothing needs to traverse the NAT. For example if you are using a SIP to TDM gateway and all your phones are in the same network.
