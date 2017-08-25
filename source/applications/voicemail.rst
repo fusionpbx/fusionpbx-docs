@@ -31,7 +31,9 @@ Voicemail Options
 ====================
 
 
-Access an extensions voicemail **away** from the extension dial the extension and interupt the greeting with the ***star** key.
+To access an extensions voicemail **away** from the extension.
+
+*  Dial the extension and interupt the greeting with the ***star** key.
 
 +-------------+-----------------------+------------------------------+-----------------------------------+
 | ***97**     | To access **that** extensions voicemail **from the extension** or the voicemail button   |
