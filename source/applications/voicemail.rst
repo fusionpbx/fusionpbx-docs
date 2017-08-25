@@ -21,7 +21,7 @@ Here you can edit voicemail settings.
 *  Forward Destinations- Forward voicemail messages to additional destinations
 *  Enabled- Enable or disable the voicemail box
 
-.. image:: ../_static/images/fusionpbx_voicemail1.jpg
+.. image:: ../_static/images/voicemail/fusionpbx_voicemail2.jpg
         :scale: 85%
 
 .. note::
