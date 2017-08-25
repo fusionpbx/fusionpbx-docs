@@ -43,7 +43,7 @@ http://www.surevoip.co.uk/2016-best-provider
 
 ------------
 
-*I would like to tell everyone there that I have been trying to get an open source PBX to work for me for over three months now and since I am not a linux guy, I haven’t been able to get any of them working the way I wanted. FusionPBX installation script installed ALL required packages and libraries in one go and it was up and running in 10 mins. Once I followed the `youtube videos <https://www.youtube.com/fusionpbx>`_ It took me no time to setup and migrate my clients to FusionPBX. One of the best features I love in FusionPBX is the automatic dialplan expression as I have always struggled with remembering the expression syntax. The user interface and the way all the features are grouped is awesome.*
+I would like to tell everyone there that I have been trying to get an open source PBX to work for me for over three months now and since I am not a linux guy, I haven’t been able to get any of them working the way I wanted. FusionPBX installation script installed ALL required packages and libraries in one go and it was up and running in 10 mins. Once I followed the `youtube videos <https://www.youtube.com/fusionpbx>`_ It took me no time to setup and migrate my clients to FusionPBX. One of the best features I love in FusionPBX is the automatic dialplan expression as I have always struggled with remembering the expression syntax. The user interface and the way all the features are grouped is awesome.
 
 *Again, Thanks for the effort*
 
