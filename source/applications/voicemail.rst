@@ -68,9 +68,9 @@ To access an extensions voicemail **away** from the extension.
 +-------------+-----------------------+
 
 
-*****************
+
 Voicemail Transcription
-*****************
+====================
 
 |
 
