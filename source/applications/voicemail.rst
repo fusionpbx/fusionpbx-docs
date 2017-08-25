@@ -11,11 +11,13 @@ To edit voicemail settings click the pencil edit icon on the right of the extens
 
 Here you can edit voicemail settings.
 
+*  Play Tutorial- Play the voicemail tutorial after the next voicemail login
 *  Greeting- When you dial ***97**, record a greeting and set a number you can choose which greeting to use
-*  Options- Can create a voicemail IVR
+*  Alternate Greet ID- An alternative greet id used in the default greeting 
+*  Options- Define caller options for the voicemail greeting
 *  Mail to- have voicemails emailed to this address
-*  Voicemail File- Auto File Attachment, Listen Link, Download Link
-*  Keep Local- To keep the voicemail on the server after being emailed or not
+*  Voicemail File- Select a listening option to include with the email notification
+*  Keep Local- Choose whether to keep the voicemail in the system after sending the email notification
 *  Forward Destinations- Forward voicemail messages to additional destinations
 *  Enabled- Enable or disable the voicemail box
 
