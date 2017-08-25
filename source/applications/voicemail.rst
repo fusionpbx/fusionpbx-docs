@@ -22,6 +22,10 @@ Here you can edit voicemail settings.
 .. image:: ../_static/images/fusionpbx_voicemail1.jpg
         :scale: 85%
 
+.. note::
+
+ Starting version 4.2 remote access to voicemail by interupting the greeting message by pressing "*" and entering the password is disabled by default.
+
 
 Voicemail Options
 ====================
