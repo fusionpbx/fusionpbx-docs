@@ -79,6 +79,8 @@ Uses API services to transcribe voicemails into text to be used in the app-sms a
 The following services are supported. Others can be added but would need to be developed.
 
 *  Microsoft Bing
+Sign up and language information is located on `Microsoft Site <https://www.microsoft.com/cognitive-services/en-us/Speech-api/documentation/API-Reference-REST/BingVoiceRecognition>`_
+
 *  Twilio
 *  Bandwidth
 *  Flowroute
@@ -86,7 +88,6 @@ The following services are supported. Others can be added but would need to be d
 *  Teli
 
 
-Sign up and language information is located on `Microsoft Site <https://www.microsoft.com/cognitive-services/en-us/Speech-api/documentation/API-Reference-REST/BingVoiceRecognition>`_
 
 
 .. warning:: We cannot use mod_shout to record Voicemails because the transcription service needs an uncompressed version of the audio. Therefore we will record in WAV and then use LAME to re-encode in MP3. This could cause added resource utilization to your system.
