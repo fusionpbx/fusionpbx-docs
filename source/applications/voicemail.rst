@@ -5,7 +5,7 @@ Voicemail
 
 To edit voicemail settings click the pencil edit icon on the right of the extension number.
 
-.. image:: ../_static/images/fusionpbx_voicemail.jpg
+.. image:: ../_static/images/voicemail/fusionpbx_voicemail.jpg
         :scale: 85%
 
 
