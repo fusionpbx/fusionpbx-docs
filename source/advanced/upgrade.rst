@@ -201,8 +201,34 @@ Used to update FusionPBX to the latest release.
 
 | Go to **Advanced -> Settings** and then **click save**. This will re-generate v_config_cli.php and any other needs config files.
 
+Move to a different Branch
+###########################
+FusionPBX has a stable and a master(development) branch.  You can switch from stable to master but **not recomended to downgrade.** 
 
+**Move to the Stable Branch**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+::
 
+ mv /var/www/fusionpbx /var/www/fusionpbx-master
+ cd /var/www && git clone -b 4.2 https://github.com/fusionpbx/fusionpbx.git
+ chown -R www-data:www-data /var/www/fusionpbx
+
+Make sure config.php exists in /etc/fusionpbx if missing then move it into this directory.
+
+::
+ 
+ cp /var/www/fusionpbx-master/resources/config.php /etc/fusionpbx
+
+**Move to the Master Branch**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+::
+ 
+ mv /var/www/fusionpbx /var/www/fusionpbx-old
+ cd /var/www && git clone https://github.com/fusionpbx/fusionpbx.git
+ chown -R www-data:www-data /var/www/fusionpbx
+
+*  Complete the normal upgrade process at Advanced -> Upgrade
+*  If the menu disappears you have to upgrade schema then restore the default menu to get it back.
 
 Version Upgrade
 ################
