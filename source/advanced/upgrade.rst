@@ -203,6 +203,7 @@ Used to update FusionPBX to the latest release.
 
 Move to a different Branch
 ###########################
+
 FusionPBX has a stable and a master(development) branch.  You can switch from stable to master but **not recomended to downgrade.** 
 
 **Move to the Stable Branch**
