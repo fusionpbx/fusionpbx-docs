@@ -3,11 +3,15 @@ Home
 ######
 
 
-.. image:: _static/images/fusionpbx_home_menu.jpg
+.. image:: ../_static/images/fusionpbx_home_menu.jpg
         :scale: 85%
 
 
-| In the home menu you have the options for **Account Settings**, **Logout** and **User Dashboard**. 
+| In the home menu you have the options for
+
+*  **Account Settings**
+*  **Logout**
+*  **User Dashboard**
 
 
 
