@@ -214,7 +214,7 @@ FusionPBX has a stable and a master(development) branch.  You can switch from st
  cd /var/www && git clone -b 4.2 https://github.com/fusionpbx/fusionpbx.git
  chown -R www-data:www-data /var/www/fusionpbx
 
-Make sure config.php exists in /etc/fusionpbx if missing then move it into this directory.
+Make sure config.php exists in /etc/fusionpbx If missing then move it into this directory.
 
 ::
  
