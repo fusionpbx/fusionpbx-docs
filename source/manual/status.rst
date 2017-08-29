@@ -74,4 +74,4 @@ Traffic Graph
 A browser (or plugin) that supports Scalable Vector Graphics (SVG) is required to view the traffic graph. 
 
 
-.. _Extension Summary: /en/latest/status/extension_summary.rst
+.. _Extension Summary: /en/latest/status/extension_summary.html
