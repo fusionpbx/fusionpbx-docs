@@ -19,3 +19,14 @@ Music on hold can be in WAV or MP3 format. To play an MP3 file you must have mod
         :scale: 85%
 
 
+When a new music on hold category mod_local_stream will be restarted. If it is busy then it will not restart automatically. A manual restart of the module is required when it is not in use. The module can be restarted from Advanced -> Modules or from the fs_cli with following command.
+
+reload mod_local_stream
+
+Each music on hold category is given a name. If the domain is set to global the name will be the name in the example below the protocol that is used is local_stream and the music on hold category is default and domain is set to global.
+
+local_stream://default
+
+It is possible that a domain can have its own category of music for this example will use a name of 'custom'.
+
+local_stream://yourdomain/custom
