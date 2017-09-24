@@ -5,6 +5,14 @@ Version Upgrade
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
 
+
+Version 4.2 to 4.4
+^^^^^^^^^^^^^^^^^^
+
+1. Normal upgrade procedure update the source code, schema, menu and permissions. 
+2. Update the user_exists and user_record, and call_forward_all dialplans.
+
+
 Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^
 
