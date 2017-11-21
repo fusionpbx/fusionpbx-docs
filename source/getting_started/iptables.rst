@@ -59,7 +59,7 @@ Show iptable rules
 Show line numbers
 =================
 
-``iptables -L -v --line-numbers``
+``iptables -L -n -v --line-numbers``
 
 Delete a line
 =============
