@@ -68,6 +68,13 @@ Delete line 2
 
 ``iptables -D INPUT 2``
 
+Clear iptables rules
+================
+
+iptables -P INPUT ACCEPT
+iptables -F
+iptables -X
+
 Block IP address
 ================
 
