@@ -29,5 +29,7 @@ Once you have that done, make sure the p-time is set to 0.020
 
 
 **HTTP Authentication**
+
 Phone web interface -> Provision - > Profile Rule
+
 [--uid myUser --pwd myPass]http://mydomain.com/app/provision/?mac=$MA
