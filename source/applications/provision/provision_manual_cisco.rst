@@ -26,3 +26,8 @@ Once you have that done, make sure the p-time is set to 0.020
 
 .. image:: ../../_static/images/fusionpbx_provision_manual_cisco1.jpg
         :scale: 85%
+
+
+**HTTP Authentication**
+Phone web interface -> Provision - > Profile Rule
+[--uid myUser --pwd myPass]http://mydomain.com/app/provision/?mac=$MA
