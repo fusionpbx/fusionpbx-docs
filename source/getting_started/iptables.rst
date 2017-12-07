@@ -71,9 +71,9 @@ Delete line 2
 Clear iptables rules
 ================
 
-``iptables -P INPUT ACCEPT``
-``iptables -F``
-``iptables -X``
+| ``iptables -P INPUT ACCEPT``
+| ``iptables -F``
+| ``iptables -X``
 
 Block IP address
 ================
