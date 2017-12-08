@@ -21,7 +21,7 @@ Goto Advanced > Access Controls.  Click the edit icon for **domains**.  At the b
 ::
 
  Type choose allow
- CIDR enter the 123.456.789.000/32
+ CIDR enter the 12.34.56.0/32
  Domain (Leave Blank, used for advanced scenarios)
  Description (Carrier Name)
  
@@ -34,7 +34,7 @@ Under Status > log viewer you should notice the ip added.  This can be seen also
 
 ::
 
-  [NOTICE] switch_utils.c:545 Adding 123.456.789.000/32 (allow) [] to list domains
+  [NOTICE] switch_utils.c:545 Adding 12.34.56.0/32 (allow) [] to list domains
   
  
  
