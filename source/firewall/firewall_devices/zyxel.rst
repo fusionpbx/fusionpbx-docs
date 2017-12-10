@@ -39,3 +39,21 @@ Create a name, and set the ports for your traffic.  In this example we will add 
 .. image:: ../../_static/images/firewall/fusionpbx_zyxel_usg60_object_service.png
         :scale: 85%
 
+Now setup your BWM rules.
+
+* Go to Configuration-> BWM
+
+* Check the Enable BWM box and hit apply.
+I’m not sure what affect the “Enable Highest Bandwidth Priority for SIP Traffic” box does, but I leave it unchecked and it works for me!
+
+* Click the Add button and create a Policy for incoming traffic.
+Your settings will vary based on your environment.  Priority 1 is the highest priority (what we want) and priority 7 is the lowest priority.
+
+* Click the Add button and create a Policy for outgoing traffic.
+Basically will just switch the Source and Destination.
+
+* Click the Apply button.
+
+.. image:: ../../_static/images/firewall/fusionpbx_zyxel_usg60_bwm_.png
+        :scale: 85%
+
