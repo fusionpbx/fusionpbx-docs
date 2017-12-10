@@ -4,7 +4,7 @@ ZyXel
 
 
 
-This guide was created using V4.2/4.25 firmware on a ZyXEL USG60 series UTM router.  The PBX is in the cloud with a public IP, and the ZyXEL USG60 router is at the customer’s location with the extensions behind it.
+This guide was created using V4.2/4.25 firmware on a ZyXEL USG60 series UTM router.  FusionPBX is in the cloud with a public IP, and the ZyXEL USG60 router is at the customer’s location with the extensions behind it.
 
  
 
@@ -21,7 +21,7 @@ First, set up an Object for your Cloud PBX.
 
                 * Click the Add button
 
-Create a name, and enter the static public IP of your PBX.  If you have more than one, such as a failover, add that as well and create a group.
+Create a name, and enter the static public IP of your FusionPBX.  If you have more than one, such as a failover, add that as well and create a group.
 
 .. image:: ../../_static/images/firewall/fusionpbx_zyxel_usg60_bwm_.png
         :scale: 85%
