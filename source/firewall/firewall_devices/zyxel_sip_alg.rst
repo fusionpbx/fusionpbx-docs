@@ -26,5 +26,5 @@ How to Disable SIP ALG
 Click the Apply button at the bottom of the page.  A reboot should not be necessary, but if you’re still experiencing issues then it is a good idea to try rebooting the router and testing again.
 
 
-.. image:: ../_static/images/firewall/fusionpbx_zyxel_usg60.png
+.. image:: ../../_static/images/firewall/fusionpbx_zyxel_usg60.png
         :scale: 85%
