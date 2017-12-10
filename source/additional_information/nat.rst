@@ -13,7 +13,7 @@ The external_rtp_ip and external_sip_ip are set to $${local_ip_v4} in Advanced -
 * It also works well when all phones are inside the same network and nothing needs to traverse the NAT. For example if you are using a SIP to TDM gateway and all your phones are in the same network.
 
 
-SIP ALG
+`SIP ALG`_
 ^^^^^^^^^^^^^^^
 A SIP Application Layer Gateway (ALG) is a tool designed to help SIP traverse NAT. While the SIP ALG is good in theory it often causes more problems than it solves. Because of this it's usually best to disable the SIP ALG on your firewall. An alternative way to disable it is to move SIP to a non standard port.
 
@@ -38,3 +38,5 @@ FusionPBX is behind NAT and you don't have a static ip address. You do have a fi
 * Set external_sip_ip to auto-nat
 * Restart FreeSWITCH.   service freeswitch restart
 
+
+.. _SIP ALG: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices.html#sip-alg
