@@ -1,4 +1,4 @@
-Gateway
+Gateways
 =========
 
 .. image:: ../_static/images/logo_right.png
