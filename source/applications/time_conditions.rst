@@ -36,3 +36,40 @@ The next dropdown choose the extension where the call is intended for.  If the c
 
 .. image:: ../_static/images/fusionpbx_time_conditions2.jpg
         :scale: 85%
+
+|
+
+**Conditions**
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The most common conditions to use are **Day of Week** and **Time of Day**.
+
+|
+
+**Time of Day**
+
+Is a select list of every minute for the full 24 hour period of time.
+
+|
+
+**Hour of Day**
+
+ Another alternative the Hour of Days. If you set a range of 9 - 4 it will include all of 4 until it changes to 5. 
+
+|
+
+**Day of Week**
+
+The day of week condition each day of the week is represented by a number. A valid range is from low to high. A valid range is like Monday to Friday (2-6). An example of invalid range would be Saturday to Sunday (7-1).
+
+*  1 Sunday
+*  2 Monday
+*  3 Tuesday
+*  4 Wednesday
+*  5 Thursday
+*  6 Friday
+*  7 Saturday
+
+|
+
+
