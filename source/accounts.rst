@@ -13,6 +13,8 @@ Accounts
   :maxdepth: 3
   :glob:
 
+  accounts/devices.rst
   accounts/extensions.rst
-  gateway/gateway1.rst
-  applications_optional/xmpp.rst
+  accounts/gateways.rst
+  accounts/providers.rst
+  accounts/users.rst
