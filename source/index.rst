@@ -98,7 +98,7 @@ Our Ecosystem
    getting_started.rst
    home.rst
    accounts.rst
-   dialplan.rst
+   dialplans.rst
    applications.rst
    status.rst
    advanced.rst
