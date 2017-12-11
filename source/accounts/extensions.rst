@@ -7,7 +7,7 @@ Extensions
 *  Extension 	
     Enter the alphanumeric extension. The default configuration allows 2 - 7 digit extensions.
 *  Number Alias 	
-    If the extension is numeric then number alias is optional.
+    If the extension is numeric then number alias is optional. The primary purpose of this field is when the extension is not a number then the number alias is required. Note a numeric extension and number alias does not currently work.
 *  Range 	
     Enter the number of extensions to create. Increments each extension by 1.
 *  Voicemail Password 	
@@ -51,15 +51,15 @@ Extensions
 *  Call Timeout 	
     Enter the call timeout.
 *  Call Group 	
-    Enter the user call group here. Groups available by default: sales, support, billing.
+    Enter the user call group here. Groups available by default: sales, support, billing. These are just example you can use any group names you would like.
 *  Call Screen 	
     Choose whether to enable or disable call screening.
 *  Record 	
     Choose whether to record local, inbound, outbound, or all.
 *  Hold Music 	
-    Select the MOH Category here.
+    Select the Music on Hold Category here.
 *  Context 	
-    Enter the user context here. 	
+    Enter the user context here. The context is set by default to match the domain name. It is usually correct by default and doesn't need to be changed. 	
 *  Enabled
     Set the status of the extension.
 *  Description
