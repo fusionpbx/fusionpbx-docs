@@ -17,3 +17,15 @@ Status
   :glob:
 
   manual/status.rst
+  status/active_call_center.rst
+  status/active_calls.rst
+  status/active_call_conferences.rst
+  status/active_queues.rst
+  status/agent_status.rst
+  status/cdr_statistics.rst
+  status/emails.rst
+  status/extension_summary.rst
+  status/log_viewer.rst
+  status/registrations.rst
+  status/sip_status.rst
+  status/system_status.rst
