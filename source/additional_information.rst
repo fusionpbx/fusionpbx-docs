@@ -21,4 +21,5 @@ Additional Information
   additional_information/toll_allow.rst
   additional_information/tftp.rst
   additional_information/nat.rst
+  applications/provision.rst
 
