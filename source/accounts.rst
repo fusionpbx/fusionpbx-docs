@@ -16,5 +16,5 @@ Accounts
   accounts/devices.rst
   accounts/extensions.rst
   accounts/gateways.rst
-  accounts/providers.rst
+  #accounts/providers.rst
   accounts/users.rst
