@@ -13,6 +13,6 @@ Accounts
   :maxdepth: 3
   :glob:
 
-  extensions_ivr/extensions.rst
+  accounts/extensions.rst
   gateway/gateway1.rst
   applications_optional/xmpp.rst
