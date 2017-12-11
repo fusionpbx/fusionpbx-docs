@@ -28,7 +28,6 @@ Applications
   applications/ivr.rst
   applications/phrases.rst
   applications/music_on_hold.rst
-  applications/provision.rst
   applications/queues.rst
   applications/recordings.rst
   applications/ring_group.rst
