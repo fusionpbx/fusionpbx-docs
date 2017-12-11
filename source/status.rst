@@ -27,5 +27,7 @@ Status
   status/extension_summary.rst
   status/log_viewer.rst
   status/registrations.rst
+  status/services.rst
   status/sip_status.rst
   status/system_status.rst
+  status/traffic_graph.rst
