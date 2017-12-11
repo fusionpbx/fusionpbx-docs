@@ -4,8 +4,6 @@ Users
 
 Define the users information to login to the web interface.
 
-|
-
 *  Username
     User id to be used to login.
 *  Password
