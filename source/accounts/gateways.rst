@@ -46,3 +46,7 @@ button on the right. Enter the gateway information below and Click on **Save** o
 
 .. image:: ../_static/images/fusionpbx_gateway2.jpg
         :scale: 85%
+
+**Hostname**
+
+When the hostname is set the gateway will only start on the matching server with same hostname. If the hostname is left blank the gateway will start regardless of the server's hostname.
