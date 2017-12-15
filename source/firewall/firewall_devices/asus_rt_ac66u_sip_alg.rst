@@ -19,3 +19,6 @@ How to Disable SIP ALG
  
 
 This part is a little confusing.  It seems that ASUS has either reversed the meaning of SIP Passthrough or changed how it works over a few firmware releases.  At any rate, if you have difficulties with Audio or Registrations, you can try toggling this setting.  With these home-grade routers you should perform a full reboot in order to clear the tables before testing the phones.
+
+.. image:: ../../_static/images/firewall/fusionpbx_asus_sip_alg.png
+        :scale: 85%
