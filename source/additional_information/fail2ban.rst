@@ -6,7 +6,8 @@ Fail2Ban
 
 | **Logs**
 | This will log FusionPBX authentication failures to syslog (AUTH_LOG). This file can be in different places depending on how rsyslog, or syslog is configured.
-| **Ubuntu**
+
+|**Ubuntu**
 | /var/log/auth.log
 
 | **Examples**
