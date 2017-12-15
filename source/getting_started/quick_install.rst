@@ -69,7 +69,7 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
       https://fusionpbx.com/support.php
       https://www.fusionpbx.com
       http://docs.fusionpbx.com
-
+      https://www.fusionpbx.com/training.php
 
 |
      
