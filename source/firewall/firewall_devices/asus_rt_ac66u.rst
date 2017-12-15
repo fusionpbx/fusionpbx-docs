@@ -17,7 +17,7 @@ First, enable the QoS feature:
 * Log into the router
 * Click “Traffic Manager” on the left menu
 * Click the “Enable QoS” button to turn it on.  Once you do this, the Upload and Download Bandwidth boxes will appear.
-* Enter in your Up/Down speeds.  You can use speedtest.com as noted.
+* Enter in your Up/Down speeds.  You can use http://beta.speedtest.net/ as noted.
 * Click the Apply button and wait for the router to reboot.
 
 .. image:: ../../_static/images/firewall/fusionpbx_asus_traffic_manager_qos.png
