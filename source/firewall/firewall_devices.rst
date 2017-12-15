@@ -14,6 +14,7 @@ Firewall device settings that help with SIP connections.
 ^^^^^^^^^^^^^^^
 Most of the time this setting is set to off or disabled and varies.  Rarely this should be enabled. Below is a list a devices that need setting changes to address SIP ALG issues.  
 
+* `ASUS RT-AC66U`_
 * `Zyxel`_
 
 
@@ -35,4 +36,6 @@ Most of the time this setting is set to off or disabled and varies.  Rarely this
 
 .. _Zyxel: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/zyxel_sip_alg.html
 .. _Zyxel-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/zyxel.html
-.. _ASUS RT-AC66U-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/asus_rt_ac66u.html 
+.. _ASUS RT-AC66U-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/asus_rt_ac66u.html
+.. _Asus RT-AC66U: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/asus_rt_ac66u_sip_alg.html
+
