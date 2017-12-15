@@ -5,6 +5,7 @@ Firewall Devices
 
 Firewall device settings that help with SIP connections.
 
+* `ASUS RT-AC66U-`_
 * `Zyxel-`_
 
 
@@ -33,4 +34,5 @@ Most of the time this setting is set to off or disabled and varies.  Rarely this
 
 
 .. _Zyxel: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/zyxel_sip_alg.html
-.. _Zyxel-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/zyxel.html 
+.. _Zyxel-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/zyxel.html
+.. _ASUS RT-AC66U-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/asus_rt_ac66u.html 
