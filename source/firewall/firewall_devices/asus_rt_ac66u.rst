@@ -37,11 +37,11 @@ Next, assign the QoS rules.
 
 .. Note::
 
-An important note regarding Priorities:
+ An important note regarding Priorities
 
  
 
-Another important area is the “user-defined priorities” section of Traffic Manager – QoS.  As you can see, the default rules give a very large amount of the bandwidth share to the highest priority.  This is very likely excessive for VOIP traffic.  We don’t need much bandwidth, we just need to make sure we get prioritized traffic.  You should adjust these to suit your environment.
+ Another important area is the “user-defined priorities” section of Traffic Manager – QoS.  As you can see, the default rules     give a very large amount of the bandwidth share to the highest priority.  This is very likely excessive for VOIP traffic.  We don’t need much bandwidth, we just need to make sure we get prioritized traffic.  You should adjust these to suit your environment.
 
 
 .. image:: ../../_static/images/firewall/fusionpbx_asus_traffic_manager_qos_note.png
