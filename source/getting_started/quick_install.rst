@@ -63,7 +63,7 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
       Admin Training    24 - 26 Jan (3 Days)
       Advanced Training 31 Jan - Feb 2 (3 Days)
       Timezone: https://www.timeanddate.com/worldclock/usa/boise
-      For more info visit https://www.fusionpbx.com
+      For more info visit https://www.fusionpbx.com/training.php
 
    Additional information.
       https://fusionpbx.com/support.php
