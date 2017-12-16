@@ -23,6 +23,6 @@ Advanced
   advanced/group_manager.rst
   advanced/sip_profiles.rst
   advanced/upgrade.rst
-  advanced/version_upgrade.rst
+  #advanced/version_upgrade.rst
 
 
