@@ -3,7 +3,7 @@ Cisco EA6500
 ##############
 
 
-This guide was created using a Cisco EA6500 (Linksys AC1750)series router.
+This guide was created using a Cisco EA6500 (Linksys AC1750) series router.
 
  
 
