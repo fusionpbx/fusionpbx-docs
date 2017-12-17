@@ -2,10 +2,8 @@
 Accounts
 ************
 
-| In the **Accounts** menu you have access to devices, extensions, gateways and user manager. 
+In the **Accounts** menu you have access to devices, extensions, gateways and user manager. 
 
-.. image:: _static/images/fusionpbx_accounts.jpg
-        :scale: 85%
 
 
 
@@ -16,5 +14,5 @@ Accounts
   accounts/devices.rst
   accounts/extensions.rst
   accounts/gateways.rst
-  #accounts/providers.rst
+  accounts/providers.rst
   accounts/users.rst
