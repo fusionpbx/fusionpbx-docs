@@ -10,7 +10,7 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
 
   There are many ways to install FusionPBX depending on how you want to build your solution.
   What is presented here represents the quickest, easiest, best supported way to a FusionPBX system.
-  For advanced topics like Bi Directional Replication or High Availability, consider attending the in person or online training at http://fusionpbx.com.
+  For advanced topics like Bi Directional Replication or High Availability, consider attending the in person or online training at https://www.fusionpbx.com/training.php.
 
 
 .. toctree::
