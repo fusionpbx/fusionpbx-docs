@@ -107,3 +107,25 @@ Add the following entries
 Click "Flush Memcache", "Reload XML" and "Rescan".
  
 If you entered your key's correctly, you should now start getting transcriptions delivered in your voicemail to email and you will also see them on the Messages page.
+
+**Variables**
+
++---------------------------+----------------+
+| Name                      | Value          |
++---------------------------+----------------+
+| vm_say_date_time          | true or false  |
++---------------------------+----------------+
+| vm_say_date_time          | true or false  |
++---------------------------+----------------+
+| skip_greeting             | true or false  |
++---------------------------+----------------+
+| skip_instructions         | true or false  |
++---------------------------+----------------+
+| voicemail_greeting_number | 0-9            |
++---------------------------+----------------+
+| vm_disk_quota             | 0-3600 seconds |
++---------------------------+----------------+
+| vm_message_ext            | mp3            |
++---------------------------+----------------+
+
+
