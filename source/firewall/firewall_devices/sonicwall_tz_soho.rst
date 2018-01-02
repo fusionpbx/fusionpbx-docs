@@ -44,4 +44,17 @@ Next, set up an Object for your Cloud PBX:
         :scale: 85%
 
 
+Now that we have our Service and Object, we can create a firewall rule and apply prioritization.
 
+* Go to Policies -> Rules -> Access Rules, and click Add.
+* Create a rule from the WAN to the LAN, using the VOIP services that you created, and your PBX as the source.  Make sure the Enable SIP Transformation box is unchecked.
+* Click the BWM tab and check the Egress and Ingress boxes, with the desired priority level.
+
+.. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm4.png
+        :scale: 85%
+        
+.. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm5.png
+        :scale: 85%        
+        
+Save your settings and give it a try!       
+        
