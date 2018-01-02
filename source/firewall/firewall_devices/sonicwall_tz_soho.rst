@@ -34,5 +34,14 @@ Now create your VOIP services.  In this example we’ll use 5060TCP, 5060UDP, an
 
 
 
+Next, set up an Object for your Cloud PBX:
+
+* Go to Policies -> Objects -> Address Objects, and click Add
+* Add your PBX to the WAN Zone assignment with your IP as the Host, or use FQDN if you prefer.  If using multiple servers, add each one and create a group.
+
+
+.. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm3.png
+        :scale: 85%
+
 
 
