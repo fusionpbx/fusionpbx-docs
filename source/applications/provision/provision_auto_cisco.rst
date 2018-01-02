@@ -31,7 +31,7 @@ Requires a Cisco Certificate.
 
 Browser Command
 =================
-Use your web browser to send the following command to pass the provisioning URL to the phone.
+Use your web browser to send the following command to pass the provision the phone now and this will pass URL to the phone so it has the location neeeded for provisioning the device. In this example 192.168.1.5 is the IP address of the phone and domain.com needs updated to use the correct tenant domain name.
 
 
 **No HTTP Authentication**
