@@ -8,7 +8,6 @@ The following information can be used to provisioning Cisco SPA phones.
 
 Basic URL
 ===========
-
 An example URL for provisioning URL for a Cisco SPA.
 
 http://mydomain.com/app/provision/?mac=$MA
@@ -17,7 +16,6 @@ http://mydomain.com/app/provision/?mac=$MA
 
 HTTP Authentication
 =====================
-
 Phone web interface -> Provision - > Profile Rule
 
 [--uid myUser --pwd myPass]http://mydomain.com/app/provision/?mac=$MA
@@ -26,12 +24,9 @@ Phone web interface -> Provision - > Profile Rule
 
 HTTPS
 =======
-
 Requires a Cisco Certificate.
 
 
-
-Auto Delivery of the URL
-============================
-
+DHCP Option
+=============
 Use the DHCP Option 66 to deliver the provisioning URL to the phones without using the web interface.
