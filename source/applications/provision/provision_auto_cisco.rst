@@ -26,7 +26,7 @@ Phone web interface -> Provision - > Profile Rule
 
 HTTPS
 =======
-Requires a Cisco Certificate.
+Requires a Cisco Certificate that you will likely need to obtain from a Cisco distributor.
 
 
 Browser Command
