@@ -17,6 +17,22 @@ How to setup Bandwidth Management
 * This will enable BWM for all traffic.
 Enable your required Priority levels.  For voice traffic, we’ll enable the “0 Realtime” priority level.
 
+
 .. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm1.png
         :scale: 85%
+
+
+Now create your VOIP services.  In this example we’ll use 5060TCP, 5060UDP, and 16384-32768UDP for voice traffic.
+
+* Go to Policies -> Objects -> Service Objects, and click Add.
+* Add objects for your VOIP services.  On typical installs this would be 5060TCP/UPD and 16384-32768UDP.
+* Click on the Service Groups tab and add all of the services you’ve created to a group.
+
+
+.. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm2.png
+        :scale: 85%
+
+
+
+
 
