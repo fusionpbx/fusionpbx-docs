@@ -18,6 +18,8 @@ HTTP Authentication
 =====================
 Phone web interface -> Provision - > Profile Rule
 
+::
+
 [--uid myUser --pwd myPass]http://mydomain.com/app/provision/?mac=$MA
 
 
@@ -25,6 +27,26 @@ Phone web interface -> Provision - > Profile Rule
 HTTPS
 =======
 Requires a Cisco Certificate.
+
+
+Browser Command
+=================
+Use your web browser to send the following command to pass the provisioning URL to the phone.
+
+
+**No HTTP Authentication**
+
+::
+
+http://192.168.1.5/admin/resync?http://domain.com/app/provision/?mac=$MA
+
+
+**With HTTP Authentication**
+
+::
+
+http://192.168.1.4/admin/resync?%5B--uid+admin+--pwd+555%5Dhttp://domain.com/app/provision/?mac=$MA
+
 
 
 DHCP Option
