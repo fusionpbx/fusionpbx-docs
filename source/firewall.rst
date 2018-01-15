@@ -5,7 +5,7 @@ Firewall
 **Basic ports used**
 
 * SIP TCP/UDP
-    *    5060, 5061, 5080
+    *    5060-5090
 * RTP UDP
     *    16384-32768
 * SSH
