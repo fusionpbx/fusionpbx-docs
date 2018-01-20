@@ -16,7 +16,7 @@ From here you can view status, evesdrop on the call, transfer the call or click 
 .. image:: ../_static/images/Status/active_call_center/fusionpbx_active_call_center_status.jpg
         :scale: 85%
 
-Click the side menu to learn more about Call Center. Applications > `Call Center`_
+Click to learn more about Call Center. Applications > `Call Center`_
 
 
 .. _Call Center: /en/latest/status/active_call_center.html
