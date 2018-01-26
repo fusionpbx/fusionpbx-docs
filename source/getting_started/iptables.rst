@@ -88,3 +88,11 @@ Debian / Ubuntu
 | ``apt-get install iptables-persistent``
 | ``service iptables-persistent save``
 | ``dpkg-reconfigure iptables-persistent``
+
+Iptables Configuration
+======================
+
+Debian / Ubuntu
+
+| ``cd /etc/iptables``
+
