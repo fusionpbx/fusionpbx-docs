@@ -8,7 +8,7 @@ With profiles you can see
 
 *  REGISTRATIONS
 *  START/RESTART/RESCAN/FLUSH REGISTRATIONS
-*  You can also FLUSH MEMCACHE
+*  You can also FLUSH CACHE
 *  RELOAD ACL
 *  RELOAD XML and REFRESH
 *  View UP time, sessions since startup, max sessions, and current stack size/max.
