@@ -65,7 +65,7 @@ Delete line 2
 
 ``iptables -D INPUT 2``
 
-Flush out iptables
+Flush Out Iptables
 ^^^^^^^^^^^^^^^^^^^
 
 | ``iptables -P INPUT ACCEPT``
