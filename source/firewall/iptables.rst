@@ -68,6 +68,13 @@ Block IP address
 
 ``iptables -I INPUT -s 62.210.245.132 -j DROP``
 
+Flush iptables
+^^^^^^^^^^^^^^^^^
+How to flush iptables without loosing access to ssh.
+
+| ``iptables -P INPUT ACCEPT``
+| ``iptables -F``
+
 Save Changes
 ^^^^^^^^^^^^^
 
