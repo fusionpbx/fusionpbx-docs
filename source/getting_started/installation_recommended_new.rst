@@ -11,7 +11,7 @@ OLD Install
 |
 **Please follow the link below for the newest install guide**
 
-**http://docs.fusionpbx.com/en/latest/getting_started/quick_install.html** 
+http://docs.fusionpbx.com/en/latest/getting_started/quick_install.html 
 
 
 
@@ -29,7 +29,20 @@ OLD Install
 |
 |
 |
-
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 
 
 
