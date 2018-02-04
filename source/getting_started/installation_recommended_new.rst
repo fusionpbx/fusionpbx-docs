@@ -1,5 +1,5 @@
 *************
-(OLD)New Install
+OLD Install
 *************
 .. image:: ../_static/images/logo_right.png
         :scale: 85% 
