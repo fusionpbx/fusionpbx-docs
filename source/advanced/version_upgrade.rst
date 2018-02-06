@@ -10,7 +10,7 @@ Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
 
 1. Normal upgrade procedure update the source code, schema, menu and permissions. 
-2. The following dialplans need to be update. Do this by deleting the dialplans on all domains and then run Menu -> Advanced > Upgrade -> App Defaults.
+2. The following dialplans need to be updated. Do this by deleting the dialplans on all domains and then run Menu -> Advanced > Upgrade -> App Defaults.
 
 ::
 
