@@ -10,7 +10,16 @@ Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
 
 1. Normal upgrade procedure update the source code, schema, menu and permissions. 
-2. Need to delete the following dialplans user_exists and user_record, call_forward_all, and local_extension dialplans from all domains. Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
+2. The following dialplans need to be update. Do this by deleting the dialplans on all domains and then run Menu -> Advanced > Upgrade -> App Defaults.
+
+::
+
+ user_exists
+ user_record
+ call_forward_all
+ local_extension
+
+Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
 3. Update old recordings set the record_name and record_path.
 
 ::
