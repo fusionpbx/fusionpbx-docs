@@ -16,7 +16,7 @@ Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz
  
  
  cd /etc/cron.daily
- vim fusionpbx-backup.sh
+ nano fusionpbx-backup.sh
  
  #!/bin/sh
  now=$(date +%Y-%m-%d)
@@ -88,7 +88,7 @@ Gui settings
  
  Settings for FreeSWITCH source backup paths.
  
- path           array   /var/backups/fusionpbx/postgresql       True    postgresql
+ path  array   /var/backups/fusionpbx/postgresql       True    postgresql
  path		array  	/usr/local/freeswitch/scripts 		True 	scripts  	 	
  path		array  	/usr/local/freeswitch/recordings 	True 	recordings  	
  path		array  	/var/www/fusionpbx 		        True 	fusionpbx  	
@@ -100,7 +100,7 @@ Gui settings
 Download Backups
 ^^^^^^^^^^^^^^^^^
 
-From Advanced > Backup you can download the backup also. 
+From Advanced > Backup you can download the backup from the web interface this is optional. You would need to make sure that PHP doesn't timeout while compressing your backup and that it has enough access to RAM to do the work.
 
 **FreeSWITCH Source install paths.**
 
