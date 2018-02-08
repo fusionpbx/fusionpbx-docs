@@ -45,12 +45,9 @@ Setting crontab -e
  crontab -e
  Choose 1 for nano
  Goto the last blank line and paste in the next line.
- 0 0 * * * bash /etc/cron.daily/fusionpbx-backup.sh
+ 0 0 * * * /bin/sh /etc/cron.daily/fusionpbx-backup.sh
  press enter then save and exit.
  
- cd /usr/src/fusionpbx-install.sh/debian/resources/backup/
- cp fusionpbx-backup.sh /etc/cron.daily
- chmod 755 fusionpbx-backup.sh
 
 
 Once this is complete you will have the backup ready to execute by ./fusionpbx-backup.sh or from the daily cron job. 
