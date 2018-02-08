@@ -55,9 +55,6 @@ Once this is complete you will have the backup ready to execute by ./fusionpbx-b
 Web Interface
 ^^^^^^^^^^^^^
 
-**From the Gui.**
-
-
 **FreeSWITCH Package install paths.**
 
 .. image:: ../_static/images/fusionpbx_backup_source1.jpg
