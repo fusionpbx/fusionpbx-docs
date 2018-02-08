@@ -74,7 +74,7 @@ Gui settings
  path		array  /var/www/fusionpbx	             	 	True 	fusionpbx
  path		array  /var/lib/freeswitch/storage	          	True 	storage
  path		array  /var/lib/freeswitch/recordings			True 	recordings
- path		array  /etc/freeswitch/conf 				True 	conf 
+ path		array  /etc/freeswitch 				True 	conf 
  
  Click "Reload" at the top of the page.
 
