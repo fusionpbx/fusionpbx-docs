@@ -9,15 +9,13 @@ It's always good to have a backup method in place.  Here are the steps to a basi
 Command line settings
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz" with your password.
+Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz" with your database password. You can get the password from /etc/fusionpbx/config.php.
 
 
 ::
  
  
- cd /usr/src/fusionpbx-install.sh
- git pull
- cd debian/resources/backup/
+ cd /etc/cron.daily
  vim fusionpbx-backup.sh
  
  #!/bin/sh
