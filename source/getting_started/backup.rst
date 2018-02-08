@@ -6,8 +6,8 @@ Backup
 
 It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX.
 
-Command line settings
-^^^^^^^^^^^^^^^^^^^^^^
+Command Line
+^^^^^^^^^^^^^^
 
 Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz" with your database password. You can get the password from /etc/fusionpbx/config.php.
 
@@ -35,7 +35,7 @@ To save the file press escape then :wq for write and quit.
 
 You should have the script ready to execute. (Default the script will use FreeSWITCH package paths.  If you have an older install using source be sure to change this by commenting the package line #22 and uncomment the source line #25.)
  
-Crontab settings
+Crontab
 ^^^^^^^^^^^^^^^^^
 
 Setting crontab -e
@@ -52,7 +52,7 @@ Setting crontab -e
 
 Once this is complete you will have the backup ready to execute by ./fusionpbx-backup.sh or from the daily cron job. 
 
-Gui settings
+Web Interface
 ^^^^^^^^^^^^^
 
 **From the Gui.**
