@@ -84,7 +84,7 @@ Use strong passwords with SSH or even better use SSH keys for better protection 
 .. _Upgrades: /en/latest/advanced/upgrade.html
 .. _link: https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 .. _paid support: http://www.fusionpbx.com
-.. _firewall: /en/latest/getting_started/iptables.html#iptables
+.. _firewall-: /en/latest/getting_started/iptables.html#iptables
 .. _Firewall page: /en/latest/firewall.html
 .. _Firewall: /en/latest/firewall.html
 .. _iptables: /en/latest/getting_started/iptables.html#iptables
