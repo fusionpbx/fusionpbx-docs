@@ -50,6 +50,6 @@ More about whitelisting can be found at http://www.fail2ban.org/wiki/index.php/W
 
 .. Note::
 
-    You can use a dynamic ip address like dyndns to whitelist a dynamic ip address.
+    You can use a dynamic ip address service like dyndns to whitelist a dynamic ip address.
 
 
