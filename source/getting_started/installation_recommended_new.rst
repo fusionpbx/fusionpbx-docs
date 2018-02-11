@@ -1,10 +1,57 @@
 *************
-New Install
+OLD Install
 *************
 .. image:: ../_static/images/logo_right.png
         :scale: 85% 
 
 |
+|
+|
+|
+|
+**Please follow the link below for the newest install guide**
+
+http://docs.fusionpbx.com/en/latest/getting_started/quick_install.html 
+
+
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+
+
+
+
+
+
+
+
 
 New Install Video https://www.youtube.com/embed/oioW1i8bieM
 
