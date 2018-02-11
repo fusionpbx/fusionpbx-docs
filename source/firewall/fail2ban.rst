@@ -17,7 +17,7 @@ To check the status of one of the fail2ban jails
 
  fail2ban-client status freeswitch-ip-tcp
  
-Then will show
+This command will show
 
 ::
 
