@@ -48,7 +48,7 @@ Find ignoreip = and place domain.tld or 000.000.000.000.  Just put a space betwe
 More about whitelisting can be found at http://www.fail2ban.org/wiki/index.php/Whitelist
 
 
-Note::
+.. Note::
 
     You can use a dynamic ip address like dyndns to whitelist a dynamic ip address.
 
