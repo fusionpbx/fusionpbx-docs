@@ -38,11 +38,11 @@ To exclude an ip so that it isn't blocked by any filters edit the **jails.conf**
  nano /etc/fail2ban/jail.conf
 
 
-Find ignoreip = and place domain.tld or 000.000.000.000
+Find ignoreip = and place domain.tld or 000.000.000.000.  Just put a space between them.
 
 ::
 
- ignoreip = domain.tld or 000.000.000.000
+ ignoreip = domain.tld 000.000.000.000 192.168.0.0/16
  
 
 More about whitelisting can be found at http://www.fail2ban.org/wiki/index.php/Whitelist
