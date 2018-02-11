@@ -2,5 +2,5 @@
 Active Queues
 ************
 
-| List all the queues that are currently active with one or more callers.
+Queues feature generates a dialplan that uses mod_fifo.
 
