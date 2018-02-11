@@ -19,6 +19,7 @@ Firewall
   :glob:
 
   firewall/iptables.rst
-  firewall/fail2ban.rst
+  #firewall/fail2ban.rst
+  additional_information/fail2ban.rst
   firewall/pf.rst
   firewall/firewall_devices.rst
