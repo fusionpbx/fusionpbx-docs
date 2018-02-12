@@ -16,20 +16,7 @@ To check the status of one of the fail2ban jails
 ::
 
  fail2ban-client status freeswitch-ip-tcp
- 
-This command will show
 
-::
-
-` Status for the jail: freeswitch-ip-tcp
-` |- filter
-` |  |- File list:        /usr/local/freeswitch/log/freeswitch.log
-` |  |- Currently failed: 0
-` |  `- Total failed:     4
-` `- action
-`  |- Currently banned: 3
-`  |  `- IP list:       207.38.90.177 51.15.145.32 207.38.90.197
-`   `- Total banned:     3
 
 To exclude an ip so that it isn't blocked by any filters edit the **jails.conf** file.
 
