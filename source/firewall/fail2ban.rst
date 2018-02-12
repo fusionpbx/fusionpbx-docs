@@ -47,6 +47,13 @@ Clear all blocked addresses by restarting fail2ban
   service fail2ban restart
 
 
+Fail2ban logs the addresses that it blocks with the filter that triggered it.
+
+::
+
+  /var/log/fail2ban.log
+
+
 More information about Fail2ban can be found at http://www.fail2ban.org/wiki
 
 
