@@ -8,7 +8,7 @@ Fail2ban is also used to protect SSH, FreeSWITCH, the web server as well as othe
 
 ::
  
- iptables -L
+ iptables -L -n
  
 
 To check the status of one of the fail2ban jails
