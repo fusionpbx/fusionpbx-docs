@@ -18,21 +18,36 @@ To check the status of one of the fail2ban jails
  fail2ban-client status freeswitch-ip-tcp
 
 
-To exclude an ip so that it isn't blocked by any filters edit the **jails.conf** file.
+Fail2ban configuration files are located in.
+
+::
+
+ cd /etc/fail2ban/
+
+
+To exclude an IP so that it isn't blocked by any filters edit the **jails.conf** file.
+
 
 ::
 
  nano /etc/fail2ban/jail.conf
 
 
-Find ignoreip = and place domain.tld or 000.000.000.000.  Just put a space between them.
+Find ignoreip and add the IP address, CIDR or DNS hostname. Use a space between them.
 
 ::
 
- ignoreip = domain.tld 000.000.000.000 192.168.0.0/16
- 
+ ignoreip = 127.0.0.1/8 192.168.0.0/16
 
-More about whitelisting can be found at http://www.fail2ban.org/wiki/index.php/Whitelist
+
+Clear all blocked addresses by restarting fail2ban
+
+::
+
+  service fail2ban restart
+
+
+More information about Fail2ban can be found at http://www.fail2ban.org/wiki
 
 
 .. Note::
