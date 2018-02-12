@@ -33,14 +33,21 @@ To exclude an IP so that it isn't blocked by any filters edit the **jails.conf**
  nano /etc/fail2ban/jail.conf
 
 
-Find ignoreip and add the IP address, CIDR or DNS hostname. Use a space between them.
+Find ignoreip and add the IP address, CIDR or DNS hostname that need to be white listed. Use a space as a delimitter between each one. Restart fail2ban to apply the changes to the ignoreip list.
 
 ::
 
  ignoreip = 127.0.0.1/8 192.168.0.0/16
 
 
-Clear all blocked addresses by restarting fail2ban
+Filters are defined in the following directory.
+
+::
+
+ /etc/fail2ban/filter.d
+
+
+Clear all blocked addresses by restarting fail2ban.
 
 ::
 
