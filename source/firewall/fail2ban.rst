@@ -47,6 +47,13 @@ Filters are defined in the following directory.
  /etc/fail2ban/filter.d
 
 
+Inside jail.local points to filters and defines maxretry, bantime, logpath, ports to block and more.
+
+::
+
+ /etc/fail2ban/jail.local
+
+
 Clear all blocked addresses by restarting fail2ban.
 
 ::
