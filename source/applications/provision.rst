@@ -6,6 +6,8 @@ Provision
 Manual
 ^^^^^^^
 
+How to setup the device using the phone's web interface.
+
 * `Cisco <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_cisco.html>`_
 * `Polycom <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_polycom.html>`_
 *  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_grandstream.html>`_
