@@ -115,8 +115,6 @@ If you entered your key's correctly, you should now start getting transcriptions
 +---------------------------+----------------+
 | vm_say_date_time          | true or false  |
 +---------------------------+----------------+
-| vm_say_date_time          | true or false  |
-+---------------------------+----------------+
 | skip_greeting             | true or false  |
 +---------------------------+----------------+
 | skip_instructions         | true or false  |
