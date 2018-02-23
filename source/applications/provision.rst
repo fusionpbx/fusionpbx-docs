@@ -3,19 +3,6 @@ Provision
 ************
 
 
-Manual
-^^^^^^^
-
-How to setup the device using the phone's web interface.
-
-* `Cisco <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_cisco.html>`_
-* `Polycom <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_polycom.html>`_
-*  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_grandstream.html>`_
-*  `Yealink <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_yealink.html>`_
-*  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
-
-
-
 Automatic
 ^^^^^^^^^^
 
@@ -26,6 +13,18 @@ Auto provisioning is disabled by default. This is to give a chance to secure pro
 *  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_grandstream.html>`_
 * `Yealink <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_yealink.html>`_
 *  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_zoiper.html>`_
+
+
+Manual
+^^^^^^^
+
+How to setup the device using the phone's web interface.
+
+* `Cisco <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_cisco.html>`_
+* `Polycom <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_polycom.html>`_
+*  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_grandstream.html>`_
+*  `Yealink <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_yealink.html>`_
+*  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
 
 
 Phone Screen Capture
