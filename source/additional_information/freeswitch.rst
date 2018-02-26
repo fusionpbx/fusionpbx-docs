@@ -84,6 +84,7 @@ Freeswitch install
  mod_memcache
  mod_cidlookup
  mod_curl
+ mod_translate
 
 | Used for MP3 support
 
