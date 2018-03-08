@@ -27,6 +27,11 @@ Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
  cd /usr/src
  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/upgrade/record_path.php
  php record_path.php
+ 
+Changes to Call Center will require agents to be removed and added back to the queue.
+
+* Agent > Call Center
+* Agent ID is now the agents extension number. You will need to reassign the agent to the queue.
 
 Version 4.0 to 4.2
 ^^^^^^^^^^^^^^^^^^

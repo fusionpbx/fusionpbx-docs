@@ -8,7 +8,7 @@ Fail2ban is also used to protect SSH, FreeSWITCH, the web server as well as othe
 
 ::
  
- iptables -L
+ iptables -L -n
  
 
 To check the status of one of the fail2ban jails
@@ -16,36 +16,59 @@ To check the status of one of the fail2ban jails
 ::
 
  fail2ban-client status freeswitch-ip-tcp
- 
-This command will show
+
+
+Fail2ban configuration files are located in.
 
 ::
 
-` Status for the jail: freeswitch-ip-tcp
-` |- filter
-` |  |- File list:        /usr/local/freeswitch/log/freeswitch.log
-` |  |- Currently failed: 0
-` |  `- Total failed:     4
-` `- action
-`  |- Currently banned: 3
-`  |  `- IP list:       207.38.90.177 51.15.145.32 207.38.90.197
-`   `- Total banned:     3
+ cd /etc/fail2ban/
 
-To exclude an ip so that it isn't blocked by any filters edit the **jails.conf** file.
+
+To exclude an IP so that it isn't blocked by any filters edit the **jails.conf** file.
+
 
 ::
 
  nano /etc/fail2ban/jail.conf
 
 
-Find ignoreip = and place domain.tld or 000.000.000.000.  Just put a space between them.
+Find ignoreip and add the IP address, CIDR or DNS hostname that need to be white listed. Use a space as a delimitter between each one. Restart fail2ban to apply the changes to the ignoreip list.
 
 ::
 
- ignoreip = domain.tld 000.000.000.000 192.168.0.0/16
- 
+ ignoreip = 127.0.0.1/8 192.168.0.0/16
 
-More about whitelisting can be found at http://www.fail2ban.org/wiki/index.php/Whitelist
+
+Filters are defined in the following directory.
+
+::
+
+ /etc/fail2ban/filter.d
+
+
+Inside jail.local points to filters and defines maxretry, bantime, logpath, ports to block and more.
+
+::
+
+ /etc/fail2ban/jail.local
+
+
+Clear all blocked addresses by restarting fail2ban.
+
+::
+
+  service fail2ban restart
+
+
+Fail2ban logs the addresses that it blocks with the filter that triggered it.
+
+::
+
+  /var/log/fail2ban.log
+
+
+More information about Fail2ban can be found at http://www.fail2ban.org/wiki
 
 
 .. Note::

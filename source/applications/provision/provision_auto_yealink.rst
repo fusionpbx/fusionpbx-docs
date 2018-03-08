@@ -1,8 +1,6 @@
 Yealink Automatic Provision
 ============================
 
-Make sure that provisioning is enabled, http_auth_password is set, and http_auth_username is set on your FusionPBX install by going to the Advanced > Default Settings > Provision section.
-
 
 To auto provision Yealink
 

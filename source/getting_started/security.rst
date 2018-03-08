@@ -91,4 +91,4 @@ Use strong passwords with SSH or even better use SSH keys for better protection 
 .. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
 .. _Setup Let's Encrypt with FusionPBX: /en/latest/getting_started/lets_encrypt.html
 .. _Let's Encrypt: https://letsencrypt.org/docs
-.. _Fail2ban: /en/latest/firewall/fail2ban.html
+.. _Fail2ban: /en/latest/additional_information/fail2ban.html
