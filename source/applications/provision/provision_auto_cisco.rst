@@ -53,5 +53,7 @@ DHCP Option
 =============
 Use the DHCP Option 66 to deliver the provisioning URL to the phones without using the web interface.
 
-
+Additional Information
+=======================
 More information can also be found at https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/csbpvga/spa100-200/provisioning/guide/SPA100-200_Provisioning.pdf
+
