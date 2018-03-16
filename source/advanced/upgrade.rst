@@ -3,7 +3,18 @@ Upgrade
 **********
 
 
-The FusionPBX code is constantly evolving. Bug fixes being submitted, additions to improve security, making FusionPBX look nicer, to be more flexible, more scalable, and new features. A complete summary of the changes can be found on the github code page https://github.com/fusionpbx/fusionpbx/commits/master.  
+If you are looking to upgrade your current `version of FusionPBX to the next release version click here <http://docs.fusionpbx.com/en/latest/advanced/version_upgrade.html>`_.
+
+The FusionPBX code is constantly evolving.
+
+*  Bug fixes being submitted
+*  Additions to improve security
+*  Making FusionPBX look nicer
+*  More flexible
+*  More scalable
+*  New features
+
+A complete summary of the changes can be found on the github code page https://github.com/fusionpbx/fusionpbx/commits/master.  
 
 Go to the menu then click on Advanced and then Upgrade. This tool allows you to update the source code, update the database structure, restore the default menu and  permissions. `Click here for the Youtube video <https://youtu.be/QUB3u9pZ7ks>`_.
 
