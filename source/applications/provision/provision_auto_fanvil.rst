@@ -57,3 +57,7 @@ If you are going to use a self signed certificate you will need to adjust additi
 * Top menu click **Trusted Certificates**
 * CA Certificates: Disabled
 * Click Apply
+
+.. image:: ../../_static/images/provision/fusionpbx_provision_auto_fanvil2.jpg
+        :scale: 85%
+
