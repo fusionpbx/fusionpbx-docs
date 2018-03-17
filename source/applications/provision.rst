@@ -11,6 +11,7 @@ Auto provisioning is disabled by default. This is to give a chance to secure pro
 *  `Yealink <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_yealink.html>`_
 *  `Polycom <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_polycom.html>`_
 *  `Cisco <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_cisco.html>`_
+*  `Fanvil <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_fanvil.html>`_
 *  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_grandstream.html>`_
 *  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_auto_zoiper.html>`_
 
