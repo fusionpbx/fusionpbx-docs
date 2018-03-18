@@ -24,3 +24,20 @@ Setting up a **Htek** SIP phone through the phone's local http management portal
 
 .. image:: ../../_static/images/provision/fusionpbx_provision_auto_htek.jpg
         :scale: 85%
+
+
+Self Signed Certificates
+-------------------------
+
+Some additional settings need adjusted to provision with a self signed certificate.
+
+* Top menu click **Management**
+* Left menu click **Trusted CA**
+* Choose the following
+   * Only Accept Trusted Certificates: OFF
+   * Common Name Validation: OFF
+   * Trusted Certificates: All Certificates 
+
+
+.. image:: ../../_static/images/provision/fusionpbx_provision_auto_htek1.jpg
+        :scale: 85%
