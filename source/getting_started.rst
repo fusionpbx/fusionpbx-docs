@@ -17,6 +17,7 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
   :maxdepth: 3
   :glob:
 
+  getting_started/training.rst
   getting_started/quick_install.rst
   applications/provision.rst
   getting_started/security.rst
