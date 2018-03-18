@@ -41,5 +41,5 @@ FusionPBX offers an Admin class, Advanced class and an affordable Continuing Edu
     * Know how to upgrade to the next release version
     * Plus much more...
  
-`Come join us!  We look foreward to meeting you! <https://www.fusionpbx.com/training.php>`_
+`Come join us!  We look forward to meeting you! <https://www.fusionpbx.com/training.php>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
