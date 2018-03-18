@@ -18,8 +18,8 @@ Setting up a **Htek** SIP phone through the phone's local http management portal
   * HTTP/FTP/HTTPS UserName:
   * HTTP/FTP/HTTPS Password:
     
-* Click SaveSet
-* Autoprovision Now
+* Click **SaveSet**
+* Click **Autoprovision Now**
 
 
 .. image:: ../../_static/images/provision/fusionpbx_provision_auto_htek.jpg
