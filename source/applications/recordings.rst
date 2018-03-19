@@ -6,15 +6,8 @@ Dial '*'732 to create a recording, or (for best results) upload a 16bit 8khz/16k
 
 To view and set the pin number goto Dialplan > Dialplan Manager > Click on Recordings > pin_number=8675309 at the bottom.  
 
-
-.. image:: ../_static/images/fusionpbx_recordings.jpg
-        :scale: 85%
-
-
-
 Create a Recording
 -------------------
-
 
 1. Dial '*'732 and wait for the voice prompt
 2. Enter the password (pin_number) followed by the pound sign# 
@@ -29,7 +22,6 @@ Create a Recording
 
 Applying Recordings
 -------------------
-
 
 Once you have a recording made you can use the recordings in different area's of FusionPBX.  Custom IVR's and phrases would be the typical uses.
 

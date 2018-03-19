@@ -12,6 +12,7 @@ In the **Applications** menu (Apps) section you will find Call Block, Call Broad
   :maxdepth: 3
   :glob:
 
+  applications/bridges.rst
   applications/call_block.rst
   applications/call_broadcast.rst 
   applications/call_center.rst
