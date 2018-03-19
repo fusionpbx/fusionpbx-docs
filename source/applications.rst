@@ -20,6 +20,7 @@ In the **Applications** menu (Apps) section you will find Call Block, Call Broad
   applications/call_routing.rst
   applications/conference.rst 
   applications/conference_center.rst
+  applications/conference_controls.rst
   applications/contacts.rst
   applications/fax_server.rst
   applications/follow_me.rst
