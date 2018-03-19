@@ -13,6 +13,12 @@ Businesses of all sizes use FusionPBX daily.  We love to see folks happy saving 
 
 ------------
 
+*I've been a longtime VoIP enthusiast for years, since 2005, and I have tried several different hosted/self-hosted PBX systems. Honestly, FusionPBX wins hands down. What makes it even more amazing is the passion that the FusionPBX developers and contributors have in their software. I honestly couldn't be happier with a turn-key PBX system.
+
+**-Digital Crisis**
+
+------------
+
 *Just want to give a thankful shout out to everyone at FusionPBX that have helped in education, contribution and support. The FusionPBX team have developed a leading product. Its been a joy from day one joining this community and I look forward to the road ahead.*
 
 **-Kissvoice**
