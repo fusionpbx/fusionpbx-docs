@@ -108,7 +108,7 @@ Click "Flush Memcache", "Reload XML" and "Rescan".
  
 If you entered your key's correctly, you should now start getting transcriptions delivered in your voicemail to email and you will also see them on the Messages page.
 
-**Variables**
+**Other VM Variables**
 
 +---------------------------+----------------+
 | Name                      | Value          |
@@ -123,7 +123,11 @@ If you entered your key's correctly, you should now start getting transcriptions
 +---------------------------+----------------+
 | vm_disk_quota             | 0-3600 seconds |
 +---------------------------+----------------+
-| vm_message_ext            | mp3            |
+| vm_message_ext            | mp3            | (.wav is default, add this to get .mp3, this requires mod_shout)
++---------------------------+----------------+
+| voicemail_authorized      | true or false  | (does not require a PIN number from the calling extension)
++---------------------------+----------------+
+| vm_say_caller_id_number   | true or false  | 
 +---------------------------+----------------+
 
 
