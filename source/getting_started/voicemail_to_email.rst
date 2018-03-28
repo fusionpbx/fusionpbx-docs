@@ -8,14 +8,14 @@ Goto Advanced > Default Settings and under the ``Email`` Section. Make sure thes
 ::
 
  method			text  	smtp 	
- smtp_auth		var  	true  	
- smtp_from		var  	username@gmail.com 	  	
- smtp_from_name	var  	Voicemail	  	
- smtp_host		var  	smtp.gmail.com 	  	
- smtp_password	var  	******* 	  	
+ smtp_auth		text  	true  	
+ smtp_from		text  	username@gmail.com 	  	
+ smtp_from_name	text  	Voicemail	  	
+ smtp_host		text  	smtp.gmail.com 	  	
+ smtp_password	text  	******* 	  	
  smtp_port		numeric  	587	
- smtp_secure		var  	tls	
- smtp_username	var  	username@gmail.com 
+ smtp_secure		text  	tls	
+ smtp_username	text  	username@gmail.com 
 
 
 To see if there are any failed email attempts goto Status > Emails.  Once the issue causing the emails to fail is found you can click to resent them.
