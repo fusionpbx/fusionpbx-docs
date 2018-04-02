@@ -283,6 +283,12 @@ Converts voicemails to text.
 Make and receive video calls with a web browser.
 
 
+Additional Features
+-------------------
+
+This is not a comprehensive set of features. A complete list would be many times larger. More will be added as time permits.
+
+
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
 .. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplan.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
