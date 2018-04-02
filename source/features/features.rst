@@ -62,10 +62,10 @@ Call Pickup
 
 For a particular extension or any extension that is currently ringing.
 
-Call Queuing
+`Queues`
 --------------
 
-Load calls into queues so they can be answered in the order they came into the queue. (see `Queues`_)
+Load calls into queues so they can be answered in the order they came into the queue.
 
 Call Recordings
 -----------------
@@ -187,7 +187,6 @@ Gateways provide access into other voice networks. These can be voice providers 
 
 A way to login to another phone device and temporarily or permanently become another extension. This is sometimes known as 'hoteling' and 'extension mobility'
 
-
 `Inbound and Outbound Call Routing`_
 ----------------------------------
 
@@ -197,12 +196,6 @@ Routes used to receive or send calls in or out of FusionPBX.
 ------------------------------
 
 Create a structured interactive voice prompt for callers to use. Uses FreeSWITCH IVR and delivered from Database on Demand. Cached to memcache with IVR Menu Options all editable at once. Also works with Text to Speech.
-
-
-`Queues`_
-------------
-
-Like Call Center but more flexable.
 
 `Music on Hold`_
 ------------------
@@ -233,7 +226,6 @@ Send a call to an unused "park" extension.  The caller listens to music on hold 
 -----------
 
 Using xml handler and xml from file system you can string together multiple voice files.
-
 
 Provider Setup
 ----------------
