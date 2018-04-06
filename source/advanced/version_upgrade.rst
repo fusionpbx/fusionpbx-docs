@@ -31,6 +31,7 @@ Version 4.2 to 4.4
  local_extension
 
 Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
+
 - Update old recordings set the record_name and record_path.
 
 ::
@@ -39,7 +40,7 @@ Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/upgrade/record_path.php
  php record_path.php
  
-Need to edit and save all Call Center Queues in order to update the dialplan. 
+- Resave all Call Center Queues to update each call center queue dialplan. 
 
 
 Version 4.0 to 4.2
