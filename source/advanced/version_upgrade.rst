@@ -40,7 +40,7 @@ Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/upgrade/record_path.php
  php record_path.php
  
-- Resave all Call Center Queues to update each call center queue dialplan. 
+- Resave all Call Center Queues to update each call center queue dialplan. Then restart mod call center or FreeSWITCH.
 
 
 Version 4.0 to 4.2
