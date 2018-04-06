@@ -9,8 +9,19 @@ Version Upgrade can take several steps to perform. Below will show how to upgrad
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
 
-1. Normal upgrade procedure update the source code, schema, menu and permissions. 
-2. The following dialplans need to be updated. Do this by deleting the dialplans on all domains and then run Menu -> Advanced > Upgrade -> App Defaults.
+- Switch branches
+
+::
+
+ mv /var/www/fusionpbx /var/www/fusionpbx-4.2
+ cd /var/www && git clone -b 4.4 https://github.com/fusionpbx/fusionpbx.git
+ chown -R www-data:www-data /var/www/fusionpbx
+
+- Advanced -> Upgrade procedure update the source code, schema, menu and permissions. 
+
+- The following dialplans need to be updated. Do this by deleting the dialplans on all domains and then run Menu -> Advanced 
+
+- Upgrade -> App Defaults.
 
 ::
 
@@ -20,7 +31,7 @@ Version 4.2 to 4.4
  local_extension
 
 Then run Advanced -> Upgrade -> App Defaults to get new up to date diaplans.
-3. Update old recordings set the record_name and record_path.
+- Update old recordings set the record_name and record_path.
 
 ::
 
