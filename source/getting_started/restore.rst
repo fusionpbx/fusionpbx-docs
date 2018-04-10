@@ -39,10 +39,10 @@ It's always good to have a restore method of a backup in place.  Here are the st
 
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/freeswitch/ /etc
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/var/lib/freeswitch/storage /var/lib/freeswitch
- rsync -avz -e 'ssh -p 22' root@$ssh_server:/var/lib/freeswitch/scripts /var/lib/freeswitch
- rsync -avz -e 'ssh -p 22' root@$ssh_server:/var/lib/freeswitch/sounds /var/lib/freeswitch
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/var/lib/freeswitch/recordings /var/lib/freeswitch
-
+ rsync -avz -e 'ssh -p 22' root@$ssh_server:/usr/share/freeswitch/scripts /usr/share/freeswitch
+ rsync -avz -e 'ssh -p 22' root@$ssh_server:/usr/share/freeswitch/sounds /usr/share/freeswitch
+ 
  echo "Restoring the Backup"
  #extract the backup from the tgz file
  #tar -xvpzf /var/backups/fusionpbx/backup_$now.tgz -C /
