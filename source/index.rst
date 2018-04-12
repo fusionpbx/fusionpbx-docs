@@ -6,6 +6,7 @@
 
 |
 
+
 Welcome to FusionPBX Docs
 =========================
 
@@ -16,12 +17,12 @@ An open source project that provides a customizable and
 flexible web interface to the very powerful and highly scalable
 multi-platform voice switch called `FreeSWITCH`_.
 
-FusionPBX will run on a variety of operating systems (Optimized for Debian 8) and
+FusionPBX will run on a variety of operating systems (Optimized for Debian 8+) and
 hardware of your choice. FusionPBX provides a GUI for unlimited
 extensions, voicemail-to-email, music on hold, call parking, analog
 lines or high density T1/E1 circuits, and many other features. FusionPBX
 provides the functionality that business need and provides corporate
-level phone system features to small, medium and large businesses.
+level phone system features to small, medium and large businesses. `Click here for the FusionPBX youtube channel`_ .
 
 Benefits of FusionPBX
 ---------------------
@@ -35,17 +36,17 @@ Benefits of FusionPBX
 `FusionPBX Features`_
 --------------------
 
-+-------------------------+-----------------------+------------------------------+------------------------------------------+
-| **Call Block**          | **Call Broadcast**    | **Call Flows**               |       **Call Center**                    |
-+-------------------------+-----------------------+------------------------------+------------------------------------------+
-| **Call Detail Records** | **Conference Center** |    **Contacts**              |      `Fax Server`_                       |
-+-------------------------+-----------------------+------------------------------+------------------------------------------+
-| **Follow-Me**           | **Hot Desking**       |    `IVR Menus`_              |      `Ring Groups`_                      |
-+-------------------------+-----------------------+------------------------------+------------------------------------------+
-| **Multi-Tenant**        | **Music on Hold**     |    **Queues**                |      `Recordings`_                       |
-+-------------------------+-----------------------+------------------------------+------------------------------------------+
-| `Time Conditions`_      | **WebRTC ready**      |    **Voicemail**             |      `and lots more...`_                 |
-+-------------------------+-----------------------+------------------------------+------------------------------------------+
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
+| `Call Block`_           | `Call Broadcast`_     | `Call Flows`_                   |       `Call Center`_                     |
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
+| `Call Detail Records`_  | `Conference`_         |    `Contacts`_                  |      `Fax Server`_                       |
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
+| `Follow Me`_            | `Hot Desking`_        |    `IVR Menus`_                 |      `Ring Groups`_                      |
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
+| `Multi-Tenant`_         | `Music on Hold`_      |    `Queues`_                    |      `Recordings`_                       |
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
+| `Time Conditions`_      | `WebRTC ready`_       |    `Voicemail`_                 |      `and lots more...`_                 |
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
 
 
 Our Ecosystem
@@ -58,26 +59,37 @@ Our Ecosystem
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
+.. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
 .. _IVR Menus: /en/latest/applications/ivr.html
-.. _Call Broadcast: Call_Broadcast
-.. _Call Block: Call_Block
-.. _Call Detail Records: Call_Detail_Records
+.. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
+.. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
+.. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
+.. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
+.. _Call Center: /en/latest/applications/call_center.html
 .. _Call Forward: Call_Forward
-.. _Call Flows: Call_Flows
+.. _Call Flows: /en/latest/applications/call_flows.html
+.. _Follow Me: /en/latest/applications/follow_me.html
+.. _Music on Hold: /en/latest/applications/music_on_hold.html
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
-.. _Queues: Queues
+.. _Hot Desking: /en/latest/accounts/hot_desking.html
+.. _Queues: /en/latest/applications/queues.html
 .. _Recordings: /en/latest/applications/recordings.html
 .. _Call Recordings: /en/latest/applications/recordings.html
+.. _Contacts: /en/latest/applications/contacts.html
 .. _Active Calls: Active_Calls
 .. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
 .. _Fax Server: /en/latest/applications/fax_server.html
 .. _Time Conditions: /en/latest/applications/time_conditions.html
-.. _Ring Groups: /en/latest/applications/ring_groups.html
+.. _Ring Groups: /en/latest/applications/ring_group.html
 .. _Recordings: /en/latest/applications/recordings.html
+.. _Voicemail: /en/latest/applications/voicemail.html
+.. _Multi-Tenant: /en/latest/advanced/domains.html
+.. _WebRTC ready: /en/latest/applications_optional/webrtc.html
 .. _and lots more...: /en/latest/features/features.html
 .. _FusionPBX Features: /en/latest/features/features.html
+
 
 
 .. toctree::
@@ -86,7 +98,7 @@ Our Ecosystem
    getting_started.rst
    home.rst
    accounts.rst
-   dialplan.rst
+   dialplans.rst
    applications.rst
    status.rst
    advanced.rst

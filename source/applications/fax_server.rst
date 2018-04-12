@@ -2,7 +2,7 @@
 Fax Server
 ************
 
-To receive a FAX setup a fax extension and then direct the incoming to it.
+To receive a FAX setup a fax extension and then direct the incoming to it. `Click here for the Youtube video <https://youtu.be/AJHcle2U3n4>`_
 
 
 
@@ -60,7 +60,33 @@ Click **PDF** to view the fax or right click on **PDF** and left click on **Save
         :scale: 85%
 
 
-Trouble Shooting Tips
+
+Fax ATA
+=========
+
+To connect to a fax machine with an ATA you will most likely need to adjust settings in the ATA web interface and in FusionPBX.
+
+Create an extension for the FAX machine. You can *optionally* set **bypass media to true** under advanced in the extension settings. 
+
+
+FAX Default Settings
+=====================
+
+Goto Menu -> Advanced -> Default Settings then category Fax
+
+* Variables are used as defaults for the dialplan for sending and receiving faxes
+
+.. image:: ../_static/images/fax_variables.jpg
+        :scale: 85%
+
+* *fax_enable_t38_request=false* (Can be true or false)
+* *ignore_early_media=true* (Can be true or false)
+* Some carriers it's better for fax_enable_t38_request=true and for some its better for it to be false.
+* It's best not to make an assumption and to do testing with different settings to get the best results for your particular carrier.
+* The variable *fax_enable_t38_request=false* will send a T38 reinvite when a fax tone is detected. In some cases the re-invite always fails for some carriers which is why it is default to false.
+
+
+Troubleshooting Tips
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Faxing will fail at times. Fax Server should automatically try different methods for sending. There are different combinations like;

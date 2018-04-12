@@ -4,28 +4,38 @@ Backup
 
 |
 
-It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX. This is one of the many ways you can backup.
+It's always good to have a backup method in place.  Here are the steps to a basic backup method with FusionPBX.
 
-Command line settings
-^^^^^^^^^^^^^^^^^^^^^^
+Command Line
+^^^^^^^^^^^^^^
 
-**From the command line.**
+Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz" with your database password. You can get the password from /etc/fusionpbx/config.php.
+
 
 ::
  
  
- cd /usr/src/fusionpbx-install.sh
- git pull
- cd debian/resources/backup/
+ cd /etc/cron.daily
  nano fusionpbx-backup.sh
  
- You will need to provide the database password
- Edit line #3 with the database passsword
- Save settings and exit
+ #!/bin/sh
+ now=$(date +%Y-%m-%d)
+ echo "Server Backup"
+ export PGPASSWORD="zzzzzzzz"
+ mkdir -p /var/backups/fusionpbx/postgresql
+ #delete postgres logs older than 7 days
+ find /var/log/postgresql/postgresql-9.4-main* -mtime +7 -exec rm {} \;
+ #delete freeswitch logs older 3 days
+ find /usr/local/freeswitch/log/freeswitch.log.* -mtime +2 -exec rm {} \;
+ pg_dump --verbose -Fc --host=$database_host --port=$database_port -U fusionpbx fusionpbx --schema=public -f /var/backups/fusionpbx/postgresql/fusionpbx_pgsql_$now.sql
+ echo "Backup Complete";
  
+To save the file press ctrl + x then y to save it.
+
+
 You should have the script ready to execute. (Default the script will use FreeSWITCH package paths.  If you have an older install using source be sure to change this by commenting the package line #22 and uncomment the source line #25.)
  
-Crontab settings
+Crontab
 ^^^^^^^^^^^^^^^^^
 
 Setting crontab -e
@@ -35,21 +45,15 @@ Setting crontab -e
  crontab -e
  Choose 1 for nano
  Goto the last blank line and paste in the next line.
- 0 0 * * * bash /etc/cron.daily/fusionpbx-backup.sh
+ 0 0 * * * /bin/sh /etc/cron.daily/fusionpbx-backup.sh
  press enter then save and exit.
  
- cd /usr/src/fusionpbx-install.sh/debian/resources/backup/
- cp fusionpbx-backup.sh /etc/cron.daily
- chmod 755 fusionpbx-backup.sh
 
 
-Once this is complete you will have the backup ready to execute by ./fusion-backup.sh or from the daily cron job. 
+Once this is complete you will have the backup ready to execute by ./fusionpbx-backup.sh or from the daily cron job. 
 
-Gui settings
-^^^^^^^^^^^^^
-
-**From the Gui.**
-
+Web Interface (optional)
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 **FreeSWITCH Package install paths.**
 
@@ -67,7 +71,7 @@ Gui settings
  path		array  /var/www/fusionpbx	             	 	True 	fusionpbx
  path		array  /var/lib/freeswitch/storage	          	True 	storage
  path		array  /var/lib/freeswitch/recordings			True 	recordings
- path		array  /etc/freeswitch/conf 				True 	conf 
+ path		array  /etc/freeswitch 				True 	conf 
  
  Click "Reload" at the top of the page.
 
@@ -81,7 +85,7 @@ Gui settings
  
  Settings for FreeSWITCH source backup paths.
  
- path           array   /var/backups/fusionpbx/postgresql       True    postgresql
+ path  array   /var/backups/fusionpbx/postgresql       True    postgresql
  path		array  	/usr/local/freeswitch/scripts 		True 	scripts  	 	
  path		array  	/usr/local/freeswitch/recordings 	True 	recordings  	
  path		array  	/var/www/fusionpbx 		        True 	fusionpbx  	
@@ -93,7 +97,7 @@ Gui settings
 Download Backups
 ^^^^^^^^^^^^^^^^^
 
-From Advanced > Backup you can download the backup also. 
+From Advanced > Backup you can download the backup from the web interface this is optional. You would need to make sure that PHP doesn't timeout while compressing your backup and that it has enough access to RAM to do the work.
 
 **FreeSWITCH Source install paths.**
 

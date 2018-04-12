@@ -59,7 +59,7 @@ Show iptable rules
 Show line numbers
 =================
 
-``iptables -L -v --line-numbers``
+``iptables -L -n -v --line-numbers``
 
 Delete a line
 =============
@@ -67,6 +67,13 @@ Delete a line
 Delete line 2
 
 ``iptables -D INPUT 2``
+
+Clear iptables rules
+================
+
+| ``iptables -P INPUT ACCEPT``
+| ``iptables -F``
+| ``iptables -X``
 
 Block IP address
 ================
@@ -81,3 +88,11 @@ Debian / Ubuntu
 | ``apt-get install iptables-persistent``
 | ``service iptables-persistent save``
 | ``dpkg-reconfigure iptables-persistent``
+
+Iptables Configuration
+======================
+
+Debian / Ubuntu
+
+| ``cd /etc/iptables``
+

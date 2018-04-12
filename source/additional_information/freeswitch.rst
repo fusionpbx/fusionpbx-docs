@@ -15,7 +15,7 @@ Freeswitch install
 ::
 
  cd /usr/src
- git clone -b v1.4 https://freeswitch.org/stash/scm/fs/freeswitch.git
+ git clone -b v1.6 https://freeswitch.org/stash/scm/fs/freeswitch.git
  cd freeswitch
  ./bootstrap.sh
 
@@ -45,8 +45,8 @@ Freeswitch install
  
  cd /usr/src
  wget http://files.freeswitch.org/freeswitch-1.6.6.zip
- unzip freeswitch-1.6.6.zip
- cd freeswitch-1.6.6
+ unzip freeswitch-1.6.20.zip
+ cd freeswitch-1.6.20
 
 | **Ubuntu Dependencies**
 
@@ -84,6 +84,7 @@ Freeswitch install
  mod_memcache
  mod_cidlookup
  mod_curl
+ mod_translate
 
 | Used for MP3 support
 

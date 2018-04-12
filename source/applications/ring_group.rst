@@ -6,7 +6,7 @@ Ring Group
 
 A ring group is a set of destinations that can be called with a ring strategy.
 
-To add a ring group click the plus.
+To add a ring group click the plus. `Click for the youtube video <https://youtu.be/sULuuLOSvLQ>`_ .
 
 .. image:: ../_static/images/fusionpbx_ring_group.jpg
         :scale: 85%

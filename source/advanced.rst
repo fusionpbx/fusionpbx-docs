@@ -8,15 +8,21 @@ Advanced
 
 | Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
 
-.. image:: _static/images/fusionpbx_advanced_menu.jpg
-        :scale: 85%
-        :align: left
+
 
 
 .. toctree::
   :maxdepth: 3
   :glob:
 
+  advanced/adminer.rst
+  advanced/access_controls.rst
+  getting_started/backup.rst
+  advanced/command.rst
   advanced/domains.rst
+  advanced/group_manager.rst
+  advanced/sip_profiles.rst
   advanced/upgrade.rst
+  #advanced/version_upgrade.rst
+
 

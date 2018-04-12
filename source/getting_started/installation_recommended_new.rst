@@ -1,8 +1,61 @@
 *************
-New Install
+OLD Install
 *************
 .. image:: ../_static/images/logo_right.png
         :scale: 85% 
+
+|
+|
+|
+|
+|
+**Please follow the link below for the newest install guide**
+
+http://docs.fusionpbx.com/en/latest/getting_started/quick_install.html 
+
+
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+
+
+
+
+
+
+
+
+
+New Install Video https://www.youtube.com/embed/oioW1i8bieM
+
+|
 
 Welcome to the FUSIONPBX getting started guide.  In this section we will show how to install FUSIONPBX.  FUSIONPBX can be used on multiple different operating systems, databases, and web servers.  In this guide we will show on Debian 8 (Jessie), Postgresql and NGINX.  **Please note to have a clean install.  The install script will install everything but the Operating System**
     

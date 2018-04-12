@@ -1,30 +1,20 @@
 **********
-IVR's
+IVR Menu
 **********
 
-Welcome to the adding IVR section.  Here you will find how to add IVR's.
-
-|
-
-Click on **Apps** then **IVR Menu**
+Welcome to the adding IVR section.  Here you will find how to add IVR's. `Click here for the youtube video`_
 
 .. image:: ../_static/images/fusionpbx_ivr.jpg
         :scale: 85%
 
-|
 
-Then click the
-
- .. image:: ../_static/images/plus.png
-        :scale: 85%
-
-on the right. 
-
+* Click on **Apps** then **IVR Menu**
+* Click the Plus icon on the right
+ 
 
 .. image:: ../_static/images/fusionpbx_ivr1.jpg
-        :scale: 85%
+         :scale: 85%
 
-|
 
 *  *Options in* **bold** *are mandatory.*
 *  **Name:** Enter a name for the IVR menu
@@ -39,13 +29,11 @@ on the right.
 *  Caller ID Name Prefix: Set a prefix on the caller ID name.
 *  Enabled: set the status of the IVR Menu.
 
-|
 
 
 .. image:: ../_static/images/fusionpbx_ivr2.jpg
         :scale: 85%
 
-|
 
 You can get very creative with IVR's and are almost limitless in possibilities. In the basic example below we;
 
@@ -56,21 +44,18 @@ You can get very creative with IVR's and are almost limitless in possibilities. 
 *  Exit Action to the extension 109 (after hours)
 *  **Direct Dial** to False and Ring back to Default.
 
-|
 
 
 .. image:: ../_static/images/fusionpbx_ivr3.jpg
         :scale: 85%
 
-|
 
 You now have a list of IVR's to go back to and edit or delete as needed.
 
-|
 
 
 .. image:: ../_static/images/fusionpbx_ivr4.jpg
         :scale: 85%
 
-|
-|
+
+.. _Click here for the youtube video: https://youtu.be/Xnc9ExYKR8s
