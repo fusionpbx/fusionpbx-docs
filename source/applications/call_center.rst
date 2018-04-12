@@ -22,6 +22,21 @@ Call Center Queues
 
 
 
+Call Center Strategies
+=========================
+
+
+agent-with-least-talk-time:  Rings the Agent will ring that has the least time talking.
+agent-with-fewest-calls:  Agent will ring that has the least calls.
+longest-idle-agent:  The agent will ring who idles the longest depending on their tier level.
+ring-all:  All agents ring simultaneously.
+random:  Rings Agents will ring randomly in not particular order.
+ring-progressively:  Agents will ring the same as top-down and will progress until each agent ends up ringing.
+round-robin:  Will ring the next agent available in line.
+sequentially-by-agent-order:  Agents will ring in a sequence by the tier and the tiers order.
+top-down:  Agent rings in order starting from one.
+
+
 Call Center Agents
 ====================
 
