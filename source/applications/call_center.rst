@@ -61,4 +61,29 @@ List of call center agents.
 *  Click the plus icon on the top right to add agents
 
 
+Max Wait Time
+==============
+
+A value of 0 is the default and equals an infinate amount of time.  Any other numeric value is calculated in seconds.
+
+Max Wait Time with No Agent
+============================
+
+Enter the max wait time with no agent. FusionPBX sets the default to 90 seconds and the **Timeout Action** will be used if there are no agents available. 
+
+Max Wait Time with No Agent Time Reached
+=========================================
+
+Enter the max wait time with no agent. FusionPBX sets the default to 30 seconds and the **Timeout Action** will be used if there are no agents available.
+
+Timeout Action
+===============
+
+Set the action to perform when the max wait time is reached.
+
+Tier Rules Apply
+=================
+
+* **true:**Set the tier rule rules apply to true.  The defined tiers will be used.
+* **False:** Set the tier rule rules apply to false.  All tiers will be used.
 
