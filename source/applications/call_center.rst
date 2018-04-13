@@ -97,4 +97,12 @@ Tier Rule Wait Second
 Agent Call Center Login
 ==================
 
-Agents can login to call center with *22 from the phone or via the FusionPBX web interface.
+Agents can login to call center with *22 from the phone or via the FusionPBX web interface. Admin and Super Admin accounts can also log other agents in or out.
+
+*  Login then go to Status > `Agent Status`_
+
+
+
+
+
+.. _Agent Status: http://docs.fusionpbx.com/en/latest/status/agent_status.html
