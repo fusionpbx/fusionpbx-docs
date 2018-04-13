@@ -25,7 +25,7 @@ Call Center Queues
 Call Center Strategies
 =========================
 
-.. image:: ../_static/images/call center/fusionpbx_call_center_strategy.jpg
+.. image:: ../_static/images/call_center/fusionpbx_call_center_strategy.jpg
         :scale: 85%
 
 | **agent-with-least-talk-time:**  Rings the Agent will ring that has the least time talking.
