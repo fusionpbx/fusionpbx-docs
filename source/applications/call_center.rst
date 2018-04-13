@@ -39,6 +39,13 @@ Call Center Strategies
 | **top-down:**  Agent rings in order starting from one.
 
 
+Time base score
+=================
+
+* **Queue:** Caller in queue time will start.  If the caller goes to another queue the time will start over.
+* **System:** Caller in queue will have their wait calculated as soon as they enter the system.  If a caller chooses the wrong queue, when they get to the correct queue the timer won't start over again.
+
+
 Call Center Agents
 ====================
 
