@@ -29,15 +29,15 @@ Call Center Strategies
         :scale: 85%
  
 
-* **agent-with-least-talk-time:**  Rings the Agent will ring that has the least time talking.
-* **agent-with-fewest-calls:**  Agent will ring that has the least calls.
-* **longest-idle-agent:**  The agent will ring who idles the longest depending on their tier level.
-* **ring-all:**  All agents ring simultaneously.
-* **random:**  Rings Agents will ring randomly in not particular order.
-* **ring-progressively:**  Agents will ring the same as top-down and will progress until each agent ends up ringing.
-* **round-robin:**  Will ring the next agent available in line.
-* **sequentially-by-agent-order:**  Agents will ring in a sequence by the tier and the tiers order.
-* **top-down:**  Agent rings in order starting from one.
+* **Agent With Least Talk Time:**  Rings the Agent will ring that has the least time talking.
+* **Agent With Fewest Calls:**  Agent will ring that has the least calls.
+* **Longest Idle Agent:**  The agent will ring who idles the longest depending on their tier level.
+* **Ring All:**  All agents ring simultaneously.
+* **Random:**  Rings Agents will ring randomly in not particular order.
+* **Ring Progressively:**  Agents will ring the same as top-down and will progress until each agent ends up ringing.
+* **Round Robin:**  Will ring the next agent available in line.
+* **Sequentially By Agent Order:**  Agents will ring in a sequence by the tier and the tiers order.
+* **Top Down:**  Agent rings in order starting from one.
 
 
 Time base score
@@ -94,4 +94,7 @@ Tier Rule Wait Second
 * **False:** **Tier Rule Wait Multiply Level** is marked false then after the set ammount of seconds pass the tiers in order will execute with no wait.
   
 
+Agent Call Center Login
+==================
 
+Agents can login to call center with *22 from the phone or via the FusionPBX web interface.
