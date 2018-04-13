@@ -20,7 +20,18 @@ Call Center Queues
 
 *  Once a Queue is created click the edit pencil icon on the right.  At the top right you can view, stop, start, restart and save the queue
 
+Call Center Agents
+====================
 
+List of call center agents.
+
+
+.. image:: ../_static/images/fusionpbx_call_center_agents.jpg
+        :scale: 85%
+
+
+*  From Apps > Call Center click Agents at the top right to access Call Center Agents
+*  Click the plus icon on the top right to add agents
 
 Call Center Strategies
 =========================
@@ -38,19 +49,6 @@ Call Center Strategies
 * **Round Robin:**  Will ring the next agent available in line.
 * **Sequentially By Agent Order:**  Agents will ring in a sequence by the tier and the tiers order.
 * **Top Down:**  Agent rings in order starting from one.
-
-Call Center Agents
-====================
-
-List of call center agents.
-
-
-.. image:: ../_static/images/fusionpbx_call_center_agents.jpg
-        :scale: 85%
-
-
-*  From Apps > Call Center click Agents at the top right to access Call Center Agents
-*  Click the plus icon on the top right to add agents
 
 Agents
 =========
