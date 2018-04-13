@@ -84,6 +84,12 @@ Set the action to perform when the max wait time is reached.
 Tier Rules Apply
 =================
 
-* **true:**Set the tier rule rules apply to true.  The defined tiers will be used.
+* **true:** Set the tier rule rules apply to true.  The defined tiers will be used.
 * **False:** Set the tier rule rules apply to false.  All tiers will be used.
+
+Tier Rule Wait Second
+======================
+
+The ammount of seconds the caller waits until the next tier.  This value will increase(multiply) if **Tier Rule Wait Multiply Level** is marked true.  **Tier Rule Wait Multiply Level** is marked false then after the set ammount of seconds pass the tiers in order will execute with no wait.
+
 
