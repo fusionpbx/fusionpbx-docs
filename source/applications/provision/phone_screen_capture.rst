@@ -15,7 +15,7 @@ This feature is working on all snom desktop phones. For snom 300 this feature is
 Cisco/Linksys SPA 50x and SPA 30x
 ==================================
 
-1. Direct your broswer to: http://IP_address_of_phone/admin/screendump.bmp
+1. Direct your browser to: http://IP_address_of_phone/admin/screendump.bmp
 
 2. Use the browser to save the file as: anyname.bmp 
 
