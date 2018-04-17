@@ -1,11 +1,33 @@
-##############
-Password Reset
-##############
+#######################
+Current Password Reset
+#######################
 
 
-The steps below are outdated but useful for older installations. `Click here for the new youtube video on password recovery. <https://youtu.be/YrlfscQ_3ew>`_ 
+ `Click here for the new youtube video on password recovery. <https://youtu.be/YrlfscQ_3ew>`_ 
 
-| Here some rough steps to change the password of the database. The password can only be changed and not recovered.
+The current method to changing the superadmin password is actually to make a new superadmin user name and password.
+
+1. Move the config.php file temporarily.
+
+::
+
+ cd /etc/fusionpbx
+ mv config.php config1.php
+
+|
+2. Go to the FusionPBX install login page.  This will put FusionPBX into a recovery mode.
+
+.. image:: ../_static/images/install_lang_new.jpg
+        :scale: 85%
+|
+|
+
+**Old Password Reset**
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+| The steps below are outdated but useful for older installations up to version 4.0. Here are some rough steps to change the password of the database. The password can only be changed and not recovered.
 
 |
 
