@@ -4,7 +4,7 @@ Polycom Automatic Provision
 
 To auto provision Polycom
 
-* Login to the phone. (Defauly user is admin and default password is 456)
+* Login to the phone. (Default user is admin and default password is 456)
 * Go to the top menu an choose Utilities > Phone backup & restore. (Always good to start with factory defaults)
 
 
