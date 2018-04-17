@@ -18,14 +18,14 @@ The current method to changing the superadmin password is actually to make a new
  mv config.php config1.php
 
 |
-2. Go to the FusionPBX install login page.  This will put FusionPBX into a recovery mode.
+2. Go to the FusionPBX install login page.  This will put FusionPBX into a recovery mode.  Choose the language for your region and **click next.**
 
 .. image:: ../_static/images/install_lang_new.jpg
         :scale: 85%
 |
 
 
-3. Make sure FreeSWITCH is running.  If it is, the fields will be populated like they are in the image below.  The paths will vary depending on operating system and method of FreeSWITCH installation.  **Click Next**
+3. Make sure FreeSWITCH is running.  If it is, the fields will be populated like they are in the image below.  The paths will vary depending on operating system and method of FreeSWITCH installation.  **Click next**
 
 
 .. image:: ../_static/images/fusionpbx_detect_freeswitch.jpg
