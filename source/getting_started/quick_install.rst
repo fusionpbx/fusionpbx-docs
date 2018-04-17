@@ -21,13 +21,8 @@ Paste the following commands in the console window **one line at a time**.
 
 ::
      
- apt-get update && apt-get upgrade -y --force-yes
- apt-get install -y --force-yes git
- cd /usr/src
- git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
- chmod 755 -R /usr/src/fusionpbx-install.sh
- cd /usr/src/fusionpbx-install.sh/debian
- ./install.sh
+wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh;
+cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
      
 |
 
