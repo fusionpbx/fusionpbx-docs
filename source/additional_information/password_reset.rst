@@ -20,6 +20,51 @@ The current method to changing the superadmin password is actually to make a new
 .. image:: ../_static/images/install_lang_new.jpg
         :scale: 85%
 |
+
+
+3. Make sure FreeSWITCH is running.  If it is, the fields will be populated like they are in the image below.  The paths will vary depending on operating system and method of FreeSWITCH installation.  **Click Next**
+
+
+.. image:: ../_static/images/fusionpbx_detect_freeswitch.jpg
+        :scale: 85%
+
+
+
+4.  In this step, you create what you want for the new superadmin user and password.  It has to be a user and password that **does not already exist.**
+
+
+.. image:: ../_static/images/fusionpbx_password_recovery.jpg
+        :scale: 85%
+
+
+5. Database Host, Database Port, Database name should be pre filled.  To provide the Database Username and Database Password you will have to locate those in the config.php file that we moved eariler. The code block below shows an easy way to retrieve the database password. Once those are filled in click **next.**
+
+
+::
+ 
+ cd /etc/fusionpbx
+ cat config1.php | grep password
+        $db_password = 'databasepasswordfromconfig.php';
+
+
+
+.. image:: ../_static/images/fusionpbx_database_configuration.jpg
+        :scale: 85%
+
+
+
+-----------------------------------------------------
+
+|
+
+|
+
+
+|
+
+|
+
+
 |
 
 **Old Password Reset**
