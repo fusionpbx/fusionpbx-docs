@@ -13,54 +13,54 @@ Extensions
 *  Voicemail Password 	
     Enter the numeric voicemail password here.
 *  Account Code 	
-    Enter the account code here.
-*  Effective Caller ID Name 	
-    Enter the internal caller ID name here.
+    Used with billing systems if you don't have a billing system then its optional.
+*  Effective caller ID Name 	
+    Internal Caller ID name
 *  Effective Caller ID Number 	
-    Enter the internal caller ID number here.
+    Internal caller ID number usually set to the extension number.
 *  Outbound Caller ID Name 	
-    Enter the external (public) caller ID name here.
+    Used by the outbound route for external caller ID name. Business or Organization typically is set here.
 *  Outbound Caller ID Number 	
-    Enter the external (public) caller ID number here.
+    Used by the outbound route for external caller ID number here. Business or Organization number goes here.
 *  Emergency Caller ID Name 	
-    Enter the emergency caller ID name here.
+    This is used when calling out to an emergency service like 911.
 *  Emergency Caller ID Number 	
-    Enter the emergency caller ID number here.
+    This is used when calling out to an emergency service like 911.
 *  Directory Full Name 	
-    Enter the first name followed by the last name.
+    The first and last name used in the directory. You can call that directory with *411
 *  Directory Visible 	
     Select whether to hide the name from the directory.
 *  Directory Extension Visible 	
     Select whether announce the extension when calling the directory.
 *  Limit Max 	
-    Enter the max number of outgoing calls for this user.
+    Set max number of outgoing calls for this user.
 *  Limit Destination 	
-    Enter the destination to send the calls when the max number of outgoing calls has been reached.
+    Set the destination to send the calls when the max number of outgoing calls has been reached.
 *  Voicemail Enabled 	
-    Enable/disable voicemail for this extension.
+    Enable or disable voicemail for this extension.
 *  Voicemail Mail To 	
-    Enter the email address to send voicemail to (optional).
+    The email address for sending voicemail to email.
 *  Voicemail File 	
-    Select a listening option to include with the email notification.
+    Select whether to send the voicemail as an attachment or as a link in the email.
 *  Voicemail Keep Local 	
     Choose whether to keep the voicemail in the system after sending the email notification.
 *  Missed Call 	
-    Select the notification type, and enter the appropriate destination.
+    Set the missed call to true and set the email address if you want to receive an email for missed calls that were routed through the dialplan to and was not answered by the extension.
 *  Toll Allow 	
-    Enter the toll allow value here. (Examples: domestic,international,local)
+    Enter the toll allow value here. (Examples: domestic,international,local) This can be set to any name you want it sets a variable that can be a condition on the outbound routes.
 *  Call Timeout 	
-    Enter the call timeout.
+    Set the timeout for the call ringing.
 *  Call Group 	
-    Enter the user call group here. Groups available by default: sales, support, billing. These are just example you can use any group names you would like.
+    You can define any call group you want the following groups are examples: sales, support, billing. These are used for group intercept or calls can be sent to the call group.
 *  Call Screen 	
-    Choose whether to enable or disable call screening.
+    Call screen if set will ask the caller to identify themselves their response will be recorded and offered to the person reciving the call.
 *  Record 	
-    Choose whether to record local, inbound, outbound, or all.
+    Whether to record local, inbound, outbound, or all calls that were sent directly to this extension.
 *  Hold Music 	
-    Select the Music on Hold Category here.
+    Select music or ring tones that will be used for music on hold for this extension.
 *  Context 	
-    Enter the user context here. The context is set by default to match the domain name. It is usually correct by default and doesn't need to be changed. 	
+    The context is set by default to match the domain name or IP addres. It is usually correct by default and doesn't need to be changed in most cases.	
 *  Enabled
-    Set the status of the extension.
+    Whethe the extension is enabled or disabled.
 *  Description
-    Set a description for the extension.
+    A description for the extension.
