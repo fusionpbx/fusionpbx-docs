@@ -8,7 +8,7 @@ Current Password Reset
 The current method to changing the superadmin password is actually to make a new superadmin user name and password.
 
 .. note::
-       In older installations of FusionPBX condig.php is located in /var/www/fusionpbx/resources/
+       In older installations of FusionPBX config.php is located in /var/www/fusionpbx/resources/
 
 1. Move the config.php file temporarily.
 
