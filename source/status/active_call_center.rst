@@ -19,4 +19,4 @@ From here you can view status, evesdrop on the call, transfer the call or click 
 Click to learn more about Call Center. Applications > `Call Center`_
 
 
-.. _Call Center: /en/latest/status/active_call_center.html
+.. _Call Center: /en/latest/applications/call_center.html
