@@ -2,7 +2,7 @@
 Extensions
 ************
 
-| The **Extensions** define the information needed to regiser to the SIP accounts. 
+| The **Extensions** define the information needed for an endpoint such as a hard phone, soft phone or some other device. The extension is the SIP username and password and together they are a key part of the credentials needed to authenticate to the server.
 
 *  Extension 	
     Enter the alphanumeric extension. The default configuration allows 2 - 7 digit extensions.
