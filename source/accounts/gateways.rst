@@ -1,8 +1,7 @@
 Gateways
 =========
 
-Gateways provide access into other voice networks. These can be voice providers or other systems that where SIP registration is enabled with true or disabled by seting it to false. 
-
+Gateways define the location and settings for other VoIP servers or Providers. After defining the Gateways use the Outbound routes to direct calls throug the gateways.
 
 `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
 
