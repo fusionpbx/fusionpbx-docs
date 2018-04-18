@@ -1,7 +1,10 @@
 Gateways
 =========
 
-Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
+Gateways provide access into other voice networks. These can be voice providers or other systems that where SIP registration is enabled with true or disabled by seting it to false. 
+
+
+`Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
 
 **In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
 
