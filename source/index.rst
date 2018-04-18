@@ -96,7 +96,7 @@ Our Ecosystem
    :maxdepth: 2
 
    getting_started.rst
-   home.rst
+   home/home.rst
    accounts.rst
    dialplans.rst
    applications.rst
