@@ -71,7 +71,7 @@ Advanced Gateway Settings
 
 Most settings in the Advanced Gateway Settings can remain the same.  Some carriers will require slight changes in this section to help with outbound caller ID.
 
-* **Distict To:** 
+* **Distinct To:** 
 * **Auth Username:** 
 * **Extension:** 
 * **Register Transport:** Use this setting to register with tcp, udp or tls to the carrier.
