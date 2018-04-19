@@ -1,7 +1,8 @@
 Gateways
 =========
 
-Gateways define the location and settings for other VoIP servers or Providers. After defining the Gateways use the Outbound routes to direct calls through the gateways.
+Gateways define the location and settings for other VoIP servers or Providers. After defining the Gateways use the Outbound routes to direct calls through the gateways. Required items are in bold.
+
 
 `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
 
