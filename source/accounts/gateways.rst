@@ -51,20 +51,20 @@ button on the right. Enter the gateway information below and Click on **Save** o
 Basic Gateway Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Gateway:**  Name the Gateway.
-* **Username:** This is specific and typically given by the carrier.
-* **Password:** This is specific and typically given by the carrier.
-* **From User:** This is specific and typically given by the carrier.
-* **From Domain:** This is specific and typically given by the carrier.  This will be the domain your FusionPBX connects to for sending calls.
-* **Proxy:** Proxy server address used by the carrier. This will vary by carrier.
-* **Realm:** This is specific and typically given by the carrier. Most times will be blank.  Only used by some carriers
-* **Expire Seconds:** Time until the registration to the carrier expires.
-* **Register:** Set to **true** if the carrier uses a user name and password.  Set to **false** if the carrier uses ip authentication.  If false, you will need to specify all of the carrier ip's in **Advanced > Access Controls.**
-* **Context:** This is usually set as public.
-* **Profile:** The sip profile used.  If you change the sip profiles, be sure to change this to match.
-* **Hostname:** When the hostname is set the gateway will only start on the matching server with same hostname. If the hostname is left blank the gateway will start regardless of the server's hostname.
-* **Enabled:** If the gateway is enabled or disabled.
-* **Description:** A way to organize if you use more than one gateway.
+* **Gateway:**  A name used for the Gateway. The domain name of th VoIP provider is commonly used for the name.
+* **Username:** This is the username for SIP registration provided by the carrier.
+* **Password:** This is the password for SIP registrations it is provided by the carrier.
+* **From User:** Optional: Set a specific SIP From User
+* **From Domain:** Optional: Sets a specific SIP From Domain.
+* **Proxy:** Required: Proxy server address used by the carrier. This will vary by carrier.
+* **Realm:** Optional: Required by some carriers
+* **Expire Seconds:** Optional: The time until the registration with carrier expires.
+* **Register:** Required: Set to **true** if the carrier uses a username and password.  Set to **false** if the carrier uses IP authentication.  If false, you will need to specify all of the carrier IP's in the **Advanced > Access Controls.**
+* **Context:** Required: Default is set to public and usually the correct value.
+* **Profile:** Required: The SIP profile used by default external is used.  If you disable the external profile make sure to change the SIP profile to one that is enabled.
+* **Hostname:** This should usually be left empty. When the hostname is set the gateway will only start on the matching server with same hostname. If the hostname is left blank the gateway will start regardless of the server's hostname.
+* **Enabled:** Required: If the gateway is enabled or disabled.
+* **Description:** It is helpful to provide a good description for the gateway.
 
 
 Advanced Gateway Settings
