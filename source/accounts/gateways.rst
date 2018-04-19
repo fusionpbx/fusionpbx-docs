@@ -7,7 +7,7 @@ Gateways define the location and settings for other VoIP servers or Providers. A
 Basic Settings
 ^^^^^^^^^^^^^^
 
-* **Gateway:**  A name used for the Gateway. The domain name of th VoIP provider is commonly used for the name.
+* **Gateway:**  The name of the Gateway. The company name or domain name of th VoIP provider is commonly used for the name.
 * **Username:** This is the username for SIP registration provided by the carrier.
 * **Password:** This is the password for SIP registrations it is provided by the carrier.
 * **From User:** Optional: Set a specific SIP From User
