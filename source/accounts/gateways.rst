@@ -4,50 +4,6 @@ Gateways
 Gateways define the location and settings for other VoIP servers or Providers. After defining the Gateways use the Outbound routes to direct calls through the gateways. Required items are in bold.
 
 
-`Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
-
-**In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
-
-.. image:: ../_static/images/fusionpbx_voicetel.jpg
-        :scale: 85% 
-        :target: http://tiny.cc/voicetel
-
- 
-
-Select **Accounts** from the drop-down list and click on **Gateways**. 
-
-.. image:: ../_static/images/fusionpbx_gateway.jpg
-        :scale: 85%
-
-
-.. image:: ../_static/images/fusionpbx_gateway1.jpg
-        :scale: 85%
-
-
-Click the 
-
-.. image:: ../_static/images/plus.png
-        :scale: 85%
-
-button on the right. Enter the gateway information below and Click on **Save** once complete.
-
-::
-
-  Gateway: VoiceTel 
-  Username: 0123456789 
-  Password: 1b3d5f7h9j 
-  From user: 0123456789 
-  From domain: sbc.voicetel.com 
-  Proxy: sbc.voicetel.com 
-  Register: true 
-  Enabled: true 
-
-|
-
-.. image:: ../_static/images/fusionpbx_gateway2.jpg
-        :scale: 85%
-
-
 Basic Gateway Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -74,16 +30,16 @@ Most settings in the Advanced Gateway Settings can remain the same.  Some carrie
 
 * **Distinct To:** 
 * **Auth Username:** 
-* **Extension:** Mostly used for testing and not for production. Hard codes a set number and all calls would be hard coded to that number for inbound calls from that gateway.
-* **Register Transport:** Use this setting to register with tcp, udp or tls to the carrier.
+* **Extension:** Usually used for testing and not for production. Hard codes a set number and all calls would be hard coded to that number for inbound calls from that gateway.
+* **Register Transport:** Tells the switch to use SIP with TCP, UDP or TLS.
 * **Register Proxy:** Enter the hostname or IP address of the register proxy. host[:port].
 * **Outbound Proxy:** Enter the hostname or IP address of the outbound proxy. host[:port].
-* **Caller ID In From:** Set to true or false.
-* **Supress CNG:** Set to true or false.
-* **Sip CID Type:** Enter the sip cid type: none, pid, and rpid.
+* **Caller ID In From:** If you caller ID isn't working setting this to true will often fixt the problem.
+* **Supress CNG:** Set this value to true to disable comfort noise.
+* **Sip CID Type:** The SIP caller id type: none, pid, and rpid.
 * **Codec Preferences:** Enter the codec preferences as a list. Ex: PCMA,PCMU,G722,OPUS
-* **Extension In Contact:** Enters the Extension In Contact.
-* **Ping:** Enter the ping interval here in seconds.
+* **Extension In Contact:** Option to set the Extension In Contact.
+* **Ping:** If your server is behind NAT then the ping option can be used to keep the connection alive through the firewall. The ping interval is in seconds.
 * **Domain:** If the gateway will be used on a specific domain or global to all tenants.
 
 
