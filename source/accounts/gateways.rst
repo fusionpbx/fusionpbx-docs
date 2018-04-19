@@ -73,7 +73,7 @@ Most settings in the Advanced Gateway Settings can remain the same.  Some carrie
 
 * **Distinct To:** 
 * **Auth Username:** 
-* **Extension:** 
+* **Extension:** Mostly used for testing and not for production. Hard codes a set number and all calls would be hard coded to that number for inbound calls from that gateway.
 * **Register Transport:** Use this setting to register with tcp, udp or tls to the carrier.
 * **Register Proxy:** Enter the hostname or IP address of the register proxy. host[:port].
 * **Outbound Proxy:** Enter the hostname or IP address of the outbound proxy. host[:port].
