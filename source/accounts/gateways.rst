@@ -4,8 +4,8 @@ Gateways
 Gateways define the location and settings for other VoIP servers or Providers. After defining the Gateways use the Outbound routes to direct calls through the gateways. Required items are in bold.
 
 
-Basic Gateway Settings
-^^^^^^^^^^^^^^^^^^^^^^^^
+Basic Settings
+^^^^^^^^^^^^^^
 
 * **Gateway:**  A name used for the Gateway. The domain name of th VoIP provider is commonly used for the name.
 * **Username:** This is the username for SIP registration provided by the carrier.
@@ -23,8 +23,8 @@ Basic Gateway Settings
 * **Description:** It is helpful to provide a good description for the gateway.
 
 
-Advanced Gateway Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Advanced Settings
+^^^^^^^^^^^^^^^^^
 
 Most settings in the Advanced Gateway Settings can remain the same.  Some carriers will require slight changes in this section to help with outbound caller ID.
 
