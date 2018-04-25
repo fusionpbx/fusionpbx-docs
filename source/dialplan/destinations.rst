@@ -23,13 +23,26 @@ Click on the
 
 button on the right. 
 
-.. image:: ../_static/images/fusionpbx_inboundd1.jpg
+.. image:: ../_static/images/dialplan/fusionpbx_destinations.jpg
         :scale: 85%
 
 *Enter* the route information below and *Click* **Save** once complete.
 
-.. image:: ../_static/images/fusionpbx_inboundd2.jpg
+.. image:: ../_static/images/dialplan/fusionpbx_destinations1.jpg
         :scale: 85%
+
+
+* **Type:** Inbound or Outbound.  Choose if this is an inbound destination or outbound destination.
+* **Destination:** This is usually the DID a caller will call.
+* **Context:**  This will usually be public.
+* **Actions:** Choose where the call will go after it enters FusionPBX.
+* **Caller ID Name Prefix:** Adds a name to the Caller ID that will display to the endpoint and call detail records.
+* **Record:** Record all calls made to the destination.
+* **Account Code:** Used in some billing systems.
+* **Domain:** The domain can be global to all domains or domain specific.
+* **Enabled:** Enabled will enable the destination or Disabled to disable the destination.
+* **Description:** A way to label and organize what the destination is for.
+
 
 ::
 
