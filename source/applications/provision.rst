@@ -35,3 +35,8 @@ Phone Screen Capture
 ^^^^^^^^^^^^^^^^^^^^^
 
 * `Screen Capture <http://docs.fusionpbx.com/en/latest/applications/provision/phone_screen_capture.html>`_
+
+
+.. Note::
+       `Click here to view how to add a device <http://docs.fusionpbx.com/en/latest/accounts/devices.html>`_.
+
