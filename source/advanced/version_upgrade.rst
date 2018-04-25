@@ -19,7 +19,7 @@ Version 4.2 to 4.4
 
 - Then go to Advanced -> Upgrade and update the Source Code, Schema, Menu Defaults and Permission Defaults.
 
-2.  Update the following Dialplans
+2.  Update the following Dialplans.
 
 ::
 
@@ -28,9 +28,11 @@ Version 4.2 to 4.4
  call_forward_all
  local_extension
 
-- Update these Dialplans by first selecting and deleting their entries from within the Dialplan Manager. Then, run Advanced -> Upgrade -> App Defaults to retrieve the new versions of the diaplans.
+- Update these Dialplans by first selecting and deleting their entries from within the Dialplan Manager for all domains. Then, run Advanced -> Upgrade -> App Defaults to retrieve the new versions of the diaplans.
 
-3.  Update old recordings set the record_name and record_path.
+3.  In the menu go to Status then SIP Status and press 'Flush Cache'.
+
+4.  Update old recordings set the record_name and record_path.
 
 ::
 
@@ -38,7 +40,7 @@ Version 4.2 to 4.4
  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/upgrade/record_path.php
  php record_path.php
  
-4.  Resave all Call Center Queues to update each call center queue dialplan. Then restart mod call center or FreeSWITCH.
+5.  Resave all Call Center Queues to update each call center queue dialplan. Then restart mod call center or FreeSWITCH.
 
 
 Version 4.0 to 4.2
