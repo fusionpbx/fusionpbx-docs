@@ -43,7 +43,8 @@ button on the right.
 * **Enabled:** Enabled will enable the destination or Disabled to disable the destination.
 * **Description:** A way to label and organize what the destination is for.
 
-
+* **Inbound Routes**
+        * Once a Destination is created an inbound route is also created.  `Click here to view more about Inbound routes <http://docs.fusionpbx.com/en/latest/dialplan/inbound_routes.html>`_.
 
 
 .. Note::
