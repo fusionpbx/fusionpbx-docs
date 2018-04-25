@@ -22,3 +22,4 @@ Used to define the information needed to assign SIP accounts and keys to provisi
 .. image:: ../_static/images/devices/fusionpbx_device_settings.jpg
         :scale: 85%
 
+* To view steps on how to configure other devices to provision `click here for the provisioning section <http://docs.fusionpbx.com/en/latest/applications/provision.html>`_.
