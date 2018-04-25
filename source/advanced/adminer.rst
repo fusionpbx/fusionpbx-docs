@@ -5,7 +5,7 @@ Adminer
 Adminer provides a way to access FusionPBX database.
 
 
-*  To enable auto login goto Advanced > Default settings and change False to True
+*  To enable auto login goto Advanced > Default Settings and change False to True.
 
 
 .. image:: ../_static/images/fusionpbx_adminer.jpg
@@ -15,5 +15,5 @@ Adminer provides a way to access FusionPBX database.
 
 .. Note::
  
-  After you enable the Adminer auto login click the reload button > edit autoload > click save for it to update the Adminer menu.
+  After you enable the Adminer auto login click the 'Reload' button > edit autoload > click 'Save' for it to update the Adminer menu.
   
