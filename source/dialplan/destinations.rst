@@ -44,22 +44,10 @@ button on the right.
 * **Description:** A way to label and organize what the destination is for.
 
 
-::
 
- Type: Inbound
- Destination Number: ^(?:\+?1)?(\d{10})$
- Action: Select desired destination from the drop-down list.  We choose "Extension 100" in our example.
- This is where the call will route to.
- Enabled: true
- Description: VoiceTel-in
- 
-|
-|
- 
-::
 
- Optional: Replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number
- depending on the Route Destination setting.
+.. Note::
+       Optional: Replace ^(?:\+?1)?(\d{10})$ in Inbound Routes with either 0123456789 or a DID Number depending on the Route Destination setting.
  
 
 .. _Click here for the youtube video: https://youtu.be/8-EJM0hd-J8
