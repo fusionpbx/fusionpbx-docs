@@ -17,7 +17,6 @@ Order is important when an anti-action is used or when there are multiple condit
 .. image:: ../_static/images/dialplan/fusionpbx_inbound_routes1.jpg
         :scale: 85%
 
-
 * **Name:** The name of the Inbound Route.
 * **Number:** The Number (DID) an outside caller will call.
 * **Context:** Context of the Inbound Route. Usually will be public.
