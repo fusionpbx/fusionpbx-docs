@@ -23,7 +23,7 @@ To auto provision Polycom
         :scale: 85%
 
 * Choose the **Server Type** as http.  (If you have ssl certificate that polycom approves then choose https instead.)
-* Fill in the **Server Address** field.  This will be https://domain.tld/app/provision  Replace domain.tld with your actual domain name
+* Fill in the **Server Address** field.  This will be domain.tld/app/provision  Replace domain.tld with your actual domain name
 * Fill in **Server User and Password** fields.
 * Choose **Enable on **Tag SN to UA**
 *  Click **Save** to Provision the Polycom.  You should hear a tone meaning the phone reached out to the server and provisioned.
