@@ -9,7 +9,7 @@ A list of databse changes (transactions) made by all users while logged into Fus
 *  **User:** The user that was logged in at the time the change was made.
 * **Application:** The application that was changed.
 * **Code:** The web server response code.
-* **IP Address: the ip the user was logged into at the time the change was made.
+* **IP Address:** the ip the user was logged into at the time the change was made.
 * **Change:** The type of change that was made.
 * **Date:** Date the change was made.
 
