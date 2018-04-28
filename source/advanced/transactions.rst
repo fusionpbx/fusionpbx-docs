@@ -5,6 +5,12 @@ Transactions
 
 A list of databse changes (transactions) made by all users while logged into FusionPBX.  Changes include
 
+
+
+.. image:: ../_static/images/advanced/fusionpbx_advanced_database_transactions.jpg
+        :scale: 85%
+
+
 * **Domain:** The domain the changes occured on.
 *  **User:** The user that was logged in at the time the change was made.
 * **Application:** The application that was changed.
@@ -14,9 +20,4 @@ A list of databse changes (transactions) made by all users while logged into Fus
 * **Date:** Date the change was made.
 
 Click the edit pencil icon to view more details.
-
-
-.. image:: ../_static/images/advanced/fusionpbx_advanced_database_transactions.jpg
-        :scale: 85%
-
 
