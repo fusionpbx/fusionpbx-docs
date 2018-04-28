@@ -3,10 +3,30 @@ Advanced
 ###########
 
 
-| In the Advanced menu you will find Access Controls, Adminer, App Manager, Backup, Command, Databases, Default Settings, Domain, Grammer Editor, Group Manager, Menu Manager, Modules, Notifications, PHP Editor, Provision Editor, Script Editor, Settings, SIP Profiles, SQL Query, Upgrade, Variables and XML Editor.
+In the Advanced menu you will find:
 
-
-| Welcome to the adding a domain section.  Here you will find how to add a domain so that you can reach the specific tenant from the multi-tenant domain side menu to configure and allow secure administration from the world wide web. 
+* `Adminer <http://docs.fusionpbx.com/en/latest/advanced/adminer.html>`_
+* `Access Controls <http://docs.fusionpbx.com/en/latest/advanced/access_controls.html>`_
+* `App Manager <http://docs.fusionpbx.com/en/latest/getting_started/app_manager.html>`_
+* `Backup <http://docs.fusionpbx.com/en/latest/getting_started/backup.html>`_
+* `Command <http://docs.fusionpbx.com/en/latest/advanced/command.html>`_
+* `Databases <http://docs.fusionpbx.com/en/latest/advanced/databases.html>`_
+* `Default Settings http://docs.fusionpbx.com/en/latest/advanced/default_settings.html>`_
+* `Domains <http://docs.fusionpbx.com/en/latest/advanced/domains.html>`_
+* Grammer Editor
+* `Group Manager <http://docs.fusionpbx.com/en/latest/advanced/group_manager.html>`_
+* `Menu Manager
+* `Modules
+* `Number Translations
+* `PHP Editor
+* `Provision Editor
+* `SIP Profiles <http://docs.fusionpbx.com/en/latest/advanced/sip_profiles.html>`_
+* `Script Editor
+* `Settings
+* `Transactions
+* `Upgrade <http://docs.fusionpbx.com/en/latest/advanced/upgrade.html>`_
+* `Variables
+* `XML Editor.
 
 
 
