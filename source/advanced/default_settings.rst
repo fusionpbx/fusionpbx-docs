@@ -11,5 +11,117 @@ Settings used for all domains.  Branding can be done in this section and also ad
 
 
 
+Default Settings have several different categories.
+
+
+Adminer
+^^^^^^^^^
+
+
+Cache
+^^^^^^^
+
+
+Call Center
+^^^^^^^^^^^^^
+
+
+CDR
+^^^^^
+
+
+Dashboard
+^^^^^^^^^^^
+
+
+
+
+
+Destinations
+^^^^^^^^^^^^^^^
+
+
+
+Domain
+^^^^^^^
+
+
+
+Editor
+^^^^^^^^
+
+
+
+Email
+^^^^^^^
+
+
+
+Fax
+^^^^^^^
+
+
+
+Follow Me
+^^^^^^^^^^
+
+
+
+Ivr Menu
+^^^^^^^^^^
+
+
+Limit
+^^^^^^^
+
+
+Login
+^^^^^^^
+
+
+Provision
+^^^^^^^^^^^
+
+
+Recordings
+^^^^^^^^^^^
+
+
+
+Ring Group
+^^^^^^^^^^^^
+
+
+Security
+^^^^^^^^^^
+
+
+
+Server
+^^^^^^^^
+
+
+
+
+Switch
+^^^^^^^^
+
+
+Theme
+^^^^^^^
+
+
+
+Time Conditions
+^^^^^^^^^^^^^^^^
+
+
+User
+^^^^^
+
+
+Voicemail
+^^^^^^^^^^^
+
 
 
