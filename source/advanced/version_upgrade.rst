@@ -23,6 +23,7 @@ Version 4.2 to 4.4
 ::
 
  **Only** do this step if the folder **doesn't** already exist.
+ mkdir -p /etc/fusionpbx
  mv /var/www/fusionpbx-4.2/resources/config.php /etc/fusionpbx
  chown -R www-data:www-data /etc/fusionpbx/
  
