@@ -17,6 +17,15 @@ Version 4.2 to 4.4
  cd /var/www && git clone -b 4.4 https://github.com/fusionpbx/fusionpbx.git
  chown -R www-data:www-data /var/www/fusionpbx
 
+.. note::
+       Depending on when you installed the path /etc/fusionpbx might need created.  A good way to tell is once you move the fusionpbx folder in step one and the FusionPBX is on a page with flags.
+   
+::
+
+ **Only** do this step if the folder **doesn't** already exist.
+ mv /var/www/fusionpbx-4.2/resources/config.php /etc/fusionpbx
+ chown -R www-data:www-data /etc/fusionpbx/
+ 
 - Then go to Advanced -> Upgrade and update the Source Code, Schema, Menu Defaults and Permission Defaults.
 
 2.  Update the following Dialplans.
