@@ -10,8 +10,7 @@ Use this to translate numbers from the original number to a new number using reg
         :scale: 85%
 
 Activating mod-translate:
- * Install the package "freeswitch-mod-translate"
-  * Debian FreeSWITCH Packages "apt install freeswitch-mod-translate"
+ * Install the package "freeswitch-mod-translate". If using Debian Package then use the following command "apt install freeswitch-mod-translate"
  * Configure the module to your likes via the GUI: Advanced -> Number Translations. 
  * Activate the module in FusionPBX Advanced -> Modules in the Applications section
 
