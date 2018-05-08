@@ -26,5 +26,5 @@ A list of numbers from which to block calls.
 Call-blocking does an exact match on the inbound caller-id number by default. 
 This behaviour can be changed to use SQL "like" comparison or regex based comparison by adding the following variable to the Default Settings:
 
-.. image:: ../_static/images/call_block_matching.jpg
+.. image:: ../_static/images/fusionpbx_call_block_matching.jpg
         :scale: 85%
