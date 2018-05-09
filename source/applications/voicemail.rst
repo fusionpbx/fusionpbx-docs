@@ -137,4 +137,10 @@ These variables can be set in advanced -> variables or in the dialplan.
 Wav file is the default voicemail message file type.
 MP3 requires mod_shout to be installed and running.
 
+**Not Found Message**
 
+When an extension is unavailable and no voicemail is configured, there is an option to play a message to the caller alerting them to this.
+
+To enable/disable this, change the option for the **not_found_message** setting in **Advanced > Default Settings > Voicemail** category to suit your preference.
+
+Please note that enabling this option means that the call must be answered in order to play the message to the caller and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions this could potentially be illegal as it turns an otherwise toll free call into a chargeable one.
