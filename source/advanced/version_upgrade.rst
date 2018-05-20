@@ -9,7 +9,7 @@ Version Upgrade can take several steps to perform. Below will show how to upgrad
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
 
-1.  Switch branches
+1. Switch branches
 
 ::
 
@@ -29,7 +29,11 @@ Version 4.2 to 4.4
  
 - Then go to Advanced -> Upgrade and update the Source Code, Schema, Menu Defaults and Permission Defaults.
 
-2.  Update the following Dialplans.
+.. note::
+
+ config.lua needs to be read and write by the webserver in order for advanced > default settings to update config.lua with new path information. Make sure config.lua and config.php are in /etc/fuionpbx/ . Don't miss this step chown -R www-data:www-data /etc/fusionpbx/ 
+
+2. Update the following Dialplans.
 
 ::
 
@@ -40,9 +44,9 @@ Version 4.2 to 4.4
 
 - Update these Dialplans by first selecting and deleting their entries from within the Dialplan Manager for all domains. Then, run Advanced -> Upgrade -> App Defaults to retrieve the new versions of the diaplans.
 
-3.  In the menu go to Status then SIP Status and press 'Flush Cache'.
+3. In the menu go to Status then SIP Status and press 'Flush Cache'.
 
-4.  Update old recordings set the record_name and record_path.
+4. Update old recordings set the record_name and record_path.
 
 ::
 
@@ -50,7 +54,19 @@ Version 4.2 to 4.4
  wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/upgrade/record_path.php
  php record_path.php
  
-5.  Resave all Call Center Queues to update each call center queue dialplan. Then restart mod call center or FreeSWITCH.
+5. Resave all Call Center Queues to update each call center queue dialplan. Then restart mod call center or FreeSWITCH.
+
+6. Advanced > Default Settings
+
+The email section in Advanced > Default settings, changes have been made.
+
+*  You will find duplicates with a blank value.  The duplicates must be updated with the existing info from the originals. These duplicates are the new and correct settings.  You'll have to update these blank ones with the existing values (like smtp server info) to the new default ones.  Then delete the original ones.
+
+*  Don't delete the blank entries.  The code behind them are for version 4.4+ and the original ones are not.
+
+.. note::
+
+ If you already deleted the blank ones, you'll have to delete the email section then run Advanced > Upgrade > App Defaults check box.  Then go back to Advanced > Default settings and set the email section back up.
 
 
 Version 4.0 to 4.2
@@ -133,22 +149,22 @@ https://domain.com/core/upgrade/index.php
 
 12. Update Time Conditions (Bug Fix)
  
- ::
+::
  
  Goto Advanced > Upgrades page.  Check box Update Source, execute. 
  Goto Advanced > Default settings > Category > delete the category: time condition presets.
  Goto Advanced > Upgrade >  check box App Defaults, execute.
  Goto Advanced > Default settings. Click "Reload" at the top right. (This will get the new presets)
 
- ::
- 
- Next steps are for existing Time Conditions
+Next steps are for existing Time Conditions
+
+::
+
  Goto Apps > Time Conditions and edit the time conditions remove all holidays and hit save.
  Select the holidays over again.
 
 
- .. note::
-
+.. note::
 
   Many of the provisioning templates were updated.  If you use custom provisioning templates you should consider updating them with the new versions. 
 

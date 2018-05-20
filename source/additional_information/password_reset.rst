@@ -18,7 +18,12 @@ The current method to changing the superadmin password is actually to make a new
  mv config.php config1.php
 
 |
-2. Go to the FusionPBX install login page.  This will put FusionPBX into a recovery mode.  Choose the language for your region and **click next.**
+2. Go to the FusionPBX install login page in the web browser.  This will put FusionPBX into a recovery mode.  Choose the language for your region and **click next.**
+
+.. note::
+
+ You will type in your web browser either the ip hxxps://xxx.xxx.xxx.xxx or  the domain name hxxps://sub.domain.tld .
+ 
 
 .. image:: ../_static/images/install_lang_new.jpg
         :scale: 85%
