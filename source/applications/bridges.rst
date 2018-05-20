@@ -34,12 +34,11 @@ Bridges are how ring groups are made.  The code in FusionPBX simplifys that for 
 
  loopback/12085551234
  
-**Loopback to multiple external numbers**
+**Loopback to multiple external numbers simultaneously**
 
 ::
 
  loopback/12085551234,loopback/12085552222,loopback/12085553333
- These use a comma , and will all ring simultaneous
  
 **To another sip server, sip gateway, or another carrier**
 
