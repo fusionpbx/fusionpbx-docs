@@ -22,3 +22,4 @@ Additional Information
   additional_information/nat.rst
   applications/provision.rst
   advanced/version_upgrade.rst
+  additional_information/regex.rst
