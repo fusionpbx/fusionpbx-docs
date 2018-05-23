@@ -44,13 +44,15 @@ Bridges are how ring groups are made.  The code in FusionPBX simplifys that for 
 
 ::
 
- sofia/internal/$1@xxx.xxx.xx.x.xxx:5060
+ sofia/internal/$1@xxx.xxx.xxx.xxx:5060
 
 **To a user**
 
 ::
 
  user/1001
+ or
+ sofia_contact(*/501@example.fusionpbx.com)
 
 **Using LCR**
 
@@ -62,13 +64,13 @@ Bridges are how ring groups are made.  The code in FusionPBX simplifys that for 
 
 ::
 
- {abc=123}sofia/internal/$1@xxx.xxx.xx.x.xxx:5060
+ {abc=123}sofia/internal/$1@xxx.xxx.xxx.xxx:5060
  
 **Using variables in sequence with a sip server**
 
 ::
 
- {abc=123}sofia/internal/$1@xxx.xxx.xx.x.xxx:5060|sofia/internal/$1@xxx.xxx.xx.x.xxx:5060
+ {abc=123}sofia/internal/$1@xxx.xxx.xxx.xxx:5060|sofia/internal/$1@xxx.xxx.xxx.xxx:5060
  
 
 **Using variables in sequence with a sip server**
