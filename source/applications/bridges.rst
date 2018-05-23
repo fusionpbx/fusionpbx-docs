@@ -51,6 +51,8 @@ Bridges are how ring groups are made.  The code in FusionPBX simplifys that for 
 ::
 
  user/1001
+ or
+ sofia_contact(*/501@example.fusionpbx.com)
 
 **Using LCR**
 
