@@ -27,9 +27,16 @@ Regular Expressions
 * **311 Information:** ^(311)$
 * **711 TTY:** ^(711)$
 * **911 Emergency:** ^(911)$
-
-
-
-
-
-
+* **Toll Free:** ^1?(8(00|55|66|77|88)[2-9]\d{6})$
+* **INUM:** ^0118835100\d{8}$
+* **Dial 9 then Two digits:** ^9(\d{2})$
+* **Dial 9 then Three digits:** ^9(\d{3})$
+* **Dial 9 then Four digits:** ^9(\d{4})$
+* **Dial 9 then Five digits:** ^9(\d{5})$
+* **Dial 9 then Six digits:** ^9(\d{6})$
+* **Dial 9 then Seven digits:** ^9(\d{7})$
+* **Dial 9 then Eight digits:** ^9(\d{8})$
+* **Dial 9 then Nine digits:** ^9(\d{9})$
+* **Dial 9 then Ten digits:** ^9(\d{10})$
+* **Dial 9 then Eleven digits:** ^9(\d{11})$
+* **Dial 9 then International:** ^9(\d{12,20})$
