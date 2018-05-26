@@ -49,6 +49,7 @@ Defaults for the amount of agent rows for Call Center.
 CDR
 ^^^^^
 
+CDR Stat hour limit, call leg, format, limit, http_enabled, archive database, and storage type settings can be set here.
 
 +-------------------------------+------------------------+-------------------------+---------------------------+--------------------------------------+
 | Default Setting Subcategory   | Default Setting Name   | Default Setting Value   | Default Setting Enabled   | Default Setting Description          |
@@ -87,6 +88,7 @@ CDR
 Dashboard
 ^^^^^^^^^^^
 
+User level settings that control what is seen and not seen on the dashboard for each user access level.
 
 +-----------------------------+----------------------+-----------------------+-------------------------+------------------------------------------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                                                        |
@@ -143,6 +145,10 @@ Dashboard
 
 Destinations
 ^^^^^^^^^^^^^^^
+
++--------------------+--------------------------------------------------------+
+|dialplan_details    |                                                        |
++--------------------+--------------------------------------------------------+
 
 
 
