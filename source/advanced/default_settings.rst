@@ -17,13 +17,33 @@ Default Settings have several different categories.
 Adminer
 ^^^^^^^^^
 
+FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you must enable this option with True. 
+
++--------------+----------------------------------------------------------------------------+
+|auto_login    |  Set whether to auto-login to Adminer, or require a username and password. |
++--------------+----------------------------------------------------------------------------+
 
 Cache
 ^^^^^^^
 
+Option to use file cache for xml and not memcache.
+
++--------------+-------+----------------------------------+
+|location      |  /tmp | Location for the file cache.     |
++--------------+-------+----------------------------------+
+|method        |  file | Cache methods file and memcache. |
++--------------+-------+----------------------------------+
 
 Call Center
 ^^^^^^^^^^^^^
+
+Defaults for the amount of agent rows for Call Center.
+
++------------------+----+
+| agent_add_rows   |  5 |
++------------------+----+
+| agent_edit_rows  |  1 |
++------------------+----+
 
 
 CDR
