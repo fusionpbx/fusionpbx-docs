@@ -10,7 +10,7 @@ Regular Expressions
 * ^\+?1?(\d{10})$   10 to 11 digits and e164 format sets $1 to 10 digits
 **Dialplan Expression**
 
-* **Two digits:** ^(\d{2})$
+* **Two digits:** ^(\\d{2})$
 * **Three digits:** ^(\d{3})$
 * **Four digits:** ^(\d{4})$
 * **FIve digits:** ^(\d{5})$
