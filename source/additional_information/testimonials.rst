@@ -82,7 +82,7 @@ Amazingly fast to get up and running, but equipped with very powerful functional
 
 I came from a Trixbox background. I had experienced limitations with the Trixbox solution and was looking for an alternative when I found FusionPBX. The first thing that amazed me was how simple and speedy it was to get a working phone system up and running with FusionPBX - far simpler than Trixbox. But then I started to discover how much advanced functionality was also available, and how extensible the design is - in my opinion it is far easier to script for FusionPBX than to script for Trixbox if you want to add additional functionality of your own. FusionPBX is clearly a well thought through design, built on a very solid underlying soft switch (FreeSWITCH) - for me that makes it the system of choice.
 
-Stephen 
+**-Stephen** 
 
 
 
