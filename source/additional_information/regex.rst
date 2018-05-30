@@ -18,7 +18,7 @@ Regular Expressions
 * **Six digits:** ^(\\d{6})$
 * **Seven digits(Local Calling):** ^(\\d{7})$  
 * **Eight digits:** ^(\\d{8})$
-* **Ninee digits:** ^(\\d{9})$
+* **Nine digits:** ^(\\d{9})$
 * **Ten digits(Long Distance):** ^(\\d{10})$
 * **Eleven digits(Long Distance with a 1):** ^\\+?(\\d{11})$
 * **North America:** ^\\+?1?(\\d{10})$
