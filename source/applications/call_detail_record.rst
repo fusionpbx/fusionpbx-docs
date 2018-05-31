@@ -8,23 +8,22 @@ Call Detail Records (CDRs) are detailed information on the calls. Use the fields
         :scale: 85%
 
 
-*  **CID Name-** Caller ID Name
-*  **Source-** Where the call came from
-*  **Destination-** Where the call went to
-*  **Recording-** A link will appear if the call recorded
-*  **Start-** Time the call entered the system
-*  **TTA-** Time To Answer the call
-*  **Duration-** How long the call was
-*  **PDD-** Post Dial Delay
-*  **MOS-** Mean Opinion Score is a measure of voice call quality
-*  **Hangup Cause-** Details about the entire calls. Usually will be "Normal Clearing"
+*  **CID Name** Caller ID Name
+*  **Source** Where the call came from
+*  **Destination** Where the call went to
+*  **Recording** A link will appear if the call recorded
+*  **Start** Time the call entered the system
+*  **TTA** Time To Answer the call
+*  **Duration** How long the call was
+*  **PDD** Post Dial Delay
+*  **MOS** Mean Opinion Score is a measure of voice call quality
+*  **Hangup Cause** Details about the entire calls. Usually will be "Normal Clearing"
 
-**Call Detail Record**\ s ( also known as **call data record** or `CDR`_
-) are detailed information on the calls. The information contains
+**Call Detail Records** are detailed information on the calls. The information contains
 source, destination, duration, and other useful call details. Use the
 fields to filter the information for the specific call records that are
 desired. Then view the calls in the list or download them as comma
-seperated file by using the **'csv**' button.
+seperated file by using the **CSV** button.
 
 Note that this page makes use of XML CDR for reporting.
 
@@ -65,7 +64,7 @@ Possible issues
 No records showing up under Apps-Call Detail Records
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is probably because:
+Possible causes:
 
 **1. The module is disabled**
 
@@ -97,7 +96,7 @@ XML CDR configuration
 For more detailed configuration go to the XML editor (Advanced menu) and
 in autoload configs look at xml_cdr.conf.xml
 
-| ``- note that by default only the a-leg of the call is logged THEREFORE if you make a recording of ``
+| ``- note that by default only the a-leg of the call is logged therefore if you make a recording of ``
 | ``the b-leg you won't be able to retrieve it using the Call Detail Records.  If you want the b-leg``
 | ``as well you need to change log-b-leg=true in this config.``
 

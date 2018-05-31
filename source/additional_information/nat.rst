@@ -38,10 +38,11 @@ FusionPBX is behind NAT and you don't have a static ip address. You do have a fi
 * Set external_sip_ip to auto-nat
 * Restart FreeSWITCH.   service freeswitch restart
 
+
 Symptoms of misconfigured NAT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Call drops after 30ish seconds.
+* Call drops after 32 seconds.
 * One way audio
 * No audio
 

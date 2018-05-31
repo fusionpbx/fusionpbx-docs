@@ -39,6 +39,7 @@ In the Provisioning section, there are a few key options that have to be set in 
 * **enabled** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default.
 * **http_auth_username** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default. Be sure to use a strong username.
 * **http_auth_password** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default. Be sure to use a strong password.
+* **cidr** Optional security option to allow configuration request limited to specific IP version 4 ranges. Type array allows multiple ranges of IP addresses.
 
 
 
