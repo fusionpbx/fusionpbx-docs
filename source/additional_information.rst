@@ -24,3 +24,4 @@ Additional Information
   advanced/version_upgrade.rst
   advanced/releases.rst
   additional_information/regex.rst
+  additional_information/postgresql.rst
