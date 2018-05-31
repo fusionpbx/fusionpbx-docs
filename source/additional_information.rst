@@ -22,5 +22,6 @@ Additional Information
   additional_information/nat.rst
   applications/provision.rst
   advanced/version_upgrade.rst
-  advanced/releases.rst
+  additional_information/releases.rst
   additional_information/regex.rst
+  additional_information/postgresql.rst
