@@ -4,7 +4,6 @@ GMAIL
 
 
 Goto Advanced > Default Settings and under the ``Email`` Section. Make sure these settings are enabled. Once these values are set press the **Reload** button at the top right of the page.
-
 ::
 
  method			text  	smtp 	
