@@ -9,8 +9,10 @@ Goto Advanced > Default Settings and under the ``Email`` Section. Make sure thes
 * If you have a headless install(no desktop gui) then you will have to install lynx.  Lynx is a command line web browser.  For Debian you would type the example below.  Follow the prompts for email address and password.
 
 ::
+
  apt-get install lynx
  lynx https://accounts.google.com/b/0/DisplayUnlockCaptcha
+
 
 * You may also have to enable less secure apps https://support.google.com/accounts/answer/6010255?hl=en
 
