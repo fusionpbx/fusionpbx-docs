@@ -4,17 +4,15 @@ GMAIL
 
 
 Goto Advanced > Default Settings and under the ``Email`` Section. Make sure these settings are enabled. Once these values are set press the **Reload** button at the top right of the page.
-::
 
- method			text  	smtp 	
- smtp_auth		var  	true  	
- smtp_from		var  	username@gmail.com 	  	
- smtp_from_name	var  	Voicemail	  	
- smtp_host		var  	smtp.gmail.com 	  	
- smtp_password	var  	******* 	  	
- smtp_port		numeric  	587	
- smtp_secure		var  	tls	
- smtp_username	var  	username@gmail.com 
+* There is a good chance you will have to do this via command line on your FusionPBX install https://accounts.google.com/b/0/DisplayUnlockCaptcha
+* If you have a headless install(no desktop gui) then you will have to install lynx.  Lynx is a command line web browser.  For Debian you would type the example below.  Follow the prompts for email address and password.
+
+::
+ apt-get install lynx
+ lynx https://accounts.google.com/b/0/DisplayUnlockCaptcha
+
+* You may also have to enable less secure apps https://support.google.com/accounts/answer/6010255?hl=en
 
 +-----------------------------+----------------------+----------------------------+-------------------------+-----------------------------------------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value      | Default Setting Enabled | Default Setting Description                                                       |
