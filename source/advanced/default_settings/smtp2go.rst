@@ -18,18 +18,23 @@ SMTP2GO is a paid email service for sending email.  They do however have 1,000 f
         :scale: 85%
 
 
-3. You can set authentication by ip address. It's a good idea to set the limit here also from Unlimited to match which plan you choose.
+3. Go to Settings > Users and create an smtp user.
+
+.. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go_users.jpg
+        :scale: 85%
+
+4. You can set authentication by ip address. It's a good idea to set the limit here also from Unlimited to match which plan you choose.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go1.jpg
         :scale: 85%
 
-4. Set the domain to your domain to make delivery seem as it came right from your own mail server.  This can help sending to strict email domains.
+5. Set the domain to your domain to make delivery seem as it came right from your own mail server.  This can help sending to strict email domains.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go2.jpg
         :scale: 85%
 
 
-5. From your FusionPBX server install go to Advanced > Default Settings > Email section.
+6. From your FusionPBX server install go to Advanced > Default Settings > Email section.
 
 +-----------------------------+----------------------+----------------------------+-------------------------+-----------------------------------------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value      | Default Setting Enabled | Default Setting Description                                                       |
