@@ -12,13 +12,13 @@ SMTP2GO is a paid email service for sending email.  They do however have 1,000 f
 
 
 
-2. After you confirm your email, sign in.
+2. After you confirm your email, sign in. You can create an smtp user at this screen or in the next step.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go3.jpg
         :scale: 85%
 
 
-3. Go to Settings > Users and create an smtp user.
+3. Go to Settings > Users and create an smtp user or additional smtp users.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go_users.jpg
         :scale: 85%
