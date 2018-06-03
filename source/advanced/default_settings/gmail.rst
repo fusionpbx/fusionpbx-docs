@@ -1,5 +1,5 @@
 #########
-GMAIL
+Gmail
 #########
 
 
@@ -40,5 +40,6 @@ Goto Advanced > Default Settings and under the ``Email`` Section. Make sure thes
 
 To see if there are any failed email attempts goto Status > Emails.  Once the issue causing the emails to fail is found you can click to resent them.
 
-**Note**: The log is stored in the /tmp directory.
+.. Note::
+       The log is stored in the /tmp directory.
 
