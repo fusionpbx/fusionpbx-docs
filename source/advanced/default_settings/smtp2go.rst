@@ -12,24 +12,29 @@ SMTP2GO is a paid email service for sending email.  They do however have 1,000 f
 
 
 
-2. After you confirm your email, sign in.
+2. After you confirm your email, sign in. You can create an smtp user at this screen or in the next step.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go3.jpg
         :scale: 85%
 
 
-3. You can set authentication by ip address. It's a good idea to set the limit here also from Unlimited to match which plan you choose.
+3. Go to Settings > Users and create an smtp user or additional smtp users.
+
+.. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go_users.jpg
+        :scale: 85%
+
+4. You can set authentication by ip address. It's a good idea to set the limit here also from Unlimited to match which plan you choose.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go1.jpg
         :scale: 85%
 
-4. Set the domain to your domain to make delivery seem as it came right from your own mail server.  This can help sending to strict email domains.
+5. Set the domain to your domain to make delivery seem as it came right from your own mail server.  This can help sending to strict email domains.
 
 .. image:: ../../_static/images/advanced/default_settings/fusionpbx_smtp2go2.jpg
         :scale: 85%
 
 
-5. From your FusionPBX server install go to Advanced > Default Settings > Email section.
+6. From your FusionPBX server install go to Advanced > Default Settings > Email section.
 
 +-----------------------------+----------------------+----------------------------+-------------------------+-----------------------------------------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value      | Default Setting Enabled | Default Setting Description                                                       |
@@ -52,6 +57,6 @@ SMTP2GO is a paid email service for sending email.  They do however have 1,000 f
 +-----------------------------+----------------------+----------------------------+-------------------------+-----------------------------------------------------------------------------------+
 | smtp_validate_certificate   | boolean              | TRUE                       | True                    | set to false to ignore SSL certificate warnings e.g. for self-signed certificates |
 +-----------------------------+----------------------+----------------------------+-------------------------+-----------------------------------------------------------------------------------+
-| method                      | text                 | sendmail                   | True                    | smtp|sendmail|mail|qmail                                                          |
+| method                      | text                 | sendmail                   | False                   | smtp|sendmail|mail|qmail                                                          |
 +-----------------------------+----------------------+----------------------------+-------------------------+-----------------------------------------------------------------------------------+
 
