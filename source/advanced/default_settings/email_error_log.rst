@@ -18,7 +18,7 @@ Sucessfully sent email example.
 | 
 | X-FusionPBX-Domain-UUID: f98j8df-37da-4cef-bf42-0dc8c2093f9b
 | 
-| Subject: =?utf-8?B?Vm9pY2VtYWlsIGZyb20gUFJPR1JFU1NJVkUgSU5TIDw2MTAyNzY0ODE2PiAwMDowMDozMQ==?=
+| Subject:  =?utf-8?B?Vm9pY2VtYWlsIGZyb20gNDIwIDw0MjA+IDAwOjAwOjE0?=
 | 
 | From: server notify<server notify>
 | 
