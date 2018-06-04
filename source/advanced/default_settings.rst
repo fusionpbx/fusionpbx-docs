@@ -196,6 +196,10 @@ Here are some example settings for some of the most common email providers.
 | method                      | text                 | smtp                           | TRUE                    | smtp|sendmail|mail|qmail                                                          |
 +-----------------------------+----------------------+--------------------------------+-------------------------+-----------------------------------------------------------------------------------+
 
+Error log for failed or sucessfully sent messages.
+
+* `Email Log <http://docs.fusionpbx.com/en/latest/advanced/default_settings/email_error_log.rst>`_
+
 Fax
 ^^^^^^^
 
