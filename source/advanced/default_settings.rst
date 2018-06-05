@@ -199,7 +199,7 @@ Editor
 Email
 ^^^^^^^
 
-This is where you configure email settings to receive email notifications of voicemail, missed calls and faxes.
+This is where you configure email settings to receive email notifications of voicemail, missed calls and fax.
 
 Here are some example settings for some of the most common email providers.
 
@@ -291,11 +291,24 @@ Fax
 Follow Me
 ^^^^^^^^^^
 
-
++-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------------------------+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                       |
++=============================+======================+=======================+=========================+===================================================+
+| max_destinations            | numeric              | 5                     | FALSE                   | Set the maximum number of Follow Me Destinations. |
++-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------------------------+
+| timeout                     | numeric              | 30                    | FALSE                   | Set the default Follow Me Timeout value.          |
++-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------------------------+
 
 Ivr Menu
 ^^^^^^^^^^
 
++-----------------------------+----------------------+-----------------------+-------------------------+--------------------------------+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description    |
++=============================+======================+=======================+=========================+================================+
+| option_add_rows             | numeric              | 5                     | TRUE                    |  Number of default "add" rows. |
++-----------------------------+----------------------+-----------------------+-------------------------+--------------------------------+
+| option_edit_rows            | numeric              | 1                     | TRUE                    | Number of default "edit" rows. |
++-----------------------------+----------------------+-----------------------+-------------------------+--------------------------------+
 
 Limit
 ^^^^^^^
