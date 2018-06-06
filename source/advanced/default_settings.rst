@@ -14,16 +14,7 @@ Settings used for all domains.  Branding can be done in this section and also ad
 Default Settings have several different categories.
 
 
-Adminer
-^^^^^^^^^
 
-FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you must enable this option with True. 
-
-+-----------------------------+----------------------+-----------------------+-------------------------+-----------------------------------------------+
-| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                   |
-+=============================+======================+=======================+=========================+===============================================+
-| auto_login                  | boolean              | TRUE                  | FALSE                   | This must be enabled in order to use Adminer. |
-+-----------------------------+----------------------+-----------------------+-------------------------+-----------------------------------------------+
 
 Cache
 ^^^^^^^
@@ -608,4 +599,12 @@ Voicemail specific default settings.
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
 | greeting_max_length           | numeric                | 90                      | TRUE                      | Maximum length of a voicemail greeting (in seconds).                                         |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
+
+
+
+.. toctree::
+  :maxdepth: 3
+  :glob:
+
+  advanced/default_settings/adminer.rst
 
