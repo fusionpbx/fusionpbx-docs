@@ -605,6 +605,6 @@ Voicemail specific default settings.
 .. toctree::
   :maxdepth: 3
   :glob:
-
+  
   advanced/default_settings/adminer.rst
 
