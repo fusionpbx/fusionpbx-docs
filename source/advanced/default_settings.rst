@@ -13,21 +13,14 @@ Settings used for all domains.  Branding can be done in this section and also ad
 
 Default Settings have several different categories.
 
+`Adminer <default_settings/adminer.html>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-
-Cache
+`Cache <default_settings/cache.html>`_
 ^^^^^^^
 
-Option to use file cache for xml and not memcache.
 
-+-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------+
-| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description     |
-+=============================+======================+=======================+=========================+=================================+
-| method                      | text                 | memcache              | TRUE                    | Cache methods file or memcache. |
-+-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------+
-| location                    | text                 | /tmp                  | TRUE                    | Location for the file cache.    |
-+-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------+
 
 Call Center
 ^^^^^^^^^^^^^
@@ -601,10 +594,4 @@ Voicemail specific default settings.
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
 
 
-
-.. toctree::
-  :maxdepth: 3
-  :glob:
-  
-  advanced/default_settings/adminer.rst
 
