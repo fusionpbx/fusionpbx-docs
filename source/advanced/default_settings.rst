@@ -11,7 +11,7 @@ Settings used for all domains.  Branding can be done in this section and also ad
 
 
 
-Default Settings have several different categories.
+Default Settings have several different categories. Click on the category to view more details.
 
 `Adminer <default_settings/adminer.html>`_
 ^^^^^^^^^
