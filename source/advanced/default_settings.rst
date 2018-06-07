@@ -3,7 +3,7 @@ Default Settings
 ******************
 
 
-Default Settings used for all domains.  Branding can be done in this section, adjust or copy settings to specific domains.
+Default Settings used for all domains.  Branding can be done in this section, adjust or copy settings to specific domains can be done in this section also.
 
 
 .. image:: ../_static/images/advanced/fusionpbx_advanced_default_settings.jpg
