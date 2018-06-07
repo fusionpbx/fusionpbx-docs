@@ -1349,7 +1349,7 @@ User specific default settings.
 Voicemail specific default settings.
 
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| default_setting_subcategory   | default_setting_name   | default_setting_value   | default_setting_enabled   | default_setting_description                                                                  |
+| Default Setting Subcategory   | Default Setting Name   | Default Setting Value   | Default Setting Enabled   | Default Setting Description                                                                  |
 +===============================+========================+=========================+===========================+==============================================================================================+
 | voicemail_file                | text                   | attach                  | TRUE                      | Define whether to attach voicemail files to email notifications, or only include a link.     |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
