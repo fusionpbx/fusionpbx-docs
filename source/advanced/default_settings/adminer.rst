@@ -1,6 +1,5 @@
-#####################
 Adminer
-#####################
+-------------------
 
 FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you must enable this option with True. 
 
