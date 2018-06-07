@@ -56,7 +56,7 @@ copyright = u'2008-2018, Mark J Crane'
 # built documents.
 #
 # The short X.Y version.
-version = '4.3.1'
+version = '4.4.1'
 # The full version, including alpha/beta/rc tags.
 release = 'master'
 
@@ -142,7 +142,7 @@ html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-#html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -189,7 +189,7 @@ htmlhelp_basename = 'FusionPBX0doc'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'letterpaper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',

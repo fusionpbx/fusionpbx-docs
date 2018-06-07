@@ -67,7 +67,9 @@ To access an extensions voicemail **away** from the extension.
 | **press 0** | For main menu         |
 +-------------+-----------------------+
 
-
+`Email Setup/Default Settings <http://docs.fusionpbx.com/en/latest/advanced/default_settings.html#email>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Click the link above for setting up email server settings.  These are the settings needed to enable your FusionPBX installation to be able to send email notifications.
 
 Voicemail Transcription
 ====================
