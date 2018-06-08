@@ -8,6 +8,9 @@ pfSense
 1.  **Create Alias Ports in pfSense**
 ----------------------------------------
 
+.. image:: ../../_static/images/firewall/fusionpbx_pfsense.png
+        :scale: 85%
+
 * Configure pfSense to open the necessary ports for FusionPBX and Freeswitch.
 * In pfSense navigate to Firewall >> Aliases and click on the Ports TAB.
 
@@ -35,6 +38,9 @@ pfSense
 
 2. **Configure pfSense Port Forwarding**
 -----------------------------------------
+
+.. image:: ../../_static/images/firewall/fusionpbx_pfsense2.png
+        :scale: 85%
 
 * Click on the '+' to ADD a new Entry.
 
