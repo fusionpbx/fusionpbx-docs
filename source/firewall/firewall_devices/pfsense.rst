@@ -36,10 +36,10 @@ pfSense
 2. **Configure pfSense Port Forwarding**
 -----------------------------------------
 
-* Click on the '+' to add a new Entry.
+* Click on the '+' to ADD a new Entry.
 
 
-* Firewall >> NAT >> Port Forward: Edit
+* Firewall >> NAT >> Port Forward: Add
 
 ::
  
