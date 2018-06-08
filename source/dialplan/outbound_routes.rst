@@ -52,3 +52,35 @@ button on the right. Enter the route information below and Click **Save** once e
 |
 
 **By using** `VoiceTel <http://tiny.cc/voicetel>`_ **you help support FusionPBX.  Thank you for your support!**
+
+
+Pin Numbers
+-----------------
+
+To have the system ask for a PIN number before a call is made. A good use is if you don't want every user on the system to be able to call international destinations. This can be done with a single PIN or multiple PINs by using the "PIN Number APP".
+
+**To use a single PIN number for all calls**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before the bridge action on the outbound route add the following actions
+
+::
+
+ action	set	pin_number=(Whatever pin number you choose)
+ action	lua	pin_number.lua
+
+
+**To use the PIN Number App to manage multiple PINs**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* First enable access to the **"PIN Number"** app by giving permissions to the group of users you want to have access in **Advanced > Group Manager**. Make sure the **"PIN Number"** App is displayed in the menu by selecting the groups that can view it in **Advanced > Menu Manager**.
+
+* Set the PINs you would like to use in **Apps > PIN Numbers** 
+
+Before the bridge action on the outbound route add the following actions
+
+::
+
+ action	set	pin_number=database
+ action	lua	pin_number.lua
+
