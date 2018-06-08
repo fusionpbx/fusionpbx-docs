@@ -8,6 +8,7 @@ Firewall device settings that help with SIP connections.
 * `ASUS RT-AC66U-`_
 * `Sonicwall_TZ_Soho-`_
 * `Zyxel-`_
+* `pfSense`_
 
 
 
@@ -45,5 +46,6 @@ Most of the time this setting is set to off or disabled and varies.  Rarely this
 .. _Asus RT-AC66U: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/asus_rt_ac66u_sip_alg.html
 .. _Sonicwall_TZ_Soho: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/sonicwall_tz_soho_sip_alg.html
 .. _Sonicwall_TZ_Soho-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/sonicwall_tz_soho.html
+.. _pfSense: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/pfsense.html
 
 
