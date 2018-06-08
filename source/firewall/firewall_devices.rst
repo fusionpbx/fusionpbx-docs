@@ -5,6 +5,9 @@ Firewall Devices
 
 Firewall device settings that help with SIP connections.
 
+**Devices**
+^^^^^^^^^^^^^
+
 * `ASUS RT-AC66U-`_
 * `Sonicwall_TZ_Soho-`_
 * `Zyxel-`_
