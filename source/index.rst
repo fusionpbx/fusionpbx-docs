@@ -61,10 +61,10 @@ Our Ecosystem
 .. _FusionPBX: http://www.fusionpbx.com
 .. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
 .. _IVR Menus: /en/latest/applications/ivr.html
-.. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
-.. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
-.. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
-.. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
+.. _Call Broadcast: /en/latest/applications/call_broadcast.html
+.. _Call Block: /en/latest/applications/call_block.html
+.. _Conference: /en/latest/applications/conference.html
+.. _Call Detail Records: /en/latest/applications/call_detail_record.html
 .. _Call Center: /en/latest/applications/call_center.html
 .. _Call Forward: Call_Forward
 .. _Call Flows: /en/latest/applications/call_flows.html
@@ -93,7 +93,7 @@ Our Ecosystem
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    getting_started.rst
    home.rst
