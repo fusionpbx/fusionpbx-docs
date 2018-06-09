@@ -25,7 +25,7 @@ provides the functionality that business need and provides corporate
 level phone system features to small, medium and large businesses. `Click here for the FusionPBX youtube channel`_ .
 
 Benefits of FusionPBX
----------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Adding extra functionality to the incredibly robust FreeSWITCH VoIP Platform.
 2. Makes FreeSWITCH easy to administer while at the same time
@@ -34,7 +34,7 @@ Benefits of FusionPBX
 
 
 `FusionPBX Features`_
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Call Block`_           | `Call Broadcast`_     | `Call Flows`_                   |       `Call Center`_                     |
