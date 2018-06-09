@@ -60,35 +60,35 @@ Our Ecosystem
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
 .. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
-.. _IVR Menus: /en/latest/applications/ivr.html
-.. _Call Broadcast: /en/latest/applications/call_broadcast.html
-.. _Call Block: /en/latest/applications/call_block.html
-.. _Conference: /en/latest/applications/conference.html
-.. _Call Detail Records: /en/latest/applications/call_detail_record.html
-.. _Call Center: /en/latest/applications/call_center.html
+.. _IVR Menus: applications/ivr.html
+.. _Call Broadcast: applications/call_broadcast.html
+.. _Call Block: applications/call_block.html
+.. _Conference: applications/conference.html
+.. _Call Detail Records: applications/call_detail_record.html
+.. _Call Center: applications/call_center.html
 .. _Call Forward: Call_Forward
-.. _Call Flows: /en/latest/applications/call_flows.html
-.. _Follow Me: /en/latest/applications/follow_me.html
-.. _Music on Hold: /en/latest/applications/music_on_hold.html
+.. _Call Flows: applications/call_flows.html
+.. _Follow Me: applications/follow_me.html
+.. _Music on Hold: applications/music_on_hold.html
 .. _Contact Manager: Contact_Manager
 .. _Active Extensions: Active_Extensions
-.. _Hot Desking: /en/latest/accounts/hot_desking.html
-.. _Queues: /en/latest/applications/queues.html
-.. _Recordings: /en/latest/applications/recordings.html
-.. _Call Recordings: /en/latest/applications/recordings.html
-.. _Contacts: /en/latest/applications/contacts.html
+.. _Hot Desking: accounts/hot_desking.html
+.. _Queues: applications/queues.html
+.. _Recordings: applications/recordings.html
+.. _Call Recordings: applications/recordings.html
+.. _Contacts: applications/contacts.html
 .. _Active Calls: Active_Calls
 .. _Dialplan Manager: Dialplan_Manager
 .. _Conferences: Conferences
-.. _Fax Server: /en/latest/applications/fax_server.html
-.. _Time Conditions: /en/latest/applications/time_conditions.html
-.. _Ring Groups: /en/latest/applications/ring_group.html
-.. _Recordings: /en/latest/applications/recordings.html
-.. _Voicemail: /en/latest/applications/voicemail.html
-.. _Multi-Tenant: /en/latest/advanced/domains.html
-.. _WebRTC ready: /en/latest/applications_optional/webrtc.html
-.. _and lots more...: /en/latest/features/features.html
-.. _FusionPBX Features: /en/latest/features/features.html
+.. _Fax Server: applications/fax_server.html
+.. _Time Conditions: applications/time_conditions.html
+.. _Ring Groups: applications/ring_group.html
+.. _Recordings: applications/recordings.html
+.. _Voicemail: applications/voicemail.html
+.. _Multi-Tenant: advanced/domains.html
+.. _WebRTC ready: applications_optional/webrtc.html
+.. _and lots more...: features/features.html
+.. _FusionPBX Features: features/features.html
 
 
 
