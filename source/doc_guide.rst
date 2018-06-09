@@ -947,17 +947,19 @@ Similarly to the note directive, one can include todo boxes but it requires the 
     extensions.append('sphinx.ext.todo')
     todo_include_todos=True
 
-
-.. todo:: a todo box
+::
+ 
+ .. todo:: a todo box
   
-.. rubric:: Footnotes
+ .. rubric:: Footnotes
 
-.. [#footnote1] this is a footnote aimed at illustrating the footnote capability.
+ .. [#footnote1] this is a footnote aimed at illustrating the footnote capability.
 
-.. rubric:: Bibliography
+ .. rubric:: Bibliography
 
-.. [CIT2002] A citation
+ .. [CIT2002] A citation
       (as often used in journals).
+
 
 .. _Git Tutorial: https://try.github.io/levels/1/challenges/1
 .. _Git Install: http://git-scm.com/book/en/Getting-Started-Installing-Git
