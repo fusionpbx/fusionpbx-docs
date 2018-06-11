@@ -8,6 +8,9 @@ Global
 
 Global specific dialplans are global to all tennants(domains). These can be changed, however the changes apply to all tennants.
 
+User Exists
+^^^^^^^^^^^^^
+
 +---------------------+-----------------------------+--------------------------------------------------------+-----------------------+------------------------+-----------------------+-----------------------+
 | Dialplan Detail Tag | Dialplan Detail Type        | Dialplan Detail Data                                   | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 +=====================+=============================+========================================================+=======================+========================+=======================+=======================+
