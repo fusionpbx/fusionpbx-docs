@@ -3,11 +3,30 @@ Dialplan Details
 *****************
 
 
+Global
+-------
+
+Global specific dialplans are global to all tennants(domains). These can be changed, however the changes apply to all tennants.
+
++---------------------+-----------------------------+--------------------------------------------------------+-----------------------+------------------------+-----------------------+-----------------------+
+| Dialplan Detail Tag | Dialplan Detail Type        | Dialplan Detail Data                                   | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
++=====================+=============================+========================================================+=======================+========================+=======================+=======================+
+| condition           | ${user_exists}              | TRUE                                                   |                       |                        | 0                     | 5                     |
++---------------------+-----------------------------+--------------------------------------------------------+-----------------------+------------------------+-----------------------+-----------------------+
+| condition           | ${forward_all_enabled}      | TRUE                                                   |                       |                        | 0                     | 10                    |
++---------------------+-----------------------------+--------------------------------------------------------+-----------------------+------------------------+-----------------------+-----------------------+
+| action              | transfer                    | ${forward_all_destination} XML ${domain_name}          |                       |                        | 0                     | 15                    |
++---------------------+-----------------------------+--------------------------------------------------------+-----------------------+------------------------+-----------------------+-----------------------+
 
 
+
+Domain Specific
+----------------
+
+Domain specific dialplans are all the same initially but can be changed.  Those changes are per domain, thus helps FusionPBX acheive multitennancy.
 
 Valet Parking
---------------
+^^^^^^^^^^^^^^
 
 +---------------------+-----------------------------------------------------------+-------------------------------------------------------------------------------------+-----------------------+------------------------+-----------------------+-----------------------+
 | Dialplan Detail Tag | Dialplan Detail Type                                      | Dialplan Detail Data                                                                | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
