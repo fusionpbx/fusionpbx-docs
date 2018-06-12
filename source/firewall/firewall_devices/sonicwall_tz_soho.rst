@@ -28,7 +28,7 @@ The SonicWALL needs to be programmed with your available WAN interface bandwidth
 * Click the Advanced tab, check both the Egress and Ingress boxes under Bandwidth Management.
 * Enter in your speed test values, and click OK
 
-. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm6.png
+.. image:: ../../_static/images/firewall/fusionpbx_sonicwall_bwm6.png
         :scale: 85%
 
 Now create your VOIP services.  In this example we’ll use 5060TCP, 5060UDP, and 16384-32768UDP for voice traffic.
