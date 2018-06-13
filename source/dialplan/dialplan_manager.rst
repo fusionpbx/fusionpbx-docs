@@ -139,6 +139,6 @@ The dialplan is used to setup call destinations based on conditions and context.
 
 
 
-.. _call_screen: dialplan_details.rst.html#voicemail
-.. _local_extension: dialplan_details.rst.html#local-extension
-.. _voicemail: dialplan_details.rst.html#call-screen
+.. _call_screen: dialplan_details.html#voicemail
+.. _local_extension: dialplan_details.html#local-extension
+.. _voicemail: dialplan_details.html#call-screen
