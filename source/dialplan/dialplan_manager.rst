@@ -142,6 +142,6 @@ The dialplan is used to setup call destinations based on conditions and context.
 .. _call_screen: dialplan_details.html#call-screen
 .. _local_extension: dialplan_details.html#local-extension
 .. _voicemail: dialplan_details.html#voicemail
-.. _vmain_user: latest/dialplan/dialplan_details.html#voicemail-vmain-user
+.. _vmain_user: /en/latest/dialplan/dialplan_details.html#voicemail-vmain-user
 .. _bind_digit_action: dialplan_details.html#bind-digit-action
 .. _follow-me: dialplan_details.html#follow-me
