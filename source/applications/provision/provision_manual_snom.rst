@@ -51,3 +51,30 @@ The hostname should be replaced with your FusionPBX domain name. Note that we ha
 When the phone reboots, it will be provisioned with your appropriate settings 
 
 
+
+Using DHCP Option 66 to Deploy the Phone
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DHCP is an excellent option for phones deployed in a local office. Your Snom phone can be removed from its box and simply plugged into the network. All the setting will be retrieved from the server. Be careful to not open up your FusionPBX to the internet though. Someone who knows your url and a MAC address of a phone can easily retrieve your phone settings including its password.
+
+Each DHCP Server is different. At Helia we use Cradlepoint MBR 1400 and Cradlepoint MBR 95. Each of these allow you to setup DHCP option 66. Setting up DHCP directly on the voice server is also an option.
+
+1. On the Cradlepoint MBR 1400 router, select "Network Settings" and " WiFi / Local Networks".
+
+2. Select the appropriate "Local IP Networks", and select the "Edit" button.
+
+3. On the "Local Network Editor" window, select the "DHCP Server" tab
+
+4. Ensure the "DHCP Enable" checkbox is checked and click the "Add" button to add an option.
+
+5. For "option" select "66 Server Name" and for the value, add the provisioning URL:
+
+hxxp://www.example.com/app/provision/index.php?mac={mac} (Be sure to replace hxxp:// with http://)
+
+The hostname should be replaced with your FusionPBX domain name. Note that we have replaced the domain name with {mac}. This is a special Snom variable to put the phones Mac address in without having to specify it.
+
+With the DHCP information added, the provisioning template will be applied to the phone next time it fetches a new IP address - usually on its next reboot. 
+
+
+
+
