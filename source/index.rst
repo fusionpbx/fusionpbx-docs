@@ -106,4 +106,5 @@ Our Ecosystem
    additional_information.rst
    contributing.rst
    doc_guide.rst
+   other.rst
 
