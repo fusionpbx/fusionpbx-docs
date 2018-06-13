@@ -28,6 +28,7 @@ How to setup the device using the phone's web interface.
 *  `Fanvil <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_fanvil.html>`_
 *  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_grandstream.html>`_
 *  `Htek <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_htek.html>`_
+*  `SNOM <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_snom.html>`_
 *  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
 
 
