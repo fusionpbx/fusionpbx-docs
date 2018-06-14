@@ -163,7 +163,7 @@ Paste the code below into the file
  }
 
  location ~ \.php$ {
-   fastcgi_pass unix:/var/run/php5-fpm.sock;
+   fastcgi_pass unix:/var/run/php/php7.1-fpm.sock;
    #fastcgi_pass 127.0.0.1:9000;
    fastcgi_index index.php;
    include fastcgi_params;
