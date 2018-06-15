@@ -37,9 +37,6 @@ Other section is bits of info that needs indexed for the PDF to populate all sec
   applications/provision/provision_manual_grandstream.rst
   applications/provision/provision_manual_htek.rst
   applications/provision/provision_manual_zoiper.rst
-<<<<<<< HEAD
-=======
   applications/provision/provision_manual_snom.rst
->>>>>>> d44f3545d85eedf9a4df8e43ef37cdeeaff36ecc
   applications/provision/phone_screen_capture.rst
   
