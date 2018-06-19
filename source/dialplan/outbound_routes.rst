@@ -84,3 +84,15 @@ Before the bridge action on the outbound route add the following actions
  action	set	pin_number=database
  action	lua	pin_number.lua
 
+Which gateway is my call using?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to know the gateway your call is using there is currently no way to do this with FusionPBX's GUI. Instead you can do it this way.
+
+* Go to **Advanced -> Command** and in the **switch** command dropdown section type
+
+::
+
+ show channels as xml and then press the execute button.
+ 
+* In the output that is returned, look for the string **sofia/gateway/ and the gateway name.** This is the gateway your call is using. 
