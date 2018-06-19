@@ -67,3 +67,35 @@ As the browser address, enter http://<phone’s IP address>/captureScreen .
 The current screen that is shown on the phone is shown in the browser window. The image can be saved as a file.
 
 Please consult your Admin Guide matching your SIP / UC Software Version. 
+
+Yealink
+=========
+
+1. Yealink SIP phone with V73 or higher version
+
+2. Login on the WEB interface and fill the *Action URI allow IP List* (path: Features > Remote Control > Action URI allow IP List) with *any* or *IP address or your PC*, then click *Confirm*.
+
+1.png
+
+3. In the Brower, fill *http://PhoneIP/screencapture* in the address bar (Phone IP is the IP address of your phone), then press *Enter* key.
+
+.. image:: http://support.yealink.com/upload/image/20150513/1431509282172062831.png
+        :scale: 85%
+
+
+
+4. In the first time, for security consideration, the phone will display a message *Allow remote control*. Please press *OK*. Then repeat step 3.
+
+5. You will get the screen capture of the phone as below:
+
+
+.. image:: http://support.yealink.com/upload/image/20150513/1431509312543075406.png
+        :scale: 85%
+
+
+
+
+Product Models
+^^^^^^^^^^^^^^^^^^^^^
+
+SIP-T48G , SIP-T46G , SIP-T42G , SIP-T41P , SIP-T29G , SIP-T28P , SIP-T27P , SIP-T26P , SIP-T23G , SIP-T23P , SIP-T22P , SIP-T21P E2
