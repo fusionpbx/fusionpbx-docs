@@ -26,4 +26,12 @@ Applying Recordings
 Once you have a recording made you can use the recordings in different area's of FusionPBX.  Custom IVR's and phrases would be the typical uses.
 
 
+`Recordings Default Settings`_
+---------------------------------------
+
+Click the link above for Recordings default settings.
+
+
+.. _Recordings Default Settings: /en/latest/advanced/default_settings.html#id24
+
 .. _Click here for the youtube video.: https://youtu.be/CkqlsVvvv2U
