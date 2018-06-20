@@ -328,7 +328,7 @@ Specific defaults for Follow Me.
 `Ivr Menu <default_settings/ivr_menu.html>`_
 =========
 
-Specific defauly for IVR Menu.
+Specific default for IVR Menu.
 
 +-----------------------------+----------------------+-----------------------+-------------------------+--------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description    |
