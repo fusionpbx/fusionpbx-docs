@@ -253,10 +253,10 @@ Error log for failed or sucessfully sent messages.
 * `Email Log <http://docs.fusionpbx.com/en/latest/advanced/default_settings/email_error_log.rst>`_
 
 
-`Fax <default_settings/email.html>`_
+`Fax <default_settings/fax.html>`_
 =========
 
-Specific default settings for fax server.
+`Applications > Fax <../applications/fax_server.html>`_ specific default settings for fax server.
 
 +-----------------------------------+----------------------+---------------------------------+-------------------------+------------------------------------------------------------------------------------------------+
 | Default Setting Subcategory       | Default Setting Name | Default Setting Value           | Default Setting Enabled | Default Setting Description                                                                    |
