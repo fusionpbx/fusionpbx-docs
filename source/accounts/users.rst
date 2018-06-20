@@ -2,7 +2,7 @@
 Users
 ************
 
-.. image:: ../_static/images/accounts/users.jpg
+.. image:: ../_static/images/accounts/fusionpbx_users.jpg
         :scale: 85%
 
 
