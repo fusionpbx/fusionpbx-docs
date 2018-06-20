@@ -32,7 +32,7 @@ How to setup the device using the phone's web interface.
 *  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
 
 
-Advanced > Default Settings
+Advanced > `Default Settings`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the Provisioning section, there are a few key options that have to be set in order to turn auto provisioning on.
@@ -53,3 +53,6 @@ Phone Screen Capture
 .. Note::
        `Click here to view how to add a device <http://docs.fusionpbx.com/en/latest/accounts/devices.html>`_.
 
+
+
+.. _Default Settings: /en/latest/advanced/default_settings.html#id17
