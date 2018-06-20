@@ -25,3 +25,17 @@ This example has both the extension 1301 itself and and external number to call.
 
 .. image:: ../_static/images/fusionpbx_follow_me1.jpg
         :scale: 85%
+
+
+`Follow Me Default Settings`_
+---------------------------------------
+
+Click the link above for Follow Me default settings.
+
+
+.. _Follow Me Default Settings: /en/latest/advanced/default_settings.html#id13
+
+
+
+
+

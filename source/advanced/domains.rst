@@ -64,5 +64,11 @@ A menu will pop open on the right of the screen.  Click on the domain that you w
 .. image:: ../_static/images/fusionpbx_domain6.jpg
         :scale: 75%
 
+`Domains Default Settings`_
+---------------------------------------
 
+
+
+
+.. _Domains Default Settings: /en/latest/advanced/default_settings.html#id7
 .. _Click here for the youtube video: https://youtu.be/frMNh43GfUo

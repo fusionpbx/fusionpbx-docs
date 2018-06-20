@@ -157,8 +157,12 @@ Agents can login to call center with *22 from the phone or via the FusionPBX web
 *  Login then go to Status > `Agent Status`_
 
 
+`Call Center Default Settings`_
+---------------------------------------
 
 
 
+
+.. _Call Center Default Settings: /en/latest/advanced/default_settings.html#id3
 .. _Agent Status: http://docs.fusionpbx.com/en/latest/status/agent_status.html
 .. _streams: http://docs.fusionpbx.com/en/latest/applications/streams.html

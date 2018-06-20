@@ -16,3 +16,10 @@ Quickly access information and tools related to your account.  Depending on the 
 * **Ring Group Forward:** See the name, extension number, if forwarding is enabled and what number it is forwarded to.
 * **System Counts:** Number of Domains, Devices, Extensions, Gateways, Users, Destinations, CC Queues, IVR Menus, Ring Groups, Voicemail and if they are disabled.
 
+`Dashboard Default Settings`_
+---------------------------------------
+
+
+
+
+.. _Dashboard Default Settings: /en/latest/advanced/default_settings.html#id5

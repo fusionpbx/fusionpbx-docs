@@ -69,8 +69,8 @@ To connect to a fax machine with an ATA you will most likely need to adjust sett
 Create an extension for the FAX machine. You can *optionally* set **bypass media to true** under advanced in the extension settings. 
 
 
-FAX Default Settings
-=====================
+`FAX Default Settings`_
+==========================
 
 Goto Menu -> Advanced -> Default Settings then category Fax
 
@@ -96,3 +96,5 @@ Faxing will fail at times. Fax Server should automatically try different methods
 * Sending a wav file
 * Send a fax to HP faxback.  This will test sending and receiving 1-888-473-2963
 * Test sending with Faxtoy.net This will display what is faxed on their website. 1-855-330-1239 or 1-213-294-2943
+
+.. _FAX Default Settings: /en/latest/advanced/default_settings.html#id12
