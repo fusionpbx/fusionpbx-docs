@@ -71,6 +71,14 @@ To access an extensions voicemail **away** from the extension.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Click the link above for setting up email server settings.  These are the settings needed to enable your FusionPBX installation to be able to send email notifications.
 
+`Voicemail Default Settings`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Voicemail default settings gives the options to adjust voicemail settings on your FusionPBX installation globally.
+
+
+
 Voicemail Transcription
 ====================
 
@@ -146,3 +154,7 @@ When an extension is unavailable and no voicemail is configured, there is an opt
 To enable/disable this, change the option for the **not_found_message** setting in **Advanced > Default Settings > Voicemail** category to suit your preference.
 
 Please note that enabling this option means that the call must be answered in order to play the message to the caller and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions this could potentially be illegal as it turns an otherwise toll free call into a chargeable one.
+
+
+
+.. _Voicemail Default Settings: /en/latest/advanced/default_settings.html#id32
