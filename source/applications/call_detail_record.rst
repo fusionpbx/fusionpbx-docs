@@ -108,5 +108,12 @@ Harddrive space usage
  XML CDR data adds up fast, therefore you may need to clear this data at some point in the future.  By default freeswitch keeps this in (source install) /usr/local/freeswitch/log/cdr-csv or (package install) /var/log/freeswitch/xml_cdr and inside that by year, month and day.  Recordings also take up space and have to be manually deleted if you want the space back these are kept in (source install) /usr/local/freeswitch/recordings/{Domian_Name} or (package install) /etc/freeswitch/recordings/{Domain Name} and inside that by year, month and day.
 
 
+`CDR Default Settings`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+.. _CDR Default Settings: /en/latest/advanced/default_settings.html#id4
 .. _CDR: http://en.wikipedia.org/wiki/Call_detail_record
 .. _```http://localhost/mod/xml_cdr/v_xml_cdr_import.php```: http://localhost/mod/xml_cdr/v_xml_cdr_import.php
