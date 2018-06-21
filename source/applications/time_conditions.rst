@@ -73,7 +73,7 @@ The day of week condition each day of the week is represented by a number. A val
 `Time Conditions Default Settings`_
 ---------------------------------------
 
-
+Click the link above for Time Conditions default settings.
 
 
 .. _Time Conditions Default Settings: /en/latest/advanced/default_settings.html#id30
