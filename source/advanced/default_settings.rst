@@ -14,7 +14,9 @@ Default Settings used for all domains.  Branding can be done in this section, ad
 Default Settings have several different categories. Click on the category to view more details.
 
 `Adminer <default_settings/adminer.html>`_
-=========
+=============================================
+
+FusionPBX menu `Advanced > Adminer <../advanced/adminer.html>`_
 
 FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you must enable this option with True. 
 
@@ -25,7 +27,7 @@ FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you mus
 +-----------------------------+----------------------+-----------------------+-------------------------+-----------------------------------------------+
 
 `Cache <default_settings/cache.html>`_
-=========
+===========================================
 
 Option to use file cache for xml and not memcache.
 
@@ -39,7 +41,9 @@ Option to use file cache for xml and not memcache.
 
 
 `Call Center <default_settings/call_center.html>`_
-=========
+=====================================================
+
+FusionPBX menu `Apps > Call Center <../applications/call_center.html>`_
 
 Defaults for the amount of agent rows for Call Center.
 
@@ -53,7 +57,9 @@ Defaults for the amount of agent rows for Call Center.
 
 
 `CDR <default_settings/cdr.html>`_
-=========
+=======================================
+
+FusionPBX menu `Apps > CDR <../applications/call_detail_record.html>`_
 
 CDR Stat hour limit, call leg, format, limit, http_enabled, archive database, and storage type settings can be set here.
 
@@ -93,9 +99,11 @@ CDR Stat hour limit, call leg, format, limit, http_enabled, archive database, an
 
 
 `Dashboard <default_settings/dashboard.html>`_
-=========
+====================================================
 
-User level settings that control what is seen and not seen on the dashboard for each user access level.
+FusionPBX menu `Home > Dashboard <../home/dashboard.html>`_
+
+Different user level settings that control what is seen and not seen on the dashboard for each user access level.
 
 +-----------------------------+----------------------+-----------------------+-------------------------+------------------------------------------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                                                        |
@@ -151,7 +159,9 @@ User level settings that control what is seen and not seen on the dashboard for 
 
 
 `Destinations <default_settings/destinations.html>`_
-=========
+=======================================================
+
+FusionPBX menu `Dialplan > Destinations <../dialplan/destinations.html>`_
 
 Destinations specific defaults.
 
@@ -162,8 +172,10 @@ Destinations specific defaults.
 +-----------------------------+----------------------+-----------------------+-------------------------+-----------------------------+
 
 
-`Domain <default_settings/domain.html>`_
-=========
+`Domains <default_settings/domain.html>`_
+===========================================
+
+FusionPBX menu `Advanced > Domains <../advanced/domains.html>`_
 
 Domain specific defaults.
 
@@ -192,9 +204,11 @@ Domain specific defaults.
 
 
 `Editor <default_settings/domain.html>`_
-=========
+===========================================
 
-Specific defaults for Advanced > Editor.
+FusionPBX menu `Advanced > Editor <../advanced/editor.html>`_
+
+Editor specific defaults.
 
 +-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                                               |
@@ -215,7 +229,7 @@ Specific defaults for Advanced > Editor.
 
 
 `Email <default_settings/email.html>`_
-=========
+=========================================
 
 This is where you configure email settings to receive email notifications of voicemail, missed calls and fax.
 
@@ -254,9 +268,11 @@ Error log for failed or sucessfully sent messages.
 
 
 `Fax <default_settings/fax.html>`_
-=========
+=======================================
 
-`Applications > Fax <../applications/fax_server.html>`_ specific default settings for fax server.
+`Apps > Fax <../applications/fax_server.html>`_ 
+
+Specific default settings for fax server.
 
 +-----------------------------------+----------------------+---------------------------------+-------------------------+------------------------------------------------------------------------------------------------+
 | Default Setting Subcategory       | Default Setting Name | Default Setting Value           | Default Setting Enabled | Default Setting Description                                                                    |
@@ -310,7 +326,9 @@ Error log for failed or sucessfully sent messages.
 
 
 `Follow Me <default_settings/follow_me.html>`_
-=========
+================================================
+
+FusionPBX menu `Apps > Follow Me <../applications/follow_me.html>`_
 
 Specific defaults for Follow Me.
 
@@ -326,7 +344,9 @@ Specific defaults for Follow Me.
 
 
 `Ivr Menu <default_settings/ivr_menu.html>`_
-=========
+===================================================
+
+FusionPBX menu `Apps > IVR Menus <../applications/ivr.html>`_
 
 Specific default for IVR Menu.
 
@@ -340,7 +360,7 @@ Specific default for IVR Menu.
 
 
 `Limit <default_settings/limit.html>`_
-=========
+========================================
 
 Limit specific default settings.
 
@@ -366,7 +386,7 @@ Limit specific default settings.
 
 
 `Login <default_settings/login.html>`_
-=========
+===========================================
 
 Login specific default settings.
 
@@ -385,7 +405,7 @@ Login specific default settings.
 
 
 `Provision <default_settings/provision.html>`_
-=========
+==================================================
 
 In the Provisioning section, there are a few key options that have to be set in order to turn auto provisioning on.
 
@@ -749,9 +769,11 @@ In the Provisioning section, there are a few key options that have to be set in 
 
 
 `Recordings <default_settings/recordings.html>`_
-=========
+==================================================
 
-Recording specific default settings.
+FusionPBX menu `Apps > Recordings <../applications/recording.html>`_
+
+Recordings specific default settings.
 
 +-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                       |
@@ -761,7 +783,9 @@ Recording specific default settings.
 
 
 `Ring Group <default_settings/ring_group.html>`_
-=========
+===================================================
+
+FusionPBX menu `Apps > Ring Group <../applications/ring_groups.html>`_
 
 Ring Groups specific default settings.
 
@@ -775,7 +799,7 @@ Ring Groups specific default settings.
 
 
 `Security <default_settings/security.html>`_
-=========
+================================================
 
 Security specific default settings.
 
@@ -799,7 +823,7 @@ Security specific default settings.
 
 
 `Server <default_settings/server.html>`_
-=========
+==============================================
 
 Server specific default settings.
 
@@ -811,7 +835,7 @@ Server specific default settings.
 
 
 `Switch <default_settings/switch.html>`_
-=========
+================================================
 
 Switch specific default settings. These defaults will change depending if you compiled the SWITCH source or used the newest default of packages. 
 
@@ -855,7 +879,7 @@ Switch specific default settings. These defaults will change depending if you co
 
 
 `Theme <default_settings/theme.html>`_
-=========
+=========================================
 
 Theme specific default settings.
 
@@ -1254,7 +1278,9 @@ Theme specific default settings.
 
 
 `Time Conditions <default_settings/time_conditions.html>`_
-=========
+=============================================================
+
+FusionPBX menu `Apps > Time Conditions <../applications/time_conditions.html>`_
 
 Time Conditions specific default settings.
 
@@ -1321,7 +1347,9 @@ Time Conditions specific default settings.
 
 
 `User <default_settings/user.html>`_
-=========
+=======================================
+
+FusionPBX menu `Accounts > Users <../home/users.html>`_
 
 User specific default settings.
 
@@ -1344,7 +1372,9 @@ User specific default settings.
 
 
 `Voicemail <default_settings/voicemail.html>`_
-=========
+================================================
+
+FusionPBX menu `Apps > Voicemail <../applications/voicemail.html>`_
 
 Voicemail specific default settings.
 
