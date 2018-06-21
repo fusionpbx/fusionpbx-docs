@@ -206,7 +206,7 @@ Domain specific defaults.
 `Editor <default_settings/domain.html>`_
 ===========================================
 
-FusionPBX menu `Advanced > Editor <../advanced/editor.html>`_
+FusionPBX menu Advanced > php editor, grammar editor, provision editor, and xml editor.
 
 Editor specific defaults.
 
