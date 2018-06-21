@@ -771,7 +771,7 @@ In the Provisioning section, there are a few key options that have to be set in 
 `Recordings <default_settings/recordings.html>`_
 ==================================================
 
-FusionPBX menu `Apps > Recordings <../applications/recording.html>`_
+FusionPBX menu `Apps > Recordings <../applications/recordings.html>`_
 
 Recordings specific default settings.
 
@@ -785,7 +785,7 @@ Recordings specific default settings.
 `Ring Group <default_settings/ring_group.html>`_
 ===================================================
 
-FusionPBX menu `Apps > Ring Group <../applications/ring_groups.html>`_
+FusionPBX menu `Apps > Ring Group <../applications/ring_group.html>`_
 
 Ring Groups specific default settings.
 
@@ -1349,7 +1349,7 @@ Time Conditions specific default settings.
 `User <default_settings/user.html>`_
 =======================================
 
-FusionPBX menu `Accounts > Users <../home/users.html>`_
+FusionPBX menu `Accounts > Users <../accounts/users.html>`_
 
 User specific default settings.
 
