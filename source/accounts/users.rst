@@ -2,6 +2,10 @@
 Users
 ************
 
+.. image:: ../_static/images/accounts/fusionpbx_users.jpg
+        :scale: 85%
+
+
 Define the users information to login to the web interface.
 
 *  Username
@@ -22,3 +26,13 @@ Define the users information to login to the web interface.
     The domain the user is assigned to.
 *  Enable
     Whether the user is enabled.
+
+
+`Users Default Settings`_
+---------------------------------------
+
+Click the link above for Users default settings.
+
+
+.. _Users Default Settings: /en/latest/advanced/default_settings.html#id31
+

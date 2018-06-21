@@ -18,7 +18,7 @@ flexible web interface to the very powerful and highly scalable
 multi-platform voice switch called `FreeSWITCH`_.
 
 FusionPBX will run on a variety of operating systems (Optimized for Debian 8+) and
-hardware of your choice. FusionPBX provides a GUI for unlimited
+hardware of your choice. FusionPBX provides a GUI for QR Code soft phone provisioning, unlimited
 extensions, voicemail-to-email, music on hold, call parking, analog
 lines or high density T1/E1 circuits, and many other features. FusionPBX
 provides the functionality that business need and provides corporate
@@ -29,7 +29,7 @@ Benefits of FusionPBX
 
 1. Adding extra functionality to the incredibly robust FreeSWITCH VoIP Platform.
 2. Makes FreeSWITCH easy to administer while at the same time
-   still allowing you to work directly within FreeSWITCH Command Line Interface (fs_cli) when you need to. 
+   still allowing you to work directly within `FreeSWITCH`_ Command Line Interface (fs_cli) when you need to. 
 3. Gives your users and tenants an attractive GUI interface to interact with. 
 
 

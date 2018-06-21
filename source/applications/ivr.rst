@@ -58,4 +58,12 @@ You now have a list of IVR's to go back to and edit or delete as needed.
         :scale: 85%
 
 
+
+`IVR Default Settings`_
+---------------------------------------
+
+Click the link above for IVR default settings.
+
+
+.. _IVR Default Settings: /en/latest/advanced/default_settings.html#id14
 .. _Click here for the youtube video: https://youtu.be/Xnc9ExYKR8s

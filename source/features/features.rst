@@ -182,7 +182,7 @@ Allows calling multiple extensions or external numbers.
 
 Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_.
 
-`Hot Desking`_
+Hot Desking
 ---------------
 
 A way to login to another phone device and temporarily or permanently become another extension. This is sometimes known as 'hoteling' and 'extension mobility'
@@ -290,9 +290,9 @@ This is not a comprehensive set of features. A complete list would be many times
 
 
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
-.. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplan.html
+.. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplans.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
-.. _Extensions: http://docs.fusionpbx.com/en/latest/extensions_ivr/extensions.html
+.. _Extensions: http://docs.fusionpbx.com/en/latest/accounts/extensions.html
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
@@ -302,9 +302,9 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Call Blind Transfer: /en/latest/additional_information/feature_codes.html
 .. _Call Waiting: /en/latest/additional_information/feature_codes.html
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
-.. _Call Forward: /en/latest/accounts/call_routing.html
+.. _Call Forward: /en/latest/applications/call_routing.html
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
-.. _Call Routing: /en/latest/accounts/call_routing.html
+.. _Call Routing: /en/latest/applications/call_routing.html
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Adminer: /en/latest/advanced/adminer.html
 .. _Command: /en/latest/advanced/command.html
