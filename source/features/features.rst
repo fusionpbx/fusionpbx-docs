@@ -304,7 +304,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: /en/latest/applications/call_routing.html
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
-.. _Call Routing: /en/latest/accounts/call_routing.html
+.. _Call Routing: /en/latest/applications/call_routing.html
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Adminer: /en/latest/advanced/adminer.html
 .. _Command: /en/latest/advanced/command.html
