@@ -270,7 +270,7 @@ Error log for failed or sucessfully sent messages.
 `Fax <default_settings/fax.html>`_
 =======================================
 
-`Apps > Fax <../applications/fax_server.html>`_ 
+`Apps > Fax Server <../applications/fax_server.html>`_ 
 
 Specific default settings for fax server.
 
