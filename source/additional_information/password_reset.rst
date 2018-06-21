@@ -1,5 +1,5 @@
 #######################
-Current Password Reset
+Password Reset
 #######################
 
 
