@@ -2,7 +2,7 @@
 Languages
 ***************
 
-FusionPBX has multilingual capabilities.  This will allow for different languages to be used in your FusionPBX installation.  Languages can be set globally, per tennant and per user. In addition to the installation web interface, there are options to upload audio files for FreeSWITCH to use via command line.
+FusionPBX has multilingual capabilities.  This will allow for different languages to be used in your FusionPBX installation.  Languages can be set globally, per tenant and per user. In addition to the installation web interface, there are options to upload audio files for FreeSWITCH to use via command line.
 
 Fusionpbx Settings
 ^^^^^^^^^^^^^^^^^^^
