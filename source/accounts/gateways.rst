@@ -34,7 +34,7 @@ Most settings in the Advanced Gateway Settings can remain the same.  Some carrie
 * **Register Transport:** Tells the switch to use SIP with TCP, UDP or TLS.
 * **Register Proxy:** Enter the hostname or IP address of the register proxy. host[:port].
 * **Outbound Proxy:** Enter the hostname or IP address of the outbound proxy. host[:port].
-* **Caller ID In From:** If you caller ID isn't working setting this to true will often fixt the problem.
+* **Caller ID In From:** If you caller ID isn't working setting this to true will often fix the problem.
 * **Supress CNG:** Set this value to true to disable comfort noise.
 * **Sip CID Type:** The SIP caller id type: none, pid, and rpid.
 * **Codec Preferences:** Enter the codec preferences as a list. Ex: PCMA,PCMU,G722,OPUS
