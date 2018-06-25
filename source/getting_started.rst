@@ -24,3 +24,4 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
   getting_started/backup.rst
   getting_started/restore.rst
   firewall.rst
+  getting_started/languages.rst
