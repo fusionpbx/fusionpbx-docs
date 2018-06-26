@@ -38,4 +38,21 @@ Fill in the following fields:
         :scale: 85%
 
 
+Troubleshooting
+-----------------------
+
+* Make sure provisioning is **enabled** in Advanced > Default Settings
+
+* Check, double check that the correct extension number and password is being used.
+
+* Reboot the device.
+
+* Check Fail2ban and see if the ip got blocked.
+
+* Make sure you have created an DNS A record for the domain being used and there are no typos
+
+* Nat, firewalls and router settings. Some brands of routers can cause issues. Google the make and model of router or firewall appliance for common settings or remedies.
+
+* Visit Grandstream Supoprt http://www.grandstream.com/support
+
 
