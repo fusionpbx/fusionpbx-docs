@@ -11,13 +11,13 @@ Auto provisioning with FusionPBX and Grandstream.
 
 Fill in the following fields:
 
-* **HTTP/HTTPS User Name:** This is what is set in Advanced > Default Settings > Provisioning section in your FusionPBX installation.
+* **HTTP/HTTPS User Name:** Set in Advanced > Default Settings > Provisioning section in your FusionPBX installation.
 
-* **HTTP/HTTPS Password:** This is what is set in Advanced > Default Settings > Provisioning section in your FusionPBX installation.
+* **HTTP/HTTPS Password:** Set in Advanced > Default Settings > Provisioning section in your FusionPBX installation.
 
-* **Config Server Path:** This typically your FusionPBX installation url/app/provision. (**sub.domain.tld/app/provision**)
+* **Config Server Path:** This is typically your FusionPBX installation url/app/provision. (**sub.domain.tld/app/provision**)
 
-* **Firmware Server Path:** This is what is set in Advanced > Default Settings > Provisioning section in your FusionPBX installation.
+* **Firmware Server Path:** Set in Advanced > Default Settings > Provisioning section in your FusionPBX installation.
 
 * Click **Save and Apply** at the bottom.
 .. note::
@@ -44,6 +44,8 @@ Troubleshooting
 * Make sure provisioning is **enabled** in Advanced > Default Settings
 
 * Check, double check that the correct extension number and password is being used.
+
+* Factory default the phone and try again.
 
 * Reboot the device.
 
