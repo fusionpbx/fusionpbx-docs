@@ -44,10 +44,37 @@ Setting the language from here will set the language for this specific user and 
 
 
 
-FreeSWITCH Audio Files  
+FreeSWITCH Sound Files  
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+FreeSWITCH sound files location are dependent on operating system and installation method.
+
+**Package Install**
+-----------------------
+
+* Most if not all recent installations of FusionPBX are using packages for FreeSWITCH.
+
+* **File system location:** 
+
+::
+
+ /usr/share/freeswitch/sounds/en/us/
+
+**Source Install**
+--------------------
+
+* Older installs, custom installs, or personal preference are using source compiled versions.
+
+* **File system location:**
+
+::
+
+ /usr/local/freeswitch/sounds/en/us/
 
 
+**Where to get language sounds**
+----------------------------------
 
+
+* **Free:** https://freeswitch.org/stash/projects/FS/repos/freeswitch-sounds/browse
 
