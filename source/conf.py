@@ -47,6 +47,58 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
+#from pygments.style import Style
+#from pygments.token import Keyword, Name, Comment, String, Error, \
+#     Number, Operator, Generic
+
+#class YourStyle(Style):
+#    default_style = ""
+#    styles = {
+#        Comment:                'italic #888',
+#        Keyword:                'bold #006',
+#        Name:                   '#f00',
+#        Name.Function:          '#0f0',
+#        Name.Class:             'bold #0f0',
+#        String:                 'bg:#eee #111'
+#    }
+
+
+# BEGIN MONKEY-PATCH
+from pygments.style import Style
+from pygments.token import Text, Other, Comment, Whitespace, Keyword
+
+class MyFancyStyle(Style):
+    background_color = "#1e1e27"
+    default_style = ""
+    styles = {
+        Text:                      "#cfbfad",
+        Other:                     "#cfbfad",
+        Keyword:                   "#5e8adf",
+        Whitespace:                "#434357",
+        Comment:                   "#cd8b00",
+        Comment.Preproc:           "#409090",
+        Comment.PreprocFile:       "bg:#404040 #ffcd8b",
+        Comment.Special:           "#808bed",
+        # ... snip (just more colors, you get the idea) ...
+    }
+
+
+def pygments_monkeypatch_style(mod_name, cls):
+    import sys
+    import pygments.styles
+    cls_name = cls.__name__
+    mod = type(__import__("os"))(mod_name)
+    setattr(mod, cls_name, cls)
+    setattr(pygments.styles, mod_name, mod)
+    sys.modules["pygments.styles." + mod_name] = mod
+    from pygments.styles import STYLE_MAP
+    STYLE_MAP[mod_name] = mod_name + "::" + cls_name
+
+
+pygments_monkeypatch_style("my_fancy_style", MyFancyStyle)
+pygments_style = "my_fancy_style"
+# END MONKEY-PATCH
+
 # General information about the project.
 project = u'FusionPBX Docs'
 copyright = u'2008-2018, Mark J Crane'
@@ -90,7 +142,7 @@ exclude_patterns = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+#pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
