@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # BEGIN MONKEY-PATCH
 from pygments.style import Style
-from pygments.token import Text, Other, Comment, Whitespace
+from pygments.token import Text, Other, Comment, Whitespace, Keyword
 
 class MyFancyStyle(Style):
     background_color = "#1e1e27"
@@ -57,7 +57,7 @@ class MyFancyStyle(Style):
     styles = {
         Text:                      "#cfbfad",
         Other:                     "#cfbfad",
-        Keyword:                 'bold #005',
+        Keyword:                   "#5e8adf",
         Whitespace:                "#434357",
         Comment:                   "#cd8b00",
         Comment.Preproc:           "#409090",
