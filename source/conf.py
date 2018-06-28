@@ -57,6 +57,7 @@ class MyFancyStyle(Style):
     styles = {
         Text:                      "#cfbfad",
         Other:                     "#cfbfad",
+        Keyword:                 'bold #005',
         Whitespace:                "#434357",
         Comment:                   "#cd8b00",
         Comment.Preproc:           "#409090",
