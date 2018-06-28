@@ -55,7 +55,7 @@ class YourStyle(Style):
     default_style = ""
     styles = {
         Comment:                'italic #888',
-        Keyword:                'bold #005',
+        Keyword:                'bold #006',
         Name:                   '#f00',
         Name.Function:          '#0f0',
         Name.Class:             'bold #0f0',
