@@ -73,21 +73,100 @@ You can make up to 100 subdomain requests with using -d sub.domain.tld -d sub1.d
 
 Systemctl restart nginx
 
-**Auto Renew certificate** 
+Now check the padlock and see if it's green!
+
+Auto Renew certificate
+------------------------
+
+Renew with Crontab
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Renewing with crontab**
 
 ::
 
- cd /etc/fusionpbx/
- touch renew-letsencrypt.sh
- Put code example from "Automating Renewal" section from https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx into renew-letsencrypt.sh
- Edit the my-domain.conf with the domain name you used a few steps earlier
  Create crontab -e
- 0 0 1 JAN,MAR,MAY,JUL,SEP,NOV * /path/to/renew-letsencrypt.sh
- This executes every two months
+ 
+ 0 0 9 JAN-DEC * /usr/bin/certbot renew &>/var/log/fusionpbx_certbot.cronlog
+ This executes every month on the 9th at midnight
 
-chmod +x renew-letsencrypt.sh
+**List crontabs**
 
-Now check the padlock and see if it's green!
+::
+
+ crontab -l
+
+Renew with systemd
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Systemd can also be used to renew let's encrypt.  This uses a timer and service file.
+
+.. note::
+
+      Choose crontab or systemd.  Don't use both
+
+**Timer File**
+
+**Create the systemd timer file**
+
+::
+
+ touch /etc/systemd/system/certbot-renew.timer
+
+**Populate timer file**
+
+::
+
+ [Unit]
+ Description=Timer for Certbot Renewal
+
+ [Timer]
+ OnBootSec=300
+ OnUnitActiveSec=3w
+
+ [Install]
+ WantedBy=multi-user.target
+
+*This will send a renew request every 3 weeks*
+
+**Enable timer**
+
+::
+
+ systemctl enable certbot-renew.timer
+
+**Service File**
+
+* Create the systemd system file
+
+::
+
+ touch /etc/systemd/system/certbot-renew.system
+
+**Populate system file**
+
+::
+
+ [Unit]
+ Description=Certbot Renewal
+ 
+ [Service]
+ ExecStart=/usr/bin/certbot renew --post-hook "systemctl restart nginx"
+
+
+**Start the service**
+
+::
+
+ systemctl start certbot-renew.service
+
+**Check the service** 
+
+::
+
+ journalctl -u certbot-renew.service
+
 
 Setup for multiple domains on Let's Encrypt
 ===========================================
