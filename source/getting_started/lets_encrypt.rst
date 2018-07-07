@@ -81,7 +81,7 @@ Auto Renew certificate
 Renew with Crontab
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Renewing with crontab**
+Crontab can be used to renew let's encrypt.
 
 ::
 
@@ -100,11 +100,44 @@ Renew with systemd
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Systemd can also be used to renew let's encrypt.  This uses a timer and service file.
+Systemd can also be used to renew let's encrypt.  This uses a service and timer file.
 
-.. note::
+.. warning::
 
       Choose crontab or systemd.  Don't use both
+
+
+
+**Service File**
+
+*Create the systemd service file*
+
+::
+
+ touch /etc/systemd/system/certbot-renew.system
+
+**Populate system file**
+
+::
+
+ [Unit]
+ Description=Certbot Renewal
+ 
+ [Service]
+ ExecStart=/usr/bin/certbot renew --post-hook "systemctl restart nginx"
+
+
+**Start the service**
+
+::
+
+ systemctl start certbot-renew.service
+
+**Check the service** 
+
+::
+
+ journalctl -u certbot-renew.service
 
 **Timer File**
 
@@ -135,38 +168,6 @@ Systemd can also be used to renew let's encrypt.  This uses a timer and service 
 ::
 
  systemctl enable certbot-renew.timer
-
-**Service File**
-
-* Create the systemd system file
-
-::
-
- touch /etc/systemd/system/certbot-renew.system
-
-**Populate system file**
-
-::
-
- [Unit]
- Description=Certbot Renewal
- 
- [Service]
- ExecStart=/usr/bin/certbot renew --post-hook "systemctl restart nginx"
-
-
-**Start the service**
-
-::
-
- systemctl start certbot-renew.service
-
-**Check the service** 
-
-::
-
- journalctl -u certbot-renew.service
-
 
 Setup for multiple domains on Let's Encrypt
 ===========================================
