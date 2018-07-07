@@ -78,6 +78,12 @@ Now check the padlock and see if it's green!
 Auto Renew certificate
 ------------------------
 
+.. note::
+
+       This will work with certbot
+
+
+
 Renew with Crontab
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
