@@ -102,78 +102,7 @@ Crontab can be used to renew let's encrypt.
 
  crontab -l
 
-Renew with systemd
-^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-Systemd can also be used to renew let's encrypt.  This uses a service and timer file.
-
-.. warning::
-
-      Choose crontab or systemd.  Don't use both
-
-
-
-**Service File**
-
-*Create the systemd service file*
-
-::
-
- touch /etc/systemd/system/certbot-renew.system
-
-**Populate system file**
-
-::
-
- [Unit]
- Description=Certbot Renewal
- 
- [Service]
- ExecStart=/usr/bin/certbot renew --post-hook "systemctl restart nginx"
-
-
-**Start the service**
-
-::
-
- systemctl start certbot-renew.service
-
-**Check the service** 
-
-::
-
- journalctl -u certbot-renew.service
-
-**Timer File**
-
-**Create the systemd timer file**
-
-::
-
- touch /etc/systemd/system/certbot-renew.timer
-
-**Populate timer file**
-
-::
-
- [Unit]
- Description=Timer for Certbot Renewal
-
- [Timer]
- OnBootSec=300
- OnUnitActiveSec=3w
-
- [Install]
- WantedBy=multi-user.target
-
-*This will send a renew request every 3 weeks*
-
-**Enable timer**
-
-::
-
- systemctl enable certbot-renew.timer
 
 Setup for multiple domains on Let's Encrypt
 ===========================================
