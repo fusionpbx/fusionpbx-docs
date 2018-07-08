@@ -94,7 +94,10 @@ Crontab can be used to renew let's encrypt.
  Create crontab -e
  
  0 0 9 JAN-DEC * /usr/bin/certbot renew &>/var/log/fusionpbx_certbot.cronlog
- This executes every month on the 9th at midnight
+ 
+
+This executes every month on the 9th at midnight
+ 
 
 **List crontabs**
 
