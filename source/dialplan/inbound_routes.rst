@@ -10,7 +10,11 @@ Route incoming calls to destinations based on one or more conditions. It can sen
 * External Number
 * Script
 
-Order is important when an anti-action is used or when there are multiple conditions that match. 
+Directs public inbound calls to an internal destination on the system.
+Note that the only difference between the inbound route dial plan and the normal dial plan is that the inbound route dial plan works on all calls that are in the public context whereas the normal dial plan works on the domain context.
+
+Inbound Call Routing is used to route incoming calls to destinations based on one or more conditions and context. It can send incoming calls to an auto attendant, huntgroup, extension, external number, or a script. Order is important when an anti-action is used or when there are multiple conditions that match.
+
 
 **Inbound routes can be used for advanced reasons**.  `Dialplan > Destinations <http://docs.fusionpbx.com/en/latest/dialplan/destinations.html>`_ **will create and configure the Inbound Route for you.**
 
@@ -39,3 +43,4 @@ Edit/Add Inbound Routes
 * **Continue:** If you want the call to continue through the order of the remaining dialplans. This is usually set as false.
 * **Enabled:** If the Inbound Route is enabled or disabled.
 * **Description:** A way to organize what the inbound route is used for.
+
