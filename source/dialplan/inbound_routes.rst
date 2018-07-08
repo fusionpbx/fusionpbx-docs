@@ -44,3 +44,30 @@ Edit/Add Inbound Routes
 * **Enabled:** If the Inbound Route is enabled or disabled.
 * **Description:** A way to organize what the inbound route is used for.
 
+
+XML example
+^^^^^^^^^^^^^
+
+Route based on CallerID Name or Number.
+
+Example used to send unwanted callers. (telemarketers that won't stop)
+
+::
+
+ <extension name="gotolennyCIDnumber" >
+  <condition field="context" expression="public"/>
+  <condition field="caller_id_number" expression="^1235554321$|^1235551234$">
+     <action application="answer"/>
+     <action application="bridge" data="sofia/${use_profile}/lenny@sip.itslenny.com:5060"/>
+  </condition>
+ </extension>
+
+ <extension name="gotolennyCIDname" >
+  <condition field="context" expression="public"/>
+   <condition field="caller_id_name" expression="^.*THE.*ANNOYING.*COMPANY.*$|^.*OTHER.*ANNOYING.*CALLER.*$">
+       <action application="answer"/>
+       <action application="bridge" data="sofia/${use_profile}/lenny@sip.itslenny.com:5060"/>
+   </condition>
+ </extension>
+
+
