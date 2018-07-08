@@ -79,8 +79,9 @@ Apps are stored in fusionpbx/app directory.
   
   * domain_uuid
   * Primary key name is the non plural name of table without the v_ prefix.
-  * How to create the primary key name
-  * If the table name is v_users take remove the 'v_', make it non-plural and add '_uuid' to the end of the field name. In this example the primary key would be user_uuid
+    
+    * How to create the primary key name
+    * If the table name is v_users take remove the 'v_', make it non-plural and add '_uuid' to the end of the field name. In this example the primary key would be user_uuid
 
 Code Documentation
 
