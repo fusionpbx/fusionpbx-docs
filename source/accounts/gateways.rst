@@ -89,4 +89,8 @@ Most settings in the Advanced Gateway Settings can remain the same.  Some carrie
 * **Ping:** If your server is behind NAT then the ping option can be used to keep the connection alive through the firewall. The ping interval is in seconds.
 * **Domain:** If the gateway will be used on a specific domain or global to all tenants.
 
+.. note::
+
+     To see which Gateway a call is using. 
+     Advanced > Command and in the switch command section type   show channels as xml   and then press the execute button. In the output that is returned, look for the string sofia/gateway/ and the gateway name. This is the gateway your call is using.
 
