@@ -27,12 +27,12 @@ Install
 
       you can change the command to suite the proper ethernet device eth0 with what is on your system.  Port 5060 can be changed also if you are using a different port.
 
-`Sngrep <https://github.com/irontec/sngrep>`_
+`sngrep <https://github.com/irontec/sngrep>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since March 2017 Sngrep is installed on all systems by default.  This is a very useful tool to help troubleshoot all types of sip related issues.
 
-If you installed FusionPBX prior to March 2017 you can still manually install Sngrep.
+If you installed FusionPBX prior to March 2017 you can still manually install sngrep.
 
 Manual Install
 ~~~~~~~~~~~~~~~
@@ -51,5 +51,21 @@ From your FusionPBX install SSH window or console window
 ::
 
  sngrep
+
+Call Quality and Monitoring
+-----------------------------
+
+Call quality can be a nucense in the voip world.  Having a way to track and make reports are a very needed tool.
+
+`Homer <https://github.com/sipcapture/homer/wiki/Examples%3A-FreeSwitch>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Homer is well known to help track and graph quality issues with SIP like utilizing QoS Reports.
+
+.. Quote::
+
+      HOMER is a robust, carrier-grade, scalable SIP Capture system and VoiP Monitoring Application offering HEP/EEP, IP Proto4 (IPIP) encapsulation & port mirroring/monitoring support right out of the box, ready to process & store insane amounts of signaling, logs and statistics with instant search, end-to-end analysis and drill-down capabilities for ITSPs, VoIP Providers and Trunk Suppliers using SIP signaling protocol.
+
+
 
 
