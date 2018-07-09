@@ -67,5 +67,5 @@ Quote:
       *HOMER is a robust, carrier-grade, scalable SIP Capture system and VoiP Monitoring Application offering HEP/EEP, IP Proto4 (IPIP) encapsulation & port mirroring/monitoring support right out of the box, ready to process & store insane amounts of signaling, logs and statistics with instant search, end-to-end analysis and drill-down capabilities for ITSPs, VoIP Providers and Trunk Suppliers using SIP signaling protocol.*
 
 
-
+To install and configure Homer visit https://github.com/sipcapture/homer
 
