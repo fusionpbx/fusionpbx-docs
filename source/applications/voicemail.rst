@@ -28,6 +28,13 @@ Here you can edit voicemail settings.
 
  Starting version 4.2 remote access to voicemail by interupting the greeting message by pressing "*" and entering the password is disabled by default.
 
+To enable remote access to voicemail
+
+1. Go to your Fusionpbx installation menu.
+2. Advanced.
+3. Default Settings.
+4. Voicemail category.
+5. Enable and set true remote_access.
 
 Voicemail Options
 ====================
@@ -77,7 +84,42 @@ Click the link above for setting up email server settings.  These are the settin
 
 Voicemail default settings gives the options to adjust voicemail settings on your FusionPBX installation globally.
 
+**Variables**
 
+These variables can be set in advanced -> variables or in the dialplan.
+
++---------------------------+----------------+
+| Name                      | Value          |
++---------------------------+----------------+
+| vm_say_date_time          | true or false  |
++---------------------------+----------------+
+| skip_greeting             | true or false  |
++---------------------------+----------------+
+| skip_instructions         | true or false  |
++---------------------------+----------------+
+| voicemail_greeting_number | 0-9            |
++---------------------------+----------------+
+| vm_disk_quota             | 0-3600 seconds |
++---------------------------+----------------+
+| vm_message_ext            | wav or mp3     | 
++---------------------------+----------------+
+| voicemail_authorized      | true or false  | 
++---------------------------+----------------+
+| vm_say_caller_id_number   | true or false  | 
++---------------------------+----------------+
+| vm_say_date_time          | true or false  | 
++---------------------------+----------------+
+
+Wav file is the default voicemail message file type.
+MP3 requires mod_shout to be installed and running.
+
+**Not Found Message**
+
+When an extension is unavailable and no voicemail is configured, there is an option to play a message to the caller alerting them to this.
+
+To enable/disable this, change the option for the **not_found_message** setting in **Advanced > Default Settings > Voicemail** category to suit your preference.
+
+Please note that enabling this option means that the call must be answered in order to play the message to the caller and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions this could potentially be illegal as it turns an otherwise toll free call into a chargeable one.
 
 Voicemail Transcription
 ====================
@@ -117,43 +159,6 @@ Add the following entries
 Click "Flush Memcache", "Reload XML" and "Rescan".
  
 If you entered your key's correctly, you should now start getting transcriptions delivered in your voicemail to email and you will also see them on the Messages page.
-
-**Variables**
-
-These variables can be set in advanced -> variables or in the dialplan.
-
-+---------------------------+----------------+
-| Name                      | Value          |
-+---------------------------+----------------+
-| vm_say_date_time          | true or false  |
-+---------------------------+----------------+
-| skip_greeting             | true or false  |
-+---------------------------+----------------+
-| skip_instructions         | true or false  |
-+---------------------------+----------------+
-| voicemail_greeting_number | 0-9            |
-+---------------------------+----------------+
-| vm_disk_quota             | 0-3600 seconds |
-+---------------------------+----------------+
-| vm_message_ext            | wav or mp3     | 
-+---------------------------+----------------+
-| voicemail_authorized      | true or false  | 
-+---------------------------+----------------+
-| vm_say_caller_id_number   | true or false  | 
-+---------------------------+----------------+
-| vm_say_date_time          | true or false  | 
-+---------------------------+----------------+
-
-Wav file is the default voicemail message file type.
-MP3 requires mod_shout to be installed and running.
-
-**Not Found Message**
-
-When an extension is unavailable and no voicemail is configured, there is an option to play a message to the caller alerting them to this.
-
-To enable/disable this, change the option for the **not_found_message** setting in **Advanced > Default Settings > Voicemail** category to suit your preference.
-
-Please note that enabling this option means that the call must be answered in order to play the message to the caller and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions this could potentially be illegal as it turns an otherwise toll free call into a chargeable one.
 
 
 

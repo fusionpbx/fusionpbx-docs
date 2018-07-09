@@ -132,7 +132,7 @@ Set a prefix on the caller ID name.
 Announce Sound
 ===============
 
-A sound to play to a caller every announce sound seconds.  Needs the full path to the wave file.
+A sound to play to a caller every announce sound seconds.  Needs the full path to the .wav file.
 
 Announce Frequency
 ===================
