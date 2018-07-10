@@ -23,3 +23,24 @@ Used to define the information needed to assign SIP accounts and keys to provisi
         :scale: 85%
 
 * To view steps on how to configure other devices to provision `click here for the provisioning section <http://docs.fusionpbx.com/en/latest/applications/provision.html>`_.
+
+
+Device Vendors
+----------------
+
+Vendors can be added or removed to help fine tune the devices page when configuring specific vendor phones.
+
+.. image:: ../_static/images/devices/fusionpbx_accounts_devices_vendors.jpg
+        :scale: 85%
+
+
+Profiles
+----------
+
+Define a set of keys as a profile. Any changes to the profile effect all devices assigned to the profile. 
+
+
+
+.. image:: ../_static/images/devices/fusionpbx_accounts_devices_profiles.jpg
+        :scale: 85%
+
