@@ -3,7 +3,7 @@ Outbound Routes
 
 Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes. `Check out the youtube video <https://youtu.be/rhyfCKLBI-Y>`_ .
 
-Configuring an Outbound Route. 
+**Configuring an Outbound Route.** 
 
 * Select **Dialplan** from the drop-down list and then click **Outbound Routes** . 
 
