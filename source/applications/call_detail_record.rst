@@ -82,7 +82,7 @@ Possible causes:
 
 * Compare your version (advanced-script editor-files-autoload_configs-xml_cdr.conf.xml) with the current default one that is included in FusionPBX (advanced-php editor-files-includes-templates-conf-autoload_configs-xml_cdr.conf.xml). If it is different copy the default one over yours.
 * Then edit the line <param name="url" value="http://{v_domain}/mod/xml_cdr/v_xml_cdr_import.php"/> and replace {v_domain} with the domain or IP address of your FusionPBX server.
-* Then edit the line <param name="cred" value="{v_user}:{v_pass}"/> and replace {v_user} with a complex name of upper and lowercase and numeric characters so it is really ugly and secure, and do the same for v_pass
+* Then edit the line <param name="cred" value="{v_user}:{v_pass}"/> and replace {v_user} with a complex name of upper and lowercase and numeric characters so it is really ugly and secure, and do the same for v_pass.
 * Make each of them completely unique.
 * Be aware that these don't have to match anything else on your server at all.  This is because FusionPBX does something very simple but clever here.  The xml_cdr module uses this account when it does an http post to FusionPBX of the new data.  FusionPBX looks at the same xml_cdr.conf.xml file that the module uses in order to check if the module is using a valid account and password.  Since they both look at the same config file they are using the same account and password and will happily talk to each other!
 
