@@ -17,8 +17,8 @@ Conference Centers are a group of conference rooms. They can be organized by cos
 .. note::  For basic conferencing use Apps -> Conferences
 
 
-Add a Conference
------------------
+Conference Center Options
+---------------------------
 
 
 .. image:: ../_static/images/applications/fusionpbx_conference_center_add.jpg
