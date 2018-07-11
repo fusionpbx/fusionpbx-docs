@@ -10,27 +10,10 @@ Configure Outbound Route.
 
 Select **Dialplan** from the drop-down list and then click **Outbound Routes** . 
 
-.. image:: ../_static/images/fusionpbx_outbound.jpg
-        :scale: 85%
-
-Click the 
-
-.. image:: ../_static/images/plus.png
-        :scale: 85%
-
-
-
-button on the right. Enter the route information below and Click **Save** once entry is complete.
-
-|
-|
+Click the **plus** button on the right. Enter the route information below and Click **Save** once entry is complete.
 
 .. image:: ../_static/images/fusionpbx_outbound1.jpg
         :scale: 85%
-
-|
-
-
 
 |
 
