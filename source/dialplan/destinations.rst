@@ -7,21 +7,15 @@ Destinations
 
 Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls. `Click here for the youtube video`_
 
-
-
 Configure Inbound Destinations: (This will auto-configure an Inbound Route also)
+
+.. Tip::
+
+   Outbound destinations can be created also.
 
 *Select* **Dialplan** from the drop-down list and then *click* **Destinations**. 
 
-.. image:: ../_static/images/fusionpbx_inboundd.jpg
-        :scale: 85%
-
-Click on the
-
-.. image:: ../_static/images/plus.png
-        :scale: 85%
-
-button on the right. 
+To add a destination **click** on the **plus** button on the right. 
 
 .. image:: ../_static/images/dialplan/fusionpbx_destinations.jpg
         :scale: 85%

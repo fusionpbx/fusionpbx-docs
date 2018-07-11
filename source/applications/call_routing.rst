@@ -15,8 +15,8 @@ Directs incoming calls for the extension
 *  Click **CALL ROUTING** on the top right
 
 
-Note about Call Forward and Do No Disturb
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Call Forward and Do No Disturb
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This will allow phones to sync CFWD and DND over SIP.
 
