@@ -33,4 +33,20 @@ Conference Center Options
 * **Description:** A way to organize what the Conference Center is for.
 
 
-        
+Conference Center Rooms
+-------------------------
+
+.. image:: ../_static/images/applications/fusionpbx_conference_center_rooms.jpg
+        :scale: 85%
+
+
+
+Conference Center Rooms Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. image:: ../_static/images/applications/fusionpbx_conference_center_rooms_settings.jpg
+        :scale: 85%
+
+
+
