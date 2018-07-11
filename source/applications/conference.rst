@@ -11,7 +11,7 @@ Conferences is used to setup conference rooms with a name, description, and opti
         :scale: 85%
 
 
-Conference settings
+Conference Settings
 --------------------
 
 .. image:: ../_static/images/applications/conference/fusionpbx_conference_add.jpg

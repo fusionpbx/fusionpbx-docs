@@ -15,3 +15,22 @@ Conference Centers are a group of conference rooms. They can be organized by cos
 *  To view rooms click the **ROOMS** at the top right.
 
 .. note::  For basic conferencing use Apps -> Conferences
+
+
+Conference Center Options
+---------------------------
+
+
+.. image:: ../_static/images/applications/fusionpbx_conference_center_add.jpg
+        :scale: 85%
+
+
+* **Name:** Name of the Conference Center.
+* **Extension:** Extension of the Conference Center. (Be sure to not use an extension already in use)
+* **Greeting:** Choose a greeting to play.
+* **PIN Length:** Add a layer of security for entering the Conference Center.
+* **Enabled:** Enable or disable the Conference Center.
+* **Description:** A way to organize what the Conference Center is for.
+
+
+        
