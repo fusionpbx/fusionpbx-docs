@@ -75,7 +75,7 @@ Possible causes:
 
 **2. Wrong xml_cdr.conf.xml config**
 
-- check ``\ **\ **\ ```http://localhost/mod/xml_cdr/v_xml_cdr_import.php```_\ **\ \ ``"/>``**\ `` and adapt it to your situation.
+- check <param name="url" value="http://127.0.0.1/app/xml_cdr/v_xml_cdr_import.php"/> and adapt it to your situation.
 
 - FusionPBX menu bar disappears under certain circumstances when viewing Call Detail Records
     - If this happens to you it may be because you are using an old version of xml_cdr.conf.xml
