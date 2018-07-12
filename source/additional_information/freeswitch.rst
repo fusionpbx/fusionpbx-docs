@@ -354,4 +354,108 @@ Make the script executable and make it auto start on system boot:
  update-rc.d freeswitch defaults
 
 |
+
+
+Monit
+------
+
+Used to monitor processes on UNIX systems.
+
+http://mmonit.com/monit/ 
+
+
+Install
+^^^^^^^^^
+
+::
+
+ apt-get install monit
+
+Edit Monit /etc/default/monit and set the "startup" variable to 1 in order to allow monit to start.
+
+Configure
+^^^^^^^^^^
+
+Fail2Ban
+~~~~~~~~~~
+
+::
  
+ cd /etc/monit.d
+ touch fail2ban
+ nano fail2ban
+
+Add the following to the file and save it.
+
+::
+
+ check process fail2ban with pidfile /var/run/fail2ban/fail2ban.pid
+  group services
+  start program = "/etc/init.d/fail2ban start"
+  stop  program = "/etc/init.d/fail2ban stop"
+  if 5 restarts within 5 cycles then timeout
+
+FreeSWITCH
+~~~~~~~~~~~~
+
+::
+
+ cd /etc/monit/conf.d
+
+or
+
+::
+
+ cd /etc/monit.d
+
+ touch freeswitch
+ nano freeswitch
+
+Add the following
+
+::
+
+ check process freeswitch with pidfile /usr/local/freeswitch/run/freeswitch.pid
+ start program = "/usr/bin/service freeswitch start"
+ stop program  = "/usr/bin/service freeswitch stop"
+
+or
+
+::
+
+ check process freeswitch with pidfile /usr/local/freeswitch/run/freeswitch.pid
+ start program = "/usr/local/freeswitch/bin/./freeswitch -nc -u www-data"
+ stop program  = "/usr/local/freeswitch/bin/./freeswitch -stop"
+
+
+Additional Options
+~~~~~~~~~~~~~~~~~~~
+
+::
+
+ if 5 restarts within 5 cycles then timeout
+ if cpu > 60% for 2 cycles then alert
+ if cpu > 80% for 5 cycles then alert
+ if totalmem > 2000.0 MB for 5 cycles then restart
+ if children > 2500 then restart
+
+Monit Daemon Add to the main monit config file.
+
+::
+
+ #monit daemon
+ set httpd port 2812 and
+ use address localhost
+ allow localhost
+
+Monit Commands
+~~~~~~~~~~~~~~~
+
+::
+
+ monit -h
+ monit status
+
+
+
+

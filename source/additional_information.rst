@@ -26,3 +26,5 @@ Additional Information
   additional_information/releases.rst
   additional_information/regex.rst
   additional_information/postgresql.rst
+  getting_started/software_utilities.rst
+

@@ -16,7 +16,7 @@ Call controls enable ability to assign digits to actions. They can be used to mu
 
 
 
-default Conference Control
+Default Conference Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../_static/images/applications/fusionpbx_conference_controls1.jpg
