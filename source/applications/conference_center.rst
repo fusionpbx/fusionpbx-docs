@@ -36,6 +36,11 @@ Conference Center Options
 Conference Center Rooms
 -------------------------
 
+Apps > Conference Center > Click **Rooms** at the top right.  This will take you to the Conference Center Rooms.  From here you can
+
+* Create a Room
+* Edit a Room
+
 .. image:: ../_static/images/applications/fusionpbx_conference_center_rooms.jpg
         :scale: 85%
 
