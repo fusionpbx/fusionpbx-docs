@@ -20,7 +20,18 @@ Fax Server Settings
 
 There are more settings for fax under Advanced > Default Settings then fax category.
 
-To create a fax server goto App > Fax Server.  Click the + on the right. **Leave the Destination Number blank** or faxing wont work.  Destination Number is used in the Fax Server Dial Plan and is set based on the fax server internal extension number.  Define the fields, the ones in **bold** are required.  It is a good idea to organize so define the name thoughtfully.  The extension you must use one that is not allready created.  Account Code should autofill.  Again, **leave the Destination Number blank**.  A prefix can be defined when sending a fax.  Email is for inbound faxes and will be on the server and sent to the defines email. Define the Caller ID Name and Number.  Leave the Forward Number and Greeting blank for normal settings.  Number of channels define with a numerical value.  Keep organized by adding a Description.
+* To create a fax server goto App > Fax Server.  Click the + on the right.
+    * **Leave the Destination Number blank** or faxing wont work.
+* Destination Number is used in the Fax Server Dial Plan and is set based on the fax server internal extension number.
+* Define the fields, the ones in **bold** are required.  It is a good idea to organize so define the name thoughtfully.
+* The extension you must use one that is not allready created.
+* Account Code should autofill.  Again, **leave the Destination Number blank**.
+* A prefix can be defined when sending a fax.
+* Email is for inbound faxes and will be on the server and sent to the defines email.
+* Define the Caller ID Name and Number.
+* Leave the Forward Number and Greeting blank for normal settings.
+* Number of channels define with a numerical value or keep blank for a default value.
+* Keep organized by adding a Description.
 
 
 
@@ -32,7 +43,7 @@ To create a fax server goto App > Fax Server.  Click the + on the right. **Leave
 New
 ====
 
-To send a fax the items in **bold** are required.  To send a proper fax it is best to fill out all fields and attach any documents.  Keep in mind that the upload max MB is limited by Nginx and PHP config files.
+To send a fax, the items in **bold** are required.  To send a proper fax it is best to fill out all fields and attach any documents.  Keep in mind that the upload max MB is limited by Nginx and PHP config files.
 
 .. image:: ../_static/images/fusionpbx_fax1.jpg
         :scale: 85%
