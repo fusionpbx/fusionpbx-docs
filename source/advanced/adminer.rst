@@ -17,3 +17,6 @@ Adminer provides a way to access FusionPBX database.
  
   After you enable the Adminer auto login click the 'Reload' button > edit autoload > click 'Save' for it to update the Adminer menu.
   
+
+.. image:: ../_static/images/applications/adminer/fusionpbx_applications_adminer.jpg
+        :scale: 85%
