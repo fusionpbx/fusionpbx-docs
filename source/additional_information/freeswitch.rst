@@ -44,7 +44,7 @@ Freeswitch install
  1.4.x is considered EOL use the steps below for 1.6.x
  
  cd /usr/src
- wget http://files.freeswitch.org/freeswitch-1.6.6.zip
+ wget http://files.freeswitch.org/freeswitch-1.6.20.zip
  unzip freeswitch-1.6.20.zip
  cd freeswitch-1.6.20
 
