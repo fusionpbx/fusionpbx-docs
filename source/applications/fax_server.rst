@@ -110,7 +110,10 @@ Faxing will fail at times. Fax Server should automatically try different methods
 * Send a fax to HP faxback.  This will test sending and receiving 1-888-473-2963
 * Test sending with Faxtoy.net This will display what is faxed on their website. 1-855-330-1239 or 1-213-294-2943
 * Turn on verbose log in FreeSWITCH fax.conf.xml
-   * From your FusionPBX installation go to ADVANCED > XML Editor and a new window will open. Choose autoload_configs folder from the list, then choose fax.conf.xml. In fax.conf.xml there is an option that by default sets a variable called verbose = false. If you change this to true you get more logging details as the fax is actually received, such as the quality of the connection etc. You can see these details when you run the freeswitch command line ie. **fs_cli** 
+   * From your FusionPBX installation go to ADVANCED > XML Editor and a new window will open.
+   * Choose autoload_configs folder from the list, then choose fax.conf.xml.
+   * In fax.conf.xml there is an option that by default sets a variable called verbose = false. If you change this to true you get more logging details as the fax is actually received, such as the quality of the connection etc.
+   * You can see these details when you run the freeswitch command line ie. **fs_cli** 
 
 Command Line Fax Statistics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
