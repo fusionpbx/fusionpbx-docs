@@ -45,7 +45,7 @@ The most common conditions to use are **Day of Week** and **Time of Day**.
 
 **Day of Week**
 
-* The day of week condition each day of the week is represented by a number. A valid range is from low to high. A valid range is like Monday to Friday (2-6). 
+The day of week condition each day of the week is represented by a number. A valid range is from low to high. A valid range is like Monday to Friday (2-6). 
 
 *  1 Sunday
 *  2 Monday
@@ -55,7 +55,7 @@ The most common conditions to use are **Day of Week** and **Time of Day**.
 *  6 Friday
 *  7 Saturday
 
-An example of an **invalid range** would be Saturday to Sunday (7-1).
+An example of an **invalid range** would be Saturday to Sunday **(7-1)**.
 
 `Time Conditions Default Settings`_
 ---------------------------------------
