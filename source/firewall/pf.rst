@@ -30,14 +30,15 @@ Basic Rules
 | ``pass in quick inet proto udp from any to any port 5080 keep state``
 | ``pass in quick inet proto udp from any to any port 16384:32768 keep state``
 
-Additional Commands
-^^^^^^^^^^^^^^^^^^^
 
-Disable pf
+Disable
+^^^^^^^^^^
 pfctl -d 
 
-Enable pf
+Enable
+^^^^^^^^^
 pfctl -e
 
-Show the firewall rules
+Show Rules
+^^^^^^^^^^
 pfctl -s rules
