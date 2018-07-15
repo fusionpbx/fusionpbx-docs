@@ -17,7 +17,7 @@ XMPP Manager is an optional menu item.  In order to have the option for XMPP Man
 * Click the **plus** on the right to create a profile.         
 
 
-. note::
+.. note::
 
       Google has since depricated xmpp service
       
