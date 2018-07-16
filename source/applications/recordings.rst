@@ -20,6 +20,19 @@ Create a Recording
         :scale: 85%
 
 
+
+Edit Recording
+---------------
+
+1. Click the edit pencil icon.
+2. Rename as needed.
+3. Click save to save the changes.
+
+.. image:: ../_static/images/applications/recording/fusionpbx_applications_recording_edit.jpg
+        :scale: 85%
+
+
+
 Applying Recordings
 -------------------
 
