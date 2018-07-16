@@ -36,4 +36,4 @@ In the **Applications** menu (Apps) section you will find Call Block, Call Broad
   applications/streams.rst
   applications/time_conditions.rst
   applications/voicemail.rst
-  applications/xmpp.rst
+  #applications/xmpp.rst
