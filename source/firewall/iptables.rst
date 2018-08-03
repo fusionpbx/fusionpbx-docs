@@ -77,6 +77,11 @@ Flush Out Iptables
 | ``iptables -P OUTPUT ACCEPT``
 | ``iptables -F``
 
+Open a Port for a Specific IP Address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+iptables -A INPUT -j ACCEPT -p tcp --dport 5432 -s x.x.x.x/32
+
 Block IP address
 ^^^^^^^^^^^^^^^^^
 
