@@ -58,14 +58,14 @@ Phone Screen Capture
 Phone Book
 ^^^^^^^^^^^^
 
-Remote phone Book (Address Book) are based on the FusionPBX `contacts app </en/latest/applications/contacts.html>`_.
+Remote phone Book (Address Book) are based on the FusionPBX `Contacts App </en/latest/applications/contacts.html>`_.
 
 Phone Book Settings
 ~~~~~~~~~~~~~~~~~~~~
 
 In order to use the phone book a few steps are needed.
 
-* Create or import the `contacts </en/latest/applications/contacts.html>`_.
+* Create or import the `Contacts </en/latest/applications/contacts.html>`_.
 
 * Set **Enable** as **True** in `Default Settings </en/latest/advanced/default_settings.html>`_.
 
