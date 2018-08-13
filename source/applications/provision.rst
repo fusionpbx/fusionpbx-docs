@@ -65,9 +65,16 @@ Phone Book Settings
 
 In order to use the phone book a few steps are needed.
 
-* Create or import the `contact </en/latest/applications/contacts.html>`_.
+* Create or import the `contacts </en/latest/applications/contacts.html>`_.
 
-* Enable in `Default Settings </en/latest/advanced/default_settings.html>`_.
+* Set **Enable** as **True** in `Default Settings </en/latest/advanced/default_settings.html>`_.
+
+
+.. image:: ../_static/images/provision/fusionpbx_remote_phonebook.jpg
+        :scale: 85%
+
+
+* From the phone, go into the menu to update the phone book.
 
 
 
