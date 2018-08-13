@@ -58,7 +58,7 @@ Phone Screen Capture
 Phone Book
 ^^^^^^^^^^^^
 
-Remote phone Book (Address Book) are based on the FusionPBX `Contacts App </en/latest/applications/contacts.html>`_.
+Remote phone book (Address Book) are based on the FusionPBX `Contacts App </en/latest/applications/contacts.html>`_.
 
 Phone Book Settings
 ~~~~~~~~~~~~~~~~~~~~
