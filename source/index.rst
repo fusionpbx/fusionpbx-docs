@@ -55,8 +55,6 @@ We are a **global community** that has an open and **very friendly** ecosystem. 
 
 Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Come join us and meet the team.
 
-Exploring FusionPBX
-=====================
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
@@ -91,18 +89,27 @@ Exploring FusionPBX
 .. _and lots more...: features/features.html
 .. _FusionPBX Features: features/features.html
 
+Getting Started
+=====================
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    
    getting_started.rst
 
+Home
+=====
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    
    home.rst
 
+Exploring FusionPBX
+=====================
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    #getting_started.rst
    #home.rst
