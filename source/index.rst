@@ -94,9 +94,9 @@ Exploring FusionPBX
 
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
-   getting_started.rst
+   #getting_started.rst
    home.rst
    accounts.rst
    dialplans.rst
@@ -109,3 +109,9 @@ Exploring FusionPBX
    doc_guide.rst
    other.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Getting Started
+
+   getting_started
+   
