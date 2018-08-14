@@ -32,10 +32,10 @@ How to setup the device using the phone's web interface.
 *  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
 
 
-Advanced > `Default Settings`_
+Advanced > Default Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the Provisioning section, there are a few key options that have to be set in order to turn auto provisioning on.
+In the `Provisioning section`_, there are a few key options that have to be set in order to turn auto provisioning on.
 
 * **enabled** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default.
 * **http_auth_username** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default. Be sure to use a strong username.
@@ -55,4 +55,31 @@ Phone Screen Capture
 
 
 
-.. _Default Settings: /en/latest/advanced/default_settings.html#id17
+Phone Book
+^^^^^^^^^^^^
+
+Remote phone book (Address Book) are based on the FusionPBX `Contacts App </en/latest/applications/contacts.html>`_.
+
+Phone Book Settings
+~~~~~~~~~~~~~~~~~~~~
+
+In order to use the phone book a few steps are needed.
+
+* Create or import the `Contacts </en/latest/applications/contacts.html>`_.
+
+* Set **Enabled** as **True** in `Default Settings </en/latest/advanced/default_settings.html>`_.
+
+
+.. image:: ../_static/images/provision/fusionpbx_remote_phonebook.jpg
+        :scale: 85%
+
+* Set **Enabled True** for contact_extensions, contact_users and contact_groups in `Default Settings </en/latest/advanced/default_settings.html>`_.
+
+.. image:: ../_static/images/provision/fusionpbx_phone_book1.jpg
+        :scale: 85%
+
+* From the phone, go into the menu to update the phone book.
+
+
+
+.. _Provisioning section: /en/latest/advanced/default_settings.html#id17

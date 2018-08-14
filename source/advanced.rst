@@ -1,6 +1,6 @@
-###########
+************
 Advanced
-###########
+************
 
 
 In the Advanced menu you will find Adminer, Access Controls, App Manager, Backup, Command, Databases, Default Settings, Domains, Grammer Editor, Group Manager, Menu Manager, Modules, Number Translations, PHP Editor, Provision Editor, Sip Profiles, Script Editor, Settings, Transactions, Upgrade, Variables and XML Editor.

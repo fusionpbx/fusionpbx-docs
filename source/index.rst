@@ -48,14 +48,13 @@ Benefits of FusionPBX
 | `Time Conditions`_      | `WebRTC ready`_       |    `Voicemail`_                 |      `and lots more...`_                 |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 
-
 Our Ecosystem
--------------
+^^^^^^^^^^^^^^^
 
-| We are a **global community** that has an open and **very friendly** ecosystem.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
+We are a **global community** that has an open and **very friendly** ecosystem.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
 
+Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Come join us and meet the team.
 
-| Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Come join us and meet the team.
 
 .. _FreeSWITCH: http://www.freeswitch.org
 .. _FusionPBX: http://www.fusionpbx.com
@@ -90,21 +89,93 @@ Our Ecosystem
 .. _and lots more...: features/features.html
 .. _FusionPBX Features: features/features.html
 
+Getting Started
+=====================
 
+.. toctree::
+   :maxdepth: 4
+   
+   getting_started.rst
+
+Home
+=====
+
+.. toctree::
+   :maxdepth: 4
+   
+   home.rst
+
+Accounts
+==========
 
 .. toctree::
    :maxdepth: 4
 
-   getting_started.rst
-   home.rst
    accounts.rst
+
+Dialplans
+==========
+
+.. toctree::
+   :maxdepth: 4
+
    dialplans.rst
+   
+ 
+Applications
+=============
+
+.. toctree::
+   :maxdepth: 4
+
    applications.rst
+   
+Status
+========
+
+.. toctree::
+   :maxdepth: 4
+
    status.rst
+
+Advanced
+==========
+
+.. toctree::
+   :maxdepth: 4
+
    advanced.rst
-   #manual/menu_add_ons.rst
+
+Additional Information
+=======================
+
+.. toctree::
+   :maxdepth: 4
+
    additional_information.rst
+
+Contributing
+=============
+
+.. toctree::
+   :maxdepth: 4
+
    contributing.rst
+
+Documentation Guide
+====================
+
+.. toctree::
+   :maxdepth: 4
+
    doc_guide.rst
+
+Other
+=======
+
+.. toctree::
+   :maxdepth: 4
+
    other.rst
+
 
