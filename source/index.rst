@@ -50,7 +50,7 @@ Benefits of FusionPBX
 
 
 Our Ecosystem
--------------
+^^^^^^^^^^^^^^^
 
 | We are a **global community** that has an open and **very friendly** ecosystem.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
 
