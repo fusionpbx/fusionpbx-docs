@@ -105,24 +105,77 @@ Home
    
    home.rst
 
-Exploring FusionPBX
-=====================
+Accounts
+==========
 
 .. toctree::
    :maxdepth: 4
 
-   #getting_started.rst
-   #home.rst
    accounts.rst
+
+Dialplans
+==========
+
+.. toctree::
+   :maxdepth: 4
+
    dialplans.rst
+   
+ 
+Applications
+=============
+
+.. toctree::
+   :maxdepth: 4
+
    applications.rst
+   
+Status
+========
+
+.. toctree::
+   :maxdepth: 4
+
    status.rst
+
+Advanced
+==========
+
+.. toctree::
+   :maxdepth: 4
+
    advanced.rst
-   #manual/menu_add_ons.rst
+
+Additional Information
+=======================
+
+.. toctree::
+   :maxdepth: 4
+
    additional_information.rst
+
+Contributing
+=============
+
+.. toctree::
+   :maxdepth: 4
+
    contributing.rst
+
+Documentation Guide
+====================
+
+.. toctree::
+   :maxdepth: 4
+
    doc_guide.rst
+
+Other
+=======
+
+.. toctree::
+   :maxdepth: 4
+
    other.rst
 
 
-   
