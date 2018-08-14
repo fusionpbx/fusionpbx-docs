@@ -32,10 +32,10 @@ How to setup the device using the phone's web interface.
 *  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
 
 
-Advanced > `Default Settings`_
+Advanced > Default Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the Provisioning section, there are a few key options that have to be set in order to turn auto provisioning on.
+In the `Provisioning section`_, there are a few key options that have to be set in order to turn auto provisioning on.
 
 * **enabled** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default.
 * **http_auth_username** Must be enabled and set to **value true** and **enabled True**.  It is disabled by default. Be sure to use a strong username.
@@ -82,4 +82,4 @@ In order to use the phone book a few steps are needed.
 
 
 
-.. _Default Settings: /en/latest/advanced/default_settings.html#id17
+.. _Provisioning section: /en/latest/advanced/default_settings.html#id17
