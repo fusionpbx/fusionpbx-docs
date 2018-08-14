@@ -91,13 +91,21 @@ Exploring FusionPBX
 .. _and lots more...: features/features.html
 .. _FusionPBX Features: features/features.html
 
+.. toctree::
+   :maxdepth: 2
+   
+   getting_started.rst
 
+.. toctree::
+   :maxdepth: 2
+   
+   home.rst
 
 .. toctree::
    :maxdepth: 2
 
    #getting_started.rst
-   home.rst
+   #home.rst
    accounts.rst
    dialplans.rst
    applications.rst
@@ -109,9 +117,5 @@ Exploring FusionPBX
    doc_guide.rst
    other.rst
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Getting Started
 
-   getting_started
    
