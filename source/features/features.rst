@@ -227,7 +227,7 @@ Send a call to an unused "park" extension.  The caller listens to music on hold 
 
 Using xml handler and xml from file system you can string together multiple voice files.
 
-Provider Setup
+`Provider Setup`_
 ----------------
 
 `Re-branding and Customize`_
@@ -311,6 +311,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Device Provisioning: /en/latest/applications/provision.html
+.. _Provider Setup: /en/latest/accounts/providers.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
 .. _Editor: /en/latest/advanced/editors.html
