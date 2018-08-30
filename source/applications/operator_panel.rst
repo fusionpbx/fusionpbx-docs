@@ -2,7 +2,13 @@
 Operator Panel
 ################
 
-Operator Panel is a simple and easy way to use the FusionPBX web interface to make calls from, drag and drop calling to other users, login and out of queues and call center.  You can see the status of other users also depending on what permissions are set to the user.
+Operator Panel is a simple and easy way to use the FusionPBX web interface to:
+
+* Make calls from.
+* Drag and drop calling to other users.
+* Login and out of queues and call center.
+
+You can see the status of other users also depending on what permissions are set to the user.
 
 
 
