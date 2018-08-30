@@ -16,11 +16,11 @@ To add a ring group click the plus. `Click for the youtube video <https://youtu.
 *  **Extension** The extension number for this ring group.
 *  **Greeting** Play a sound file upon calling the Ring Group extension.
 *  **Strategy** The selectable way in which the destinations are being used.
-  *  **Simultaneous** Rings all destinations. All destination share the same thread.
-  *  **Sequence**  Calls destinations in sequence where order that is lower goes first.
-  *  **Enterprise** Ring all destinatons. Each destination uses its own thread.
-  *  **Rollover** Calls destinations in sequence and skips busy destinations.
-  *  **Random** A random destination will ring.
+*  **Simultaneous** Rings all destinations. All destination share the same thread.
+*  **Sequence**  Calls destinations in sequence where order that is lower goes first.
+*  **Enterprise** Ring all destinations. Each destination uses its own thread.
+*  **Rollover** Calls destinations in sequence and skips busy destinations.
+*  **Random** A random destination will ring.
 *  **Destinations** The extensions that this ring group applies to.
 *  **Prompt** Where you determine if the call must have a dial to confirm before a pickup event.
 *  **Caller ID Name Prefix** The string that is added to the caller ID when it displays on the ringing extension.
