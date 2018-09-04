@@ -13,7 +13,7 @@ Grandstream Wave is a soft phone for smart phones or tablets. It can be configur
         :scale: 85%
 
 
-You can choose any extension to QR code provision the GRandstream Wave.  Even If the extension is assigned to a desk phone.  Just be sure to enable multiple registrations.
+You can choose any extension to provision the Grandstream Wave.  Even If the extension is assigned to a desk phone.  Just be sure to enable multiple registrations.
 
 
 .. image:: ../_static/images/applications/fusionpbx_applications_gs_wave1.jpg
