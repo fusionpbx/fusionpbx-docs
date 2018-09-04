@@ -2,7 +2,7 @@
 Grandstream Wave
 ##################
 
-Grandstream Wave is a soft phone for smart phones or tablets. It can be configured easily with a QR code provided here.
+Grandstream Wave is a soft phone for smart phones or tablets. It can be configured easily with a QR code provided in your FusionPBX installation.
 
 * To use it download and install Grandstream Wave for your mobile device.
 * Start the Grandstream Wave application on your mobile device.
