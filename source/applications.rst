@@ -27,6 +27,7 @@ In the **Applications** menu (Apps) section you will find Call Block, Call Broad
   applications/contacts.rst
   applications/fax_server.rst
   applications/follow_me.rst
+  applications/gs_wave.rst
   applications/ivr.rst
   applications/operator_panel.rst
   applications/phrases.rst
