@@ -137,7 +137,7 @@ Dial by Name
 
 Search by first name or last name to find extension numbers on the system.
 
-Direct Inward System Access (DISA)
+`Direct Inward System Access`_ (DISA)
 -------------------------------------------
 
 Gives ability to call into the system, put in a pin code, and then call back outbound.
@@ -212,7 +212,7 @@ Operator Panel
 
 A virtual panel that agents can drag and drop transfer calls. Adjust call state from available, on break, do not disturb and logged out. 
 
-Paging
+`Paging`_
 --------
 
 Page another extension with or without password
@@ -227,7 +227,7 @@ Send a call to an unused "park" extension.  The caller listens to music on hold 
 
 Using xml handler and xml from file system you can string together multiple voice files.
 
-Provider Setup
+`Provider Setup`_
 ----------------
 
 `Re-branding and Customize`_
@@ -266,8 +266,8 @@ Edit, change or add users of all permission levels.
 Has ability to copy voicemails for other voicemail boxes when receiving a voicemail. Additional features include voicemail to email and voicemail IVR. Forward add intro, check box for multi-delete.
 
 
-Voicemail to Email
--------------------
+`Voicemail to Email`_
+---------------------- 
 
 Have voicemails sent to email.
 
@@ -290,6 +290,9 @@ This is not a comprehensive set of features. A complete list would be many times
 
 
 .. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
+.. _Direct Inward System Access: /en/latest/dialplan/dialplan_details.html#disa
+.. _Paging: /en/latest/dialplan/dialplan_details.html#page
+.. _Voicemail to Email: /en/latest/getting_started/voicemail_to_email.html
 .. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplans.html
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
 .. _Extensions: http://docs.fusionpbx.com/en/latest/accounts/extensions.html
@@ -311,6 +314,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
 .. _Device Provisioning: /en/latest/applications/provision.html
+.. _Provider Setup: /en/latest/accounts/providers.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
 .. _Editor: /en/latest/advanced/editors.html

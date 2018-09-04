@@ -17,7 +17,7 @@ Bridge Examples
 ^^^^^^^^^^^^^^^^^
 
 
-Bridges are how ring groups are made.  The code in FusionPBX simplifys that for you.  You can however manually do what ring groups do and with bridges.
+Bridges are how ring groups are made.  The code in FusionPBX simplifies that for you.  You can however manually do what ring groups do and with bridges.
 
 **Bridge Statement advanced options**
 
