@@ -8,6 +8,10 @@ Regular Expressions
 * \\d{10}  10 digits
 * ( and ) gets matching digits inside brackets sets a $1 and second set of brackets creates $2
 * ^\\+?1?(\\d{10})$   10 to 11 digits and e164 format sets $1 to 10 digits
+* [0-9]   Any number between 0 to 9
+* [2-9]   Any number between 2 to 9
+* | works like an example ^101$|^102$ matches 101 or 102
+* ^9(\\d{10})$ This strips off the 9 and the $1 value is the remaining 10 digits
 
 **Dialplan Expression**
 
