@@ -23,6 +23,6 @@ You can choose any extension to provision the Grandstream Wave.  Even If the ext
 
 .. note::
 
-       Be sure to assign a user to an extension for this application to be fully functional.
+       Be sure to assign a user to an extension for this application to be fully functional. This is a new app starting with master branch version 4.5
        
 
