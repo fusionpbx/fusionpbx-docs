@@ -20,27 +20,27 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | **call-limit:**           |                                  |
 +---------------------------+----------------------------------+
-| *Limit calls based on number of calls and more*              |
+| * Limit calls based on number of calls and more              |
 +---------------------------+----------------------------------+
 | **speed_dial:**           | *0[ext]                          |
 +---------------------------+----------------------------------+
-| *Uses LUA for extension speed dial*                          |
+| * Uses LUA for extension speed dial                          |
 +---------------------------+----------------------------------+
 | **agent_status:**         | *22                              |
 +---------------------------+----------------------------------+
-| *Agent login to call center*                                 |
+| * Agent login to call center                                 |
 +---------------------------+----------------------------------+
 | **page-extension:**       | *8[ext]                          |
 +---------------------------+----------------------------------+
-| *Password protected paging *                                 |
+| * Password protected paging                                  |
 +---------------------------+----------------------------------+
 | **eavesdrop:**            | *33[ext]                         |
 +---------------------------+----------------------------------+
-| *Password protected evesdropping on extensions*              |
+| * Password protected evesdropping on extensions              |
 +---------------------------+----------------------------------+
 | **send_to_voicemail:**    | *99[ext]                         |
 +---------------------------+----------------------------------+
-| *Sending an active call to an extensions voicemail*          |
+| * Sending an active call to an extensions voicemail          |
 +---------------------------+----------------------------------+
 | cf                        | cf                               |
 +---------------------------+----------------------------------+
@@ -48,7 +48,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | echo                      | *9196                            |
 +---------------------------+----------------------------------+
-| *                          *                                 |
+| * Echo test                                                  |
 +---------------------------+----------------------------------+
 | milliwatt                 | *9197                            |
 +---------------------------+----------------------------------+
