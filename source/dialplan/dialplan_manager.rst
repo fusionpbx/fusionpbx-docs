@@ -133,7 +133,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | call_privacy              | *67[d+]                          |
 +---------------------------+----------------------------------+
-| * Send a privacy option to the carrier to hide caller id.    |
+| * Send a privacy header to the carrier to hide caller id.    |
 +---------------------------+----------------------------------+
 | call_return               | *69                              |
 +---------------------------+----------------------------------+
@@ -217,15 +217,15 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | valet_park                | park+*5901-*5999                 |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Default range to valet park calls.                         |
 +---------------------------+----------------------------------+
 | valet_park_in             | park+*5900                       |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Default number to send valet calls to.                     |
 +---------------------------+----------------------------------+
 | valet_park_out            | park+*5901-*5999                 |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Default range to retreive valet parked calls.              |
 +---------------------------+----------------------------------+
 | operator                  | 0                                |
 +---------------------------+----------------------------------+
@@ -237,11 +237,11 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | do-not-disturb            | *77,*78,*79                      |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Turn on, toggle, turn off do not disturb.                  |
 +---------------------------+----------------------------------+
 | call-forward              | *72,*73,*74                      |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Turn on, toggle on/off and turn off call forwarding.       |
 +---------------------------+----------------------------------+
 | `follow-me`_              | *21                              |
 +---------------------------+----------------------------------+
@@ -255,7 +255,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | * Play an audio file and give options to the caller to record|
 | a short message for the call recipient. Call recipient can   |
-| then accept or reject the call                               |
+| then accept or reject the call.                              |
 +---------------------------+----------------------------------+
 | `local_extension`_        | [ext]                            |
 +---------------------------+----------------------------------+
@@ -263,7 +263,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | `voicemail`_              | [ext]                            |
 +---------------------------+----------------------------------+
-| *  Voicemail for extensions                                  |
+| *  Voicemail for extensions.                                 |
 +---------------------------+----------------------------------+
 
 
