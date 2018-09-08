@@ -1,5 +1,6 @@
+***************
 Let's Encrypt
-==============
+***************
 
 Let's Encrypt is one of the most recent and widely used form of free SSL security and supports wildcard DNS.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
 
@@ -19,6 +20,68 @@ The letsencrypt.sh will do the following:
 
 Using letsencrypt.sh
 ---------------------
+
+
+Hostname
+~~~~~~~~~~
+
+To create a hostname or multiple hostname SSL certificate go to:
+
+::
+
+ cd /usr/src/fusionpbx-install.sh/debian/resources/
+
+Then execute the script.
+
+::
+
+ ./letsencrypt.sh
+ 
+ 
+You should then see and follow the prompts.
+
+::
+
+ Domain Name: domain.tld
+ Email Address: support@fusionpbx.com
+
+After that, you should see the following output.
+
+::
+
+ Cloning into 'dehydrated'...
+ remote: Counting objects: 1914, done.
+ remote: Total 1914 (delta 0), reused 0 (delta 0), pack-reused 1914
+ Receiving objects: 100% (1914/1914), 616.01 KiB | 0 bytes/s, done.
+ Resolving deltas: 100% (1199/1199), done.
+ # INFO: Using main config file /etc/dehydrated/config
+ + Generating account key...
+ + Registering account key with ACME server...
+ + Done!
+ # INFO: Using main config file /etc/dehydrated/config
+ + Creating chain cache directory /etc/dehydrated/chains
+ Processing domain.tld
+ + Creating new directory /etc/dehydrated/certs/domain.tld ...
+ + Signing domains...
+ + Generating private key...
+ + Generating signing request...
+ + Requesting new certificate order from CA...
+ + Received 1 authorizations URLs from the CA
+ + Handling authorization for domain.tld
+ + 1 pending challenge(s)
+ + Deploying challenge tokens...
+ + Responding to challenge for domain.tld authorization...
+ + Challenge is valid!
+ + Cleaning challenge tokens...
+ + Requesting certificate...
+ + Checking certificate...
+ + Done!
+ + Creating fullchain.pem...
+ + Done!
+ 
+ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+ nginx: configuration file /etc/nginx/nginx.conf test is successful
+
 
 Wildcard
 ~~~~~~~~~~~
@@ -120,67 +183,6 @@ You should then see and follow the prompts:
        ;; ANSWER SECTION:
        _acme-challenge.domain.tld. 1799 IN TXT  "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 
-
-
-Hostname
-~~~~~~~~~~
-
-To create a hostname or multiple hostname SSL certificate go to:
-
-::
-
- cd /usr/src/fusionpbx-install.sh/debian/resources/
-
-Then execute the script.
-
-::
-
- ./letsencrypt.sh
- 
- 
-You should then see and follow the prompts.
-
-::
-
- Domain Name: domain.tld
- Email Address: support@fusionpbx.com
-
-After that, you should see the following output.
-
-::
-
- Cloning into 'dehydrated'...
- remote: Counting objects: 1914, done.
- remote: Total 1914 (delta 0), reused 0 (delta 0), pack-reused 1914
- Receiving objects: 100% (1914/1914), 616.01 KiB | 0 bytes/s, done.
- Resolving deltas: 100% (1199/1199), done.
- # INFO: Using main config file /etc/dehydrated/config
- + Generating account key...
- + Registering account key with ACME server...
- + Done!
- # INFO: Using main config file /etc/dehydrated/config
- + Creating chain cache directory /etc/dehydrated/chains
- Processing domain.tld
- + Creating new directory /etc/dehydrated/certs/domain.tld ...
- + Signing domains...
- + Generating private key...
- + Generating signing request...
- + Requesting new certificate order from CA...
- + Received 1 authorizations URLs from the CA
- + Handling authorization for domain.tld
- + 1 pending challenge(s)
- + Deploying challenge tokens...
- + Responding to challenge for domain.tld authorization...
- + Challenge is valid!
- + Cleaning challenge tokens...
- + Requesting certificate...
- + Checking certificate...
- + Done!
- + Creating fullchain.pem...
- + Done!
- 
- nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
- nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 
 
