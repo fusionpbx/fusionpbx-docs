@@ -21,6 +21,7 @@ The letsencrypt.sh will do the following:
 Using letsencrypt.sh
 ---------------------
 
+With letsencrypt.sh you have the choice of creating an SSL certificate for a single domain (domain.tld), multiple sub domains(sub.domain.tld, sub1.domain.tld, etc.domain.tld) or wildcard (*.domain.tld).  The easy way however is using the hostname method. 
 
 Hostname
 ~~~~~~~~~~
