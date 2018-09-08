@@ -75,10 +75,12 @@ You should then see and follow the prompts:
 
       When you define the txt record with your domain registrar be sure to use the output of the script you are running and not what is in this example.
 
-Add the following to the zone definition of domain.tld:
-_acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
+::
 
-**Press enter to continue...**
+ Add the following to the zone definition of domain.tld:
+ _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
+
+ **Press enter to continue...**
 
 ::
 
@@ -86,10 +88,12 @@ _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
  + Challenge is valid!
  + Cleaning challenge tokens...
 
-Now you can remove the following from the zone definition of two.techlacom.com:
-_acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
+::
 
-**Press enter to continue...**
+ Now you can remove the following from the zone definition of two.techlacom.com:
+ _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
+
+ **Press enter to continue...**
 
 ::
 
@@ -102,10 +106,10 @@ _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 
  Done!
 
-**done**
+ **done**
 
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
+ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 .. tip::
 
@@ -175,15 +179,15 @@ After that, you should see the following output.
  + Creating fullchain.pem...
  + Done!
  
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
+ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 
 
 
 
 
-Certbot (Optional)
+Certbot (Alternative Option)
 ^^^^^^^^^^^^^^^^^^^^
 
 Certbot is optional and is more of a manual way of using Let's Encrypt SSL.  Some still use this process but most use the recommended way with the Dehydrated script.
