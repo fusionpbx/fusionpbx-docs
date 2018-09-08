@@ -229,17 +229,17 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | operator                  | 0                                |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Configurable option for an operator.                       |
 +---------------------------+----------------------------------+
 | operator-forward          | *000                             |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Uses dial_string.lua.                                      |
 +---------------------------+----------------------------------+
-| do-not-disturb            | *77,*78,*79                      |
+| `do-not-disturb`_         | *77,*78,*79                      |
 +---------------------------+----------------------------------+
 | * Turn on, toggle, turn off do not disturb.                  |
 +---------------------------+----------------------------------+
-| call-forward              | *72,*73,*74                      |
+| `call-forward`_           | *72,*73,*74                      |
 +---------------------------+----------------------------------+
 | * Turn on, toggle on/off and turn off call forwarding.       |
 +---------------------------+----------------------------------+
@@ -259,15 +259,15 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | `local_extension`_        | [ext]                            |
 +---------------------------+----------------------------------+
-| *                                                            |
+| * Examines to see if the extension is local.                 |
 +---------------------------+----------------------------------+
 | `voicemail`_              | [ext]                            |
 +---------------------------+----------------------------------+
 | *  Voicemail for extensions.                                 |
 +---------------------------+----------------------------------+
 
-
-
+.. _do-not-disturb: dialplan_details.html#do-not-disturb
+.. _call-forward: dialplan_details.html#call-forward
 .. _call_screen: dialplan_details.html#call-screen
 .. _local_extension: dialplan_details.html#local-extension
 .. _voicemail: dialplan_details.html#voicemail
