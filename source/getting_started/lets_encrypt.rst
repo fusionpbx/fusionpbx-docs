@@ -88,9 +88,9 @@ _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
  + Done!
  + Creating fullchain.pem...
 
-deploy_cert()
+ deploy_cert()
 
-Done!
+ Done!
 
 **done**
 
