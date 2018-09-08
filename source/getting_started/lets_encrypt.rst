@@ -7,7 +7,15 @@ Let's Encrypt is one of the most recent and widely used form of free SSL securit
 Dehydrated (Recommended)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FusionPBX has an option to easliy and quickly install SSL with Let's Encrypt using **letsencrypt.sh**  With this script you can choose either to request an SSL certificate with wildcard or hostnames.
+FusionPBX has an option to easliy and quickly install SSL with Let's Encrypt using **letsencrypt.sh**  With this script you can choose either to request an SSL certificate with wildcard (*.domain.tld) or hostnames (domain.tld).
+
+The letsencrypt.sh will do the following:
+
+* Download `dehydrated <https://github.com/lukas2511/dehydrated>`_.
+* Request an SSL certificate from `Let's Encrypt <https://letsencrypt.com>`_.
+* Configure NGINX to use the SSL certificate.
+* Combine and place SSL certificate in the proper FreeSWITCH directory for using TLS.
+* Test and make sure the SSL cert works and outputs if sucessful.
 
 Using letsencrypt.sh
 ---------------------
