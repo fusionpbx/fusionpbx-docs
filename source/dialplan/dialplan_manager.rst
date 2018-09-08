@@ -12,100 +12,100 @@ The dialplan is used to setup call destinations based on conditions and context.
 +===========================+==================================+
 | **caller-details:**       |                                  |
 +---------------------------+----------------------------------+
-|   * Details about the caller.                                |
+|   * *Details about the caller.*                              |
 +---------------------------+----------------------------------+
 | **not-found:**            |                                  |
 +---------------------------+----------------------------------+
-| * Used to help trigger fail2ban from bogus calls.            |
+| * *Used to help trigger fail2ban from bogus calls.*          |
 +---------------------------+----------------------------------+
 | **call-limit:**           |                                  |
 +---------------------------+----------------------------------+
-| * Limit calls based on number of calls and more.             |
+| * *Limit calls based on number of calls and more.*           |
 +---------------------------+----------------------------------+
 | **speed_dial:**           | *0[ext]                          |
 +---------------------------+----------------------------------+
-| * Uses LUA for extension speed dial.                         |
+| * vUses LUA for extension speed dial.*                       |
 +---------------------------+----------------------------------+
 | **agent_status:**         | *22                              |
 +---------------------------+----------------------------------+
-| * Agent login to call center.                                |
+| * *Agent login to call center.*                              |
 +---------------------------+----------------------------------+
 | **page-extension:**       | *8[ext]                          |
 +---------------------------+----------------------------------+
-| * Password protected paging of an extension.                 |
+| * *Password protected paging of an extension.*               |
 +---------------------------+----------------------------------+
 | **eavesdrop:**            | *33[ext]                         |
 +---------------------------+----------------------------------+
-| * Password protected evesdropping on extensions.             |
+| * *Password protected evesdropping on extensions.*           |
 +---------------------------+----------------------------------+
 | **send_to_voicemail:**    | *99[ext]                         |
 +---------------------------+----------------------------------+
-| * Sending an active call to an extensions voicemail.         |
+| * *Sending an active call to an extensions voicemail.*       |
 +---------------------------+----------------------------------+
-| cf                        | cf                               |
+| **cf:**                   | cf                               |
 +---------------------------+----------------------------------+
 | *                                                            |
 +---------------------------+----------------------------------+
-| echo                      | *9196                            |
+| **echo:**                 | *9196                            |
 +---------------------------+----------------------------------+
-| * Real time echo test.                                       |
+| * *Real time echo test.*                                     |
 +---------------------------+----------------------------------+
-| milliwatt                 | *9197                            |
+| **milliwatt:**            | *9197                            |
 +---------------------------+----------------------------------+
-| * Plays a milliwatt test tone.                               |
+| * *Plays a milliwatt test tone.*                             |
 +---------------------------+----------------------------------+
-| recordings                | *732                             |
+| **recordings:**           | *732                             |
 +---------------------------+----------------------------------+
-| * Password protected way to record audio that can be used in |
-| other applications like IVR.                                 |
+| * *Password protected way to record audio that can be used in|
+| other applications like IVR.*                                |
 +---------------------------+----------------------------------+
 | directory                 | *411                             |
 +---------------------------+----------------------------------+
-| * Directory of users.                                        |
+| * *Directory of users.*                                      |
 +---------------------------+----------------------------------+
 | user_exists               |                                  |
 +---------------------------+----------------------------------+
-| * Determines if a user exists on the switch.                 |
+| * *Determines if a user exists on the switch.*               |
 +---------------------------+----------------------------------+
 | caller-details            |                                  |
 +---------------------------+----------------------------------+
-| * Logic to decifer caller details.                           |
+| * *Logic to decifer caller details.*                         |
 +---------------------------+----------------------------------+
 | call-direction            |                                  |
 +---------------------------+----------------------------------+
-| * Determines the direction of the call.                      |
+| * *Determines the direction of the call.*                    |
 +---------------------------+----------------------------------+
 | variables                 |                                  |
 +---------------------------+----------------------------------+
-| * Set variables on a domain level                            |
+| * *Set variables on a domain level.*                         |
 +---------------------------+----------------------------------+
 | is_local                  |                                  |
 +---------------------------+----------------------------------+
-| * Can be used to evaluate calls as local.                    |
+| * *Can be used to evaluate calls as local.*                  |
 +---------------------------+----------------------------------+
 | call_block                |                                  |
 +---------------------------+----------------------------------+
-| * Block calls from reaching endpoints.                       |
+| * *Block calls from reaching endpoints.*                     |
 +---------------------------+----------------------------------+
 | user_record               |                                  |
 +---------------------------+----------------------------------+
-| * Used to record calls.                                      |
+| * *Used to record calls.*                                    |
 +---------------------------+----------------------------------+
 | redial                    | *870                             |
 +---------------------------+----------------------------------+
-| * Dial the last number that was dialed.                      |
+| * *Dial the last number that was dialed.*                    |
 +---------------------------+----------------------------------+
 | default_caller_id         |                                  |
 +---------------------------+----------------------------------+
-| * Caller ID that can be set per domain.                      |
+| * *Caller ID that can be set per domain.*                    |
 +---------------------------+----------------------------------+
 | agent_status_id           | *23                              |
 +---------------------------+----------------------------------+
-| * Status of the agent.                                       |
+| * *Status of the agent.*                                     |
 +---------------------------+----------------------------------+
 | provision                 | *11,*12                          |
 +---------------------------+----------------------------------+
-| * Used with devices.                                         |
+| * *Used with devices.*                                       |
 +---------------------------+----------------------------------+
 | clear_sip_auto_answer     |                                  |
 +---------------------------+----------------------------------+
@@ -121,11 +121,11 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | group-intercept           | *8                               |
 +---------------------------+----------------------------------+
-| * Intercepts a call from a defined group.                    |
+| * *Intercepts a call from a defined group.*                  |
 +---------------------------+----------------------------------+
 | page                      | *724                             |
 +---------------------------+----------------------------------+
-| * Password protected paging defined set of extensions.       |
+| * *Password protected paging defined set of extensions.*     |
 +---------------------------+----------------------------------+
 | conf-xfer                 |                                  |
 +---------------------------+----------------------------------+
@@ -133,11 +133,11 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | call_privacy              | *67[d+]                          |
 +---------------------------+----------------------------------+
-| * Send a privacy header to the carrier to hide caller id.    |
+| * *Send a privacy header to the carrier to hide caller id.*  |
 +---------------------------+----------------------------------+
 | call_return               | *69                              |
 +---------------------------+----------------------------------+
-| * Call the last number that called the endpoint.             |
+| * *Call the last number that called the endpoint.*           |
 +---------------------------+----------------------------------+
 | extension_queue           | *800[ext]                        |
 +---------------------------+----------------------------------+
@@ -145,43 +145,43 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | intercept-ext             | **[ext]                          |
 +---------------------------+----------------------------------+
-| *  Password protected intercept of an extension.             |
+| *  *Password protected intercept of an extension.*           |
 +---------------------------+----------------------------------+
 | dx                        | dx                               |
 +---------------------------+----------------------------------+
-| * Direct transfer.                                           |
+| * *Direct transfer.*                                         |
 +---------------------------+----------------------------------+
 | att_xfer                  | att_xfer                         |
 +---------------------------+----------------------------------+
-| * Attended transfer.                                         |
+| * *Attended transfer.*                                       |
 +---------------------------+----------------------------------+
 | extension-to-voicemail    | [ext]                            |
 +---------------------------+----------------------------------+
-| * Used for extension to voicemail.                           |
+| * *Used for extension to voicemail.*                         |
 +---------------------------+----------------------------------+
 | vmain                     | *98                              |
 +---------------------------+----------------------------------+
-| * Main menu to access any voicemail using a pin number.      |
+| * *Main menu to access any voicemail using a pin number.*    |
 +---------------------------+----------------------------------+
 | xfer_vm                   | xfer_vm                          |
 +---------------------------+----------------------------------+
-| * Transfer to voicemail.                                     |
+| * *Transfer to voicemail.*                                   |
 +---------------------------+----------------------------------+
 | is_transfer               | is_transfer                      |
 +---------------------------+----------------------------------+
-| * Used for call transfering.                                 |
+| * *Used for call transfering.*                               |
 +---------------------------+----------------------------------+
 | `vmain_user`_             | *97                              |
 +---------------------------+----------------------------------+
-| * Endpoint's voicemail using a pin number.                   |
+| * *Endpoint's voicemail using a pin number.*                 |
 +---------------------------+----------------------------------+
 | delay_echo                | *9195                            |
 +---------------------------+----------------------------------+
-| * Play back an echo with a 5 second delay.                   |
+| * *Play back an echo with a 5 second delay.*                 |
 +---------------------------+----------------------------------+
 | please_hold               |                                  |
 +---------------------------+----------------------------------+
-| * Plays an audio file when on hold.                          |
+| * *Plays an audio file when on hold.*                        |
 +---------------------------+----------------------------------+
 | is_zrtp_secure            |                                  |
 +---------------------------+----------------------------------+
@@ -193,23 +193,23 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | tone_stream               | *9198                            |
 +---------------------------+----------------------------------+
-| * tones that stream and sound like Tetris music.             |
+| * *tones that stream and sound like Tetris music.*           |
 +---------------------------+----------------------------------+
 | hold_music                | *9664                            |
 +---------------------------+----------------------------------+
-| * Play music on hold. Good for testing on an endpoint.       |
+| * *Play music on hold. Good for testing on an endpoint.*     |
 +---------------------------+----------------------------------+
 | freeswitch_conference     | *9888                            |
 +---------------------------+----------------------------------+
-| * An easy way to join the Cluecon Weekly call.               |
+| * *An easy way to join the Cluecon Weekly call.*             |
 +---------------------------+----------------------------------+
 | disa                      | *3472                            |
 +---------------------------+----------------------------------+
-| * Call in to a phone number and provide a pin to dial out.   |
+| * *Call in to a phone number and provide a pin to dial out.* |
 +---------------------------+----------------------------------+
 | wake-up                   | *925                             |
 +---------------------------+----------------------------------+
-| * Schedule date and time for an automated call.              |
+| * *Schedule date and time for an automated call.*            |
 +---------------------------+----------------------------------+
 | extension_queue           |                                  |
 +---------------------------+----------------------------------+
@@ -217,35 +217,36 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | valet_park                | park+*5901-*5999                 |
 +---------------------------+----------------------------------+
-| * Default range to valet park calls.                         |
+| * *Default range to valet park calls.*                       |
 +---------------------------+----------------------------------+
 | valet_park_in             | park+*5900                       |
 +---------------------------+----------------------------------+
-| * Default number to send valet calls to.                     |
+| * *Default number to send valet calls to.*                   |
 +---------------------------+----------------------------------+
 | valet_park_out            | park+*5901-*5999                 |
 +---------------------------+----------------------------------+
-| * Default range to retreive valet parked calls.              |
+| * *Default range to retreive valet parked calls.*            |
 +---------------------------+----------------------------------+
 | operator                  | 0                                |
 +---------------------------+----------------------------------+
-| * Configurable option for an operator.                       |
+| * *Configurable option for an operator.*                     |
 +---------------------------+----------------------------------+
-| operator-forward          | *000                             |
+| `operator-forward`_       | *000                             |
 +---------------------------+----------------------------------+
-| * Uses dial_string.lua.                                      |
+| * *Uses dial_string.lua.*                                    |
 +---------------------------+----------------------------------+
 | `do-not-disturb`_         | *77,*78,*79                      |
 +---------------------------+----------------------------------+
-| * Turn on, toggle, turn off do not disturb.                  |
+| * *Turn on, toggle, turn off do not disturb.*                |
 +---------------------------+----------------------------------+
 | `call-forward`_           | *72,*73,*74                      |
 +---------------------------+----------------------------------+
-| * Turn on, toggle on/off and turn off call forwarding.       |
+| * *Turn on, toggle on/off and turn off call forwarding.*     |
 +---------------------------+----------------------------------+
 | `follow-me`_              | *21                              |
 +---------------------------+----------------------------------+
-|* Forwards call to defined list of phone numbers or extensions|
+|* *Forwards call to defined list of phone numbers or*         |
+| *extensions.*                                                |
 +---------------------------+----------------------------------+
 | `bind_digit_action`_      |                                  |
 +---------------------------+----------------------------------+
@@ -253,19 +254,20 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | `call_screen`_            | [ext]                            |
 +---------------------------+----------------------------------+
-| * Play an audio file and give options to the caller to record|
-| a short message for the call recipient. Call recipient can   |
-| then accept or reject the call.                              |
+| * *Play an audio file and give options to the caller to*     |
+| *record a short message for the call recipient. Call*        |
+| *recipient can then accept or reject the call.*              |
 +---------------------------+----------------------------------+
 | `local_extension`_        | [ext]                            |
 +---------------------------+----------------------------------+
-| * Examines to see if the extension is local.                 |
+| * *Examines to see if the extension is local.*               |
 +---------------------------+----------------------------------+
 | `voicemail`_              | [ext]                            |
 +---------------------------+----------------------------------+
-| *  Voicemail for extensions.                                 |
+| *  *Voicemail for extensions.*                               |
 +---------------------------+----------------------------------+
 
+.. _operator-forward: dialplan_details.html#operator-forward
 .. _do-not-disturb: dialplan_details.html#do-not-disturb
 .. _call-forward: dialplan_details.html#call-forward
 .. _call_screen: dialplan_details.html#call-screen
