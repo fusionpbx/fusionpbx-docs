@@ -14,7 +14,7 @@ The letsencrypt.sh will do the following:
 * Download `dehydrated <https://github.com/lukas2511/dehydrated>`_.
 * Request an SSL certificate from `Let's Encrypt <https://letsencrypt.com>`_.
 * Configure NGINX to use the SSL certificate.
-* Combine and place SSL certificate in the proper FreeSWITCH directory for using TLS.
+* Combine and place SSL certificate in the proper `FreeSWITCH <https://freeswitch.org/confluence/display/FREESWITCH/FreeSWITCH+Explained>`_ directory for using TLS.
 * Test and make sure the SSL cert works and outputs if sucessful.
 
 Using letsencrypt.sh
