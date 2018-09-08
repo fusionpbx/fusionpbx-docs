@@ -42,7 +42,9 @@ You should then see and follow the prompts:
 
  Domain Name: *.domain.tld
  Email Address: support@fusionpbx.com
- fatal: destination path 'dehydrated' already exists and is not an empty directory.
+ 
+::
+
  Cloning into 'dns-01-manual'...
  remote: Counting objects: 9, done.
  remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9
@@ -110,6 +112,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
        Use the dig command to check that the txt record is correct.  dig -t txt _acme-challenge.domain.tld
        
        Output should show:
+       
        ;; ANSWER SECTION:
        _acme-challenge.domain.tld. 1799 IN TXT  "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 
@@ -131,6 +134,49 @@ Then execute the script.
  ./letsencrypt.sh
  
  
+You should then see and follow the prompts.
+
+::
+
+ Domain Name: domain.tld
+ Email Address: support@fusionpbx.com
+
+After that, you should see the following output.
+
+::
+
+ Cloning into 'dehydrated'...
+ remote: Counting objects: 1914, done.
+ remote: Total 1914 (delta 0), reused 0 (delta 0), pack-reused 1914
+ Receiving objects: 100% (1914/1914), 616.01 KiB | 0 bytes/s, done.
+ Resolving deltas: 100% (1199/1199), done.
+ # INFO: Using main config file /etc/dehydrated/config
+ + Generating account key...
+ + Registering account key with ACME server...
+ + Done!
+ # INFO: Using main config file /etc/dehydrated/config
+ + Creating chain cache directory /etc/dehydrated/chains
+ Processing domain.tld
+ + Creating new directory /etc/dehydrated/certs/domain.tld ...
+ + Signing domains...
+ + Generating private key...
+ + Generating signing request...
+ + Requesting new certificate order from CA...
+ + Received 1 authorizations URLs from the CA
+ + Handling authorization for domain.tld
+ + 1 pending challenge(s)
+ + Deploying challenge tokens...
+ + Responding to challenge for domain.tld authorization...
+ + Challenge is valid!
+ + Cleaning challenge tokens...
+ + Requesting certificate...
+ + Checking certificate...
+ + Done!
+ + Creating fullchain.pem...
+ + Done!
+ 
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 
 
@@ -140,7 +186,7 @@ Then execute the script.
 Certbot (Optional)
 ^^^^^^^^^^^^^^^^^^^^
 
-Certbot is optional and is more of a manual way of using SSL.  Some still use this process but most use the recommended way with the Dehydrated script.
+Certbot is optional and is more of a manual way of using Let's Encrypt SSL.  Some still use this process but most use the recommended way with the Dehydrated script.
 
 More info on NGINX with Let's Encrypt
 https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
