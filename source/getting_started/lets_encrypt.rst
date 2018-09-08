@@ -61,6 +61,10 @@ You should then see and follow the prompts:
  + Deploying challenge tokens...
 
 
+.. note::
+
+      When you define the txt record with your domain registrar be sure to use the output of the script you are running and not what is in this example.
+
 Add the following to the zone definition of domain.tld:
 _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 
@@ -92,6 +96,14 @@ Done!
 
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+.. tip::
+
+       Use the dig command to check that the txt record is correct.  dig -t txt _acme-challenge.domain.tld
+       
+       Output should show:
+       ;; ANSWER SECTION:
+       _acme-challenge.domain.tld. 1799 IN TXT  "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 
 
 
