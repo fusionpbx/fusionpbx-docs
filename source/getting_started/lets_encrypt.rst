@@ -1,7 +1,126 @@
 Let's Encrypt
 ==============
 
-Let's Encrypt is one of the most recent and widely used form of free SSL security but doesn't support wildcard DNS.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
+Let's Encrypt is one of the most recent and widely used form of free SSL security and supports wildcard DNS.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
+
+
+Dehydrated (Recommended)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+FusionPBX has an option to easliy and quickly install SSL with Let's Encrypt using **letsencrypt.sh**  With this script you can choose either to request an SSL certificate with wildcard or hostnames.
+
+Using letsencrypt.sh
+---------------------
+
+Wildcard
+~~~~~~~~~~~
+
+To create a wildcard SSL certificate go to:
+
+::
+
+ cd /usr/src/fusionpbx-install.sh/debian/resources/
+
+
+Then execute the script.
+
+::
+
+ ./letsencrypt.sh
+
+You should then see and follow the prompts:
+
+::
+
+ Domain Name: *.domain.tld
+ Email Address: support@fusionpbx.com
+ fatal: destination path 'dehydrated' already exists and is not an empty directory.
+ Cloning into 'dns-01-manual'...
+ remote: Counting objects: 9, done.
+ remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9
+ Unpacking objects: 100% (9/9), done.
+ Checking connectivity... done.
+ # INFO: Using main config file /etc/dehydrated/config
+ + Account already registered!
+ # INFO: Using main config file /etc/dehydrated/config
+ Processing *.domain.tld
+ + Checking domain name(s) of existing cert... changed!
+ + Domain name(s) are not matching!
+ + Names in old certificate: domain.tld
+ + Configured names: *.domain.tld
+ + Forcing renew.
+ + Checking expire date of existing cert...
+ + Valid till Nov 19 16:08:32 2018 GMT (Longer than 30 days). Ignoring because renew was forced!
+ + Signing domains...
+ + Generating private key...
+ + Generating signing request...
+ + Requesting new certificate order from CA...
+ + Received 1 authorizations URLs from the CA
+ + Handling authorization for domain.tld
+ + 1 pending challenge(s)
+ + Deploying challenge tokens...
+
+
+Add the following to the zone definition of domain.tld:
+_acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
+
+**Press enter to continue...**
+
+::
+
+ + Responding to challenge for domain.tld authorization...
+ + Challenge is valid!
+ + Cleaning challenge tokens...
+
+Now you can remove the following from the zone definition of two.techlacom.com:
+_acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
+
+**Press enter to continue...**
+
+::
+
+ + Requesting certificate...
+ + Checking certificate...
+ + Done!
+ + Creating fullchain.pem...
+
+deploy_cert()
+
+Done!
+
+**done**
+
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+
+
+Hostname
+~~~~~~~~~~
+
+To create a hostname or multiple hostname SSL certificate go to:
+
+::
+
+ cd /usr/src/fusionpbx-install.sh/debian/resources/
+
+Then execute the script.
+
+::
+
+ ./letsencrypt.sh
+ 
+ 
+
+
+
+
+
+
+Certbot (Optional)
+^^^^^^^^^^^^^^^^^^^^
+
+Certbot is optional and is more of a manual way of using SSL.  Some still use this process but most use the recommended way with the Dehydrated script.
 
 More info on NGINX with Let's Encrypt
 https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
