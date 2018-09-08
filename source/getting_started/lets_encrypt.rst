@@ -154,7 +154,7 @@ You should then see and follow the prompts:
 
 ::
 
- Now you can remove the following from the zone definition of two.techlacom.com:
+ Now you can remove the following from the zone definition of domain.tld:
  _acme-challenge.domain.tld. IN TXT "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 
  **Press enter to continue...**
