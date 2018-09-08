@@ -227,7 +227,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +----------------------------------+----------------------------------+
 | * *Default range to retreive valet parked calls.*                   |
 +----------------------------------+----------------------------------+
-| operator                         | 0                                |
+| `operator`_                      | 0                                |
 +----------------------------------+----------------------------------+
 | * *Configurable option for an operator.*                            |
 +----------------------------------+----------------------------------+
@@ -245,8 +245,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +----------------------------------+----------------------------------+
 | `follow-me`_                     | *21                              |
 +----------------------------------+----------------------------------+
-| * *Forwards call to defined list of phone numbers or*               |
-| *extensions.*                                                       |
+| * *Forwards call to defined list of phone numbers or extensions.*   |
 +----------------------------------+----------------------------------+
 | `bind_digit_action`_             |                                  |
 +----------------------------------+----------------------------------+
@@ -254,9 +253,9 @@ The dialplan is used to setup call destinations based on conditions and context.
 +----------------------------------+----------------------------------+
 | `call_screen`_                   | [ext]                            |
 +----------------------------------+----------------------------------+
-| * *Play an audio file and give options to the caller to*            |
-| *record a short message for the call recipient. Call*               |
-| *recipient can then accept or reject the call.*                     |
+| * *Play an audio file and give options to the caller to record a*   |
+| *short message for the call recipient. Call recipient can then*     |
+| *accept or reject the call.*                                        |
 +----------------------------------+----------------------------------+
 | `local_extension`_               | [ext]                            |
 +----------------------------------+----------------------------------+
@@ -267,6 +266,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 | *  *Voicemail for extensions.*                                      |
 +----------------------------------+----------------------------------+
 
+.. _operator: dialplan_details.html#operator 
 .. _operator-forward: dialplan_details.html#operator-forward
 .. _do-not-disturb: dialplan_details.html#do-not-disturb
 .. _call-forward: dialplan_details.html#call-forward
