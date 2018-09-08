@@ -24,7 +24,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +----------------------------------+----------------------------------+
 | **speed_dial:**                  | *0[ext]                          |
 +----------------------------------+----------------------------------+
-| * vUses LUA for extension speed dial.*                              |
+| * *Uses LUA for extension speed dial.*                              |
 +----------------------------------+----------------------------------+
 | **agent_status:**                | *22                              |
 +----------------------------------+----------------------------------+
