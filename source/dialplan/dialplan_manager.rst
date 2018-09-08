@@ -245,7 +245,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 +---------------------------+----------------------------------+
 | `follow-me`_              | *21                              |
 +---------------------------+----------------------------------+
-|* *Forwards call to defined list of phone numbers or*         |
+| * *Forwards call to defined list of phone numbers or*        |
 | *extensions.*                                                |
 +---------------------------+----------------------------------+
 | `bind_digit_action`_      |                                  |
