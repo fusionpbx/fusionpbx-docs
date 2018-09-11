@@ -14,4 +14,45 @@ Configuration for TLS can be achieved with the following steps.
 
 * Login to your FusionPBX installation.
 
-* Go to Advanced > Variables
+* Go to Advanced > Variables.
+
+* Scroll down to **SIP Profile:** Internal (This can be done on any SIP Profile)
+
+.. image:: ../_static/images/fusionpbx_freeswitch_tls.jpg
+        :scale: 85%
+
+
+
+* Set **internal_ssl_enable** value to **true** in lowercase.
+
+* Go to Status > SIP Status.
+
+* Click **FLUSH CACHE** at the top right.
+
+
+.. image:: ../_static/images/fusionpbx_tls_sofia_status2.jpg
+        :scale: 85%
+
+
+* Click **Rescan** on the profile.
+
+
+
+.. image:: ../_static/images/fusionpbx_tls_sofia_status1.jpg
+        :scale: 85%
+
+
+* You should now see at the right under **State** (RUNNING)(0)(TLS)
+
+.. image:: ../_static/images/fusionpbx_tls_sofia_status.jpg
+        :scale: 85%
+
+
+
+
+
+
+
+
+
+
