@@ -255,7 +255,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'FusionPBXDocs.tex', u'FusionPBX Documentation',
-   u'Mark J Crane', 'manual'),
+   u'Mark J Crane & Len Graham', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -285,7 +285,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'fusionpbxdocs', u'FusionPBX Documentation',
-     [u'Mark J Crane'], 1)
+     [u'Mark J Crane & Len Graham'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -299,7 +299,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'FusionPBXDocs', u'FusionPBX Documentation',
-   u'Mark J Crane', 'FusionPBXDocs', 'One line description of project.',
+   u'Mark J Crane & Len Graham', 'FusionPBXDocs', 'One line description of project.',
    'Miscellaneous'),
 ]
 
