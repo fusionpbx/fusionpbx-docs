@@ -8,7 +8,11 @@ On a new installation of FusionPBX most of what is needed to configure TLS for F
 Configure TLS
 ^^^^^^^^^^^^^^^
 
-Configuration for TLS can be achieved with the following steps.
+Configuration for FreeSWITCH to use TLS can be achieved with the following steps.
+
+* First open an ssh terminal or console window.
+
+* cd /usr/src/fusionpbx-install.sh/debian/resources/
 
 * Execute `letsencrypt.sh <../getting_started/lets_encrypt.html>`_
 
