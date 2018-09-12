@@ -14,6 +14,7 @@ Additional Information
   :glob:
 
   additional_information/freeswitch.rst
+  additional_information/freeswitch_tls.rst
   additional_information/testimonials.rst
   additional_information/password_reset.rst
   additional_information/feature_codes.rst
