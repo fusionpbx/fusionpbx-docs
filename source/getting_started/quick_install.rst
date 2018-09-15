@@ -6,11 +6,11 @@ Quick Install
 
 |
 
-Welcome to the FUSIONPBX installation guide. 
+Welcome to the FusionPBX installation guide. 
 
 |
 
-FUSIONPBX can be several different operating systems. However this install is focused on a **minimal** install of Debian 8 with SSH enabled. This install has been designed to be fast, simple and modular. On many systems it will install in 5 minutes or less. Installation times depend on CPU, RAM and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
+FusionPBX can be several different operating systems. However this install is focused on a **minimal** install of Debian 8 with SSH enabled. This install has been designed to be fast, simple and modular. On many systems it will install in 5 minutes or less. Installation times depend on CPU, RAM and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
 
 |
     

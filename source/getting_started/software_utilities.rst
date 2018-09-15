@@ -27,7 +27,7 @@ Install
 
       you can change the command to suite the proper ethernet device eth0 with what is on your system.  Port 5060 can be changed also if you are using a different port.
 
-`sngrep <https://github.com/irontec/sngrep>`_
+`sngrep <../additional_information/sngrep.html>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since March 2017 Sngrep is installed on all systems by default.  This is a very useful tool to help troubleshoot all types of sip related issues.
@@ -51,6 +51,12 @@ From your FusionPBX install SSH window or console window
 ::
 
  sngrep
+
+
+**sngrep:** https://github.com/irontec/sngrep
+
+
+
 
 Call Quality and Monitoring
 -----------------------------

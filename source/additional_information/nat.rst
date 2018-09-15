@@ -22,8 +22,8 @@ Static IP
 ^^^^^^^^^^^^^^^
 FusionPBX is behind NAT and you have a static public IP address and you have phones on the same network and/or outside the network.
 
-* Set external_rtp_ip to autonat:xxx.xxx.xxx.xxx
-* Set external_sip_ip to autonat:xxx.xxx.xxx.xxx
+* Set external_rtp_ip to autonat:xxx.xxx.xxx.xxx (xxx.xxx.xxx.xxx can be used also in some instances)
+* Set external_sip_ip to autonat:xxx.xxx.xxx.xxx (xxx.xxx.xxx.xxx can be used also in some instances)
 * If you don't register a gateway to the carrier you may need to port forward SIP and RTP.
 
 
