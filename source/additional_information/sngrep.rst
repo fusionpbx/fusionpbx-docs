@@ -109,6 +109,10 @@ Call Setup
 
 **Call Completed**
 
+.. image:: ../_static/images/additional_information/fusionpbx_sngrep1.jpg
+        :scale: 85%
+
+
 .. image:: ../_static/images/additional_information/fusionpbx_sngrep_call_setup3.jpg
         :scale: 85%
 
