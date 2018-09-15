@@ -9,6 +9,29 @@ Main Screen
         :scale: 85%
 
 
+
+* **ESC Quit:** escape and quit sngrep.
+
+* **Enter:** Show more information about the highlighted line item.
+
+* **Space:** After pressing the spacebar, the line is selected.  With this you can select multiple lines and can be used with the F2 save option.
+
+* **F1 Help:** Gives a help menu.
+
+* **F2 Save:** Option to save the current capture session dialogs to a .pcap or .txt to a specific path and file name.
+
+* **F3 Search:** Gives the option to search in a more specific and granular way.
+
+* **F4 Extended:** Gives an extended view.
+
+* **F5 Clear:** Clear the screen.
+
+* **F7 Filter:** Like search but with more options to filter the end result.
+
+* **F8 Settings:** Adjust SNGREP settings interface, capture options, call flow options,  and EEP/HEP Homer options.
+
+* **F10:** Adjust what columns are displayed on the open sngrep window.
+
 SPAM
 ~~~~~~
 
