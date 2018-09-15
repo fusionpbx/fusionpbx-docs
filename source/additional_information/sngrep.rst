@@ -5,6 +5,23 @@ Using SNGREP
 Main Screen
 ~~~~~~~~~~~~
 
+
+* **Idx:** Line number column.
+
+* **Method:** Type of SIP message column.
+
+* **SIP From:** SIP message From column.
+
+* **SIP To:** SIP message To column.
+
+* **Msgs:** Numerical amount of messages column.
+
+* **Source:** Source IP and port number column.
+
+* **Destination:** Destination IP and port number column.
+
+* **Call State:** Call identifier column. 
+
 .. image:: ../_static/images/additional_information/fusionpbx_sngrep_main.jpg
         :scale: 85%
 
@@ -37,6 +54,10 @@ SPAM
 
 .. image:: ../_static/images/additional_information/fusionpbx_sngrep_spam.jpg
         :scale: 85%
+
+
+* **User-Agent:** Most spam calls will show an unwanted User-Agent like what is shown in this example.
+
 
 
 
