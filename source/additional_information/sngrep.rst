@@ -56,7 +56,7 @@ SPAM
         :scale: 85%
 
 
-* **User-Agent:** Most spam calls will show an unwanted User-Agent like what is shown in this example.
+* **User-Agent:** Most spam attempts will show an unwanted User-Agent like what is shown in this example.
 
 
 
