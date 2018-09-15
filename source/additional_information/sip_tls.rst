@@ -2,13 +2,13 @@
 SSL/TLS Setup
 *****************
 
-On a new installation of FusionPBX, TLS for FreeSWITCH is available to use once you run `letsencrypt.sh <../getting_started/lets_encrypt.html>`_ and make a few setting changes in FusionPBX.
+On a new installation of FusionPBX, TLS for SIP is available to use once you run `letsencrypt.sh <../getting_started/lets_encrypt.html>`_ and make a few setting changes in FusionPBX.
 
 
 Configure TLS
 ^^^^^^^^^^^^^^^
 
-Configuration for FreeSWITCH to use TLS can be achieved with the following steps.
+Configuration for SIP to use TLS can be achieved with the following steps.
 
 * First open an ssh terminal or console window.
 
