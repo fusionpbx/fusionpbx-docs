@@ -22,7 +22,7 @@ Configuration for SIP to use TLS can be achieved with the following steps.
 
 * Scroll down to **SIP Profile:** Internal (This can be done on any SIP Profile)
 
-.. image:: ../_static/images/fusionpbx_freeswitch_tls.jpg
+.. image:: ../_static/images/fusionpbx_switch_tls.jpg
         :scale: 85%
 
 
