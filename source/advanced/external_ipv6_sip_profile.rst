@@ -8,6 +8,7 @@ External ipv6 Sip Profile
         :scale: 80%
 
 
+*  **Hostname-** Should be left blank and is for advanced use.
 
 +---------------------------+--------------------------------+-----------------------------+---------------------------------+
 | SIP Profile Setting Name  | SIP Profile Setting Value      | SIP Profile Setting Enabled | SIP Profile Setting Description |
