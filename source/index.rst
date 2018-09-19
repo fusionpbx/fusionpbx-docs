@@ -59,10 +59,10 @@ Most of the core folks who develop and use FusionPBX can be found hanging out in
 
 .. _Device Provisioning: applications/provision.html
 .. _Streams: applications/streams.html
-.. _QR Code Provisioning: 
-.. _SMS/MMS ready: 
-.. _FreeSWITCH: http://www.freeswitch.org
-.. _FusionPBX: http://www.fusionpbx.com
+.. _QR Code Provisioning: applications/qr_code.html
+.. _SMS/MMS ready: applications/sms_mms.html
+.. _FreeSWITCH: https://www.freeswitch.org
+.. _FusionPBX: https://www.fusionpbx.com
 .. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
 .. _IVR Menus: applications/ivr.html
 .. _Call Broadcast: applications/call_broadcast.html
