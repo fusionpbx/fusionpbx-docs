@@ -2,7 +2,7 @@
 Users
 ************
 
-.. image:: ../_static/images/accounts/fusionpbx_users.jpg
+.. image:: ../_static/images/accounts/fusionpbx_users_4_5.jpg
         :scale: 85%
 
 
@@ -24,6 +24,10 @@ Define the users information to login to the web interface.
     The group the user is assigned.
 *  Domain
     The domain the user is assigned to.
+*  API Key
+    Generates an API Key
+*  Message Key
+    Generates a Key to use with Messages Application.
 *  Enable
     Whether the user is enabled.
 
