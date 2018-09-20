@@ -2,7 +2,11 @@
 Training
 ###########
 
-FusionPBX offers different levels of training. We love helping people and companies succeed.  From the small family business, someone that loves to tinker with technology, to major companies all around the world.
+FusionPBX offers different levels of training. We love helping people and companies succeed.  
+
+* Small family business.
+* Someone that loves to tinker with technology.
+* Major companies all around the world.
 
 Free
 ------
