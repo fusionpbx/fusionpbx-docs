@@ -11,12 +11,14 @@ FusionPBX offers different levels of training. We love helping people and compan
 Free
 ------
 
+FusionPBX has content available in this document and video's on youtube to help get you started.
+
 * Free Self help is available for you right here at docs.fusionpbx.com
 * Video's at https://youtube.com/fusionpbx
 
 
 `Paid Training and technical support <https://www.fusionpbx.com/training.php>`_
--------------------------------------
+------------------------------------------------------------------------------------
 
 FusionPBX offers an Admin class, Advanced class and an affordable Continuing Education class.  If you want to accelerate your understanding of how to use FusionPBX and unleash your full potential these classes are for you.
 
