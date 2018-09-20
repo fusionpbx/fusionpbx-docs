@@ -1,7 +1,7 @@
 Home
 ======
 
-Home menu gives access to Account Settings, Dashboard and the option to Logout.
+The home menu gives access to Account Settings, Dashboard and the option to Logout.
 
 
 .. toctree::
