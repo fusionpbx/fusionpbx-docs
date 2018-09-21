@@ -44,5 +44,5 @@ How to Get Started:
   contributing/qa_testing.rst
   contributing/github_rebase.rst
   contributing/coding_standards
-#  contributing/directory_structure
+ #contributing/directory_structure
 

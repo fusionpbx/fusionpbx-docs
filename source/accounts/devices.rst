@@ -16,6 +16,7 @@ Used to define the information needed to assign SIP accounts and keys to provisi
 * Select from the drop down box the make/model.
 * Populate the lines section.
 * Populate the Key section.
+* (Optional) Populate the Settings section. These settings are the same as the variables from Advanced > Default Settings > Provisioning and can be overridden in this settings section. Just set the variable for the device you are adding.
 * Edit other fields as needed.
 * Click Save
 

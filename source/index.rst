@@ -45,6 +45,8 @@ Benefits of FusionPBX
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Multi-Tenant`_         | `Music on Hold`_      |    `Queues`_                    |      `Recordings`_                       |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
+| `Device Provisioning`_  | `Streams`_            |   `QR Code Provisioning`_       | `SMS/MMS ready`_                         |                                                                        
++-------------------------+-----------------------+---------------------------------+------------------------------------------+
 | `Time Conditions`_      | `WebRTC ready`_       |    `Voicemail`_                 |      `and lots more...`_                 |
 +-------------------------+-----------------------+---------------------------------+------------------------------------------+
 
@@ -55,9 +57,12 @@ We are a **global community** that has an open and **very friendly** ecosystem. 
 
 Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Come join us and meet the team.
 
-
-.. _FreeSWITCH: http://www.freeswitch.org
-.. _FusionPBX: http://www.fusionpbx.com
+.. _Device Provisioning: applications/provision.html
+.. _Streams: applications/streams.html
+.. _QR Code Provisioning: applications/gs_wave.html
+.. _SMS/MMS ready: applications/sms_mms.html
+.. _FreeSWITCH: https://www.freeswitch.org
+.. _FusionPBX: https://www.fusionpbx.com
 .. _Click here for the FusionPBX youtube channel: https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF
 .. _IVR Menus: applications/ivr.html
 .. _Call Broadcast: applications/call_broadcast.html
