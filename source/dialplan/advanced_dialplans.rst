@@ -58,3 +58,14 @@ This example will be for calling an extension on another tenant.  This can be do
 +-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
 
 
+.. image:: ../_static/images/dialplan/fusionpbx_custom_dialplan.jpg
+        :scale: 85%
+
+
+
+
+.. note::
+      A quick way to find a domains uuid is by going to Advanced > Domains.  Then click the edit icon on the domain you want to know the uuid of.  The uuid will be at the end of the url.
+
+
+
