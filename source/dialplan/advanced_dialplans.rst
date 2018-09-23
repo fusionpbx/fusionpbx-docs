@@ -44,7 +44,7 @@ This example will be for calling an extension on another tenant.  This can be do
         :scale: 85%
 
 
-Cross Domain Calling
+Cross Tenant Calling
 ~~~~~~~~~~~~~~~~~~~~~~
 
 This would require a prefix of 5 followed by 4 digit extensions. The prefix can be any number that you choose to use and the 4 digit extension must match the destination tenant. So if the destination extensions are 3 digit then you would use 3 instead of 4.
@@ -63,7 +63,7 @@ This would require a prefix of 5 followed by 4 digit extensions. The prefix can 
 
 * Be sure to set the **Continue dropdown box True**
 
-* Finally we have the desired dialplan to call from Domain A to Domain B.
+* Finally we have the desired dialplan to call from tenant A to tenant B.
 
 
 .. image:: ../_static/images/dialplan/fusionpbx_custom_dialplan.jpg
