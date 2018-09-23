@@ -43,19 +43,18 @@ This example will be for calling an extension on another tenant.  This can be do
 .. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced2.jpg
         :scale: 85%
 
+*  This would require a prefix of 5 followed by 4 digit extensions. The prefix can be any number that you choose to use and the 4 digit extension must match the destination tenant. So if the destination extensions are 3 digit then you would use 3 instead of 4.
 
-
-+--------+----------+------------------------------------------+-------+--------+-------+-------+
-| Tag    | Type     | Data                                     | Break | Inline | Group | Order |
-+========+==========+==========================================+=======+========+=======+=======+
-|        |          |                                          |       |        |       |       |
-+--------+----------+------------------------------------------+-------+--------+-------+-------+
-| action | set      | domain_name=customer.domain.tld          |       | True   |       | 20    |
-+--------+----------+------------------------------------------+-------+--------+-------+-------+
-| action | set      | domain_uuid=correct-uuid-for-the-domain  |       | True   |       | 25    |
-+--------+----------+------------------------------------------+-------+--------+-------+-------+
-| action | transfer | extension XML ${domain_name}             |       |        |       | 30    |
-+--------+----------+------------------------------------------+-------+--------+-------+-------+
-
++-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
+| Tag       | Type                      | Data                                     | Break | Inline | Group | Order |
++===========+===========================+==========================================+=======+========+=======+=======+
+| condition | ${destination_number}     | ^5(\d{4})$                               |       |        |       | 5     |
++-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
+| action    | set                       | domain_name=customer.domain.tld          |       | True   |       | 10    |
++-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
+| action    | set                       | domain_uuid=correct-uuid-for-the-domain  |       | True   |       | 15    |
++-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
+| action    | transfer                  | $1 XML ${domain_name}                    |       |        |       | 20    |
++-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
 
 
