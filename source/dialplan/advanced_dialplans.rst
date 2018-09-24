@@ -8,7 +8,7 @@ FusionPBX installs several default dialplans. FusionPBX also gives the option to
 
 
 Adding a Dialplan
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 You can create a new dialplan or copy and modify an existing dialplan.
 
@@ -33,7 +33,7 @@ You can create a new dialplan or copy and modify an existing dialplan.
 
 
 Dialplan examples
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 This example will be for calling an extension on another tenant.  This can be done several ways.
 
@@ -43,7 +43,11 @@ This example will be for calling an extension on another tenant.  This can be do
 .. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced2.jpg
         :scale: 85%
 
-*  This would require a prefix of 5 followed by 4 digit extensions. The prefix can be any number that you choose to use and the 4 digit extension must match the destination tenant. So if the destination extensions are 3 digit then you would use 3 instead of 4.
+
+Cross Tenant Calling
+~~~~~~~~~~~~~~~~~~~~~~
+
+This would require a prefix of 5 followed by 4 digit extensions. The prefix can be any number that you choose to use and the 4 digit extension must match the destination tenant. So if the destination extensions are 3 digit then you would use 3 instead of 4.
 
 +-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
 | Tag       | Type                      | Data                                     | Break | Inline | Group | Order |
@@ -56,5 +60,20 @@ This example will be for calling an extension on another tenant.  This can be do
 +-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
 | action    | transfer                  | $1 XML ${domain_name}                    |       |        |       | 20    |
 +-----------+---------------------------+------------------------------------------+-------+--------+-------+-------+
+
+* Be sure to set the **Continue dropdown box True**
+
+* Finally we have the desired dialplan to call from tenant A to tenant B.
+
+
+.. image:: ../_static/images/dialplan/fusionpbx_custom_dialplan.jpg
+        :scale: 85%
+
+
+
+
+.. note::
+      A quick way to find a domains uuid is by going to Advanced > Domains.  Then click the edit icon on the domain you want to know the uuid of.  The uuid will be at the end of the url.
+
 
 
