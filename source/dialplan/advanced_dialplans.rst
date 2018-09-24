@@ -21,19 +21,23 @@ You can create a new dialplan or copy and modify an existing dialplan.
 .. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced.jpg
         :scale: 85%
 
-* Find the newly created dialplan and edit it if needed.
+
+Edit a Dialplan
+^^^^^^^^^^^^^^^^^
+
+Find the dialplan you want to edit and click the edit icon.
 
 .. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced1.jpg
         :scale: 85%
 
-* Once you enter data into the empty fields at the bottom and click save, more blank fileds will populate if needed.
+Once you enter data into the empty fields at the bottom and click save, more blank fileds will populate if needed.
 
 .. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced2.jpg
         :scale: 85%
 
 
-Dialplan examples
-^^^^^^^^^^^^^^^^^^^
+Dialplan example
+^^^^^^^^^^^^^^^^^^
 
 This example will be for calling an extension on another tenant.  This can be done several ways.
 
