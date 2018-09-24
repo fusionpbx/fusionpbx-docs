@@ -2,7 +2,7 @@
 Additional Information
 ************************
 
-
+In the **Additional Information** section you will find topics related to FusionPBX.
 
 
 

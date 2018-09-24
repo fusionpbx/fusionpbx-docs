@@ -17,3 +17,4 @@ In the **Dialplan** menu you have access to Destinations, Dialplan Manager, Inbo
   dialplan/dialplan_application.rst
   dialplan/inbound_routes.rst
   dialplan/outbound_routes.rst
+  dialplan/advanced_dialplans.rst
