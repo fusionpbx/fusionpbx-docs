@@ -8,33 +8,33 @@ Voicemail specific default settings.
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
 | Default Setting Subcategory   | Default Setting Name   | Default Setting Value   | Default Setting Enabled   | Default Setting Description                                                                  |
 +===============================+========================+=========================+===========================+==============================================================================================+
-| voicemail_file                | text                   | attach                  | TRUE                      | Define whether to attach voicemail files to email notifications, or only include a link.     |
+| voicemail_file                | text                   | attach                  | true                      | Define whether to attach voicemail files to email notifications, or only include a link.     |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| keep_local                    | boolean                | TRUE                    | TRUE                      | Define whether to keep voicemail files on the local system after sending attached via email. |
+| keep_local                    | boolean                | true                    | true                      | Define whether to keep voicemail files on the local system after sending attached via email. |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| storage_type                  | text                   | base64                  | FALSE                     | Define which storage type (base_64 stores in the database).                                  |
+| storage_type                  | text                   | base64                  | false                     | Define which storage type (base_64 stores in the database).                                  |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| message_max_length            | numeric                | 300                     | TRUE                      | Maximum length of a voicemail (in seconds).                                                  |
+| message_max_length            | numeric                | 300                     | true                      | Maximum length of a voicemail (in seconds).                                                  |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| password_length               | numeric                | 8                       | TRUE                      | The default length of characters in a voicemail password.                                    |
+| password_length               | numeric                | 8                       | true                      | The default length of characters in a voicemail password.                                    |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| display_domain_name           | boolean                | TRUE                    | FALSE                     | Enable display of @domain_name after voicemail_id when rendering emails.                     |
+| display_domain_name           | boolean                | true                    | false                     | Enable display of @domain_name after voicemail_id when rendering emails.                     |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| remote_access                 | boolean                | FALSE                   | TRUE                      | Allow access to the voicemail menu with the correct voicemail password.                      |
+| remote_access                 | boolean                | false                   | true                      | Allow access to the voicemail menu with the correct voicemail password.                      |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| message_order                 | text                   | asc                     | TRUE                      | Set the message order to asc or desc.                                                        |
+| message_order                 | text                   | asc                     | true                      | Set the message order to asc or desc.                                                        |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| password_complexity           | boolean                | TRUE                    | FALSE                     | Enforce voicemail password complexity.                                                       |
+| password_complexity           | boolean                | true                    | false                     | Enforce voicemail password complexity.                                                       |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| password_min_length           | numeric                | 4                       | FALSE                     | Minimum voicemail password length.                                                           |
+| password_min_length           | numeric                | 4                       | false                     | Minimum voicemail password length.                                                           |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| smtp_from                     | text                   |                         | TRUE                      |  SMTP From: specific to Voicemail.                                                           |
+| smtp_from                     | text                   |                         | true                      |  SMTP From: specific to Voicemail.                                                           |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| smtp_from_name                | text                   |                         | TRUE                      |  SMTP From: Name specific to Voicemail.                                                      |
+| smtp_from_name                | text                   |                         | true                      |  SMTP From: Name specific to Voicemail.                                                      |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| not_found_message             | boolean                | FALSE                   | TRUE                      |  Default for not found message.                                                              |
+| not_found_message             | boolean                | false                   | true                      |  Default for not found message.                                                              |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-| greeting_max_length           | numeric                | 90                      | TRUE                      | Maximum length of a voicemail greeting (in seconds).                                         |
+| greeting_max_length           | numeric                | 90                      | true                      | Maximum length of a voicemail greeting (in seconds).                                         |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
 
 
