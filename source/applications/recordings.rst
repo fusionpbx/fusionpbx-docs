@@ -8,7 +8,7 @@ To view and set the pin number goto Dialplan > Dialplan Manager > Click on Recor
 
 .. note::
 
-  Pin number is recomended but can be left empty if no pin number is desired. pin_number=
+  Pin number is recomended but can be left empty if no pin number is desired then pin_number=
 
 
 Create a Recording
