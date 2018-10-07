@@ -62,13 +62,13 @@ Call Pickup
 
 For a particular extension or any extension that is currently ringing.
 
-`Queues`
+`Queues`_
 --------------
 
 Load calls into queues so they can be answered in the order they came into the queue.
 
-Call Recordings
------------------
+`Call Recordings`_
+-------------------
 
 Record all or some calls or parts of the call.
 
@@ -297,6 +297,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
 .. _Extensions: http://docs.fusionpbx.com/en/latest/accounts/extensions.html
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
+.. _Call Recordings: ../applications/call_recordings.html
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
 .. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
@@ -307,7 +308,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
 .. _Call Forward: /en/latest/applications/call_routing.html
 .. _Call Flows: http://docs.fusionpbx.com/en/latest
-.. _Call Routing: /en/latest/applications/call_routing.html
+.. _Call Routing: ../applications/call_routing.html
 .. _Contacts: /en/latest/applications/contacts.html
 .. _Adminer: /en/latest/advanced/adminer.html
 .. _Command: /en/latest/advanced/command.html
@@ -329,7 +330,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
 .. _Conference Center: http://docs.fusionpbx.com/en/latest/applications/conference_center.html
 .. _Fax Server: http://docs.fusionpbx.com/en/latest/applications/fax_server.html
-.. _Gateways: http://docs.fusionpbx.com/en/latest/gateway/gateway1.html
+.. _Gateways: http://docs.fusionpbx.com/en/latest/accounts/gateways.html
 .. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
 .. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
 .. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
