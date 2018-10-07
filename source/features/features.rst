@@ -299,7 +299,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
 .. _Call Recordings: ../applications/call_recordings.html
 .. _Operator Panel: ../applications/operator_panel.html
-.. _Dial by Name: ../additional_information/dial_by_name.html
+.. _Dial by Name: ../features/dial_by_name.html
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
 .. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
@@ -319,7 +319,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Device Provisioning: /en/latest/applications/provision.html
 .. _Provider Setup: /en/latest/accounts/providers.html
 .. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
-.. _Do Not Disturb (DND): /en/latest/accounts/call_routing.html
+.. _Do Not Disturb (DND): ../applications/call_routing.html
 .. _Editor: /en/latest/advanced/editors.html
 .. _Extension Summary: /en/latest/status/extension_summary.html
 .. _Active Extensions: http://docs.fusionpbx.com/en/latest
