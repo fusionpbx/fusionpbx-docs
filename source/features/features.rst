@@ -132,8 +132,8 @@ Area to execute commands from the gui. Merged with SQL Query tool with a clip li
 
 The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination. 
 
-Dial by Name
---------------------
+`Dial by Name`_ (*411)
+------------------------
 
 Search by first name or last name to find extension numbers on the system.
 
@@ -207,8 +207,8 @@ Allows multiple categories of music on hold that can be set globally or per doma
 
 Domain based multi-tenant using subdomains such as red.pbxhosting.tld green.pbxhosting.tld blue.pbxhosting.tld
 
-Operator Panel
----------------
+`Operator Panel`_
+--------------------
 
 A virtual panel that agents can drag and drop transfer calls. Adjust call state from available, on break, do not disturb and logged out. 
 
@@ -298,6 +298,8 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Extensions: http://docs.fusionpbx.com/en/latest/accounts/extensions.html
 .. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
 .. _Call Recordings: ../applications/call_recordings.html
+.. _Operator Panel: ../applications/operator_panel.html
+.. _Dial by Name: ../additional_information/dial_by_name.html
 .. _Follow Me: /en/latest/applications/follow_me.html
 .. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
 .. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
