@@ -132,7 +132,7 @@ Area to execute commands from the gui. Merged with SQL Query tool with a clip li
 
 The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination. 
 
-`Dial by Name`_ (*411)
+`Dial by Name`_ (\*\411)
 ------------------------
 
 Search by first name or last name to find extension numbers on the system.
