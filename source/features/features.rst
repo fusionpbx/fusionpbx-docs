@@ -332,17 +332,17 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Active Calls: http://docs.fusionpbx.com/en/latest
 .. _Conference Center: http://docs.fusionpbx.com/en/latest/applications/conference_center.html
 .. _Fax Server: http://docs.fusionpbx.com/en/latest/applications/fax_server.html
-.. _Gateways: http://docs.fusionpbx.com/en/latest/accounts/gateways.html
+.. _Gateways: ../latest/accounts/gateways.html
 .. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
-.. _Ring Groups: http://docs.fusionpbx.com/en/latest/applications/ring_groups.html
-.. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
-.. _Voicemail: /en/latest/applications/voicemail.html
-.. _Voicemail Transcription: /en/latest/applications/voicemail.html#voicemail-transcription
-.. _and lots more...: http://docs.fusionpbx.com/en/latest/features/features.html
+.. _Ring Groups: ../applications/ring_group.html
+.. _Recordings: ../applications/recordings.html
+.. _Voicemail: ../applications/voicemail.html
+.. _Voicemail Transcription: ../applications/voicemail.html#voicemail-transcription
+.. _and lots more...: ../features/features.html
 .. _Scalable and Redundant: https://fusionpbx.com/app/www/training_detail.php
-.. _User and Group Management: http://docs.fusionpbx.com/en/latest/advanced/group_manager.html
+.. _User and Group Management: ../advanced/group_manager.html
 .. _Parking: /en/latest/features/parking.html
 .. _Re-branding and Customize: http://fusionpbx.com/support.php
-.. _WebRTC: /en/latest/applications_optional/webrtc.html
+.. _WebRTC: ../applications_optional/webrtc.html
 
 
