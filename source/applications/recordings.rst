@@ -4,6 +4,12 @@ Recordings
 
 Dial \*\732 to create a recording, or (for best results) upload a 16bit 8khz/16khz mono WAV file. `Click here for the youtube video.`_
 
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/CkqlsVvvv2U?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
+
 To view and set the pin number goto Dialplan > Dialplan Manager > Click on Recordings > pin_number=8675309 at the bottom.
 
 .. note::
