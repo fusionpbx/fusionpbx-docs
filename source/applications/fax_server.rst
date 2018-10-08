@@ -4,7 +4,11 @@ Fax Server
 
 To receive a FAX setup a fax extension and then direct the incoming to it. `Click here for the Youtube video <https://youtu.be/AJHcle2U3n4>`_
 
+.. raw:: html
 
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/AJHcle2U3n4?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
 
 .. image:: ../_static/images/fusionpbx_fax.jpg
         :scale: 85%
