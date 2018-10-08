@@ -61,6 +61,7 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
    Official FusionPBX Training
       Admin Training    24 - 26 Jan (3 Days)
       Advanced Training 31 Jan - Feb 2 (3 Days)
+      Continuing Education Last Thursday Monthly (1 Day)
       Timezone: https://www.timeanddate.com/worldclock/usa/boise
       For more info visit https://www.fusionpbx.com/training.php
 
