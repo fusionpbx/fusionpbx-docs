@@ -289,51 +289,50 @@ Additional Features
 This is not a comprehensive set of features. A complete list would be many times larger. More will be added as time permits.
 
 
-.. _IVR Menus: http://docs.fusionpbx.com/en/latest/applications/ivr.html
-.. _Direct Inward System Access: /en/latest/dialplan/dialplan_details.html#disa
-.. _Paging: /en/latest/dialplan/dialplan_details.html#page
-.. _Voicemail to Email: /en/latest/getting_started/voicemail_to_email.html
-.. _Inbound and Outbound Call Routing: http://docs.fusionpbx.com/en/latest/dialplans.html
-.. _Call Broadcast: http://docs.fusionpbx.com/en/latest/applications/call_broadcast.html
-.. _Extensions: http://docs.fusionpbx.com/en/latest/accounts/extensions.html
-.. _Call Flows (Day Night Mode): /en/latest/applications/call_flows.html
+.. _IVR Menus: ../applications/ivr.html
+.. _Direct Inward System Access: ../dialplan/dialplan_details.html#disa
+.. _Paging: ../dialplan/dialplan_details.html#page
+.. _Voicemail to Email: ../getting_started/voicemail_to_email.html
+.. _Inbound and Outbound Call Routing: ../dialplans.html
+.. _Call Broadcast: ../applications/call_broadcast.html
+.. _Extensions: ../accounts/extensions.html
+.. _Call Flows (Day Night Mode): ../applications/call_flows.html
 .. _Call Recordings: ../applications/call_recordings.html
 .. _Operator Panel: ../applications/operator_panel.html
 .. _Dial by Name: ../features/dial_by_name.html
-.. _Follow Me: /en/latest/applications/follow_me.html
-.. _Call Block: http://docs.fusionpbx.com/en/latest/applications/call_block.html
-.. _Call Barge / Eavesdrop / Intercept: /en/latest/additional_information/feature_codes.html
-.. _Call Center: /en/latest/applications/call_center.html
-.. _Call Transfer: /en/latest/additional_information/feature_codes.html
-.. _Call Blind Transfer: /en/latest/additional_information/feature_codes.html
-.. _Call Waiting: /en/latest/additional_information/feature_codes.html
-.. _Call Detail Records: http://docs.fusionpbx.com/en/latest/applications/call_detail_record.html
-.. _Call Forward: /en/latest/applications/call_routing.html
-.. _Call Flows: http://docs.fusionpbx.com/en/latest
+.. _Follow Me: ../applications/follow_me.html
+.. _Call Block: ../applications/call_block.html
+.. _Call Barge / Eavesdrop / Intercept: ../additional_information/feature_codes.html
+.. _Call Center: ../applications/call_center.html
+.. _Call Transfer: ../additional_information/feature_codes.html
+.. _Call Blind Transfer: ../additional_information/feature_codes.html
+.. _Call Waiting: ../additional_information/feature_codes.html
+.. _Call Detail Records: ../applications/call_detail_record.html
+.. _Call Forward: ../applications/call_routing.html
+.. _Call Flows: ../applications/call_flows.html
 .. _Call Routing: ../applications/call_routing.html
-.. _Contacts: /en/latest/applications/contacts.html
-.. _Adminer: /en/latest/advanced/adminer.html
-.. _Command: /en/latest/advanced/command.html
-.. _Conference: http://docs.fusionpbx.com/en/latest/applications/conference.html
+.. _Contacts: ../applications/contacts.html
+.. _Adminer: ../advanced/adminer.html
+.. _Command: ../advanced/command.html
+.. _Conference: ../applications/conference.html
 .. _Contact Manager: http://docs.fusionpbx.com/en/latest
-.. _Device Provisioning: /en/latest/applications/provision.html
-.. _Provider Setup: /en/latest/accounts/providers.html
-.. _Dialplan Manager: http://docs.fusionpbx.com/en/latest/dialplan/dialplan_manager.html
+.. _Device Provisioning: ../applications/provision.html
+.. _Provider Setup: ../accounts/providers.html
+.. _Dialplan Manager: ../dialplan/dialplan_manager.html
 .. _Do Not Disturb (DND): ../applications/call_routing.html
-.. _Editor: /en/latest/advanced/editors.html
+.. _Editor: ../advanced/editors.html
 .. _Extension Summary: /en/latest/status/extension_summary.html
-.. _Active Extensions: http://docs.fusionpbx.com/en/latest
-.. _Hot Desking: /en/latest/accounts/hot_desking.html
-.. _Multi-Tenant: /en/latest/advanced/domains.html
-.. _Music on Hold: /en/latest/applications/music_on_hold.html
-.. _Phrases: /en/latest/applications/phrases.html
-.. _Queues: /en/latest/applications/queues.html
-.. _Recordings: http://docs.fusionpbx.com/en/latest/applications/recordings.html
-.. _Active Calls: http://docs.fusionpbx.com/en/latest
-.. _Conference Center: http://docs.fusionpbx.com/en/latest/applications/conference_center.html
-.. _Fax Server: http://docs.fusionpbx.com/en/latest/applications/fax_server.html
+.. _Active Extensions: ../status/active_extensions.html
+.. _Hot Desking: ../accounts/hot_desking.html
+.. _Multi-Tenant: ../advanced/domains.html
+.. _Music on Hold: ../applications/music_on_hold.html
+.. _Phrases: ../applications/phrases.html
+.. _Queues: ../applications/queues.html
+.. _Active Calls: ../status/active_calls.html
+.. _Conference Center: ../applications/conference_center.html
+.. _Fax Server: ../applications/fax_server.html
 .. _Gateways: ../latest/accounts/gateways.html
-.. _Time Conditions: http://docs.fusionpbx.com/en/latest/applications/time_conditions.html
+.. _Time Conditions: ../applications/time_conditions.html
 .. _Ring Groups: ../applications/ring_group.html
 .. _Recordings: ../applications/recordings.html
 .. _Voicemail: ../applications/voicemail.html
