@@ -55,7 +55,7 @@ Forward to another extension or to any phone number.
 Call Monitoring
 -----------------
 
-View which extensions are currently in a call. (see Active Extensions)
+View which extensions are currently in a call. (see `Active Extensions`_)
 
 Call Pickup
 -------------
@@ -331,7 +331,7 @@ This is not a comprehensive set of features. A complete list would be many times
 .. _Active Calls: ../status/active_calls.html
 .. _Conference Center: ../applications/conference_center.html
 .. _Fax Server: ../applications/fax_server.html
-.. _Gateways: ../latest/accounts/gateways.html
+.. _Gateways: ../accounts/gateways.html
 .. _Time Conditions: ../applications/time_conditions.html
 .. _Ring Groups: ../applications/ring_group.html
 .. _Recordings: ../applications/recordings.html
