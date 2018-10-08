@@ -16,7 +16,7 @@ Using \*\411
 
 
 .. tip::
-      Go to Accounts > Extensions > click the edit icon on an extension. Scroll down to the "Directory Full Name" field and fill in the field.  Directory Full Name is what *411 uses to search by.
+      Go to Accounts > Extensions > click the edit icon on an extension. Scroll down to the "Directory Full Name" field and fill in the field.  Directory Full Name is what \*\411 uses to search by.
 
 
 
