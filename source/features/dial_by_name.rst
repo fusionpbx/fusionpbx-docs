@@ -6,7 +6,7 @@ Dial By Name
 Dial by name is a way to dial someone that is defined in your FusionPBX installations virtual directory.
 
 
-Using *411
+Using \*\411
 ^^^^^^^^^^^^
 
 * First dial \*\411.
