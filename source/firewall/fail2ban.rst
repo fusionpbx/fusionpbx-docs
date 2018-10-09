@@ -15,7 +15,7 @@ To check the status of one of the fail2ban jails
 
 ::
 
- fail2ban-client status freeswitch-ip-tcp
+ fail2ban-client status freeswitch-ip
 
 
 Fail2ban configuration files are located in.
