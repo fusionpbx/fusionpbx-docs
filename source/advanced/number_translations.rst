@@ -18,4 +18,8 @@ The documentation for mod-translate can be found under https://freeswitch.org/co
 
 To use mod-translate to modify inbound calls before they hit the dialplan the following setting for the SIP-profile must be modified:
   dialplan "XML" -> dialplan "Translate,XML"
+  
+  With FreeSwitch 1.8.x it is now possible to specify the translation profile to be used:
+  dialplan "XML" -> dialplan "Translate:my_profile1,XML"
+  
 To activate this setting, the SIP-profile needs to be restarted and the cache flushed.
