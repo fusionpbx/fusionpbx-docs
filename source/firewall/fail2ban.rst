@@ -5,11 +5,14 @@ Fail2ban
 
 Fail2ban is also used to protect SSH, FreeSWITCH, the web server as well as other services.
 
-After the installation script finishes, the option to register to the ip address is **ENABLED**.
+After the installation script finishes, the option for anything to register to the ip address is **ENABLED**. 
 
 * If you plan on registering devices to the FusionPBX ip address then no further action is required. 
 
-* To help secure your FusionPBX installation, enable [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
+It is however recomended to register to a domain name (FQDN) since most scripted attacks happen to the public ip. Registering to the ip address will be blocked by the fail2ban rules freeswitch-ip and auth-challenge once these rules are set to true.
+
+* To help secure your FusionPBX installation, enable the `fail2ban rules <http://docs.fusionpbx.com/en/latest/firewall/fail2ban.html>`_ [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
+
 
 ::
 
