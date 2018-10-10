@@ -78,4 +78,21 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
 |
 
 After the install script has completed go to your web browser and login with the information provided by the install script.
+
+
+After the installation script finishes, the option to register to the ip address is **ENABLED**.
+
+* If you plan on registering devices to the FusionPBX ip address then no further action is required. 
+
+* To help secure your FusionPBX installation, enable [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
+
+::
+
+ [freeswitch-ip]
+ enabled  = true
+
+::
+
+ [auth-challenge-ip]
+ enabled  = true
   
