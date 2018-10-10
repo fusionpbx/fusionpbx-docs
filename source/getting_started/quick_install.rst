@@ -84,7 +84,7 @@ After the installation script finishes, the option to register to the ip address
 
 * If you plan on registering devices to the FusionPBX ip address then no further action is required. 
 
-* To help secure your FusionPBX installation, enable [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
+* To help secure your FusionPBX installation, enable the `fail2ban rules <http://docs.fusionpbx.com/en/latest/firewall/fail2ban.html>`_ [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
 
 ::
 
