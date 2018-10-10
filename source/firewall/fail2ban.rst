@@ -21,6 +21,10 @@ After the installation script finishes, the option to register to the ip address
  [auth-challenge-ip]
  enabled  = true 
 
+.. warning::
+
+         If you find that your FusionPBX web interface isn't loading then check and see if fail2ban is blocking your ip.  Getting blocked by any fail2ban rule will block ssh, www, and phones registering if you don't have your ip in the /etc/fail2ban/jail.conf ignoreip= field .
+
 You can view the IP addresses blocked by Fail2ban with the following command.
 
 
