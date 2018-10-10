@@ -3,7 +3,25 @@ Fail2ban
 #############
 
 
-Fail2ban is also used to protect SSH, FreeSWITCH, the web server as well as other services. You can view the IP addresses blocked by Fail2ban with the following command.
+Fail2ban is also used to protect SSH, FreeSWITCH, the web server as well as other services.
+
+After the installation script finishes, the option to register to the ip address is **ENABLED**.
+
+* If you plan on registering devices to the FusionPBX ip address then no further action is required. 
+
+* To help secure your FusionPBX installation, enable [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
+
+::
+
+ [freeswitch-ip]
+ enabled  = true
+
+::
+
+ [auth-challenge-ip]
+ enabled  = true 
+
+You can view the IP addresses blocked by Fail2ban with the following command.
 
 
 ::
@@ -38,6 +56,11 @@ Find ignoreip and add the IP address, CIDR or DNS hostname that need to be white
 ::
 
  ignoreip = 127.0.0.1/8 192.168.0.0/16
+
+
+.. note::
+       To help keep the ip and hostnames you want unblocked it is a good idea to add customers and carriers to the ignoreip list.
+
 
 
 Filters are defined in the following directory.
