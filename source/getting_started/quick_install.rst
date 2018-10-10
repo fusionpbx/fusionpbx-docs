@@ -12,7 +12,11 @@ Welcome to the FusionPBX installation guide.
 
 FusionPBX can be several different operating systems. However this install is focused on a **minimal** install of Debian 8 with SSH enabled. This install has been designed to be fast, simple and modular. On many systems it will install in 5 minutes or less. Installation times depend on CPU, RAM and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
 
-|
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/YmIht8hEHYU?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
     
 **1.** Run the following commands under root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
 
@@ -57,6 +61,7 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
    Official FusionPBX Training
       Admin Training    24 - 26 Jan (3 Days)
       Advanced Training 31 Jan - Feb 2 (3 Days)
+      Continuing Education Last Thursday Monthly (1 Day)
       Timezone: https://www.timeanddate.com/worldclock/usa/boise
       For more info visit https://www.fusionpbx.com/training.php
 
@@ -73,4 +78,23 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
 |
 
 After the install script has completed go to your web browser and login with the information provided by the install script.
+
+
+After the installation script finishes, the option for anything to register to the ip address is **ENABLED**. 
+
+* If you plan on registering devices to the FusionPBX ip address then no further action is required. 
+
+It is however recomended to register to a domain name (FQDN) since most scripted attacks happen to the public ip. Registering to the ip address will be blocked by the fail2ban rules freeswitch-ip and auth-challenge once these rules are set to true.
+
+* To help secure your FusionPBX installation, enable the `fail2ban rules <http://docs.fusionpbx.com/en/latest/firewall/fail2ban.html>`_ [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
+
+::
+
+ [freeswitch-ip]
+ enabled  = true
+
+::
+
+ [auth-challenge-ip]
+ enabled  = true
   

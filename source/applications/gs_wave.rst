@@ -1,5 +1,5 @@
 ##################
-Grandstream Wave
+GS Wave
 ##################
 
 Grandstream Wave is a soft phone for smart phones or tablets. It can be configured easily with a QR code provided in your FusionPBX installation.

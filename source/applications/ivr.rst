@@ -4,6 +4,12 @@ IVR Menu
 
 Welcome to the adding IVR section.  Here you will find how to add and edit IVR's.
 
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/Xnc9ExYKR8s?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
+
 * `Click here for the youtube video`_
 * Click on **Apps** then **IVR Menu**
 * Click the Plus icon on the right

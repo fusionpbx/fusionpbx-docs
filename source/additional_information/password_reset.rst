@@ -3,7 +3,13 @@ Password Reset
 #######################
 
 
- `Click here for the new youtube video on password recovery. <https://youtu.be/YrlfscQ_3ew>`_ 
+`Click here for the new youtube video on password recovery. <https://youtu.be/YrlfscQ_3ew>`_ 
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/YrlfscQ_3ew?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
 
 The current method to changing the superadmin password is actually to make a new superadmin user name and password.
 
