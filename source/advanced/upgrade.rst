@@ -18,6 +18,11 @@ A complete summary of the changes can be found on the github code page https://g
 
 Go to the menu then click on Advanced and then Upgrade. This tool allows you to update the source code, update the database structure, restore the default menu and  permissions. `Click here for the Youtube video <https://youtu.be/QUB3u9pZ7ks>`_.
 
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/QUB3u9pZ7ks?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
 
 .. image:: ../_static/images/fusionpbx_upgrade.jpg
         :scale: 85%

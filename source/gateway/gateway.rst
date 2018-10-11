@@ -3,6 +3,11 @@ Inbound Destinations
 
 Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls. `Click here for the youtube video`_
 
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/8-EJM0hd-J8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
 
 Configure Inbound Destinations: (This will auto-configure an Inbound Route also)

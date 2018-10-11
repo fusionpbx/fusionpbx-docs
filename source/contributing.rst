@@ -21,6 +21,13 @@ What We Need:
 How to Get Started:
 
 1. Watch the "FusionPBX Pull Requests with Github" Youtube Video  https://youtu.be/SPUe7S4Z6ms
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/SPUe7S4Z6ms?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
+
 2. If you have a good handle on PHP, Lua or SQL Development Might be the thing for you head over to the Development Manual
 3. Are you a FusionPBX power user and do you possible love to write? Check out the Documentation Guide or the Testing Guide
 4. Would you like to see FreePBX in your native language and have the time to commit to staying on top of translations for releases? Check out the translation section to learn how to use our translation server.

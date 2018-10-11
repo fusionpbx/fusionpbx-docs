@@ -42,6 +42,7 @@ Other section is bits of info that needs indexed for the PDF to populate all sec
   applications/xmpp.rst
   applications_optional/webrtc.rst
   additional_information/sngrep.rst
+  features/parking.rst
 
 
   

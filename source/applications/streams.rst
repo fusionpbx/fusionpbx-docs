@@ -7,7 +7,8 @@ Define details for streaming audio.
 .. image:: ../_static/images/applications/fusionpbx_streams.jpg
         :scale: 85%
 
-
+* Make sure mod_shout is installed and is started.
+* Have a shoutcast url ready to use. (shout://domain.tld/path/to/)
 * To add a stream click the plus icon on the right
 * Edit the fields:
  		* Name: Can be anything

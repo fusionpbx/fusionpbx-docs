@@ -7,6 +7,12 @@ Gateway
 
 Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.  `Check out the Youtube video <https://youtu.be/YKOTACDYQ3A>`_ .
 
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/YKOTACDYQ3A?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
+
 **In this example we will be using** `VoiceTel <http://tiny.cc/voicetel>`_ .  **Each Gateway provider has their own setings to use.**    
 
 .. image:: ../_static/images/fusionpbx_voicetel.jpg

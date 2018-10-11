@@ -5,6 +5,10 @@ Operator Panel
 Operator Panel is a simple and easy way to use the FusionPBX web interface to:
 
 * Make calls from.
+* See who is on a call.
+* Eavesdrop on a call.
+* Hangup your own call.
+* Drag and drop blind transfer an active call.
 * Drag and drop calling to other users.
 * Login and out of queues and call center.
 
