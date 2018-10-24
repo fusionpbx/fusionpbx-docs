@@ -2,7 +2,7 @@
 Let's Encrypt
 ***************
 
-Let's Encrypt is one of the most recent and widely used form of free SSL security and supports wildcard DNS.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
+Let's Encrypt is the most recent and widely used form of free SSL security and supports wildcard DNS.  You can use Let's Encrypt with your FusionPBX install and WebRTC like `Verto Communicator`_.
 
 
 Dehydrated (Recommended)
