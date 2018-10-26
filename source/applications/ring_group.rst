@@ -37,7 +37,7 @@ To add a ring group click the plus. `Click for the youtube video <https://youtu.
 *  **Ring Back** What the caller hears when they are waiting for the **Destinations** to answer. (ex. Music on Hold, us-ring)
 *  **Context** The context defaults to the domain name.
 
-.. image:: ../_static/images/fusionpbx_ring_group1.jpg
+.. image:: ../_static/images/applications/fusionpbx_applications_ring_group.jpg
         :scale: 85%
 
 
