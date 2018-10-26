@@ -30,7 +30,7 @@ How to Get Started:
 
 2. If you have a good handle on PHP, Lua or SQL Development Might be the thing for you head over to the Development Manual
 3. Are you a FusionPBX power user and do you possible love to write? Check out the Documentation Guide or the Testing Guide
-4. Would you like to see FreePBX in your native language and have the time to commit to staying on top of translations for releases? Check out the translation section to learn how to use our translation server.
+4. Would you like to see FusionPBX in your native language and have the time to commit to staying on top of translations for releases? Check out the translation section to learn how to use our translation server.
 
 .. note::
 
