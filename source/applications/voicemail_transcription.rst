@@ -53,7 +53,7 @@ Add the following entries
   +=============+=======================+===========+===========================+===========+=============+
   |  voicemail  |  transcribe_provider  |  text     |  custom                   |  True     |             |
   +-------------+-----------------------+-----------+---------------------------+-----------+-------------+
-  |  voicemail  |  transcription_server |  text     |  https://yourserver 	    |  True     |             |
+  |  voicemail  |  transcription_server |  text     |  https://yourserver       |  True     |             |
   +-------------+-----------------------+-----------+---------------------------+-----------+-------------+
   |  voicemail  |  json_enabled         |  boolean  |  true                     |  True     |  Optional   |
   +-------------+-----------------------+-----------+---------------------------+-----------+-------------+
