@@ -43,7 +43,7 @@ Custom API
 ====================
 
 
-Initially you will need your API info from the Speech to Text provider of your choice, or you can self host a transcription engine like Mozilla DeepSpeech or Kaldi ASR.
+API info from the Speech to Text provider of your choice is needed, or you can self host a transcription engine like `Mozilla DeepSpeech <https://git.callpipe.com/fusionpbx/deepspeech_frontend>`_ or `Kaldi ASR <https://github.com/dialogflow/asr-server>`_
 
 **Goto Advanced > Default Settings.**
 Add the following entries
