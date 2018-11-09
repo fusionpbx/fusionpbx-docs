@@ -285,10 +285,10 @@ Crontab can be used to renew let's encrypt.
 
  Create crontab -e
  
- 0 0 9 JAN-DEC * /usr/bin/certbot renew &>/var/log/fusionpbx_certbot.cronlog
+ 2 3 * * * /usr/bin/certbot renew &>/var/log/fusionpbx_certbot.cronlog
  
 
-This executes every month on the 9th at midnight
+This executes daily at 3:02 AM (local time).  Certbot will check your existing certificate.  If it has less than 30 days' validity remaining, it will attempt to renew the certificate.  It runs daily in case a renewal attempt fails, it will just try again the next day.
  
 
 **List crontabs**
