@@ -2,32 +2,32 @@
 Quick Install
 *************
 .. image:: ../_static/images/logo_right.png
-        :scale: 85% 
+        :scale: 85%
 
 |
 
-Welcome to the FusionPBX installation guide. 
+Welcome to the FusionPBX installation guide.
 
 |
 
-FusionPBX can be several different operating systems. However this install is focused on a **minimal** install of Debian 8 with SSH enabled. This install has been designed to be fast, simple and modular. On many systems it will install in 5 minutes or less. Installation times depend on CPU, RAM and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
+FusionPBX can be installed on several different operating systems. However this guide assumes you are starting with a **minimal** install of Debian 9 with SSH enabled. This install has been designed to be fast, simple and modular, and generally takes 5 minutes or less. Installation times depend on factors like CPU, RAM, disk I/O and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
 
 .. raw:: html
 
     <div style="text-align: center; margin-bottom: 2em;">
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/YmIht8hEHYU?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
     </div>
-    
-**1.** Run the following commands under root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, IPTables, Fail2ban, NGINX, PHP FPM and PostgreSQL.
 
-Start with a **minimal** install of Debian 8 with SSH enabled. 
+**1.** Run the following commands as root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, iptables, Fail2ban, NGINX, PHP-FPM and PostgreSQL.
+
+Start with a **minimal** install of Debian 9 with SSH enabled.
 Paste the following commands in the console window **one line at a time**.
 
 ::
-     
+
 wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh;
 cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
-     
+
 |
 
 If using **Debian on Proxmox LXC** containers please run the following **BEFORE** starting the FusionPBX install.
@@ -72,7 +72,7 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
       https://www.fusionpbx.com/training.php
 
 |
-     
+
 .. image:: ../_static/images/ilogin.jpg
         :scale: 80%
 |
@@ -80,11 +80,11 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
 After the install script has completed go to your web browser and login with the information provided by the install script.
 
 
-After the installation script finishes, the option for anything to register to the ip address is **ENABLED**. 
+After the installation script finishes, the option for anything to register to the ip address is **ENABLED**.
 
-* If you plan on registering devices to the FusionPBX ip address then no further action is required. 
+* If you plan on registering devices to the FusionPBX ip address then no further action is required.
 
-It is however recomended to register to a domain name (FQDN) since most scripted attacks happen to the public ip. Registering to the ip address will be blocked by the fail2ban rules freeswitch-ip and auth-challenge once these rules are set to true.
+It is however recommended to register to a domain name (FQDN) since most scripted attacks happen to the public ip. Registering to the ip address will be blocked by the fail2ban rules freeswitch-ip and auth-challenge once these rules are set to true.
 
 * To help secure your FusionPBX installation, enable the `fail2ban rules <http://docs.fusionpbx.com/en/latest/firewall/fail2ban.html>`_ [freeswitch-ip] and [auth-challenge-ip] in /etc/fail2ban/jail.local.
 
@@ -97,4 +97,3 @@ It is however recomended to register to a domain name (FQDN) since most scripted
 
  [auth-challenge-ip]
  enabled  = true
-  
