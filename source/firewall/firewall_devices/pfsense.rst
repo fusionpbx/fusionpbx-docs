@@ -10,7 +10,7 @@ Menu -> NAT -> Advanced Outbound NAT (enabled)
 
 set static port to yes
 
-.. image:: ../../_static/images/firewall/fusionpbx_pfsense_firewall_outbound.png
+.. image:: ../../_static/images/firewall/fusionpbx_pfsense_firewall_outbound.jpg
         :scale: 85%
 
 
@@ -30,7 +30,7 @@ System -> Advanced -> Firewall NAT -> Firewall Optimization
 select Conservative
 
 
-.. image:: ../../_static/images/firewall/fusionpbx_pfsense_firewall_and_nat.png
+.. image:: ../../_static/images/firewall/fusionpbx_pfsense_firewall_and_nat.jpg
         :scale: 85%
 
 
