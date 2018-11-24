@@ -3,6 +3,20 @@ pfSense
 ##########
 
 
+**Static Port**
+----------------------------------------
+
+Menu -> NAT -> Advanced Outbound NAT (enabled)
+
+set static port to yes
+
+
+**Firewall Optimization - Conservative**
+----------------------------------------
+
+System -> Advanced -> Firewall NAT -> Firewall Optimization
+
+select Conservative
 
 
 1.  **Create Alias Ports in pfSense**
