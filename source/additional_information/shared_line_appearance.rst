@@ -8,7 +8,7 @@ Shared Line Apprearance(SLA) also known in older phone systems as a "Key System"
 FusionPBX Settings
 ^^^^^^^^^^^^^^^^^^^
 
-FusionPBX Menu Advanced > SIP Profiles
+FusionPBX Menu Advanced > SIP Profiles > edit a profile to enable SLA.
 
 .. image:: ../_static/images/additional_information/fusionpbx_multiple_reg_true.jpg
         :scale: 85%
