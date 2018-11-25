@@ -14,11 +14,6 @@ set static port to yes
         :scale: 85%
 
 
-.. note::
-
-   More information can be found at https://www.netgate.com/docs/pfsense/nat/configuring-nat-for-voip-phones.html
-
-
 
 
 
@@ -131,4 +126,8 @@ Edit the Internal Profile and add
 **Status >> SIP Status**
 Stop and Start the internal profile for the changes to take effect.
 
+
+.. note::
+
+   More information can be found at https://www.netgate.com/docs/pfsense/nat/configuring-nat-for-voip-phones.html
 
