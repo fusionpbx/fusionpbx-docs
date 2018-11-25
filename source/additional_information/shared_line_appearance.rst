@@ -10,7 +10,7 @@ FusionPBX Settings
 
 FusionPBX Menu Advanced > SIP Profiles
 
-.. image:: ../../_static/images/additional_information/fusionpbx_xx.jpg
+.. image:: ../../_static/images/additional_information/fusionpbx_multiple_reg_true.jpg
         :scale: 85%
 
 
@@ -24,7 +24,7 @@ Yealink SLA
 
 FusionPBX Menu Accounts > Device > Edit a specific device.
 
-.. image:: ../../_static/images/additional_information/fusionpbx_xx.jpg
+.. image:: ../../_static/images/additional_information/fusionpbx_shared_line_yealink.jpg
         :scale: 85%
 
 * Line > Shared Line
@@ -39,7 +39,7 @@ Polycom SLA
 
 FusionPBX Menu Accounts > Device > Edit a specific device.
 
-.. image:: ../../_static/images/additional_information/fusionpbx_xx.jpg
+.. image:: ../../_static/images/additional_information/fusionpbx_polycom_shared_line.jpg
         :scale: 85%
 
 * Line > Shared Line
