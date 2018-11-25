@@ -8,7 +8,8 @@ pfSense
 
 Menu -> NAT -> Advanced Outbound NAT (enabled)
 
-set static port to yes
+ set static port to yes
+
 
 
 **Firewall Optimization - Conservative**
@@ -16,10 +17,12 @@ set static port to yes
 
 System -> Advanced -> Firewall NAT -> Firewall Optimization
 
-select Conservative
+
+ select Conservative
 
 
-1.  **Create Alias Ports in pfSense**
+
+**Create Alias Ports in pfSense**
 ----------------------------------------
 
 .. image:: ../../_static/images/firewall/fusionpbx_pfsense.png
@@ -50,7 +53,9 @@ select Conservative
 
 * After you are finished Click SAVE.
 
-2. **Configure pfSense Port Forwarding**
+
+
+**Configure pfSense Port Forwarding**
 -----------------------------------------
 
 .. image:: ../../_static/images/firewall/fusionpbx_pfsense2.png
@@ -82,7 +87,9 @@ select Conservative
 
 * Click SAVE when done.
 
-3. **Configure FusionPBX**
+
+
+**Configure FusionPBX**
 -----------------------------
 
 * In FusionPBX
