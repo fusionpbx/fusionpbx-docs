@@ -36,6 +36,14 @@ Once you enter data into the empty fields at the bottom and click save, more bla
         :scale: 85%
 
 
+Enable a Dialplan Destination
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Dialplans that have a value in the **Number** filed can be enabled and used in `Dialplan > Destinations <../destinations.html>`_. Setting the **destination** field to **True** will enable the dialplan to be visable and used as an action in `Dialplan > Destinations <../destinations.html>`_.
+
+.. image:: ../_static/images/dialplan/fusionpbx_dialplan_destination.jpg
+        :scale: 85%
+
 Dialplan example
 ^^^^^^^^^^^^^^^^^^
 
