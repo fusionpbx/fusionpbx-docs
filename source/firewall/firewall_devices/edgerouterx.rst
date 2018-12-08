@@ -5,6 +5,8 @@ Ubiquity EdgerouterX
 
 Ubiquity EdgerouterX Advanced Gigabit Ethernet Router.
 
+.. image:: ../../_static/images/firewall/fusionpbx_ubnt_edgerouterx.jpg
+        :scale: 85%
 
 
 Port Forwarding
