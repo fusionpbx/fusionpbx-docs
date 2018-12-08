@@ -50,6 +50,6 @@ Most of the time this setting is set to off or disabled and varies.  Rarely this
 .. _Sonicwall_TZ_Soho: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/sonicwall_tz_soho_sip_alg.html
 .. _Sonicwall_TZ_Soho-: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/sonicwall_tz_soho.html
 .. _pfSense: http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/pfsense.html
-.. Ubnt EdgerouterX: Ubnt http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/edgerouterx.html
+.. _Ubnt EdgerouterX: Ubnt http://docs.fusionpbx.com/en/latest/firewall/firewall_devices/edgerouterx.html
 
 
