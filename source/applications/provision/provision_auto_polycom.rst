@@ -1,4 +1,4 @@
-Polycom Automatic Provision
+Polycom
 ============================
 
 
