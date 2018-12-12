@@ -158,6 +158,14 @@ Advanced
 
    advanced.rst
 
+Hardware
+=============
+
+.. toctree::
+   :maxdepth: 4
+
+   hardware.rst
+
 Additional Information
 =======================
 

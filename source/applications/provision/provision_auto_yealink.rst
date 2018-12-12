@@ -1,4 +1,4 @@
-Yealink Automatic Provision
+Yealink 
 ============================
 
 
