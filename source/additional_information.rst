@@ -27,6 +27,5 @@ In the **Additional Information** section you will find topics related to Fusion
   additional_information/releases.rst
   additional_information/regex.rst
   additional_information/postgresql.rst
-  getting_started/software_utilities.rst
   additional_information/shared_line_appearance.rst
 
