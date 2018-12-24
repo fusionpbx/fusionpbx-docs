@@ -2,7 +2,7 @@
 TFTP
 *******
 
-Several models of phone out there that still only use TFTP for provisioning.  Even though they have reached end of life, some of the popular ones are the Cisco 7960 and 7940. Also would need to add the TFTP port to the server firewall but this should be allowed only to specific IP addresses as TFTP has not security. Recommend to use TFTP only as a last resort for phones that don't support HTTPS.
+Several models of phone out there that still only use TFTP for provisioning.  Even though they have reached end of life, some of the popular ones are the Cisco 7960 and 7940. Also would need to add the TFTP port to the server firewall but this should be allowed only to specific IP addresses as TFTP has no security. Recommend to use TFTP only as a last resort for phones that don't support HTTPS.
 
 **Install TFTPD**
 
