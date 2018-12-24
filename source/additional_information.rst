@@ -20,7 +20,7 @@ In the **Additional Information** section you will find topics related to Fusion
   additional_information/feature_codes.rst
   features/features.rst
   additional_information/toll_allow.rst
-  additional_information/tftp.rst
+  #additional_information/tftp.rst
   additional_information/nat.rst
   applications/provision.rst
   advanced/version_upgrade.rst
