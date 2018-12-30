@@ -166,6 +166,14 @@ Hardware
 
    hardware.rst
 
+Software
+===========
+
+.. toctree::
+   :maxdepth: 4
+   
+   software.rst
+
 Additional Information
 =======================
 
