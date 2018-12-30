@@ -7,7 +7,7 @@ Option to use file cache for xml and not memcache.
 +-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description     |
 +=============================+======================+=======================+=========================+=================================+
-| method                      | text                 | memcache              | TRUE                    | Cache methods file or memcache. |
+| method                      | text                 | file                  | TRUE                    | Cache methods file or memcache. |
 +-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------+
 | location                    | text                 | /tmp                  | TRUE                    | Location for the file cache.    |
 +-----------------------------+----------------------+-----------------------+-------------------------+---------------------------------+
