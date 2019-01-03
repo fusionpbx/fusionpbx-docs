@@ -51,7 +51,7 @@ To disable SIP ALG:
 Enable SIP ALG
 ^^^^^^^^^^^^^^^^^
 
-To enablee SIP ALG:
+To enable SIP ALG:
 
 * Either click on the CLI button from the Ubiquiti EdgerouterX GUI or via you favorite SSH client to the EdgerouterX.
 * **Then type:** configure
