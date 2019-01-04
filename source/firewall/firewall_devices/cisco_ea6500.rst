@@ -1,6 +1,6 @@
-##############
-Cisco EA6500
-##############
+######################
+Cisco EA6500 SIP ALG
+######################
 
 
 This guide was created using a Cisco EA6500 (Linksys AC1750) series router.
