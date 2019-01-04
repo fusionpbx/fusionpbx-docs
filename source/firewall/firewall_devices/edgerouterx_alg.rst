@@ -37,6 +37,8 @@ To disable SIP ALG:
 * **Then type:** configure
 * **Then type:** set system conntrack modules sip disable
 * **Then type:** commit
+* **Then type:** save
+* **Then type:** exit
 
 ::
 
@@ -46,7 +48,11 @@ To disable SIP ALG:
  [edit]
  root@ubnt# commit
  [edit]
- root@ubnt#
+ root@ubnt# save
+ Saving configuration to '/config/config.boot'...
+ Done
+ [edit]
+ root@ubnt# exit
 
 Enable SIP ALG
 ^^^^^^^^^^^^^^^^^
@@ -57,6 +63,8 @@ To enable SIP ALG:
 * **Then type:** configure
 * **Then type:** set system conntrack modules sip enable
 * **Then type:** commit
+* **Then type:** save
+* **Then type:** exit
 
 ::
 
@@ -66,5 +74,9 @@ To enable SIP ALG:
  [edit]
  root@ubnt# commit
  [edit]
- root@ubnt#
+ root@ubnt# save
+ Saving configuration to '/config/config.boot'...
+ Done
+ [edit]
+ root@ubnt# exit
 
