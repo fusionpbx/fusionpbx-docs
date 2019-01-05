@@ -9,7 +9,7 @@ This guide was created using V4.2/4.25 firmware on a ZyXEL USG60 series UTM rout
  
 
 How to setup Bandwidth Management “BWM” aka QoS
-================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are more than one ways to apply the BWM rules.  They can be applied on a service level, or on an object level, or both.  In this example we will provide traffic priority to traffic between the LAN and the cloud PBX.
 
