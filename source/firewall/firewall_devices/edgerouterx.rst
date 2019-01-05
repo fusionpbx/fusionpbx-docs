@@ -76,9 +76,9 @@ Scenerio: Router A is the primary router that has a public IP address and a LAN 
 
 
 
-##############################
+
 Ubiquiti EdgerouterX SIP ALG
-##############################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In some scenerios you may have to turn off SIP ALG.  
 
