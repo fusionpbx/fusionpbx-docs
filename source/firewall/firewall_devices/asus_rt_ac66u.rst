@@ -3,7 +3,6 @@ ASUS RT-AC66U
 ##############
 
 
-
 This guide was created for the ASUS RT-AC66U router with Firmware Version 3.0.0.4.380_8120.  FusionPBX is in the cloud with a public IP, and the ASUS RT-AC66U router is at the customer’s location with the extensions behind it.  The RT-AC66U is a “prosumer” grade router.  It has good performance for the dollar and is a good choice for home offices.
 
  
