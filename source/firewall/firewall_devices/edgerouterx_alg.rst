@@ -61,7 +61,8 @@ To enable SIP ALG:
 
 * Either click on the CLI button from the Ubiquiti EdgerouterX GUI or via you favorite SSH client to the EdgerouterX.
 * **Then type:** configure
-* **Then type:** set system conntrack modules sip enable
+* **Then type:** set system conntrack modules sip enable-indirect-media
+* **Then type:** set system conntrack modules sip enable-indirect-signalling
 * **Then type:** commit
 * **Then type:** save
 * **Then type:** exit
@@ -70,7 +71,9 @@ To enable SIP ALG:
 
  root@ubnt:/home/shwim# configure
  [edit]
- root@ubnt# set system conntrack modules sip enable
+ root@ubnt# set system conntrack modules sip enable-indirect-media
+ [edit]
+ root@ubnt# set system conntrack modules sip enable-indirect-signalling
  [edit]
  root@ubnt# commit
  [edit]
@@ -79,4 +82,8 @@ To enable SIP ALG:
  Done
  [edit]
  root@ubnt# exit
+
+.. note::
+
+   set system conntrack modules sip port <1-65535> will change the sip port number  
 
