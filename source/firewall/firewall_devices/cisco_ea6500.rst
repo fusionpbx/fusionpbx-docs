@@ -1,6 +1,6 @@
-######################
-Cisco EA6500 SIP ALG
-######################
+##############
+Cisco EA6500 
+##############
 
 
 This guide was created using a Cisco EA6500 (Linksys AC1750) series router.
@@ -8,6 +8,7 @@ This guide was created using a Cisco EA6500 (Linksys AC1750) series router.
  
 
 How to Disable SIP ALG
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Log into the router and navigate to Connectivity -> Administration -> Application Layer Gateway
 
