@@ -8,8 +8,7 @@ This guide was created for the ASUS RT-AC66U router with Firmware Version 3.0.0.
  
 
 How to setup QoS
-
- 
+^^^^^^^^^^^^^^^^^^
 
 First, enable the QoS feature:
 
