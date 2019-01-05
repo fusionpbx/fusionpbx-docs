@@ -58,9 +58,9 @@ Basically will just switch the Source and Destination.
         :scale: 85%
 
 
-##############
+
 Zyxel Sip ALG
-##############
+^^^^^^^^^^^^^^^
 
 
 This guide was created using V4.2/4.25 firmware on a ZyXEL USG60 series UTM router.
@@ -88,3 +88,4 @@ Click the Apply button at the bottom of the page.  A reboot should not be necess
 
 .. image:: ../../_static/images/firewall/fusionpbx_zyxel_usg60.png
         :scale: 85%
+
