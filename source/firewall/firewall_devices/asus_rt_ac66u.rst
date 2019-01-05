@@ -38,9 +38,7 @@ Next, assign the QoS rules.
 .. Note::
 
  An important note regarding Priorities
-
  
-
  Another important area is the “user-defined priorities” section of Traffic Manager – QoS.  As you can see, the default rules     give a very large amount of the bandwidth share to the highest priority.  This is very likely excessive for VOIP traffic.  We don’t need much bandwidth, we just need to make sure we get prioritized traffic.  You should adjust these to suit your environment.
 
 
@@ -49,9 +47,9 @@ Next, assign the QoS rules.
 
 
 
-######################
+
 ASUS RT-AC66U SIP ALG
-######################
+^^^^^^^^^^^^^^^^^^^^^^
 
 
 This guide was created for the ASUS RT-AC66U router with Firmware Version 3.0.0.4.380_8120.  FusionPBX is in the cloud with a public IP, and the ZyXEL USG60 router is at the customer’s location with the extensions behind it.  The RT-AC66U is a “prosumer” grade router.  It has good performance for the dollar and is a good choice for home offices.
