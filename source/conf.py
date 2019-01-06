@@ -101,7 +101,7 @@ pygments_style = "my_fancy_style"
 
 # General information about the project.
 project = u'FusionPBX Docs'
-copyright = u'2008-2018, Mark J Crane'
+copyright = u'2008-2019, Mark J Crane'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
