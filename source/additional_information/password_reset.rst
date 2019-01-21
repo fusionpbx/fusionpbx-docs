@@ -22,6 +22,7 @@ The current method to changing the superadmin password is actually to make a new
 
  cd /etc/fusionpbx
  mv config.php config1.php
+ cat config1.php | grep password
 
 |
 2. Go to the FusionPBX install login page in the web browser.  This will put FusionPBX into a recovery mode.  Choose the language for your region and **click next.**
