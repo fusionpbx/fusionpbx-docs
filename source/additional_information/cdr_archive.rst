@@ -1,6 +1,6 @@
-#################
+###################
 CDR Archive Server
-##################
+###################
 
 * Note: This feature is on version 4.5+
 | Fusionpbx has the ability to access CDR records on a seperate archive database. This is helpful for longterm CDR storage while keeping your active database small. When the feature is enabled you will see an "ARCHIVE" button in CDR page that accesses records on your archive database. 
