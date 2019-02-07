@@ -54,7 +54,7 @@ Rules to block not so friendly scanner
 Show iptable rules
 ==================
 
-``sudo iptables -L -v``
+``iptables -L -v``
 
 Show line numbers
 =================
