@@ -13,6 +13,7 @@ In the **Additional Information** section you will find topics related to Fusion
   :maxdepth: 3
   :glob:
 
+  additional_information/voip_quality.rst
   additional_information/freeswitch.rst
   additional_information/sip_tls.rst
   additional_information/testimonials.rst
