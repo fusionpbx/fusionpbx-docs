@@ -15,7 +15,7 @@ Voip Quality Testing Websites
 * https://speedof.me
 
 
-Packet loss
+Packet Loss
 ^^^^^^^^^^^^
 
 Packet loss happens when a defined number of packets don't all reach their destination.  Most commonly, this can happen from faulty network hardware and wiring.  Network saturation can be a culprit also on the WAN and LAN of a network.
