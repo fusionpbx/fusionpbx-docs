@@ -1,9 +1,9 @@
 ######################
-Ubiquiti EdgerouterX
+Ubiquiti Edgerouter
 ######################
 
 
-Ubiquiti EdgerouterX Advanced Gigabit Ethernet Router.
+Ubiquiti Edgerouter Advanced Gigabit Ethernet Router.
 
 .. image:: ../../_static/images/firewall/fusionpbx_ubnt_edgerouterx.jpg
         :scale: 85%
@@ -25,7 +25,7 @@ Go to top first menu item Firewall/NAT then second top menu item Port Forwarding
 * Required: RTP port range 16384-32768.
 
 .. note::
-       In order to Port Forward and still have access to the EdgerouterX GUI you must change the port number for the EdgerouterX GUI.
+       In order to Port Forward and still have access to the Edgerouter GUI you must change the port number for the Edgerouter GUI.
 
 
 
@@ -33,7 +33,7 @@ Go to top first menu item Firewall/NAT then second top menu item Port Forwarding
 Access from another LAN Subnet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you are behind NAT and are going to use the EdgerouterX subnet in addition to an existing subnet (behind another router) also some setting changes are required. These settings are only recommended in this scenerio.
+If you are behind NAT and are going to use the Edgerouter subnet in addition to an existing subnet (behind another router) also some setting changes are required. These settings are only recommended in this scenerio.
 
 * Go to First top menu Firewall/NAT tab.
 * Go to Second top menu Firewall Policies.
@@ -61,14 +61,14 @@ Add Static Route (Double NAT)
 
 This will look different depending on the other router that you might have and what IP range you use.
 
-* A static route is needed on the other router in order for traffic to reach your FusionPBX installation and is only needed if the EdgerouterX is the double NAT.
+* A static route is needed on the other router in order for traffic to reach your FusionPBX installation and is only needed if the Edgerouter is the double NAT.
 
-Scenerio: Router A is the primary router that has a public IP address and a LAN subnet of 10.10.2.1. From this pool of IP addresses, the EdgerouterX gets IP 10.10.2.209. *Be sure that router A has DHCP reservation or the ability to make 10.10.2.209 a static IP*. 
+Scenerio: Router A is the primary router that has a public IP address and a LAN subnet of 10.10.2.1. From this pool of IP addresses, the Edgerouter gets IP 10.10.2.209. *Be sure that router A has DHCP reservation or the ability to make 10.10.2.209 a static IP*. 
 
 * **Router A Router name:** This is a label for organizing.
-* **Router A Destination IP address:** 192.168.1.38 This is the IP that the EdgerouterX gave to your FusionPBX install.
+* **Router A Destination IP address:** 192.168.1.38 This is the IP that the Edgerouter gave to your FusionPBX install.
 * **Router A Subnet mask:** 255.255.255.0 is the subnet mask used in this example.
-* **Gateway:** 10.10.2.209 is the IP Router A gave to the EdgerouterX WAN eth0.
+* **Gateway:** 10.10.2.209 is the IP Router A gave to the Edgerouter WAN eth0.
 * **Interface:** LAN is a label on Router A to show it's a local area network address.
 
 .. image:: ../../_static/images/firewall/fusionpbx_ubnt_static_route_other_router.jpg
@@ -77,7 +77,7 @@ Scenerio: Router A is the primary router that has a public IP address and a LAN 
 
 
 
-Ubiquiti EdgerouterX SIP ALG
+Ubiquiti Edgerouter SIP ALG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In some scenerios you may have to turn off SIP ALG.  
@@ -111,7 +111,7 @@ Disable SIP ALG
 
 To disable SIP ALG:
 
-* Either click on the CLI button from the Ubiquiti EdgerouterX GUI or via you favorite SSH client to the EdgerouterX.
+* Either click on the CLI button from the Ubiquiti Edgerouter GUI or via you favorite SSH client to the Edgerouter.
 * **Then type:** configure
 * **Then type:** set system conntrack modules sip disable
 * **Then type:** commit
@@ -137,7 +137,7 @@ Enable SIP ALG
 
 To enable SIP ALG:
 
-* Either click on the CLI button from the Ubiquiti EdgerouterX GUI or via you favorite SSH client to the EdgerouterX.
+* Either click on the CLI button from the Ubiquiti Edgerouter GUI or via you favorite SSH client to the Edgerouter.
 * **Then type:** configure
 * **Then type:** set system conntrack modules sip enable-indirect-media
 * **Then type:** set system conntrack modules sip enable-indirect-signalling
