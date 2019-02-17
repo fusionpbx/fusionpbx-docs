@@ -4,7 +4,7 @@ Access Controls
 
 Access control list can allow or deny ranges of IP addresses.  There are several purposes for using the ACL.
 
-*  The main purpose is for your carriers ip addresses.  
+*  The main purpose is for your carriers ip addresses. Add the carrier IP addresses to the CIDR.
 *  Be careful with what and how you use ACL.
 *  Most common mistakes result in calls not working between extensions and other undesirable results. 
 *  Be sure to keep Domains access control to default deny.
