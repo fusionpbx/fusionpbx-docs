@@ -65,6 +65,7 @@ Phone Book Settings
 
 In order to use the phone book a few steps are needed.
 
+* Assign a user to an extension in your FusionPBX GUI.
 * Create or import the `Contacts </en/latest/applications/contacts.html>`_.
 
 * Set **Enabled** as **True** in `Default Settings </en/latest/advanced/default_settings.html>`_.
