@@ -395,6 +395,23 @@ Add the following to the file and save it.
   stop  program = "/etc/init.d/fail2ban stop"
   if 5 restarts within 5 cycles then timeout
 
+SIP
+~~~~~
+
+To monitor SIP from local or remote server
+
+::
+
+ cd /etc/monit.d
+ touch sip
+ nano sip
+
+::
+
+ check host fusionpbx with address your-ip
+     if failed port 5060 protocol sip with target monit@monit:5060
+         then alert
+         
 FreeSWITCH
 ~~~~~~~~~~~~
 
