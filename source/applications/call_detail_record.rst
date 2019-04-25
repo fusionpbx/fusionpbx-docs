@@ -68,17 +68,11 @@ Possible causes:
 
 **1. The module is disabled**
 
-- Older installations of FusionPBX had the CDR CSV module enabled and the XML CDR module disabled.
-- If you reverse this situation you will then get call detail records.  You will also need to start the XML CDR module after you have done this.  
-- If you want to see your old CDR CSV records after the change or you really want to continue using CDR CSV you can go to Menu Manager and unhide the CDR CSV menu.
-- Call recordings can be downloaded from the Call Detail Records page, but this capability is not currently provided in CDR CSV so if you need to use call recordings it would be better to use XML CDR.
+- Make sure the XML CDR module is enabled and running in the Menu -> Advanced -> Modules.
 
 **2. Wrong xml_cdr.conf.xml config**
 
 - check <param name="url" value="http://127.0.0.1/app/xml_cdr/v_xml_cdr_import.php"/> and adapt it to your situation.
-
-- FusionPBX menu bar disappears under certain circumstances when viewing Call Detail Records
-    - If this happens to you it may be because you are using an old version of xml_cdr.conf.xml
 
 * Compare your version (advanced-script editor-files-autoload_configs-xml_cdr.conf.xml) with the current default one that is included in FusionPBX (advanced-php editor-files-includes-templates-conf-autoload_configs-xml_cdr.conf.xml). If it is different copy the default one over yours.
 * Then edit the line <param name="url" value="http://{v_domain}/mod/xml_cdr/v_xml_cdr_import.php"/> and replace {v_domain} with the domain or IP address of your FusionPBX server.
@@ -91,7 +85,7 @@ Once you've made these changes you can save the file. You could restart your ser
 XML CDR configuration
 ~~~~~~~~~~~~~~~~~~~~~
 
-For more detailed configuration go to the XML editor (Advanced menu) and
+For more detailed configuration go to the XML editor (Menu -> Advanced -> XML Editor) and
 in autoload configs look at xml_cdr.conf.xml
 
 .. note::
