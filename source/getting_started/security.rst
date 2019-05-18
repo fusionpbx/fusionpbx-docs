@@ -23,9 +23,9 @@ Although the new install script configured IPTables for you it is recommended th
 SSL / TLS
 ^^^^^^^^^^
 
-SSL and TLS are very necessary in today's internet applications from VOIP to Websites. FusionPBX by default uses a self signed certificate. However you can use certificate providers where you can purchase certificates and there are free options as well. With domain based multi-tenant wildcard certificates can be useful. Also when deciding on which certificate provider to use you should look at the phones manufacturers documentation to find one that is compatible HTTPS provisioning.
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites. FusionPBX by default uses a self signed certificate. However you can use certificate providers where you can purchase certificates and there are free options as well. With domain based multi-tenant wildcard certificates can be useful. Also when deciding on which certificate provider to use you should look at the phones manufacturer's documentation to find one that is compatible with HTTPS provisioning.
 
-`Let's Encrypt`_ provides free certificates for a single domain but they don't support wildcard certificates.
+`Let's Encrypt`_ provides free certificates for a single domain and they also now support wildcard certificates.
 
 * `Setup Let's Encrypt with FusionPBX`_ 
 
@@ -34,9 +34,9 @@ SSL and TLS are very necessary in today's internet applications from VOIP to Web
 Upgrade
 ^^^^^^^^
 
-Security problems are fixed as they are discovered and are updated for master and the latest release. Upgrades are considered an important part of keeping the server secure. `Upgrades`_ always need to be done on the operating system, FreeSWITCH and FusionPBX. On Debian and Ubuntu you can check your firewall with the following command.
+Security problems are fixed as they are discovered and are updated for master and the latest release. Upgrades are considered an important part of keeping the server secure. `Upgrades`_ always need to be done on the operating system, FreeSWITCH and FusionPBX.
 
-Latest install script will install FreeSWITCH packages by default to upgrade them and operating system packages run the following commands.
+Latest install script will install FreeSWITCH packages by default. To upgrade them and operating system packages run the following commands.
 
 ::
 
@@ -50,23 +50,23 @@ If you need help upgrading safely please consider `paid support`_.
 XML RPC
 ^^^^^^^^
 
-New install mod_xml_rpc is not enabled by default. It is recommended to run a firewall on all FusionPBX servers. The latest debian install script configures the firewall by default. However it is recommended to check to make sure it is installed and running.
+New install mod_xml_rpc is not enabled by default. It is recommended to run a firewall on all FusionPBX servers. The latest Debian install script configures the firewall by default. However it is recommended to check to make sure it is installed and running.
 
-Mod_xml_rpc allows running remote commands to FreeSWITCH. Ensure you have a firewall that is protecting the XML RPC port. Consider changing the XML RPC password. At very least do not allow access to the public. Advanced -> Settings page in the interface allows you to change the password or the port. Do not allow public access to the XML RPC port.
+Mod_xml_rpc allows running remote commands to FreeSWITCH. Ensure you have a firewall that is protecting the XML RPC port. Consider changing the XML RPC password. Advanced -> Settings page in the interface allows you to change the password or the port. At the very least do not allow public access to the XML RPC port.
 
-Latest Debian install script installs `iptables`_ firewall which prevents public access to the mod_xml_rpc port. If you are not using a firewall on the server you should even if its protected by by an external firewall. Some not informed co-worker could expose the server to the public internet at some point in the future. Multiple layers of security is considered best practice.
+The latest Debian install script installs `iptables`_ firewall which prevents public access to the mod_xml_rpc port. If you are not using a firewall on the server you should even if its protected by by an external firewall. Some uinformed co-worker could expose the server to the public internet at some point in the future. Multiple layers of security are considered best practice.
 
 XML RPC is secure by default for 2 reasons.
  -  The module is disabled by default.
  -  Install script firewalls XML RPC port 8787 and does not allow access to it by default outside of 127.0.0.1.
 
-If you were to start the module and open port 8787 on the firewall you would want to set a really good password for it under Advanced -> Settings. It would be recommended to use a VPN to like OpenVPN to access XML RPC over port 8787 instead of opening port 8787 on the firewall.
+If you were to start the module and open port 8787 on the firewall you would want to set a really good password for it under Advanced -> Settings. It would be recommended to use a VPN such as OpenVPN to access XML RPC over port 8787 instead of opening port 8787 on the firewall.
 
 `Fail2ban`_
 ^^^^^^^^
 
 Fail2ban is also used to protect SSH, FreeSWITCH, the web server as well as other services. 
-You can view the IP addresses blocked by Fail2ban with the following command.
+You can view any IP addresses that have been blocked by Fail2ban with the following command.
 
 ::
 
