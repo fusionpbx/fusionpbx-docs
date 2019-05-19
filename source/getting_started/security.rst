@@ -54,7 +54,7 @@ New install mod_xml_rpc is not enabled by default. It is recommended to run a fi
 
 Mod_xml_rpc allows running remote commands to FreeSWITCH. Ensure you have a firewall that is protecting the XML RPC port. Consider changing the XML RPC password. Advanced -> Settings page in the interface allows you to change the password or the port. At the very least do not allow public access to the XML RPC port.
 
-The latest Debian install script installs `iptables`_ firewall which prevents public access to the mod_xml_rpc port. If you are not using a firewall on the server you should even if its protected by by an external firewall. Some uinformed co-worker could expose the server to the public internet at some point in the future. Multiple layers of security are considered best practice.
+The latest Debian install script installs `iptables`_ firewall which prevents public access to the mod_xml_rpc port. If you are not using a firewall on the server you should even if its protected by by an external firewall. Some uninformed co-worker could expose the server to the public internet at some point in the future. Multiple layers of security are considered best practice.
 
 XML RPC is secure by default for 2 reasons.
  -  The module is disabled by default.
