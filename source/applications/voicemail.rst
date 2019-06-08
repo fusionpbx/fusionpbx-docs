@@ -91,8 +91,6 @@ These variables can be set in advanced -> variables or in the dialplan.
 +---------------------------+----------------+
 | Name                      | Value          |
 +---------------------------+----------------+
-| vm_say_date_time          | true or false  |
-+---------------------------+----------------+
 | skip_greeting             | true or false  |
 +---------------------------+----------------+
 | skip_instructions         | true or false  |

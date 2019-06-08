@@ -30,7 +30,11 @@ To add a ring group click the plus. `Click for the youtube video <https://youtu.
     *  **Rollover** Calls destinations in sequence and skips busy destinations.
     *  **Random** A random destination will ring.
  
-*  **Destinations** The extensions that this ring group applies to.
+*  **Destinations** The destination numbers are the numbers for the ring group to call. Destinations can only be local registered endpoints or external numbers.
+
+    *  **Extensions** Local registered extensions.
+    *  **External numbers** Destinations out to an external number.
+
 *  **Prompt** Where you determine if the call must have a dial to confirm before a pickup event.
 *  **Caller ID Name Prefix** The string that is added to the caller ID when it displays on the ringing extension.
 *  **Caller ID Number Prefix** The **Number** that is added to the caller ID when it displays on the ringing extension.
