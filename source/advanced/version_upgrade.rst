@@ -4,7 +4,33 @@ Version Upgrade
 
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
+4.4 to Master (what will become 4.6)
+^^^^^^^^^^^^^^^^^^
 
+1. Switch branches
+
+::
+
+ mv /var/www/fusionpbx /var/www/fusionpbx-4.4
+ cd /var/www && git clone https://github.com/fusionpbx/fusionpbx.git
+ chown -R www-data:www-data /var/www/fusionpbx
+
+2. Try Advanced -> Upgrade Schema if that fails use the the command line.
+
+::
+
+ cd /var/www/fusionpbx
+ php /var/www/fusionpbx/core/upgrade/upgrade.php
+
+3. Refresh the browser if there are issues then logout and then back in.
+
+4. Update the following Dialplans.
+
+::
+
+ user_exists
+
+- Update these Dialplans by first selecting and deleting their entries from within the Dialplan Manager for all domains. Then, run Advanced -> Upgrade -> App Defaults to retrieve the new versions of the diaplans.
 
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
