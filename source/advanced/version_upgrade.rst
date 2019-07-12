@@ -26,11 +26,29 @@ Version Upgrade can take several steps to perform. Below will show how to upgrad
 
 4. Update the following Dialplans.
 
+If you have made any changes to these make notes on the changes before you delete them. So that the changes could be added back. For example valet park could have custom music on hold or a custom timeout for the valet park.
+
 ::
 
  user_exists
+ is_loopback
+ is_local
+ user_record
+ agent_status
+ group_intercept
+ extension-to-voicemail
+ vmain
+ vmain_user.xml
+ tone_stream.xml
+ recordings.xml
+ valet_park.xml
+ call_screen
+ call_forward_not_registered
+ local_extension
+ voicemail
 
 - Update these Dialplans by first selecting and deleting their entries from within the Dialplan Manager for all domains. Then, run Advanced -> Upgrade -> App Defaults to retrieve the new versions of the diaplans.
+
 
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
