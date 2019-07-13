@@ -49,6 +49,8 @@ If you have made any changes to these make notes on the changes before you delet
 
 - Update these Dialplans by first selecting and deleting their entries from within the Dialplan Manager for all domains. Then, run Advanced -> Upgrade -> App Defaults to retrieve the new versions of the diaplans.
 
+5. If you have customized any provisioning templates makes sure to copy them from /var/www/fusionpbx-4.4/resources/templates/provision and copy them into the right vendor directory in /var/www/fusionpbx/resources/templates/provision. I you haven't customized the provisioning templates you can skip this step.
+
 
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
