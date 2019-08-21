@@ -55,9 +55,9 @@ Add the following entries
   +=============+=======================+===========+===========================+===========+
   |  voicemail  |  transcribe_provider  |  text     |  watson                   |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
-  |  voicemail  |  watson_key           |  text     |  { your watson key }       |  True     |
+  |  voicemail  |  watson_key           |  text     |  { your watson key }      |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
-  |  voicemail  |  watson_url           |  text     |  { *watson url }            |  True     |
+  |  voicemail  |  watson_url           |  text     |  { *watson url }          |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
   |  voicemail  |  transcribe_language  |  text     |  en-US                    |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
