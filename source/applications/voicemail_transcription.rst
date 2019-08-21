@@ -66,8 +66,8 @@ Add the following entries
   |  voicemail  |  json_enabled         |  boolean  |  true                     |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
 
-*NOTE: Watson URL used for testing was the following:
-https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_NarrowbandModel
+* *NOTE: Watson URL used for testing was the following:
+https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_NarrowbandModel*
 
  Click "Reload" at the top of the page.
 
