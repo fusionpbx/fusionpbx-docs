@@ -38,10 +38,10 @@ If you have made any changes to these make notes on the changes before you delet
  group_intercept
  extension-to-voicemail
  vmain
- vmain_user.xml
- tone_stream.xml
- recordings.xml
- valet_park.xml
+ vmain_user
+ tone_stream
+ recordings
+ valet_park
  call_screen
  call_forward_not_registered
  local_extension
