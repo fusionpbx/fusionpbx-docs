@@ -61,12 +61,12 @@ From your FusionPBX install SSH window or console window
 Call Quality and Monitoring
 -----------------------------
 
-Call quality can be a nucense in the voip world.  Having a way to track and make reports are a very needed tool.
+Call quality can be a nuisance in the voip world.  Having a way to track and make reports is a very needed tool.
 
 `Homer <https://github.com/sipcapture/homer/wiki/Examples%3A-FreeSwitch>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Homer is well known to help track and graph quality issues with SIP like utilizing QoS Reports.
+Homer is well known to help track and graph quality issues with SIP, like utilizing QoS Reports.
 
 Quote:
 
