@@ -26,9 +26,14 @@ Paste the following commands in the console window **one line at a time**.
 ::
 
  wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh; 
- cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
 
 |
+
+::
+
+ cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
+ 
+ |
 
 If using **Debian on Proxmox LXC** containers please run the following **BEFORE** starting the FusionPBX install.
 
