@@ -32,9 +32,9 @@ Add to Default Settings:
 
 ::
 
- Category = Device
+ Category = device
  Subcategory = feature_sync
- Type = Boolean
+ Type = boolean
  Value = true
 
 Enable Feature Sync on the Device
