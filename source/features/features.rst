@@ -2,10 +2,6 @@
 Features
 **********
 
-`Adminer`_
------------
-
-Integrated for an administrator in the superadmin group to enable easy database access.
 
 Announcements
 ---------------
