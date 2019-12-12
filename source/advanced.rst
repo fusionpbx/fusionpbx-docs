@@ -3,7 +3,7 @@ Advanced
 ************
 
 
-In the **Advanced** menu you will find Adminer, Access Controls, App Manager, Backup, Command, Databases, Default Settings, Domains, Grammer Editor, Group Manager, Menu Manager, Modules, Number Translations, PHP Editor, Provision Editor, Sip Profiles, Script Editor, Settings, Transactions, Upgrade, Variables and XML Editor.
+In the **Advanced** menu you will find Access Controls, App Manager, Backup, Command, Databases, Default Settings, Domains, Grammer Editor, Group Manager, Menu Manager, Modules, Number Translations, PHP Editor, Provision Editor, Sip Profiles, Script Editor, Settings, Transactions, Upgrade, Variables and XML Editor.
 
 
 
@@ -12,7 +12,6 @@ In the **Advanced** menu you will find Adminer, Access Controls, App Manager, Ba
   :maxdepth: 3
   :glob:
 
-  advanced/adminer.rst
   advanced/access_controls.rst
   advanced/app_manager.rst
   getting_started/backup.rst
