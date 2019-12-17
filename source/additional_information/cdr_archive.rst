@@ -2,7 +2,7 @@
 CDR Archive Server
 ###################
 
-* Note: This feature is on version 4.5+
+* Note: This feature is on version 4.5+ and requires PostgreSQL ver 9.5+
 | Fusionpbx has the ability to access CDR records on a seperate archive database. This is helpful for longterm CDR storage while keeping your active database small. When the feature is enabled you will see an "ARCHIVE" button in CDR page that accesses records on your archive database. 
 
 | The first step is to install an archive database. This can be done by standing up another fusionpbx server or by setting up a postgres server. If postgres is installed by itself you will need to manage the indexes, tables names and column names manually on the archive server. They need to match the values on the live database. 
