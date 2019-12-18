@@ -11,8 +11,8 @@ Direct calls between two destinations by calling a feature code.
 |
 |
 
-*  **Name:** Define the name of the call flow
-*  **Extension:** Define what extension to use. (This will make an extension not allready created)
+*  **Name:** Define the name of the call flow.
+*  **Extension:** Define what extension to use. (This will make an extension not already created)
 *  **Feature Code:** Define what *  number to use
 *  **Context:** Domain context (typically leave as is)
 *  Status: Define what currently is in use.
@@ -31,7 +31,7 @@ Direct calls between two destinations by calling a feature code.
 Call Flow Example
 ^^^^^^^^^^^^^^^^^^
 
-In the Call Flow example below we have the name as Call Flow.  Made the Extension number 30 that didn't exist until now.  Feature code we made with a *code as *30.  Kept the context as is with `training.fusionpbx.com`_ . Status to show which mode. Made a pin number to help secure the call flow. Made the detination label as Day Mode. Picked a sound to familiarize which mode is activated. Choose a destination for the alternative mode. Made the alternative detination label as Night Mode. Picked an alternative sound to familiarize which mode is activated. Choose a destination for the alternative mode. Finally describe what this call flow does.
+In the Call Flow example below we have the name as Call Flow.  Make the Extension number 30 that didn't exist until now. Create the feature code as a *code with *30.  Keep the context as-is with `training.fusionpbx.com`_ . Select a Status to show which mode. Make a PIN to help secure the call flow. Make the detination label as Day Mode. Select a sound to auditorially indicate which mode is activated. Choose a destination for the alternative mode. Make the alternative detination label as Night Mode. Select an alternative sound to auditorially indicate which mode is activated. Choose a destination for the alternative mode. Finally, enter a description to describe what this call flow does.
 
 |
 |
