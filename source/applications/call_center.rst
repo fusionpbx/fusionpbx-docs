@@ -31,14 +31,17 @@ List of call center agents.
 
 
 *  From Apps > Call Center click Agents at the top right to access Call Center Agents
-*  Click the plus icon on the top right to add agents
+*  Click the plus icon on the top right to add agents (make sure to set Agent ID!)
+*  Set the Agent Password, or add agent_authorized=true to the dialplan for *22 if you do not want to require a PIN to log in
+*  If you want to enable Follow Me or Call Forwarding for an Agent, set the contact string to loopback/<extension>
+
 
 Call Center Strategies
 =========================
 
 .. image:: ../_static/images/applications/call_center/fusionpbx_call_center_strategy.jpg
         :scale: 85%
- 
+
 
 * **Agent With Least Talk Time:**  Rings the Agent will ring that has the least time talking.
 * **Agent With Fewest Calls:**  Agent will ring that has the least calls.
@@ -79,7 +82,7 @@ A value of 0 is the default and equals an infinate amount of time.  Any other nu
 Max Wait Time with No Agent
 ============================
 
-Enter the max wait time with no agent. FusionPBX sets the default to 90 seconds and the **Timeout Action** will be used if there are no agents available. 
+Enter the max wait time with no agent. FusionPBX sets the default to 90 seconds and the **Timeout Action** will be used if there are no agents available.
 
 Max Wait Time with No Agent Time Reached
 =========================================
@@ -111,7 +114,7 @@ Tier Rule Wait Multiply Level
 Tier Rule No Agent No Wait
 ===========================
 
-* **True:** Setting is enabled.  
+* **True:** Setting is enabled.
 * **False:** Setting is disabled.
 
 Discard Abandoned After
