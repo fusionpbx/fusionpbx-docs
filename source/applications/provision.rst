@@ -22,14 +22,14 @@ Manual
 
 How to setup the device using the phone's web interface.
 
-*  `Yealink <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_yealink.html>`_
-*  `Polycom <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_polycom.html>`_
+*  `Yealink <https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_yealink.html>`_
+*  `Polycom <https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_polycom.html>`_
 *  `Cisco <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_cisco.html>`_
-*  `Fanvil <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_fanvil.html>`_
-*  `Grandstream <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_grandstream.html>`_
+*  `Fanvil <https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_fanvil.html>`_
+*  `Grandstream <https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_grandstream.html>`_
 *  `Htek <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_htek.html>`_
 *  `SNOM <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_snom.html>`_
-*  `Zoiper <http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
+*  `Zoiper <https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html>`_
 
 
 Advanced > Default Settings
@@ -47,11 +47,11 @@ In the `Provisioning section`_, there are a few key options that have to be set 
 Phone Screen Capture
 ^^^^^^^^^^^^^^^^^^^^^
 
-* `Screen Capture <http://docs.fusionpbx.com/en/latest/applications/provision/phone_screen_capture.html>`_
+* `Screen Capture <https://docs.fusionpbx.com/en/latest/applications/provision/phone_screen_capture.html>`_
 
 
 .. Note::
-       `Click here to view how to add a device <http://docs.fusionpbx.com/en/latest/accounts/devices.html>`_.
+       `Click here to view how to add a device <https://docs.fusionpbx.com/en/latest/accounts/devices.html>`_.
 
 
 
