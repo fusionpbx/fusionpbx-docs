@@ -14,5 +14,4 @@ In the **Accounts** menu you have access to devices, extensions, gateways, provi
   accounts/devices.rst
   accounts/extensions.rst
   accounts/gateways.rst
-  accounts/providers.rst
   accounts/users.rst
