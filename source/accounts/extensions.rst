@@ -61,7 +61,7 @@ Basic Settings
 *  Call Group 	
     You can define any call group you want the following groups are examples: sales, support, billing. These are used for group intercept or calls can be sent to the call group.
 *  Call Screen 	
-    Call screen if set will ask the caller to identify themselves their response will be recorded and offered to the person reciving the call.
+    If set will ask the caller to identify themselves. Their response will be recorded and offered to the person receiving the call.
 *  Record 	
     Whether to record local, inbound, outbound, or all calls that were sent directly to this extension.
 *  Hold Music 	
