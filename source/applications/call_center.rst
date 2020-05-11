@@ -15,10 +15,10 @@ Call Center Queues
 .. image:: ../_static/images/fusionpbx_call_center_queue.jpg
         :scale: 85%
 
-*  To add a Call Center Queue **click** the plus edit icon on the right
+*  To add a Call Center Queue **click** the Add button in the top right
 
 
-*  Once a Queue is created click the edit pencil icon on the right.  At the top right you can view, stop, start, restart and save the queue
+*  Once a Queue is created click the name of the queue to edit it. Once in edit mode, at the top right you can view, stop, start, restart and save the queue as well as make changes.
 
 Call Center Agents
 ====================
@@ -31,7 +31,7 @@ List of call center agents.
 
 
 *  From Apps > Call Center click Agents at the top right to access Call Center Agents
-*  Click the plus icon on the top right to add agents (make sure to set Agent ID!)
+*  Click the Add button on the top right to add agents (make sure to set Agent ID!)
 *  Set the Agent Password, or add agent_authorized=true to the dialplan for *22 if you do not want to require a PIN to log in
 *  If you want to enable Follow Me or Call Forwarding for an Agent, set the contact string to loopback/<extension>
 
