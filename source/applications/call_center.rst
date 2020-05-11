@@ -35,6 +35,23 @@ List of call center agents.
 *  Set the Agent Password, or add agent_authorized=true to the dialplan for *22 if you do not want to require a PIN to log in
 *  If you want to enable Follow Me or Call Forwarding for an Agent, set the contact string to loopback/<extension>
 
+Call Center Agent Fields
+=========================
+
+* **Agent Name:**  Name of the agent. When adding agents to the Call Center, this is what you will see to describe the agent
+* **Type:**  2 types supported, callback and uuid-standby. callback will try to reach the agent via the contact fields value. uuid-standby will try to directly bridge the call using the agent uuid
+* **Call Timeout:** Time to ring the agent before deeming them unavailable
+* **Username:**  Associate a system user with this call center agent
+* **Agent ID:**  An ID that can be used to log the agent in and out of the call center
+* **Agent Password:** A password to log the agent into the call center. This is not used if you have added agent_authorized=true to the dialplan for *22
+* **Contact:**  A dropdown to select which extension should be used to contact the agent
+* **Status:**  The default status that the agent in the call center
+* **No Answer Delay Time:** The time the system will wait to attempt a call to the agent again if they did not answer within the Call Timeout
+* **Max No Answer:**  Max attempts to call the agent. For example, when set to 1, if the agent does not answer within the first Call Timeout, they will not get another chance to answer the call. If set to 2, the agent will have two attempts to answer the call
+* **Wrap Up Time:**  The amount of time between calls the agent will be allocated
+* **Reject Delay Time:**  If an agent rejects a call manually then this is the time to wait before a call is offered to them
+* **Busy Delay Time:**  If the agent is on Do Not Disturb, wait this defined time before trying him again
+
 
 Call Center Strategies
 =========================
