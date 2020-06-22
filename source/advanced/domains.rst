@@ -23,7 +23,7 @@ There are several reasons to create a domain (tenant).  One reason would be to o
 
 In this example we will create a domain.  
 
-Goto advanced then click Domains.
+Navigate to Advanced then click Domains.
 
 .. image:: ../_static/images/fusionpbx_domain.jpg
         :scale: 85%
@@ -70,8 +70,29 @@ A menu will pop open on the right of the screen.  Click on the domain that you w
 `Domains Default Settings`_
 ---------------------------------------
 
+=========================================
+Override a Default Setting for one domain
+=========================================
 
+Navigate to Advanced then click Domains.
 
+.. image:: ../_static/images/fusionpbx_domain.jpg
+        :scale: 85%
+
+Click on the domain:
+
+.. image:: ../_static/images/fusionpbx_domain1.jpg
+        :scale: 85%
+
+Press "+ ADD" in the lower right corner:
+
+.. image:: ../_static/images/fusionpbx_domain2.jpg
+        :scale: 85%
+
+Enter the setting that should be overridden for this domain, then press Save.
+
+.. image:: ../_static/images/fusionpbx_domain_setting.jpg
+        :scale: 85%
 
 .. _Domains Default Settings: /en/latest/advanced/default_settings.html#id7
 .. _Click here for the youtube video: https://youtu.be/frMNh43GfUo
