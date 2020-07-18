@@ -77,3 +77,53 @@ Put this in your advanced dialplan. In the toll allow of whatever extension you 
    </condition>
    </extension>
   
+TOLL ALLOW EXAMPLE
+^^^^^^^^^^^^^^^^^^
+
+
+This example outlines how to setup three levels of permitted call types. **local** **domestic** **international**
+
+* Local calls in example assumes 7 digit phone numbers.
+* Domestic calls in example assumes 10 or 11 digit North American numbers.
+* International calls in example assumes 011 Noth American international prefix.
+
+
+Create new outbound route for each permission level.  In this example there is a gateway for each type of route.
+
+	**Local** Outbound Route
+.. image:: ../_static/images/additional_information/toll-allow-example-local-outbound-route.png
+        :scale: 85% 
+|
+
+	**Domestic** Outbound Route
+.. image:: ../_static/images/additional_information/toll-allow-example-domestic-outbound-route.png
+        :scale: 85% 
+|
+
+	**International** Outbound Route
+.. image:: ../_static/images/additional_information/toll-allow-example-international-outbound-route.png
+        :scale: 85% 
+|
+
+
+Edit extensions with proper toll_allow variables to permit use of new outbound routes.
+	Each extension can have multiple permissions listed in toll_allow.
+
+Extension with **local** and **domestic** calling permission can dial out via both the "local" and "domestic" outbound routes above
+
+.. image:: ../_static/images/additional_information/toll-allow-example-extension-edit.png
+        :scale: 85%
+| 
+Extension with only **domestic** variable assigned can only dial the 10 or 11 digit numbers in the "domestic" outbound route
+
+.. image:: ../_static/images/additional_information/toll-allow-example-extension-domestic-only.png
+        :scale: 85%
+
+
+Outbound routes can also have multiple toll_allow patterns.  For example, if you only define a single variable per extension, you would probably want the *domestic* permission to include *local* calls
+
+Edit **local** outbound route to include extensions with only *domestic* defined.
+
+.. image:: ../_static/images/additional_information/toll-allow-example-outbound-route-edit.png
+        :scale: 85%
+With the above toll_allow condition test, if an extension has either "local" or "domestic" assigned they are allowed to use the **local** outbound route
