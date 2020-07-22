@@ -3,7 +3,7 @@ Default Settings
 ******************
 
 
-Default Settings used for all domains.  Branding can be done in this section, `see here to adjust <../advanced/domains.html#override-a-default-setting-for-one-domain>`_ or `copy settings <https://player.vimeo.com/video/191268908#t=1m46s>`_ to specific domains.
+Default Settings used for all domains.  Branding can be done in this section, `see here to adjust <../advanced/domains.html#override-a-default-setting-for-one-domain>`_ or copy settings to specific domains.
 
 
 .. image:: ../_static/images/advanced/fusionpbx_advanced_default_settings.jpg
@@ -18,7 +18,7 @@ Default Settings have several different categories. Click on the category to vie
 
 FusionPBX menu `Advanced > Adminer <../advanced/adminer.html>`_
 
-FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you must enable this option with True. 
+FusionPBX version 4.2+ has Adminer disabled by default.  To use Adminer, you must enable this option with True.
 
 +-----------------------------+----------------------+-----------------------+-------------------------+-----------------------------------------------+
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                   |
@@ -270,7 +270,7 @@ Error log for failed or sucessfully sent messages.
 `Fax <default_settings/fax.html>`_
 =======================================
 
-`Apps > Fax Server <../applications/fax_server.html>`_ 
+`Apps > Fax Server <../applications/fax_server.html>`_
 
 Specific default settings for fax server.
 
@@ -837,7 +837,7 @@ Server specific default settings.
 `Switch <default_settings/switch.html>`_
 ================================================
 
-Switch specific default settings. These defaults will change depending if you compiled the SWITCH source or used the newest default of packages. 
+Switch specific default settings. These defaults will change depending if you compiled the SWITCH source or used the newest default of packages.
 
 +-------------------------------+------------------------+---------------------------------------+---------------------------+-------------------------------------------+
 | default_setting_subcategory   | default_setting_name   | default_setting_value                 | default_setting_enabled   | default_setting_description               |
@@ -1409,8 +1409,3 @@ Voicemail specific default settings.
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
 | greeting_max_length           | numeric                | 90                      | TRUE                      | Maximum length of a voicemail greeting (in seconds).                                         |
 +-------------------------------+------------------------+-------------------------+---------------------------+----------------------------------------------------------------------------------------------+
-
-
-
-
-
