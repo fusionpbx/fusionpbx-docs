@@ -20,3 +20,6 @@ Account Settings
 * **Groups:** Group the user is in and relates to what the user can see and do in the menus.
 * **Domain:**  Domain specific to the user.
 * **Enabled:** Enable or disable the account.
+
+
+Time zone can be set per user but it can also be set in Menu Advanced -> Default Settings.
