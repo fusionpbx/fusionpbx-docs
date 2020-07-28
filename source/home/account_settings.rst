@@ -22,4 +22,4 @@ Account Settings
 * **Enabled:** Enable or disable the account.
 
 
-Time zone can be set per user but it can also be set in Menu Advanced -> Default Settings.
+Time zone can be set per user but it can also be set in Menu -> Advanced -> Default Settings.
