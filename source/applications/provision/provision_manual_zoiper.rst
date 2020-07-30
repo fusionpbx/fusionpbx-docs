@@ -5,7 +5,7 @@ Registering an **Extension** using the softphone Zoiper.
 
 |
 
-In the ever changing world of voip businesses are moving away from hardware phones.  From call centers to home offices Zoiper and many other softphones make use of software for communication needs for not only voice but video and faxing. This example will show how to register an extension using Zoiper for Windows. *Note* Zoiper can be used on several operating systems and mobile devices.
+In the ever changing world of voip businesses are moving away from hardware phones.  From call centers, to home offices, Zoiper and many other softphones make use of software for communication needs for not only voice. but also for video and faxing. This example will show how to register an extension using Zoiper for Windows. *Note* Zoiper can be used on several operating systems and mobile devices.
 
 |
 1. Download the software. .. Zoiper: http://www.zoiper.com/
