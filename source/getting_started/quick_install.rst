@@ -32,8 +32,8 @@ Paste the following commands in the console window **one line at a time**.
 ::
 
  cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
- 
- |
+
+|
 
 If using **Debian on Proxmox LXC** containers please run the following **BEFORE** starting the FusionPBX install.
 
