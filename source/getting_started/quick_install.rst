@@ -10,12 +10,12 @@ Welcome to the FusionPBX installation guide.
 
 |
 
-FusionPBX can be installed on several different operating systems. However this guide assumes you are starting with a **minimal** install of Debian 9 with SSH enabled. This install has been designed to be fast, simple and modular, and generally takes 5 minutes or less. Installation times depend on factors like CPU, RAM, disk I/O and bandwidth. Install Video https://youtu.be/YmIht8hEHYU
+FusionPBX can be installed on several different operating systems. However this guide assumes you are starting with a **minimal** install of Debian 9 with SSH enabled. This install has been designed to be fast, simple and modular, and generally takes 5 minutes or less. Installation times depend on factors like CPU, RAM, disk I/O and bandwidth. Install Video https://youtu.be/XpiVyHqLaus
 
 .. raw:: html
 
     <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/YmIht8hEHYU?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/XpiVyHqLaus" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
     </div>
 
 **1.** Run the following commands as root. The script installs FusionPBX, FreeSWITCH release package and its dependencies, iptables, Fail2ban, NGINX, PHP-FPM and PostgreSQL.
