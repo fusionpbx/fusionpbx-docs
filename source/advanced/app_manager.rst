@@ -3,7 +3,7 @@ App Manager
 ###################
 
 
-For future use. Manage the applications that are installed.
+The App Manager has been removed and replaced with the Applications tool.
 
 
 .. image:: ../_static/images/advanced/fusionpbx_advanced_app_manager.jpg
