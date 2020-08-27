@@ -13,7 +13,7 @@ In the **Advanced** menu you will find Access Controls, App Manager, Backup, Com
   :glob:
 
   advanced/access_controls.rst
-  advanced/app_manager.rst
+  #advanced/app_manager.rst
   getting_started/backup.rst
   advanced/command.rst
   advanced/databases.rst
