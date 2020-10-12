@@ -78,15 +78,11 @@ To access an extensions voicemail **away** from the extension.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Click the link above for setting up email server settings.  These are the settings needed to enable your FusionPBX installation to be able to send email notifications.
 
-`Voicemail Default Settings`_
+`Voicemail Variables`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Voicemail default settings gives the options to adjust voicemail settings on your FusionPBX installation globally.
-
-**Variables**
-
-These variables can be set in advanced -> variables or in the dialplan.
+Using switch variables provides the ability to adjust FusionPBX Voicemail features. These variables can be set in either Advanced -> Variables (for a global scope) or in the dialplan (for a global *or* more flexible/specific scope).
 
 +---------------------------+----------------+
 | Name                      | Value          |
@@ -108,8 +104,9 @@ These variables can be set in advanced -> variables or in the dialplan.
 | vm_say_date_time          | true or false  |
 +---------------------------+----------------+
 
-Wav file is the default voicemail message file type.
-MP3 requires mod_shout to be installed and running.
+Note: 'wav' format is the default voicemail message file  type.  A value of 'mp3' requires *mod_shout* be installed and running.
+
+|
 
 **Not Found Message**
 
