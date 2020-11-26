@@ -24,7 +24,7 @@ From your FusionPBX Install
 
         The provisioning template can be tested by opening up a web browser and entering the provisioning url. The provisioning url is:
 
-hxxp://voice.example.com/fusionpbx/app/provision/index.php?mac=00041326B92B
+http://voice.example.com/fusionpbx/app/provision/index.php?mac=00041326B92B
 
 Replace the mac address and domain with your own. 
 
@@ -42,7 +42,7 @@ Snom like most IP phone has a web admin interface to configure and monitor the p
 
 4. Under "Setting URL" add in the setting URL as:
 
-hxxp://www.example.com/app/provision/index.php?mac={mac}  (Be sure to replace hxxp:// with http://)
+http://www.example.com/app/provision/index.php?mac={mac}
 
 The hostname should be replaced with your FusionPBX domain name. Note that we have replaced the domain name with {mac}. This is a special Snom variable to put the phones Mac address in without having to specify it.
 
