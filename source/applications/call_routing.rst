@@ -48,6 +48,7 @@ Enable Feature Sync on the Device
   * FusionPBX Default Settings -> Provision -> yealink_feature_key_sync
 
 * Polycom
+
   * reg.{$row.line_number}.serverFeatureControl.cf="1"
   * reg.{$row.line_number}.serverFeatureControl.dnd="1"
   * FusionPBX Default Settings -> Provision -> polycom_feature_key_sync
@@ -58,6 +59,7 @@ Enable Feature Sync on the Device
   * FusionPBX Default Settings -> Provision -> spa_feature_key_sync
   
 * Grandstream GXP and GRP
+
   * Web Interface -> Accounts -> Account X -> SIP Settings -> Advanced Features -> Feature Key Synchronization
   * Config file P2325
   * FusionPBX Default Settings -> Provision -> grandstream_feature_key_sync
