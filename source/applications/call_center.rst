@@ -91,6 +91,15 @@ Time base score
 * **Queue:** Caller in queue time will start.  If the caller goes to another queue the time will start over.
 * **System:** Caller in queue will have their wait calculated as soon as they enter the system.  If a caller chooses the wrong queue, when they get to the correct queue the timer won't start over again.
 
+Time base score - Seconds
+=================
+
+This field is left blank by default which means the option will not be added to the XML Dialplan. If you populate the field with a number then the time base score will be set in the dialplan when entering the call center. This can be used to prioritize one call center queue over another.
+
+**Example 1:** You may have two calls come into the system. Caller 1 entered before Caller 2. Caller 2 however has entered the "VIP" call center queue. Freeswitch will deliver the call that has the longest "time base score" to the agent. By setting the "time base score - seconds" you can tell Freeswitch that Caller 2 has "waited" longer that Caller 1 even if it isn't true. This will allow the "VIP" queue to be answered first. 
+
+**Example 2:** Similar to the example above, you may want to prioritize one queue over another however you may want a threshold at which the two then become equal. For example, if Caller 1 is waiting for an agent more than 5 minutes, their call should be equal in priority to Caller 2. In this case, set the "time base score - seconds" of the "VIP" queue to be 300 (5 min). This will mean that the "VIP" queue will get only a 5min head start on the regular queue.
+
 Max Wait Time
 ==============
 
