@@ -30,6 +30,7 @@ Optional Rules
 ===============
 
 | OPENVPN: ``iptables -A INPUT -p udp --dport 1194 -j ACCEPT`` 
+| SYSLOG: ``iptables -A INPUT -p udp --dport 514 -j ACCEPT`` 
 | ICMP: ``iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT``
 
 Friendly Scanner
