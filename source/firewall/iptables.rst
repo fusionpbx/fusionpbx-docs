@@ -80,12 +80,12 @@ Flush Out Iptables
 Open a Port for a Specific IP Address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-iptables -A INPUT -j ACCEPT -p tcp --dport 5432 -s x.x.x.x/32
+| ``iptables -A INPUT -j ACCEPT -p tcp --dport 5432 -s x.x.x.x/32``
 
 Block IP address
 ^^^^^^^^^^^^^^^^^
 
-``iptables -I INPUT -s 62.210.245.132 -j DROP``
+| ``iptables -I INPUT -s 62.210.245.132 -j DROP``
 
 Flush iptables
 ^^^^^^^^^^^^^^^^^
