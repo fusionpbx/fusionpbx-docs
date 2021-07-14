@@ -60,7 +60,7 @@ Show iptable rules
 Show line numbers
 ^^^^^^^^^^^^^^^^^^
 
-``iptables -L -v --line-numbers``
+``iptables -L -v -n --line-numbers``
 
 Delete a line
 ^^^^^^^^^^^^^^
