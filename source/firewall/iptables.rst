@@ -102,3 +102,5 @@ Debian / Ubuntu
 | ``apt-get install iptables-persistent``
 | ``service iptables-persistent save``
 | ``dpkg-reconfigure iptables-persistent``
+| ``iptables-save > /etc/iptables/rules.v4``
+| ``ip6tables-save > /etc/iptables/rules.v6``
