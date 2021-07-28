@@ -30,4 +30,4 @@ In the **Additional Information** section you will find topics related to Fusion
   additional_information/postgresql.rst
   additional_information/shared_line_appearance.rst
   additional_information/cdr_archive.rst
-
+  additional_information/government_regulations.rst
