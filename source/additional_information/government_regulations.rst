@@ -2,9 +2,10 @@
 Government Regulations
 ##################
 
->
 
-[Disclaimer] This page is reference only. It is not a complete list of requirements. We provide it "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. Consult a lawyer with a specialty in this area of law for Legal Advice.
+Disclaimer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This page is reference only. It is not a complete list of requirements. We provide it "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. Consult a lawyer with a specialty in this area of law for Legal Advice.
 
 United States
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
