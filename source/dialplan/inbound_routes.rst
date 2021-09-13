@@ -36,7 +36,7 @@ Edit/Add Inbound Routes
         :scale: 85%
 
 * **Name:** The name of the Inbound Route.
-* **Number:** The Number (DID) an outside caller will call.
+* **Number:** The Destination Number (DID) an outside caller will call.
 * **Context:** Context of the Inbound Route. Usually will be public.
 * **Order:** Order where the inbound route will be used in the dialplan.
 * **Domain:** Can be global to all domains or specific to one domain.
@@ -44,6 +44,9 @@ Edit/Add Inbound Routes
 * **Enabled:** If the Inbound Route is enabled or disabled.
 * **Description:** A way to organize what the inbound route is used for.
 
+Destination Number
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Add button allows creating an inbound route. The list of destinations for the Destination Number select list is populated by the list from the Destinations tool. This list can be found by navigating to Menu -> Dialplan -> Destinations. Note: It is recommended to use Destinations tool and select where to route the call and have it build the inbound routes. There are many benefits to the destination select tool. Manually creating an inbound route is not recommended unless you need an advanced inbound route.
 
 XML example
 ^^^^^^^^^^^^^
