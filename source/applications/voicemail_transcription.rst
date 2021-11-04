@@ -77,6 +77,36 @@ Click "Flush Memcache", "Reload XML" and "Rescan".
 
 If you entered your key's correctly, you should now start getting transcriptions delivered in your voicemail to email and you will also see them on the Messages page.
 
+Google API
+====================
+
+**Goto Advanced > Default Settings.**
+Add the following entries
+
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  Category   |  Subcategory          |  Type     |  Value                    |  Enabled  |
+  +=============+=======================+===========+===========================+===========+
+  |  voicemail  |  transcribe_provider  |  text     |  watson                   |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  google_key           |  text     |  { your watson key }      |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  google_url           |  text     |  { *watson url }          |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  transcribe_language  |  text     |  en-US                    |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  transcribe_enabled   |  boolean  |  true                     |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+  |  voicemail  |  json_enabled         |  boolean  |  true                     |  True     |
+  +-------------+-----------------------+-----------+---------------------------+-----------+
+
+ Click "Reload" at the top of the page.
+
+**Goto Status > Sip Status.**
+
+Click "Flush Memcache", "Reload XML" and "Rescan".
+
+If you entered your key's correctly, you should now start getting transcriptions delivered in your voicemail to email and you will also see them on the Messages page.
+
 Custom API
 ====================
 
