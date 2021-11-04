@@ -88,9 +88,9 @@ Add the following entries
   +=============+=======================+===========+===========================+===========+
   |  voicemail  |  transcribe_provider  |  text     |  watson                   |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
-  |  voicemail  |  google_key           |  text     |  { your watson key }      |  True     |
+  |  voicemail  |  google_key           |  text     |  { your google key }      |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
-  |  voicemail  |  google_url           |  text     |  { *watson url }          |  True     |
+  |  voicemail  |  google_url           |  text     |  { your google url }      |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
   |  voicemail  |  transcribe_language  |  text     |  en-US                    |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
