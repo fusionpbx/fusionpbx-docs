@@ -57,7 +57,7 @@ Add the following entries
   +=============+=======================+===========+===========================+===========+
   |  voicemail  |  transcribe_provider  |  text     |  azure                    |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
-  |  voicemail  |  azure_key            |  text     |  { your zaure key }       |  True     |
+  |  voicemail  |  azure_key            |  text     |  { your azure key }       |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
   |  voicemail  |  azure_server_region  |  text     |  { your server region }   |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
