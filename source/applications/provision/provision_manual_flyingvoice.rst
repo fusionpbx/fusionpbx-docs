@@ -4,7 +4,7 @@ Flyingvoice
 
 Setting up a **Flyingvoice** SIP phone through the phone's local http management portal. 
 
-* Once the phone powers up, press the OK button once and the phone will display its IP address on the screen.  Navigate to that IP on another device in a web browser, and use admin for the username and admin for the password.
+* Once the phone powers up, press the OK button once or Menu > Status and the phone will display its IP address on the screen.  Navigate to that IP on another device in a web browser, and use admin for the username and admin for the password.
 
 .. image:: ../../_static/images/provision/fusionpbx_manual_flyingvoice_login.png
         :scale: 85%
