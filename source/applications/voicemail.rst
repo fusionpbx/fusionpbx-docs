@@ -82,7 +82,7 @@ Click the link above for setting up email server settings.  These are the settin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Using switch variables provides the ability to adjust FusionPBX Voicemail features. These variables can be set in either Advanced -> Variables (having a global scope - loaded when the switch first starts) or in the dialplan (for a global *or* more flexible/domain specific scope).
+Using switch variables provides the ability to adjust FusionPBX Voicemail features. These variables can be set in either Dialplan -> global-variables or per domain with domain-variables dialplan.
 
 +---------------------------+----------------+
 | Name                      | Value          |
