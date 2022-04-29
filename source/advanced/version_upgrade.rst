@@ -4,7 +4,7 @@ Version Upgrade
 
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
-4.4 to Master (what will become 4.6)
+4.4 to 5.0
 ^^^^^^^^^^^^^^^^^^
 
 1. Switch branches
@@ -51,6 +51,46 @@ If you have made any changes to these make notes on the changes before you delet
 
 5. If you have customized any provisioning templates makes sure to copy them from /var/www/fusionpbx-4.4/resources/templates/provision and copy them into the right vendor directory in /var/www/fusionpbx/resources/templates/provision. I you haven't customized the provisioning templates you can skip this step.
 
+6. FAX Queue install
+
+* https://docs.fusionpbx.com/en/latest/status/fax_queue.html
+
+- Install as a service
+
+::
+
+ cp /var/www/fusionpbx/app/fax_queue/resources/service/debian.service /etc/systemd/system/fax_queue.service
+ systemctl enable fax_queue
+ systemctl start fax_queue
+ systemctl daemon-reload
+
+- or run as a cron job
+
+::
+
+ crontab -e
+ * * * * * cd /var/www/fusionpbx && php /var/www/fusionpbx/app/fax_queue/resources/job/fax_queue.php
+
+
+7. Email Queue install
+
+* https://docs.fusionpbx.com/en/latest/status/email_queue.html
+
+- Install as a service
+
+::
+
+ cp /var/www/fusionpbx/app/email_queue/resources/service/debian.service /etc/systemd/system/email_queue.service
+ systemctl enable email_queue
+ systemctl start email_queue
+ systemctl daemon-reload
+
+- or run as a cron job
+
+::
+
+ crontab -e
+ * * * * * cd /var/www/fusionpbx && /usr/bin/php /var/www/fusionpbx/app/email_queue/resources/service/email_queue.php
 
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
