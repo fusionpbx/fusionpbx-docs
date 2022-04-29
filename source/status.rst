@@ -22,7 +22,9 @@ In the **Status** menu you have the options for Active Call Center, Active Calls
   status/agent_status.rst
   status/cdr_statistics.rst
   status/emails.rst
+  status/email_queue.rst
   status/extension_summary.rst
+  status/fax_queue.rst
   status/log_viewer.rst
   status/registrations.rst
   status/services.rst
