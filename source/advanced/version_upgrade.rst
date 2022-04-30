@@ -51,7 +51,43 @@ If you have made any changes to these make notes on the changes before you delet
 
 5. If you have customized any provisioning templates makes sure to copy them from /var/www/fusionpbx-4.4/resources/templates/provision and copy them into the right vendor directory in /var/www/fusionpbx/resources/templates/provision. I you haven't customized the provisioning templates you can skip this step.
 
-6. FAX Queue install
+6. Update the language phrases. If you have added custom phrases be careful here not the case for most people.
+
+::
+
+ rm -R -f /etc/freeswitch/lang
+ rm -R -f /etc/freeswitch/languages
+ cp -R /var/www/fusionpbx/resources/templates/conf/languages /etc/freeswitch
+ chown -R www-data:www-data /etc/freeswitch
+ fs_cli -x "reloadxml"
+
+
+7. New Follow Me does not use the extension dial string. Use the following SQL command to remove the extension dial string.
+
+::
+
+ update v_follow_me set dial_string = null;
+ update v_extensions set dial_string = null, follow_me_destinations = null where dial_string <> 'error/user_busy';
+ update v_extensions set follow_me_enabled = 'true' where follow_me_uuid in (select follow_me_uuid from v_follow_me where follow_me_enabled = 'true');
+ \q
+ exit
+
+
+8. Rename the variables dialplan to domain-variables
+
+::
+
+ su postgres
+ psql fusionpbx
+ update v_dialplans set dialplan_name = 'domain-variables' where dialplan_name = 'variables';
+ \q
+ exit
+
+9. Duplication in Default Settings
+
+Go to Advanced -> Default Settings after running App Defaults to check for any duplicates. If you see duplicates that are not type of array this may have been caused from older versions of FusionPBX before we started using a Preset ID for each Default Settings. If you hover over the setting it says then says Default this is the default setting with the correct ID. If it says custom this is a unique UUID. Make sure to delete only duplicates that say custom otherwise when you run App Defaults again it will put the default setting back with the correct preset UUID>
+
+10. FAX Queue install
 
 * https://docs.fusionpbx.com/en/latest/status/fax_queue.html
 
@@ -72,7 +108,7 @@ If you have made any changes to these make notes on the changes before you delet
  * * * * * cd /var/www/fusionpbx && php /var/www/fusionpbx/app/fax_queue/resources/job/fax_queue.php
 
 
-7. Email Queue install
+11. Email Queue install
 
 * https://docs.fusionpbx.com/en/latest/status/email_queue.html
 
@@ -91,6 +127,7 @@ If you have made any changes to these make notes on the changes before you delet
 
  crontab -e
  * * * * * cd /var/www/fusionpbx && /usr/bin/php /var/www/fusionpbx/app/email_queue/resources/service/email_queue.php
+
 
 Version 4.2 to 4.4
 ^^^^^^^^^^^^^^^^^^
