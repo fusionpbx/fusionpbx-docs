@@ -30,7 +30,9 @@ If you have made any changes to these make notes on the changes before you delet
 
 ::
 
+
  user_exists
+ call-direction
  is_loopback
  is_local
  user_record
@@ -42,6 +44,8 @@ If you have made any changes to these make notes on the changes before you delet
  tone_stream
  recordings
  valet_park
+ speed_dial
+ call-forward-all
  call_screen
  call_forward_not_registered
  local_extension
