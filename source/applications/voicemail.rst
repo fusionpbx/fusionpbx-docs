@@ -119,9 +119,18 @@ Please note that enabling this option means that the call must be answered in or
 Voicemail Transcription
 ====================
 
-|
 
 FusionPBX supports Voicemail Transcription, where emails will include a transcribed version of the voicemail the email was sent in regards to. To configure this feature, see applications/voicemail_transcription.rst.
 
 
 .. _Voicemail Default Settings: /en/latest/advanced/default_settings.html#id32
+
+
+
+Voicemail BLF Keys
+====================
+
+In Version 5.0.1 and later, you can now monitor the unread messages of a voicemail box using a BLF key. This is done by adding **voicemail+[ext]** to the BLF on your phone's line key.
+
+.. image:: ../_static/images/voicemail/fusionpbx_voicemail_blf_key.png
+        :scale: 85%
