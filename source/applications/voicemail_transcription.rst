@@ -86,7 +86,7 @@ Add the following entries
   +-------------+-----------------------+-----------+---------------------------+-----------+
   |  Category   |  Subcategory          |  Type     |  Value                    |  Enabled  |
   +=============+=======================+===========+===========================+===========+
-  |  voicemail  |  transcribe_provider  |  text     |  watson                   |  True     |
+  |  voicemail  |  transcribe_provider  |  text     |  google                   |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
   |  voicemail  |  google_key           |  text     |  { your google key }      |  True     |
   +-------------+-----------------------+-----------+---------------------------+-----------+
