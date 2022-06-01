@@ -19,6 +19,7 @@ Auto provisioning is disabled by default. This is to give a chance to secure pro
   applications/provision/provision_auto_grandstream.rst
   applications/provision/provision_auto_htek.rst
   applications/provision/provision_auto_zoiper.rst
+  applications/provision/provision_auto_snom.rst
 
 
 
@@ -38,8 +39,20 @@ How to setup the device using the phone’s web interface.
   applications/provision/provision_manual_grandstream.rst
   applications/provision/provision_manual_htek.rst
   applications/provision/provision_manual_zoiper.rst
-  applications/provision/provision_manual_snom.rst
   applications/provision/phone_screen_capture.rst
+
+
+
+
+Provisioning Variables/Settings
+==============================
+
+Each phone has different Fusion Settings that can be applied to configure the phones to the requirements.
+
+.. toctree::
+   :maxdepth: 4
+  
+  applications/provision/provision_variables_snom.rst
 
 
 
