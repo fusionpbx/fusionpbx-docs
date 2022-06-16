@@ -35,7 +35,10 @@ Add the following entries
   +-------------+-----------------------+-----------+---------------------------+-----------+
 
 *NOTE: Watson URL used for testing was the following:
-https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_NarrowbandModel*
+https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_NarrowbandModel&smart_formatting=true*
+
+**List of available IBM Watson speech to text models**
+https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models
 
  Click "Reload" at the top of the page.
 
