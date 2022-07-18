@@ -44,6 +44,18 @@ Be sure to change the password by replacing the zzzzzzzz in PGPASSWORD="zzzzzzzz
  #source
  #tar -zvcf /var/backups/fusionpbx/backup_$now.tgz /var/backups/fusionpbx/postgresql/fusionpbx_pgsql_$now.sql /var/www/fusionpbx /usr/local/freeswitch/scripts /usr/local/freeswitch/storage /usr/local/freeswitch/recordings /etc/fusionpbx /usr/local/freeswitch/conf /usr/local/freeswitch/sounds/music/
  
+#sync certificate directory
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/ /etc
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/usr/src/fusionpbx-install.sh/debian/resources/letsencrypt.sh /usr/src/fusionpbx-install.sh/debian/resources/
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/accounts/ /etc/dehydrated/
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/chains/ /etc/dehydrated/
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/config/ /etc/dehydrated/
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/config/ /etc/dehydrated/
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/hook.sh /etc/dehydrated/
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/dehydrated/certs/ /etc/dehydrated/certs
+rsync -avz -e 'ssh -p 22' root@$ssh_server:/usr/src/dehydrated /usr/src/
+
+ 
  echo "Backup Completed"
 
 
