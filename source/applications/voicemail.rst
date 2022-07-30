@@ -84,6 +84,8 @@ Click the link above for setting up email server settings.  These are the settin
 
 Using switch variables provides the ability to adjust FusionPBX Voicemail features. These variables can be set in either Dialplan -> global-variables or per domain with domain-variables dialplan.
 
+**Leave a voicemail**
+
 +---------------------------+----------------+
 | Name                      | Value          |
 +---------------------------+----------------+
@@ -96,6 +98,12 @@ Using switch variables provides the ability to adjust FusionPBX Voicemail featur
 | vm_disk_quota             | 0-3600 seconds |
 +---------------------------+----------------+
 | vm_message_ext            | wav or mp3     |
++---------------------------+----------------+
+
+**Check Voicemails**
+
++---------------------------+----------------+
+| Name                      | Value          |
 +---------------------------+----------------+
 | voicemail_authorized      | true or false  |
 +---------------------------+----------------+
