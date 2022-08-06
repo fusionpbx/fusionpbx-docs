@@ -4,7 +4,9 @@ Access Controls
 
 Access control list can allow or deny ranges of IP addresses.  There are several purposes for using the ACL.
 
-*  The main purpose is for your carriers ip addresses. Add the carrier IP addresses to the CIDR.
+**providers - access conroll list**
+
+*  The main purpose is for your voip provider (carrier) IP addresses to the CIDR.
 *  Be careful with what and how you use ACL.
 *  Most common mistakes result in calls not working between extensions and other undesirable results. 
 *  Be sure to keep Domains access control to default deny.
@@ -16,7 +18,7 @@ Access control list can allow or deny ranges of IP addresses.  There are several
 Access Control Example
 -----------------------
 
-Goto Advanced > Access Controls.  Click the edit icon for **domains**.  At the bottom under **nodes** click the plus icon.
+Goto Advanced > Access Controls.  Click the edit icon for **providers** was renamed from **domains**.  At the bottom under **nodes** click the plus icon. In the example below make sure to change the 12.34.56.0 to your VoIP providers IP address if adding to the Providers access control list.
 
 ::
 
