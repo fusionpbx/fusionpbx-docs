@@ -25,3 +25,7 @@ The server that Snom will use for it's NTP. By default: 0.pool.ntp.org
 snom_time_zone
 ==================
 The time zone that the phone will use. This is disabled by default however should be set to avoid the phone asking for a valid timezone on every boot. Valid value can be found on [Snom's webpage](https://service.snom.com/display/wiki/timezone).
+
+snom_provision_timer_seconds
+==================
+The time in seconds that the phone will wait before attempting to provision itself again. This is useful for automatically updating the directory when changes are made.
