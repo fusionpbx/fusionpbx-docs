@@ -4,6 +4,8 @@ Event Guard
 
 This is an optional service called event_guard and it was designed to protect your VoIP server. It watches registration events and blocks those that abuse it. It doesn't watch server logs. It currently supports iptables and pf firewalls. Netfilter firwall support will be added in the future.
 
+Event guard logs blocked and unblocked calls to Status -> Event Guard. Event guard uses the Advanced -> Access Control allowed nodes as a white list. I n addition to this it also looks at current allowed IP addresses and trusts these registered IP addresses.
+
 Install Instructions
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -32,3 +34,8 @@ Install Instructions
 
 ::
 
+
+Unblock an IP Address
+^^^^^^^^^^^^^^^^^^^^
+
+To unblock an address select the check box and then press the UNBLOCK button on the top right.
