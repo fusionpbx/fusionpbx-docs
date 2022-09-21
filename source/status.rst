@@ -23,6 +23,7 @@ In the **Status** menu you have the options for Active Call Center, Active Calls
   status/cdr_statistics.rst
   status/emails.rst
   status/email_queue.rst
+  status/event_guard.rst
   status/extension_summary.rst
   status/fax_queue.rst
   status/log_viewer.rst
