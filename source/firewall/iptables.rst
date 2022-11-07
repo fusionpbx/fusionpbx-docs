@@ -87,6 +87,11 @@ Block IP address
 
 | ``iptables -I INPUT -s 62.210.245.132 -j DROP``
 
+Restore Rules from rules.v4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This reads the file rules.v4 and saved iptables rules back into active memory.
+| ``iptables-restore < /etc/iptables/rules.v4``
+
 Flush iptables
 ^^^^^^^^^^^^^^^^^
 How to flush iptables without loosing access to ssh.
