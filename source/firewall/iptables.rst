@@ -52,6 +52,14 @@ Rules to block not so friendly scanner
 | ``iptables -I INPUT -j DROP -p udp --dport 5080 -m string --string "VaxSIPUserAgent/3.1" --algo bm``
 | ``iptables -I INPUT -j DROP -p tcp --dport 5080 -m string --string "VaxSIPUserAgent/3.1" --algo bm``
 
+
+Add DSCP rules
+^^^^^^^^^^^^^^
+iptables -t mangle -A OUTPUT -p udp -m udp --sport 16384:32768 -j DSCP --set-dscp 46
+iptables -t mangle -A OUTPUT -p udp -m udp --sport 5060:5091 -j DSCP --set-dscp 26
+iptables -t mangle -A OUTPUT -p tcp -m tcp --sport 5060:5091 -j DSCP --set-dscp 26
+
+
 Show iptable rules
 ^^^^^^^^^^^^^^^^^^^
 
@@ -61,6 +69,11 @@ Show line numbers
 ^^^^^^^^^^^^^^^^^^
 
 ``iptables -L -v -n --line-numbers``
+
+Show DSCP rules
+^^^^^^^^^^^^^^^
+iptables -vL -t mangle
+
 
 Delete a line
 ^^^^^^^^^^^^^^
