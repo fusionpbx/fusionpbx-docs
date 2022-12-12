@@ -90,14 +90,14 @@ in autoload configs look at xml_cdr.conf.xml
 
 .. note::
        
- By default only the a-leg of the call is logged therefore if you make a recording of the b-leg you won't be able to retrieve it using the Call Detail Records.  If you want the b-leg as well you need to change log-b-leg=true in this config.
+ By default only the a-leg of the call is logged therefore if you make a recording of the b-leg you won't be able to retrieve it using the Call Detail Records.  If you want the b-leg as well you need to change log-b-leg=true in this config and in the default settings.
 
 Harddrive space usage
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
- XML CDR data adds up fast, therefore you may need to clear this data at some point in the future.  By default freeswitch keeps this in (source install) /usr/local/freeswitch/log/cdr-csv or (package install) /var/log/freeswitch/xml_cdr and inside that by year, month and day.  Recordings also take up space and have to be manually deleted if you want the space back these are kept in (source install) /usr/local/freeswitch/recordings/{Domian_Name} or (package install) /etc/freeswitch/recordings/{Domain Name} and inside that by year, month and day.
+Recordings also take up space and may be manually deleted if you want the space back these are kept in (source install) /usr/local/freeswitch/recordings/{Domian_Name}/archive or (package install) /var/lib/freeswitch/recordings/{Domain Name}/archive and inside that by year, month and day.
 
 
 `CDR Default Settings`_
