@@ -35,7 +35,7 @@ Add the following entries
   +-------------+-----------------------+-----------+---------------------------+-----------+
 
 *NOTE: Watson URL used for testing was the following:
-https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_Telephony&smart_formatting=true*
+https://example.url.api.us-south.speech-to-text.watson.cloud.ibm.com/instances/{GUID}/v1/recognize?model=en-US_Telephony&smart_formatting=true*
 
 **List of available IBM Watson speech to text models**
 https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models
