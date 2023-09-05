@@ -14,14 +14,15 @@ Password Reset
 The current method to changing the superadmin password is actually to make a new superadmin user name and password.
 
 .. note::
-       In older installations of FusionPBX config.php is located in /var/www/fusionpbx/resources/
+       In older installations of FusionPBX config.php is located in `var/www/fusionpbx/resources/. In some installations, it is in /etc/fusionpbx/config.php.
 
-1. Move the config.php file temporarily.
+1. Move the config.conf file temporarily.
 
 ::
- cat /etc/fusionpbx/config.php | grep password
+
+ cat /etc/fusionpbx/config.conf | grep password
  cd /etc/fusionpbx
- mv config.php config.backup.php
+ mv config.conf config.backup.conf
 
 |
 2. Go to the FusionPBX install login page in the web browser.  This will put FusionPBX into a recovery mode. **click next.**
@@ -55,7 +56,10 @@ The current method to changing the superadmin password is actually to make a new
 
 
 
-5. You should have a new config.php file in the /etc/fusionpbx/  directory.  Proceed to login to with the new superadmin user name and password.
+5. You should have a new config.conf file in the /etc/fusionpbx/  directory.  Proceed to login to with the new superadmin user name and password.
 
+.. note::
+
+If you receive an error regarding permissions, ensure that the application has write access to /etc/fusionpbx, and try again.
 
 
