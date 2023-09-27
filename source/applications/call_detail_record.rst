@@ -70,17 +70,31 @@ Possible causes:
 
 - Make sure the XML CDR module is enabled and running in the Menu -> Advanced -> Modules.
 
-**2. Wrong xml_cdr.conf.xml config**
+**2. Save to XML Files**
 
-- check <param name="url" value="http://127.0.0.1/app/xml_cdr/v_xml_cdr_import.php"/> and adapt it to your situation.
+Save the CDR files to the file system and then use a cron job to load them once a minute into the database.
 
-* Compare your version (advanced-script editor-files-autoload_configs-xml_cdr.conf.xml) with the current default one that is included in FusionPBX (advanced-php editor-files-includes-templates-conf-autoload_configs-xml_cdr.conf.xml). If it is different copy the default one over yours.
-* Then edit the line <param name="url" value="http://{v_domain}/mod/xml_cdr/v_xml_cdr_import.php"/> and replace {v_domain} with the domain or IP address of your FusionPBX server.
-* Then edit the line <param name="cred" value="{v_user}:{v_pass}"/> and replace {v_user} with a complex name of upper and lowercase and numeric characters so it is really ugly and secure, and do the same for v_pass.
-* Make each of them completely unique.
-* Be aware that these don't have to match anything else on your server at all.  This is because FusionPBX does something very simple but clever here.  The xml_cdr module uses this account when it does an http post to FusionPBX of the new data.  FusionPBX looks at the same xml_cdr.conf.xml file that the module uses in order to check if the module is using a valid account and password.  Since they both look at the same config file they are using the same account and password and will happily talk to each other!
+Edit the **/etc/freeswitch/xml_cdr.conf.xml config** Easiest command line file edito is  called nano
 
-Once you've made these changes you can save the file. You could restart your server, or you could reloadxml and then restart the xml_cdr module.  Either is ok, it is up to you. Then your changes will have taken effect and you should no longer lose your menu bar when looking at CDR information. 
+  nano /etc/freeswitch/xml_cdr.conf.xml config
+
+Comment out this line  by adding <!-- and -->. Make sure to do  this carefully.
+
+ <!-- <param name="url" value="http://127.0.0.1/app/xml_cdr/v_xml_cdr_import.php"/> -->
+
+
+Run  this  command  one time to add the import command to crontab.
+
+  (crontab -l; echo "* * * * * $(which php) /var/www/fusionpbx/app/xml_cdr/xml_cdr_import.php 300") | crontab
+
+
+Once you've made these changes you can save the file. You could restart your server, or you could reloadxml and then restart the xml_cdr module.  Either is ok, it is up to you. Then your changes will have taken effect and you should no longer lose your menu bar when looking at CDR information.
+
+
+  fs_cli -x 'reloadxml'
+
+  fs_cli -x 'reload mod_xml_cdr'
+
 
 XML CDR configuration
 ~~~~~~~~~~~~~~~~~~~~~
