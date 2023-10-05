@@ -4,6 +4,228 @@ Version Upgrade
 
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
+Version 5.0 to 5.1
+^^^^^^^^^^^^^^^^^^
+
+###### These instructions for upgrade are also relevant to versions of FusionPBX 5.0.3 to 5.0.10 and higher. 
+
+**Release Note**
+- When this upgrade.php is run from the root, it will write the /etc/fusionpbx/config.conf file by reading information from the database and config.php and config.lua.
+
+---
+
+### Run (Install) Upgrades
+
+::
+
+ cd /var/www/fusionpbx
+ git stash
+ git pull
+ git checkout 5.1
+ git branch
+ php /var/www/fusionpbx/core/upgrade/upgrade.php
+
+Make sure to also update group permission from Advanced -> Group Manager -> RESTORE DEFAULT button
+
+---
+
+### Upgrade Schema -> Data Types
+
+Make sure to login and then go to Advanced -> Upgrade -> Schema -> Data Types
+
+---
+
+### Flush Templates
+
+PHP Smarty version 4.3.1 was updated. This requires clearing files in the temp directory.
+
+```
+rm -R -f /tmp/*.php
+```
+
+---
+
+### New Global Dialplans
+
+::
+
+The following dialplans are need to be deleted for all domains. As these are now global dialplans.
+
+ call-direction
+ is_local
+ agent_status
+ agent_status_id
+ agent-status-break
+ call_privacy
+ send_to_voicemail
+ vmain
+ xfer_vm
+ vmain_user
+ delay_echo
+ echo
+ is_zrtp_secure
+ milliwatt
+ is_secure
+ tone_stream
+ hold_music
+ do-not-disturb
+ call-forward
+ follow-me
+ freeswitch_conference
+ clear_sip_auto_answer
+ call_return
+ dx
+ att_xfer
+ directory
+ redial
+ call_return
+ dx
+ att_xfer
+ is_transfer
+ cf
+ please_hold
+ talking_clock_date
+
+::
+
+Then run this command to get the new default global dialplans
+
+ cd /var/www/fusionpbx
+ php /var/www/fusionpbx/core/upgrade/upgrade.php
+
+
+---
+#error reporting options: user,dev,all
+error.reporting = user
+### Restart Services
+```
+systemctl restart email_queue
+systemctl restart fax_queue
+systemctl restart event_guard
+```
+---
+---
+
+### Install the Event Guard Service
+
+>
+
+- Upgrade to the latest FusionPBX 5.0.2 or higher.
+- Install the service
+
+**Debian or Ubuntu**
+
+ cp /var/www/fusionpbx/app/event_guard/resources/service/debian.service /etc/systemd/system/event_guard.service
+ systemctl enable event_guard
+ systemctl start event_guard
+ systemctl daemon-reload
+
+
+**CentOS**
+
+ cp /var/www/fusionpbx/app/event_guard/resources/service/debian.service /usr/lib/systemd/system/event_guard.service
+ systemctl daemon-reload
+ systemctl enable event_guard
+ systemctl start event_guard
+
+
+### Remove Old Config Files
+
+::
+
+**Debian / Ubuntu / CentOS**
+The config.conf and config.php files are deprecated. These files were combined into the config.conf file.
+
+::
+
+ rm -f /etc/fusionpbx/config.php
+ rm -f /etc/fusionpbx/config.lua
+
+---
+
+### Config File Ownership
+
+::
+
+The ***/etc/fusionpbx/config.conf*** file should be owned by the root user like other files in the /etc directory.
+
+**Debian / Ubuntu / CentOS**
+
+ chown -R root:root /etc/fusionpbx
+
+
+**FreeBSD**
+
+ chown -R root:root /usr/local/etc/fusionpbx
+
+
+**Destination Number**
+
+For many years the inbound phone number (DID/DDI) would show up in the dialplan as ***destination_number*** variable for most VoIP providers. For some VoIP providers, the number would be found in ***sip_to_user***, and in some cases, ***sip_req_user*** is needed. Recently Diversion header has become more widely used, and sip ***sip_to_user*** and, in some cases, ***sip_req_user*** may be required. For example, a call forwarded from a mobile phone to one of your numbers in FusionPBX. The destination variable in the dialplan category can change which variable is used.
+
+::
+
+ Category: dialplan
+ Subcategory: destination
+ Type: text
+ Value: destination_number
+ Description: Options: destination_number (default), ${sip_to_user}, ${sip_req_user}
+
+
+---
+
+### Update Fail2ban, if Used
+
+ cd /usr/src/fusionpbx-install.sh/debian/resources
+ git stash
+ git pull
+ ./fail2ban.sh
+
+
+### Error Reporting in config.conf
+
+The error reporting in the bottom of the config.conf was changed to look like this. If this is different then it should be updated to what is shown below.
+
+Use this command to look at the bottom of the config.conf file.
+
+::
+
+ cat /etc/fusionpbx/config.conf | grep error
+
+Old version
+
+::
+
+ #error reporting hide show all errors except notices and warnings
+ error.reporting = 'E_ALL ^ E_NOTICE ^ E_WARNING'
+
+
+New version
+
+ #error reporting options: user,dev,all
+ error.reporting = user
+
+
+If its different then use nano, vi, vim or some other editor to update the error reporting.
+
+ nano /etc/fusionpbx/config.conf
+
+
+Confirm that the values have been updated using this command.
+
+::
+
+ cat /etc/fusionpbx/config.conf | grep error
+
+
+### Clear the cache
+
+::
+
+ rm -f /var/cache/fusionpbx/*
+
+
+
 4.4 to 5.0
 ^^^^^^^^^^^^^^^^^^
 
