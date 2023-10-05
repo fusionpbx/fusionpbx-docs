@@ -7,14 +7,15 @@ Version Upgrade can take several steps to perform. Below will show how to upgrad
 Version 5.0 to 5.1
 ^^^^^^^^^^^^^^^^^^
 
-###### These instructions for upgrade are also relevant to versions of FusionPBX 5.0.3 to 5.0.10 and higher. 
+These instructions for upgrade are also relevant to versions of FusionPBX 5.0.3 to 5.0.10 and higher.
 
 **Release Note**
+
 - When this upgrade.php is run from the root, it will write the /etc/fusionpbx/config.conf file by reading information from the database and config.php and config.lua.
 
----
 
-### Run (Install) Upgrades
+
+**Run (Install) Upgrades**
 
 ::
 
@@ -27,25 +28,23 @@ Version 5.0 to 5.1
 
 Make sure to also update group permission from Advanced -> Group Manager -> RESTORE DEFAULT button
 
----
 
-### Upgrade Schema -> Data Types
+
+**Upgrade Schema -> Data Types**
 
 Make sure to login and then go to Advanced -> Upgrade -> Schema -> Data Types
 
----
 
-### Flush Templates
+
+**Flush Templates**
 
 PHP Smarty version 4.3.1 was updated. This requires clearing files in the temp directory.
 
-```
-rm -R -f /tmp/*.php
-```
+ rm -R -f /tmp/*.php
 
----
 
-### New Global Dialplans
+
+**New Global Dialplans**
 
 ::
 
@@ -90,25 +89,29 @@ The following dialplans are need to be deleted for all domains. As these are now
 
 Then run this command to get the new default global dialplans
 
+::
+
  cd /var/www/fusionpbx
  php /var/www/fusionpbx/core/upgrade/upgrade.php
 
 
----
-#error reporting options: user,dev,all
-error.reporting = user
-### Restart Services
-```
-systemctl restart email_queue
-systemctl restart fax_queue
-systemctl restart event_guard
-```
----
----
 
-### Install the Event Guard Service
 
->
+
+**Restart Services**
+
+::
+
+ systemctl restart email_queue
+ systemctl restart fax_queue
+ systemctl restart event_guard
+
+
+
+
+**Install the Event Guard Service**
+
+::
 
 - Upgrade to the latest FusionPBX 5.0.2 or higher.
 - Install the service
@@ -129,7 +132,7 @@ systemctl restart event_guard
  systemctl start event_guard
 
 
-### Remove Old Config Files
+**Remove Old Config Files**
 
 ::
 
@@ -141,9 +144,9 @@ The config.conf and config.php files are deprecated. These files were combined i
  rm -f /etc/fusionpbx/config.php
  rm -f /etc/fusionpbx/config.lua
 
----
 
-### Config File Ownership
+
+**Config File Ownership**
 
 ::
 
@@ -172,9 +175,9 @@ For many years the inbound phone number (DID/DDI) would show up in the dialplan 
  Description: Options: destination_number (default), ${sip_to_user}, ${sip_req_user}
 
 
----
 
-### Update Fail2ban, if Used
+
+**Update Fail2ban, if Used**
 
  cd /usr/src/fusionpbx-install.sh/debian/resources
  git stash
@@ -182,7 +185,7 @@ For many years the inbound phone number (DID/DDI) would show up in the dialplan 
  ./fail2ban.sh
 
 
-### Error Reporting in config.conf
+**Error Reporting in config.conf**
 
 The error reporting in the bottom of the config.conf was changed to look like this. If this is different then it should be updated to what is shown below.
 
@@ -218,7 +221,7 @@ Confirm that the values have been updated using this command.
  cat /etc/fusionpbx/config.conf | grep error
 
 
-### Clear the cache
+**Clear the cache**
 
 ::
 
