@@ -16,6 +16,7 @@ Auto provisioning is disabled by default. This is to give a chance to secure pro
   applications/provision/provision_auto_polycom.rst
   applications/provision/provision_auto_cisco.rst
   applications/provision/provision_auto_fanvil.rst
+  applications/provision/provision_auto_flyingvoice.rst
   applications/provision/provision_auto_grandstream.rst
   applications/provision/provision_auto_htek.rst
   applications/provision/provision_auto_zoiper.rst
@@ -35,6 +36,7 @@ How to setup the device using the phone’s web interface.
   applications/provision/provision_manual_polycom.rst
   applications/provision/provision_manual_cisco.rst
   applications/provision/provision_manual_fanvil.rst
+  applications/provision/provision_manual_flyingvoice.rst
   applications/provision/provision_manual_grandstream.rst
   applications/provision/provision_manual_htek.rst
   applications/provision/provision_manual_zoiper.rst
