@@ -13,7 +13,7 @@ Direct calls between two destinations by calling a feature code.
 
 *  **Name:** Define the name of the call flow.
 *  **Extension:** Define what extension to use. (This will make an extension not already created)
-*  **Feature Code:** Define what *  number to use
+*  **Feature Code:** Define what *  number to use (must be entered to assign a BLF button to a call flow)
 *  **Context:** Domain context (typically leave as is)
 *  Status: Define what currently is in use.
 *  Pin Number: Define a pin number in order to execute either mode.
@@ -41,3 +41,17 @@ In the Call Flow example below we have the name as Call Flow.  Make the Extensio
 
 
 .. _training.fusionpbx.com: https://fusionpbx.com/app/www/training_detail.php
+
+|
+|
+
+Call Flow Button Control (BLF)
+^^^^^^^^^^^^^^^^^^
+
+Call Flows can be assigned to a button of a phone to give users easy access to toggling it on and off. This requires a modification to the ``/etc/freeswitch/autoload_configs/lua.conf.xml`` file.
+
+Uncomment the ``<param name="startup-script" value="blf_subscribe.lua flow"/>`` line. and restart freeswitch.
+
+Next, make sure that the Feature Code is programmed.
+
+Finally, program a BLF button that has a value of ``flow+*<featurecode>``. For example, ``flow+*7000``.
