@@ -79,7 +79,7 @@ Used to update FusionPBX to the latest release.
  mv /usr/local/freeswitch/scripts/resources/config.lua /etc/fusionpbx
  cd /var/www
  cp -R fusionpbx fusionpbx_backup
- Change the directory''' to the FusionPBX directory
+ # Change the directory to the FusionPBX directory
  cd /var/www/fusionpbx
 
 **Update the source code** (example assumes fusionpbx is in /var/www/fusionpbx)
@@ -111,26 +111,30 @@ Used to update FusionPBX to the latest release.
 **Update Freeswitch** 
 
 | Use github to get the updated files. **You have to do this from an empty directory**.
+
+**Note:** Older versions of FusionPBX may use the `/usr/local` path instead of `/usr/share`
  
 ::
 
- cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
- rm -Rf /usr/local/freeswitch/scripts/
+ cp -R /usr/share/freeswitch/scripts /usr/share/freeswitch/scripts-bak
+ rm -Rf /usr/share/freeswitch/scripts/
  cd /usr/src
  git clone https://github.com/fusionpbx/fusionpbx.git
- cp -R /var/www/fusionpbx/resources/install/scripts /usr/local/freeswitch
- chown -R www-data:www-data /usr/local/freeswitch/scripts
- cp -R /usr/local/freeswitch/scripts-bak/resources/config.lua /usr/local/freeswitch/scripts/resources/config.lua
+ cp -R /usr/src/fusionpbx/app/switch/resources/scripts/ /usr/share/freeswitch
+ chown -R www-data:www-data /usr/share/freeswitch/scripts
 
-(The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
+ # (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
+ cp -R /usr/share/freeswitch/scripts-bak/resources/functions/config.lua /usr/share/freeswitch/scripts/resources/functions/config.lua
+
+
 
 | **Clean out this scripts directory**
 | An alternative is to remove the Lua scripts. **Only do this if you haven't customized any LUA scripts**
 
 ::
 
- cp -R /usr/local/freeswitch/scripts /usr/local/freeswitch/scripts-bak
- rm -rf /usr/local/freeswitch/scripts/*
+ cp -R /usr/share/freeswitch/scripts /usr/local/freeswitch/scripts-bak
+ rm -rf /usr/share/freeswitch/scripts/*
 
 
 | **Pull the most recent scripts down**
