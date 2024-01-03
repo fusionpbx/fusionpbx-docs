@@ -38,7 +38,7 @@ Creates a robust call center environment with agent tiers.
 
 Various reporting capabilities to see who called, when, call length, export to a csv file, and call detail statistics.
 
-`Call Flows (Day Night Mode)`_ 
+`Call Flows (Day/Night Mode)`_ 
 ---------------------
 
 Typically used with day night mode. To direct calls between two destinations. Can work with BLF on phone to show which direction call will be directed to.
