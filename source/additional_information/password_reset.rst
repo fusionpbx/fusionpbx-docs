@@ -13,49 +13,55 @@ Password Reset
 
 The current method to changing the superadmin password is actually to make a new superadmin user name and password.
 
-.. note::
-       In older installations of FusionPBX config.php is located in /var/www/fusionpbx/resources/
+1. Move the config.conf file temporarily to a different Folder. Run these commands from the server console or using SSH.
 
-1. Move the config.php file temporarily.
-
+**New Method**
 ::
- cat /etc/fusionpbx/config.php | grep password
+
+ cd /etc/fusionpbx
+ mv config.conf config.conf.backup
+
+**Old Method**
+::
+
  cd /etc/fusionpbx
  mv config.php config.backup.php
 
-|
-2. Go to the FusionPBX install login page in the web browser.  This will put FusionPBX into a recovery mode. **click next.**
-
 .. note::
+       In older installations of FusionPBX config.php is located in /var/www/fusionpbx/resources/
 
- You will type in your web browser either the ip hxxps://xxx.xxx.xxx.xxx or  the domain name hxxps://sub.domain.tld .
- 
+|
+2. In a web browser go to your server by the IP address or domain name.
 
+examples:
 
-3.  In this step, you create what you want for the new superadmin user and password.  It has to be a user and password that **does not already exist.**
+  https://x.x.x.x
+
+  https://my.domain.com
+
+3.  Create a New Superadmin user and password. The new must not be an existing username.
 
 
 .. image:: ../_static/images/fusionpbx_password_recovery.jpg
         :scale: 85%
 
 
-4. Database Host, Database Port, Database name should be pre filled.  To provide the Database Username and Database Password you will have to locate those in the config.php file that we moved eariler. The code block below shows an easy way to retrieve the database password. Once those are filled in click **next.**
+4. Database Host, Database Port, and Database name should auto-fill. To provide the Database Username and Database Password, locate them in the config.conf file that was moved earlier. The code block below shows an easy way to retrieve the database password. Once those are filled in, click next.
 
 
 ::
  
- cd /etc/fusionpbx
- cat config1.php | grep password
-        $db_password = 'databasepasswordfromconfig.php';
+ cat /etc/fusionpbx/config.conf.backup | grep password
+ $db_password = 'yourDatabasePassword';
 
 
 
 .. image:: ../_static/images/fusionpbx_database_configuration.jpg
         :scale: 85%
 
+You should now have a new config.conf file in the /etc/fusionpbx/ directory. 
 
-
-5. You should have a new config.php file in the /etc/fusionpbx/  directory.  Proceed to login to with the new superadmin user name and password.
+5. Login in with the new username and password.
 
 
 
