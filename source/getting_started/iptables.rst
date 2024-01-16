@@ -97,3 +97,7 @@ Debian / Ubuntu
 
 | ``cd /etc/iptables``
 
+Activate rules.v4 file changes
+==============================
+
+| ``iptables-restore < /etc/iptables/rules.v4``
