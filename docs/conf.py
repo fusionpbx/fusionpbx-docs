@@ -1,12 +1,5 @@
 # Configuration file for Sphinx documentation builder.
 
-import os
-import sys
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-
-from conf import *
-
 
 # -- Project information -----------------------------------------------------
 
@@ -14,7 +7,7 @@ project = 'FusionPBX'
 author = 'Multiple Authors'
 
 # -- General configuration ---------------------------------------------------
-master_doc = 'source/index'
+master_doc = '../source/index'
 
 # Add any Sphinx extension module names here, as strings.
 extensions = [
