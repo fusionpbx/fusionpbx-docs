@@ -14,7 +14,7 @@ project = 'FusionPBX'
 author = 'Multiple Authors'
 
 # -- General configuration ---------------------------------------------------
-master_doc = 'index'
+master_doc = 'source/index'
 
 # Add any Sphinx extension module names here, as strings.
 extensions = [
