@@ -1,5 +1,12 @@
 # Configuration file for Sphinx documentation builder.
 
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
+from conf import *
+
 # -- Project information -----------------------------------------------------
 
 project = 'FusionPBX'
@@ -20,5 +27,5 @@ extensions = [
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'alabaster'
-html_static_path = ['source']
+#html_theme = 'alabaster'
+#html_static_path = ['_source_']
