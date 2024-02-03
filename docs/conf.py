@@ -1,5 +1,12 @@
 # Configuration file for Sphinx documentation builder.
 
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath("../source"))
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
 
 # -- Project information -----------------------------------------------------
 
@@ -7,7 +14,7 @@ project = 'FusionPBX'
 author = 'Multiple Authors'
 
 # -- General configuration ---------------------------------------------------
-master_doc = '../source/index'
+master_doc = 'index'
 
 # Add any Sphinx extension module names here, as strings.
 extensions = [
