@@ -3,8 +3,6 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath("../source"))
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -14,7 +12,7 @@ project = 'FusionPBX'
 author = 'Multiple Authors'
 
 # -- General configuration ---------------------------------------------------
-master_doc = 'index'
+master_doc = 'source/index'
 
 # Add any Sphinx extension module names here, as strings.
 extensions = [
