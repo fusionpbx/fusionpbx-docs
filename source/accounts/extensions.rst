@@ -105,4 +105,14 @@ Advanced settings in extensions. Be sure to know what and why you are changing t
     Location of the endpoint.
     
 
+Caller ID Select
+~~~~~~~~~~~~~~~~
 
+**Extension Caller ID input type select**
+
+If you want extension caller ID name and number to be a input type text then make sure permission outbound_caller_id_select assigned to groups in Groups Manager.  By default outbound_caller_id_select is not assigned to any user groups.
+
+
+**Extension Caller ID input type select**
+
+If you want a select option for caller ID then you would want to assign outbound_caller_id_select permission to groups of your choice using Group Manager and define Caller ID information in Dialplan Destinations.
