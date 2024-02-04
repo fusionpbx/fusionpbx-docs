@@ -4,6 +4,121 @@ Version Upgrade
 
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
+
+Version 5.1 to 5.2
+^^^^^^^^^^^^^^^^^^
+
+**Upgrade from 5.1 to 5.2**
+
+
+These instructions for upgrade are also relevant to versions of FusionPBX 5.1.0 and higher. 
+
+**Release Note**
+- When this upgrade.php is run from the root, it will write the /etc/fusionpbx/config.conf file by reading information from the database and config.php and config.lua.
+
+
+
+### Run (Install) Upgrades
+
+::
+
+ cd /var/www/fusionpbx
+ git stash
+ git pull
+ git checkout 5.2
+ git branch
+ php /var/www/fusionpbx/core/upgrade/upgrade.php
+
+
+
+**Upgrade Schema -> Data Types**
+
+Make sure to login and then go to Advanced -> Upgrade -> Schema -> Data Types
+
+**Restart Services**
+
+::
+
+ systemctl restart email_queue
+ systemctl restart fax_queue
+ systemctl restart event_guard
+
+
+Note: If the fax_queue is not installed it will show an error. This is only a problem if you are using fax. If you are using fax then you will want to install the fax_queue service.
+
+::
+
+ cp /var/www/fusionpbx/app/fax_queue/resources/service/debian.service /etc/systemd/system/fax_queue.service
+ systemctl enable fax_queue
+ systemctl start fax_queue
+ systemctl daemon-reload
+
+
+**XML CDR Import**
+
+Open the file
+
+::
+
+ nano /etc/freeswitch/autoload_configs/xml_cdr.conf.xml
+
+
+Comment out the url parameter.
+
+
+::
+
+ <!-- the url to post to if blank web posting is disabled  -->
+ <!--<param name="url" value="http://127.0.0.1/app/xml_cdr/xml_cdr_import.php"/>-->
+
+ fs_cli -x 'reloadxml'
+ fs_cli -x 'reload mod_xml_cdr'
+
+
+**Install the xml_cdr Service**
+
+::
+
+- This service is optional. However it helps add the CDR records faster than the cron job that is [documented here](https://www.fusionpbx.com/app/pages/page.php?id=2291d3c8-c714-49a6-bfd9-3365885ae526)
+- Install the service
+
+**Debian or Ubuntu**
+
+::
+
+ cp /var/www/fusionpbx/app/xml_cdr/resources/service/debian.service /etc/systemd/system/xml_cdr.service
+ systemctl enable xml_cdr
+ systemctl start xml_cdr
+ systemctl daemon-reload
+
+
+**CentOS**
+
+::
+
+ cp /var/www/fusionpbx/app/xml_cdr/resources/service/debian.service /usr/lib/systemd/system/xml_cdr.service
+ systemctl daemon-reload
+ systemctl enable xml_cdr
+ systemctl start xml_cdr
+
+
+**Menu Manager**
+
+**Restore Default**
+
+- If the menu has not been customized then to update run the RESTORE DEFAULT button.
+
+**Manual Update**
+
+ To manually update the menu. Edit the default menu.
+   Remove the **Email Logs** Menu. No longer used.
+     Add the **Destination Summary** Menu
+       Title: Destination Summary
+       Link: /app/destinations/destination_summary.php
+       Parent Menu: Status
+       Groups: admin, superadmin
+
+
 Version 5.0 to 5.1
 ^^^^^^^^^^^^^^^^^^
 
