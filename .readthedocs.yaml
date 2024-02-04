@@ -15,6 +15,8 @@ build:
 sphinx:
   configuration: source/conf.py
   builder: html
+  extra_requirements:
+    - sphinx_rtd_theme
     
 # We recommend specifying your dependencies to enable reproducible builds:
 # https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
