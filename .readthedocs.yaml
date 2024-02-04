@@ -13,7 +13,6 @@ build:
 
 # Add Python requirements
 python:
-  version: 3.8
   extra_requirements:
     - sphinx_rtd_theme
 
