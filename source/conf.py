@@ -95,8 +95,8 @@ def pygments_monkeypatch_style(mod_name, cls):
     STYLE_MAP[mod_name] = mod_name + "::" + cls_name
 
 
-pygments_monkeypatch_style("my_fancy_style", MyFancyStyle)
-pygments_style = "my_fancy_style"
+#pygments_monkeypatch_style("my_fancy_style", MyFancyStyle)
+#pygments_style = "my_fancy_style"
 # END MONKEY-PATCH
 
 # General information about the project.
