@@ -46,6 +46,8 @@ You should then see and follow the prompts.
  Domain Name: domain.tld
  Email Address: support@fusionpbx.com
 
+Note you can enter multiple hostnames under the same domain such as `pbx1.domain.tld pbx2.domain.tld pbx3.domain.tld`.
+
 After that, you should see the following output.
 
 ::
@@ -193,46 +195,54 @@ Before setting up multiple domains, make sure you have SSL working on your main 
 
 **Create shared nginx host file for all domains**
 
-``vim /etc/nginx/includes/fusionpbx-default-config``
+``mkdir -p /etc/nginx/includes && vim /etc/nginx/includes/fusionpbx-default-config``
  
 Paste the code below into the file
 
 ::
-
+ 
  ssl_protocols           TLSv1 TLSv1.1 TLSv1.2;
  ssl_ciphers             HIGH:!ADH:!MD5:!aNULL;
-
- #letsencrypt
- location /.well-known/acme-challenge {
-   root /var/www/letsencrypt;
+ #ssl_dhparam
+ 
+ #redirect letsencrypt to dehydrated
+ location ^~ /.well-known/acme-challenge {
+ default_type "text/plain";
+ auth_basic "off";
+ alias /var/www/dehydrated;
  }
-
+ 
  #REST api
  if ($uri ~* ^.*/api/.*$) {
-   rewrite ^(.*)/api/(.*)$ $1/api/index.php?rewrite_uri=$2 last;
-   break;
+ rewrite ^(.*)/api/(.*)$ $1/api/index.php?rewrite_uri=$2 last;
+ break;
  }
-
+ 
+ #message media
+ rewrite "^/app/messages/media/(.*)/(.*)" /app/messages/message_media.php?id=$1&action=download last;
+ 
  #algo
  rewrite "^.*/provision/algom([A-Fa-f0-9]{12})\.conf" /app/provision/?mac=$1&file=algom%7b%24mac%7d.conf last;
-
+ 
  #mitel
  rewrite "^.*/provision/MN_([A-Fa-f0-9]{12})\.cfg" /app/provision/index.php?mac=$1&file=MN_%7b%24mac%7d.cfg last;
  rewrite "^.*/provision/MN_Generic.cfg" /app/provision/index.php?mac=08000f000000&file=MN_Generic.cfg last;
-
- #grandstriam
+ 
+ #grandstream
  rewrite "^.*/provision/cfg([A-Fa-f0-9]{12})(\.(xml|cfg))?$" /app/provision/?mac=$1;
-
+ rewrite "^.*/provision/pb/([A-Fa-f0-9]{12})/phonebook\.xml$" /app/provision/?mac=$1&file=phonebook.xml;
+ #grandstream-wave softphone by ext because Android doesn't pass MAC.
+ rewrite "^.*/provision/([0-9]{5})/cfg([A-Fa-f0-9]{12}).xml$" /app/provision/?ext=$1;
+ 
  #aastra
  rewrite "^.*/provision/aastra.cfg$" /app/provision/?mac=$1&file=aastra.cfg;
  #rewrite "^.*/provision/([A-Fa-f0-9]{12})(\.(cfg))?$" /app/provision/?mac=$1 last;
-
- #yealink common
+ 
+ #yealink
+ #rewrite "^.*/provision/(y[0-9]{12})(\.cfg|\.boot)?$" /app/provision/index.php?file=$1$2;
  rewrite "^.*/provision/(y[0-9]{12})(\.cfg)?$" /app/provision/index.php?file=$1.cfg;
-
- #yealink mac
  rewrite "^.*/provision/([A-Fa-f0-9]{12})(\.(xml|cfg))?$" /app/provision/index.php?mac=$1 last;
-
+ 
  #polycom
  rewrite "^.*/provision/000000000000.cfg$" "/app/provision/?mac=$1&file={%24mac}.cfg";
  #rewrite "^.*/provision/sip_330(\.(ld))$" /includes/firmware/sip_330.$2;
@@ -240,42 +250,60 @@ Paste the code below into the file
  rewrite "^.*/provision/([A-Fa-f0-9]{12})-sip.cfg$" /app/provision/?mac=$1&file=sip.cfg;
  rewrite "^.*/provision/([A-Fa-f0-9]{12})-phone.cfg$" /app/provision/?mac=$1;
  rewrite "^.*/provision/([A-Fa-f0-9]{12})-registration.cfg$" "/app/provision/?mac=$1&file={%24mac}-registration.cfg";
-
+ rewrite "^.*/provision/([A-Fa-f0-9]{12})-directory.xml$" "/app/provision/?mac=$1&file={%24mac}-directory.xml";
+ 
  #cisco
  rewrite "^.*/provision/file/(.*\.(xml|cfg))" /app/provision/?file=$1 last;
-
+ 
  #Escene
  rewrite "^.*/provision/([0-9]{1,11})_Extern.xml$"       "/app/provision/?ext=$1&file={%24mac}_extern.xml" last;
  rewrite "^.*/provision/([0-9]{1,11})_Phonebook.xml$"    "/app/provision/?ext=$1&file={%24mac}_phonebook.xml" last;
-
+ 
+ #Vtech
+ rewrite "^.*/provision/VCS754_([A-Fa-f0-9]{12})\.cfg$" /app/provision/?mac=$1;
+ rewrite "^.*/provision/pb([A-Fa-f0-9-]{12,17})/directory\.xml$" /app/provision/?mac=$1&file=directory.xml;
+ 
  access_log /var/log/nginx/access.log;
  error_log /var/log/nginx/error.log;
-
+ 
  client_max_body_size 80M;
  client_body_buffer_size 128k;
-
+ 
  location / {
-   root /var/www/fusionpbx;
-   index index.php;
+ root /var/www/fusionpbx;
+ index index.php;
  }
-
+ 
  location ~ \.php$ {
-   fastcgi_pass unix:/var/run/php/php7.1-fpm.sock;
-   #fastcgi_pass 127.0.0.1:9000;
-   fastcgi_index index.php;
-   include fastcgi_params;
-   fastcgi_param   SCRIPT_FILENAME /var/www/fusionpbx$fastcgi_script_name;
+ fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+ #fastcgi_pass 127.0.0.1:9000;
+ fastcgi_index index.php;
+ include fastcgi_params;
+ fastcgi_param   SCRIPT_FILENAME /var/www/fusionpbx$fastcgi_script_name;
  }
-
- # Disable viewing .htaccess & .htpassword & .db
+ 
+ # Allow the upgrade routines to run longer than normal
+ location = /core/upgrade/index.php {
+ fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+ #fastcgi_pass 127.0.0.1:9000;
+ fastcgi_index index.php;
+ include fastcgi_params;
+ fastcgi_param   SCRIPT_FILENAME /var/www/fusionpbx$fastcgi_script_name;
+ fastcgi_read_timeout 15m;
+ }
+ 
+ # Disable viewing .htaccess & .htpassword & .db & .git
  location ~ .htaccess {
-   deny all;
+ deny all;
  }
  location ~ .htpassword {
-   deny all;
+ deny all;
  }
  location ~^.+.(db)$ {
-   deny all;
+ deny all;
+ }
+ location ~ /.git/ {
+ deny all;
  }
 
 
@@ -284,14 +312,9 @@ Paste the code below into the file
 ``touch /etc/nginx/includes/fusionpbx-domains``
 
 
-**make default file read configs for additional domains**
+**Make default file read configs for additional domains**
 
-``vim /etc/nginx/sites-available/fusionpbx``
-
-
-Add the line below at the very end of the file after the trailing "}"
-
-``include /etc/nginx/includes/fusionpbx-domains;``
+``echo "include /etc/nginx/includes/fusionpbx-domains;" >> /etc/nginx/sites-available/fusionpbx``
 
 
 By now you are all set to start using SSL on multiple domains for your FusionPBX installation.
@@ -299,58 +322,27 @@ By now you are all set to start using SSL on multiple domains for your FusionPBX
 
 **Follow the steps below everytime your add a new domain**
 
-Create a conf file for the new domain (repalce example.com with your own domain)
+Add the new domain to a new line at the bottom of
 
-``vim /etc/letsencrypt/configs/example.com.conf``
-
-
-Paste this into the .conf file (don't forget to change the defaults, especially the domain)
-
-::
-
- # the domain we want to get the cert for;
- # technically it's possible to have multiple of this lines, but it only worked
- # with one domain for me, another one only got one cert, so I would recommend
- # separate config files per domain.
- domains = my-domain
-
- # increase key size
- rsa-key-size = 2048 # Or 4096
-
- # the current closed beta (as of 2015-Nov-07) is using this server
- server = https://acme-v01.api.letsencrypt.org/directory
-
- # this address will receive renewal reminders
- email = my-email
-
- # turn off the ncurses UI, we want this to be run as a cronjob
- text = True
-
- # authenticate by placing a file in the webroot (under .well-known/acme-upatechallenge/)
- # and then letting LE fetch it
- authenticator = webroot
- webroot-path = /var/www/letsencrypt/
+``vim /etc/dehydrated/domains.txt``
 
 
-Obtain the cert from Let's Encrypt (again, replce example.com with your domain)
+Obtain the cert from Let's Encrypt using Dehydrated
 
-::
-
- cd /opt/letsencrypt
- ./letsencrypt-auto --config /etc/letsencrypt/configs/example.com.conf certonly
+``dehydrated -c``
 
 
 **Set cert to auto renew with other domains**
 
+``vim /etc/crontab``
+ 
+ 
+Add the following lines at the bottom of the crontab file
+
 ::
 
- cd /etc/fusionpbx
- vim renew-letsencrypt.sh
- 
- 
-Add the line below right below where it says "cd /opt/letsencrypt/" (again replace example.com with your domain)
-
-``./certbot-auto --config /etc/letsencrypt/configs/example.com.conf certonly --non-interactive --keep-until-expiring --agree-tos --quiet``
+ 0 1 * * 0  root  /usr/local/sbin/dehydrated -c
+ 5 1 * * 0  root  systemctl reload nginx
 
 
 Finally add your new domain to be loaded
@@ -363,19 +355,22 @@ Paste the below at the very end of the file (again replace example.com with your
 ::
 
  server {
-         listen 443;
+         listen 443 ssl;
          server_name example.com;
-         ssl                     on;
-         ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
-         ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+         ssl_certificate /etc/dehydrated/certs/example.com/fullchain.pem;
+         ssl_certificate_key /etc/dehydrated/certs/example.com/privkey.pem;
 
          include /etc/nginx/includes/fusionpbx-default-config;
  }
  
  
+Test your new NGINX config
+
+``nginx -t``
+
 You're all set! Restart nginx for changes to take effect
- 
- ``service nginx restart``
+
+ ``systemctl nginx restart``
 
 
 .. _link: https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
