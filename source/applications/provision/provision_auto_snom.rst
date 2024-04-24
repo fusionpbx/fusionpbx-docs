@@ -77,4 +77,13 @@ With the DHCP information added, the provisioning template will be applied to th
 
 
 
+Using DHCP Option 67 to Set the VLAN
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+One method of getting phones to switch to the voice vlan is through the use of DHCP.
+
+Snom looks for option 132 (string) for the VLAN ID that it should be on.
+
+When a phone boots, if you have option 132 set to "xxx" where xxx is your vlan id, the phone will release it's address lease and request a new one with it's frames tagged with the vlan ID.
+
+This option is needed on the default vlan DHCP scope to make the phone switch.
