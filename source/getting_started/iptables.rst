@@ -86,6 +86,10 @@ Save Changes
 
 Debian / Ubuntu
 
+| ``iptables-save > /etc/iptables/rules.v4``
+
+or
+
 | ``apt-get install iptables-persistent``
 | ``service iptables-persistent save``
 | ``dpkg-reconfigure iptables-persistent``
