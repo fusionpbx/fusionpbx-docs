@@ -21,6 +21,7 @@ Auto provisioning is disabled by default. This is to give a chance to secure pro
   applications/provision/provision_auto_htek.rst
   applications/provision/provision_auto_zoiper.rst
   applications/provision/provision_auto_snom.rst
+  applications/provision/provision_auto_avaya.rst
 
 
 
