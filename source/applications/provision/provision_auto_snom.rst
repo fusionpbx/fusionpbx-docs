@@ -4,9 +4,26 @@ SNOM
 
 
 
-From your FusionPBX Install
+Snom Provisioning URL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+In versions of FusionPBX older than 5.3, Snom phones used a different provisioning URL. This has been changed in version 5.3 to make the URL compatible with other vendors.
+
+The new method requires changes to your nginx config file to use.
+
+Old Method: https://voice.example.com/app/provision/index.php?mac=00041326B92B
+
+New Method: https://voice.example.com/app/provision/
+
+This URL can also have HTTP Auth credentials added to it by doing the following:
+
+https://admin:password@voice.example.com/app/provision/
+
+
+
+
+From your FusionPBX Install
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. From the Accounts menu, select extensions and select an extension to be provisioned. If no extension exists, create one.
 
@@ -24,60 +41,54 @@ From your FusionPBX Install
 
         The provisioning template can be tested by opening up a web browser and entering the provisioning url. The provisioning url is:
 
-http://voice.example.com/fusionpbx/app/provision/index.php?mac=00041326B92B
+http://voice.example.com/app/provision/index.php?mac=00041326B92B
 
 Replace the mac address and domain with your own. 
 
 
-From your SNOM phone
-^^^^^^^^^^^^^^^^^^^^^^
+
+
+Manual Method via Web Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Snom like most IP phone has a web admin interface to configure and monitor the phone. Usually, it's best to be up-to-date with firmware.  If you have issues with provisioning check that the device is up-to-date.  Sometimes 1 or 2 versions back are needed also depending on firmware bugs.
 
-1. To find the IP address of the phone, press the menu button on the phone (on the 7XX or 8XX series, or the settings button on the 3xx series) and press "4" for network then "1" for IP Settings and at the DHCP screen, press "X" for no. The IP address will appear on the screen.
+1. Type the IP address into your web browser and select "Setup > Advanced" from the left menu and select the "Update" tab from the top.
 
-2. Type the IP address into your web browser and select "Setup > Advanced" from the left menu and select the "Update" tab from the top.
+2. Under "Update Policy", select "Update Automatically"
 
-3. Under "Update Policy", select "Update Automatically"
+3. Under "Setting URL" add in the setting URL as:
 
-4. Under "Setting URL" add in the setting URL as:
+https://voice.example.com/app/provision/
 
-http://www.example.com/app/provision/index.php?mac={mac}
+Note: The hostname should be replaced with your FusionPBX domain name.
 
-The hostname should be replaced with your FusionPBX domain name. Note that we have replaced the domain name with {mac}. This is a special Snom variable to put the phones Mac address in without having to specify it.
+4. Select the "Apply" button.
 
-5. Select the "Apply" button and then the "Reboot" button and confirm to reboot the phone.
+5. If using HTTP Auth, go to "Setup > Advanced > QoS / Security"
 
-When the phone reboots, it will be provisioned with your appropriate settings 
+In HTTP Client, enter the username found in `http_auth_username` and the password found in `http_auth_password`.
+
+6. Click the "Reboot" button and confirm to reboot the phone.
+
+When the phone reboots, it will be provisioned with your appropriate settings.
+
 
 
 
 Using DHCP Option 66 to Deploy the Phone
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-DHCP is an excellent option for phones deployed in a local office. Your Snom phone can be removed from its box and simply plugged into the network. All the setting will be retrieved from the server. Be careful to not open up your FusionPBX to the internet though. Someone who knows your url and a MAC address of a phone can easily retrieve your phone settings including its password.
+DHCP is an excellent option for phones deployed in a local office. Your Snom phone can be removed from its box and simply plugged into the network. All the setting will be retrieved from the server. Be careful when exposing your FusionPBX server to the internet. You should always have the `http_auth_username` and `http_auth_password` default settings enabled and with strong settings.
 
-Each DHCP Server is different. At Helia we use Cradlepoint MBR 1400 and Cradlepoint MBR 95. Each of these allow you to setup DHCP option 66. Setting up DHCP directly on the voice server is also an option.
+Your DHCP option should look something like this:
 
-1. On the Cradlepoint MBR 1400 router, select "Network Settings" and " WiFi / Local Networks".
-
-2. Select the appropriate "Local IP Networks", and select the "Edit" button.
-
-3. On the "Local Network Editor" window, select the "DHCP Server" tab
-
-4. Ensure the "DHCP Enable" checkbox is checked and click the "Add" button to add an option.
-
-5. For "option" select "66 Server Name" and for the value, add the provisioning URL:
-
-hxxp://www.example.com/app/provision/index.php?mac={mac} (Be sure to replace hxxp:// with http://)
-
-The hostname should be replaced with your FusionPBX domain name. Note that we have replaced the domain name with {mac}. This is a special Snom variable to put the phones Mac address in without having to specify it.
-
-With the DHCP information added, the provisioning template will be applied to the phone next time it fetches a new IP address - usually on its next reboot. 
+https://http_auth_username:http_auth_password@voice.example.com/app/provision/
 
 
 
-Using DHCP Option 67 to Set the VLAN
+
+Using DHCP Option 132 to Set the VLAN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 One method of getting phones to switch to the voice vlan is through the use of DHCP.
