@@ -4,6 +4,55 @@ Version Upgrade
 
 Version Upgrade can take several steps to perform. Below will show how to upgrade from specific versions.
 
+Version 5.2 to 5.3
+^^^^^^^^^^^^^^^^^^
+
+**Upgrade from 5.2 to 5.3**
+
+
+These instructions for upgrade are also relevant to versions of FusionPBX 5.2.0 and higher. 
+
+### Run (Install) Upgrades
+
+::
+
+ cd /var/www/fusionpbx
+ git stash
+ git pull
+ git checkout 5.3
+ git branch
+ php /var/www/fusionpbx/core/upgrade/upgrade.php
+
+
+
+**Upgrade Schema -> Data Types**
+
+Make sure to login and then go to Advanced -> Upgrade -> Schema -> Data Types
+
+**Restart Services**
+
+::
+
+ systemctl restart email_queue
+ systemctl restart fax_queue
+ systemctl restart event_guard
+
+
+**background_color_enabled**
+
+This is a new setting to enable or disable the background color. If you have a custom background image, then you may want to set this **value** to **false** and enabled to set it to true.
+
+
+**Install Transcribe and Speech (Optional)**
+
+::
+
+ cd /var/www/fusionpbx/app
+ git clone https://github.com/fusionpbx/fusionpbx-app-transcribe.git transcribe
+ git clone https://github.com/fusionpbx/fusionpbx-app-speech.git speech
+ chown -R www-data:www-data /var/www/fusionpbx
+ php /var/www/fusionpbx/core/upgrade/upgrade.php
+
 
 Version 5.1 to 5.2
 ^^^^^^^^^^^^^^^^^^
