@@ -53,6 +53,17 @@ This is a new setting to enable or disable the background color. If you have a c
  chown -R www-data:www-data /var/www/fusionpbx
  php /var/www/fusionpbx/core/upgrade/upgrade.php
 
+Transcribe details need to be moved from the default settings category voicemail to transcribe.
+- openai - easy to setup enable setting and set the api_key
+- watson - requires api_url in the transcribe category
+- google - requires api_url
+- azure - language en-US api_url used for the region
+
+Speech is defined in the default settings category speech this feature is used for Text-to-Speech
+- Make sure to set enable the settings
+- openai
+- elevenlabs
+
 
 Version 5.1 to 5.2
 ^^^^^^^^^^^^^^^^^^
