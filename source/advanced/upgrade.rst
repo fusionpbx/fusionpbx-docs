@@ -33,9 +33,9 @@ Go to the menu then click on Advanced and then Upgrade. This tool allows you to 
 
 ::
 
- * cd /var/www/fusionpbx 
+ cd /var/www/fusionpbx 
  git pull
- chown -R www-data:www-data *
+ chown -R www-data:www-data
 
 
 | **Back to the GUI**
