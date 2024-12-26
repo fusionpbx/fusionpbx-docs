@@ -5,7 +5,7 @@ Dashboard
 Quickly access information and tools related to your account.  Depending on the user permissions, the user may see less options on this screen.
 
 .. image:: ../_static/images/home/fusionpbx_home_dashboard.png
-        :scale: 50%
+        :scale: 35%
 
 
 * **Voicemail:** New and total voicemails related to the users voicemail box.  A user can be assigned to more than 1 voicemail box.
