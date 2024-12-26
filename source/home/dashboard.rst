@@ -4,7 +4,7 @@ Dashboard
 
 Quickly access information and tools related to your account.  Depending on the user permissions, the user may see less options on this screen.
 
-.. image:: ../_static/images/home/fusionpbx_home_dashboard.jpg
+.. image:: ../_static/images/home/fusionpbx_home_dashboard.png
         :scale: 85%
 
 
