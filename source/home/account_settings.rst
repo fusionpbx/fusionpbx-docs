@@ -5,7 +5,7 @@ Account Settings
 
 
 
-.. image:: ../_static/images/home/fusionpbx_account_settings1.jpg
+.. image:: ../_static/images/home/fusionpbx_account_settings2.jpg
         :scale: 85%
 
 
