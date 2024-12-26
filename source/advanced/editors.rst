@@ -64,4 +64,4 @@ XML Editor
 
 
 
-.. _Editors Default Settings: /en/latest/advanced/default_settings.html#id10
+.. _Editors Default Settings: /en/latest/advanced/default_settings.html#id9
