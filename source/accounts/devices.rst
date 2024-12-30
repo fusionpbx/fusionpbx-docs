@@ -5,7 +5,7 @@ Devices
 Used to define the information needed to assign SIP accounts and keys to provision the devices. 
 
 * Click the plus icon to add a device.
-* Click the edit pencil icon to edit a device.
+* Click a device to edit it.
 
 .. image:: ../_static/images/devices/fusionpbx_devices.png
         :scale: 85%
