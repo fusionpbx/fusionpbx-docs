@@ -7,7 +7,7 @@ Used to define the information needed to assign SIP accounts and keys to provisi
 * Click the plus icon to add a device.
 * Click the edit pencil icon to edit a device.
 
-.. image:: ../_static/images/devices/fusionpbx_devices.jpg
+.. image:: ../_static/images/devices/fusionpbx_devices.png
         :scale: 85%
 
 
@@ -20,7 +20,7 @@ Used to define the information needed to assign SIP accounts and keys to provisi
 * Edit other fields as needed.
 * Click Save
 
-.. image:: ../_static/images/devices/fusionpbx_device_settings.jpg
+.. image:: ../_static/images/devices/fusionpbx_device_settings.png
         :scale: 85%
 
 * To view steps on how to configure other devices to provision `click here for the provisioning section <http://docs.fusionpbx.com/en/latest/applications/provision.html>`_.
@@ -31,7 +31,7 @@ Device Vendors
 
 Vendors can be added or removed to help fine tune the devices page when configuring specific vendor phones.
 
-.. image:: ../_static/images/devices/fusionpbx_accounts_devices_vendors.jpg
+.. image:: ../_static/images/devices/fusionpbx_accounts_devices_vendors.png
         :scale: 85%
 
 
@@ -42,6 +42,6 @@ Define a set of keys as a profile. Any changes to the profile effect all devices
 
 
 
-.. image:: ../_static/images/devices/fusionpbx_accounts_devices_profiles.jpg
+.. image:: ../_static/images/devices/fusionpbx_accounts_devices_profiles.png
         :scale: 85%
 
