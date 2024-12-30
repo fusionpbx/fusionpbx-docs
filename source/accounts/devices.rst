@@ -8,7 +8,7 @@ Used to define the information needed to assign SIP accounts and keys to provisi
 * Click a device to edit it.
 
 .. image:: ../_static/images/devices/fusionpbx_devices.png
-        :scale: 85%
+        :scale: 60%
 
 
 * Enter the mac address of the phone.
@@ -21,7 +21,7 @@ Used to define the information needed to assign SIP accounts and keys to provisi
 * Click Save
 
 .. image:: ../_static/images/devices/fusionpbx_device_settings.png
-        :scale: 85%
+        :scale: 60%
 
 * To view steps on how to configure other devices to provision `click here for the provisioning section <http://docs.fusionpbx.com/en/latest/applications/provision.html>`_.
 
@@ -32,7 +32,7 @@ Device Vendors
 Vendors can be added or removed to help fine tune the devices page when configuring specific vendor phones.
 
 .. image:: ../_static/images/devices/fusionpbx_accounts_devices_vendors.png
-        :scale: 85%
+        :scale: 60%
 
 
 Profiles
@@ -43,5 +43,5 @@ Define a set of keys as a profile. Any changes to the profile effect all devices
 
 
 .. image:: ../_static/images/devices/fusionpbx_accounts_devices_profiles.png
-        :scale: 85%
+        :scale: 60%
 
