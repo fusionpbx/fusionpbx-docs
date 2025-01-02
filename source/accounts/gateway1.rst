@@ -26,14 +26,8 @@ Select **Accounts** from the drop-down list and click on **Gateways**.
         :scale: 85%
 
 
-.. image:: ../_static/images/fusionpbx_gateway1.jpg
-        :scale: 85%
-
-
-Click the 
-
-.. image:: ../_static/images/plus.png
-        :scale: 85%
+.. image:: ../_static/images/accounts/fusionpbx_gateway1.png
+        :scale: 60%
 
 button on the right. Enter the gateway information below and Click on **Save** once complete.
 
@@ -50,5 +44,5 @@ button on the right. Enter the gateway information below and Click on **Save** o
 
 |
 
-.. image:: ../_static/images/fusionpbx_gateway2.jpg
-        :scale: 85%
+.. image:: ../_static/images/accounts/fusionpbx_gateway2.png
+        :scale: 60%
