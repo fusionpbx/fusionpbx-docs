@@ -29,7 +29,7 @@ Select **Accounts** from the drop-down list and click on **Gateways**.
 .. image:: ../_static/images/accounts/fusionpbx_gateway1.png
         :scale: 60%
 
-button on the right. Enter the gateway information below and Click on **Save** once complete.
+Click the **ADD** button on the right. Enter the gateway information below and Click on **Save** once complete.
 
 ::
 
