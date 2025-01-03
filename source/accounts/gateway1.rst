@@ -22,8 +22,8 @@ Gateways provide access into other voice networks. These can be voice providers 
 
 Select **Accounts** from the drop-down list and click on **Gateways**. 
 
-.. image:: ../_static/images/fusionpbx_gateway.jpg
-        :scale: 85%
+.. image:: ../_static/images/accounts/fusionpbx_gateway.png
+        :scale: 70%
 
 
 .. image:: ../_static/images/accounts/fusionpbx_gateway1.png
