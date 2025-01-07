@@ -337,10 +337,10 @@ Obtain the cert from Let's Encrypt (again, replace example.com with your domain)
 ::
 
  cd /etc/dehydrated/certs
- ./letsencrypt-auto --config /etc/dehydrated/certs/example.com.conf certonly
+ /usr/local/sbin/dehydrated -c -f /etc/dehydrated/config
 
 
-**Set cert to auto renew with other domains**
+**Set cert to auto-renew with other domains**
 
 ::
 
@@ -350,7 +350,9 @@ Obtain the cert from Let's Encrypt (again, replace example.com with your domain)
  
 Add the line below right below where it says "cd /opt/letsencrypt/" (again replace example.com with your domain)
 
-``./certbot-auto --config /etc/letsencrypt/configs/example.com.conf certonly --non-interactive --keep-until-expiring --agree-tos --quiet``
+
+ /usr/local/sbin/dehydrated -c -f /etc/dehydrated/config
+ /usr/sbin/service nginx restart
 
 
 Finally, add your new domain to be loaded
