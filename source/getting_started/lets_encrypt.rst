@@ -8,20 +8,20 @@ Let's Encrypt is one of the most recent and widely used form of free SSL securit
 Dehydrated (Recommended)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FusionPBX has an option to easliy and quickly install SSL with Let's Encrypt using **letsencrypt.sh**  With this script you can choose either to request an SSL certificate with wildcard (*.domain.tld) or hostnames (domain.tld).
+FusionPBX has an option to easily and quickly install SSL with Let's Encrypt using **letsencrypt.sh**  With this script you can choose either to request an SSL certificate with wildcard (*.domain.tld) or hostnames (domain.tld).
 
 The letsencrypt.sh will do the following:
 
 * Download `dehydrated <https://github.com/lukas2511/dehydrated>`_.
 * Request an SSL certificate from `Let's Encrypt <https://letsencrypt.com>`_.
 * Configure NGINX to use the SSL certificate.
-* Combine and place SSL certificate in the proper `FreeSWITCH <https://freeswitch.org/confluence/display/FREESWITCH/FreeSWITCH+Explained>`_ directory for using TLS.
-* Test and make sure the SSL cert works and outputs if sucessful.
+* Combine and place the SSL certificate in the proper `FreeSWITCH <https://freeswitch.org/confluence/display/FREESWITCH/FreeSWITCH+Explained>`_ directory for using TLS.
+* Test and make sure the SSL cert works and outputs if successful.
 
 Using letsencrypt.sh
 ---------------------
 
-With letsencrypt.sh you have the choice of creating an SSL certificate for a single domain (domain.tld), multiple sub domains(sub.domain.tld, sub1.domain.tld, etc.domain.tld) or wildcard (*.domain.tld).  The easy way however is using the hostname method. 
+With letsencrypt.sh you have the choice of creating an SSL certificate for a single domain (domain.tld), multiple subdomains (sub.domain.tld, sub1.domain.tld, etc.domain.tld) or wildcard (*.domain.tld).  The easy way however is using the hostname method. 
 
 Hostname
 ~~~~~~~~~~
@@ -199,7 +199,7 @@ Paste the code below into the file
 
 ::
 
- ssl_protocols           TLSv1 TLSv1.1 TLSv1.2;
+ ssl_protocols           TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
  ssl_ciphers             HIGH:!ADH:!MD5:!aNULL;
 
  #letsencrypt
@@ -297,9 +297,9 @@ Add the line below at the very end of the file after the trailing "}"
 By now you are all set to start using SSL on multiple domains for your FusionPBX installation.
 
 
-**Follow the steps below everytime your add a new domain**
+**Follow the steps below every time you add a new domain**
 
-Create a conf file for the new domain (repalce example.com with your own domain)
+Create a conf file for the new domain (replace example.com with your own domain)
 
 ``vim /etc/letsencrypt/configs/example.com.conf``
 
@@ -309,9 +309,9 @@ Paste this into the .conf file (don't forget to change the defaults, especially 
 ::
 
  # the domain we want to get the cert for;
- # technically it's possible to have multiple of this lines, but it only worked
+ # technically it's possible to have multiple of these lines, but it only worked
  # with one domain for me, another one only got one cert, so I would recommend
- # separate config files per domain.
+ # Separate config files per domain.
  domains = my-domain
 
  # increase key size
@@ -332,12 +332,12 @@ Paste this into the .conf file (don't forget to change the defaults, especially 
  webroot-path = /var/www/letsencrypt/
 
 
-Obtain the cert from Let's Encrypt (again, replce example.com with your domain)
+Obtain the cert from Let's Encrypt (again, replace example.com with your domain)
 
 ::
 
- cd /opt/letsencrypt
- ./letsencrypt-auto --config /etc/letsencrypt/configs/example.com.conf certonly
+ cd /etc/dehydrated/certs
+ ./letsencrypt-auto --config /etc/dehydrated/certs/example.com.conf certonly
 
 
 **Set cert to auto renew with other domains**
@@ -353,7 +353,7 @@ Add the line below right below where it says "cd /opt/letsencrypt/" (again repla
 ``./certbot-auto --config /etc/letsencrypt/configs/example.com.conf certonly --non-interactive --keep-until-expiring --agree-tos --quiet``
 
 
-Finally add your new domain to be loaded
+Finally, add your new domain to be loaded
 
 ``vim /etc/nginx/includes/fusionpbx-domains``
 
@@ -363,11 +363,11 @@ Paste the below at the very end of the file (again replace example.com with your
 ::
 
  server {
-         listen 443;
+         listen 443 ssl;
          server_name example.com;
          ssl                     on;
-         ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
-         ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+         ssl_certificate /etc/dehydrated/certs/example.com/fullchain.pem;
+         ssl_certificate_key /etc/dehydrated/certs/example.com/privkey.pem;
 
          include /etc/nginx/includes/fusionpbx-default-config;
  }
