@@ -19,9 +19,13 @@ Voicemail Transcription in FusionPBX 5.3
   - SSH into your server and run the following commands::
 
     cd /var/www/fusionpbx/app
+
     git clone https://github.com/fusionpbx/fusionpbx-app-transcribe.git transcribe
+
     git clone https://github.com/fusionpbx/fusionpbx-app-speech.git speech
+
     chown -R www-data:www-data /var/www/fusionpbx
+
     php /var/www/fusionpbx/core/upgrade/upgrade.php
 
 - Reload the FusionPBX Interface
