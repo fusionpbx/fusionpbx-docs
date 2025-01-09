@@ -2,8 +2,8 @@
 Users
 ************
 
-.. image:: ../_static/images/accounts/fusionpbx_users_4_5.jpg
-        :scale: 85%
+.. image:: ../_static/images/accounts/fusionpbx_users.png
+        :scale: 60%
 
 
 Define the users information to login to the web interface.

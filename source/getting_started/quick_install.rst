@@ -71,7 +71,7 @@ If using **Debian on Proxmox LXC** containers please run the following **BEFORE*
 
 |
 
-.. image:: ../_static/images/ilogin.jpg
+.. image:: ../_static/images/ilogin.png
         :scale: 80%
 |
 
