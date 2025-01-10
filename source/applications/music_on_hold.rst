@@ -51,3 +51,52 @@ Music on Hold Tips
 
   local_stream://domain_name/custom
 
+
+#Setting Up Custom Music on Hold in FusionPBX 5.3
+
+Step 1: Add Music on Hold​
+Log in to the FusionPBX web interface.
+
+Navigate to Applications > Music On Hold.
+
+Click the Add button in the top-right corner of the screen.
+
+If you want to upload a file to an existing category, select that category. Otherwise, click the +button to create a new MOH category.
+
+Enter a name for the new category (if creating one).
+
+Leave the dropdown set to "Default."
+
+Select a file to upload.
+
+Click the Upload button. (Large files may take a moment to upload.)
+
+Your new category and file will appear in the list.
+
+Step 2: Reload the Music on Hold Module (for New Categories)​
+If you created a new category, follow these steps:
+
+SSH into your server and run the following commands:
+
+fs_cli  This command opens the FreeSwitch CLI
+
+reload mod_local_stream This command reloads the new category
+
+Press Ctrl+D to exit the CLI.
+
+Type exit to close the SSH session.
+
+Step 3: Assign Custom MOH to an Extension​
+Navigate to Accounts > Extensions.
+
+Select the extension you want to apply the custom MOH to.
+
+Find the "Hold Music" option and select your new custom group.
+
+Click Save to save your changes.
+
+Step 4: Verify Custom MOH​
+Test your custom MOH by calling the extension and placing it on hold.
+
+You should hear your custom MOH playing.
+
