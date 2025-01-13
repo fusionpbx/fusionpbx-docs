@@ -1,72 +1,75 @@
-*****************
+************************************************
 Voicemail Transcription in FusionPBX 5.3
-*****************
+************************************************
 
-- Log in to FusionPBX
+Overview
+========
+This document provides a step-by-step guide for setting up the email transcription service in FusionPBX version 5.3. It supports various service providers such as OpenAI, Google, Azure, or a custom solution.
 
-  - Access the FusionPBX administrative interface.
+Step-by-step
+++++++++++++
+1. **Log in to FusionPBX**
 
-- Check for the "Transcribe" Option
+   * Access the FusionPBX administrative interface.
 
-  - Navigate to Advanced > Default Settings.
+2. **Check for the "Transcribe" Option**
 
-  - Use the drop-down filter to select "Transcribe".
+   * Navigate to **Advanced** > **Default Settings**.
+   * Use the drop-down filter to select "**Transcribe**".
+   * If the "**Transcribe**" option is already available, skip to step **5**. Otherwise, proceed to step **3**.
 
-  - If the "Transcribe" option exists, skip to step 5. Otherwise, continue to step 3.
+3. **Install the Transcribe and Speech Apps**
 
-- Install the Transcribe and Speech Apps
+   * SSH into your server and run the following commands:
 
-  - SSH into your server and run the following commands::
+     .. code-block:: console
 
-    cd /var/www/fusionpbx/app
+        cd /var/www/fusionpbx/app
+        git clone https://github.com/fusionpbx/fusionpbx-app-transcribe.git transcribe
+        git clone https://github.com/fusionpbx/fusionpbx-app-speech.git speech
+        chown -R www-data:www-data /var/www/fusionpbx
+        php /var/www/fusionpbx/core/upgrade/upgrade.php
 
-    git clone https://github.com/fusionpbx/fusionpbx-app-transcribe.git transcribe
+4. **Reload the FusionPBX Interface**
 
-    git clone https://github.com/fusionpbx/fusionpbx-app-speech.git speech
+   * Navigate back to **Advanced** > **Default Settings**.
+   * The "**Transcribe**" section should now be available.
 
-    chown -R www-data:www-data /var/www/fusionpbx
+5. **Configure Transcription Settings**
 
-    php /var/www/fusionpbx/core/upgrade/upgrade.php
+   * In the "**Transcribe**" category, enable the following settings:
 
-- Reload the FusionPBX Interface
+     ============  =========  ===============   =========  ====================================================
+     Subcategory   Type       Value             Enabled    Description
+     ============  =========  ===============   =========  ====================================================
+     api_key       text       secret_key        true       Speech to Text API key
+     api_url       text       https://api...    false      ***Leave this alone unless you are using a custom service***
+     enabled       boolean    true              true       Speech to Text Enabled
+     engine        text       openai            true       Options: openai, google, azure, custom
+     ============  =========  ===============   =========  ====================================================
 
-  - Navigate back to Advanced > Default Settings.
+   * Click **Reload** to apply the changes.
 
-  - The "Transcribe" section should now be available.
+6. **Enable Transcription for a Single Extension**
 
-- Configure Transcription Settings
+   * Navigate to **Accounts** > **Extensions**.
+   * Select the desired extension.
+   * Set **Transcription Enabled** to **True**.
 
-  - In the **"Transcribe"**category, find and enable the following settings:
+7. **Enable Transcription by Default for All Extensions**
 
-    - api_key: Enter your API key for the transcription service.
+   * Navigate to **Advanced** > **Default Settings**.
+   * Use the drop-down filter to select "**Voicemail**".
+   * Enable the **transcription_enabled_default** setting.
 
-    - enabled: Set to True.
+8. **Test the Service**
 
-    - engine: Type your transcription provider (e.g., openai, google, azure, etc.).
+   * Leave a voicemail for the enabled extension to verify that the transcription works correctly.
 
-    - api_url: Leave this blank
+.. note::
 
-  - Click Reload to apply the changes.
-
-- Enable Transcription for one Extension
-
-  - Navigate to Accounts > Extensions.
-
-  - Select the desired extension.
-
-  - Set Transcription Enabled to True.
-
-- Enable Transcription by Default for Everyone.
-
-  - Navigate to Advanced > Default Settings.
-
-  - Use the drop-down filter to select "Voicemail".
-
-  - Find and enable the setting transcription_enabled_default.
-
-- Test the Service
-
-  - Leave a voicemail for that extension to verify the transcription works correctly.
+   The primary function handling voicemail transcriptions is defined in 
+   `transcribe.php <https://github.com/fusionpbx/fusionpbx/blob/master/app/email_queue/resources/functions/transcribe.php>`_.
 
 
 
