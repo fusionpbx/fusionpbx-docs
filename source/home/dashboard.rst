@@ -19,18 +19,39 @@ Quickly access information and tools related to your account.  Depending on the 
 `Dashboard Default Settings`_
 ---------------------------------------
 
-
-
-
 .. _Dashboard Default Settings: /en/latest/advanced/default_settings.html#id5
 
 
-##Move the FusionPBX v5.3 Menu Bar to the Top
+************************************************
+How to Move the FusionPBX v5.3 Menu Bar to the Top
+************************************************
 
-By default, the new version of FusionPBX has the menu bar on the left side of the screen. You can move the menu bar to the top of the screen with these directions. 
-* Log in to the FusionPBX Admin Interface.
-* Go to Advanced > Default Settings.
-* In the filter at the top, search for "Theme."
-* Find the menu_style setting and change it to Fixed.
-* Save your changes and click Reload at the top of the Default Settings screen.
-* Refresh your FusionPBX interface, and the menu bar should now be at the top.
+Overview
+========
+The new version of FusionPBX has the menu bar on the left side of the screen by default. Personally, I prefer it at the top, so here are the steps I used to make that change:
+
+Step-by-step
+++++++++++++
+1. **Log in to the FusionPBX Admin Interface**
+
+   * Access the FusionPBX administrative interface.
+
+2. **Go to Advanced > Default Settings**
+
+   * Navigate to **Advanced** > **Default Settings**.
+
+3. **Search for "Theme"**
+
+   * In the filter at the top, search for "Theme."
+
+4. **Change Menu Style to Fixed**
+
+   * Find the **Menu_Style** setting and change it to **Fixed**.
+
+5. **Save and Reload**
+
+   * Save your changes and click **Reload** at the top of the Default Settings screen.
+
+6. **Refresh the Interface**
+
+   * Refresh your FusionPBX interface, and the menu bar should now be at the top.
