@@ -39,4 +39,5 @@ In the **Applications** menu (Apps) section you will find Bridges, Call Block, C
   applications/streams.rst
   applications/time_conditions.rst
   applications/voicemail.rst
+  applications/voicemail_transcription.rst
   #applications/xmpp.rst
