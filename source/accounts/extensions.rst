@@ -366,3 +366,15 @@ Advanced
 
     This setting is automatically generated in most cases and usually doesn’t require manual modification unless there is a 
     specific need for custom routing or advanced configurations.
+
+Caller ID Select
+==========
+
+    **Extension Caller ID input type select**
+
+    If you want extension caller ID name and number to be input type text, make sure permission outbound_caller_id_select is assigned to groups in Groups Manager. By default, outbound_caller_id_select is not assigned to any user groups.
+
+
+    **Extension Caller ID input type select**
+
+    If you want a select option for caller ID, you would assign outbound_caller_id_select permission to groups of your choice using Group Manager and define Caller ID information in Dialplan Destinations.
