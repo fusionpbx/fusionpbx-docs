@@ -71,13 +71,13 @@ In order to use the phone book a few steps are needed.
 * Set **Enabled** as **True** in `Default Settings </en/latest/advanced/default_settings.html>`_.
 
 
-.. image:: ../_static/images/provision/fusionpbx_remote_phonebook.jpg
-        :scale: 85%
+.. image:: ../_static/images/provision/fusionpbx_remote_phonebook1.png
+        :scale: 60%
 
 * Set **Enabled True** for contact_extensions, contact_users and contact_groups in `Default Settings </en/latest/advanced/default_settings.html>`_.
 
-.. image:: ../_static/images/provision/fusionpbx_phone_book1.jpg
-        :scale: 85%
+.. image:: ../_static/images/provision/fusionpbx_phone_book2.png
+        :scale: 60%
 
 * From the phone, go into the menu to update the phone book.
 
