@@ -16,13 +16,13 @@ Route outbound calls to gateways, tdm, enum and more. When a call matches the co
 
 * Click the **plus** button on the right. Enter the route information below and Click **Save** once entry is complete.
 
-.. image:: ../_static/images/fusionpbx_outbound1.jpg
-        :scale: 85%
+.. image:: ../_static/images/dialplan/fusionpbx_outbound_routes1.png
+        :scale: 65%
 
 |
 
-.. image:: ../_static/images/fusionpbx_outbound2.jpg
-        :scale: 85%
+.. image:: ../_static/images/dialplan/fusionpbx_outbound_routes2.png
+        :scale: 65%
 
 |
 |
