@@ -15,8 +15,8 @@ Global
 
 Setting the language from here will set the language for the entire FusionPBX installation.
 
-.. image:: ../_static/images/getting_started/fusionpbx_global_language.jpg
-        :scale: 85%
+.. image:: ../_static/images/getting_started/fusionpbx_global_language1.png
+        :scale: 60%
 
 
 
@@ -27,8 +27,8 @@ Domain (Tenant)
 
 Setting the language from here will set the language for the entire domain (tenant) in your FusionPBX installation. This can override the Global language settings.
 
-.. image:: ../_static/images/getting_started/fusionpbx_domain_language.jpg
-        :scale: 85%
+.. image:: ../_static/images/getting_started/fusionpbx_domain_language2.png
+        :scale: 60%
 
 
 
@@ -39,8 +39,8 @@ User
 
 Setting the language from here will set the language for this specific user and will override Global and Domain language settings.
 
-.. image:: ../_static/images/getting_started/fusionpbx_user_language.jpg
-        :scale: 85%
+.. image:: ../_static/images/getting_started/fusionpbx_user_language3.png
+        :scale: 60%
 
 
 
