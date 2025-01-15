@@ -24,15 +24,15 @@ Configure Inbound Destinations: (This will auto-configure an Inbound Route also)
 To add a destination **click** on the **plus** button on the right. 
 
 .. image:: ../_static/images/dialplan/fusionpbx_destinations1.png
-        :scale: 65%
+        :scale: 60%
 
 *Enter* the route information below and *Click* **Save** once complete.
 
 .. image:: ../_static/images/dialplan/fusionpbx_destinations2.png
-        :scale: 65%
+        :scale: 60%
 
 .. image:: ../_static/images/dialplan/fusionpbx_destinations3.png
-        :scale: 65%
+        :scale: 60%
 
 * **Type:** Inbound or Outbound.  Choose if this is an inbound destination or outbound destination.
 * **Destination:** This is usually the DID a caller will call.
