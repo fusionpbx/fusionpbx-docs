@@ -31,8 +31,10 @@ To add a destination **click** on the **plus** button on the right.
 .. image:: ../_static/images/dialplan/fusionpbx_destinations2.png
         :scale: 60%
 
+*Examples* of options under **Actions** and **Conditions**.
+
 .. image:: ../_static/images/dialplan/fusionpbx_destinations3.png
-        :scale: 60%
+        :scale: 85%
 
 * **Type:** Inbound or Outbound.  Choose if this is an inbound destination or outbound destination.
 * **Destination:** This is usually the DID a caller will call.
