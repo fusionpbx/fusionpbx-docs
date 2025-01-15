@@ -69,8 +69,8 @@ This would require a prefix of 5 followed by 4 digit extensions. The prefix can 
 * Finally we have the desired dialplan to call from tenant A to tenant B.
 
 
-.. image:: ../_static/images/dialplan/fusionpbx_custom_dialplan.jpg
-        :scale: 85%
+.. image:: ../_static/images/dialplan/fusionpbx_custom_dialplan.png
+        :scale: 60%
 
 
 
