@@ -44,7 +44,7 @@ Enable a Dialplan Destination
 
 Dialplans that have a value in the **Number** filed can be enabled and used in `Dialplan > Destinations <../dialplan/destinations.html>`_. Setting the **destination** field to **True** will enable the dialplan to be visable and used as an action in `Dialplan > Destinations <../dialplan/destinations.html>`_.
 
-.. image:: ../_static/images/dialplan/fusionpbx_dialplan_destination5.png
+.. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced5.png
         :scale: 60%
 
 Cross Tenant Calling
