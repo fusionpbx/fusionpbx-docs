@@ -14,7 +14,7 @@ You can create a new dialplan or copy and modify an existing dialplan.
 
 * Go to Dialplan > Dialplan Manager
 
-* Click the **ADD** icon at the top right.
+* Click the **ADD** button at the top right.
 
 .. image:: ../_static/images/dialplan/fusionpbx_dialplan_advanced1.png
         :scale: 60%
