@@ -4,7 +4,7 @@ SQL Query
 
 The SQL Query tool is an optional feature that can run SQL commands, show the contents of the database, and set the type to view results in the browser CSV, or SQL.
 
-.. image:: ../_static/images/fusionpbx_sql_query.jpg
+.. image:: ../_static/images/advanced/fusionpbx_sql_query.jpg
         :scale: 85%
 
 
