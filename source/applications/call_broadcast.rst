@@ -6,8 +6,8 @@ Broadcast calls (a light dialer) to a defined list of phone numbers.
 
 
 
-.. image:: ../_static/images/fusionpbx_call_broadcast.jpg
-        :scale: 85%
+.. image:: ../_static/images/fusionpbx_call_broadcast2.png
+        :scale: 60%
 
 *  To create a call broadcast click the **plus** on the right
 
@@ -50,8 +50,8 @@ row in the following format: 123-123-1234|Last Name, First Name
 
 
 
-.. image:: ../_static/images/fusionpbx_call_broadcast1.jpg
-        :scale: 85%
+.. image:: ../_static/images/fusionpbx_call_broadcast1.png
+        :scale: 60%
 
 
 *  Once you have everything filled out click the **Call Broadcast name** you just created. On the top right click the **Send Broadcast** button to start the call broadcast.  To stop the call broadcast click **STOP BROADCAST** on the top right.

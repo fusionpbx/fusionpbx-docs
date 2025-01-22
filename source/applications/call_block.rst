@@ -9,8 +9,8 @@ Creating a New Call Block
 
 To create a new Call Block, click the **Add** button at the top-right of the Call Block list page.  A simple form will be presented...
 
-.. image:: ../_static/images/fusionpbx_call_block.jpg
-        :scale: 85%
+.. image:: ../_static/images/fusionpbx_call_block1.png
+        :scale: 60%
 
 **Field Descriptions**
 
