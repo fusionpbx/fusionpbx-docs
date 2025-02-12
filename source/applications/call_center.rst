@@ -49,15 +49,16 @@ Call Center Strategies
         :scale: 60%
 
 
+* **Ring All:**  All agents ring simultaneously.
+* **Longest Idle Agent:**  The agent will ring who idles the longest depending on their tier level.
+* **Round Robin:**  Will ring the next agent available in line.
+* **Top Down:**  Agent rings in order starting from one.
+* **Ring Progressively:**  Agents will ring the same as top-down and will progress until each agent ends up ringing.
 * **Agent With Least Talk Time:**  Rings the Agent will ring that has the least time talking.
 * **Agent With Fewest Calls:**  Agent will ring that has the least calls.
-* **Longest Idle Agent:**  The agent will ring who idles the longest depending on their tier level.
-* **Ring All:**  All agents ring simultaneously.
-* **Random:**  Rings Agents will ring randomly in not particular order.
-* **Ring Progressively:**  Agents will ring the same as top-down and will progress until each agent ends up ringing.
-* **Round Robin:**  Will ring the next agent available in line.
 * **Sequentially By Agent Order:**  Agents will ring in a sequence by the tier and the tiers order.
-* **Top Down:**  Agent rings in order starting from one.
+* **Sequentially By Next Agent Order:**  Agents will ring in a sequence by the tier and the tiers order.
+* **Random:**  Rings Agents will ring randomly in not particular order.
 
 Agents
 =========
