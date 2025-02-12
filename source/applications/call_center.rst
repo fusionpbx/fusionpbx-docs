@@ -1,24 +1,13 @@
-############
-Call Center
-############
+Call Center Queues
+=====================
 
 List of queues for the call center.
 
 
-.. image:: ../_static/images/fusionpbx_call_center1.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_queues1.png
+        :scale: 60%
 
-Call Center Queues
-=====================
-
-
-.. image:: ../_static/images/fusionpbx_call_center_queue.jpg
-        :scale: 85%
-
-*  To add a Call Center Queue **click** the Add button in the top right
-
-
-*  Once a Queue is created click the name of the queue to edit it. Once in edit mode, at the top right you can view, stop, start, restart and save the queue as well as make changes.
+*  To add a Call Center Queue, click the **Add** button in the top right
 
 Call Center Agents
 ====================
@@ -26,8 +15,8 @@ Call Center Agents
 List of call center agents.
 
 
-.. image:: ../_static/images/fusionpbx_call_center_agents.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_agents.png
+        :scale: 60%
 
 
 *  From Apps > Call Center click Agents at the top right to access Call Center Agents
@@ -56,8 +45,8 @@ Call Center Agent Fields
 Call Center Strategies
 =========================
 
-.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_strategy.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_queues2.png
+        :scale: 60%
 
 
 * **Agent With Least Talk Time:**  Rings the Agent will ring that has the least time talking.
