@@ -38,6 +38,23 @@ Make sure to login and then go to Advanced -> Upgrade -> Schema -> Data Types
  systemctl restart event_guard
 
 
+
+**Dashboard**
+
+Update the dashboard so that it looks like a new default install.
+
+- Login to the web interface
+- From the dashboard press the **SETTINGS** button.
+- If you changed the groups assigned in the Dashboard. 
+  - Then print the page and save it to a PDF for reference later.
+- Select the first checkbox this will select all the ones below it. 
+- Then press the **DELETE** button
+- Then go to the Menu and press Advanced then click on Upgrade.
+- Put a checkmark in **App Defaults** then press the **Execute**
+- In your browser press **ctrl + f5** to flush the browser cache.
+- If you need to customize the permission use the SETTINGS button and update permissions.
+  - If you saved a PDF of previous changes use it to help assign the groups to the Dashboard Widgets.
+
 **background_color_enabled**
 
 This is a new setting to enable or disable the background color. If you have a custom background image, then you may want to set this **value** to **false** and enabled to set it to true.
