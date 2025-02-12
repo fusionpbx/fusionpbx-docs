@@ -4,8 +4,8 @@ Call Recordings
 
 Shows the call recordings with name, length, date and time, and call direction.
 
-.. image:: ../_static/images/applications/fusionpbx_call_recordings.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/fusionpbx_call_recordings.png
+        :scale: 65%
 
 
 

@@ -1,24 +1,13 @@
-############
-Call Center
-############
+Call Center Queues
+=====================
 
 List of queues for the call center.
 
 
-.. image:: ../_static/images/fusionpbx_call_center1.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_queues1.png
+        :scale: 60%
 
-Call Center Queues
-=====================
-
-
-.. image:: ../_static/images/fusionpbx_call_center_queue.jpg
-        :scale: 85%
-
-*  To add a Call Center Queue **click** the Add button in the top right
-
-
-*  Once a Queue is created click the name of the queue to edit it. Once in edit mode, at the top right you can view, stop, start, restart and save the queue as well as make changes.
+*  To add a Call Center Queue, click the **Add** button in the top right
 
 Call Center Agents
 ====================
@@ -26,8 +15,8 @@ Call Center Agents
 List of call center agents.
 
 
-.. image:: ../_static/images/fusionpbx_call_center_agents.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_agents.png
+        :scale: 60%
 
 
 *  From Apps > Call Center click Agents at the top right to access Call Center Agents
@@ -56,19 +45,20 @@ Call Center Agent Fields
 Call Center Strategies
 =========================
 
-.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_strategy.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/call_center/fusionpbx_call_center_queues2.png
+        :scale: 60%
 
 
+* **Ring All:**  All agents ring simultaneously.
+* **Longest Idle Agent:**  The agent will ring who idles the longest depending on their tier level.
+* **Round Robin:**  Will ring the next agent available in line.
+* **Top Down:**  Agent rings in order starting from one.
+* **Ring Progressively:**  Agents will ring the same as top-down and will progress until each agent ends up ringing.
 * **Agent With Least Talk Time:**  Rings the Agent will ring that has the least time talking.
 * **Agent With Fewest Calls:**  Agent will ring that has the least calls.
-* **Longest Idle Agent:**  The agent will ring who idles the longest depending on their tier level.
-* **Ring All:**  All agents ring simultaneously.
-* **Random:**  Rings Agents will ring randomly in not particular order.
-* **Ring Progressively:**  Agents will ring the same as top-down and will progress until each agent ends up ringing.
-* **Round Robin:**  Will ring the next agent available in line.
 * **Sequentially By Agent Order:**  Agents will ring in a sequence by the tier and the tiers order.
-* **Top Down:**  Agent rings in order starting from one.
+* **Sequentially By Next Agent Order:**  Agents will ring in a sequence by the tier and the tiers order.
+* **Random:**  Rings Agents will ring randomly in not particular order.
 
 Agents
 =========
