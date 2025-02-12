@@ -4,20 +4,21 @@ Call Detail Records
 
 Call Detail Records (CDRs) are detailed information on the calls. Use the fields to filter the information for the specific call records that are desired. Records in the call list can be saved locally using the Export button. 
 
-.. image:: ../_static/images/fusionpbx_cdr.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/fusionpbx_call_detail_records.png
+        :scale: 60%
 
-
-*  **CID Name** Caller ID Name
-*  **Source** Where the call came from
-*  **Destination** Where the call went to
+*  **Extension** Phones extension 
+*  **Caller Name** Caller ID Name
+*  **Caller Number** Where the call came from
+*  **Caller Destination** Where the call went to
 *  **Recording** A link will appear if the call recorded
-*  **Start** Time the call entered the system
+*  **Date & Time** When the call entered the system
+*  **Codecs** Phone codec
 *  **TTA** Time To Answer the call
-*  **Duration** How long the call was
 *  **PDD** Post Dial Delay
 *  **MOS** Mean Opinion Score is a measure of voice call quality
-*  **Hangup Cause** Details about the entire calls. Usually will be "Normal Clearing"
+*  **Duration** How long the call was
+*  **Status** Details if call was Answered, Missed, No Answer, Voicemail, Busy, Cancelled or Failed
 
 **Call Detail Records** are detailed information on the calls. The information contains
 source, destination, duration, and other useful call details. Use the
