@@ -4,7 +4,7 @@ Streams
 
 Define details for streaming audio.
 
-.. image:: ../_static/images/applications/fusionpbx_streams.jpg
+.. image:: ../_static/images/applications/streams/fusionpbx_streams1.jpg
         :scale: 85%
 
 * Make sure mod_shout is installed and is started.
