@@ -14,7 +14,7 @@ A ring group is a set of destinations that can be called with a ring strategy.
 
 To add a ring group click the plus. `Click for the youtube video <https://youtu.be/sULuuLOSvLQ>`_ .
 
-.. image:: ../_static/images/fusionpbx_ring_group.jpg
+.. image:: ../_static/images/applications/ring_groups/fusionpbx_ring_group.jpg
         :scale: 85%
 
 
@@ -41,7 +41,7 @@ To add a ring group click the plus. `Click for the youtube video <https://youtu.
 *  **Ring Back** What the caller hears when they are waiting for the **Destinations** to answer. (ex. Music on Hold, us-ring)
 *  **Context** The context defaults to the domain name.
 
-.. image:: ../_static/images/applications/fusionpbx_applications_ring_group.jpg
+.. image:: ../_static/images/applications/ring_groups/fusionpbx_applications_ring_group.jpg
         :scale: 85%
 
 
@@ -51,6 +51,6 @@ Ring Group Example
 In our example we will have 4 extensions all ring at the same time until one of them pick up first.  Click the + to create a ring group.  Fill in the fields that are in **bold**.  In the Extension box type a number that is **NOT** already created.  This new extention won't be in the extension list.  The strategy will be Simultaneous. Enter in the destination the 4 extensions 1001, 1002, 1003, 1004.
 
 
-.. image:: ../_static/images/fusionpbx_ring_group2.jpg
+.. image:: ../_static/images/applications/ring_groups/fusionpbx_ring_group2.jpg
         :scale: 85%
 
