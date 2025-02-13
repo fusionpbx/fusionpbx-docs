@@ -5,7 +5,7 @@ Call Flows
 Direct calls between two destinations by calling a feature code.
 
 
-.. image:: ../_static/images/applications/fusionpbx_call_flows2.png
+.. image:: ../_static/images/applications/call_flows/fusionpbx_call_flows2.png
         :scale: 60%
 
 |
@@ -36,7 +36,7 @@ In the Call Flow example below we have the name as Call Flow.  Make the Extensio
 |
 |
 
-.. image:: ../_static/images/applications/fusionpbx_call_flows1.png
+.. image:: ../_static/images/applications/call_flows/fusionpbx_call_flows1.png
         :scale: 60%
 
 
