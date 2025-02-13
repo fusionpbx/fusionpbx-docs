@@ -17,6 +17,7 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
   :glob:
 
   getting_started/training.rst
+  getting_started/quick_install.md
   getting_started/quick_install.rst
   getting_started/lets_encrypt.rst
   applications/provision.rst
