@@ -45,6 +45,16 @@ myst_enable_extensions = [
     "attrs_block",
 ]
 
+html_context = {
+    "display_github": True,  # Add this line to enable GitHub link
+    "github_user": "fusionpbx",  # Replace with your GitHub username
+    "github_repo": "fusionpbx-docs",  # Replace with your repository name
+    "github_version": "master",  # 'main' or 'master', or the branch you want to link to
+    "conf_py_path": "/source/",  # Path to your conf.py file from the repo root
+}
+
+html_show_sourcelink = True
+
 [extensions]
 todo_include_todos=True
 
@@ -188,13 +198,6 @@ html_theme_path = ["_themes", ]
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #html_logo = "_static/images/logo.png"
-
-#github settings
-display_github = True
-github_user = "fusionpbx"
-github_repo = "fusionpbx-docs"
-github_version = "master"
-
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
