@@ -189,6 +189,19 @@ html_theme_path = ["_themes", ]
 # of the sidebar.
 #html_logo = "_static/images/logo.png"
 
+html_context = {
+    # Fix the "edit on" links.
+    # TODO: remove once we support different rtd config
+    # files per project.
+    "conf_py_path": f"/docs/{docset}/",
+    "display_github": True,
+    "github_user": "fusionpbx",
+    "github_repo": "fusionpbx-docs",
+    "github_version": "master",
+    # Use to generate the Plausible "data-domain" attribute from the template
+    "plausible_domain": f"{os.environ.get('READTHEDOCS_PROJECT')}.readthedocs.io",
+}
+
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
