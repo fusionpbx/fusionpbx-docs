@@ -4,7 +4,7 @@ Bridges
 
 Bridge statements are used to send calls directly to other destinations like another PBX, Carrier or External SIP to TDM Gateway and more. The bridge statements are added to destination select list.
 
-.. image:: ../_static/images/applications/fusionpbx_applications_bridges.jpg
+.. image:: ../_static/images/applications/bridges/fusionpbx_applications_bridges.jpg
         :scale: 85%
 
 

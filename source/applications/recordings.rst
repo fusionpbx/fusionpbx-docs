@@ -27,8 +27,8 @@ Create a Recording
 4. Press 1 to accept the recording then hang up or press 2 to start over.
 
 
-.. image:: ../_static/images/fusionpbx_recordings1.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/recording/fusionpbx_call_recordings1.png
+        :scale: 60%
 
 
 
@@ -39,8 +39,8 @@ Edit Recording
 2. Rename as needed.
 3. Click save to save the changes.
 
-.. image:: ../_static/images/applications/recording/fusionpbx_applications_recording_edit.jpg
-        :scale: 85%
+.. image:: ../_static/images/applications/recording/fusionpbx_call_recordings2.png
+        :scale: 60%
 
 
 
