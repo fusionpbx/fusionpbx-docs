@@ -29,7 +29,20 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc', 'sphinx.ext.mathjax', 'sphinx.ext.todo', 'CommonMarkParser',
+    'sphinx.ext.autodoc', 'myst_parser', 'sphinx.ext.mathjax', 'sphinx.ext.todo', 
+]
+
+# Enable MyST extensions
+myst_enable_extensions = [
+    "colon_fence",
+    "replacements",
+    "smartquotes",
+    "substitution",
+    "tasklist",
+    "deflist",
+    "dollarmath",
+    "html_image",
+    "attrs_block",
 ]
 
 [extensions]
@@ -39,7 +52,7 @@ todo_include_todos=True
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -318,9 +331,8 @@ texinfo_documents = [
 # Markdown support
 from recommonmark.parser import CommonMarkParser
 
-# The suffix of source filenames.
-source_suffix = ['.rst', '.md']
-
 source_parsers = {
-	'.md': CommonMarkParser,
+    '.md': CommonMarkParser,
 }
+
+source_suffix = ['.rst', '.md']
