@@ -3,4 +3,6 @@
 # Core dependencies
 sphinx
 sphinx_rtd_theme
-myst_parser
+recommonmark
+sphinx-markdown-tables
+myst-parser
