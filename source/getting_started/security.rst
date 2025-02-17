@@ -79,16 +79,16 @@ SSH
 Use strong passwords with SSH or even better use SSH keys for better protection of your servers.
 
 
-.. _Default Settings: /en/latest/advanced/default_settings.html#id26
-.. _Upgrade: /en/latest/advanced/upgrade.html
-.. _Upgrades: /en/latest/advanced/upgrade.html
-.. _link: https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
-.. _paid support: http://www.fusionpbx.com
-.. _firewall-: /en/latest/getting_started/iptables.html#iptables
-.. _Firewall page: /en/latest/firewall.html
-.. _Firewall: /en/latest/firewall.html
-.. _iptables: /en/latest/getting_started/iptables.html#iptables
-.. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
-.. _Setup Let's Encrypt with FusionPBX: /en/latest/getting_started/lets_encrypt.html
-.. _Let's Encrypt: https://letsencrypt.org/docs
-.. _Fail2ban: /en/latest/additional_information/fail2ban.html
+[Default Settings](/en/latest/advanced/default_settings.html#id26)
+[Upgrade](/en/latest/advanced/upgrade.html)
+[Upgrades](/en/latest/advanced/upgrade.html)
+[link](https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx)
+[paid support](http://www.fusionpbx.com)
+[firewall](/en/latest/getting_started/iptables.html#iptables)
+[Firewall page](/en/latest/firewall.html)
+[Firewall](/en/latest/firewall.html)
+[iptables](/en/latest/getting_started/iptables.html#iptables)
+[Verto Communicator](https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator)
+[Setup Let's Encrypt with FusionPBX](/en/latest/getting_started/lets_encrypt.html)
+[Let's Encrypt](https://letsencrypt.org/docs)
+[Fail2ban](/en/latest/additional_information/fail2ban.html)
