@@ -1,63 +1,103 @@
-## FusionPBX Install
+# Quick Install
 
-A Simple Guide to installing FusionPBX
- 
----
+![image](../_static/images/logo_right.png)
 
-### Debian
-Debian 12 is the recommended operating system. Start with a minimal install.
-Download: [Debian 12](https://cdimage.debian.org/cdimage), [Debian 11](https://cdimage.debian.org/cdimage/archive)
+| 
 
-For best results, please ensure your server has been fully updated first...
-```
-sudo apt update && apt upgrade
-```
+Welcome to the FusionPBX installation guide.
 
-Then run the following as root.
-```
-wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh;
-cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
-```
+| 
 
----
+FusionPBX can be installed on several different operating systems.
+However this guide assumes you are starting with a **minimal** install
+of Debian 12 with SSH enabled. This install has been designed to be
+fast, simple and modular, and generally takes 5 minutes or less.
+Installation times depend on factors like CPU, RAM, disk I/O and
+bandwidth. Install Video <https://youtu.be/XpiVyHqLaus>
 
-### Ubuntu
-Ubuntu 24.04 LTS. Start with a minimal install.
+<div style="text-align: center; margin-bottom: 2em;">
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/XpiVyHqLaus" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+</div>
 
-Download: [Ubuntu 24.04 LTS](https://ubuntu.com/download/server)
+**1.** Run the following commands as root. The script installs
+FusionPBX, FreeSWITCH release package and its dependencies, iptables,
+Fail2ban, NGINX, PHP-FPM and PostgreSQL.
 
-For best results, please ensure your server has been fully updated first
+Start with a **minimal** install of Debian 12 with SSH enabled. Paste
+the following commands in the console window **one line at a time**.
 
-```
-sudo apt update && apt upgrade
-```
+    wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh; 
 
-Then run the following as root
-```
-wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/ubuntu/pre-install.sh | sh;
-cd /usr/src/fusionpbx-install.sh/ubuntu && ./install.sh
-```
+| 
 
-### Raspberry Pi OS (Previously Raspbian)
+    cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
 
-Based on Debian Buster, Raspberry Pi OS works on the Raspberry Pi 2, 3, 4, and Zero W.
+| 
 
-Download the [newest version](https://www.raspberrypi.com/software/) of Raspbian. Tools and information on unzipping the image and writing the operating system image to an SD card are available on the [Installing OS Images page](https://www.raspberrypi.org/documentation/installation/installing-images/README.md). Then run the following commands as root...
+If using **Debian on Proxmox LXC** containers please run the following
+**BEFORE** starting the FusionPBX install.
 
-```
-wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh;
-cd /usr/src/fusionpbx-install.sh/debian && ./install.s
-```
+    apt-get update && apt-get upgrade
+    apt-get install systemd
+    apt-get install systemd-sysv
+    apt-get install ca-certificates
+    reboot
 
----
+| 
 
-### FreeBSD
-Start with a minimal install of FreeBSD 14.1. Then run the following commands:
+**2.** At the end of the install, the script will instruct you to go to
+the ip address of the server (or domain name) in your web browser to
+login. The script will also provide a username and secure random
+password for you to use. This can be changed after you login. The
+install script builds the fusionpbx database. If you need the database
+password it is located in /etc/fusionpbx/config.php .
 
-```
-pkg install --yes git
-cd /usr/src && git clone https://github.com/fusionpbx/fusionpbx-install.sh.git
-cd /usr/src/fusionpbx-install.sh/freebsd && ./install.sh
-```
+    Installation has completed.
 
+    Use a web browser to login.
+       domain name: https://000.000.000.000
+       username: admin
+       password: zxP5yatwMxejKXd
 
+    The domain name in the browser is used by default as part of the authentication.
+    If you need to login to a different domain then use username@domain.
+       username: admin@x.x.x.x
+
+    Additional information.
+       https://fusionpbx.com/support.php
+       https://www.fusionpbx.com
+       http://docs.fusionpbx.com
+       https://www.fusionpbx.com/training.php
+
+| 
+
+![image](../_static/images/ilogin.png)
+
+| 
+
+After the install script has completed go to your web browser and login
+with the information provided by the install script.
+
+After the installation script finishes, the option for anything to
+register to the ip address is **ENABLED**.
+
+-   If you plan on registering devices to the FusionPBX ip address then
+    no further action is required.
+
+It is however recommended to register to a domain name (FQDN) since most
+scripted attacks happen to the public ip. Registering to the ip address
+will be blocked by the fail2ban rules freeswitch-ip and auth-challenge
+once these rules are set to true.
+
+-   To help secure your FusionPBX installation, enable the [fail2ban
+    rules](http://docs.fusionpbx.com/en/latest/firewall/fail2ban.html)
+    \[freeswitch-ip\] and \[auth-challenge-ip\] in
+    /etc/fail2ban/jail.local.
+
+<!-- -->
+
+    [freeswitch-ip]
+    enabled  = true
+
+    [auth-challenge-ip]
+    enabled  = true
