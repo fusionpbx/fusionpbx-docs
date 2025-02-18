@@ -1,4 +1,4 @@
-\######## Event Guard \########
+# Event Guard
 
 This is an optional service called event[guard]{#guard} and it was
 designed to protect your VoIP server. It watches registration events and
