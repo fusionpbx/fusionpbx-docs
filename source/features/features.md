@@ -33,8 +33,7 @@ Creates a robust call center environment with agent tiers.
 Various reporting capabilities to see who called, when, call length,
 export to a csv file, and call detail statistics.
 
-[Call Flows (Day/Night Mode)]()
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+## [Call Flows (Day/Night Mode)]()
 
 Typically used with day night mode. To direct calls between two
 destinations. Can work with BLF on phone to show which direction call
@@ -151,13 +150,12 @@ Polycom, Cisco, Aastra and several other brands.
 Direct calls to voicemail by default however there is an option when
 using do not disturb to send the call to an alternative destination.
 
-[Extensions](../accounts/extensions.html) \-\-\-\-\-\-\-\-\-\--
+## [Extensions](../accounts/extensions.html)
 
 Create extensions for phones to register to and an option to receive
 emails on missed calls.
 
-[Extension Summary](/en/latest/status/extension_summary.html)
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+## [Extension Summary](/en/latest/status/extension_summary.html)
 
 Summary of extension activity per domain such as misssed calls, answered
 calls, no answer, inbound duration, outbound duration, number of outboud
@@ -189,8 +187,7 @@ A way to login to another phone device and temporarily or permanently
 become another extension. This is sometimes known as \'hoteling\' and
 \'extension mobility\'
 
-[Inbound and Outbound Call Routing](../dialplans.html)
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+## [Inbound and Outbound Call Routing](../dialplans.html)
 
 Routes used to receive or send calls in or out of FusionPBX.
 
@@ -217,11 +214,11 @@ green.pbxhosting.tld blue.pbxhosting.tld
 A virtual panel that agents can drag and drop transfer calls. Adjust
 call state from available, on break, do not disturb and logged out.
 
-[Paging](../dialplan/dialplan_details.html#page) \-\-\-\-\-\-\--
+## [Paging](../dialplan/dialplan_details.html#page)
 
 Page another extension with or without password
 
-[Parking](/en/latest/features/parking.html) \-\-\-\-\-\-\-\--
+## [Parking](/en/latest/features/parking.html)
 
 Send a call to an unused \"park\" extension. The caller listens to music
 on hold until another extension connects to the call.
@@ -249,9 +246,7 @@ Create and manage personalized recordings.
 Make one extension ring several extensions and an option to receive
 emails on missed calls.
 
-[Scalable and
-Redundant](https://fusionpbx.com/app/www/training_detail.php)
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+## [Scalable and Redundant](https://fusionpbx.com/app/www/training_detail.php)
 
 Can be configured for multi-master database replication, file
 replication. FusionPBX, Database, and FreeSWITCH can be distributed
@@ -266,7 +261,7 @@ global option, move to other domains, and holiday presets.
 
 Edit, change or add users of all permission levels.
 
-[Voicemail](../applications/voicemail.html) \-\-\-\-\-\-\-\-\-\--
+##[Voicemail](../applications/voicemail.html)
 
 Has ability to copy voicemails for other voicemail boxes when receiving
 a voicemail. Additional features include voicemail to email and

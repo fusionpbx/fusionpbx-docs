@@ -27,15 +27,15 @@ video](https://youtu.be/QUB3u9pZ7ks).
 
 ![image](../_static/images/fusionpbx_upgrade.jpg)
 
-| 
+<br>
 
-| **Update the source from command line**
+## **Update the source from command line**
 
     cd /var/www/fusionpbx 
     git pull
     chown -R www-data:www-data
 
-| **Back to the GUI**
+## **Back to the GUI**
 
     *Upgrade Database with advanced -> upgrade schema
     *Update permissions
@@ -46,27 +46,28 @@ video](https://youtu.be/QUB3u9pZ7ks).
 
 ![image](../_static/images/fusionpbx_upgrade_green.jpg)
 
-| 
+<br>
 
-| To upgrade you will need to get the latest source code. Depending on
+  To upgrade you will need to get the latest source code. Depending on
   how extreme the changes have been or the version you currently are on
   since your last update, you may need to follow version specific
   upgrade instructions to bring your install up to date.
 
 ### **Step 1: Update FusionPBX Source**
 
-| 1. GUI -\> Advanced -\> Upgrade (doesn\'t update all files)
+- GUI -\> Advanced -\> Upgrade (doesn\'t update all files)
 
 Used to update FusionPBX to the latest release.
 
-**Upgrade the code via Github/GIT**
+- Upgrade the code via Github/GIT
 
-| Login into the web interface with a user account assigned to the
+  Login into the web interface with a user account assigned to the
   superadmin group.
-| Login to the console with either the ssh, the locally.
-| Backup It\'s a good idea to make a backup. If using sqlite, your
+  Login to the console with either the ssh, the locally.
+  Backup It\'s a good idea to make a backup. If using sqlite, your
   backup will easily include the SQL database.
 
+```
     mkdir /etc/fusionpbx
     mv /var/www/fusionpbx/resources/config.php /etc/fusionpbx
     mv /usr/local/freeswitch/scripts/resources/config.lua /etc/fusionpbx
@@ -74,32 +75,38 @@ Used to update FusionPBX to the latest release.
     cp -R fusionpbx fusionpbx_backup
     # Change the directory to the FusionPBX directory
     cd /var/www/fusionpbx
+```
 
-**Update the source code** (example assumes fusionpbx is in
+- Update the source code (example assumes fusionpbx is in
 /var/www/fusionpbx)
 
+```
     cd /var/www/fusionpbx
     git pull
+```
 
-| **Permissions**
-| Reset the permissions on the fusionpbx directory tree. When you do
+- Permissions
+  Reset the permissions on the fusionpbx directory tree. When you do
   **git pull** it sets the permissions on any updated files to match the
   account that you are running **git pull** with. If that account is
   different to the web server account it will result in some files no
   longer being accessible and a red bar error at the top of the upgrade
   screen on the GUI. To fix this you should reapply the permissions in
   fusionpbx and recursively in all directories inside it.
-| 
-| The example assumes the web server runs as user \'www-data\' and
+  <br>
+
+  The example assumes the web server runs as user \'www-data\' and
   fusionpbx is installed to /var/www/fusionpbx. (chown -Rv
   Ownername:GroupName /var/www/fusionpbx)
-
+  
+```
     cd /var/www/fusionpbx
     chown -R www-data:www-data *
+```
 
-### **Step 2: Update Freeswitch Scripts**
+### Step 2: Update Freeswitch Scripts
 
-| NOTE: As of FusionPBX 3.8.3 (Stable Branch), the scripts should be
+  **Note:** As of FusionPBX 3.8.3 (Stable Branch), the scripts should be
   automatically updated when updating the Source Code, using the
   **Advanced \> Upgrade** page. Any customized scripts, having the same
   name as the default scripts, **will be overwritten.** (An option to
@@ -108,14 +115,13 @@ Used to update FusionPBX to the latest release.
   and any additional files within the scripts folder will remain
   untouched.
 
-| FusionPBX is a fast moving project where features are constantly being
+  FusionPBX is a fast moving project where features are constantly being
   added and bugs are being fixed on a daily basis so I would also
   suggest upgrading the Freeswitch scripts directory as part of any
   normal upgrade process.
 
-**Update Freeswitch**
-
-| Use github to get the updated files. **You have to do this from an
+- Update Freeswitch
+    - Use github to get the updated files. **You have to do this from an
   empty directory**.
 
 **Note:** Older versions of FusionPBX may use the
@@ -131,102 +137,110 @@ Used to update FusionPBX to the latest release.
     # (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
     cp -R /usr/share/freeswitch/scripts-bak/resources/functions/config.lua /usr/share/freeswitch/scripts/resources/functions/config.lua
 
-| **Clean out this scripts directory**
-| An alternative is to remove the Lua scripts. **Only do this if you
+- Clean out this scripts directory
+     - An alternative is to remove the Lua scripts. **Only do this if you
   haven\'t customized any LUA scripts**
 
+```
     cp -R /usr/share/freeswitch/scripts /usr/local/freeswitch/scripts-bak
     rm -rf /usr/share/freeswitch/scripts/*
+```
 
-| **Pull the most recent scripts down**
+- **Pull the most recent scripts down**
 
-| Here you need to go directly to step 3 and make sure you run upgrade
+  Here you need to go directly to step 3 and make sure you run upgrade
   schema from the GUI immediately otherwise your calls will not
   complete.
 
-| **Restore the config.lua file (IMPORTANT!!)**
+- **Restore the config.lua file (IMPORTANT!!)**
 
-| If your config.lua file was located in scripts/resources/, then
+  If your config.lua file was located in scripts/resources/, then
   you\'ll need to restore it (from the backup previously performed) to
   scripts/resources/config.lua.
 
-### **Step 3: Upgrade Schema**
+### Step 3: Upgrade Schema
 
-| Many updates have changes to the database and to the Freeswitch
+**Note:** Many updates have changes to the database and to the Freeswitch
   scripts. The upgrade[schema]{#schema} script
 
-| **Upgrade from the GUI**
-
-| From the GUI, run **Advanced -\> Upgrade Schema** which will add any
+**Upgrade from the GUI**
+- From the GUI, run **Advanced -\> Upgrade Schema** which will add any
   needed newer tables or columns.
-| Then run **App Defaults**. *If you removed the scripts on Step 2 then
+- Then run **App Defaults**. *If you removed the scripts on Step 2 then
   run this* **twice**.
 
 ![image](../_static/images/fusionpbx_upgrade_schema_data_types.jpg)
 
-| 
+<br>
 
-| **Upgrade from the Command Line**
-| An alternative to running upgrade[schema.php]{#schema.php} from the
+- Upgrade from the Command Line
+
+  An alternative to running upgrade[schema.php]{#schema.php} from the
   GUI is to run the upgrade.php from the command line. It was designed
   to make the upgrade easier. If you did not login when updating the
   FusionPBX source code then you will need to run the upgrade.php file
   from the command line. Make sure to use the full path to the PHP file.
 
-| As root run the following
+- As root run the following
 
+```
     cd /var/www/fusionpbx
     /usr/bin/php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
 
-| If your screen was nicely formatted with a fusionpbx theme, and
+  If your screen was nicely formatted with a fusionpbx theme, and
   suddenly now goes to a black and white screen with familiar text but
   no theme, it is because you were using a theme which no longer exists
   in the latest version of the code. If this happens to you navigate to:
 
     http://domain_or_ip/mod/users/usersupdate.php
 
-| Then scroll down to where it says **\"Template\"** and select one of
+  Then scroll down to where it says **\"Template\"** and select one of
   the valid templates from the drop down list. Then press Save. It will
   be fixed now and you can continue with the remaining steps below.
-| (Note that any users who have invalid templates selected will also
+  (Note that any users who have invalid templates selected will also
   have the same problem you did. You can fix them from the user manager
   option in the accounts menu)
 
-### **Step 4: Apply permissions and Restart Freeswitch**
+### Step 4: Apply permissions and Restart Freeswitch
 
-| **Make sure that the freeswitch directory has the correct
-  permissions**
-
+- Make sure that the freeswitch directory has the correct
+  permissions
+  
+```
     chown -Rv www-data:www-data /usr/local/freeswitch/
+```
 
-| **Restart Freeswitch**
+- Restart Freeswitch
 
+```
     systemctl restart freeswitch
+```
 
-### **Step 5: Menu**
+### Step 5: Menu
 
-| Needed if your menu disappeared.
-| **v1 and v2**
-| Now update the menu to the latest version.
+Needed if your menu disappeared.
+- Now update the menu to the latest version.
 
+```
     http://domain_or_ip/core/menu/menu_restore_default.php
+```
 
-| Press \'Restore Default\' on the top right.
-| **v3**
-| <https://your.ip/core/menu/menu.php>
-| click \'e\' next to the default menu
-| click the restore default button.
-| <https://your.ip/logout.php>
-| <https://your.ip/login.php>
+- Press \'Restore Default\' on the top right.
+  <https://your.ip/core/menu/menu.php>
+- click \'e\' next to the default menu
+- click the restore default button.
+  <https://your.ip/logout.php>
+  <https://your.ip/login.php>
 
-### **Step 6: Re-generate Settings**
+### Step 6: Re-generate Settings
 
-| Sometimes variable names changes. In rev 1877 **v_config_cli.php**
+  **Note:** Sometimes variable names changes. In rev 1877 **v_config_cli.php**
   variable names changed which caused no fax to email emails or
   voicemail emails to be sent. Problem was the SMTP details did not
   exist.
 
-| Go to **Advanced -\> Settings** and then **click save**. This will
+- Go to **Advanced -\> Settings** and then **click save**. This will
   re-generate v[config_cli.php]{#config_cli.php} and any other needs
   config files.
 
@@ -235,22 +249,27 @@ Used to update FusionPBX to the latest release.
 FusionPBX has a stable and a master(development) branch. You can switch
 from stable to master but **not recomended to downgrade.**
 
-### **Move to the Stable Branch**
-
+### Move to the Stable Branch
+```
     mv /var/www/fusionpbx /var/www/fusionpbx-old
     cd /var/www && git clone -b 4.4 https://github.com/fusionpbx/fusionpbx.git
     chown -R www-data:www-data /var/www/fusionpbx
+```
 
 Make sure config.php exists in /etc/fusionpbx If missing then move it
 into this directory.
 
+```
     cp /var/www/fusionpbx-master/resources/config.php /etc/fusionpbx
+```
 
-### **Move to the Master Branch**
+### Move to the Master Branch
 
+```
     mv /var/www/fusionpbx /var/www/fusionpbx-old
     cd /var/www && git clone https://github.com/fusionpbx/fusionpbx.git
     chown -R www-data:www-data /var/www/fusionpbx
+```
 
 -   Complete the normal upgrade process at Advanced -\> Upgrade
 -   If the menu disappears you have to upgrade schema then restore the

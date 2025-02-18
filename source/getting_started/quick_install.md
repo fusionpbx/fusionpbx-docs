@@ -2,11 +2,11 @@
 
 ![image](../_static/images/logo_right.png)
 
-| 
+<br>
 
 Welcome to the FusionPBX installation guide.
 
-| 
+<br>
 
 FusionPBX can be installed on several different operating systems.
 However this guide assumes you are starting with a **minimal** install
@@ -26,24 +26,27 @@ Fail2ban, NGINX, PHP-FPM and PostgreSQL.
 Start with a **minimal** install of Debian 12 with SSH enabled. Paste
 the following commands in the console window **one line at a time**.
 
+```
     wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh; 
+```
+<br>
 
-| 
-
-    cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
-
-| 
+```
+    cd /usr/src/fusionpbx-install.sh/debian && ./install.sh    
+```
+<br>
 
 If using **Debian on Proxmox LXC** containers please run the following
 **BEFORE** starting the FusionPBX install.
 
+```
     apt-get update && apt-get upgrade
     apt-get install systemd
     apt-get install systemd-sysv
     apt-get install ca-certificates
     reboot
-
-| 
+ ```
+<br>
 
 **2.** At the end of the install, the script will instruct you to go to
 the ip address of the server (or domain name) in your web browser to
@@ -52,6 +55,7 @@ password for you to use. This can be changed after you login. The
 install script builds the fusionpbx database. If you need the database
 password it is located in /etc/fusionpbx/config.php .
 
+```
     Installation has completed.
 
     Use a web browser to login.
@@ -68,12 +72,13 @@ password it is located in /etc/fusionpbx/config.php .
        https://www.fusionpbx.com
        http://docs.fusionpbx.com
        https://www.fusionpbx.com/training.php
+```
 
-| 
+<br>
 
 ![image](../_static/images/ilogin.png)
 
-| 
+<br>
 
 After the install script has completed go to your web browser and login
 with the information provided by the install script.

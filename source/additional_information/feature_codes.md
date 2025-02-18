@@ -1,12 +1,12 @@
 # Feature Codes
 
-| Below are the \"\*\" codes used with FusionPBX. You can also create
+  Below are the \"\*\" codes used with FusionPBX. You can also create
   more as needed. If you do be sure to pick ones that are not currently
   in use.
 
-| 
+<br>
 
-## **Basic**
+## Basic
 
   -------------------------------------------------------------------------
   Feature Code  Name          Detail
@@ -64,12 +64,14 @@
                 Forward       
 
   \*74          Call Forward  Toggle Call Forward enable/disable
+  
   -------------------------------------------------------------------------
 
-| **Administrative PIN** (Recordings pin) can be found here
-  [Administrative PIN](/en/latest/applications/recordings.html) page
+## Administrative PIN 
 
-**Call Parking** \^\^\^\^\^\^\^\^\^\^\^\^\^
+Recordings pin can be found here [Administrative PIN](/en/latest/applications/recordings.html) page.
+
+## Call Parking
 
   -------------------------------------------------------------------------
   Feature Code  Name          Detail
@@ -78,9 +80,10 @@
                               will be played back to you
 
   \*5901-5999   Valet Un-Park Retrieve a Valet Parked call
+  
   -------------------------------------------------------------------------
 
-## **Advanced**
+## Advanced
 
   ---------------------------------------------------------------------------
   Feature Code Name          Detail
@@ -93,9 +96,10 @@
 
   \*\* \<ext\> Intercept an  Intercept a specific extension
                extension     
+               
   ---------------------------------------------------------------------------
 
-## **Voicemail**
+## Voicemail
 
   -----------------------------------------------------------------------------
   Feature Code        Name           Detail
@@ -111,9 +115,10 @@
 
   \*99\<extension\>   Send to        Send a call directly to voicemail
                       Voicemail      
+                      
   -----------------------------------------------------------------------------
 
-## **Miscellaneous**
+## Miscellaneous
 
   ------------------------------------------------------------------------
   Feature Code  Name           Detail
@@ -131,6 +136,7 @@
   \*9197        Milliwatt Tone Tone Playback
 
   \*9664        Test MoH       Test Music on Hold
+  
   ------------------------------------------------------------------------
 
 \*You can also add extra feature codes

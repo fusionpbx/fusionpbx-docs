@@ -6,15 +6,15 @@ SMS messages to registered endpoints including softphones and desk
 phones that support message[queue]{#queue}. This feature does support
 multiple Providers simultaneously.
 
-::: install
-:::
+### Install
+
 
     cd /var/www/fusionpbx/app
     git clone https://github.com/fusionpbx/fusionpbx-app-messages.git messages
     git clone https://github.com/fusionpbx/fusionpbx-app-providers.git providers
     php /var/www/fusionpbx/core/upgrade/upgrade.php
 
-| 
+<br>
 
 -   **App Defaults** After getting the source code run Upgrade -\> App
     Defaults
@@ -25,8 +25,7 @@ multiple Providers simultaneously.
 -   **Menu** From Advanced -\> Upgrade -\> Menu Defaults (checked) then
     press Execute
 
-::: menu
-:::
+### Menu
 
     If you used restore menu defaults you can skip this step.
     Providers
@@ -40,59 +39,57 @@ multiple Providers simultaneously.
         Parent Menu: Applications
         Groups: superadmin
 
-| 
+<br>
 
     cp /var/www/fusionpbx/app/messages/resources/service/debian-message_queue.service /etc/systemd/system/message_queue.service
     systemctl enable message_queue
     systemctl start message_queue
     systemctl daemon-reload
 
-| 
+<br>
 
     cp /var/www/fusionpbx/app/messages/resources/service/debian-message_events.service /etc/systemd/system/message_events.service
     systemctl enable message_events
     systemctl start message_events
     systemctl daemon-reload
 
-| 
+<br>
 
 -   Add the NGINX rewrite rule to support the media URL to support MMS.
 
-<!-- -->
-
+```
     nano /etc/nginx/sites-enabled/fusionpbx
-
-| 
+```
+<br>
 
 -   Add the message media rewrite below inside the server 443 section.
     Add it just below the REST API rewrite rule or just above the phone
     vendor rewrite rules.
 
-:
 
+```
 server {
 
-:   listen 443;
-
-| 
+   listen 443;
+```
+<br>
 
 -   Rewrite rule
 
-<!-- -->
-
+```
     #message media
     rewrite "^/app/messages/media/(.*)/(.*)" /app/messages/message_media.php?id=$1&action=download last;
+```
+<br>
 
-| 
+- Then restart nginx
 
-Then restart nginx
-
+```
     service nginx restart
+```
+<br>
 
-| 
-
-::: setup
-:::
+### Setup
 
 -   Go to Menu Accounts -\> Providers.
 -   Press the **ADD** button and find your provider and then press the

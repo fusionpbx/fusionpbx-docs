@@ -7,13 +7,13 @@ your active database small. When the feature is enabled you will see an
 \"ARCHIVE\" button in CDR page that accesses records on your archive
 database.
 
-| The first step is to install an archive database. This can be done by
+  The first step is to install an archive database. This can be done by
   standing up another fusionpbx server or by setting up a postgres
   server. If postgres is installed by itself you will need to manage the
   indexes, tables names and column names manually on the archive server.
   They need to match the values on the live database.
 
-| Once you get your archive database setup and can access both databases
+  Once you get your archive database setup and can access both databases
   in both directions (live \<-\> archive), you will need a mechanism to
   move the CDR Records from the live database to the archive database.
   In this example I have a complete fusionpbx install on the archive
@@ -21,16 +21,17 @@ database.
   records and use the Upgrade feature to keep the table & column names
   in sync.
 
-| 
+<br>
 
-## **Move the Records**
+## Move the Records
 
-| Create a shell script to copy the records.
+ Create a shell script to copy the records.
 
-| `touch /etc/cron.daily/db_copy.sh`
-| `chmod +x /etc/cron.daily/db_copy.sh`
-| `nano /etc/cron.daily/db_copy.sh`
-
+ `touch /etc/cron.daily/db_copy.sh`   
+ `chmod +x /etc/cron.daily/db_copy.sh`   
+ `nano /etc/cron.daily/db_copy.sh`   
+ 
+```
     #!/bin/sh
 
     #copy the data from the fusion db to a local csv file
@@ -82,12 +83,15 @@ database.
     rm /tmp/xml_cdr.csv
     rm /tmp/conference_sessions.csv
     rm /tmp/conference_session_details.csv
+```
 
-| Add to cron
+ ## Add to cron
 
-| `crontab -e`
-
+  `crontab -e`
+  
+```
     15 0 * * * bash /etc/cron.daily/db_copy.sh
+```
 
 -   Note: In this example I remove the json data from the records. You
     will need to comment out the \"SET json = NULL\" line if you want to
@@ -125,4 +129,5 @@ Setup your live server to connect to the archive database.
 
   archive[database_name]{#database_name}           text        fusionpbx         FALSE        Archive Database
                                                                                               Name
+                                                                                              
   --------------------------------------------------------------------------------------------------------------

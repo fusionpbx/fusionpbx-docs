@@ -4,7 +4,7 @@ Direct calls between two destinations by calling a feature code.
 
 ![image](../_static/images/applications/call_flows/fusionpbx_call_flows2.png)
 
-## \|
+<br>
 
 -   **Name:** Define the name of the call flow.
 -   **Extension:** Define what extension to use. (This will make an
@@ -25,7 +25,7 @@ Direct calls between two destinations by calling a feature code.
     alternative mode.
 -   **Description:** Label what this call flow does.
 
-## \|
+<br>
 
 ### Call Flow Example
 
@@ -41,13 +41,13 @@ Mode. Select an alternative sound to auditorially indicate which mode is
 activated. Choose a destination for the alternative mode. Finally, enter
 a description to describe what this call flow does.
 
-## \|
+<br>
 
 ![image](../_static/images/applications/call_flows/fusionpbx_call_flows1.png)
 
-## \|
+<br>
 
-Call Flow Button Control (BLF) \^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^
+### Call Flow Button Control (BLF) 
 
 Call Flows can be assigned to a button of a phone to give users easy
 access to toggling it on and off. This requires a modification to the

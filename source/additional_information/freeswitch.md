@@ -1,30 +1,28 @@
 # Freeswitch install
 
-| 
-
-| **Upgrade Move Source**
+**Upgrade Move Source**
 
     mv /usr/src/freeswitch freeswitch-version
 
-| **Git Release**
+**Git Release**
 
     cd /usr/src
     git clone -b v1.6 https://freeswitch.org/stash/scm/fs/freeswitch.git
     cd freeswitch
     ./bootstrap.sh
 
-| or
+or
 
-| **Git Head**
+**Git Head**
 
     cd /usr/src
     git clone https://freeswitch.org/stash/scm/fs/freeswitch.git
     cd freeswitch
     ./bootstrap.sh
 
-| or
+or
 
-| **files.freeswitch.org**
+**files.freeswitch.org**
 
     cd /usr/src
     wget http://files.freeswitch.org/freeswitch-1.4.26.zip
@@ -38,26 +36,26 @@
     unzip freeswitch-1.6.20.zip
     cd freeswitch-1.6.20
 
-| **Ubuntu Dependencies**
+**Ubuntu Dependencies**
 
     apt-get install autoconf automake devscripts gawk g++ git-core libjpeg-dev libncurses5-dev libtool make python-dev gawk pkg-config libtiff-dev libperl-dev libgdbm-dev libdb-dev gettext libssl-dev libcurl4-openssl-dev libpcre3-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libedit-dev libldns-dev libpq-dev memcached libmemcached-dev
 
-| **Debian Dependencies**
+**Debian Dependencies**
 
     apt-get install autoconf automake devscripts gawk g++ git-core libjpeg-dev libncurses5-dev libtool libtool-bin make python-dev gawk pkg-config libtiff5-dev libperl-dev libgdbm-dev libdb-dev gettext libssl-dev libcurl4-openssl-dev libpcre3-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libedit-dev libldns-dev libpq-dev memcached libmemcached-dev
 
-| **CentOS**
+**CentOS**
 
     yum install git gcc-c++ autoconf automake libtool wget python ncurses-devel zlib-devel libjpeg-devel openssl-devel e2fsprogs-devel sqlite-devel libcurl-devel pcre-devel speex-devel ldns-devel libedit-devel libmemcached-devel
 
-| Configure services to auto start
+Configure services to auto start
 
     chkconfig --add memcached && chkconfig --levels 33 memcached on
     chkconfig --add freeswitch && chkconfig --levels 35 freeswitch on
 
-| **modules.conf**
+**modules.conf**
 
-| uncomment the FreeSWITCH modules that are needed.
+uncomment the FreeSWITCH modules that are needed.
 
     mod_avmd
     mod_callcenter
@@ -66,50 +64,50 @@
     mod_curl
     mod_translate
 
-| Used for MP3 support
+Used for MP3 support
 
     mod_shout
 
-| **Postgres driver**
+**Postgres driver**
 
     ./configure --enable-core-pgsql-support
 
-| **Run Make**
+**Run Make**
 
     make
 
-| **Remove FreeSWITCH files**
+**Remove FreeSWITCH files**
 
-| This step is only needed for a FreeSWITCH upgrade.
-| Once it has been confirmed that the compile was successful then remove
+  This step is only needed for a FreeSWITCH upgrade.
+  Once it has been confirmed that the compile was successful then remove
   files from previous version of FreeSWITCH
 
     rm -rf /usr/local/freeswitch/{lib,mod,bin}/*
 
-| **Install**
+**Install**
 
     make install
 
-| **File Permissions**
+**File Permissions**
 
-| Set the file permissions instructions may vary based on the OS and
+  Set the file permissions instructions may vary based on the OS and
   install directory.
 
-| Debian and Ubuntu
+Debian and Ubuntu
 
     chown -R www-data:www-data /usr/local/freeswitch
 
-| CentOS or Other Unix operating systems
-| (need make sure that the web server has access to IVR recordings, Fax,
+CentOS or Other Unix operating systems
+  (need make sure that the web server has access to IVR recordings, Fax,
   and Voicemail)
 
     adduser --disabled-password  --quiet --system --home /usr/local/freeswitch --gecos "FreeSWITCH Voice Platform" --ingroup daemon freeswitch
     chown -R freeswitch:daemon /usr/local/freeswitch/ 
     chmod -R o-rwx /usr/local/freeswitch/
 
-| **Install Sound Files**
+**Install Sound Files**
 
-| Run this on new installs.
+Run this on new installs.
 
     cd /usr/src/freeswitch
     make sounds-install moh-install
@@ -118,7 +116,7 @@
 
 **Startup Script**
 
-| Run on new install only. Create the file \'/etc/init.d/freeswitch\'
+  Run on new install only. Create the file \'/etc/init.d/freeswitch\'
   with the following code:
 
     #!/bin/bash
@@ -310,7 +308,7 @@ Make the script executable and make it auto start on system boot:
     chmod +x /etc/init.d/freeswitch
     update-rc.d freeswitch defaults
 
-| 
+<br> 
 
 ## Monit
 

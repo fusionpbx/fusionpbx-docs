@@ -41,7 +41,7 @@ below and Click on **Save** once complete.
     Register: true 
     Enabled: true 
 
-| 
+<br>
 
 ![image](../_static/images/accounts/fusionpbx_gateway2.png)
 

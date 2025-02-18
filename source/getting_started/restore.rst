@@ -2,7 +2,6 @@
 Restore
 *********
 
-|
 
 It's always good to have a restore method of a backup in place.  Here are the steps to a basic restore method with FusionPBX.
 

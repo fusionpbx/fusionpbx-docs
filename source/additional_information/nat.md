@@ -1,4 +1,4 @@
-\##### Network Address Translation \#####
+# Network Address Translation
 
 NAT is Network Address Translation. When your FusionPBX and/or
 FreeSWITCH are inside NAT then then you may experience one way audio or

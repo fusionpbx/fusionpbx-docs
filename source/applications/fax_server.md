@@ -20,11 +20,12 @@ it. [Click here for the Youtube video](https://youtu.be/AJHcle2U3n4)
 There are more settings for fax under Advanced \> Default Settings then
 fax category.
 
--   
-
+ 
+```
     To create a fax server goto App \> Fax Server. Click the + on the right.
 
     :   -   **Leave the Destination Number blank** or faxing wont work.
+```
 
 -   Destination Number is used in the Fax Server Dial Plan and is set
     based on the fax server internal extension number.
@@ -122,8 +123,7 @@ methods for sending. There are different combinations like;
 -   Test sending with Faxtoy.net This will display what is faxed on
     their website. 1-855-330-1239 or 1-213-294-2943
 
--   
-
+```
     Turn on verbose log in FreeSWITCH fax.conf.xml
 
     :   -   From your FusionPBX installation go to ADVANCED \> XML
@@ -136,6 +136,7 @@ methods for sending. There are different combinations like;
             received, such as the quality of the connection etc.
         -   You can see these details when you run the freeswitch
             command line ie. **fs_cli**
+```
 
 ### Command Line Fax Statistics
 
