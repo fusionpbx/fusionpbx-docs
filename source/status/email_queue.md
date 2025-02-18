@@ -1,4 +1,4 @@
-\######## Email Queue \########
+# Email Queue
 
 Manage sending emails in a queue. Also works with the transcription of
 audio files with IBM Watson, Azure, or Google.
