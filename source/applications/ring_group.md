@@ -1,7 +1,5 @@
 # Ring Groups
 
-| 
-
 A ring group is a set of destinations that can be called with a ring
 strategy.
 
