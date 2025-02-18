@@ -5,7 +5,7 @@ issues and guage quality. Below are a list of some of the common ones.
 
 ## Packet Capture
 
-[tcpdump](https://www.tcpdump.org/) \^\^\^\^\^\^\^\^
+### [tcpdump](https://www.tcpdump.org/)
 
 ### Install
 
@@ -25,8 +25,7 @@ what is on your system. Port 5060 can be changed also if you are using a
 different port.
 ::::
 
-[sngrep](../additional_information/sngrep.html)
-\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^
+### [sngrep](../additional_information/sngrep.html)
 
 Since March 2017 Sngrep is installed on all systems by default. This is
 a very useful tool to help troubleshoot all types of sip related issues.
