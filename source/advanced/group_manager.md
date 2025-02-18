@@ -9,7 +9,7 @@ allow customizing permissions for existing groups or custom groups.
 -   **admin-** the domain administrator
 -   **users-** the group for regular users
 
-| 
+<br>
 
 ## User Manager
 
