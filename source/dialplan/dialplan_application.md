@@ -1,7 +1,7 @@
 # Dialplan Application
 
 Dialplan Application uses FreeSWITCH **show application** to build the
-dropdown lists that are found in FusionPBX dialplans. This is a list
+dropdown lists found in FusionPBX dialplans. This is a list
 from a default install and the list can change depending on how many
 FreeSWITCH modules are installed.
 
@@ -9,1952 +9,1143 @@ FreeSWITCH modules are installed.
 | name  | description | syntax                                 | ik |   |
 |       |             |                                        | ey |   |
 +=======+=============+========================================+====+===+
-| a     | Answer the  |                                        | mo |   |
-| nswer | call        |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| a     | Answer the  |                                        | m  |   |
+| nswer | call        |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| a     | Attended    | \<channel[url]{#url}\>                 | mo |   |
-| tt[xf | Transfer    |                                        | d[ |   |
-| er]{# |             |                                        | dp |   |
-| xfer} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| att   | Attended    | \<channel_url\>                        | m  |   |
+| _xfer | Transfer    |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| bgs   | Execute a   | \<command\>                            | mo |   |
-| ystem | system      |                                        | d[ |   |
-|       | command in  |                                        | dp |   |
-|       | the         |                                        | to |   |
-|       | background  |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| bgs   | Execute a   | \<command\>                            | m  |   |
+| ystem | system      |                                        | od |   |
+|       | command in  |                                        | _d |   |
+|       | the         |                                        | pt |   |
+|       | background  |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| bin   | bind a key  | \<realm\>,\<digits\|\~reg              | mo |   |
-| d[dig | sequence or | ex\>,\<string\>\[,\<value\>\]\[,\<dtmf | d[ |   |
-| it_ac | regex to an | target leg\>\]\[,\<event target        | dp |   |
-| tion] | action      | leg\>\]                                | to |   |
-| {#dig |             |                                        | ol |   |
-| it_ac |             |                                        | s] |   |
-| tion} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| bi    | bind a key  | \<realm\>,\<digits\|\~reg              | m  |   |
+| nd_di | sequence or | ex\>,\<string\>\[,\<value\>\]\[,\<dtmf | od |   |
+| git_a | regex to an | target leg\>\]\[,\<event target        | _d |   |
+| ction | action      | leg\>\]                                | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| bind[ | Bind a key  | \<key\> \[a[\|b\|](##SUBST##|b|)ab\]   | mo |   |
-| meta_ | to an       | \[a[\|b\|](##S                         | d[ |   |
-| app]{ | application | UBST##|b|)o[\|s\|](##SUBST##|s|)i\|1\] | dp |   |
-| #meta |             | \<app\>                                | to |   |
-| _app} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| bin   | Bind a key  | \<key\> \[aab\] \[aoi\|1\] \<app\>     | m  |   |
+| d_met | to an       |                                        | od |   |
+| a_app | application |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| blo   | Block DTMF  |                                        | mo |   |
-| ck[dt |             |                                        | d[ |   |
-| mf]{# |             |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| block | Block DTMF  |                                        | m  |   |
+| _dtmf |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| break | Break       |                                        | mo |   |
-|       |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| break | Break       |                                        | m  |   |
+|       |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| b     | Bridge      | \<channel[url]{#url}\>                 | mo |   |
-| ridge | Audio       |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| b     | Bridge      | \<channel_url\>                        | m  |   |
+| ridge | Audio       |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| bri   | Export a    | \<varname\>=\<value\>                  | mo |   |
-| dge[e | channel     |                                        | d[ |   |
-| xport | variable    |                                        | dp |   |
-| ]{#ex | across a    |                                        | to |   |
-| port} | bridge      |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| bri   | Export a    | \<varname\>=\<value\>                  | m  |   |
+| dge_e | channel     |                                        | od |   |
+| xport | variable    |                                        | _d |   |
+|       | across a    |                                        | pt |   |
+|       | bridge      |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| callc | CallCenter  | queue[name]{#name}                     | mo |   |
-| enter |             |                                        | d[ |   |
+| callc | CallCenter  | queue_name                             | mo |   |
+| enter |             |                                        | d_ |   |
 |       |             |                                        | ca |   |
 |       |             |                                        | ll |   |
 |       |             |                                        | ce |   |
 |       |             |                                        | nt |   |
 |       |             |                                        | er |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #c |   |
-|       |             |                                        | al |   |
-|       |             |                                        | lc |   |
-|       |             |                                        | en |   |
-|       |             |                                        | te |   |
-|       |             |                                        | r} |   |
 +-------+-------------+----------------------------------------+----+---+
-| ca    | capture     | \<varname\>[\|\                        | mo |   |
-| pture | data into a | <data\>\|](##SUBST##|<data>|)\<regex\> | d[ |   |
-|       | var         |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| ca    | capture     | \<varname\>\<regex\>                   | m  |   |
+| pture | data into a |                                        | od |   |
+|       | var         |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| c     | Check an ip | \<ip\> \<acl \| cidr\>                 | mo |   |
-| heck[ | against an  | \[\<hangup[cause]{#cause}\>\]          | d[ |   |
-| acl]{ | ACL list    |                                        | dp |   |
-| #acl} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| chec  | Check an ip | \<ip\> \<acl \| cidr\>                 | m  |   |
+| k_acl | against an  | \[\<hangup_cause\>\]                   | od |   |
+|       | ACL list    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| clea  | clear all   | \<realm\>\|all\[,target\]              | mo |   |
-| r[dig | digit       |                                        | d[ |   |
-| it_ac | bindings    |                                        | dp |   |
-| tion] |             |                                        | to |   |
-| {#dig |             |                                        | ol |   |
-| it_ac |             |                                        | s] |   |
-| tion} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| cle   | clear all   | \<realm\>\|all\[,target\]              | m  |   |
+| ar_di | digit       |                                        | od |   |
+| git_a | bindings    |                                        | _d |   |
+| ction |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| clea  | Clear       |                                        | mo |   |
-| r[spe | Speech      |                                        | d[ |   |
-| ech_c | Handle      |                                        | dp |   |
-| ache] | Cache       |                                        | to |   |
-| {#spe |             |                                        | ol |   |
-| ech_c |             |                                        | s] |   |
-| ache} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| cle   | Clear       |                                        | m  |   |
+| ar_sp | Speech      |                                        | od |   |
+| eech_ | Handle      |                                        | _d |   |
+| cache | Cache       |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| cng[  | Do PLC on   |                                        | mo |   |
-| plc]{ | CNG frames  |                                        | d[ |   |
-| #plc} |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| cn    | Do PLC on   |                                        | m  |   |
+| g_plc | CNG frames  |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 | confe | conference  |                                        | mo |   |
-| rence |             |                                        | d[ |   |
+| rence |             |                                        | d_ |   |
 |       |             |                                        | co |   |
 |       |             |                                        | nf |   |
 |       |             |                                        | er |   |
 |       |             |                                        | en |   |
 |       |             |                                        | ce |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #c |   |
-|       |             |                                        | on |   |
-|       |             |                                        | fe |   |
-|       |             |                                        | re |   |
-|       |             |                                        | nc |   |
-|       |             |                                        | e} |   |
 +-------+-------------+----------------------------------------+----+---+
-| co    | con         |                                        | mo |   |
-| nfere | ference[set |                                        | d[ |   |
-| nce[s | _auto_outca |                                        | co |   |
-| et_au | ll]{#set_au |                                        | nf |   |
-| to_ou | to_outcall} |                                        | er |   |
+| co    | confe       |                                        | mo |   |
+| nfere | rence_set_a |                                        | d_ |   |
+| nce_s | uto_outcall |                                        | co |   |
+| et_au |             |                                        | nf |   |
+| to_ou |             |                                        | er |   |
 | tcall |             |                                        | en |   |
-| ]{#se |             |                                        | ce |   |
-| t_aut |             |                                        | ]{ |   |
-| o_out |             |                                        | #c |   |
-| call} |             |                                        | on |   |
-|       |             |                                        | fe |   |
-|       |             |                                        | re |   |
-|       |             |                                        | nc |   |
-|       |             |                                        | e} |   |
+|       |             |                                        | ce |   |
 +-------+-------------+----------------------------------------+----+---+
 | db    | Insert to   | \[inse                                 | mo |   |
-|       | the db      | rt\|delete\]/\<realm\>/\<key\>/\<val\> | d[ |   |
+|       | the db      | rt\|delete\]/\<realm\>/\<key\>/\<val\> | d_ |   |
 |       |             |                                        | db |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #d |   |
-|       |             |                                        | b} |   |
 +-------+-------------+----------------------------------------+----+---+
-| d     | decode      | \[max[pictures]{#pictures}\]           | mo |   |
-| ecode | picture     |                                        | d[ |   |
-| [vide |             |                                        | fs |   |
-| o]{#v |             |                                        | v] |   |
-| ideo} |             |                                        | {# |   |
-|       |             |                                        | fs |   |
-|       |             |                                        | v} |   |
+| de    | decode      | \[max_pictures\]                       | m  |   |
+| code_ | picture     |                                        | od |   |
+| video |             |                                        | _f |   |
+|       |             |                                        | sv |   |
 +-------+-------------+----------------------------------------+----+---+
-| dedu  | Prevent     | \[only[rtp]{#rtp}\]                    | mo |   |
-| plica | duplicate   |                                        | d[ |   |
-| te[dt | inband +    |                                        | dp |   |
-| mf]{# | 2833 dtmf   |                                        | to |   |
-| dtmf} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| d     | Prevent     | \[only_rtp\]                           | m  |   |
+| edupl | duplicate   |                                        | od |   |
+| icate | inband +    |                                        | _d |   |
+| _dtmf | 2833 dtmf   |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| de    | Send call   | \<deflect[data]{#data}\>               | mo |   |
-| flect | deflect     |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| de    | Send call   | \<deflect_data\>                       | m  |   |
+| flect | deflect     |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| del   | echo audio  | \<delay ms\>                           | mo |   |
-| ay[ec | at a        |                                        | d[ |   |
-| ho]{# | specified   |                                        | dp |   |
-| echo} | delay       |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| delay | echo audio  | \<delay ms\>                           | m  |   |
+| _echo | at a        |                                        | od |   |
+|       | specified   |                                        | _d |   |
+|       | delay       |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| d     | detect[aud  | > \<threshold\> \<audio[hits]{#hits}\> | mo |   |
-| etect | io]{#audio} | > \<timeout[ms]{#ms}\> \[\<file\>\]    | d[ |   |
-| [audi |             |                                        | dp |   |
-| o]{#a |             |                                        | to |   |
-| udio} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| de    | d           | > \<threshold\> \<audio_hits\>         | m  |   |
+| tect_ | etect_audio | > \<timeout_ms\> \[\<file\>\]          | od |   |
+| audio |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| detec | det         | > \<threshold\>                        | mo |   |
-| t[sil | ect[silence | > \<silence[hits]{#hits}\>             | d[ |   |
-| ence] | ]{#silence} | > \<timeout[ms]{#ms}\> \[\<file\>\]    | dp |   |
-| {#sil |             |                                        | to |   |
-| ence} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| dete  | det         | > \<threshold\> \<silence_hits\>       | m  |   |
+| ct_si | ect_silence | > \<timeout_ms\> \[\<file\>\]          | od |   |
+| lence |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| det   | Detect      | \<mod[name]{#name}\>                   | mo |   |
-| ect[s | speech      | \<gram[name]{#name}\>                  | d[ |   |
-| peech |             | \<gram[path]{#path}\> \[\<addr\>\] OR  | dp |   |
-| ]{#sp |             | grammar \<gram[name]{#name}\>          | to |   |
-| eech} |             | \[\<path\>\] OR nogrammar              | ol |   |
-|       |             | \<gram[name]{#name}\> OR               | s] |   |
-|       |             | grammaron/grammaroff                   | {# |   |
-|       |             | \<gram[name]{#name}\> OR               | dp |   |
-|       |             | grammarsalloff                         | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| det   | Detect      | \<mod_name\> \<gram_name\>             | m  |   |
+| ect_s | speech      | \<gram_path\> \[\<addr\>\] OR grammar  | od |   |
+| peech |             | \<gram_name\> \[\<path\>\] OR          | _d |   |
+|       |             | nogrammar \<gram_name\> OR             | pt |   |
+|       |             | grammaron/grammaroff \<gram_name\> OR  | oo |   |
+|       |             | grammarsalloff                         | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 |       |             | OR pause OR resume OR                  |    |   |
-|       |             | start[input_timers]{#input_timers} OR  |    |   |
-|       |             | stop OR param \<name\> \<value\>       |    |   |
+|       |             | start_input_timers OR stop OR param    |    |   |
+|       |             | \<name\> \<value\>                     |    |   |
 +-------+-------------+----------------------------------------+----+---+
-| di    | change      | \<realm\>\[,\<target\>\]               | mo |   |
-| git[a | binding     |                                        | d[ |   |
-| ction | realm       |                                        | dp |   |
-| _set_ |             |                                        | to |   |
-| realm |             |                                        | ol |   |
-| ]{#ac |             |                                        | s] |   |
-| tion_ |             |                                        | {# |   |
-| set_r |             |                                        | dp |   |
-| ealm} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| di    | change      | \<realm\>\[,\<target\>\]               | m  |   |
+| git_a | binding     |                                        | od |   |
+| ction | realm       |                                        | _d |   |
+| _set_ |             |                                        | pt |   |
+| realm |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| di    | Displace    | > \<path\> \[\<flags\>\]               | mo |   |
-| splac | File        | > \[+time[limit_ms]{#limit_ms}\]       | d[ |   |
-| e[ses |             |                                        | dp |   |
-| sion] |             |                                        | to |   |
-| {#ses |             |                                        | ol |   |
-| sion} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| d     | Displace    | > \<path\> \[\<flags\>\]               | m  |   |
+| ispla | File        | > \[+time_limit_ms\]                   | od |   |
+| ce_se |             |                                        | _d |   |
+| ssion |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| ea    | Enable      |                                        | mo |   |
-| rly[h | early       |                                        | d[ |   |
-| angup | hangup      |                                        | dp |   |
-| ]{#ha |             |                                        | to |   |
-| ngup} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| ea    | Enable      |                                        | m  |   |
+| rly_h | early       |                                        | od |   |
+| angup | hangup      |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| eave  | eavesdrop   | \[all \| \<uuid\>\]                    | mo |   |
-| sdrop | on a uuid   |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| eave  | eavesdrop   | \[all \| \<uuid\>\]                    | m  |   |
+| sdrop | on a uuid   |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| echo  | Echo        |                                        | mo |   |
-|       |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| echo  | Echo        |                                        | m  |   |
+|       |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| enab  | Enable      | \[0\|\<seconds\>\]                     | mo |   |
-| le[he | Media       |                                        | d[ |   |
-| artbe | Heartbeat   |                                        | dp |   |
-| at]{# |             |                                        | to |   |
-| heart |             |                                        | ol |   |
-| beat} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| e     | Enable      | \[0\|\<seconds\>\]                     | m  |   |
+| nable | Media       |                                        | od |   |
+| _hear | Heartbeat   |                                        | _d |   |
+| tbeat |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| enab  | Enable      | \[0\|\<seconds\>\]                     | mo |   |
-| le[ke | Keepalive   |                                        | d[ |   |
-| epali |             |                                        | dp |   |
-| ve]{# |             |                                        | to |   |
-| keepa |             |                                        | ol |   |
-| live} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| e     | Enable      | \[0\|\<seconds\>\]                     | m  |   |
+| nable | Keepalive   |                                        | od |   |
+| _keep |             |                                        | _d |   |
+| alive |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| end   | Playback    | \<path\>                               | mo |   |
-| less[ | File        |                                        | d[ |   |
-| playb | Endlessly   |                                        | dp |   |
-| ack]{ |             |                                        | to |   |
-| #play |             |                                        | ol |   |
-| back} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| e     | Playback    | \<path\>                               | m  |   |
+| ndles | File        |                                        | od |   |
+| s_pla | Endlessly   |                                        | _d |   |
+| yback |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 | enum  | Perform an  | \[reload \| \<number\> \[\<root\>\]\]  | mo |   |
-|       | ENUM lookup |                                        | d[ |   |
+|       | ENUM lookup |                                        | d_ |   |
 |       |             |                                        | en |   |
 |       |             |                                        | um |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #e |   |
-|       |             |                                        | nu |   |
-|       |             |                                        | m} |   |
 +-------+-------------+----------------------------------------+----+---+
-| eval  | Do Nothing  |                                        | mo |   |
-|       |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| eval  | Do Nothing  |                                        | m  |   |
+|       |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| event | Fire an     |                                        | mo |   |
-|       | event       |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| event | Fire an     |                                        | m  |   |
+|       | event       |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| execu | Execute an  | \<extension\> \<dialplan\> \<context\> | mo |   |
-| te[ex | extension   |                                        | d[ |   |
-| tensi |             |                                        | dp |   |
-| on]{# |             |                                        | to |   |
-| exten |             |                                        | ol |   |
-| sion} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| ex    | Execute an  | \<extension\> \<dialplan\> \<context\> | m  |   |
+| ecute | extension   |                                        | od |   |
+| _exte |             |                                        | _d |   |
+| nsion |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| e     | Export a    | \<varname\>=\<value\>                  | mo |   |
-| xport | channel     |                                        | d[ |   |
-|       | variable    |                                        | dp |   |
-|       | across a    |                                        | to |   |
-|       | bridge      |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| e     | Export a    | \<varname\>=\<value\>                  | m  |   |
+| xport | channel     |                                        | od |   |
+|       | variable    |                                        | _d |   |
+|       | across a    |                                        | pt |   |
+|       | bridge      |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| fax[d | Detect      |                                        | mo |   |
-| etect | faxes       |                                        | d[ |   |
-| ]{#de |             |                                        | dp |   |
-| tect} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| fax_d | Detect      |                                        | m  |   |
+| etect | faxes       |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 | fifo  | Park with   | \<fifo                                 | mo |   |
-|       | FIFO        | name                                   | d[ |   |
-|       |             | \>\[!\<importance[number]{#number}\>\] | fi |   |
-|       |             | \[in \[\<announce file\>[\|undef\]     | fo |   |
-|       |             | \[\<music                              | ]{ |   |
-|       |             | file\>\|](#                            | #f |   |
-|       |             | #SUBST##|undef] [<music file>|)undef\] | if |   |
-|       |             | \| out \[wait[\|nowait\] \[\<announce  | o} |   |
-|       |             | file\>\|](##SUB                        |    |   |
-|       |             | ST##|nowait] [<announce file>|)undef\] |    |   |
-|       |             | \[\<music file\>\|undef\]\]            |    |   |
+|       | FIFO        | name\>\[!\<importance_number\>\] \[in  | d_ |   |
+|       |             | \[\<announce file\>undef\] \| out      | fi |   |
+|       |             | \[waitundef\] \[\<music                | fo |   |
+|       |             | file\>\|undef\]\]                      |    |   |
 +-------+-------------+----------------------------------------+----+---+
-| fifo  | Count a     | > \                                    | mo |   |
-| [trac | call as a   | <fifo[outbound_uuid]{#outbound_uuid}\> | d[ |   |
-| k_cal | fifo call   |                                        | fi |   |
-| l]{#t | in the      |                                        | fo |   |
-| rack_ | manual[cal  |                                        | ]{ |   |
-| call} | ls]{#calls} |                                        | #f |   |
-|       | queue       |                                        | if |   |
-|       |             |                                        | o} |   |
+| fifo_ | Count a     | > \<fifo_outbound_uuid\>               | mo |   |
+| track | call as a   |                                        | d_ |   |
+| _call | fifo call   |                                        | fi |   |
+|       | in the      |                                        | fo |   |
+|       | m           |                                        |    |   |
+|       | anual_calls |                                        |    |   |
+|       | queue       |                                        |    |   |
 +-------+-------------+----------------------------------------+----+---+
-| fire  | fire the    |                                        | mo |   |
-|       | message     |                                        | d[ |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
+| fire  | fire the    |                                        | m  |   |
+|       | message     |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | ms |   |
 +-------+-------------+----------------------------------------+----+---+
-| flu   | flush any   |                                        | mo |   |
-| sh[dt | queued dtmf |                                        | d[ |   |
-| mf]{# |             |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| flush | flush any   |                                        | m  |   |
+| _dtmf | queued dtmf |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| gen   | Generate    | \<                                     | mo |   |
-| tones | Tones       | tgml[script]{#script}\>\[\|\<loops\>\] | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| gen   | Generate    | \<tgml_script\>\[\|\<loops\>\]         | m  |   |
+| tones | Tones       |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 | group | Manage a    | \[insert\|delete\]:\<group             | mo |   |
-|       | group       | name\>:\<val\>                         | d[ |   |
+|       | group       | name\>:\<val\>                         | d_ |   |
 |       |             |                                        | db |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #d |   |
-|       |             |                                        | b} |   |
 +-------+-------------+----------------------------------------+----+---+
-| h     | Hangup the  | \[\<cause\>\]                          | mo |   |
-| angup | call        |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| h     | Hangup the  | \[\<cause\>\]                          | m  |   |
+| angup | call        |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| hash  | Insert into | \[                                     | mo |   |
-|       | the         | insert[\|insert_ifempty\|](##SUBST##|i | d[ |   |
-|       | hashtable   | nsert_ifempty|)delete\|delete[ifmatch] | ha |   |
-|       |             | {#ifmatch}\]/\<realm\>/\<key\>/\<val\> | sh |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #h |   |
-|       |             |                                        | as |   |
-|       |             |                                        | h} |   |
+| hash  | Insert into | \[insertdelete\|dele                   | mo |   |
+|       | the         | te_ifmatch\]/\<realm\>/\<key\>/\<val\> | d_ |   |
+|       | hashtable   |                                        | ha |   |
+|       |             |                                        | sh |   |
 +-------+-------------+----------------------------------------+----+---+
-| hold  | Send a hold | \[\<display message\>\]                | mo |   |
-|       | message     |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| hold  | Send a hold | \[\<display message\>\]                | m  |   |
+|       | message     |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| info  | Display     |                                        | mo |   |
-|       | Call Info   |                                        | d[ |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
+| info  | Display     |                                        | m  |   |
+|       | Call Info   |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | ms |   |
 +-------+-------------+----------------------------------------+----+---+
-| info  | Display     |                                        | mo |   |
-|       | Call Info   |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| info  | Display     |                                        | m  |   |
+|       | Call Info   |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| inte  | intercept   | \[-bleg\] \<uuid\>                     | mo |   |
-| rcept |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| inte  | intercept   | \[-bleg\] \<uuid\>                     | m  |   |
+| rcept |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| ivr   | Run an ivr  |                                        | mo |   |
-|       | menu        |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| ivr   | Run an ivr  |                                        | m  |   |
+|       | menu        |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| ji    | Send        | > \<jitterbuffer[data]{#data}\>        | mo |   |
-| tterb | session     |                                        | d[ |   |
-| uffer | j           |                                        | dp |   |
-|       | itterbuffer |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| ji    | Send        | > \<jitterbuffer_data\>                | m  |   |
+| tterb | session     |                                        | od |   |
+| uffer | j           |                                        | _d |   |
+|       | itterbuffer |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| limit | Limit       | > \<backend\> \<realm\> \<id\>         | mo |   |
-|       |             | > \[\<max\>\[/interval\]\] \[number    | d[ |   |
-|       |             | > \[dialplan \[context\]\]\]           | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| limit | Limit       | > \<backend\> \<realm\> \<id\>         | m  |   |
+|       |             | > \[\<max\>\[/interval\]\] \[number    | od |   |
+|       |             | > \[dialplan \[context\]\]\]           | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| limi  | Limit       | > \<backend\> \<realm\> \<id\>         | mo |   |
-| t[exe |             | > \<max\>\[/interval\] \<application\> | d[ |   |
-| cute] |             | > \[application arguments\]            | dp |   |
-| {#exe |             |                                        | to |   |
-| cute} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| lim   | Limit       | > \<backend\> \<realm\> \<id\>         | m  |   |
+| it_ex |             | > \<max\>\[/interval\] \<application\> | od |   |
+| ecute |             | > \[application arguments\]            | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| lim   | Limit       | > \<realm\> \<id\>                     | mo |   |
-| it[ha |             | > \[\<max\>\[/interval\]\] \[number    | d[ |   |
-| sh]{# |             | > \[dialplan \[context\]\]\]           | dp |   |
-| hash} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| limit | Limit       | > \<realm\> \<id\>                     | m  |   |
+| _hash |             | > \[\<max\>\[/interval\]\] \[number    | od |   |
+|       |             | > \[dialplan \[context\]\]\]           | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| limi  | Limit       | > \<realm\> \<id\>                     | mo |   |
-| t[has |             | > \<max\>\[/interval\] \<application\> | d[ |   |
-| h_exe |             | > \[application arguments\]            | dp |   |
-| cute] |             |                                        | to |   |
-| {#has |             |                                        | ol |   |
-| h_exe |             |                                        | s] |   |
-| cute} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| lim   | Limit       | > \<realm\> \<id\>                     | m  |   |
+| it_ha |             | > \<max\>\[/interval\] \<application\> | od |   |
+| sh_ex |             | > \[application arguments\]            | _d |   |
+| ecute |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| log   | Logs to the | \<log[level]{#level}\>                 | mo |   |
-|       | logger      | \<log[string]{#string}\>               | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| log   | Logs to the | \<log_level\> \<log_string\>           | m  |   |
+|       | logger      |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| loop[ | Playback    | \[+loops\] \<path\>                    | mo |   |
-| playb | File looply |                                        | d[ |   |
-| ack]{ |             |                                        | dp |   |
-| #play |             |                                        | to |   |
-| back} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| loo   | Playback    | \[+loops\] \<path\>                    | m  |   |
+| p_pla | File looply |                                        | od |   |
+| yback |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| media | Reset all   |                                        | mo |   |
-| [rese | b           |                                        | d[ |   |
-| t]{#r | ypass/proxy |                                        | dp |   |
-| eset} | media flags |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| m     | Reset all   |                                        | m  |   |
+| edia_ | b           |                                        | od |   |
+| reset | ypass/proxy |                                        | _d |   |
+|       | media flags |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| mkdir | Create a    | > \<path\>                             | mo |   |
-|       | directory   |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| mkdir | Create a    | > \<path\>                             | m  |   |
+|       | directory   |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| mul   | Set many    | \[\^\^\<delim\>\]\<varname\>=\<value\> | mo |   |
-| tiset | channel     | \<var2\>=\<val2\>                      | d[ |   |
-|       | variables   |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| mul   | Set many    | \[\^\^\<delim\>\]\<varname\>=\<value\> | m  |   |
+| tiset | channel     | \<var2\>=\<val2\>                      | od |   |
+|       | variables   |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| multi | Unset many  | \[\^\^\<delim\>\]\<varname\> \<var2\>  | mo |   |
-| unset | channel     | \<var3\>                               | d[ |   |
-|       | variables   |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| multi | Unset many  | \[\^\^\<delim\>\]\<varname\> \<var2\>  | m  |   |
+| unset | channel     | \<var3\>                               | od |   |
+|       | variables   |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| mutex | block on a  | \<keyname\>\[ on\|off\]                | mo |   |
-|       | call flow   |                                        | d[ |   |
-|       | only        |                                        | dp |   |
-|       | allowing    |                                        | to |   |
-|       | one at a    |                                        | ol |   |
-|       | time        |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| mutex | block on a  | \<keyname\>\[ on\|off\]                | m  |   |
+|       | call flow   |                                        | od |   |
+|       | only        |                                        | _d |   |
+|       | allowing    |                                        | pt |   |
+|       | one at a    |                                        | oo |   |
+|       | time        |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| no    | Refuse      |                                        | mo |   |
-| video | Inbound     |                                        | d[ |   |
-|       | Video       |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| no    | Refuse      |                                        | m  |   |
+| video | Inbound     |                                        | od |   |
+|       | Video       |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| park  | Park        |                                        | mo |   |
-|       |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| park  | Park        |                                        | m  |   |
+|       |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| park  | Park State  |                                        | mo |   |
-| [stat |             |                                        | d[ |   |
-| e]{#s |             |                                        | dp |   |
-| tate} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| park_ | Park State  |                                        | m  |   |
+| state |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| p     | Say a       | \<macro[name]{#name}\>,\<data\>        | mo |   |
-| hrase | Phrase      |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| p     | Say a       | \<macro_name\>,\<data\>                | m  |   |
+| hrase | Phrase      |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| p     | Pickup      | \[\<key\>\]                            | mo |   |
-| ickup |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| p     | Pickup      | \[\<key\>\]                            | m  |   |
+| ickup |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| pla   | Play and do | \<file\> detect:\<engine\>             | mo |   |
-| y[and | speech      | {param1=val1,param2=val2}\<grammar\>   | d[ |   |
-| _dete | recognition |                                        | dp |   |
-| ct_sp |             |                                        | to |   |
-| eech] |             |                                        | ol |   |
-| {#and |             |                                        | s] |   |
-| _dete |             |                                        | {# |   |
-| ct_sp |             |                                        | dp |   |
-| eech} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| pl    | Play and do | \<file\> detect:\<engine\>             | m  |   |
+| ay_an | speech      | {param1=val1,param2=val2}\<grammar\>   | od |   |
+| d_det | recognition |                                        | _d |   |
+| ect_s |             |                                        | pt |   |
+| peech |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| pl    | Play and    | > \<min\> \<max\> \<tries\>            | >  |   |
-| ay[an | get Digits  | > \<timeout\> \<terminators\> \<file\> | mo |   |
-| d_get |             | > \<invalid[file]{#file}\>             | d[ |   |
-| _digi |             | > \<var[name]{#name}\> \<regexp\>      | dp |   |
-| ts]{# |             | > \[\<digit[timeout]{#timeout}\>\]     | to |   |
-| and_g |             | > \[\'\<failure[ext]{#ext}\>           | ol |   |
-| et_di |             | > \[failure[dp]{#dp}                   | s] |   |
-| gits} |             | > \[failure[context]{#context}\]\]\'\] | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| play  | Play and    | > \<min\> \<max\> \<tries\>            | >  |   |
+| _and_ | get Digits  | > \<timeout\> \<terminators\> \<file\> |  m |   |
+| get_d |             | > \<invalid_file\> \<var_name\>        | od |   |
+| igits |             | > \<regexp\> \[\<digit_timeout\>\]     | _d |   |
+|       |             | > \[\'\<failure_ext\> \[failure_dp     | pt |   |
+|       |             | > \[failure_context\]\]\'\]            | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| play[ | play a fsv  | \<file\>                               | mo |   |
-| fsv]{ | file        |                                        | d[ |   |
-| #fsv} |             |                                        | fs |   |
-|       |             |                                        | v] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | fs |   |
-|       |             |                                        | v} |   |
+| pla   | play a fsv  | \<file\>                               | m  |   |
+| y_fsv | file        |                                        | od |   |
+|       |             |                                        | _f |   |
+|       |             |                                        | sv |   |
 +-------+-------------+----------------------------------------+----+---+
-| play[ | play a yvv  | > \<file\> \[width\] \[height\]        | mo |   |
-| yuv]{ | file        |                                        | d[ |   |
-| #yuv} |             |                                        | fs |   |
-|       |             |                                        | v] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | fs |   |
-|       |             |                                        | v} |   |
+| pla   | play a yvv  | > \<file\> \[width\] \[height\]        | m  |   |
+| y_yuv | file        |                                        | od |   |
+|       |             |                                        | _f |   |
+|       |             |                                        | sv |   |
 +-------+-------------+----------------------------------------+----+---+
-| pla   | Playback    | > \<path\>                             | mo |   |
-| yback | File        |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| pla   | Playback    | > \<path\>                             | m  |   |
+| yback | File        |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| pre[a | Pre-Answer  |                                        | mo |   |
-| nswer | the call    |                                        | d[ |   |
-| ]{#an |             |                                        | dp |   |
-| swer} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| pre_a | Pre-Answer  |                                        | m  |   |
+| nswer | the call    |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| prepr | pre-process |                                        | mo |   |
-| ocess |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| prepr | pre-process |                                        | m  |   |
+| ocess |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| pre   | Send        | > \<rpid\> \<status\> \[\<id\>\]       | mo |   |
-| sence | Presence    |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| pre   | Send        | > \<rpid\> \<status\> \[\<id\>\]       | m  |   |
+| sence | Presence    |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| pr    | Set privacy | off[\|on\|](##SUBST##|on|              | mo |   |
-| ivacy | on calls    | )name[\|full\|](##SUBST##|full|)number | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| pr    | Set privacy | offnamenumber                          | m  |   |
+| ivacy | on calls    |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| push  | Set a       | \<varname\>=\<value\>                  | mo |   |
-|       | channel     |                                        | d[ |   |
-|       | variable    |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| push  | Set a       | \<varname\>=\<value\>                  | m  |   |
+|       | channel     |                                        | od |   |
+|       | variable    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| que   | Queue dtmf  | \<dtmf[data]{#data}\>                  | mo |   |
-| ue[dt | to be sent  |                                        | d[ |   |
-| mf]{# |             |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| queue | Queue dtmf  | \<dtmf_data\>                          | m  |   |
+| _dtmf | to be sent  |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| read  | Read Digits | \<min\> \<max\> \<file\>               | mo |   |
-|       |             | \<var[name]{#name}\> \<timeout\>       | d[ |   |
-|       |             | \<terminators\>                        | dp |   |
-|       |             | \<digit[timeout]{#timeout}\>           | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| read  | Read Digits | \<min\> \<max\> \<file\> \<var_name\>  | m  |   |
+|       |             | \<timeout\> \<terminators\>            | od |   |
+|       |             | \<digit_timeout\>                      | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| r     | Record File | > \<path\>                             | mo |   |
-| ecord |             | >                                      | d[ |   |
-|       |             |  \[\<time[limit_secs]{#limit_secs}\>\] | dp |   |
-|       |             | > \[\<silence[thresh]{#thresh}\>\]     | to |   |
-|       |             | > \[\<silence[hits]{#hits}\>\]         | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| r     | Record File | > \<path\> \[\<time_limit_secs\>\]     | m  |   |
+| ecord |             | > \[\<silence_thresh\>\]               | od |   |
+|       |             | > \[\<silence_hits\>\]                 | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| re    | record an   | > \<file\>                             | mo |   |
-| cord[ | fsv file    |                                        | d[ |   |
-| fsv]{ |             |                                        | fs |   |
-| #fsv} |             |                                        | v] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | fs |   |
-|       |             |                                        | v} |   |
+| recor | record an   | > \<file\>                             | m  |   |
+| d_fsv | fsv file    |                                        | od |   |
+|       |             |                                        | _f |   |
+|       |             |                                        | sv |   |
 +-------+-------------+----------------------------------------+----+---+
-| recor | Record      | > \<path\> \[+\<timeout\>\]            | mo |   |
-| d[ses | Session     |                                        | d[ |   |
-| sion] |             |                                        | dp |   |
-| {#ses |             |                                        | to |   |
-| sion} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| reco  | Record      | > \<path\> \[+\<timeout\>\]            | m  |   |
+| rd_se | Session     |                                        | od |   |
+| ssion |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| recor | Mask audio  | \<path\>                               | mo |   |
-| d[ses | in          |                                        | d[ |   |
-| sion_ | recording   |                                        | dp |   |
-| mask] |             |                                        | to |   |
-| {#ses |             |                                        | ol |   |
-| sion_ |             |                                        | s] |   |
-| mask} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| reco  | Mask audio  | \<path\>                               | m  |   |
+| rd_se | in          |                                        | od |   |
+| ssion | recording   |                                        | _d |   |
+| _mask |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| reco  | Resume      | > \<path\>                             | mo |   |
-| rd[se | recording   |                                        | d[ |   |
-| ssion |             |                                        | dp |   |
-| _unma |             |                                        | to |   |
-| sk]{# |             |                                        | ol |   |
-| sessi |             |                                        | s] |   |
-| on_un |             |                                        | {# |   |
-| mask} |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| r     | Resume      | > \<path\>                             | m  |   |
+| ecord | recording   |                                        | od |   |
+| _sess |             |                                        | _d |   |
+| ion_u |             |                                        | pt |   |
+| nmask |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| re    | Send call   |                                        | mo |   |
-| cover | recov       |                                        | d[ |   |
-| y[ref | ery[refresh |                                        | dp |   |
-| resh] | ]{#refresh} |                                        | to |   |
-| {#ref |             |                                        | ol |   |
-| resh} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| r     | Send call   |                                        | m  |   |
+| ecove | recov       |                                        | od |   |
+| ry_re | ery_refresh |                                        | _d |   |
+| fresh |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| red   | Send        | > \<redirect[data]{#data}\>            | mo |   |
-| irect | session     |                                        | d[ |   |
-|       | redirect    |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| red   | Send        | > \<redirect_data\>                    | m  |   |
+| irect | session     |                                        | od |   |
+|       | redirect    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| remo  | Remove      | \[\<function\>\]                       | mo |   |
-| ve[bu | media bugs  |                                        | d[ |   |
-| gs]{# |             |                                        | dp |   |
-| bugs} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| r     | Remove      | \[\<function\>\]                       | m  |   |
+| emove | media bugs  |                                        | od |   |
+| _bugs |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| r     | Rename file | \<from[path]{#path}\>                  | mo |   |
-| ename |             | \<to[path]{#path}\>                    | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| r     | Rename file | \<from_path\> \<to_path\>              | m  |   |
+| ename |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| reply | reply to a  |                                        | mo |   |
-|       | message     |                                        | d[ |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
+| reply | reply to a  |                                        | m  |   |
+|       | message     |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | ms |   |
 +-------+-------------+----------------------------------------+----+---+
-| re    | Send        | \<respond[data]{#data}\>               | mo |   |
-| spond | session     |                                        | d[ |   |
-|       | respond     |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| re    | Send        | \<respond_data\>                       | m  |   |
+| spond | session     |                                        | od |   |
+|       | respond     |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| ring  | Indicate    |                                        | mo |   |
-| [read | Ring[Rea    |                                        | d[ |   |
-| y]{#r | dy]{#ready} |                                        | dp |   |
-| eady} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| ring_ | Indicate    |                                        | m  |   |
+| ready | Ring_Ready  |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| rxfax | FAX Receive | \<filename\>                           | mo |   |
-|       | Application |                                        | d[ |   |
+| rxfax | FAX Receive | \<filename\>                           | m  |   |
+|       | Application |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | pa |   |
+|       |             |                                        | nd |   |
 |       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
 +-------+-------------+----------------------------------------+----+---+
-| say   | say         | \<module[name]{#name}\>\[:\<lang\>\]   | mo |   |
-|       |             | \<say[type]{#type}\>                   | d[ |   |
-|       |             | \<say[method]{#method}\>               | dp |   |
-|       |             | \[\<say[gender]{#gender}\>\] \<text\>  | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| say   | say         | \<module_name\>\[:\<lang\>\]           | m  |   |
+|       |             | \<say_type\> \<say_method\>            | od |   |
+|       |             | \[\<say_gender\>\] \<text\>            | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sch   | Schedule a  | \[+\]\<time\> \<path\>                 | mo |   |
-| ed[br | broadcast   | \                                      | d[ |   |
-| oadca | in the      | [aleg[\|bleg\|](##SUBST##|bleg|)both\] | dp |   |
-| st]{# | future      |                                        | to |   |
-| broad |             |                                        | ol |   |
-| cast} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| sched | Schedule a  | \[+\]\<time\> \<path\> \[alegboth\]    | m  |   |
+| _broa | broadcast   |                                        | od |   |
+| dcast | in the      |                                        | _d |   |
+|       | future      |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sc    | cancel      | \[group\]                              | mo |   |
-| hed[c | scheduled   |                                        | d[ |   |
-| ancel | tasks       |                                        | dp |   |
-| ]{#ca |             |                                        | to |   |
-| ncel} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| sc    | cancel      | \[group\]                              | m  |   |
+| hed_c | scheduled   |                                        | od |   |
+| ancel | tasks       |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sc    | Schedule a  | \[+\]\<time\> \[\<cause\>\]            | mo |   |
-| hed[h | hangup in   |                                        | d[ |   |
-| angup | the future  |                                        | dp |   |
-| ]{#ha |             |                                        | to |   |
-| ngup} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| sc    | Schedule a  | \[+\]\<time\> \[\<cause\>\]            | m  |   |
+| hed_h | hangup in   |                                        | od |   |
+| angup | the future  |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sch   | Enable      | \[0\|\<seconds\>\]                     | mo |   |
-| ed[he | Scheduled   |                                        | d[ |   |
-| artbe | Heartbeat   |                                        | dp |   |
-| at]{# |             |                                        | to |   |
-| heart |             |                                        | ol |   |
-| beat} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| sched | Enable      | \[0\|\<seconds\>\]                     | m  |   |
+| _hear | Scheduled   |                                        | od |   |
+| tbeat | Heartbeat   |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| s     | Schedule a  | \[+\]\<time\> \<extension\>            | mo |   |
-| ched[ | transfer in | \<dialplan\> \<context\>               | d[ |   |
-| trans | the future  |                                        | dp |   |
-| fer]{ |             |                                        | to |   |
-| #tran |             |                                        | ol |   |
-| sfer} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| sche  | Schedule a  | \[+\]\<time\> \<extension\>            | m  |   |
+| d_tra | transfer in | \<dialplan\> \<context\>               | od |   |
+| nsfer | the future  |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| send  | send the    |                                        | mo |   |
-|       | message     |                                        | d[ |   |
-|       | as-is       |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
+| send  | send the    |                                        | m  |   |
+|       | message     |                                        | od |   |
+|       | as-is       |                                        | _s |   |
+|       |             |                                        | ms |   |
 +-------+-------------+----------------------------------------+----+---+
-| sen   | Send        | > \<text\>                             | mo |   |
-| d[dis | session a   |                                        | d[ |   |
-| play] | new display |                                        | dp |   |
-| {#dis |             |                                        | to |   |
-| play} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| se    | Send        | > \<text\>                             | m  |   |
+| nd_di | session a   |                                        | od |   |
+| splay | new display |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| se    | Send dtmf   | > \<dtmf[data]{#data}\>                | mo |   |
-| nd[dt | to be sent  |                                        | d[ |   |
-| mf]{# |             |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| send  | Send dtmf   | > \<dtmf_data\>                        | m  |   |
+| _dtmf | to be sent  |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| se    | Send info   | > \<info\>                             | mo |   |
-| nd[in |             |                                        | d[ |   |
-| fo]{# |             |                                        | dp |   |
-| info} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| send  | Send info   | > \<info\>                             | m  |   |
+| _info |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| ses   | sessio      | > \<level\>                            | mo |   |
-| sion[ | n[loglevel] |                                        | d[ |   |
-| logle | {#loglevel} |                                        | dp |   |
-| vel]{ |             |                                        | to |   |
-| #logl |             |                                        | ol |   |
-| evel} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| s     | sessi       | > \<level\>                            | m  |   |
+| essio | on_loglevel |                                        | od |   |
+| n_log |             |                                        | _d |   |
+| level |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| set   | set a       |                                        | mo |   |
-|       | variable    |                                        | d[ |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
+| set   | set a       |                                        | m  |   |
+|       | variable    |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | ms |   |
 +-------+-------------+----------------------------------------+----+---+
-| set   | Set a       | \<varname\>=\<value\>                  | mo |   |
-|       | channel     |                                        | d[ |   |
-|       | variable    |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set   | Set a       | \<varname\>=\<value\>                  | m  |   |
+|       | channel     |                                        | od |   |
+|       | variable    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| set[a | set volume  |                                        | mo |   |
-| udio_ |             |                                        | d[ |   |
-| level |             |                                        | dp |   |
-| ]{#au |             |                                        | to |   |
-| dio_l |             |                                        | ol |   |
-| evel} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set_a | set volume  |                                        | m  |   |
+| udio_ |             |                                        | od |   |
+| level |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| set[g | Set a       | \<varname\>=\<value\>                  | mo |   |
-| lobal | global      |                                        | d[ |   |
-| ]{#gl | variable    |                                        | dp |   |
-| obal} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set_g | Set a       | \<varname\>=\<value\>                  | m  |   |
+| lobal | global      |                                        | od |   |
+|       | variable    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| set[m | Set Media   |                                        | mo |   |
-| edia_ | Stats       |                                        | d[ |   |
-| stats |             |                                        | dp |   |
-| ]{#me |             |                                        | to |   |
-| dia_s |             |                                        | ol |   |
-| tats} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set_m | Set Media   |                                        | m  |   |
+| edia_ | Stats       |                                        | od |   |
+| stats |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| s     | set mute    |                                        | mo |   |
-| et[mu |             |                                        | d[ |   |
-| te]{# |             |                                        | dp |   |
-| mute} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set   | set mute    |                                        | m  |   |
+| _mute |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| s     | Name the    | \<name\>                               | mo |   |
-| et[na | channel     |                                        | d[ |   |
-| me]{# |             |                                        | dp |   |
-| name} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set   | Name the    | \<name\>                               | m  |   |
+| _name | channel     |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| set[p | Set a       | \<varname\>=\<value\>                  | mo |   |
-| rofil | caller      |                                        | d[ |   |
-| e_var | profile     |                                        | dp |   |
-| ]{#pr | variable    |                                        | to |   |
-| ofile |             |                                        | ol |   |
-| _var} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set_p | Set a       | \<varname\>=\<value\>                  | m  |   |
+| rofil | caller      |                                        | od |   |
+| e_var | profile     |                                        | _d |   |
+|       | variable    |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| s     | Set a User  | \<user\>@\<domain\> \[prefix\]         | mo |   |
-| et[us |             |                                        | d[ |   |
-| er]{# |             |                                        | dp |   |
-| user} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set   | Set a User  | \<user\>@\<domain\> \[prefix\]         | m  |   |
+| _user |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| set[z | Enable      |                                        | mo |   |
-| ombie | Zombie      |                                        | d[ |   |
-| _exec | Execution   |                                        | dp |   |
-| ]{#zo |             |                                        | to |   |
-| mbie_ |             |                                        | ol |   |
-| exec} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| set_z | Enable      |                                        | m  |   |
+| ombie | Zombie      |                                        | od |   |
+| _exec | Execution   |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sleep | Pause a     | \<pausemilliseconds\>                  | mo |   |
-|       | channel     |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| sleep | Pause a     | \<pausemilliseconds\>                  | m  |   |
+|       | channel     |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 | s     | Connect to  | \<ip\>\[:\<port\>\]                    | mo |   |
-| ocket | a socket    |                                        | d[ |   |
+| ocket | a socket    |                                        | d_ |   |
 |       |             |                                        | ev |   |
 |       |             |                                        | en |   |
 |       |             |                                        | t_ |   |
 |       |             |                                        | so |   |
 |       |             |                                        | ck |   |
 |       |             |                                        | et |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #e |   |
-|       |             |                                        | ve |   |
-|       |             |                                        | nt |   |
++-------+-------------+----------------------------------------+----+---+
+| sofi  | private     | > \<uuid\>                             | m  |   |
+| a_sla | sofia sla   |                                        | od |   |
+|       | function    |                                        | _s |   |
+|       |             |                                        | of |   |
+|       |             |                                        | ia |   |
++-------+-------------+----------------------------------------+----+---+
+| soft  | Put a       | > \<unhold key\> \[\<moh_a\>\]         | m  |   |
+| _hold | bridged     | > \[\<moh_b\>\]                        | od |   |
+|       | channel on  |                                        | _d |   |
+|       | hold        |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| sound | Analyze     |                                        | m  |   |
+| _test | Audio       |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| spa   | Detect TDD  |                                        | m  |   |
+| ndsp_ | data        |                                        | od |   |
+| detec |             |                                        | _s |   |
+| t_tdd |             |                                        | pa |   |
+|       |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| spa   | Send TDD    |                                        | m  |   |
+| ndsp_ | data        |                                        | od |   |
+| injec |             |                                        | _s |   |
+| t_tdd |             |                                        | pa |   |
+|       |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| s     | Send TDD    |                                        | m  |   |
+| pands | data        |                                        | od |   |
+| p_sen |             |                                        | _s |   |
+| d_tdd |             |                                        | pa |   |
+|       |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| spa   | Detect dtmf |                                        | m  |   |
+| ndsp_ |             |                                        | od |   |
+| start |             |                                        | _s |   |
+| _dtmf |             |                                        | pa |   |
+|       |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| span  | start fax   | \<app\>\[ \<arg\>\]\[ \<timeout\>\]\[  | m  |   |
+| dsp_s | detect      | \<tone_type\>\]                        | od |   |
+| tart_ |             |                                        | _s |   |
+| fax_d |             |                                        | pa |   |
+| etect |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| spand | Start       | \<name\>                               | m  |   |
+| sp_st | background  |                                        | od |   |
+| art_t | tone        |                                        | _s |   |
+| one_d | detection   |                                        | pa |   |
+| etect | with        |                                        | nd |   |
+|       | cadence     |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| spa   | stop        |                                        | m  |   |
+| ndsp_ | sending tdd |                                        | od |   |
+| stop_ |             |                                        | _s |   |
+| detec |             |                                        | pa |   |
+| t_tdd |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| sp    | stop inband |                                        | m  |   |
+| andsp | dtmf        |                                        | od |   |
+| _stop |             |                                        | _s |   |
+| _dtmf |             |                                        | pa |   |
+|       |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| spa   | stop fax    |                                        | m  |   |
+| ndsp_ | detect      |                                        | od |   |
+| stop_ |             |                                        | _s |   |
+| fax_d |             |                                        | pa |   |
+| etect |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| spa   | stop        |                                        | m  |   |
+| ndsp_ | sending tdd |                                        | od |   |
+| stop_ |             |                                        | _s |   |
+| injec |             |                                        | pa |   |
+| t_tdd |             |                                        | nd |   |
+|       |             |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| span  | Stop        |                                        | m  |   |
+| dsp_s | background  |                                        | od |   |
+| top_t | tone        |                                        | _s |   |
+| one_d | detection   |                                        | pa |   |
+| etect | with        |                                        | nd |   |
+|       | cadence     |                                        | sp |   |
++-------+-------------+----------------------------------------+----+---+
+| speak | Speak text  | \<engine\>\<text\>                     | m  |   |
+|       |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| start | Detect dtmf |                                        | m  |   |
+| _dtmf |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| star  | Generate    |                                        | m  |   |
+| t_dtm | dtmf        |                                        | od |   |
+| f_gen |             |                                        | _d |   |
+| erate |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| stop  | stop        |                                        | m  |   |
+|       | execution   |                                        | od |   |
 |       |             |                                        | _s |   |
-|       |             |                                        | oc |   |
-|       |             |                                        | ke |   |
-|       |             |                                        | t} |   |
+|       |             |                                        | ms |   |
 +-------+-------------+----------------------------------------+----+---+
-| s     | private     | > \<uuid\>                             | mo |   |
-| ofia[ | sofia sla   |                                        | d[ |   |
-| sla]{ | function    |                                        | so |   |
-| #sla} |             |                                        | fi |   |
-|       |             |                                        | a] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | so |   |
-|       |             |                                        | fi |   |
-|       |             |                                        | a} |   |
+| stop  | Do Nothing  |                                        | m  |   |
+|       |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| so    | Put a       | > \<unhold key\> \[\<moh[a]{#a}\>\]    | mo |   |
-| ft[ho | bridged     | > \[\<moh[b]{#b}\>\]                   | d[ |   |
-| ld]{# | channel on  |                                        | dp |   |
-| hold} | hold        |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| s     | Stop        | \<path\>                               | m  |   |
+| top_d | Displace    |                                        | od |   |
+| ispla | File        |                                        | _d |   |
+| ce_se |             |                                        | pt |   |
+| ssion |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sou   | Analyze     |                                        | mo |   |
-| nd[te | Audio       |                                        | d[ |   |
-| st]{# |             |                                        | dp |   |
-| test} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| stop  | stop inband |                                        | m  |   |
+| _dtmf | dtmf        |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| sp    | Detect TDD  |                                        | mo |   |
-| andsp | data        |                                        | d[ |   |
-| [dete |             |                                        | sp |   |
-| ct_td |             |                                        | an |   |
-| d]{#d |             |                                        | ds |   |
-| etect |             |                                        | p] |   |
-| _tdd} |             |                                        | {# |   |
+| sto   | stop inband | \[write\]                              | m  |   |
+| p_dtm | dtmf        |                                        | od |   |
+| f_gen | generation  |                                        | _d |   |
+| erate |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| stop  | Stop Record | \<path\>                               | m  |   |
+| _reco | Session     |                                        | od |   |
+| rd_se |             |                                        | _d |   |
+| ssion |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| s     | stop        |                                        | m  |   |
+| top_t | detecting   |                                        | od |   |
+| one_d | tones       |                                        | _d |   |
+| etect |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| stop  | Stop video  | > \<path\>                             | m  |   |
+| _vide | write       |                                        | od |   |
+| o_wri | overlay     |                                        | _d |   |
+| te_ov |             |                                        | pt |   |
+| erlay |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| st    | Stop FAX    |                                        | m  |   |
+| opfax | Application |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | pa |   |
+|       |             |                                        | nd |   |
 |       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
 +-------+-------------+----------------------------------------+----+---+
-| sp    | Send TDD    |                                        | mo |   |
-| andsp | data        |                                        | d[ |   |
-| [inje |             |                                        | sp |   |
-| ct_td |             |                                        | an |   |
-| d]{#i |             |                                        | ds |   |
-| nject |             |                                        | p] |   |
-| _tdd} |             |                                        | {# |   |
+| str   | strftime    | \[\<epoch\>\|\]\<format string\>       | m  |   |
+| ftime |             |                                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| s     | execute a   |                                        | m  |   |
+| ystem | system      |                                        | od |   |
+|       | command     |                                        | _s |   |
+|       |             |                                        | ms |   |
++-------+-------------+----------------------------------------+----+---+
+| s     | Execute a   | > \<command\>                          | m  |   |
+| ystem | system      |                                        | od |   |
+|       | command     |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| t     | Convert to  |                                        | m  |   |
+| 38_ga | T38 Gateway |                                        | od |   |
+| teway | if tones    |                                        | _s |   |
+|       | are heard   |                                        | pa |   |
+|       |             |                                        | nd |   |
 |       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
 +-------+-------------+----------------------------------------+----+---+
-| spa   | Send TDD    |                                        | mo |   |
-| ndsp[ | data        |                                        | d[ |   |
-| send_ |             |                                        | sp |   |
-| tdd]{ |             |                                        | an |   |
-| #send |             |                                        | ds |   |
-| _tdd} |             |                                        | p] |   |
-|       |             |                                        | {# |   |
+| thre  | three way   | \<uuid\>                               | m  |   |
+| e_way | call with a |                                        | od |   |
+|       | uuid        |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| t     | Detect      |                                        | m  |   |
+| one_d | tones       |                                        | od |   |
+| etect |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| tra   | Transfer a  | > \<exten\> \[\<dialplan\>             | m  |   |
+| nsfer | channel     | > \<context\>\]                        | od |   |
+|       |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| tra   | Transfer    | \<\~variable_prefix\|variable\>        | m  |   |
+| nsfer | variables   |                                        | od |   |
+| _vars |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
++-------+-------------+----------------------------------------+----+---+
+| txfax | FAX         | \<filename\>                           | m  |   |
+|       | Transmit    |                                        | od |   |
+|       | Application |                                        | _s |   |
+|       |             |                                        | pa |   |
+|       |             |                                        | nd |   |
 |       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
 +-------+-------------+----------------------------------------+----+---+
-| sp    | Detect dtmf |                                        | mo |   |
-| andsp |             |                                        | d[ |   |
-| [star |             |                                        | sp |   |
-| t_dtm |             |                                        | an |   |
-| f]{#s |             |                                        | ds |   |
-| tart_ |             |                                        | p] |   |
-| dtmf} |             |                                        | {# |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
+| unbin | Unbind a    | \[\<key\>\]                            | m  |   |
+| d_met | key from an |                                        | od |   |
+| a_app | application |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| span  | start fax   | \<app\>\[ \<arg\>\]\[ \<timeout\>\]\[  | mo |   |
-| dsp[s | detect      | \<tone[type]{#type}\>\]                | d[ |   |
-| tart_ |             |                                        | sp |   |
-| fax_d |             |                                        | an |   |
-| etect |             |                                        | ds |   |
-| ]{#st |             |                                        | p] |   |
-| art_f |             |                                        | {# |   |
-| ax_de |             |                                        | sp |   |
-| tect} |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
+| un    | Stop        |                                        | m  |   |
+| block | blocking    |                                        | od |   |
+| _dtmf | DTMF        |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| s     | Start       | \<name\>                               | mo |   |
-| pands | background  |                                        | d[ |   |
-| p[sta | tone        |                                        | sp |   |
-| rt_to | detection   |                                        | an |   |
-| ne_de | with        |                                        | ds |   |
-| tect] | cadence     |                                        | p] |   |
-| {#sta |             |                                        | {# |   |
-| rt_to |             |                                        | sp |   |
-| ne_de |             |                                        | an |   |
-| tect} |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| sp    | stop        |                                        | mo |   |
-| andsp | sending tdd |                                        | d[ |   |
-| [stop |             |                                        | sp |   |
-| _dete |             |                                        | an |   |
-| ct_td |             |                                        | ds |   |
-| d]{#s |             |                                        | p] |   |
-| top_d |             |                                        | {# |   |
-| etect |             |                                        | sp |   |
-| _tdd} |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| spand | stop inband |                                        | mo |   |
-| sp[st | dtmf        |                                        | d[ |   |
-| op_dt |             |                                        | sp |   |
-| mf]{# |             |                                        | an |   |
-| stop_ |             |                                        | ds |   |
-| dtmf} |             |                                        | p] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| sp    | stop fax    |                                        | mo |   |
-| andsp | detect      |                                        | d[ |   |
-| [stop |             |                                        | sp |   |
-| _fax_ |             |                                        | an |   |
-| detec |             |                                        | ds |   |
-| t]{#s |             |                                        | p] |   |
-| top_f |             |                                        | {# |   |
-| ax_de |             |                                        | sp |   |
-| tect} |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| sp    | stop        |                                        | mo |   |
-| andsp | sending tdd |                                        | d[ |   |
-| [stop |             |                                        | sp |   |
-| _inje |             |                                        | an |   |
-| ct_td |             |                                        | ds |   |
-| d]{#s |             |                                        | p] |   |
-| top_i |             |                                        | {# |   |
-| nject |             |                                        | sp |   |
-| _tdd} |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| span  | Stop        |                                        | mo |   |
-| dsp[s | background  |                                        | d[ |   |
-| top_t | tone        |                                        | sp |   |
-| one_d | detection   |                                        | an |   |
-| etect | with        |                                        | ds |   |
-| ]{#st | cadence     |                                        | p] |   |
-| op_to |             |                                        | {# |   |
-| ne_de |             |                                        | sp |   |
-| tect} |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| speak | Speak text  | \<engine\>[\|\<                        | mo |   |
-|       |             | voice\>\|](##SUBST##|<voice>|)\<text\> | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| sta   | Detect dtmf |                                        | mo |   |
-| rt[dt |             |                                        | d[ |   |
-| mf]{# |             |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| s     | Generate    |                                        | mo |   |
-| tart[ | dtmf        |                                        | d[ |   |
-| dtmf_ |             |                                        | dp |   |
-| gener |             |                                        | to |   |
-| ate]{ |             |                                        | ol |   |
-| #dtmf |             |                                        | s] |   |
-| _gene |             |                                        | {# |   |
-| rate} |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| stop  | stop        |                                        | mo |   |
-|       | execution   |                                        | d[ |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| stop  | Do Nothing  |                                        | mo |   |
-|       |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| s     | Stop        | \<path\>                               | mo |   |
-| top[d | Displace    |                                        | d[ |   |
-| ispla | File        |                                        | dp |   |
-| ce_se |             |                                        | to |   |
-| ssion |             |                                        | ol |   |
-| ]{#di |             |                                        | s] |   |
-| splac |             |                                        | {# |   |
-| e_ses |             |                                        | dp |   |
-| sion} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| st    | stop inband |                                        | mo |   |
-| op[dt | dtmf        |                                        | d[ |   |
-| mf]{# |             |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| stop[ | stop inband | \[write\]                              | mo |   |
-| dtmf_ | dtmf        |                                        | d[ |   |
-| gener | generation  |                                        | dp |   |
-| ate]{ |             |                                        | to |   |
-| #dtmf |             |                                        | ol |   |
-| _gene |             |                                        | s] |   |
-| rate} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| st    | Stop Record | \<path\>                               | mo |   |
-| op[re | Session     |                                        | d[ |   |
-| cord_ |             |                                        | dp |   |
-| sessi |             |                                        | to |   |
-| on]{# |             |                                        | ol |   |
-| recor |             |                                        | s] |   |
-| d_ses |             |                                        | {# |   |
-| sion} |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| s     | stop        |                                        | mo |   |
-| top[t | detecting   |                                        | d[ |   |
-| one_d | tones       |                                        | dp |   |
-| etect |             |                                        | to |   |
-| ]{#to |             |                                        | ol |   |
-| ne_de |             |                                        | s] |   |
-| tect} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| st    | Stop video  | > \<path\>                             | mo |   |
-| op[vi | write       |                                        | d[ |   |
-| deo_w | overlay     |                                        | dp |   |
-| rite_ |             |                                        | to |   |
-| overl |             |                                        | ol |   |
-| ay]{# |             |                                        | s] |   |
-| video |             |                                        | {# |   |
-| _writ |             |                                        | dp |   |
-| e_ove |             |                                        | to |   |
-| rlay} |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| st    | Stop FAX    |                                        | mo |   |
-| opfax | Application |                                        | d[ |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| str   | strftime    | \[\<epoch\>\|\]\<format string\>       | mo |   |
-| ftime |             |                                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| s     | execute a   |                                        | mo |   |
-| ystem | system      |                                        | d[ |   |
-|       | command     |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| s     | Execute a   | > \<command\>                          | mo |   |
-| ystem | system      |                                        | d[ |   |
-|       | command     |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| t3    | Convert to  |                                        | mo |   |
-| 8[gat | T38 Gateway |                                        | d[ |   |
-| eway] | if tones    |                                        | sp |   |
-| {#gat | are heard   |                                        | an |   |
-| eway} |             |                                        | ds |   |
-|       |             |                                        | p] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| t     | three way   | \<uuid\>                               | mo |   |
-| hree[ | call with a |                                        | d[ |   |
-| way]{ | uuid        |                                        | dp |   |
-| #way} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| t     | Detect      |                                        | mo |   |
-| one[d | tones       |                                        | d[ |   |
-| etect |             |                                        | dp |   |
-| ]{#de |             |                                        | to |   |
-| tect} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| tra   | Transfer a  | > \<exten\> \[\<dialplan\>             | mo |   |
-| nsfer | channel     | > \<context\>\]                        | d[ |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| t     | Transfer    | \<\                                    | mo |   |
-| ransf | variables   | ~variable[prefix]{#prefix}\|variable\> | d[ |   |
-| er[va |             |                                        | dp |   |
-| rs]{# |             |                                        | to |   |
-| vars} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| txfax | FAX         | \<filename\>                           | mo |   |
-|       | Transmit    |                                        | d[ |   |
-|       | Application |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sp |   |
-|       |             |                                        | an |   |
-|       |             |                                        | ds |   |
-|       |             |                                        | p} |   |
-+-------+-------------+----------------------------------------+----+---+
-| un    | Unbind a    | \[\<key\>\]                            | mo |   |
-| bind[ | key from an |                                        | d[ |   |
-| meta_ | application |                                        | dp |   |
-| app]{ |             |                                        | to |   |
-| #meta |             |                                        | ol |   |
-| _app} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| unblo | Stop        |                                        | mo |   |
-| ck[dt | blocking    |                                        | d[ |   |
-| mf]{# | DTMF        |                                        | dp |   |
-| dtmf} |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| u     | Send a      |                                        | mo |   |
-| nhold | un-hold     |                                        | d[ |   |
-|       | message     |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| u     | Send a      |                                        | m  |   |
+| nhold | un-hold     |                                        | od |   |
+|       | message     |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
 | u     | Tell        |                                        | mo |   |
-| nloop | loopback to |                                        | d[ |   |
+| nloop | loopback to |                                        | d_ |   |
 |       | unfold      |                                        | lo |   |
 |       |             |                                        | op |   |
 |       |             |                                        | ba |   |
 |       |             |                                        | ck |   |
-|       |             |                                        | ]{ |   |
-|       |             |                                        | #l |   |
++-------+-------------+----------------------------------------+----+---+
+| unset | unset a     |                                        | m  |   |
+|       | variable    |                                        | od |   |
+|       |             |                                        | _s |   |
+|       |             |                                        | ms |   |
++-------+-------------+----------------------------------------+----+---+
+| unset | Unset a     | > \<varname\>                          | m  |   |
+|       | channel     |                                        | od |   |
+|       | variable    |                                        | _d |   |
+|       |             |                                        | pt |   |
 |       |             |                                        | oo |   |
-|       |             |                                        | pb |   |
-|       |             |                                        | ac |   |
-|       |             |                                        | k} |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| unset | unset a     |                                        | mo |   |
-|       | variable    |                                        | d[ |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | sm |   |
-|       |             |                                        | s} |   |
+| un    | Set a       | \<varname\>=\<value\>                  | m  |   |
+| shift | channel     |                                        | od |   |
+|       | variable    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| unset | Unset a     | > \<varname\>                          | mo |   |
-|       | channel     |                                        | d[ |   |
-|       | variable    |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| valet | valet_park  | > \<lotname\> \<extension\>auto        | m  |   |
+| _park |             | > \[in\|out\] \[min\] \[max\]\]        | od |   |
+|       |             |                                        | _v |   |
+|       |             |                                        | al |   |
+|       |             |                                        | et |   |
+|       |             |                                        | _p |   |
+|       |             |                                        | ar |   |
+|       |             |                                        | ki |   |
+|       |             |                                        | ng |   |
 +-------+-------------+----------------------------------------+----+---+
-| un    | Set a       | \<varname\>=\<value\>                  | mo |   |
-| shift | channel     |                                        | d[ |   |
-|       | variable    |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| verb  | Make ALL    |                                        | m  |   |
+| ose_e | Events      |                                        | od |   |
+| vents | verbose.    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| val   | valet[p     | > \<lotname\> \<extension\>[\|\[ask    | mo |   |
-| et[pa | ark]{#park} | > \[\<min\>\] \[\<max\>\] \[\<to\>\]   | d[ |   |
-| rk]{# |             | > \[\<prompt\>\]\|](##SUBST##|[ask [   | va |   |
-| park} |             | <min>] [<max>] [<to>] [<prompt>]|)auto | le |   |
-|       |             | > \[in\|out\] \[min\] \[max\]\]        | t_ |   |
-|       |             |                                        | pa |   |
-|       |             |                                        | rk |   |
-|       |             |                                        | in |   |
-|       |             |                                        | g] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | va |   |
-|       |             |                                        | le |   |
-|       |             |                                        | t_ |   |
-|       |             |                                        | pa |   |
-|       |             |                                        | rk |   |
-|       |             |                                        | in |   |
-|       |             |                                        | g} |   |
+| vi    | Set video   | \[\[onoff\]                            | m  |   |
+| deo_d | decode.     |                                        | od |   |
+| ecode |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| verb  | Make ALL    |                                        | mo |   |
-| ose[e | Events      |                                        | d[ |   |
-| vents | verbose.    |                                        | dp |   |
-| ]{#ev |             |                                        | to |   |
-| ents} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| vid   | Send video  | \[manual\|auto\]                       | m  |   |
+| eo_re | refresh.    |                                        | od |   |
+| fresh |             |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| vi    | Set video   | \[\                                    | mo |   |
-| deo[d | decode.     | [on[\|wait\]\|](##SUBST##|wait]|)off\] | d[ |   |
-| ecode |             |                                        | dp |   |
-| ]{#de |             |                                        | to |   |
-| code} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| vide  | Video write | \<path\> \[\<pos\>\] \[\<alpha\>\]     | m  |   |
+| o_wri | overlay     |                                        | od |   |
+| te_ov |             |                                        | _d |   |
+| erlay |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| vide  | Send video  | \[manual\|auto\]                       | mo |   |
-| o[ref | refresh.    |                                        | d[ |   |
-| resh] |             |                                        | dp |   |
-| {#ref |             |                                        | to |   |
-| resh} |             |                                        | ol |   |
-|       |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| wait_ | Wait for    |                                        | m  |   |
+| for_a | call to be  |                                        | od |   |
+| nswer | answered    |                                        | _d |   |
+|       |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
-| v     | Video write | \<path\> \[\<pos\>\] \[\<alpha\>\]     | mo |   |
-| ideo[ | overlay     |                                        | d[ |   |
-| write |             |                                        | dp |   |
-| _over |             |                                        | to |   |
-| lay]{ |             |                                        | ol |   |
-| #writ |             |                                        | s] |   |
-| e_ove |             |                                        | {# |   |
-| rlay} |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| wait  | Wait for    |                                        | mo |   |
-| [for_ | call to be  |                                        | d[ |   |
-| answe | answered    |                                        | dp |   |
-| r]{#f |             |                                        | to |   |
-| or_an |             |                                        | ol |   |
-| swer} |             |                                        | s] |   |
-|       |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
-+-------+-------------+----------------------------------------+----+---+
-| w     | wait[for_   | > \<silence[thresh]{#thresh}\>         | mo |   |
-| ait[f | silence]{#f | > \<silence[hits]{#hits}\>             | d[ |   |
-| or_si | or_silence} | > \<listen[hits]{#hits}\>              | dp |   |
-| lence |             | > \<timeout[ms]{#ms}\> \[\<file\>\]    | to |   |
-| ]{#fo |             |                                        | ol |   |
-| r_sil |             |                                        | s] |   |
-| ence} |             |                                        | {# |   |
-|       |             |                                        | dp |   |
-|       |             |                                        | to |   |
-|       |             |                                        | ol |   |
-|       |             |                                        | s} |   |
+| w     | wait_       | > \<silence_thresh\> \<silence_hits\>  | m  |   |
+| ait_f | for_silence | > \<listen_hits\> \<timeout_ms\>       | od |   |
+| or_si |             | > \[\<file\>\]                         | _d |   |
+| lence |             |                                        | pt |   |
+|       |             |                                        | oo |   |
+|       |             |                                        | ls |   |
 +-------+-------------+----------------------------------------+----+---+
