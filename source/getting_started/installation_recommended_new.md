@@ -2,37 +2,17 @@
 
 ![image](../_static/images/logo_right.png)
 
-## \|
 
-### \|
 
 **Please follow the link below for the newest install guide**
 
 <http://docs.fusionpbx.com/en/latest/getting_started/quick_install.html>
 
-## \|
 
-## \|
-
-## \|
-
-## \|
-
-## \|
-
-## \|
-
-## \|
-
-## \|
-
-## \|
-
-| 
 
 New Install Video <https://www.youtube.com/embed/oioW1i8bieM>
 
-| 
+
 
 Welcome to the FUSIONPBX getting started guide. In this section we will
 show how to install FUSIONPBX. FUSIONPBX can be used on multiple
@@ -56,10 +36,10 @@ Fail2ban, NGINX, PHP FPM and PostgreSQL.
 Also, be sure to watch the youtube video from FreeSWITCH Cluecon Weekly
 <https://www.youtube.com/embed/kejAxlYSW3o> FusionPBX is installed and
 more!
-
+```
     wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/install.sh -O install.sh && sh install.sh
+```
 
-| 
 
 **2.** At the end of the install the script will instruct you to go to
 the ip address of the server in your web browser to finish the install.
@@ -73,7 +53,7 @@ After you have completed the install you can login with the GUI username
 and password you chose during the install. After you login, go to the
 menu and choose Advanced -\> Upgrade select the checkbox for App
 defaults then execute.
-
+```
     PostgreSQL
     Database name: fusionpbx
     Database username: fusionpbx
@@ -82,15 +62,15 @@ defaults then execute.
     Complete the install by by going to the IP address of this server
     in your web browser or with a domain name for this server.
     https://000.000.000.000
+```
 
 *It can take between 2-10 minutes to install* (Depending on internet
 speed)
 
-| 
-
 **3.** Goto a web browser and enter the ip address
 
 :   Go to
+```
         https://000.000.000.000
         When you get to the database part choose
         Postgresql
@@ -99,8 +79,8 @@ speed)
         Database Password: generated_password
         Create Database Username: Leave_Blank
         Create Database Password: Leave_Blank
+```
 
-| 
 
 **4.** Web browser Installation part
 
@@ -108,7 +88,7 @@ speed)
 
     ![image](../_static/images/install_lang_new.jpg)
 
-| 
+
 
 Freeswitch Detect **Detecting folder paths used**
 
@@ -116,13 +96,13 @@ Freeswitch Detect **Detecting folder paths used**
 
 **Don\'t change anything here**
 
-| 
+
 
 Database Configuration **Click Next**
 
 ![image](../_static/images/install_database_config_new.jpg)
 
-| 
+
 
 Admin Login Configuration **Click Next**
 
@@ -131,14 +111,14 @@ Admin Login Configuration **Click Next**
 This will create the superadmin login that will be used in your web
 browser.
 
-| 
+
 
 Install Finished **Login with the username and password you choose
 during the install**
 
 ![image](../_static/images/ilogin.jpg)
 
-| 
+
 
 Run App defaults
 
@@ -146,7 +126,7 @@ Run App defaults
 
 ![image](../_static/images/fusionpbx_upgrade_app_defaults.jpg)
 
-| 
+
 
 Start Sip Profiles
 
@@ -154,7 +134,7 @@ Start Sip Profiles
 
 ![image](../_static/images/fusionpbx_sip_status.jpg)
 
-| 
+
 
 Start Memcached
 
@@ -162,7 +142,7 @@ Start Memcached
 
 ![image](../_static/images/fusionpbx_start_memcached.jpg)
 
-| 
+
 
 **Note**: To display the logo at the top and not in the menu
 
@@ -175,7 +155,7 @@ Settings for voicemail to email and for fax notifications.
 Goto Advanced \> Default Settings and under the `Email` Section. Make
 sure these settings are enabled. Once these values are set press the
 **Reload** button at the top right of the page. :
-
+```
     method         text    smtp    
     smtp_auth      var     true    
     smtp_from      var     username@gmail.com      
@@ -185,6 +165,7 @@ sure these settings are enabled. Once these values are set press the
     smtp_port      numeric     587 
     smtp_secure        var     tls 
     smtp_username  var     username@gmail.com 
+```
 
 To see if there are any failed email attempts goto Status \> Emails.
 Once the issue causing the emails to fail is found you can click to

@@ -16,13 +16,12 @@ Follow the menu to the left and you will have a working PBX in no time. For PDF 
   :maxdepth: 3
   :glob:
 
-  getting_started/training.rst
+  getting_started/training.md
   getting_started/quick_install.md
-  getting_started/quick_install.rst
-  getting_started/lets_encrypt.rst
-  applications/provision.rst
-  getting_started/security.rst
-  getting_started/backup.rst
-  getting_started/restore.rst
-  firewall.rst
-  getting_started/languages.rst
+  getting_started/lets_encrypt.md
+  applications/provision.md
+  getting_started/security.md
+  getting_started/backup.md
+  getting_started/restore.md
+  firewall.md
+  getting_started/languages.md

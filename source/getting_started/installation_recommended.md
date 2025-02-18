@@ -21,7 +21,7 @@ CLICK HERE FOR THE NEW INSTALL
 >     chmod 755 install_fusionpbx.sh 
 >     ./install_fusionpbx.sh install-both auto 
 
-| 
+
 
 > **2.** The install script will apt-get update/upgrade the system and
 > ask you a few questions
@@ -35,7 +35,7 @@ CLICK HERE FOR THE NEW INSTALL
 >
 > *It can take between 15-30 minutes to compile and install*
 
-| 
+
 
 > **3.** Goto a web browser and enter the ip address :
 >
@@ -51,7 +51,7 @@ CLICK HERE FOR THE NEW INSTALL
 >     Create Database Username: Leave_Blank
 >     Create Database Password: Leave_Blank
 
-| 
+
 
 > 
 >
@@ -64,7 +64,7 @@ CLICK HERE FOR THE NEW INSTALL
 >
 >     ![image](../_static/images/install_lang.jpg)
 
-| 
+
 
 > 
 >
@@ -75,7 +75,7 @@ CLICK HERE FOR THE NEW INSTALL
 >
 > **Don\'t change anything here**
 
-| 
+
 
 > 
 >
@@ -86,7 +86,7 @@ CLICK HERE FOR THE NEW INSTALL
 >
 > **Don\'t change anything here**
 
-| 
+
 
 > 
 >
@@ -124,7 +124,7 @@ CLICK HERE FOR THE NEW INSTALL
 >     Password: YourPasswordYouPicked
 >     Checking to see if FreeSWITCH is running!
 
-| 
+
 
 > 
 >
