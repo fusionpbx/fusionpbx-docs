@@ -61,7 +61,7 @@ flagged as good by the value of the toll[allow]{#allow} variable.
     </extension>
     </include>
 
-| 
+<br>
 
 ## PREVENT TOLL CALLS
 
@@ -98,23 +98,23 @@ there is a gateway for each type of route.
 
 ![image](../_static/images/additional_information/toll-allow-example-local-outbound-route.png)
 
-| 
+<br>
 
 > **Domestic** Outbound Route
 
 ![image](../_static/images/additional_information/toll-allow-example-domestic-outbound-route.png)
 
-| 
+<br>
 
 > **International** Outbound Route
 
 ![image](../_static/images/additional_information/toll-allow-example-international-outbound-route.png)
 
-| 
+<br>
 
 Edit extensions with proper toll[allow]{#allow} variables to permit use of new outbound routes.
 
-:   Each extension can have multiple permissions listed in
+- Each extension can have multiple permissions listed in
     toll[allow]{#allow}.
 
 Extension with **local** and **domestic** calling permission can dial
@@ -122,7 +122,7 @@ out via both the \"local\" and \"domestic\" outbound routes above
 
 ![image](../_static/images/additional_information/toll-allow-example-extension-edit.png)
 
-| 
+<br>
 
 Extension with only **domestic** variable assigned can only dial the 10
 or 11 digit numbers in the \"domestic\" outbound route
