@@ -23,8 +23,15 @@ iptables -P OUTPUT ACCEPT
 
 ## Optional Rules
 
-OPENVPN: ```ptables -A INPUT -p udp --dport 1194 -j ACCEPT```
-ICMP: ```iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT```
+OPENVPN
+```
+iptables -A INPUT -p udp --dport 1194 -j ACCEPT
+```
+
+ICMP
+```
+iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+```
 
 ## Friendly Scanner
 
