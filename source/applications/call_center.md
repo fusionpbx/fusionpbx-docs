@@ -100,7 +100,7 @@ Save the recording
     as they enter the system. If a caller chooses the wrong queue, when
     they get to the correct queue the timer won\'t start over again.
 
-Time base score - Seconds =================
+# Time base score - Seconds
 
 This field is left blank by default which means the option will not be
 added to the XML Dialplan. If you populate the field with a number then
@@ -202,7 +202,7 @@ Keys to quit the current queue waiting.
 
 Enter a description to help organize and define what the queue is for.
 
-Agent Call Center Login ==================
+# Agent Call Center Login
 
 Agents can login to call center with \*22 from the phone or via the
 FusionPBX web interface. Admin and Super Admin accounts can also log
