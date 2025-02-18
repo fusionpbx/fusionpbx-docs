@@ -1,4 +1,4 @@
-\######## Fax Queue \########
+# Fax Queue
 
 Manage sending FAX in a queue. Sending a new FAX will go into the queue
 as waiting. Status updated to sent once they have succeeded or failed
