@@ -4,7 +4,7 @@ The Call Block application can be used to block *inbound* or *outbound*
 calls, based on the Caller ID Name and/or Number (for inbound calls), or
 the Destination Number (for outbound calls).
 
-Creating a New Call Block \^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^
+**Creating a New Call Block**
 
 To create a new Call Block, click the **Add** button at the top-right of
 the Call Block list page. A simple form will be presented\...
@@ -40,7 +40,7 @@ or voicemail box, etc.
 *Note: Call Blocks can also be added in bulk using the Recent Calls list
 below the form.*
 
-Outbound Call Blocking \^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^
+**Outbound Call Blocking**
 
 Outbound call blocking requires an additional dialplan entry.
 
