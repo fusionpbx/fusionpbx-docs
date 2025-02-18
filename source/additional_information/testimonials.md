@@ -1,7 +1,6 @@
 # Testimonials
 
-![image](../_static/images/logo.png){.align-center width="1.80556in"
-height="1.0625in"}
+![image](../_static/images/logo.png)
 
 Businesses of all sizes use FusionPBX daily. We love to see folks happy
 saving money using FusionPBX. Here are some of the testimonials we
@@ -15,7 +14,7 @@ FusionPBX wins hands down. What makes it even more amazing is the
 passion that the FusionPBX developers and contributors have in their
 software. I honestly couldn\'t be happier with a turn-key PBX system.*
 
-**-Digital Crisis**
+### Digital Crisis
 
 ------------------------------------------------------------------------
 
@@ -24,7 +23,7 @@ have helped in education, contribution and support. The FusionPBX team
 have developed a leading product. Its been a joy from day one joining
 this community and I look forward to the road ahead.*
 
-**-Kissvoice**
+### Kissvoice
 
 ------------------------------------------------------------------------
 
@@ -34,7 +33,7 @@ great product, but being extremely helpful in bringing out new features
 and helping us maintain the service. Every new release amazes us with
 the work and development put into it.*
 
-**-Kloudphone**
+### Kloudphone
 
 ------------------------------------------------------------------------
 
@@ -49,7 +48,7 @@ team and sane design, SureVoIP have been able to win many large
 customers because proprietry systems are so rigid and slow to innovate.
 We have been proud to support and deploy FusionPBX for 7 years.*
 
-**-SureVoIP**
+### SureVoIP
 
 *Winner of the Best Business ITSP (Medium Enterprise) 2016!*
 <http://www.surevoip.co.uk/2016-best-provider>
@@ -69,7 +68,7 @@ interface and the way all the features are grouped is awesome.
 
 *Again, Thanks for the effort*
 
-**-BareVOIP Limited**
+### BareVOIP Limited
 
 ------------------------------------------------------------------------
 
@@ -100,7 +99,7 @@ Hope that helps. And I highly encourage you to give FusionPBX a try.
 
 Regards,
 
-**-ThinkerIV**
+### ThinkerIV
 
 ------------------------------------------------------------------------
 
@@ -119,7 +118,7 @@ FusionPBX is clearly a well thought through design, built on a very
 solid underlying soft switch (FreeSWITCH) - for me that makes it the
 system of choice.
 
-**-Stephen**
+### Stephen
 
 ------------------------------------------------------------------------
 
