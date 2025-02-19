@@ -1,7 +1,3 @@
-::: title
-Extensions
-:::
-
 # Extensions
 
 **Extensions** define the necessary information for an endpoint, such as
@@ -408,8 +404,8 @@ Always back up your settings before making adjustments.
 > account that will be monitored for message waiting notifications. The
 > value entered in this setting follows the format <user@domain>, where:
 >
-> -   user is the voicemail box (or extension) to be monitored.
-> -   domain is the domain associated with the system, often matching
+> -   User is the voicemail box (or extension) to be monitored.
+> -   Domain is the domain associated with the system, often matching
 >     the SIP server\'s domain or the PBX domain.
 >
 > For example, if the extension 1001 has voicemail, and the domain of
@@ -484,7 +480,7 @@ Always back up your settings before making adjustments.
 > doesn't require manual modification unless there is a specific need
 > for custom routing or advanced configurations.
 
-Caller ID Select ==========
+### Caller ID Select
 
 > **Extension Caller ID input type select**
 >
