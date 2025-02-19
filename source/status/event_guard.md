@@ -24,22 +24,21 @@ these registered IP addresses that were authenticated.
     -   Advanced -\> Upgrade -\> App Defaults
 -   Run the following commands to install as a service
 
-<!-- -->
-
+```
     cp /var/www/fusionpbx/app/event_guard/resources/service/debian.service /etc/systemd/system/event_guard.service
     systemctl enable event_guard
     systemctl start event_guard
     systemctl daemon-reload
+```
 
--   or as a cron job
+- or as a cron job
+```
+ php
+ /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/event[guard.php]{#guard.php}
+ \>/dev/null 2\>&1 &
+```
 
-> php
-> /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/event[guard.php]{#guard.php}
-> \>/dev/null 2\>&1 &
-
-:
-
-Unblock an IP Address \^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^
+## Unblock an IP Address
 
 To unblock an address select the check box and then press the UNBLOCK
 button on the top right.
