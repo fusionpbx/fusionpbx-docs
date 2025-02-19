@@ -63,12 +63,8 @@ extensions are 3 digit then you would use 3 instead of 4.
 
 ![image](../_static/images/dialplan/fusionpbx_custom_dialplan.png)
 
-:::: note
-::: title
-Note
-:::
+>**Note:**   
+>A quick way to find a domains uuid is by going to Advanced \> Domains.   
+>Then click the edit icon on the domain you want to know the uuid of. The   
+>uuid will be at the end of the url.
 
-A quick way to find a domains uuid is by going to Advanced \> Domains.
-Then click the edit icon on the domain you want to know the uuid of. The
-uuid will be at the end of the url.
-::::

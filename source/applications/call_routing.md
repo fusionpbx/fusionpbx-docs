@@ -19,15 +19,17 @@ A few things need to be configured to enable this feature and restart
 freeswitch:
 
 Uncomment this line in lua.conf.xml.
-
+```
     <hook event="PHONE_FEATURE_SUBSCRIBE" subclass="" script="app.lua feature_event"/>
+```
 
 Add to Default Settings:
-
+```
     Category = device
     Subcategory = feature_sync
     Type = boolean
     Value = true
+```
 
 ### Enable Feature Sync on the Device
 

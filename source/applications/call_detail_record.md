@@ -71,36 +71,38 @@ Possible causes:
 
 **2. Save to XML Files**
 
-Save the CDR files to the file system and then use a cron job to load
+- Save the CDR files to the file system and then use a cron job to load
 them once a minute into the database.
 
-Edit the **/etc/freeswitch/xml_cdr.conf.xml config** Easiest command
+- Edit the **/etc/freeswitch/xml_cdr.conf.xml config** Easiest command
 line file edito is called nano
+```
+nano /etc/freeswitch/xml[cdr.conf.xml]{#cdr.conf.xml} config
+```
 
-> nano /etc/freeswitch/xml[cdr.conf.xml]{#cdr.conf.xml} config
-
-Comment out this line by adding \<!\-- and \--\>. Make sure to do this
+- Comment out this line by adding \<!\-- and \--\>. Make sure to do this
 carefully.
+```
+\<!\-- \<param name=\"url\"value=\"<http://127.0.0.1/app/xml_cdr/v_xml_cdr_import.php%22/>\>\--\>
+```
 
-> \<!\-- \<param name=\"url\"
-> value=\"<http://127.0.0.1/app/xml_cdr/v_xml_cdr_import.php%22/>\>
-> \--\>
+- Run this command one time to add the import command to crontab.
+```
+(crontab -l; echo \"\* \* \* \* \* \$(which php)
+/var/www/fusionpbx/app/xml[cdr]{#cdr}/xml[cdr_import.php]{#cdr_import.php}
+300\") \| crontab
+```
 
-Run this command one time to add the import command to crontab.
-
-> (crontab -l; echo \"\* \* \* \* \* \$(which php)
-> /var/www/fusionpbx/app/xml[cdr]{#cdr}/xml[cdr_import.php]{#cdr_import.php}
-> 300\") \| crontab
-
-Once you\'ve made these changes you can save the file. You could restart
+- Once you\'ve made these changes you can save the file. You could restart
 your server, or you could reloadxml and then restart the xml[cdr]{#cdr}
 module. Either is ok, it is up to you. Then your changes will have taken
 effect and you should no longer lose your menu bar when looking at CDR
 information.
+```
+fs[cli]{#cli} -x \'reloadxml\'
 
-> fs[cli]{#cli} -x \'reloadxml\'
->
-> fs[cli]{#cli} -x \'reload mod[xml_cdr]{#xml_cdr}\'
+fs[cli]{#cli} -x \'reload mod[xml_cdr]{#xml_cdr}\'
+```
 
 ## XML CDR configuration
 
@@ -108,29 +110,19 @@ For more detailed configuration go to the XML editor (Menu -\> Advanced
 -\> XML Editor) and in autoload configs look at
 xml[cdr.conf.xml]{#cdr.conf.xml}
 
-:::: note
-::: title
-Note
-:::
-
-By default only the a-leg of the call is logged therefore if you make a
-recording of the b-leg you won\'t be able to retrieve it using the Call
-Detail Records. If you want the b-leg as well you need to change
-log-b-leg=true in this config and in the default settings.
-::::
+>Note:   
+>By default only the a-leg of the call is logged therefore if you make a   
+>recording of the b-leg you won\'t be able to retrieve it using the Call   
+>Detail Records. If you want the b-leg as well you need to change   
+>log-b-leg=true in this config and in the default settings.
 
 ## Harddrive space usage
 
-:::: note
-::: title
-Note
-:::
-::::
-
-Recordings also take up space and may be manually deleted if you want
-the space back these are kept in (source install)
-/usr/local/freeswitch/recordings/{Domian[Name]{#name}}/archive or
-(package install) /var/lib/freeswitch/recordings/{Domain Name}/archive
-and inside that by year, month and day.
+>Note:   
+>Recordings also take up space and may be manually deleted if you want   
+>the space back these are kept in (source install)   
+>/usr/local/freeswitch/recordings/{Domian[Name]{#name}}/archive or   
+>(package install) /var/lib/freeswitch/recordings/{Domain Name}/archive   
+>and inside that by year, month and day.
 
 ## [CDR Default Settings](/en/latest/advanced/default_settings.html#id4)
