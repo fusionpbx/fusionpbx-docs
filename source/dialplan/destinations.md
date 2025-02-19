@@ -11,8 +11,8 @@ Configure Inbound Destinations: (This will auto-configure an Inbound
 Route also)
 
 
->**Tip**   
->Outbound destinations can be created also.
+> **Tip**   
+> Outbound destinations can be created also.
 
 
 *Select* **Dialplan** from the drop-down list and then *click*
@@ -70,9 +70,8 @@ To add a destination **click** on the **plus** button on the right.
     created. [Click here to view more about Inbound
     routes](http://docs.fusionpbx.com/en/latest/dialplan/inbound_routes.html).
 
->**Note Optional:**   
->Replace \^(?:+?1)?(d{10})\$ in Inbound Routes with either   
->0123456789 or a DID Number depending on the Route Destination setting.
+> **Note Optional:**   
+> Replace \^(?:+?1)?(d{10})\$ in Inbound Routes with either   
+> 0123456789 or a DID Number depending on the Route Destination setting.
 
 
-## [Destinations Default Settings](/en/latest/advanced/default_settings.html#id6)
