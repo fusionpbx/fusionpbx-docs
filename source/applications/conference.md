@@ -3,13 +3,10 @@
 Conferences is used to setup conference rooms with a name, description,
 and optional pin number.
 
-:::: note
-::: title
-Note
-:::
 
-For advanced conferencing use Apps -\> Conference Center
-::::
+>**Note:**   
+>For advanced conferencing use Apps -\> Conference Center
+
 
 ![image](../_static/images/applications/conference/fusionpbx_conferences.jpg)
 
@@ -25,16 +22,14 @@ For advanced conferencing use Apps -\> Conference Center
 -   **Pin Number:** If you want to add a layer of security to enter the
     conference.
 
--   
+-   **Profile:**
 
-    **Profile:**
-
-    :   -   Default- The default audio quality rate and video.
-        -   wait-mod- Wait Mod setting.
-        -   wideband- Wideband audio quality rate and video.
-        -   ultra-wideband- Ultra wideband quality rate and video.
-        -   cdquality- CD Quality rate and video.
-        -   page- Page setting.
+     -   Default- The default audio quality rate and video.
+     -   wait-mod- Wait Mod setting.
+     -   wideband- Wideband audio quality rate and video.
+     -   ultra-wideband- Ultra wideband quality rate and video.
+     -   cdquality- CD Quality rate and video.
+     -   page- Page setting.
 
 -   **Flags:** mute[\|deaf\|](##SUBST##|deaf|)waste\|moderator (Other
     values are available also)
