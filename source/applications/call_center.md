@@ -1,4 +1,6 @@
-# Call Center Queues
+# Call Centers
+
+## Call Center Queues
 
 List of queues for the call center.
 
@@ -7,7 +9,7 @@ List of queues for the call center.
 -   To add a Call Center Queue, click the **Add** button in the top
     right
 
-# Call Center Agents
+## Call Center Agents
 
 List of call center agents.
 
@@ -23,7 +25,7 @@ List of call center agents.
 -   If you want to enable Follow Me or Call Forwarding for an Agent, set
     the contact string to loopback/\<extension\>
 
-# Call Center Agent Fields
+## Call Center Agent Fields
 
 -   **Agent Name:** Name of the agent. When adding agents to the Call
     Center, this is what you will see to describe the agent
@@ -56,7 +58,7 @@ List of call center agents.
 -   **Busy Delay Time:** If the agent is on Do Not Disturb, wait this
     defined time before trying him again
 
-# Call Center Strategies
+## Call Center Strategies
 
 ![image](../_static/images/applications/call_center/fusionpbx_call_center_queues2.png)
 
@@ -77,22 +79,22 @@ List of call center agents.
     by the tier and the tiers order.
 -   **Random:** Rings Agents will ring randomly in not particular order.
 
-# Agents
+## Agents
 
 Select agents from the drop down list and specify tier level and tier
 position.
 
-# Music On Hold
+## Music On Hold
 
 Select the desired hold music. Music on hold,
 [streams](http://docs.fusionpbx.com/en/latest/applications/streams.html)
 and ringtones can be used.
 
-# Record
+## Record
 
 Save the recording
 
-# Time base score
+## Time base score
 
 -   **Queue:** Caller in queue time will start. If the caller goes to
     another queue the time will start over.
@@ -100,7 +102,7 @@ Save the recording
     as they enter the system. If a caller chooses the wrong queue, when
     they get to the correct queue the timer won\'t start over again.
 
-# Time base score - Seconds
+## Time base score - Seconds
 
 This field is left blank by default which means the option will not be
 added to the XML Dialplan. If you populate the field with a number then
@@ -124,39 +126,39 @@ this case, set the \"time base score - seconds\" of the \"VIP\" queue to
 be 300 (5 min). This will mean that the \"VIP\" queue will get only a
 5min head start on the regular queue.
 
-# Max Wait Time
+## Max Wait Time
 
 A value of 0 is the default and equals an infinate amount of time. Any
 other numeric value is calculated in seconds.
 
-# Max Wait Time with No Agent
+## Max Wait Time with No Agent
 
 Enter the max wait time with no agent. FusionPBX sets the default to 90
 seconds and the **Timeout Action** will be used if there are no agents
 available.
 
-# Max Wait Time with No Agent Time Reached
+## Max Wait Time with No Agent Time Reached
 
 Enter the max wait time with no agent. FusionPBX sets the default to 30
 seconds and the **Timeout Action** will be used if there are no agents
 available.
 
-# Timeout Action
+## Timeout Action
 
 Set the action to perform when the max wait time is reached.
 
-# Tier Rules Apply
+## Tier Rules Apply
 
 -   **True:** Set the tier rule rules apply to true. The defined tiers
     will be used.
 -   **False:** Set the tier rule rules apply to false. All tiers will be
     used.
 
-# Tier Rule Wait Second
+## Tier Rule Wait Second
 
 30 seconds is default. Enter the tier rule wait seconds.
 
-# Tier Rule Wait Multiply Level
+## Tier Rule Wait Multiply Level
 
 -   **True:** The amount of seconds the caller waits until the next
     tier. This value will increase(multiply) if **Tier Rule Wait
@@ -165,44 +167,44 @@ Set the action to perform when the max wait time is reached.
     after the set amount of seconds pass the tiers in order will execute
     with no wait.
 
-# Tier Rule No Agent No Wait
+## Tier Rule No Agent No Wait
 
 -   **True:** Setting is enabled.
 -   **False:** Setting is disabled.
 
-# Discard Abandoned After
+## Discard Abandoned After
 
 Default is 900 seconds. Sets the discard abandonded after seconds.
 
-# Abandoned Resume Allowed
+## Abandoned Resume Allowed
 
 -   **True:** Setting is enabled. Permits a call to resume their
     posistion in the queue but only in the amount of seconds set in
     **discard abandonded after** .
 -   **False:** Setting is disabled.
 
-# Caller ID Name Prefix
+## Caller ID Name Prefix
 
 Set a prefix on the caller ID name.
 
-# Announce Sound
+## Announce Sound
 
 A sound to play to a caller every announce sound seconds. Needs the full
 path to the .wav file.
 
-# Announce Frequency
+## Announce Frequency
 
 How often the announce sound is played in seconds.
 
-# Exit Key
+## Exit Key
 
 Keys to quit the current queue waiting.
 
-# Description
+## Description
 
 Enter a description to help organize and define what the queue is for.
 
-# Agent Call Center Login
+## Agent Call Center Login
 
 Agents can login to call center with \*22 from the phone or via the
 FusionPBX web interface. Admin and Super Admin accounts can also log
@@ -211,4 +213,4 @@ other agents in or out.
 -   Login then go to Status \> [Agent
     Status](http://docs.fusionpbx.com/en/latest/status/agent_status.html)
 
-## [Call Center Default Settings](/en/latest/advanced/default_settings.html#id3)
+### [Call Center Default Settings](/en/latest/advanced/default_settings.html#id3)
