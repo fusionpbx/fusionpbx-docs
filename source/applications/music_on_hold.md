@@ -37,28 +37,28 @@ performance upload 16 bit, 8/16/32/48 kHz mono WAV files.
     -\> Modules or from the console and fs[cli]{#cli} with following
     command.
 
-<!-- -->
-
+```
     reload mod_local_stream
+```
 
 -   Each music on hold category is given a name. If the domain is set to
     global the name will be the name in the example below the protocol
     that is used is local[stream]{#stream} and the music on hold
     category is default and domain is set to global.
 
-<!-- -->
-
+```
     local_stream://default
+```
 
 -   It is possible that a domain or tenant can have its own category of
     music. In this example the name is \'custom\' and the domain was
     assigned automatically to the current domain.
 
-<!-- -->
-
+```
     local_stream://domain_name/custom
+```
 
-# Setting Up Custom Music on Hold in FusionPBX 5.3
+## Setting Up Custom Music on Hold in FusionPBX 5.3
 
 ### Step 1: Add Music on Hold​ Log in to the FusionPBX web interface.
 
