@@ -1,19 +1,14 @@
 # Restore
 
-| 
+<br>
 
-It\'s always good to have a restore method of a backup in place. Here
-are the steps to a basic restore method with FusionPBX.
+It's always good to have a restore method of a backup in place.    
+Here are the steps to a basic restore method with FusionPBX.
 
-:::: note
-::: title
-Note
-:::
-
-It is important to know if your installation is from package or source
-as the paths are different for FreeSWITCH. Always test the backups and
-restore methods on test machines first.
-::::
+>**Note:**
+>It is important to know if your installation is from package or source   
+>as the paths are different for FreeSWITCH. Always test the backups and   
+>restore methods on test machines first.
 
 -   To create the script use an editor such as vi or nano.
 -   Copy/Paste from the code block below and save the file as
@@ -24,8 +19,9 @@ restore methods on test machines first.
 -   edit the script as needed and run this script from the server you
     are restoring on.
 
-<!-- -->
+<br>
 
+```
     #!/bin/sh
     now=$(date +%Y-%m-%d)
     ssh_server=x.x.x.x
@@ -65,3 +61,4 @@ restore methods on test machines first.
     #restart freeswitch
     service freeswitch restart
     echo "Restore Complete";
+```
