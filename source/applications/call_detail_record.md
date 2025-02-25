@@ -93,7 +93,7 @@ carefully.
 300\") \| crontab
 ```
 
-- Once you\'ve made these changes you can save the file. You could restart
+- Once you've made these changes you can save the file. You could restart
 your server, or you could reloadxml and then restart the xml[cdr]{#cdr}
 module. Either is ok, it is up to you. Then your changes will have taken
 effect and you should no longer lose your menu bar when looking at CDR
@@ -110,17 +110,15 @@ For more detailed configuration go to the XML editor (Menu -\> Advanced
 -\> XML Editor) and in autoload configs look at
 xml[cdr.conf.xml]{#cdr.conf.xml}
 
->Note:   
->By default only the a-leg of the call is logged therefore if you make a   
->recording of the b-leg you won\'t be able to retrieve it using the Call   
+>**Note:** By default only the a-leg of the call is logged therefore if you make      
+>a recording of the b-leg you won\'t be able to retrieve it using the Call    
 >Detail Records. If you want the b-leg as well you need to change   
 >log-b-leg=true in this config and in the default settings.
 
 ## Harddrive space usage
 
->Note:   
->Recordings also take up space and may be manually deleted if you want   
->the space back these are kept in (source install)   
+>**Note:** Recordings also take up space and may be manually deleted   
+>if you want the space back these are kept in (source install)   
 >/usr/local/freeswitch/recordings/{Domian[Name]{#name}}/archive or   
 >(package install) /var/lib/freeswitch/recordings/{Domain Name}/archive   
 >and inside that by year, month and day.
