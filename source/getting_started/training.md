@@ -1,63 +1,52 @@
 # Training
 
-FusionPBX offers different levels of training. We love helping people
-and companies succeed.
+FusionPBX offers training that cateres to a wide range of individual skill levels, 
+starting from basic setup, up to advanced features and configuration of complex multi-tenant systems. 
+We love working with people and endeavor to help companies succeed.
 
--   Small family business.
--   Someone who loves to tinker with technology.
+-   Small businesses.
+-   Tech enthusiasts.
 -   Major companies all around the world.
 
-## Free
+## Free Training Material
 
-FusionPBX has content available in this document and videos on YouTube
-to help get you started.
-
--   Free Self help is available for you right here at docs.fusionpbx.com
+-   Free documentation is available right here at docs.fusionpbx.com
 -   Videos at <https://youtube.com/fusionpbx>
 
-## [Paid Training and technical support](https://www.fusionpbx.com/training.php)
+## [Member Training](https://www.fusionpbx.com/training.php)
 
-FusionPBX offers an Admin class, Advanced class, and an affordable
-Continuing Education class. If you want to accelerate your understanding
-of how to use FusionPBX and unleash your full potential these classes
-are for you.
+FusionPBX offers an Admin class, Advanced class and quarterly Continuing Education meeting.    
+If you want to accelerate your understanding and capabilities with FusionPBX.   
+Unleash your full potential with these classes.
 
--   
+  **[Admin Class](https://www.fusionpbx.com/training.php)**
 
-    [Admin Class](https://www.fusionpbx.com/training.php)
+   -   Webex meeting and in person
+   -   Access to Class Documentation
+   -   Covers the basics and some advanced topics with FusionPBX
+   -   Interactive question and answer with the FusionPBX founder
+       and team
+   -   Recorded video of the class for you to keep
+   -   Plus much more...
 
-    :   -   Webex meeting and in person
-        -   Access to Class Documentation
-        -   Recorded video of the class for you to keep
-        -   Interactive question and answer with the FusionPBX founder
-            and trainer
-        -   Covers the basics and some advanced topics with FusionPBX
-        -   Plus much more\...
+  **[Advanced Class](https://www.fusionpbx.com/training.php)**
 
--   
+   -   Webex meeting and in person
+   -   Access to Class Documentation
+   -   Covers advanced topics and methods
+   -   Interactive question and answer with the FusionPBX founder
+       and team
+   -   Recorded video of the class for you to keep
+   -   Plus much more...
 
-    [Advanced Class](https://www.fusionpbx.com/training.php)
+  **[Continuing Education](https://www.fusionpbx.com/training.php)**
 
-    :   -   Webex meeting and in person
-        -   Access to Class Documentation
-        -   Recorded video of the class for you to keep
-        -   Interactive question and answer with the FusionPBX founder
-            and trainer
-        -   Covers advanced topics and methods
-        -   Plus much more\...
-
--   
-
-    [Continuing Education](https://www.fusionpbx.com/training.php)
-
-    :   -   Quarterly Webex meeting on changes with FusionPBX
-        -   Option to take the advanced or admin over again (included in
-            the membership)
-        -   Report bugs or ask questions that might not have come up
-            until now
-        -   Get a closer more in-depth look into FusionPBX
-        -   Know how to use new features when they are added
-        -   Know how to upgrade to the next release version
-        -   Plus much more\...
+  -   Get a more in-depth look into FusionPBX news & updates
+  -   Option to take the advanced or admin over again (included in
+      the membership)
+  -   Learn more about new features when they're added
+  -   Learn how to upgrade to latest releases
+  -   Interact with the FusionPBX team during our Q&A period
+  -   Plus much more...
 
 ### [Come join us! We look forward to meeting you!](https://www.fusionpbx.com/training.php)
