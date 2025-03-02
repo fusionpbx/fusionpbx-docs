@@ -6,9 +6,8 @@
 
 - **Hostname-** Should be left blank and is for advanced use.
 
-|   |   |   |   |
-|---|---|---|---|
 |Name|Value|Enabled|Description|
+|---|---|---|---|
 |accept-blind-auth|true|False||
 |accept-blind-reg|true|False||
 |alias|sip:10.0.1.251:5555|False||
