@@ -1,15 +1,15 @@
-# Call Routing
+# Call Forward
 
 Directs incoming calls for the extension
 
-![image](../_static/images/fusionpbx_call_routing1.jpg)
+![image](../_static/images/applications/call_forward/fusionpbx_call_forward1.png)
 
 -   To access call routing goto Accounts \> click the edit pencil icon
     on the right of the extension
 
-![image](../_static/images/fusionpbx_call_routing.jpg)
+![image](../_static/images/applications/call_forward/fusionpbx_call_forward2.png)
 
--   Click **CALL ROUTING** on the top right
+-   Click **CALL FORWARD** on the top right
 
 ## Call Forward and Do No Disturb
 
