@@ -17,9 +17,10 @@ Fill in the following fields:
 -   **Firmware Server Path:** Set in Advanced \> Default Settings \>
     Provisioning section in your FusionPBX installation.
 
-\* Click **Save and Apply** at the bottom. .. note:
-
-    Generally with provisioning, if there is an option like Grandstream has for a box or radio button to choose https or http then it is not needed to type http:// or https:// in the config url.
+ Click **Save and Apply** at the bottom. 
+ 
+> **Note:** Generally with provisioning, if there is an option like Grandstream has for a box   
+> or radio button to choose **https** or **http** then it is not needed to type **http://** or **https://** in the config url.
 
 ![image](../../_static/images/getting_started/fusionpbx_provision_auto_grandstream2.jpg)
 
