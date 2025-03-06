@@ -45,7 +45,7 @@ below the form.*
 Outbound call blocking requires an additional dialplan entry.
 
 If one doesn\'t exist already, add a new **call-direction** Outbound
-Route to set `call_direction=outbound`...
+Route to set `call_direction=outbound`.
 
 ![image](../_static/images/fusionpbx_call_block1.jpg)
 
