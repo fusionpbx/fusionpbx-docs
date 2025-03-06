@@ -67,7 +67,7 @@ installation method.
 -   **Free:**
     <https://freeswitch.org/stash/projects/FS/repos/freeswitch-sounds/browse>
 
-## app[languages.php]{#languages.php}
+## app_languages.php
 
 **Guidelines** The words used in the text variable name
 
@@ -109,8 +109,7 @@ following.
 
 **Example File**
 
-An excerpt from the app[languages.php]{#languages.php} for Conference
-Center.
+An excerpt from the app_languages.php for Conference Center.
 
     <?php
 
@@ -155,8 +154,7 @@ Center.
 
     ?>
 
-To use inside the code on each page that displays text. Place the
-following code at the top just after the permision[exists]{#exists}
+To use inside the code on each page that displays text. Place the following code at the top just after the permision_exists
 
     //add multi-lingual support
        require_once "app_languages.php";
