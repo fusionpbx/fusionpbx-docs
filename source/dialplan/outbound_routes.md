@@ -20,15 +20,13 @@ youtube video](https://youtu.be/rhyfCKLBI-Y).
 
 ![image](../_static/images/dialplan/fusionpbx_outbound_routes2.png)
 
-## 
-
+```
     Gateway: VoiceTel
     Dialplan Expression: ^(?:\+?1)?(\d{10})$ (You can also choose more than one from the drop down list also as needed)
     Order: 000
     Enabled: true
     Description: VoiceTel-out
-
-## 
+```
 
 **By using [VoiceTel](http://tiny.cc/voicetel) you help support
 FusionPBX. Thank you for your support!**
