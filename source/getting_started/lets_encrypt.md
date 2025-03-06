@@ -163,14 +163,12 @@ example.
 Tip
 :::
 
-Use the dig command to check that the txt record is correct. dig -t txt
-[acme-challenge.domain.tld]{#acme-challenge.domain.tld}
+Use the dig command to check that the txt record is correct. dig -t txt _acme-challenge.domain.tld
 
 Output should show:
 
 ;; ANSWER SECTION:
-[acme-challenge.domain.tld]{#acme-challenge.domain.tld}. 1799 IN TXT
-\"PY7ttk6no[5eG7WtAbO6qs5-NzA-Kigko375omKc0nw]{#eg7wtabo6qs5-nza-kigko375omkc0nw}\"
+_acme-challenge.domain.tld. 1799 IN TXT  "PY7ttk6no_5eG7WtAbO6qs5-NzA-Kigko375omKc0nw"
 ::::
 
 ##### Setup for multiple domains on Let\'s Encrypt
