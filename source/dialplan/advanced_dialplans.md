@@ -45,17 +45,12 @@ prefix can be any number that you choose to use and the 4 digit
 extension must match the destination tenant. So if the destination
 extensions are 3 digit then you would use 3 instead of 4.
 
-  ---------------------------------------------------------------------------------------------------------------------------------
-  Tag         Type                               Data                                              Break   Inline   Group   Order
-  ----------- ---------------------------------- ------------------------------------------------- ------- -------- ------- -------
-  condition   \${destination[number]{#number}}   \^5(d{4})\$                                                                5
-
-  action      set                                domain[name]{#name}=customer.domain.tld                   True             10
-
-  action      set                                domain[uuid]{#uuid}=correct-uuid-for-the-domain           True             15
-
-  action      transfer                           \$1 XML \${domain[name]{#name}}                                            20
-  ---------------------------------------------------------------------------------------------------------------------------------
+| Tag | Type | Data | Dialplan Detail Break | Break | Inline | Group | Order |
+| ------------------- | -------------------- | -------------------- | --------------------- | ---------------------- | --------------------- | --------------------- |
+| condition           | ${destination_number}| ^5(d{4})$            |                       |                        |                      | 5                     |
+| action              | set               |  domain_name=customer.domain.tld      |                       |        True                |                   | 10                    |
+| action              | set                  | domain_uuid=correct-uuid-for-the-domain     |                       |         True               |                      | 15                    |
+| action              | transfer                  | 1XML{domain_name}     |                       |                        |                      | 20                    |
 
 -   Be sure to set the **Continue dropdown box True**
 -   Finally we have the desired dialplan to call from tenant A to tenant
