@@ -52,6 +52,12 @@ extensions are 3 digit then you would use 3 instead of 4.
 | action              | set                      | domain_uuid=correct-uuid-for-the-domain     |                       | True  |       | 15  |
 | action              | transfer                 | 1XML{domain_name}                           |                       |       |       | 20  |
 
+| Name                                | Value                                      | Enabled | Description                                                  |
+|-------------------------------------|--------------------------------------------|---------|--------------------------------------------------------------|
+| accept-blind-auth                   | true                                       | False   |                                                              |
+| accept-blind-reg                    | true                                       | False   |                                                              |
+| aggressive-nat-detection            | true                                       | True    |                                                              |
+
 -   Be sure to set the **Continue dropdown box True**
 -   Finally we have the desired dialplan to call from tenant A to tenant
     B.
