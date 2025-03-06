@@ -46,7 +46,7 @@ extension must match the destination tenant. So if the destination
 extensions are 3 digit then you would use 3 instead of 4.
 
 | Tag       | Type                  | Data                                | Dialplan Detail Break | Break | Inline | Group | Order |
-|-----------|-----------------------|----------------------------------------------|-----------------------|-------|--------|-------|-------|
+|-----------|-----------------------|--------------------------------------|-----------------------|-------|--------|-------|-------|
 | condition | ${destination_number} | ^5(\d{4})$                         |                       |       |        |       | 5     |
 | action    | set                   | domain_name=customer.domain.tld     |                       |       | True   |       | 10    |
 | action    | set                   | domain_uuid=correct-uuid-for-the-domain |                   |       | True   |       | 15    |
