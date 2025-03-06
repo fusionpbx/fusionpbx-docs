@@ -4,6 +4,10 @@ Route outbound calls to gateways, tdm, enum and more. When a call
 matches the conditions the call to outbound routes. [Check out the
 youtube video](https://youtu.be/rhyfCKLBI-Y).
 
+<div style="text-align: center; margin-bottom: 2em;">
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/rhyfCKLBI-Y?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+</div>
+
 **Configuring an Outbound Route.**
 
 -   Select **Dialplan** from the drop-down list and then click
@@ -26,7 +30,7 @@ youtube video](https://youtu.be/rhyfCKLBI-Y).
 
 ## 
 
-**By using** [VoiceTel](http://tiny.cc/voicetel) **you help support
+**By using [VoiceTel](http://tiny.cc/voicetel) you help support
 FusionPBX. Thank you for your support!**
 
 ### Pin Numbers
