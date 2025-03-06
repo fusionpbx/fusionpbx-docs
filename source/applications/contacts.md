@@ -19,4 +19,6 @@ Contacts is a list of individuals and organizations.
 
 -   To generate a QR code click the **QR CODE** button at the top right
 
-![image](../_static/images/fusionpbx_qr_code.jpg){.align-center}
+<div style="text-align: center;">
+  <img src="../_static/images/fusionpbx_qr_code.jpg" alt="image">
+</div>

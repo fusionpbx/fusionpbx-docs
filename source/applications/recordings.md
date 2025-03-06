@@ -8,28 +8,23 @@ video.](https://youtu.be/CkqlsVvvv2U)
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/CkqlsVvvv2U?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
 </div>
 
-To view and set the pin number goto Dialplan \> Dialplan Manager \>
-Click on Recordings \> pin[number]{#number}=8675309 at the bottom.
+To view and set the pin number goto Dialplan > Dialplan Manager > Click on Recordings > pin_number=8675309 at the bottom.
 
 :::: note
 ::: title
 Note
 :::
 
-Pin number is recomended but can be left empty if no pin number is
-desired then pin[number]{#number}=
+Pin number is recomended but can be left empty if no pin number is desired then pin_number=
 ::::
 
 ## Create a Recording
 
 1.  Dial \*732 and wait for the voice prompt
-2.  Enter the password (pin[number]{#number}) followed by the pound
-    sign# Enter at least a 3 digit number. This will label the recording
-    file. (recording100.wav)
-3.  start talking to make the recording after the voice prompt and press
-    the pound key \#
-4.  Press 1 to accept the recording then hang up or press 2 to start
-    over.
+2.  Enter the password (pin_number) followed by the pound sign# 
+   Enter at least a 3 digit number.  This will label the recording file. (recording100.wav)
+3.  start talking to make the recording after the voice prompt and press the pound key #
+4.  Press 1 to accept the recording then hang up or press 2 to start over.
 
 ![image](../_static/images/applications/recording/fusionpbx_call_recordings1.png)
 
