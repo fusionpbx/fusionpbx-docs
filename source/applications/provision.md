@@ -84,9 +84,10 @@ In order to use the phone book a few steps are needed.
 
 ![image](../_static/images/provision/fusionpbx_remote_phonebook1.png)
 
--   Set **Enabled True** for contact[extensions]{#extensions},
-    contact[users]{#users} and contact[groups]{#groups} in [Default
+-   Set **Enabled True** for contact_extensions, contact_users and contact_groups in [Default
     Settings](/en/latest/advanced/default_settings.html).
+
+* Set **Enabled True** for contact_extensions, contact_users and contact_groups in `Default Settings </en/latest/advanced/default_settings.html>`_.
 
 ![image](../_static/images/provision/fusionpbx_phone_book2.png)
 
