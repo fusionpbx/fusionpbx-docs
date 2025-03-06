@@ -90,4 +90,4 @@ To enable/disable this, change the option for the **not_found_message** setting 
 Please note that enabling this option means that the call must be answered in order to play the message to the caller, and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions, this could potentially be illegal as it turns an otherwise toll-free call into a chargeable one.
 
 ## Voicemail Transcription
-FusionPBX supports Voicemail Transcription, where emails will include a transcribed version of the voicemail the email was sent in regards to. To configure this feature, see [applications/voicemail_transcription.md](#).
+FusionPBX supports Voicemail Transcription, where emails will include a transcribed version of the voicemail the email was sent in regards to. To configure this feature, see [http://docs.fusionpbx.com/en/latest/applications/voicemail_transcription.html](#).
