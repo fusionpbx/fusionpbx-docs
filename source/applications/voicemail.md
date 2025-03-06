@@ -1,12 +1,3 @@
-Here’s the document converted from reStructuredText (RST) to Markdown. I’ve adapted RST-specific features (e.g., .. image::, .. note::, tables) into Markdown equivalents while maintaining the structure and content.
-
-markdown
-
-Collapse
-
-Wrap
-
-Copy
 # Voicemail
 
 To edit voicemail settings, click the pencil edit icon on the right of the extension number.
