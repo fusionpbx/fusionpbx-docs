@@ -4,15 +4,14 @@ Conferences is used to setup conference rooms with a name, description,
 and optional pin number.
 
 
->**Note:**   
->For advanced conferencing use Apps -\> Conference Center
+>**Note:** For advanced conferencing use Apps -\> Conference Center
 
 
-![image](../_static/images/applications/conference/fusionpbx_conferences.jpg)
+![image](../_static/images/applications/conference/fusionpbx_conferences1.png)
 
 ## Conference Settings
 
-![image](../_static/images/applications/conference/fusionpbx_conference_add.jpg)
+![image](../_static/images/applications/conference/fusionpbx_conferences2.png)
 
 -   **Name:** Name for the conference.
 
@@ -48,9 +47,12 @@ By default Conferences use to be hidden from the menu.
     click the pencil edit icon on the right
 -   Then click the pencil edit icon on the right of **Conferences**
 
-![image](../_static/images/fusionpbx_conferences1.jpg)
+![image](../_static/images/applications/conference/fusionpbx_conferences3.png)
 
 -   Select from the **Groups** dropdown list superadmin and click
     **add** then **save**
+-   Custom icons can also be added to **Conferences** in the dropdown menu
 
-![image](../_static/images/fusionpbx_conferences2.jpg)
+![image](../_static/images/applications/conference/fusionpbx_conferences4.png)
+
+
