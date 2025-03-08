@@ -485,14 +485,14 @@ Always back up your settings before making adjustments.
 > **Extension Caller ID input type select**
 >
 > If you want extension caller ID name and number to be input type text,
-> make sure permission outbound[caller_id_select]{#caller_id_select} is
+> make sure permission outbound_caller_id_select is
 > assigned to groups in Groups Manager. By default,
-> outbound[caller_id_select]{#caller_id_select} is not assigned to any
+> outbound_caller_id_select is not assigned to any
 > user groups.
 >
 > **Extension Caller ID input type select**
 >
 > If you want a select option for caller ID, you would assign
-> outbound[caller_id_select]{#caller_id_select} permission to groups of
+> outbound_caller_id_select permission to groups of
 > your choice using Group Manager and define Caller ID information in
 > Dialplan Destinations.

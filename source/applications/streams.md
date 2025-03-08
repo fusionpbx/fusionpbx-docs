@@ -4,7 +4,7 @@ Define details for streaming audio.
 
 ![image](../_static/images/applications/streams/fusionpbx_streams1.png)
 
--   Make sure mod[shout]{#shout} is installed and is started.
+-   Make sure mod_shout is installed and is started.
 
 -   Have a shoutcast url ready to use. (shout://domain.tld/path/to/)
 

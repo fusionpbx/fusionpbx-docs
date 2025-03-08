@@ -2,7 +2,7 @@
 
 Route outbound calls to gateways, tdm, enum and more. When a call
 matches the conditions the call to outbound routes. [Check out the
-youtube video](https://youtu.be/rhyfCKLBI-Y) .
+youtube video](https://youtu.be/rhyfCKLBI-Y).
 
 <div style="text-align: center; margin-bottom: 2em;">
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/rhyfCKLBI-Y?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
@@ -20,17 +20,15 @@ youtube video](https://youtu.be/rhyfCKLBI-Y) .
 
 ![image](../_static/images/dialplan/fusionpbx_outbound_routes2.png)
 
-## 
-
+```
     Gateway: VoiceTel
     Dialplan Expression: ^(?:\+?1)?(\d{10})$ (You can also choose more than one from the drop down list also as needed)
     Order: 000
     Enabled: true
     Description: VoiceTel-out
+```
 
-## 
-
-**By using** [VoiceTel](http://tiny.cc/voicetel) **you help support
+**By using [VoiceTel](http://tiny.cc/voicetel) you help support
 FusionPBX. Thank you for your support!**
 
 ### Pin Numbers
