@@ -10,9 +10,11 @@ commands.
 
 ## Install
 
+```
     cd /var/www/fusionpbx/app
     git clone https://github.com/fusionpbx/fusionpbx-app-command.git command
     chown -R www-data:www-data /var/www/fusionpbx/app/command
+```
 
 -   Run Advanced \> Upgrade \> Menu Defaults
 -   Run Advanced \> Upgrade \> Permission Defaults
@@ -20,5 +22,7 @@ commands.
 
 ## Upgrade
 
-    - cd /var/www/fusionpbx/app/command
-    - git pull
+```
+     cd /var/www/fusionpbx/app/command
+     git pull
+```
