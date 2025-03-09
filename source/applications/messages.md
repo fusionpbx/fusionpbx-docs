@@ -1,7 +1,7 @@
 # Messages
 
 Send and receive SMS and MMS messages. This tool utilizes a service
-called, message[queue]{#queue} to send and receive messages. It relays
+called, message_queue to send and receive messages. It relays
 SMS messages to registered endpoints including softphones and desk
 phones that support message_queue. This feature does support
 multiple Providers simultaneously.
