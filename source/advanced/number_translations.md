@@ -5,7 +5,7 @@ using regular expressions.
 
 ![image](../_static/images/advanced/fusionpbx_advanced_number_translations.jpg)
 
-### Activating mod-translate:
+## Activating mod-translate:
 
 - Install the package \"freeswitch-mod-translate\". If using
   Debian Package then use the following command \"apt install
@@ -18,12 +18,10 @@ using regular expressions.
 The documentation for mod-translate can be found under
 <https://freeswitch.org/confluence/display/FREESWITCH/mod_translate>
 
-### To use mod-translate to modify inbound calls before they hit the dialplan the following setting for SIP-profile must be modified:
+## To use mod-translate to modify inbound calls before they hit the dialplan the following setting for SIP-profile must be modified:
 
  - dialplan \"XML\" -\> dialplan \"Translate,XML\"
- - With FreeSwitch 1.8.x it is now possible to specify the translation
-   profile to be used: dialplan \"XML\" -\> dialplan
-   \"Translate:my[profile1]{#profile1},XML\"
+ - With FreeSwitch 1.8.x it is now possible to specify the translation profile to be used: dialplan "XML" -> dialplan "Translate:my_profile1,XML"
 
 To activate this setting, you must flush cache once and then restart or
 rescan each SIP-profile

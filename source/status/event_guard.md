@@ -1,4 +1,4 @@
-# Event Guard
+## Event Guard
 
 This is an optional service called event[guard]{#guard} and it was
 designed to protect your VoIP server. It watches registration events and
@@ -15,7 +15,7 @@ node set as allowed.
 Event Guard also looks at the current allowed IP addresses and trusts
 these registered IP addresses that were authenticated.
 
-# Install Instructions
+### Install Instructions
 
 -   Make sure to upgrade to the latest FusionPBX version
 -   Update the database structure
@@ -33,12 +33,10 @@ these registered IP addresses that were authenticated.
 
 - or as a cron job
 ```
- php
- /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/event[guard.php]{#guard.php}
- \>/dev/null 2\>&1 &
+php /var/www/fusionpbx/app/event_guard/resources/service/event_guard.php >/dev/null 2>&1 &
 ```
 
-## Unblock an IP Address
+### Unblock an IP Address
 
 To unblock an address select the check box and then press the UNBLOCK
 button on the top right.

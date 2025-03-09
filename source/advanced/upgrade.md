@@ -124,8 +124,7 @@ Used to update FusionPBX to the latest release.
     - Use github to get the updated files. **You have to do this from an
   empty directory**.
 
-**Note:** Older versions of FusionPBX may use the
-[/usr/local]{.title-ref} path instead of [/usr/share]{.title-ref}
+**Note:** Older versions of FusionPBX may use the /usr/local path instead of /usr/share
 
     cp -R /usr/share/freeswitch/scripts /usr/share/freeswitch/scripts-bak
     rm -Rf /usr/share/freeswitch/scripts/
@@ -240,9 +239,7 @@ Needed if your menu disappeared.
   voicemail emails to be sent. Problem was the SMTP details did not
   exist.
 
-- Go to **Advanced -\> Settings** and then **click save**. This will
-  re-generate v[config_cli.php]{#config_cli.php} and any other needs
-  config files.
+- Go to Advanced -> Settings and then click save. This will re-generate v_config_cli.php and any other needs config files.
 
 ## Move to a different Branch
 

@@ -59,9 +59,7 @@ on.
     Capture](https://docs.fusionpbx.com/en/latest/applications/provision/phone_screen_capture.html)
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 [Click here to view how to add a
 device](https://docs.fusionpbx.com/en/latest/accounts/devices.html).

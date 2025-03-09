@@ -16,9 +16,7 @@ issues and guage quality. Below are a list of some of the common ones.
     tcpdump -nq -s 0 -A -vvv -i eth0 port 5060
 
 :::: tip
-::: title
-Tip
-:::
+<p class="admonition-title">Tip</p>
 
 you can change the command to suite the proper ethernet device eth0 with
 what is on your system. Port 5060 can be changed also if you are using a

@@ -282,9 +282,7 @@ the domain the endpoint is registering to.
 ### Advanced Settings
 
 :::: warning
-::: title
-Warning
-:::
+<p class="admonition-title">Warning</p>
 
 Exercise caution when modifying advanced settings within extensions.
 Ensure you fully understand the purpose and impact of any changes, as

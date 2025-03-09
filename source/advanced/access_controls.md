@@ -36,6 +36,6 @@ Click save
 Goto \> Status \> Sip Status and click **reloadacl**.
 
 Under Status \> log viewer you should notice the ip added. This can be
-seen also from command line fs[cli]{#cli} by using **reloadacl**
+seen also from command line fscli by using **reloadacl**
 
     [NOTICE] switch_utils.c:545 Adding 12.34.56.0/32 (allow) [] to list domains

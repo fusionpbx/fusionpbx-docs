@@ -108,9 +108,7 @@ outbound caller ID.
     global to all tenants.
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 To see which Gateway a call is using. Advanced \> Command and in the
 switch command section type show channels as xml and then press the
