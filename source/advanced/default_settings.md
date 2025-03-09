@@ -85,7 +85,7 @@ Different user level settings that control what is seen and not seen on the dash
 
 ## Destinations
 
-FusionPBX menu Dialplan > Destinations
+FusionPBX menu [Dialplan > Destinations](../dialplan/destinations.html)
 
 Destinations specific defaults.
 
