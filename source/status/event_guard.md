@@ -33,9 +33,7 @@ these registered IP addresses that were authenticated.
 
 - or as a cron job
 ```
- php
- /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/event[guard.php]{#guard.php}
- \>/dev/null 2\>&1 &
+php /var/www/fusionpbx/app/event_guard/resources/service/event_guard.php >/dev/null 2>&1 &
 ```
 
 ## Unblock an IP Address
