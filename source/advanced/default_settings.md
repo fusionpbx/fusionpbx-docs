@@ -50,7 +50,81 @@ CDR Stat hour limit, call leg, format, limit, http_enabled, archive database, an
 | archive_database              | boolean                | FALSE                   | FALSE                     | Enable Dedicated CDR Database Access |
 | archive_database_name         | text                   | fusionpbx               | FALSE                     | Archive Database Name                |
 
+## [Dashboard](default_settings/dashboard.html)
 
+FusionPBX menu [Home > Dashboard](../home/dashboard.html)
+
+Different user level settings that control what is seen and not seen on the dashboard for each user access level.
+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                                                        |
+|-----------------------------|----------------------|-----------------------|-------------------------|------------------------------------------------------------------------------------|
+| admin                       | array                | voicemail             | TRUE                    | Enable Dashboard Voicemail block for users in the admin group.                     |
+| admin                       | array                | missed                | TRUE                    | Enable Dashboard Missed Calls block for users in the admin group.                  |
+| admin                       | array                | recent                | TRUE                    | Enable Dashboard Recent Calls block for users in the admin group.                  |
+| admin                       | array                | limits                | FALSE                   | Enable Dashboard Domain Limits block for users in the admin group.                 |
+| admin                       | array                | counts                | TRUE                    | Enable Dashboard Domain Counts block for users in the admin group.                 |
+| admin                       | array                | ring_groups           | TRUE                    | Enable Dashboard Ring Group Forwarding controls for users in the admin group.      |
+| admin                       | array                | caller_id             | FALSE                   | Enable changing Caller ID name and number.                                         |
+| superadmin                  | array                | voicemail             | TRUE                    | Enable Dashboard Voicemail block for users in the superadmin group.                |
+| superadmin                  | array                | missed                | TRUE                    | Enable Dashboard Missed Calls block for users in the superadmin group.             |
+| superadmin                  | array                | recent                | TRUE                    | Enable Dashboard Recent Calls block for users in the superadmin group.             |
+| superadmin                  | array                | limits                | FALSE                   | Enable Dashboard Domain Limits block for users in the superadmin group.            |
+| superadmin                  | array                | counts                | TRUE                    | Enable Dashboard System Counts block for users in the superadmin group.            |
+| superadmin                  | array                | call_routing          | TRUE                    | Enable Dashboard Call Routing controls for users in the superadmin group.          |
+| superadmin                  | array                | caller_id             | FALSE                   | Enable changing Caller ID name and number.                                         |
+| superadmin                  | array                | ring_groups           | TRUE                    | Enable Dashboard Ring Group Forwarding controls for users in the superadmin group. |
+| user                        | array                | voicemail             | TRUE                    | Enable Dashboard Voicemail block for users in the users group.                     |
+| user                        | array                | missed                | TRUE                    | Enable Dashboard Missed Calls block for users in the users group.                  |
+| user                        | array                | recent                | TRUE                    | Enable Dashboard Recent Calls block for users in the users group.                  |
+| user                        | array                | call_routing          | TRUE                    | Enable Dashboard Call Routing controls for users in the users group.               |
+| user                        | array                | ring_groups           | TRUE                    | Enable Dashboard Ring Group Forwarding controls for users in the users group.      |
+| user                        | array                | caller_id             | FALSE                   | Enable changing Caller ID name and number.                                         |
+| admin                       | array                | call_routing          | TRUE                    | Enable Dashboard Call Routing controls for users in the admin group.               |
+| superadmin                  | array                | system                | TRUE                    | Enable Dashboard System Status block for users in the superadmin group.            |
+| agent                       | array                | call_center_agents    | TRUE                    | Enable Dashboard Call Center Agent Status block for users in the agent group.      |
+
+## [Destinations](default_settings/destinations.html)
+
+FusionPBX menu [Dialplan > Destinations](../dialplan/destinations.html)
+
+Destinations specific defaults.
+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description |
+|-----------------------------|----------------------|-----------------------|-------------------------|-----------------------------|
+| dialplan_details            | boolean              | TRUE                  | TRUE                    |                             |
+
+## [Domains](default_settings/domain.html)
+
+FusionPBX menu [Advanced > Domains](../advanced/domains.html)
+
+Domain specific defaults.
+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value                                                                                                           | Default Setting Enabled | Default Setting Description                                         |
+|-----------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------------------------------------------------------|
+| dial_string                 | text                 | {sip_invite_domain=${domain_name},leg_timeout=${call_timeout},presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})} | TRUE                    | The dial string used                                               |
+| template                    | name                 | default                                                                                                                       | TRUE                    | The template used                                                  |
+| menu                        | uuid                 | b4750c3f-2a86-b00d-b7d0-345c14eca286                                                                                          | TRUE                    | The menu uuid                                                      |
+| language                    | code                 | en-us                                                                                                                         | TRUE                    | Choose the language                                                |
+| cidr                        | array                |                                                                                                                               | FALSE                   | Allow only specific ip addresses access                            |
+| country                     | code                 | us                                                                                                                            | TRUE                    | The country code                                                   |
+| bridge                      | text                 | outbound                                                                                                                      | TRUE                    | outbound,loopback,lcr                                               |
+| paging                      | numeric              | 100                                                                                                                           | TRUE                    | Set the maximum number of records displayed per page. (Default: 50) |
+| time_zone                   | name                 | America/Los_Angeles                                                                                                           | TRUE                    | Time zone used. Follows UNIX format                                 |
+
+## [Editor](default_settings/domain.html)
+
+FusionPBX menu Advanced > php editor, grammar editor, provision editor, and xml editor.
+
+Editor specific defaults.
+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                                               |
+|-----------------------------|----------------------|-----------------------|-------------------------|---------------------------------------------------------------------------|
+| indent_guides               | boolean              | FALSE                 | FALSE                   | Set the default visibility of indent guides for Editor.                   |
+| invisibles                  | boolean              | FALSE                 | FALSE                   | Set the default state of invisible characters for Editor.                 |
+| line_numbers                | boolean              | FALSE                 | FALSE                   | Set the default visibility of line numbers for Editor.                    |
+| theme                       | text                 | Cobalt                | FALSE                   | Set the default theme.                                                    |
+| font_size                   | text                 | 14px                  | FALSE                   | Set the default text size for Editor.                                     |
+| live_previews               | boolean              | FALSE                 | FALSE                   | Enable or disable live previewing of syntax, text size and theme changes. |
 
 ## [Email](default_settings/email.html)
 
