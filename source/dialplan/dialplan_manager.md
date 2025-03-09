@@ -125,7 +125,7 @@ The dialplan is used to setup call destinations based on conditions and context.
 | [bind_digit_action](dialplan_details.html#bind-digit-action) |                      |
 | *                         |                      |
 | [call_screen](dialplan_details.html#call-screen) | [ext]                |
-| *Play an audio file and give options to the caller to record a short message for the call recipient. Call recipient can then accept or reject the call.* |                      |
+| *Play an audio file and give options to the caller to record a short message for the <br> call recipient. Call recipient can then accept or reject the call.* |                      |
 | [local_extension](dialplan_details.html#local-extension) | [ext]                |
 | *Examines to see if the extension is local.* |                      |
 | [voicemail](dialplan_details.html#voicemail) | [ext]                |
