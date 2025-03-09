@@ -5,9 +5,7 @@ a browser based as a SIP Client. Also, keep in mind that you will need
 SSL certs working on the server.
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 There are two \"sets\" of code in this app. One being an existing app
 from FusionPBX and the code example from [Master FreeSWITCH
