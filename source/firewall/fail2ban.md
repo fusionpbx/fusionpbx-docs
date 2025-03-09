@@ -28,9 +28,7 @@ once these rules are set to true.
     enabled  = true 
 
 :::: warning
-::: title
-Warning
-:::
+<p class="admonition-title">Warning</p>
 
 If you find that your FusionPBX web interface isn\'t loading then check
 and see if fail2ban is blocking your ip. Getting blocked by any fail2ban
