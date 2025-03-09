@@ -89,10 +89,6 @@ FusionPBX menu Dialplan > Destinations
 
 Destinations specific defaults.
 
-| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description |
-|-----------------------------|----------------------|-----------------------|-------------------------|-----------------------------|
-| dialplan_details            | boolean              | TRUE                  | TRUE                    |                             |   
-
 ## [Domains](default_settings/domain.html)
 
 FusionPBX menu [Advanced > Domains](../advanced/domains.html)
