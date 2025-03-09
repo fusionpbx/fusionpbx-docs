@@ -121,9 +121,7 @@ You should then see and follow the prompts:
     + Deploying challenge tokens...
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 When you define the txt record with your domain registrar be sure to use
 the output of the script you are running and not what is in this
@@ -159,9 +157,7 @@ example.
     nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 :::: tip
-::: title
-Tip
-:::
+<p class="admonition-title">Tip</p>
 
 Use the dig command to check that the txt record is correct. dig -t txt _acme-challenge.domain.tld
 
