@@ -8,7 +8,7 @@ text in plaintext editors, online documents, README files, and many other contex
 
 ---
 
-## Getting Started
+### Getting Started
 
 Basic syntax to get started using markdown format.
 
