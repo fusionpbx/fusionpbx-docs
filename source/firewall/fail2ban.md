@@ -61,9 +61,7 @@ fail2ban to apply the changes to the ignoreip list.
     ignoreip = 127.0.0.1/8 192.168.0.0/16
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 To help keep the ip and hostnames you want unblocked it is a good idea
 to add customers and carriers to the ignoreip list.
@@ -91,9 +89,7 @@ More information about Fail2ban can be found at
 <http://www.fail2ban.org/wiki>
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 You can use a dynamic ip address service like dyndns to whitelist a
 dynamic ip address.
