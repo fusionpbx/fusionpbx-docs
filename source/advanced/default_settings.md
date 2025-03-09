@@ -85,14 +85,13 @@ Different user level settings that control what is seen and not seen on the dash
 
 ## [Destinations](default_settings/destinations.html)
 
-FusionPBX menu [Dialplan > Destinations](../dialplan/destinations.html)
+FusionPBX menu Dialplan > Destinations
 
 Destinations specific defaults.
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description |
 |-----------------------------|----------------------|-----------------------|-------------------------|-----------------------------|
-| dialplan_details            | boolean              | TRUE                  | TRUE                    |                             |
-| Empty                       | boolean              | TRUE                  | TRUE                    |                             |      
+| dialplan_details            | boolean              | TRUE                  | TRUE                    |                             |   
 
 ## [Domains](default_settings/domain.html)
 
