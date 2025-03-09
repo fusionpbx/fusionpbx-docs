@@ -184,7 +184,7 @@ Specific default settings for fax server.
 | cover_font                        | text                 | times                           | FALSE                   | Font used to generate cover page. Can be full path to .ttf file or font name already installed.|
 | cover_footer                      | text                 |                                 | TRUE                    | Notice displayed in the footer of the cover sheet.                                             |
 
-## [`Follow Me`](default_settings/follow_me.html)
+## [&#70;&#111;&#108;&#108;&#111;&#119; &#77;&#101;](default_settings/follow_me.html)
 
 FusionPBX menu [Apps > Follow Me](../applications/follow_me.html)
 
