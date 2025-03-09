@@ -83,7 +83,16 @@ Different user level settings that control what is seen and not seen on the dash
 | superadmin                  | array                | system                | TRUE                    | Enable Dashboard System Status block for users in the superadmin group.            |
 | agent                       | array                | call_center_agents    | TRUE                    | Enable Dashboard Call Center Agent Status block for users in the agent group.      |
 
+## [Destinations](default_settings/destinations.html)
 
+FusionPBX menu [Dialplan > Destinations](../dialplan/destinations.html)
+
+Destinations specific defaults.
+
+| Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description |
+|-----------------------------|----------------------|-----------------------|-------------------------|-----------------------------|
+| dialplan_details            | boolean              | TRUE                  | TRUE                    |                             |
+| Empty                       | boolean              | TRUE                  | TRUE                    |                             |      
 
 ## [Domains](default_settings/domain.html)
 
