@@ -52,5 +52,3 @@ To add a destination, **click** on the **plus** button on the right.
 
 Optional: Replace `^(?:\+?1)?(\d{10})$` in Inbound Routes with either `0123456789` or a DID Number depending on the Route Destination setting.
 ::::
-
-## [Destinations Default Settings](/en/latest/advanced/default_settings.html#id6)
