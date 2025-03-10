@@ -2,14 +2,14 @@
 
 A group of conference parameters saved together as a profile.
 
-![image](../_static/images/applications/fusionpbx_conference_profiles.jpg)
+![image](../_static/images/applications/conference_profiles/fusionpbx_conference_profiles1.png)
 
--   Click the edit icon on the right to adjust the profile
--   Click the plus to create a new profile
+-   Click the setting to edit the profile
+-   Click **ADD** to create a new profile
 
 ## Default Profile
 
-![image](../_static/images/applications/conference_profiles/fusionpbx_conference_profiles.jpg)
+![image](../_static/images/applications/conference_profiles/fusionpbx_conference_profiles2.png)
 
 -   cdr-log-dir: Set as auto. Could be set manually and is enabled.
 -   domain: enabled.
