@@ -12,9 +12,7 @@ XMPP Manager there are a few step to take to enble XMPP.
 -   Click the **plus** on the right to create a profile.
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 Google has since depricated xmpp service
 ::::

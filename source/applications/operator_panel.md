@@ -17,9 +17,7 @@ are set to the user.
 ![image](../_static/images/applications/fusionpbx_operator_panel.jpg)
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 Make sure in Accounts \> Extensions that the extension is assigned to
 the user. This will enable Operator Panel for that user.
