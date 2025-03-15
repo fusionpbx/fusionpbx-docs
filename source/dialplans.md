@@ -3,7 +3,7 @@
 In the **Dialplan** menu you have access to Destinations, Dialplan Manager, Inbound Routes and Outbound Routes.
 
 ```{toctree}
-:maxdepth: 3
+:maxdepth: 2
   
 dialplan/destinations.md
 dialplan/dialplan_manager.md
