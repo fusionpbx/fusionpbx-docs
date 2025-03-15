@@ -7,13 +7,13 @@ In the **Applications** menu (Apps) section you will find Bridges, Call Block, C
 
 applications/bridges.md
 applications/call_block.md
-applications/call_broadcast.md 
+applications/call_broadcast.md
 applications/call_center.md
 applications/call_detail_record.md
 applications/call_flows.md
 applications/call_recordings.md
 applications/call_routing.md
-applications/conference.md 
+applications/conference.md
 applications/conference_center.md
 applications/conference_controls.md
 applications/conference_profiles.md
