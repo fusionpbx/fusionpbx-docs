@@ -9,7 +9,7 @@ it. [Click here for the Youtube video](https://youtu.be/AJHcle2U3n4)
 -   Inbox: Faxes received.
 -   Sent: Faxes sent.
 -   Log: Sucessful and failed attempts for both incoming and outgoing.
--   Active: Shows the faxes in queue.
+-   Queue: Shows the faxes in queue.
 
 ## Fax Server Settings
 
