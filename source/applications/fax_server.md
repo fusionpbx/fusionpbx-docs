@@ -3,17 +3,13 @@
 To receive a FAX setup a fax extension and then direct the incoming to
 it. [Click here for the Youtube video](https://youtu.be/AJHcle2U3n4)
 
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/AJHcle2U3n4?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
-</div>
-
-![image](../_static/images/fusionpbx_fax.jpg)
+![image](../_static/images/applications/fax_server/fusionpbx_fax_server1.png)
 
 -   New: Create a new fax to send.
 -   Inbox: Faxes received.
 -   Sent: Faxes sent.
 -   Log: Sucessful and failed attempts for both incoming and outgoing.
--   Active: Shows the faxes in queue.
+-   Queue: Shows the faxes in queue.
 
 ## Fax Server Settings
 
@@ -49,7 +45,7 @@ To create a fax server goto App \> Fax Server. Click the + on the right.
 
 -   Keep organized by adding a Description.
 
-![image](../_static/images/fusionpbx_fax5.jpg)
+![image](../_static/images/applications/fax_server/fusionpbx_fax_server2.png)
 
 ## New
 
@@ -57,7 +53,7 @@ To send a fax, the items in **bold** are required. To send a proper fax
 it is best to fill out all fields and attach any documents. Keep in mind
 that the upload max MB is limited by Nginx and PHP config files.
 
-![image](../_static/images/fusionpbx_fax1.jpg)
+![image](../_static/images/applications/fax_server/fusionpbx_fax_server3.png)
 
 ## Inbox
 
@@ -72,7 +68,7 @@ field you will receive the fax also to that email address.
 Click **PDF** to view the fax or right click on **PDF** and left click
 on **Save Link As**.
 
-![image](../_static/images/fusionpbx_fax3.jpg)
+![image](../_static/images/applications/fax_server/fusionpbx_fax_server5.png)
 
 ## Fax ATA
 

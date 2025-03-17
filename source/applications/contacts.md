@@ -2,23 +2,25 @@
 
 Contacts is a list of individuals and organizations.
 
-![image](../_static/images/fusionpbx_contacts.jpg)
+![image](../_static/images/applications/contacts/fusionpbx_contacts1.png)
 
--   To create a contact click the **plus** and to edit a contact click
-    the **pencil** icon on the right.
+-   Click **ADD** to create a new contact
+-   Click **EDIT** to edit an existing contact
 -   Fill out the fields with pertinent information and click save.
 -   **Users-** Select the users that are allowed to view the contact
 -   **Groups-** Select the group that are allowed access to the contact.
 
-![image](../_static/images/fusionpbx_contacts1.jpg)
+![image](../_static/images/applications/contacts/fusionpbx_contacts2.png)
 
--   Go back into the contact to fill out more information that wasn\'t
+![image](../_static/images/applications/contacts/fusionpbx_contacts3.png)
+
+-   Click **EDIT** to add additional information that wasn't
     available when you first created the contact.
 
-![image](../_static/images/fusionpbx_contacts2.jpg)
+![image](../_static/images/applications/contacts/fusionpbx_contacts4.png)
 
--   To generate a QR code click the **QR CODE** button at the top right
+-   You can download a file copy of a contact by clicking **VCARD**
+-   To generate a QR code click the **QR CODE** button
 
-<div style="text-align: center;">
-  <img src="../_static/images/fusionpbx_qr_code.jpg" alt="image">
-</div>
+![image](../_static/images/applications/contacts/fusionpbx_contacts5.png)
+
