@@ -3,6 +3,12 @@
 To receive a FAX setup a fax extension and then direct the incoming to
 it. [Click here for the Youtube video](https://youtu.be/AJHcle2U3n4)
 
+ <div style="text-align: center; margin-bottom: 2em;">
+ <iframe width="100%" height="350" src="https://www.youtube.com/embed/AJHcle2U3n4?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+ </div>
+
+ <br>
+
 ![image](../_static/images/applications/fax_server/fusionpbx_fax_server1.png)
 
 -   New: Create a new fax to send.
@@ -61,7 +67,7 @@ Click **PDF** to view the fax or right click on **PDF** and left click
 on **Save Link As**. If you defined and email address in the **email**
 field you will receive the fax also to that email address.
 
-![image](../_static/images/fusionpbx_fax4.jpg)
+![image](../_static/images/applications/fax_server/fusionpbx_fax_server4.png)
 
 ## Sent
 
@@ -85,7 +91,7 @@ Menu -\> Advanced -\> Default Settings then category Fax
 -   Variables are used as defaults for the dialplan for sending and
     receiving faxes
 
-![image](../_static/images/fax_variables.jpg)
+![image](../_static/images/applications/fax_server/fusionpbx_fax_server6.png)
 
 -   *fax_enable_t38_request=false* (Can be true or false)
 -   *ignore_early_media=true* (Can be true or false)
