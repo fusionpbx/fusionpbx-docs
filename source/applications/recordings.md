@@ -4,7 +4,7 @@ Recordings are sound files that can be used for the IVR Menu (Auto Attendant). T
 
 ---
 
-Dial \*732 to create a recording, or (for best results) upload a 16bit
+Dial \*732 to create a recording, or upload a 16bit
 8khz/16khz mono WAV file. [Click here for the youtube
 video.](https://youtu.be/CkqlsVvvv2U)
 
