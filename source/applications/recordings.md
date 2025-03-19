@@ -2,7 +2,7 @@
 
 Recordings are sound files that can be used for the IVR Menu (Auto Attendant). They are managed from Application -> Recordings. From there you can add, upload, rename, update, and delete recordings. If you set up speech and transcribe recordings can created with text-to-speech or existing recordings can be transcribed.
 
-applications/voicemail_transcription.md
+../applications/voicemail_transcription.md
 
 ---
 
