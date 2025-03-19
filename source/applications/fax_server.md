@@ -8,48 +8,39 @@ it. [Click here for the Youtube video](https://youtu.be/AJHcle2U3n4)
  </div>
 
  <br>
+ 
+Be sure to install the [FAX Queue](https://docs.fusionpbx.com/en/latest/status/fax_queue.html) service. The install commands are located in the FAX Queue document.    
+This is essential for your FAX Server to work.
 
 ![image](../_static/images/applications/fax_server/fusionpbx_fax_server1.png)
 
--   New: Create a new fax to send.
--   Inbox: Faxes received.
--   Sent: Faxes sent.
--   Log: Sucessful and failed attempts for both incoming and outgoing.
--   Queue: Shows the faxes in queue.
+-   **New**: Create a new fax to send.
+-   **Inbox**: Faxes received.
+-   **Sent**: Faxes sent.
+-   **Log**: Sucessful and failed attempts for both inbound and outbound.
+-   **Queue**: Shows the faxes in queue.
 
 ## Fax Server Settings
 
-There are more settings for fax under Advanced \> Default Settings then
-fax category.
+There are more settings for fax under **Advanced** \> **Default Settings** then under category, select **Fax**.
 
-To create a fax server goto App \> Fax Server. Click the + on the right.
+To create a fax server goto **Applications** \> **Fax Server**. Click the "**ADD**" button on the right.
 
- **Leave the Destination Number blank** or faxing wont work.
+> **Note:** Make sure you leave the **Destination Number** blank or faxing wont work. All fields in **bold** are required.   
+> It is also good practice accross FusionPBX to stay organized, so define the name and chosen extension thoughtfully.
 
--   Destination Number is used in the Fax Server Dial Plan and is set
+-   **Account Code**: This item will autofill. 
+-   **Destination Number**: This is used in the Fax Server Dial Plan and is set
     based on the fax server internal extension number.
-
--   Define the fields, the ones in **bold** are required. It is a good
-    idea to organize so define the name thoughtfully.
-
--   The extension you must use one that is not allready created.
-
--   Account Code should autofill. Again, **leave the Destination Number
-    blank**.
-
--   A prefix can be defined when sending a fax.
-
--   Email is for inbound faxes and will be on the server and sent to the
-    defines email.
-
--   Define the Caller ID Name and Number.
-
--   Leave the Forward Number and Greeting blank for normal settings.
-
--   Number of channels define with a numerical value or keep blank for a
-    default value.
-
--   Keep organized by adding a Description.
+-   **Extension**: Creates an extension for this Fax Server.
+-   **Prefix**: Can be defined when sending a fax.
+-   **Email**: This will be for inbound faxes, these will be on the server and sent to the
+    defined emails.
+-   **Fax File**: Option to attach files for faxing.
+-   **Confirmation Email**: This sends notifications to your listed emails you when a fax has **Completed** or **Failed**. 
+-   **Caller ID Name/Number**: Pretty self explanatory, this will display the defined ID name and number when faxing.
+-   **Forward Number**: Forward the fax to a an extension or external number.
+-   **Toll Allow**: Enter your toll allow value here.  
 
 ![image](../_static/images/applications/fax_server/fusionpbx_fax_server2.png)
 
@@ -86,7 +77,7 @@ Create an extension for the FAX machine. You can *optionally* set
 
 ## [FAX Default Settings](/en/latest/advanced/default_settings.html#id12)
 
-Menu -\> Advanced -\> Default Settings then category Fax
+**Menu** \> **Advanced** \> **Default Settings** then select category "**Fax**"
 
 -   Variables are used as defaults for the dialplan for sending and
     receiving faxes
