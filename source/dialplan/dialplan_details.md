@@ -4,7 +4,7 @@
 
 Global specific dialplans are global to all tennants(domains). These can be changed, however the changes apply to all tennants.
 
-### Not Found
+## Not Found
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -12,7 +12,7 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 | action | set | call_direction=inbound | | TRUE | 0 | 10 |
 | action | log | [inbound routes] 404 not found \${sip_network_ip} | | TRUE | 0 | 15 |
 
-### Call Forward All
+## Call Forward All
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -20,7 +20,7 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 | condition | \${forward_all_enabled} | TRUE | | | 0 | 10 |
 | action | transfer | \${forward_all_destination} XML \${domain_name} | | | 0 | 15 |
 
-### Intercept Ext Polycom
+## Intercept Ext Polycom
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -28,7 +28,7 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 | action | answer | | | | 0 | 10 |
 | action | lua | intercept.lua $1 | | | 0 | 15 |
 
-### Talking Clock Date
+## Talking Clock Date
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -38,7 +38,7 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 | action | say | \${default_language} CURRENT_DATE pronounced \${strepoch()} | | | 0 | 20 |
 | action | hangup | | | | 0 | 25 |
 
-### Talking Clock Date And Time
+## Talking Clock Date And Time
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -48,7 +48,7 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 | action | say | \${default_language} CURRENT_DATE_TIME pronounced \${strepoch()} | | | 0 | 20 |
 | action | hangup | | | | 0 | 25 |
 
-### Outbound Route Example
+## Outbound Route Example
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -67,7 +67,7 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 | action | bridge | sofia/gateway/72d236fb-945b-4c86-8e75-af7c6bcf2862/$1 | | | 0 | 120 |
 | action | bridge | sofia/gateway/72d236fb-945b-4c86-8e75-af7c6bcf2862/$1 | | | 0 | 130 |
 
-### Talking Clock Time
+## Talking Clock Time
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -79,11 +79,11 @@ Global specific dialplans are global to all tennants(domains). These can be chan
 
 ***
 
-# Domain Specific
+## Domain Specific
 
 Domain specific dialplans are all the same initially but can be changed. Those changes are per domain, thus helps FusionPBX achieve multitenancy.
 
-# Hold Music
+## Hold Music
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data                              | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|---------------------------------------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -98,7 +98,7 @@ Domain specific dialplans are all the same initially but can be changed. Those c
 | anti-action         | execute_extension    | is_zrtp_secure XML \${context}                     |                       |                        | 0                     | 45                    |
 | anti-action         | playback             | $\${hold_music}                                    |                       |                        | 0                     | 50                    |
 
-# Agent Status
+## Agent Status
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data      | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|---------------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -107,7 +107,7 @@ Domain specific dialplans are all the same initially but can be changed. Those c
 | action              | lua                  | app.lua agent_status      |                       |                        | 0                     | 15                    |
 Conversion Notes:
 
-### Agent Status ID
+## Agent Status ID
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -115,7 +115,7 @@ Conversion Notes:
 | action | set | agent_id= | | | 0 | 10 |
 | action | lua | app.lua agent_status | | | 0 | 15 |
 
-### DISA
+## DISA
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -125,7 +125,7 @@ Conversion Notes:
 | action | set | dialplan_context=\${context} | | | 0 | 20 |
 | action | lua | disa.lua | | | 0 | 25 |
 
-### Provision
+## Provision
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -138,7 +138,7 @@ Conversion Notes:
 | action | set | action=logout | | | 1 | 40 |
 | action | lua | app.lua provision | | | 1 | 45 |
 
-### Call Forward
+## Call Forward
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -159,14 +159,14 @@ Conversion Notes:
 | action | set | forward_all_destination=$2 | | | 3 | 90 |
 | action | lua | call_forward.lua | | | 3 | 95 |
 
-### Call Block
+## Call Block
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
 | condition | \${call_direction} | ^inbound$ | | | 0 | 5 |
 | action | lua | app.lua call_block | | | 0 | 10 |
 
-### Do Not Disturb
+## Do Not Disturb
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -183,7 +183,7 @@ Conversion Notes:
 | action | set | enabled=toggle | | | 3 | 70 |
 | action | lua | do_not_disturb.lua | | | 3 | 75 |
 
-### Voicemail (Vmain User)
+## Voicemail (Vmain User)
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -195,11 +195,11 @@ Conversion Notes:
 | action | set | voicemail_profile=default | | | 0 | 30 |
 | action | lua | app.lua voicemail | | | 0 | 35 |
 
-### Vmain
+## Vmain
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
-| condition | destination_number | ^vmain$\|^\*4000$\|^\*98$ | never | | 0 | 5 |
+| condition | destination_number | ^vmain$\|^\\*4000$\|^\*98$ | never | | 0 | 5 |
 | action | answer | | | | 0 | 10 |
 | action | sleep | 1000 | | | 0 | 15 |
 | action | set | voicemail_action=check | | | 0 | 20 |
@@ -214,7 +214,7 @@ Conversion Notes:
 | action | set | voicemail_authorized=false | | | 1 | 70 |
 | action | lua | app.lua voicemail | | | 1 | 75 |
 
-### Directory
+## Directory
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -222,7 +222,7 @@ Conversion Notes:
 | action | lua | directory.lua | | | 0 | 10 |
 
 
-### Follow Me
+## Follow Me
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -230,7 +230,7 @@ Conversion Notes:
 | action              | answer               |                      |                       |                        | 0                     | 10                    |
 | action              | lua                  | follow_me.lua        |                       |                        | 0                     | 15                    |
 
-### Recordings
+## Recordings
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -265,14 +265,14 @@ Conversion Notes:
 | action | set | set api_hangup_hook=conference page-\${destination_number} kick all | | | 0 | 40 |
 | action | lua | page.lua | | | 0 | 45 |
 
-### Valet Park In
+## Valet Park In
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
 | condition | destination_number | ^(park\+)?(\*5900)$ | | | 0 | 5 |
 | action | valet_park | park@\${domain_name} auto in 5901 5999 | | | 0 | 10 |
 
-### Valet Park Out
+## Valet Park Out
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -280,7 +280,7 @@ Conversion Notes:
 | action | answer | | | | 0 | 10 |
 | action | valet_park | park@\${domain_name} $2 | | | 0 | 15 |
 
-### Valet Parking
+## Valet Parking
 
 | Dialplan Detail Tag | Dialplan Detail Type | Dialplan Detail Data | Dialplan Detail Break | Dialplan Detail Inline | Dialplan Detail Group | Dialplan Detail Order |
 |---------------------|----------------------|----------------------|-----------------------|------------------------|-----------------------|-----------------------|
@@ -296,6 +296,10 @@ Conversion Notes:
 | condition | \${park_in_use} | TRUE | never | | 3 | 65 |
 | action | transfer | \${referred_by_user} XML \${context} | | | 3 | 70 |
 | anti-action | set | valet_parking_timeout=180 | | | 3 | 75 |
+| anti-action | set | valet_hold_music=\${hold_music} | | | 3 | 80 |
+| anti-action | set | valet_parking_orbit_exten=\${referred_by_user} | | | 3 | 85 |
+| anti-action | valet_park | park@\${domain_name} \${park_lot} | | | 3 | 90 |
+
 
 ## User Exists
 
