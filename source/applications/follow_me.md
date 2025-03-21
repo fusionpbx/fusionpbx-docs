@@ -2,7 +2,7 @@
 
 Define alternate inbound call handling for the following extensions.
 
-![Follow Me Settings](../_static/images/fusionpbx_follow_me.jpg)
+![Follow Me Settings](../_static/images/applications/call_forward/fusionpbx_call_forward3.png)
 
 - **Call Forward**: (Disabled or Enabled) Input the destination number
 - **On Busy**: (Disabled or Enabled) If enabled, it overrides the value of voicemail enabling in extension
@@ -15,7 +15,7 @@ Define alternate inbound call handling for the following extensions.
 
 This example has both the extension 1301 itself and an external number to call. If you don’t include the extension itself, the extension won’t ring when in Follow Me. This is due to the flexible nature of FusionPBX—e.g., if you’re out of the office on a business trip and don’t want that extension to ring.
 
-![Follow Me Example](../_static/images/fusionpbx_follow_me1.jpg)
+![Follow Me Example](../_static/images/applications/call_forward/fusionpbx_call_forward1.png)
 
 ## Follow Me Default Settings
 
