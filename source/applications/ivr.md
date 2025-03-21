@@ -11,7 +11,7 @@ edit IVR\'s.
 -   Click on **Apps** then **IVR Menu**
 -   Click the Plus icon on the right
 
-![image](../_static/images/fusionpbx_ivr1.jpg)
+![image](../_static/images/applications/ivr_menu/fusionpbx_ivr_menu1.png)
 
 -   *Options in* **bold** *are mandatory.*
 -   **Name:** Enter a name for the IVR menu
@@ -32,7 +32,7 @@ edit IVR\'s.
 -   Caller ID Name Prefix: Set a prefix on the caller ID name.
 -   Enabled: set the status of the IVR Menu.
 
-![image](../_static/images/fusionpbx_ivr2.jpg)
+![image](../_static/images/applications/ivr_menu/fusionpbx_ivr_menu2.png)
 
 You can get very creative with IVR\'s and are almost limitless in
 possibilities. In the basic example below we;
@@ -47,12 +47,7 @@ possibilities. In the basic example below we;
 -   Exit Action to the extension 109 (after hours)
 -   **Direct Dial** to False and Ring back to Default.
 
-![image](../_static/images/fusionpbx_ivr3.jpg)
-
-You now have a list of IVR\'s to go back to and edit or delete as
-needed.
-
-![image](../_static/images/fusionpbx_ivr4.jpg)
+![image](../_static/images/applications/ivr_menu/fusionpbx_ivr_menu3.png)
 
 ## [IVR Default Settings](/en/latest/advanced/default_settings.html#id14)
 
