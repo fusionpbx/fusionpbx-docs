@@ -1,13 +1,13 @@
 # Version Upgrade
 
-Version Upgrade can take several steps to perform. Below will show how
+Version Upgrade can take several steps to perform. Below will show how   
 to upgrade from specific versions.
 
 <br>
 
 ## Version 5.2 to 5.3
 
-These instructions for upgrade are also relevant to versions of
+These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.2.0 and higher.
 
 - Run (Install) Upgrades
@@ -45,9 +45,9 @@ These instructions will update your dashboard to the new defaults.
 -   Open the dropdown menu and navigate to **Advanced** -> **Upgrade**.
 -   Select **App Defaults** then press  **Execute**.
 -   In your browser press **ctrl + f5** to flush the browser cache.
--   If you need to customize the permission use the **SETTINGS** button and
+-   If you need to customize the permission use the **SETTINGS** button and   
     update permissions.
-    -   If you saved a PDF of previous changes use it to help assign the
+    -   If you saved a PDF of previous changes use it to help assign the   
         groups to the Dashboard Widgets.
 
 **background_color_enabled**
@@ -66,7 +66,7 @@ to **false** and enabled to set it to true.
     php /var/www/fusionpbx/core/upgrade/upgrade.php
 ```
 
-Transcribe details need to be moved from the default settings category
+Transcribe details need to be moved from the default settings category   
 voicemail to transcribe. 
 
 - **Openai** easy to setup enable setting and set the api[key]{#key} 
@@ -75,7 +75,7 @@ voicemail to transcribe.
 - **Azure** language en-US api[url]{#url} used for the region
 
 Speech is defined in the default settings category speech this feature   
-is used for Text-to-Speech - Make sure to set enable the settings -
+is used for Text-to-Speech - Make sure to set enable the settings -   
 openai - elevenlabs
 
 <br>
@@ -85,9 +85,9 @@ openai - elevenlabs
 These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.1.0 and higher.
 
->**Release Note:** When this upgrade.php is run from the root, it will   
->write the /etc/fusionpbx/config.conf file by reading information from   
->the database and config.php and config.lua.
+> **Release Note:** When this upgrade.php is run from the root, it will   
+> write the /etc/fusionpbx/config.conf file by reading information from   
+> the database and config.php and config.lua.
 
 - Run (Install) Upgrades
 
@@ -112,9 +112,9 @@ FusionPBX 5.1.0 and higher.
     systemctl restart event_guard
 ```
 
->**Note:** If the fax[queue]{#queue} is not installed it will show an error.
->This is only a problem if you are using fax. If you are using fax then
->you will want to install the fax[queue]{#queue} service.
+> **Note:** If the fax[queue]{#queue} is not installed it will show an error.   
+> This is only a problem if you are using fax. If you are using fax then   
+> you will want to install the fax[queue]{#queue} service.
 
 ```
     cp /var/www/fusionpbx/app/fax_queue/resources/service/debian.service /etc/systemd/system/fax_queue.service
@@ -170,7 +170,7 @@ FusionPBX 5.1.0 and higher.
 
 **Restore Default**
 
--   If the menu has not been customized then to update run the RESTORE
+-   If the menu has not been customized then to update run the RESTORE   
     DEFAULT button.
 
 **Manual Update**
@@ -186,12 +186,12 @@ To manually update the menu, you need to edit the default menu.
 
 ## Version 5.0 to 5.1
 
-These instructions for upgrade are also relevant to versions of
+These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.0.3 to 5.0.10 and higher.
 
->**Release Note:** When this upgrade.php is run from the root, it will write the
->/etc/fusionpbx/config.conf file by reading information from the database
->and config.php and config.lua.
+> **Release Note:** When this upgrade.php is run from the root, it will write the   
+> /etc/fusionpbx/config.conf file by reading information from the database   
+> and config.php and config.lua.
 
 - Run (Install) Upgrades
 
@@ -212,7 +212,7 @@ Select **Data Types**, then click **Execute**.
 
 - Flush Templates
 
-PHP Smarty version 4.3.1 was updated. This requires clearing files in
+PHP Smarty version 4.3.1 was updated. This requires clearing files in   
 the temp directory.
 
 ```
@@ -221,7 +221,7 @@ rm -R -f /tmp/\*.php
 
 - New Global Dialplans
 
-The following dialplans are need to be deleted for all domains. As these
+The following dialplans are need to be deleted for all domains. As these   
 are now global dialplans.
 
 > call-direction is[local]{#local} agent[status]{#status}   
@@ -287,7 +287,7 @@ combined into the config.conf file.
 
 **Config File Ownership**
 
-The **\*/etc/fusionpbx/config.conf**\* file should be owned by the root user    
+The /etc/fusionpbx/config.conf file should be owned by the root user    
 like other files in the /etc directory.
 
 ### Debian / Ubuntu / CentOS
@@ -340,7 +340,7 @@ like this. If this is different then it should be updated to what is
 shown below.
 
 - Use this command to look at the bottom of the config.conf file.
-- 
+
 ```
     cat /etc/fusionpbx/config.conf | grep error
 ```
@@ -586,11 +586,11 @@ Changes have been made in the **Email** section in **Advanced** -> **Default set
 
 -   You will find duplicates with a blank value. The duplicates must be   
     updated with the existing info from the originals. These duplicates   
-    are the new and correct settings. You\'ll have to update these blank   
+    are the new and correct settings. You'll have to update these blank   
     ones with the existing values (like smtp server info) to the new   
     default ones. Then delete the original ones.
 
--   Don\'t delete the blank entries. The code behind them are for   
+-   Don't delete the blank entries. The code behind them are for   
     version 4.4+ and the original ones are not.
 
 > **Note:** If you already deleted the blank ones, you'll have to delete the email   
@@ -601,10 +601,10 @@ Changes have been made in the **Email** section in **Advanced** -> **Default set
 
 ## Version 4.0 to 4.2
 
-1.  Update the source code. From the web interface go to the Menu ->
-    Advanced -> Upgrade page. Check the source box and the press execute. If
+1.  Update **Source Code**. From the web interface go to the Menu ->
+    **Advanced** -> **Upgrade** page. Check the source box and the press execute. If
     you see a red bar it indicates there was a git conflict and you will
-    need to update from console instead. If you don\'t see the source box
+    need to update from console instead. If you don't see the source box
     then you will need to update from the console.
     
 ```
@@ -614,29 +614,28 @@ Changes have been made in the **Email** section in **Advanced** -> **Default set
     chown -R www-data:www-data /var/www/fusionpbx
 ```
 
-2.  If the page goes blank type in the url
-    <http://domain.com/logout.php> This should bring you back to the
+2.  If the page goes blank type in the url   
+    <http://domain.com/logout.php> This should bring you back to the    
     login screen.
 
-3. Udate the Schema. Advanced -\> Upgrade Check the Schema box and then
-then press execute. <https://domain.com/core/upgrade/index.php>
+3. Udate Schema. Advanced -> Upgrade then run Schema.   
+   <https://domain.com/core/upgrade/index.php>
 
-4.  Check the box for App Defaults and run execute.
-5.  Check the box for Menu Defaults and run execute. This will update
+5.  Check the box for App Defaults and run execute.   
+6.  Check the box for Menu Defaults and run execute. This will update   
     the menu to the default menu. The menu should now look like this.
 
 ![image](../_static/images/fusionpbx_new_menu.jpg)
 
-6.  Check the box for Permission Defaults and run execute. Permissions
+6.  Check the box for Permission Defaults and run execute. Permissions   
     are store in a session to get new permissions logout and back in.
-7.  Goto Dialplan \> Dialplan Manager and delete
-    \"local[extension]{#extension}\". Then goto Advanced \> Upgrade and
-    only check box App Defaults and click execute. This will regenerate
-    the new local[extension]{#extension} version.
-8.  Go to Applications \> Conference profiles. Edit each profile and
-    replace \$\${hold[music]{#music}} with
+7.  Goto **Dialplan** -> **Dialplan Manager** and delete   
+    \"local[extension]{#extension}\". Then goto **Advanced** -> **Upgrade** and   
+    run **App Defaults**. This will regenerate he new local[extension]{#extension} version.
+9.  Go to Applications \> Conference profiles. Edit each profile and   
+    replace \$\${hold[music]{#music}} with   
     local[stream]{#stream}://default
-9.  Goto Advanced \> Variables hold[music]{#music}. Make sure it\'s
+10.  Goto Advanced \> Variables hold[music]{#music}. Make sure it\'s   
     value is set as local[stream]{#stream}://default
 
 ```
@@ -650,7 +649,7 @@ then press execute. <https://domain.com/core/upgrade/index.php>
     * For custom music on hold check the path for the domain name and set select for the domain name to match the domain used in the path.
 ```
 
-10. Remove .xml from the end of the following file names
+10. Remove .xml from the end of the following file names.
 
 ```
     **Before**
@@ -671,7 +670,7 @@ then press execute. <https://domain.com/core/upgrade/index.php>
     <param name="xml-handler-bindings" value="configuration,dialplan,directory,languages"/>
 ```
 
-12. Update Time Conditions (Bug Fix)
+12. Update Time Conditions (Bug Fix).
 
 ```
     Goto Advanced > Upgrades page.  Check box Update Source, execute. 
@@ -680,7 +679,7 @@ then press execute. <https://domain.com/core/upgrade/index.php>
     Goto Advanced > Default settings. Click "Reload" at the top right. (This will get the new presets)
 ```
 
-Next steps are for existing Time Conditions
+Next steps are for existing Time Conditions.
 
     Goto Apps > Time Conditions and edit the time conditions remove all holidays and hit save.
     Select the holidays over again.
@@ -1009,10 +1008,12 @@ See <https://github.com/fusionpbx/fusionpbx/issues/655> for more details.
 
 **Default settings**
 
+```
     x.x.x.x/core/default_settings/default_settings.php
     category: language 
     type: code 
     value: en-us
+```
 
 **Email**
 
