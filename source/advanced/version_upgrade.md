@@ -1,372 +1,405 @@
 # Version Upgrade
 
-Version Upgrade can take several steps to perform. Below will show how
+Version Upgrade can take several steps to perform. Below will show how   
 to upgrade from specific versions.
+
+<br>
 
 ## Version 5.2 to 5.3
 
-**Upgrade from 5.2 to 5.3**
-
-These instructions for upgrade are also relevant to versions of
+These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.2.0 and higher.
 
-\### Run (Install) Upgrades
+- Run (Install) Upgrades
 
+```
     cd /var/www/fusionpbx
     git stash
     git pull
     git checkout 5.3
     git branch
     php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
+- Upgrade Schema -> Data Types
+    - Navigate to the Upgrade page **Advanced** -> **Upgrade**.   
+    - Select both **Schema** and **Data Types**, then click **Execute**.
 
-**Upgrade Schema -\> Data Types**
+- Restart Services
 
-Make sure to login and then go to Advanced -\> Upgrade -\> Schema -\>
-Data Types
-
-**Restart Services**
-
+```
     systemctl restart email_queue
     systemctl restart fax_queue
     systemctl restart event_guard
+```
 
-**Dashboard**
+### Update Dashboard
 
-Update the dashboard so that it looks like a new default install.
+These instructions will update your dashboard to the new defaults.
 
 -   Login to the web interface
 -   From the dashboard press the **SETTINGS** button.
--   If you changed the groups assigned in the Dashboard.
-    -   Then print the page and save it to a PDF for reference later.
+-   If you changed the groups assigned in the **Dashboard**,   
+    print the page and save it to a PDF for reference later.
 -   Select the first checkbox this will select all the ones below it.
 -   Then press the **DELETE** button
--   Then go to the Menu and press Advanced then click on Upgrade.
--   Put a checkmark in **App Defaults** then press the **Execute**
+-   Open the dropdown menu and navigate to **Advanced** -> **Upgrade**.
+-   Select **App Defaults** then press  **Execute**.
 -   In your browser press **ctrl + f5** to flush the browser cache.
--   If you need to customize the permission use the SETTINGS button and
+-   If you need to customize the permission use the **SETTINGS** button and   
     update permissions.
-    -   If you saved a PDF of previous changes use it to help assign the
+    -   If you saved a PDF of previous changes use it to help assign the   
         groups to the Dashboard Widgets.
 
 **background_color_enabled**
 
-This is a new setting to enable or disable the background color. If you
-have a custom background image, then you may want to set this **value**
+This is a new setting to enable or disable the background color. If you   
+have a custom background image, then you may want to set this **value**   
 to **false** and enabled to set it to true.
 
 **Install Transcribe and Speech (Optional)**
 
+```
     cd /var/www/fusionpbx/app
     git clone https://github.com/fusionpbx/fusionpbx-app-transcribe.git transcribe
     git clone https://github.com/fusionpbx/fusionpbx-app-speech.git speech
     chown -R www-data:www-data /var/www/fusionpbx
     php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
 
-Transcribe details need to be moved from the default settings category
-voicemail to transcribe. - openai - easy to setup enable setting and set
-the api[key]{#key} - watson - requires api[url]{#url} in the transcribe
-category - google - requires api[url]{#url} - azure - language en-US
-api[url]{#url} used for the region
+Transcribe details need to be moved from the default settings category   
+voicemail to transcribe. 
 
-Speech is defined in the default settings category speech this feature
-is used for Text-to-Speech - Make sure to set enable the settings -
+- **Openai** easy to setup enable setting and set the api[key]{#key} 
+- **Watson** requires api[url]{#url} in the transcribe category
+- **Google** requires api[url]{#url}
+- **Azure** language en-US api[url]{#url} used for the region
+
+Speech is defined in the default settings category speech this feature   
+is used for Text-to-Speech - Make sure to set enable the settings -   
 openai - elevenlabs
+
+<br>
 
 ## Version 5.1 to 5.2
 
-**Upgrade from 5.1 to 5.2**
-
-These instructions for upgrade are also relevant to versions of
+These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.1.0 and higher.
 
-**Release Note** - When this upgrade.php is run from the root, it will
-write the /etc/fusionpbx/config.conf file by reading information from
-the database and config.php and config.lua.
+> **Release Note:** When this upgrade.php is run from the root, it will   
+> write the /etc/fusionpbx/config.conf file by reading information from   
+> the database and config.php and config.lua.
 
-\### Run (Install) Upgrades
+- Run (Install) Upgrades
 
+```
     cd /var/www/fusionpbx
     git stash
     git pull
     git checkout 5.2
     git branch
     php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
 
-**Upgrade Schema -\> Data Types**
+- Upgrade Schema -> Data Types
+    - Navigate to the Upgrade page **Advanced** -> **Upgrade**.   
+    - Select **Data Types**, then click **Execute**.
 
-Make sure to login and then go to Advanced -\> Upgrade -\> Schema -\>
-Data Types
+- Restart Services
 
-**Restart Services**
-
+```
     systemctl restart email_queue
     systemctl restart fax_queue
     systemctl restart event_guard
+```
 
-Note: If the fax[queue]{#queue} is not installed it will show an error.
-This is only a problem if you are using fax. If you are using fax then
-you will want to install the fax[queue]{#queue} service.
+> **Note:** If the fax[queue]{#queue} is not installed it will show an error.   
+> This is only a problem if you are using fax. If you are using fax then   
+> you will want to install the fax[queue]{#queue} service.
 
+```
     cp /var/www/fusionpbx/app/fax_queue/resources/service/debian.service /etc/systemd/system/fax_queue.service
     systemctl enable fax_queue
     systemctl start fax_queue
     systemctl daemon-reload
+```
 
 **XML CDR Import**
 
-Open the file
+- Open the file
 
+```
     nano /etc/freeswitch/autoload_configs/xml_cdr.conf.xml
+```
 
-Comment out the url parameter.
+- Comment out the url parameter.
 
+```
     <!-- the url to post to if blank web posting is disabled  -->
     <!--<param name="url" value="http://127.0.0.1/app/xml_cdr/xml_cdr_import.php"/>-->
 
     fs_cli -x 'reloadxml'
     fs_cli -x 'reload mod_xml_cdr'
+```
 
-**Install the xml_cdr Service**
+- Install the xml_cdr Service
 
+```
     - This service is optional. However it helps add the CDR records faster than the cron job that is [documented here](https://www.fusionpbx.com/app/pages/page.php?id=2291d3c8-c714-49a6-bfd9-3365885ae526)
     - Install the service
+```
 
-**Debian or Ubuntu**
+### Debian or Ubuntu
 
+```
     cp /var/www/fusionpbx/app/xml_cdr/resources/service/debian.service /etc/systemd/system/xml_cdr.service
     systemctl enable xml_cdr
     systemctl start xml_cdr
     systemctl daemon-reload
+```
 
-**CentOS**
+### CentOS
 
+```
     cp /var/www/fusionpbx/app/xml_cdr/resources/service/debian.service /usr/lib/systemd/system/xml_cdr.service
     systemctl daemon-reload
     systemctl enable xml_cdr
     systemctl start xml_cdr
+```
 
 **Menu Manager**
 
 **Restore Default**
 
--   If the menu has not been customized then to update run the RESTORE
+-   If the menu has not been customized then to update run the RESTORE   
     DEFAULT button.
 
 **Manual Update**
 
-> 
->
-> To manually update the menu. Edit the default menu.
->
-> :   
->
->     Remove the **Email Logs** Menu. No longer used.
->
->     :   
->
->         Add the **Destination Summary** Menu
->
->         :   Title: Destination Summary Link:
->             /app/destinations/destination[summary.php]{#summary.php}
->             Parent Menu: Status Groups: admin, superadmin
+To manually update the menu, you need to edit the default menu.
+
+- Remove the **Email Logs** Menu (No longer used).
+- Add the **Destination Summary** Menu
+   - Title: Destination Summary Link: /app/destinations/destination[summary.php]{#summary.php}
+   - Parent Menu: Status Groups: admin, superadmin
+
+<br>
 
 ## Version 5.0 to 5.1
 
-These instructions for upgrade are also relevant to versions of
+These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.0.3 to 5.0.10 and higher.
 
-**Release Note**
+> **Release Note:** When this upgrade.php is run from the root, it will write the   
+> /etc/fusionpbx/config.conf file by reading information from the database   
+> and config.php and config.lua.
 
--   When this upgrade.php is run from the root, it will write the
-    /etc/fusionpbx/config.conf file by reading information from the
-    database and config.php and config.lua.
+- Run (Install) Upgrades
 
-**Run (Install) Upgrades**
-
+```
     cd /var/www/fusionpbx
     git stash
     git pull
     git checkout 5.1
     git branch
     php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
 
-Make sure to also update group permission from Advanced -\> Group
-Manager -\> RESTORE DEFAULT button
+Make sure to also update group permission from Advanced -> Group
+Manager -> RESTORE DEFAULT button
 
-**Upgrade Schema -\> Data Types**
+Navigate to the Upgrade page **Advanced** -> **Upgrade**.   
+Select **Data Types**, then click **Execute**.
 
-Make sure to login and then go to Advanced -\> Upgrade -\> Schema -\>
-Data Types
+- Flush Templates
 
-**Flush Templates**
-
-PHP Smarty version 4.3.1 was updated. This requires clearing files in
+PHP Smarty version 4.3.1 was updated. This requires clearing files in   
 the temp directory.
 
-> rm -R -f /tmp/\*.php
+```
+rm -R -f /tmp/\*.php
+```
 
-**New Global Dialplans**
+- New Global Dialplans
 
-:
-
-The following dialplans are need to be deleted for all domains. As these
+The following dialplans are need to be deleted for all domains. As these   
 are now global dialplans.
 
-> call-direction is[local]{#local} agent[status]{#status}
-> agent[status_id]{#status_id} agent-status-break
-> call[privacy]{#privacy} send[to_voicemail]{#to_voicemail} vmain
-> xfer[vm]{#vm} vmain[user]{#user} delay[echo]{#echo} echo
-> is[zrtp_secure]{#zrtp_secure} milliwatt is[secure]{#secure}
-> tone[stream]{#stream} hold[music]{#music} do-not-disturb call-forward
-> follow-me freeswitch[conference]{#conference}
-> clear[sip_auto_answer]{#sip_auto_answer} call[return]{#return} dx
-> att[xfer]{#xfer} directory redial call[return]{#return} dx
-> att[xfer]{#xfer} is[transfer]{#transfer} cf please[hold]{#hold}
+> call-direction is[local]{#local} agent[status]{#status}   
+> agent[status_id]{#status_id} agent-status-break   
+> call[privacy]{#privacy} send[to_voicemail]{#to_voicemail} vmain   
+> xfer[vm]{#vm} vmain[user]{#user} delay[echo]{#echo} echo   
+> is[zrtp_secure]{#zrtp_secure} milliwatt is[secure]{#secure}   
+> tone[stream]{#stream} hold[music]{#music} do-not-disturb call-forward   
+> follow-me freeswitch[conference]{#conference}   
+> clear[sip_auto_answer]{#sip_auto_answer} call[return]{#return} dx   
+> att[xfer]{#xfer} directory redial call[return]{#return} dx   
+> att[xfer]{#xfer} is[transfer]{#transfer} cf please[hold]{#hold}   
 > talking[clock_date]{#clock_date}
 
-:
+- Then run this command to get the new default global dialplans.
 
-Then run this command to get the new default global dialplans
-
+```
     cd /var/www/fusionpbx
     php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
 
-**Restart Services**
+- Restart Services
 
+```
     systemctl restart email_queue
     systemctl restart fax_queue
     systemctl restart event_guard
+```
 
-**Install the Event Guard Service**
-
+- Install the Event Guard Service
     - Upgrade to the latest FusionPBX 5.0.2 or higher.
     - Install the service
 
-**Debian or Ubuntu**
+### Debian or Ubuntu
 
-> cp
-> /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/debian.service
-> /etc/systemd/system/event[guard.service]{#guard.service} systemctl
-> enable event[guard]{#guard} systemctl start event[guard]{#guard}
-> systemctl daemon-reload
+```
+ cp   
+ /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/debian.service   
+ /etc/systemd/system/event[guard.service]{#guard.service} systemctl   
+ enable event[guard]{#guard} systemctl start event[guard]{#guard}   
+ systemctl daemon-reload
+```
 
-**CentOS**
+### CentOS
 
-> cp
-> /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/debian.service
-> /usr/lib/systemd/system/event[guard.service]{#guard.service} systemctl
-> daemon-reload systemctl enable event[guard]{#guard} systemctl start
-> event[guard]{#guard}
+```
+ cp   
+ /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/debian.service   
+ /usr/lib/systemd/system/event[guard.service]{#guard.service} systemctl
+ daemon-reload systemctl enable event[guard]{#guard} systemctl start   
+ event[guard]{#guard}
+```
 
-**Remove Old Config Files**
+- Remove Old Config Files
 
-    **Debian / Ubuntu / CentOS**
-
-The config.conf and config.php files are deprecated. These files were
+The config.conf and config.php files are deprecated. These files were   
 combined into the config.conf file.
 
+```
     rm -f /etc/fusionpbx/config.php
     rm -f /etc/fusionpbx/config.lua
+```
 
 **Config File Ownership**
 
-:
+The /etc/fusionpbx/config.conf file should be owned by the root user    
+like other files in the /etc directory.
 
-The **\*/etc/fusionpbx/config.conf**\* file should be owned by the root
-user like other files in the /etc directory.
+### Debian / Ubuntu / CentOS
 
-**Debian / Ubuntu / CentOS**
+```
+chown -R root:root /etc/fusionpbx
+```
 
-> chown -R root:root /etc/fusionpbx
+### FreeBSD
 
-**FreeBSD**
-
-> chown -R root:root /usr/local/etc/fusionpbx
+```
+chown -R root:root /usr/local/etc/fusionpbx
+```
 
 **Destination Number**
 
-For many years the inbound phone number (DID/DDI) would show up in the
-dialplan as **\*destination_number**\* variable for most VoIP providers.
-For some VoIP providers, the number would be found in
+For many years the inbound phone number (DID/DDI) would show up in the   
+dialplan as **\*destination_number**\* variable for most VoIP providers.   
+
+For some VoIP providers, the number would be found in   
 **\*sip_to_user***, and in some cases,***sip_req_user**\* is needed.
-Recently Diversion header has become more widely used, and sip
-**\*sip_to_user**\* and, in some cases, **\*sip_req_user**\* may be
-required. For example, a call forwarded from a mobile phone to one of
-your numbers in FusionPBX. The destination variable in the dialplan
+
+Recently Diversion header has become more widely used, and sip   
+**\*sip_to_user**\* and, in some cases, **\*sip_req_user**\* may be   
+required. 
+
+For example, a call forwarded from a mobile phone to one of   
+your numbers in FusionPBX. The destination variable in the dialplan   
 category can change which variable is used.
 
+```
     Category: dialplan
     Subcategory: destination
     Type: text
     Value: destination_number
     Description: Options: destination_number (default), ${sip_to_user}, ${sip_req_user}
+```
 
-**Update Fail2ban, if Used**
+- Update Fail2ban, if Used
 
-> cd /usr/src/fusionpbx-install.sh/debian/resources git stash git pull
-> ./fail2ban.sh
+```
+cd /usr/src/fusionpbx-install.sh/debian/resources git stash git pull
+./fail2ban.sh
+```
 
-**Error Reporting in config.conf**
+- Error Reporting in config.conf
 
-The error reporting in the bottom of the config.conf was changed to look
-like this. If this is different then it should be updated to what is
+The error reporting in the bottom of the config.conf was changed to look   
+like this. If this is different then it should be updated to what is   
 shown below.
 
-Use this command to look at the bottom of the config.conf file.
+- Use this command to look at the bottom of the config.conf file.
 
+```
     cat /etc/fusionpbx/config.conf | grep error
+```
 
-Old version
+**Old version**
 
+```
     #error reporting hide show all errors except notices and warnings
     error.reporting = 'E_ALL ^ E_NOTICE ^ E_WARNING'
+```
 
-New version
+**New version**
 
-> #error reporting options: user,dev,all error.reporting = user
+#error reporting options: user,dev,all error.reporting = user
 
-If its different then use nano, vi, vim or some other editor to update
+If its different then use nano, vi, vim or some other editor to update   
 the error reporting.
 
-> nano /etc/fusionpbx/config.conf
+```
+    nano /etc/fusionpbx/config.conf
+```
 
 Confirm that the values have been updated using this command.
 
+```
     cat /etc/fusionpbx/config.conf | grep error
+```
 
-**Clear the cache**
+- Clear the cache
 
+```
     rm -f /var/cache/fusionpbx/*
+```
 
 ## 4.4 to 5.0
 
-1.  Switch branches
+- Switch branches
 
-<!-- -->
-
+```
     mv /var/www/fusionpbx /var/www/fusionpbx-4.4
     cd /var/www && git clone https://github.com/fusionpbx/fusionpbx.git
     chown -R www-data:www-data /var/www/fusionpbx
+```
 
-2.  Try Advanced -\> Upgrade Schema if that fails use the the command
-    line.
+- Update **Schema** under **Advanced** -> **Upgrade**, run this command if it fails.
 
-<!-- -->
-
+```
     cd /var/www/fusionpbx
     php /var/www/fusionpbx/core/upgrade/upgrade.php
+```
 
-3.  Refresh the browser if there are issues then logout and then back
-    in.
-4.  Update the following Dialplans.
+- Refresh the browser if there are issues then logout and then back in.
+- Update the following Dialplans.
 
-If you have made any changes to these make notes on the changes before
-you delete them. So that the changes could be added back. For example
-valet park could have custom music on hold or a custom timeout for the
-valet park.
+> **Note:** If you have made any changes, make notes before you delete them.   
+> So changes can be added back. For example, valet park could have custom   
+> music on hold or a custom timeout for the valet park.
 
-:
-
+```
     user_exists
     call-direction
     is_loopback
@@ -386,229 +419,226 @@ valet park.
     call_forward_not_registered
     local_extension
     voicemail
+```
 
--   Update these Dialplans by first selecting and deleting their entries
-    from within the Dialplan Manager for all domains. Then, run Advanced
-    -\> Upgrade -\> App Defaults to retrieve the new versions of the
-    diaplans.
+- Update these Dialplans by first selecting and deleting their entries   
+  from within the Dialplan Manager for all domains. Then, run Advanced   
+  -> Upgrade -> App Defaults to retrieve the new versions of the   
+  diaplans.
 
-5.  If you have customized any provisioning templates makes sure to copy
-    them from /var/www/fusionpbx-4.4/resources/templates/provision and
-    copy them into the right vendor directory in
-    /var/www/fusionpbx/resources/templates/provision. I you haven\'t
-    customized the provisioning templates you can skip this step.
-6.  Update the language phrases. If you have added custom phrases be
-    careful here not the case for most people.
+- If you have customized any provisioning templates makes sure to copy   
+  them from /var/www/fusionpbx-4.4/resources/templates/provision and   
+  copy them into the right vendor directory in   
+  /var/www/fusionpbx/resources/templates/provision. I you haven't   
+  customized the provisioning templates you can skip this step.   
+- Update the language phrases. If you have added custom phrases be   
+  careful here not the case for most people.
 
-<!-- -->
-
+```
     rm -R -f /etc/freeswitch/lang
     rm -R -f /etc/freeswitch/languages
     cp -R /var/www/fusionpbx/resources/templates/conf/languages /etc/freeswitch
     chown -R www-data:www-data /etc/freeswitch
     fs_cli -x "reloadxml"
+```
 
-7.  New Follow Me does not use the extension dial string. Use the
-    following SQL command to remove the extension dial string.
+- New Follow Me does not use the extension dial string. Use the   
+  following SQL command to remove the extension dial string.
 
-<!-- -->
-
+```
     update v_follow_me set dial_string = null;
     update v_extensions set dial_string = null, follow_me_destinations = null where dial_string <> 'error/user_busy';
     update v_extensions set follow_me_enabled = 'true' where follow_me_uuid in (select follow_me_uuid from v_follow_me where follow_me_enabled = 'true');
     \q
     exit
+```
 
-8.  Rename the variables dialplan to domain-variables
+- Rename the variables dialplan to domain-variables
 
-<!-- -->
-
+```
     su postgres
     psql fusionpbx
     update v_dialplans set dialplan_name = 'domain-variables' where dialplan_name = 'variables';
     \q
     exit
+```
 
-9.  Duplication in Default Settings
+- Duplication in Default Settings
 
-Go to Advanced -\> Default Settings after running App Defaults to check
-for any duplicates. If you see duplicates that are not type of array
-this may have been caused from older versions of FusionPBX before we
-started using a Preset ID for each Default Settings. If you hover over
-the setting it says then says Default this is the default setting with
-the correct ID. If it says custom this is a unique UUID. Make sure to
-delete only duplicates that say custom otherwise when you run App
-Defaults again it will put the default setting back with the correct
-preset UUID\>
+Go to **Advanced** -> **Default Settings** after running App Defaults to check   
+for any duplicates. If you see duplicates that are not type of array   
+this may have been caused from older versions of FusionPBX before we   
+started using a Preset ID for each Default Settings. 
 
-10. FAX Queue install
+If you hover over the setting it says then says Default this is the    
+default setting with the correct ID. If it says custom this is a   
+unique UUID. Make sure to delete only duplicates that say custom otherwise   
+when you run App Defaults again it will put the default setting back with   
+the correct preset UUID\>
+
+### FAX Queue install
 
 -   <https://docs.fusionpbx.com/en/latest/status/fax_queue.html>
 -   Install as a service
 
-<!-- -->
-
+```
     cp /var/www/fusionpbx/app/fax_queue/resources/service/debian.service /etc/systemd/system/fax_queue.service
     systemctl enable fax_queue
     systemctl start fax_queue
     systemctl daemon-reload
+```
 
 -   or run as a cron job
 
-<!-- -->
-
+```
     crontab -e
     * * * * * cd /var/www/fusionpbx && php /var/www/fusionpbx/app/fax_queue/resources/job/fax_queue.php
+```
 
-11. Email Queue install
+### Email Queue install
 
 -   <https://docs.fusionpbx.com/en/latest/status/email_queue.html>
 -   Install as a service
 
-<!-- -->
-
+```
     cp /var/www/fusionpbx/app/email_queue/resources/service/debian.service /etc/systemd/system/email_queue.service
     systemctl enable email_queue
     systemctl start email_queue
     systemctl daemon-reload
+```
 
 -   or run as a cron job
 
-<!-- -->
-
+```
     crontab -e
     * * * * * cd /var/www/fusionpbx && /usr/bin/php /var/www/fusionpbx/app/email_queue/resources/service/email_queue.php
+```
+
+<br>
 
 ## Version 4.2 to 4.4
 
-1.  Switch branches
+- Switch branches
 
-<!-- -->
-
+```
     mv /var/www/fusionpbx /var/www/fusionpbx-4.2
     cd /var/www && git clone -b 4.4 https://github.com/fusionpbx/fusionpbx.git
     chown -R www-data:www-data /var/www/fusionpbx
+```
 
-:::: note
-::: title
-Note
-:::
+> **Note:** Depending on when you installed the path /etc/fusionpbx might need   
+> created. A good way to tell is once you move the fusionpbx folder in   
+> step one and the FusionPBX is on a page with flags.
 
-Depending on when you installed the path /etc/fusionpbx might need
-created. A good way to tell is once you move the fusionpbx folder in
-step one and the FusionPBX is on a page with flags.
-::::
+<br>
 
-    **Only** do this step if the folder **doesn't** already exist.
+**Only** do this step if the folder doesn't already exist.
 
+```
     mkdir -p /etc/fusionpbx
 
     mv /var/www/fusionpbx-4.2/resources/config.php /etc/fusionpbx
     chown -R www-data:www-data /etc/fusionpbx/
+```
 
--   Then go to Advanced -\> Upgrade and update the Source Code, Schema,
-    Menu Defaults and Permission Defaults.
+-   Then go to **Advanced** -> **Upgrade** and run **Source Code**, **Schema**,   
+    **Menu Defaults** and **Permission Defaults**.
 
-:::: note
-::: title
-Note
-:::
 
-config.lua needs to be read and write by the webserver in order for
-advanced \> default settings to update config.lua with new path
-information. Make sure config.lua and config.php are in /etc/fuionpbx/ .
-Don\'t miss this step chown -R www-<data:www-data> /etc/fusionpbx/
-::::
+> **Note:** config.lua needs to be read and write by the webserver in order   
+> for advanced default settings to update config.lua with new path information.   
+> Make sure config.lua and config.php are in /etc/fuionpbx/ .   
+> And be sure to run this command. 
 
-2.  Update the following Dialplans.
+```
+chown -R www-<data:www-data> /etc/fusionpbx/
+```
 
-<!-- -->
+- Update the following Dialplans.
 
+```
     user_exists
     user_record
     call_forward_all
     local_extension
+```
 
--   Update these Dialplans by first selecting and deleting their entries
-    from within the Dialplan Manager for all domains. Then, run Advanced
-    -\> Upgrade -\> App Defaults to retrieve the new versions of the
-    diaplans.
+-   Update these Dialplans by first selecting and deleting their entries   
+    from within the **Dialplan Manager** for all domains. Then, navigate to   
+    **Advanced** -> **Upgrade** and run **App Defaults** to retrieve the new   
+    dialplan versions
 
-3.  In the menu go to Status then SIP Status and press \'Flush Cache\'.
-4.  Update old recordings set the record[name]{#name} and
+-  In the menu go to **Status** -> **SIP Status**, then press **Flush Cache**.
+
+-  Update old recordings set the record[name]{#name} and   
     record[path]{#path}.
 
-<!-- -->
-
+```
     cd /usr/src
     wget https://raw.githubusercontent.com/fusionpbx/fusionpbx-scripts/master/upgrade/record_path.php
     php record_path.php
+```
 
-5.  Resave all Call Center Queues to update each call center queue
+-   Resave all Call Center Queues to update each call center queue   
     dialplan. Then restart mod call center or FreeSWITCH.
-6.  Advanced \> Default Settings
 
-The email section in Advanced \> Default settings, changes have been
-made.
+Changes have been made in the **Email** section in **Advanced** -> **Default settings**
 
--   You will find duplicates with a blank value. The duplicates must be
-    updated with the existing info from the originals. These duplicates
-    are the new and correct settings. You\'ll have to update these blank
-    ones with the existing values (like smtp server info) to the new
+-   You will find duplicates with a blank value. The duplicates must be   
+    updated with the existing info from the originals. These duplicates   
+    are the new and correct settings. You'll have to update these blank   
+    ones with the existing values (like smtp server info) to the new   
     default ones. Then delete the original ones.
--   Don\'t delete the blank entries. The code behind them are for
+
+-   Don't delete the blank entries. The code behind them are for   
     version 4.4+ and the original ones are not.
 
-:::: note
-::: title
-Note
-:::
+> **Note:** If you already deleted the blank ones, you'll have to delete the email   
+> section, run App Defaults under **Advanced** -> **Upgrade**. Then navigate   
+> back to **Advanced** -> **Default settings** and set the email section back up.
 
-If you already deleted the blank ones, you\'ll have to delete the email
-section then run Advanced \> Upgrade \> App Defaults check box. Then go
-back to Advanced \> Default settings and set the email section back up.
-::::
+<br>
 
 ## Version 4.0 to 4.2
 
-1\. Update the source code. From the web interface go to the Menu -\>
-Advanced \> Upgrade page. Check the source box and the press execute. If
-you see a red bar it indicates there was a git conflict and you will
-need to update from console instead. If you don\'t see the source box
-then you will need to update from the console.
-
+1.  Update **Source Code**. From the web interface go to the Menu ->
+    **Advanced** -> **Upgrade** page. Check the source box and the press execute. If
+    you see a red bar it indicates there was a git conflict and you will
+    need to update from console instead. If you don't see the source box
+    then you will need to update from the console.
+    
+```
     cd /var/www/fusionpbx
     git stash
     git pull
     chown -R www-data:www-data /var/www/fusionpbx
+```
 
-2.  If the page goes blank type in the url
-    <http://domain.com/logout.php> This should bring you back to the
+2.  If the page goes blank type in the url   
+    <http://domain.com/logout.php> This should bring you back to the    
     login screen.
 
-3\. Udate the Schema. Advanced -\> Upgrade Check the Schema box and then
-then press execute. <https://domain.com/core/upgrade/index.php>
+3. Udate Schema. Advanced -> Upgrade then run Schema.   
+   <https://domain.com/core/upgrade/index.php>
 
-4.  Check the box for App Defaults and run execute.
-5.  Check the box for Menu Defaults and run execute. This will update
+5.  Check the box for App Defaults and run execute.   
+6.  Check the box for Menu Defaults and run execute. This will update   
     the menu to the default menu. The menu should now look like this.
 
 ![image](../_static/images/fusionpbx_new_menu.jpg)
 
-6.  Check the box for Permission Defaults and run execute. Permissions
+6.  Check the box for Permission Defaults and run execute. Permissions   
     are store in a session to get new permissions logout and back in.
-7.  Goto Dialplan \> Dialplan Manager and delete
-    \"local[extension]{#extension}\". Then goto Advanced \> Upgrade and
-    only check box App Defaults and click execute. This will regenerate
-    the new local[extension]{#extension} version.
-8.  Go to Applications \> Conference profiles. Edit each profile and
-    replace \$\${hold[music]{#music}} with
+7.  Goto **Dialplan** -> **Dialplan Manager** and delete   
+    \"local[extension]{#extension}\". Then goto **Advanced** -> **Upgrade** and   
+    run **App Defaults**. This will regenerate he new local[extension]{#extension} version.
+9.  Go to Applications \> Conference profiles. Edit each profile and   
+    replace \$\${hold[music]{#music}} with   
     local[stream]{#stream}://default
-9.  Goto Advanced \> Variables hold[music]{#music}. Make sure it\'s
+10.  Goto Advanced \> Variables hold[music]{#music}. Make sure it\'s   
     value is set as local[stream]{#stream}://default
 
-<!-- -->
-
+```
     Check Applications > Music On Hold to see if music is listed properly.
     You should see in red default for the category and the kHz sub categories should be in blue.
     If not, do the following
@@ -617,11 +647,11 @@ then press execute. <https://domain.com/core/upgrade/index.php>
     * After you click the pencil icon choose at the bottom the domain for the rates and click save.
     * If the category is blank, you may have missed running Advanced > check box app defaults > execute or you may not have renamed autoload_configs/local_stream.conf.xml file to local_stream.conf.
     * For custom music on hold check the path for the domain name and set select for the domain name to match the domain used in the path.
+```
 
-10. Remove .xml from the end of the following file names
+10. Remove .xml from the end of the following file names.
 
-<!-- -->
-
+```
     **Before**
     autoload_configs/callcenter.conf.xml
     autoload_configs/conference.conf.xml
@@ -631,62 +661,67 @@ then press execute. <https://domain.com/core/upgrade/index.php>
     autoload_configs/callcenter.conf
     autoload_configs/conference.conf
     autoload_configs/local_stream.conf
+```
 
 11. Edit autoload[configs]{#configs}/lua.conf.xml adding \"languages\".
     Restart of FreeSWITCH is required.
 
-<!-- -->
-
+```
     <param name="xml-handler-bindings" value="configuration,dialplan,directory,languages"/>
+```
 
-12. Update Time Conditions (Bug Fix)
+12. Update Time Conditions (Bug Fix).
 
-<!-- -->
-
+```
     Goto Advanced > Upgrades page.  Check box Update Source, execute. 
     Goto Advanced > Default settings > Category > delete the category: time condition presets.
     Goto Advanced > Upgrade >  check box App Defaults, execute.
     Goto Advanced > Default settings. Click "Reload" at the top right. (This will get the new presets)
+```
 
-Next steps are for existing Time Conditions
+Next steps are for existing Time Conditions.
 
     Goto Apps > Time Conditions and edit the time conditions remove all holidays and hit save.
     Select the holidays over again.
 
-:::: note
-::: title
-Note
-:::
 
-Many of the provisioning templates were updated. If you use custom
-provisioning templates you should consider updating them with the new
-versions.
-::::
+> **Note:** Many of the provisioning templates were updated.   
+> If you use custom provisioning templates you should consider   
+> updating them with the new versions.
+
+<br>
 
 ## Version 3.8 to 4.0
 
-Remove the comments from the script-directory in
-**/usr/local/freeswitch/conf/autoload_configs/lua.conf.xml**
+- Remove the comments from the script-directory in   
+  **/usr/local/freeswitch/conf/autoload_configs/lua.conf.xml**
 
-If using the FreesWITCH package then remove \$\${base[dir]{#dir}} and
-set the full path to the scripts directory.
+- If using the FreesWITCH package then remove \$\${base[dir]{#dir}} and   
+  set the full path to the scripts directory.
 
+```
     before:  <!--<param name="script-directory" value="$${base_dir}/scripts/?.lua"/>-->
 
     after:   <param name="script-directory" value="/usr/local/freeswitch/scripts/?.lua"/>
+```
 
 Rebooting FreeSWITCH is required for this to take effect.
 
+<br>
+
 ## Version 3.6 to 3.8
 
-| **Note: Upgrading can get very complex. If the production system is
-  critical or you are intimidated from these upgrade instructions you
-  may want FusionPBX paid support at
-  http://www.fusionpbx.com/support.php**
+> **Note:** Upgrading can get very complex. If the production system is   
+> critical or you are intimidated from these upgrade instructions you   
+> may want FusionPBX paid support at   
+> http://www.fusionpbx.com/support.php
 
-| A standard \'upgrade\' procedure should always be followed:
-| (1. Make a Backup!, 2. Advanced \> Upgrade steps, 3. Update switch
-  scripts, 4. Restart FreeSWITCH).
+A standard upgrade procedure should always be followed:
+
+- Make a Backup
+- Advanced -> Upgrade steps
+- Update switch scripts
+- Restart FreeSWITCH.
 
 Beyond the standard upgrade procedure just described, the following will
 also need to be performed:
@@ -694,65 +729,64 @@ also need to be performed:
     uncomment: <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
     in: /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
 
-| \* Rebuild all time conditions.
-| \* After you edit a particular time condition, click the Dialplan
-  button on the top right to see what was there originally.
-| \* Delete the following dialplans from each domain then run Advanced
-  -\> Upgrade -\> App Defaults. If using XML handler for the dialplan
-  flush memcache. If using dialplans XML on the file system resave one
-  of the dialplans to have FusionPBX rewrite the XML files.
-| \* user[exists]{#exists} - call[timeout]{#timeout} variable was added
-| \* extension-intercom - It has been renamed to \'page-extension\'
-| \* eavesdrop - Change \'\*\'88\[ext\] to \'\*\'33\[ext\] so that it
-  doesn\'t conflict with page-extension at \'\*\'8\[ext\]
-| \* user[status]{#status} - Has been renamed to
-  \'agent[status]{#status}\'
-| \* page - Dialplan has been simplified.
-| \* valet[park_out]{#park_out} - Changed regex variable from \$1 to \$2
-| \* local[extension]{#extension} - failure handler was added to support
-  call forward on busy and no answer
-| \* If using call center feature code \'\*\'22 edit each agent and add
-  an agent id and password (pin number)
-| \* Delete any dialplan with the \'features\' context. These have been
-  moved into the dialplan domain contexts.
-| \* If using App -\> XMPP, Content Manager, or Schema they have been
-  moved dev -\> branches -\> apps directory need to pull files from
-  there if you want to use any of them.
-| \* For single tenant systems \'default\' context is no longer used by
-  default.
-| \* Easiest way to update your system is go to Advanced -\> Domains and
-  edit your domain.
-| \* Copy your current domain name then change the name to default then
-  save the change.
-| \* Now edit the domain name again and paste your original domain name
-  or IP address whatever the domain originally was and save the changes
-| \* Go to accounts extensions and save one extension. (not needed if
-  using the XML handler)
-| \* Go to Dialplan Manager and save one of the dialplans. (not needed
-  if using the XML handler)
-| \* FAX ( may require adjusting the paths and web server user account
-  to match your server \'www-data\' is used in this example)
-| \* Delete all previous FAX dialplans
-| \* Resave each fax server in the GUI.
-| \* cd /var/www/fusionpbx/app/fax
-| \* wget
+Rebuild all time conditions.
+After you edit a particular time condition, click the Dialplan
+button on the top right to see what was there originally.
+Delete the following dialplans from each domain then run Advanced
+-> Upgrade -> App Defaults. If using XML handler for the dialplan
+flush memcache. If using dialplans XML on the file system resave one
+of the dialplans to have FusionPBX rewrite the XML files.
+user[exists]{#exists} - call[timeout]{#timeout} variable was added
+extension-intercom - It has been renamed to \'page-extension\'
+eavesdrop - Change \'\*\'88\[ext\] to \'\*\'33\[ext\] so that it
+doesn\'t conflict with page-extension at \'\*\'8\[ext\]
+user[status]{#status} - Has been renamed to
+'agent[status]{#status}'
+page - Dialplan has been simplified.
+valet[park_out]{#park_out} - Changed regex variable from \$1 to \$2
+local[extension]{#extension} - failure handler was added to support
+call forward on busy and no answer
+If using call center feature code \'\*\'22 edit each agent and add
+an agent id and password (pin number)
+Delete any dialplan with the \'features\' context. These have been
+moved into the dialplan domain contexts.
+If using App -\> XMPP, Content Manager, or Schema they have been
+moved dev -\> branches -\> apps directory need to pull files from
+there if you want to use any of them.
+For single tenant systems \'default\' context is no longer used by
+default.
+Easiest way to update your system is go to Advanced -\> Domains and
+edit your domain.
+Copy your current domain name then change the name to default then
+save the change.
+Now edit the domain name again and paste your original domain name
+or IP address whatever the domain originally was and save the changes
+Go to accounts extensions and save one extension. (not needed if
+using the XML handler)
+Go to Dialplan Manager and save one of the dialplans. (not needed
+if using the XML handler)
+FAX ( may require adjusting the paths and web server user account
+to match your server \'www-data\' is used in this example)
+Delete all previous FAX dialplans
+Resave each fax server in the GUI.
+cd /var/www/fusionpbx/app/fax
+wget
   <https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/fax_import.php>
-| \* chown -R www-<data:www-data> fax[import.php]{#import.php}
-| \* Login into the GUI and use this path in your browser
-  <http://>\<domain-or-ip\>/app/fax/fax[import.php]{#import.php}
-| \* rm /var/www/fusionpbx/app/fax/fax[import.php]{#import.php}
-| \* Groups and Permissions
-| If you go to Advanced Group Manager -\> And you see what looks like
-  duplicates of user, admin and superadmin groups then you need do the
+chown -R www-<data:www-data> fax[import.php]{#import.php}
+Login into the GUI and use this path in your browser
+ <http://>\<domain-or-ip\>/app/fax/fax[import.php]{#import.php}
+rm /var/www/fusionpbx/app/fax/fax[import.php]{#import.php}
+Groups and Permissions
+
+- If you go to Advanced Group Manager -\> And you see what looks like   
+  duplicates of user, admin and superadmin groups then you need do the   
   following instructions.
 
-| 
-
-| Remove permissions associated with all domain groups with names that
+- Remove permissions associated with all domain groups with names that   
   match default global groups\...
 
-| Use the **Advanced -\> SQL Query tool** to do the following.
-
+- Go to **Advanced** -> **SQL Query tool** and run the following.
+```
     delete from v_group_permissions where domain_uuid is not null
        and (
            group_name = 'user'
@@ -761,10 +795,12 @@ also need to be performed:
            or group_name = 'agent'
            or group_name = 'public'
        )
+```
 
-    Remove all domain groups having the same names as the default global groups
-    (retains any custom domain groups)...
-
+- Remove all domain groups having the same names as the default global groups   
+  (retains any custom domain groups)...
+  
+```
        delete from v_groups where
        domain_uuid is not null
        and (
@@ -774,23 +810,27 @@ also need to be performed:
            or group_name = 'agent'
            or group_name = 'public'
        )
+```
 
-    Empty the group_uuid field for any group user with a group_name value having
-    the same name as the default global groups (retains user assignments to custom domain groups)...
+  Empty the group_uuid field for any group user with a group_name value having
+  the same name as the default global groups (retains user assignments to custom domain groups)...
 
+```
        update v_group_users set group_uuid = null where
        group_name = 'user'
        or group_name = 'admin'
        or group_name = 'superadmin'
        or group_name = 'agent'
        or group_name = 'public'
+```
 
-| 
-| For group users with a null group[uuid]{#uuid}, insert the
+- For group users with a null group[uuid]{#uuid}, insert the
   group[uuid]{#uuid} of the global group that matches the
   group[name]{#name} value\...
-| Run this code from **Advanced -\> Command -\> PHP Command.**
+  
+- Run this code from **Advanced** -> **Command** -> **PHP Command**.
 
+```
     $sql = "select group_user_uuid, group_name ";
        $sql .= "from v_group_users where group_uuid is null";
        $prep_statement = $db->prepare(check_sql($sql));
@@ -822,200 +862,220 @@ also need to be performed:
                    }
            }
        }
+```
 
-| 
-| **Apps menu disappeared**
+### Apps menu disappeared
 
-| If your apps menu disappeared check that it wasn\'t set to protected
+- If your apps menu disappeared check that it wasn\'t set to protected
   in the menu manager.
-| **(advanced -\> menu manager)**. If protected is true, it won\'t show
-  up.
+
+- **Advanced** -> **Menu Manager**. If protected is true, it won't show up.
+
+<br>
 
 ## Version 3.5 to 3.6
 
-| 
-| When running **Upgrade -\> Schema**
-| If you see **ALTER TABLE v_xml_cdr ADD json json;** every time you run
-  the upgrade schema then you likely have an old version of Postgres. To
-  fix this either upgrade to the latest Postgres server or run the
-  following **SQL statement from advanced -\> sql query.**
-
+> **Note:** When running **Schema**   
+> If you see **ALTER TABLE v_xml_cdr ADD json json;** every time you run it, 
+> then you likely have an old version of Postgres. To fix this either
+> upgrade to the latest Postgres server or run the following
+> SQL statement from **Advanced** -> **SQL Query.**
+  
+```
     ALTER TABLE v_xml_cdr ADD json text;
+```
 
-| See <https://github.com/fusionpbx/fusionpbx/issues/655> for more
-  details.
-| 
+See <https://github.com/fusionpbx/fusionpbx/issues/655> for more details.
 
-| **Potential issue with call recording after upgrading/switch to latest
-  3.6 stable.**
+**Potential issue with call recording after upgrading/switch to latest 3.6 stable.**
 
-| After upgrading to 3.6 stable from 3.5 dev I noticed that calls were
+- After upgrading to 3.6 stable from 3.5 dev I noticed that calls were
   no longer being recorded. This was due to the file extension being
   missing from the recording path. If this is happening to you it is an
   easy fix.
 
-| Go to Advanced -\> variables -\> category default and add the variable
+- Go to Advanced -\> variables -\> category default and add the variable
   record[ext]{#ext} and set it to either wav or mp3. Choosing mp3
   depends upon whether or not you have mod[shout]{#shout} installed and
   enabled.
 
+<br>
+
 ## Version 3.4 to 3.5
 
-| 
-| Gateways now use the gateway[uuid]{#uuid} as the name that is used
-  when interacting with FreeSWITCH. This script is needed to help change
-  the gateway names used in the outbound routes. You may need to remove
-  the old gateway file names from the
-  conf/sip[profiles]{#profiles}/external directory.
+- Gateways now use the gateway[uuid]{#uuid} as the name that is used   
+  when interacting with FreeSWITCH. 
+  
+- This script is needed to help change   
+  the gateway names used in the outbound routes.
 
+- You may need to remove the old gateway file names
+  from the conf/sip[profiles]{#profiles}/external directory.
+
+```
     cd /var/www/fusionpbx
     wget http://fusionpbx.googlecode.com/svn/branches/dev/scripts/upgrade/gateway_uuid.php
     http://x.x.x.x/gateway_uuid.php
     rm gateway_uuid.php
+```
 
-| \* Go To **Advanced -\> Default Settings -\> Switch Category -\> Sub
-  category gateways change to sip_profiles**
+- Go To **Advanced** -> **Default Settings** -> **Switch Category** -> **Sub
+  Category** gateways change to sip_profiles.
 
-| **Permissions Issues** - (access denied errors)
-| Due to changes which improve consistency throughout the product, some
-  Users have had problem with superadmin receiving \"access denied\"
+  **Permissions Issues**
+
+  (access denied errors)
+- Due to changes which improve consistency throughout the product, some   
+  Users have had problem with superadmin receiving "access denied"   
   errors after the upgrade.
 
-| 
 
-| \* Go To **Advanced -\> Group Manager**
-| \* On **superadmin** click **Permissions** and then **Restore
-  Default**
+- Go To **Advanced -\> Group Manager**,   
+  on **superadmin** click **Permissions** and then **Restore Default**
 
-| 
+> **Note:** You may need to execute this operation for each group.
 
-| You may need to execute this operation for each group.
+ **Default Settings**
+ 
+- In the **switch category change gateways to sip_profiles**
 
-| **Default Settings**\'
-| In the **switch category change gateways to sip_profiles**
-
-| 
+<br>
 
 ## Version 3.3 to 3.4
 
-| 
+- Update the source as described on this page, menu manager **restore   
+  default**, group manager edit a group **restore default**, **Advanced**   
+  -> **Upgrade** and run **Schema**.
 
-| Update the source as described on this page, menu manager **restore
-  default**, group manager edit a group **restore default**, advanced
-  -\> upgrade schema.
-
-| 
-
-| FusionPBX 3.4 hunt groups have been deprecated. Use the following
+- FusionPBX 3.4 hunt groups have been deprecated. Use the following
   script run it only one time to move existing hunt groups to ring
   groups.
 
+```
     cd /var/www/fusionpbx
     wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/hunt_group_export.php
     http://x.x.x.x/hunt_group_export.php
     rm -r hunt_group_export.php
+```
 
-| 
-
-| Ring groups were expanded to add ability to call external numbers and
+- Ring groups were expanded to add ability to call external numbers and
   match other missing hunt group features. A new table was created to
   accomodate this.
 
+```
     cd /var/www/fusionpbx
     wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/ring_group_extensions.php
     http://x.x.x.x/ring_group_extensions.php
     rm ring_group_extensions.php
+```
 
-| 
+<br>
 
 ## Version 3.2 to 3.3
 
-| 
-| FreeSWITCH changed the syntax to connect to the database so numerous
-  LUA scripts had to be updated. If you customized any of the lua
-  scripts make a backup of the FreeSWITCH scripts directory. Then remove
-  the contents of the **freeswitch/scripts directory** and then run
-  **advanced -\> upgrade schema** (which will detect the missing scripts
+- FreeSWITCH changed the syntax to connect to the database so numerous   
+  LUA scripts had to be updated.
+
+- If you customized any of the lua scripts make a backup of the FreeSWITCH   
+  scripts directory.
+
+- Then remove the contents of the **freeswitch/scripts directory** and then run   
+  **Advanced** -> **Upgrade** and run **Schema** (which will detect the missing scripts   
   and replace them).
-| 
+
+<br>
 
 ## Version 3.1.4 to 3.2
 
-| 
-| Ubuntu/Debian
+**Ubuntu/Debian**
 
+```
     cd /var/www/fusionpbx
     git pull
     Advanced -> Upgrade Schema
+```
 
-| **Menu**
+**Menu**
 
-| If you cant see the menu after upgrading try the following in your
+- If you cant see the menu after upgrading try the following in your   
   browser replace x.x.x.x with your ip or domain name.
 
+```
     x.x.x.x/core/menu/menu.php
     Edit the menu make sure the language is set to en-us.
     Press **Restore Default**
+```
 
-| **Default settings**
+**Default settings**
 
+```
     x.x.x.x/core/default_settings/default_settings.php
     category: language 
     type: code 
     value: en-us
+```
 
-| **Email**
+**Email**
 
-Migrating email to the new FusionPBX native voicemail.
+- Migrating email to the new FusionPBX native voicemail.
 
+```
     wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/voicemail_export.php
+```
 
-| Run from the browser it will take the voicemail data from the
-  FreeSWITCH database and copy the information into the FusionPBX
+- Run from the browser it will take the voicemail data from the   
+  FreeSWITCH database and copy the information into the FusionPBX   
   database.
 
+```
     http://x.x.x.x/voicemail_export.php
+```
 
-Remove the export file
+- Remove the export file
 
+```
     rm voicemail_export.php
+```
 
-| **Call Forward / Follow Me**
+**Call Forward / Follow Me**
 
-| No longer using hunt groups. So the backend has changed so keep in
+- No longer using hunt groups. So the backend has changed so keep in
   mind that you need to reset call forward and follow me settings. They
-  are still listed in **app -\> hunt groups**. After updating the info
-  in call forward, follow me you should delete the hunt group.
-| 
+  are still listed in **App** -> **Hunt Groups**.
+  
+- After updating the info
+  in call forward/follow me, you should delete the hunt group.
+
+<br>
 
 ## Version 2 to 3.0
 
-| 
-| LESS than or EQUAL to revision 1877, use the migration tool.
+
+- LESS than or EQUAL to revision 1877, use the migration tool.
   <https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade>
-| If greater than revision 1877, use latest.
+    - If greater than revision 1877, use latest.
 
-    | When upgrading from previous versions, you may encounter the following issues:
+> **Note:** When upgrading from previous versions, you may encounter the following issues:
 
-| **Changes to your dial plan or extensions don\'t take effect**
-| \* Go to the **Advanced -\> Default Settings** page
-| \* Remove **\"/default\"** from the end of your dialplan and
+- **Changes to your dial plan or extensions don\'t take effect**   
+- Go to the **Advanced -\> Default Settings** page   
+- Remove **\"/default\"** from the end of your dialplan and   
   extensions directories
 
-| 
+**Missing menus**
 
-| **Missing menus**
-| \* Go to <hxxps://yourdomain.com/core/menu/menu.php>
-| \* Click the edit (e) button beside default
-| \* Click the Restore Default button
-| \* Check that all the entries in the list are accessible by the
+- Go to <hxxps://yourdomain.com/core/menu/menu.php>
+- Click the edit (e) button beside default
+- Click the Restore Default button
+- Check that all the entries in the list are accessible by the   
   appropriate groups
 
-| **Emails not being sent for voicemail or fax**
-| \* Double check the SMTP settings on the System -\> Settings page
-| \* Save it, even if you haven\'t changed anything
+**Emails not being sent for voicemail or fax**
 
-Release Revisions
+- Double check the SMTP settings on the **System** -> **Settings** page
+- Save it, even if you haven't changed anything
+
+### Release Revisions
 
 -   r0001 is 1.0 release - 6 Nov 2009
 -   r2523 is 3.0 release - 3 May 2012
@@ -1034,25 +1094,33 @@ Release Revisions
 -   r4fdb6e9 is 4.1 release - Dec 2015
 -   rxxxxxxx is 4.2 release - xxx 2016
 
-| 
+<br>
 
 ## SQLite
 
 SQLite is the FreeSWITCH default. Databases are located in the
 freeswitch/db directory.
 
+<br>
+
 ## ODBC
 
 <http://wiki.freeswitch.org/wiki/ODBC>
+
+<br>
 
 ## Postgres
 
 Postgres native support will be in FreeSWITCH 1.2.4 but has been
 available in the Main GIT branch.
 
+<br>
+
 ## Dependencies
 
 libpq and the associated dev packages are required
+
+<br>
 
 ## Configure
 
@@ -1060,11 +1128,15 @@ To enable PostgresSQL as a native client in FreeSWITCH you must enable
 it during the build when running configure. \*\* ./configure
 \--enable-core-pgsql-support \*\*
 
+<br>
+
 ## switch.conf.xml
 
 Under the Settings area insert the following line
 
-> \<param name=\"core-db-dsn\" value=\"pgsql;hostaddr=127.0.0.1
-> dbname=freeswitch user=freeswitch password=\'\' options=\'-c
-> client[min_messages]{#min_messages}=NOTICE\'
-> application[name]{#name}=\'freeswitch\'\" /\>
+```
+     \<param name=\"core-db-dsn\" value=\"pgsql;hostaddr=127.0.0.1
+     dbname=freeswitch user=freeswitch password=\'\' options=\'-c
+     client[min_messages]{#min_messages}=NOTICE\'
+     application[name]{#name}=\'freeswitch\'\" /\>
+```
