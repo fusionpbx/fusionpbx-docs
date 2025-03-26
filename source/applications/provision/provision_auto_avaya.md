@@ -6,7 +6,11 @@ DHCP is an excellent option for phones deployed in a local office. Your Avaya ph
 
 Avaya phones look for DHCP option 242 for auto-provisioning. 242 needs to be of type _string_.
 
-Here is a sample string: "HTTPSRVR=company.domain.com,HTTPDIR=/app/provision,FORCE_HTTP_AUTH_USERNAME=admin,FORCE_HTTP_AUTH_PASSWORD=password,DES_STAT=0"
+Here is a sample string:
+
+```
+"HTTPSRVR=company.domain.com,HTTPDIR=/app/provision,FORCE_HTTP_AUTH_USERNAME=admin,FORCE_HTTP_AUTH_PASSWORD=password,DES_STAT=0"
+```
 
 Below is an explanation of all of the Key-values:
 
