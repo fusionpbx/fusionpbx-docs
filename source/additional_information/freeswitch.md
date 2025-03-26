@@ -2,28 +2,35 @@
 
 **Upgrade Move Source**
 
+```
     mv /usr/src/freeswitch freeswitch-version
+```
 
 **Git Release**
 
+```
     cd /usr/src
     git clone -b v1.6 https://freeswitch.org/stash/scm/fs/freeswitch.git
     cd freeswitch
     ./bootstrap.sh
+```
 
 or
 
 **Git Head**
 
+```
     cd /usr/src
     git clone https://freeswitch.org/stash/scm/fs/freeswitch.git
     cd freeswitch
     ./bootstrap.sh
+```
 
 or
 
 **files.freeswitch.org**
 
+```
     cd /usr/src
     wget http://files.freeswitch.org/freeswitch-1.4.26.zip
     unzip freeswitch-1.4.26.zip
@@ -35,90 +42,119 @@ or
     wget http://files.freeswitch.org/freeswitch-1.6.20.zip
     unzip freeswitch-1.6.20.zip
     cd freeswitch-1.6.20
+```
 
 **Ubuntu Dependencies**
 
-    apt-get install autoconf automake devscripts gawk g++ git-core libjpeg-dev libncurses5-dev libtool make python-dev gawk pkg-config libtiff-dev libperl-dev libgdbm-dev libdb-dev gettext libssl-dev libcurl4-openssl-dev libpcre3-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libedit-dev libldns-dev libpq-dev memcached libmemcached-dev
+```
+    apt-get install autoconf automake devscripts gawk g++ git-core libjpeg-dev libncurses5-dev libtool make python-dev gawk pkg-config libtiff-dev libperl-dev libgdbm-dev libdb-dev gettext libssl-dev libcurl4-openssl-dev libpcre3-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libedit-dev libldns-dev libpq-dev           memcached libmemcached-dev
+```
 
 **Debian Dependencies**
 
-    apt-get install autoconf automake devscripts gawk g++ git-core libjpeg-dev libncurses5-dev libtool libtool-bin make python-dev gawk pkg-config libtiff5-dev libperl-dev libgdbm-dev libdb-dev gettext libssl-dev libcurl4-openssl-dev libpcre3-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libedit-dev libldns-dev libpq-dev memcached libmemcached-dev
+```
+    apt-get install autoconf automake devscripts gawk g++ git-core libjpeg-dev libncurses5-dev libtool libtool-bin make python-dev gawk pkg-config libtiff5-dev libperl-dev libgdbm-dev libdb-dev gettext libssl-dev libcurl4-openssl-dev libpcre3-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libedit-dev libldns-dev        libpq-dev memcached libmemcached-dev
+```
 
 **CentOS**
 
+```
     yum install git gcc-c++ autoconf automake libtool wget python ncurses-devel zlib-devel libjpeg-devel openssl-devel e2fsprogs-devel sqlite-devel libcurl-devel pcre-devel speex-devel ldns-devel libedit-devel libmemcached-devel
+```
 
-Configure services to auto start
+- Configure services to auto start
 
+```
     chkconfig --add memcached && chkconfig --levels 33 memcached on
     chkconfig --add freeswitch && chkconfig --levels 35 freeswitch on
+```
 
 **modules.conf**
 
-uncomment the FreeSWITCH modules that are needed.
+- uncomment the FreeSWITCH modules that are needed.
 
+```
     mod_avmd
     mod_callcenter
     mod_memcache
     mod_cidlookup
     mod_curl
     mod_translate
+```
 
-Used for MP3 support
+- Used for MP3 support
 
+```
     mod_shout
+```
 
 **Postgres driver**
 
+```
     ./configure --enable-core-pgsql-support
+```
 
 **Run Make**
 
+```
     make
+```
 
 **Remove FreeSWITCH files**
 
-  This step is only needed for a FreeSWITCH upgrade.
-  Once it has been confirmed that the compile was successful then remove
+- This step is only needed for a FreeSWITCH upgrade.   
+  Once it has been confirmed that the compile was successful then remove   
   files from previous version of FreeSWITCH
 
+```
     rm -rf /usr/local/freeswitch/{lib,mod,bin}/*
+```
 
 **Install**
 
+```
     make install
+```
 
 **File Permissions**
 
-  Set the file permissions instructions may vary based on the OS and
+- Set the file permissions instructions may vary based on the OS and
   install directory.
 
 Debian and Ubuntu
 
+```
     chown -R www-data:www-data /usr/local/freeswitch
+```
 
 CentOS or Other Unix operating systems
-  (need make sure that the web server has access to IVR recordings, Fax,
-  and Voicemail)
 
+- Make sure that the web server has access to IVR recordings, Fax,
+  and Voicemail.
+
+```
     adduser --disabled-password  --quiet --system --home /usr/local/freeswitch --gecos "FreeSWITCH Voice Platform" --ingroup daemon freeswitch
     chown -R freeswitch:daemon /usr/local/freeswitch/ 
-    chmod -R o-rwx /usr/local/freeswitch/
+ chmod -R o-rwx /usr/local/freeswitch/
+```
 
 **Install Sound Files**
 
-Run this on new installs.
+- Run this on new installs.
 
+```
     cd /usr/src/freeswitch
     make sounds-install moh-install
     make hd-sounds-install hd-moh-install
     make cd-sounds-install cd-moh-install
+```
 
 **Startup Script**
 
-  Run on new install only. Create the file \'/etc/init.d/freeswitch\'
+- Run on new install only. Create the file \'/etc/init.d/freeswitch\'
   with the following code:
 
+```
     #!/bin/bash
     ### BEGIN INIT INFO
     # Provides:          freeswitch
@@ -302,11 +338,14 @@ Run this on new installs.
     esac
 
     exit 0
+```
 
-Make the script executable and make it auto start on system boot:
+- Make the script executable and make it auto start on system boot:
 
+```
     chmod +x /etc/init.d/freeswitch
     update-rc.d freeswitch defaults
+```
 
 <br> 
 
@@ -318,31 +357,38 @@ Used to monitor processes on UNIX systems.
 
 ### Install
 
+```
     apt-get install monit
+```
 
-Edit Monit /etc/default/monit and set the \"startup\" variable to 1 in
-order to allow monit to start.
+- Edit Monit /etc/default/monit and set the \"startup\" variable to 1 in
+  order to allow monit to start.
 
 ### Configure
 
 #### Fail2Ban
 
+```
     cd /etc/monit.d
     touch fail2ban
     nano fail2ban
+```
 
-Add the following to the file and save it.
+- Add the following to the file and save it.
 
+```
     check process fail2ban with pidfile /var/run/fail2ban/fail2ban.pid
      group services
      start program = "/etc/init.d/fail2ban start"
      stop  program = "/etc/init.d/fail2ban stop"
      if 5 restarts within 5 cycles then timeout
+```
 
 #### SIP
 
-To monitor SIP from local or remote server
+- To monitor SIP from local or remote server
 
+```
     cd /etc/monit.d
     touch sip
     nano sip
@@ -350,56 +396,67 @@ To monitor SIP from local or remote server
     check host fusionpbx with address your-ip
         if failed port 5060 protocol sip with target monit@monit:5060
             then alert
+```
 
 #### FreeSWITCH
 
+```
     cd /etc/monit/conf.d
+```
 
 or
 
+```
     cd /etc/monit.d
 
     touch freeswitch
     nano freeswitch
+```
 
-Add the following
+- Add the following
 
-::
-
-:   #check process freeswitch with pidfile
+```
+    #check process freeswitch with pidfile
     /usr/local/freeswitch/run/freeswitch.pid check process freeswitch
     with pidfile /run/freeswitch/freeswitch.pid start program =
     \"/usr/bin/service freeswitch start\" stop program =
     \"/usr/bin/service freeswitch stop\"
+```
 
 or
 
-::
-
-:   #check process freeswitch with pidfile
+```
+    #check process freeswitch with pidfile
     /usr/local/freeswitch/run/freeswitch.pid #start program =
     \"/usr/local/freeswitch/bin/./freeswitch -nc -u www-data\" #stop
     program = \"/usr/local/freeswitch/bin/./freeswitch -stop\" check
     process freeswitch with pidfile /run/freeswitch/freeswitch.pid start
     program = \"/usr/bin/./freeswitch -nc -u www-data\" stop program =
     \"/usr/bin/./freeswitch -stop\"
+```
 
 #### Additional Options
 
+```
     if 5 restarts within 5 cycles then timeout
     if cpu > 60% for 2 cycles then alert
     if cpu > 80% for 5 cycles then alert
     if totalmem > 2000.0 MB for 5 cycles then restart
     if children > 2500 then restart
+```
 
-Monit Daemon Add to the main monit config file.
+- Monit Daemon Add to the main monit config file
 
+```
     #monit daemon
     set httpd port 2812 and
     use address localhost
     allow localhost
+```
 
 #### Monit Commands
 
+```
     monit -h
     monit status
+```
