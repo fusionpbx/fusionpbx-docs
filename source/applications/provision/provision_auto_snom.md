@@ -33,9 +33,7 @@ following:
     continue to set up line keys or adjust any other phone settings.
 
 :::: note
-::: title
-Note
-:::
+<p class="admonition-title">Note</p>
 
 The provisioning template can be tested by opening up a web browser and
 entering the provisioning url. The provisioning url is:
@@ -67,8 +65,8 @@ Note: The hostname should be replaced with your FusionPBX domain name.
 5.  If using HTTP Auth, go to \"Setup \> Advanced \> QoS / Security\"
 
 In HTTP Client, enter the username found in
-[http_auth_username]{.title-ref} and the password found in
-[http_auth_password]{.title-ref}.
+http_auth_username. and the password found in
+http_auth_password.
 
 6.  Click the \"Reboot\" button and confirm to reboot the phone.
 
@@ -81,8 +79,8 @@ DHCP is an excellent option for phones deployed in a local office. Your
 Snom phone can be removed from its box and simply plugged into the
 network. All the setting will be retrieved from the server. Be careful
 when exposing your FusionPBX server to the internet. You should always
-have the [http_auth_username]{.title-ref} and
-[http_auth_password]{.title-ref} default settings enabled and with
+have the http_auth_username and
+http_auth_password default settings enabled and with
 strong settings.
 
 Your DHCP option should look something like this:

@@ -1,7 +1,7 @@
 # SSL/TLS Setup
 
 On a new installation of FusionPBX, TLS for SIP is available to use once
-you run [letsencrypt.sh](../getting_started/lets_encrypt.html) and make
+you run [letsencrypt.sh](../getting_started/lets_encrypt.md) and make
 a few setting changes in FusionPBX.
 
 ## Configure TLS
@@ -11,7 +11,7 @@ steps.
 
 -   First open an ssh terminal or console window.
 -   cd /usr/src/fusionpbx-install.sh/debian/resources/
--   Execute [letsencrypt.sh](../getting_started/lets_encrypt.html)
+-   Execute [letsencrypt.sh](../getting_started/lets_encrypt.md)
 -   Login to your FusionPBX installation.
 -   Go to Advanced \> Variables.
 -   Scroll down to **SIP Profile:** Internal (This can be done on any

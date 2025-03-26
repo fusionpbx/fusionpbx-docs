@@ -6,7 +6,7 @@ is provided in the extension configuration, the default dialplan DOES
 NOT make use of it. Therefore if you want to use it you need to add
 statements to the dialplan to enable it.
 
-An example for the contents of the toll[allow]{#allow} variable would
+An example for the contents of the toll_allow variable would
 be:
 
 You can then add information to your dialplan to process this variable.
@@ -25,12 +25,12 @@ FusionPBX GUI select an outbound route and add
 You\'ll need to do that for all of your outbound routes, tag them local,
 domestic, or international depending on what they are. On some
 installations this example file will be present in
-/usr/local/freeswitch/conf/dialplan/default/01[example.com.xml]{#example.com.xml}:
+/usr/local/freeswitch/conf/dialplan/default/01_example.com.xml:
 
 ## PERMIT TOLL CALLS
 
 This example assumes all calls are bad (except internal) unless they are
-flagged as good by the value of the toll[allow]{#allow} variable.
+flagged as good by the value of the toll_allow variable.
 
     <include>
     <extension name="local.example.com">
@@ -112,10 +112,10 @@ there is a gateway for each type of route.
 
 <br>
 
-Edit extensions with proper toll[allow]{#allow} variables to permit use of new outbound routes.
+Edit extensions with proper toll_allow variables to permit use of new outbound routes.
 
 - Each extension can have multiple permissions listed in
-    toll[allow]{#allow}.
+    toll_allow.
 
 Extension with **local** and **domestic** calling permission can dial
 out via both the \"local\" and \"domestic\" outbound routes above
@@ -129,7 +129,7 @@ or 11 digit numbers in the \"domestic\" outbound route
 
 ![image](../_static/images/additional_information/toll-allow-example-extension-domestic-only.png)
 
-Outbound routes can also have multiple toll[allow]{#allow} patterns. For
+Outbound routes can also have multiple toll_allow patterns. For
 example, if you only define a single variable per extension, you would
 probably want the *domestic* permission to include *local* calls
 
@@ -138,6 +138,6 @@ defined.
 
 ![image](../_static/images/additional_information/toll-allow-example-outbound-route-edit.png)
 
-With the above toll[allow]{#allow} condition test, if an extension has
+With the above toll_allow condition test, if an extension has
 either \"local\" or \"domestic\" assigned they are allowed to use the
 **local** outbound route
