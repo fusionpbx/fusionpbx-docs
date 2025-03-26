@@ -364,9 +364,9 @@ or
 
 Add the following
 
-::
 
-:   #check process freeswitch with pidfile
+
+    #check process freeswitch with pidfile
     /usr/local/freeswitch/run/freeswitch.pid check process freeswitch
     with pidfile /run/freeswitch/freeswitch.pid start program =
     \"/usr/bin/service freeswitch start\" stop program =
@@ -374,9 +374,7 @@ Add the following
 
 or
 
-::
-
-:   #check process freeswitch with pidfile
+    #check process freeswitch with pidfile
     /usr/local/freeswitch/run/freeswitch.pid #start program =
     \"/usr/local/freeswitch/bin/./freeswitch -nc -u www-data\" #stop
     program = \"/usr/local/freeswitch/bin/./freeswitch -stop\" check
