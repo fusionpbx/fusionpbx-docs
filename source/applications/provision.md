@@ -37,7 +37,7 @@ How to setup the device using the phone\'s web interface.
 ## Advanced \> Default Settings
 
 In the [Provisioning
-section](/en/latest/advanced/default_settings.html#id17), there are a
+section](../advanced/default_settings.md#provision), there are a
 few key options that have to be set in order to turn auto provisioning
 on.
 
@@ -62,13 +62,13 @@ on.
 <p class="admonition-title">Note</p>
 
 [Click here to view how to add a
-device](https://docs.fusionpbx.com/en/latest/accounts/devices.html).
+device](../accounts/devices.md).
 ::::
 
 ## Phone Book
 
 Remote phone book (Address Book) are based on the FusionPBX [Contacts
-App](/en/latest/applications/contacts.html).
+App](./contacts.md).
 
 ### Phone Book Settings
 
@@ -76,14 +76,14 @@ In order to use the phone book a few steps are needed.
 
 -   Assign the device to a user.
 -   Create or import the
-    [Contacts](/en/latest/applications/contacts.html).
+    [Contacts](./contacts.md).
 -   Set **Enabled** as **True** in [Default
-    Settings](/en/latest/advanced/default_settings.html).
+    Settings](../advanced/default_settings.md).
 
 ![image](../_static/images/provision/fusionpbx_remote_phonebook1.png)
 
 -   Set **Enabled True** for contact_extensions, contact_users and contact_groups in [Default
-    Settings](/en/latest/advanced/default_settings.html).
+    Settings](../advanced/default_settings.md).
 
 ![image](../_static/images/provision/fusionpbx_phone_book2.png)
 

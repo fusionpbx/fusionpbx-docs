@@ -30,11 +30,9 @@ certificate.
 
 -   Left menu click **Trusted CA**
 
--   
+-   Choose the following
 
-    Choose the following
-
-    :   -   Only Accept Trusted Certificates: OFF
+        -   Only Accept Trusted Certificates: OFF
         -   Common Name Validation: OFF
         -   Trusted Certificates: All Certificates
 
