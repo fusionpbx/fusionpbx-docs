@@ -31,13 +31,9 @@ tenant domain name.
 
 **No HTTP Authentication**
 
-:
-
 <http://192.168.1.5/admin/resync?http://domain.com/app/provision/?mac=$MA>
 
 **With HTTP Authentication**
-
-:
 
 <http://192.168.1.4/admin/resync?%5B--uid+admin+--pwd+555%5Dhttp://domain.com/app/provision/?mac=$MA>
 
