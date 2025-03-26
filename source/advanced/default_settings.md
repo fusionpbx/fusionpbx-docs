@@ -1,23 +1,23 @@
 # Default Settings
 
-Default Settings used for all domains. Branding can be done in this section, [see here to adjust](../advanced/domains.html#override-a-default-setting-for-one-domain) or copy settings to specific domains.
+Default Settings used for all domains. Branding can be done in this section, [see here to adjust](../advanced/domains.md#override-a-default-setting-for-one-domain) or copy settings to specific domains.
 
 ![FusionPBX Advanced Default Settings](../_static/images/advanced/fusionpbx_advanced_default_settings.jpg)
 
 Default Settings have several different categories. Click on the category to view more details.
 
-## [Cache](default_settings/cache.html)
+## Cache
 
 Option to use file cache for XML and not memcache.
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description     |
 |-----------------------------|----------------------|-----------------------|-------------------------|---------------------------------|
-| method                      | text                 | memcache              | TRUE                    | Cache methods file or memcache. |
-| location                    | text                 | /tmp                  | TRUE                    | Location for the file cache.    |
+| method                      | text                 | file              | TRUE                    | Cache methods file or memcache. |
+| location                    | text                 | /var/cache/fusionpbx  | TRUE                    | Location for the file cache.    |
 
-## [Call Center](default_settings/call_center.html)
+## Call Center
 
-FusionPBX menu [Apps > Call Center](../applications/call_center.html)
+FusionPBX menu [Apps > Call Center](../applications/call_center.md)
 
 Defaults for the amount of agent rows for Call Center.
 
@@ -26,9 +26,9 @@ Defaults for the amount of agent rows for Call Center.
 | agent_add_rows              | numeric              | 5                     | TRUE                    | Number of default "add" rows.  |
 | agent_edit_rows             | numeric              | 1                     | TRUE                    | Number of default "edit" rows. |
 
-## [CDR](default_settings/cdr.html)
+## CDR
 
-FusionPBX menu [Apps > CDR](../applications/call_detail_record.html)
+FusionPBX menu [Apps > CDR](../applications/call_detail_record.md)
 
 CDR Stat hour limit, call leg, format, limit, http_enabled, archive database, and storage type settings can be set here.
 
@@ -50,9 +50,9 @@ CDR Stat hour limit, call leg, format, limit, http_enabled, archive database, an
 | archive_database              | boolean                | FALSE                   | FALSE                     | Enable Dedicated CDR Database Access |
 | archive_database_name         | text                   | fusionpbx               | FALSE                     | Archive Database Name                |
 
-## [Dashboard](default_settings/dashboard.html)
+## Dashboard
 
-FusionPBX menu [Home > Dashboard](../home/dashboard.html)
+FusionPBX menu [Home > Dashboard](../home/dashboard.md)
 
 Different user level settings that control what is seen and not seen on the dashboard for each user access level.
 
@@ -85,7 +85,7 @@ Different user level settings that control what is seen and not seen on the dash
 
 ## Destinations
 
-FusionPBX menu [Dialplan > Destinations](../dialplan/destinations.html)
+FusionPBX menu [Dialplan > Destinations](../dialplan/destinations.md)
 
 Destinations specific defaults.
 
@@ -93,15 +93,15 @@ Destinations specific defaults.
 |-----------------------------|----------------------|-----------------------|-------------------------|-----------------------------|
 | dialplan_details            | boolean              | TRUE                  | TRUE                    |                             |
 
-## [Domains](default_settings/domain.html)
+## Domains
 
-FusionPBX menu [Advanced > Domains](../advanced/domains.html)
+FusionPBX menu [Advanced > Domains](../advanced/domains.md)
 
 Domain specific defaults.
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value                                                                                                           | Default Setting Enabled | Default Setting Description                                         |
 |-----------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------------------------------------------------------|
-| dial_string                 | text                 | {sip_invite_domain=${domain_name},leg_timeout=${call_timeout},presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})} | TRUE                    | The dial string used                                               |
+| dial_string                 | text                 | {sip_invite_domain=\${domain_name},leg_timeout=\${call_timeout},presence_id=\${dialed_user}@\${dialed_domain}}\${sofia_contact(*/\${dialed_user}@\${dialed_domain})} | TRUE                    | The dial string used                                               |
 | template                    | name                 | default                                                                                                                       | TRUE                    | The template used                                                  |
 | menu                        | uuid                 | b4750c3f-2a86-b00d-b7d0-345c14eca286                                                                                          | TRUE                    | The menu uuid                                                      |
 | language                    | code                 | en-us                                                                                                                         | TRUE                    | Choose the language                                                |
@@ -111,7 +111,7 @@ Domain specific defaults.
 | paging                      | numeric              | 100                                                                                                                           | TRUE                    | Set the maximum number of records displayed per page. (Default: 50) |
 | time_zone                   | name                 | America/Los_Angeles                                                                                                           | TRUE                    | Time zone used. Follows UNIX format                                 |
 
-## [Editor](default_settings/domain.html)
+## Editor
 
 FusionPBX menu Advanced > php editor, grammar editor, provision editor, and xml editor.
 
@@ -119,21 +119,21 @@ Editor specific defaults.
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value | Default Setting Enabled | Default Setting Description                                               |
 |-----------------------------|----------------------|-----------------------|-------------------------|---------------------------------------------------------------------------|
-| indent_guides               | boolean              | FALSE                 | FALSE                   | Set the default visibility of indent guides for Editor.                   |
-| invisibles                  | boolean              | FALSE                 | FALSE                   | Set the default state of invisible characters for Editor.                 |
-| line_numbers                | boolean              | FALSE                 | FALSE                   | Set the default visibility of line numbers for Editor.                    |
+| indent_guides               | text              | FALSE                 | FALSE                   | Set the default visibility of indent guides for Editor.                   |
+| invisibles                  | text              | FALSE                 | FALSE                   | Set the default state of invisible characters for Editor.                 |
+| line_numbers                | text              | FALSE                 | FALSE                   | Set the default visibility of line numbers for Editor.                    |
 | theme                       | text                 | Cobalt                | FALSE                   | Set the default theme.                                                    |
 | font_size                   | text                 | 14px                  | FALSE                   | Set the default text size for Editor.                                     |
 | live_previews               | boolean              | FALSE                 | FALSE                   | Enable or disable live previewing of syntax, text size and theme changes. |
 
-## [Email](default_settings/email.html)
+## Email
 
 This is where you configure email settings to receive email notifications of voicemail, missed calls, and fax.
 
 Here are some example settings for some of the most common email providers:
 
-- [SMTP2GO](http://docs.fusionpbx.com/en/latest/advanced/default_settings/smtp2go.html)
-- [GMAIL](http://docs.fusionpbx.com/en/latest/advanced/default_settings/gmail.html)
+- [SMTP2GO](./default_settings/smtp2go.md)
+- [GMAIL](./default_settings/gmail.md)
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value          | Default Setting Enabled | Default Setting Description                                                       |
 |-----------------------------|----------------------|--------------------------------|-------------------------|-----------------------------------------------------------------------------------|
@@ -149,12 +149,17 @@ Here are some example settings for some of the most common email providers:
 | method                      | text                 | smtp                           | TRUE                    | smtp\|sendmail\|mail\|qmail                                                       |
 
 Error log for failed or successfully sent messages:
+```{toctree}
+:hidden:
+default_settings/smtp2go.md
+default_settings/gmail.md
+default_settings/email_error_log.md
+```
+- [Email Log](./default_settings/email_error_log.md)
 
-- [Email Log](http://docs.fusionpbx.com/en/latest/advanced/default_settings/email_error_log.rst)
+## Fax
 
-## [Fax](default_settings/fax.html)
-
-[Apps > Fax Server](../applications/fax_server.html)
+[Apps > Fax Server](../applications/fax_server.md)
 
 Specific default settings for fax server.
 
@@ -184,9 +189,9 @@ Specific default settings for fax server.
 | cover_font                        | text                 | times                           | FALSE                   | Font used to generate cover page. Can be full path to .ttf file or font name already installed.|
 | cover_footer                      | text                 |                                 | TRUE                    | Notice displayed in the footer of the cover sheet.                                             |
 
-## [Follow Me](default_settings/follow_me.html)
+## Follow Me
 
-FusionPBX menu [Apps > Follow Me](../applications/follow_me.html)
+FusionPBX menu [Apps > Follow Me](../applications/follow_me.md)
 
 Specific defaults for Follow Me.
 
@@ -195,9 +200,9 @@ Specific defaults for Follow Me.
 | max_destinations            | numeric              | 5                     | FALSE                   | Set the maximum number of Follow Me Destinations. |
 | timeout                     | numeric              | 30                    | FALSE                   | Set the default Follow Me Timeout value.          |
 
-## [IVR Menu](default_settings/ivr_menu.html)
+## IVR Menu
 
-FusionPBX menu [Apps > IVR Menus](../applications/ivr.html)
+FusionPBX menu [Apps > IVR Menus](../applications/ivr.md)
 
 Specific default for IVR Menu.
 
@@ -206,7 +211,7 @@ Specific default for IVR Menu.
 | option_add_rows             | numeric              | 5                     | TRUE                    | Number of default "add" rows.  |
 | option_edit_rows            | numeric              | 1                     | TRUE                    | Number of default "edit" rows. |
 
-## [Limit](default_settings/limit.html)
+## Limit
 
 Limit specific default settings.
 
@@ -221,7 +226,7 @@ Limit specific default settings.
 | ring_groups                 | numeric              | 3                     | FALSE                   | Limit used in Ring Groups.         |
 | users                       | numeric              | 3                     | FALSE                   | Limit used in Users.               |
 
-## [Login](default_settings/login.html)
+## Login
 
 Login specific default settings.
 
@@ -232,7 +237,7 @@ Login specific default settings.
 | domain_name                 | array                | pbx1.yourdomain.com        | FALSE                   | Domain select option displayed on the login box.                                        |
 | message                     | text                 | Welcome to FusionPBX!      | TRUE                    | Display a message at login.                                                             |
 
-## [Provision](default_settings/provision.html)
+## Provision
 
 In the Provisioning section, there are a few key options that have to be set in order to turn auto provisioning on.
 
@@ -418,9 +423,9 @@ In the Provisioning section, there are a few key options that have to be set in 
 | yealink_call_waiting                              | text                 | 0                                                                                                                                    | TRUE                    | Call Waiting 1=enabled 0=disable                                                                                                                                            |
 | grandstream_dial_plan                             | text                 | {x+\|*x+\|*++\|\\p\\a\\r\\k\\+*x+\|\\f\\l\\o\\w\\+*x+}                                                                                             | TRUE                    | Define the digits that are allowed to be called.                                                                                                                            |
 
-## [Recordings](default_settings/recordings.html)
+## Recordings
 
-FusionPBX menu [Apps > Recordings](../applications/recordings.html)
+FusionPBX menu [Apps > Recordings](../applications/recordings.md)
 
 Recordings specific default settings.
 
@@ -428,9 +433,9 @@ Recordings specific default settings.
 |-----------------------------|----------------------|-----------------------|-------------------------|---------------------------------------------------|
 | storage_type                | text                 | base64                | FALSE                   | Save recordings in the database in base64 format. |
 
-## [Ring Group](default_settings/ring_group.html)
+## Ring Group
 
-FusionPBX menu [Apps > Ring Group](../applications/ring_group.html)
+FusionPBX menu [Apps > Ring Group](../applications/ring_group.md)
 
 Ring Groups specific default settings.
 
@@ -439,7 +444,7 @@ Ring Groups specific default settings.
 | destination_add_rows        | numeric              | 5                     | TRUE                    | Ring Group "add" rows default.  |
 | destination_edit_rows       | numeric              | 1                     | TRUE                    | Ring Group "edit" rows default. |
 
-## [Security](default_settings/security.html)
+## Security
 
 Security specific default settings.
 
@@ -453,7 +458,7 @@ Security specific default settings.
 | password_lowercase          | boolean              | TRUE                  | TRUE                    | Set whether to require at least one lowercase letter in passwords.                                                            |
 | password_strength           | numeric              | 4                     | TRUE                    | Set the default strength for generated passwords. Valid Options: 1 - Numeric Only, 2 - Include Lower Alpha, 3 - Include Upper Alpha, 4 - Include Special Characters. |
 
-## [Server](default_settings/server.html)
+## Server
 
 Server specific default settings.
 
@@ -461,7 +466,7 @@ Server specific default settings.
 |-----------------------------|----------------------|-----------------------|-------------------------|-----------------------------|
 | temp                        | text                 | /tmp                  | TRUE                    | Set the temp directory.     |
 
-## [Switch](default_settings/switch.html)
+## Switch
 
 Switch specific default settings. These defaults will change depending if you compiled the SWITCH source or used the newest default of packages.
 
@@ -485,7 +490,7 @@ Switch specific default settings. These defaults will change depending if you co
 | storage                     | dir                  | /var/lib/freeswitch/storage           | TRUE                    | Server path for SWITCH storage.           |
 | voicemail                   | dir                  | /var/lib/freeswitch/storage/voicemail | TRUE                    | Server path for SWITCH voicemails.        |
 
-## [Theme](default_settings/theme.html)
+## Theme
 
 Theme specific default settings.
 
@@ -686,9 +691,9 @@ Theme specific default settings.
 | body_color                                      | text                                    | rgba(255,255,255,0.77)                                       | TRUE                    | Set the body background color (and opacity) of the content.                                   |
 | background_image                                | array                                   | /themes/default/images/backgrounds/yellowstone_3.jpg         | FALSE                   |                                                                                               |
 
-## [Time Conditions](default_settings/time_conditions.html)
+## Time Conditions
 
-FusionPBX menu [Apps > Time Conditions](../applications/time_conditions.html)
+FusionPBX menu [Apps > Time Conditions](../applications/time_conditions.md)
 
 Time Conditions specific default settings.
 
@@ -723,9 +728,9 @@ Time Conditions specific default settings.
 | preset_usa                  | array                | {"thanksgiving_day":{"wday":"5","mon":"11","mday":"22-28"}}                 | TRUE                    | USA Holiday                                                 |
 | preset_canada               | array                | {"thanksgiving_day":{"wday":"2","mon":"10","mday":"8-14"}}                  | TRUE                    | Canada Holiday                                              |
 
-## [User](default_settings/user.html)
+## User
 
-FusionPBX menu [Accounts > Users](../accounts/users.html)
+FusionPBX menu [Accounts > Users](../accounts/users.md)
 
 User specific default settings.
 
@@ -738,9 +743,9 @@ User specific default settings.
 | password_lowercase          | boolean              | TRUE                  | TRUE                    | Set whether to require at least one lowercase letter in user passwords.  |
 | password_uppercase          | boolean              | TRUE                  | TRUE                    | Set whether to require at least one uppercase letter in user passwords.  |
 
-## [Voicemail](default_settings/voicemail.html)
+## Voicemail
 
-FusionPBX menu [Apps > Voicemail](../applications/voicemail.html)
+FusionPBX menu [Apps > Voicemail](../applications/voicemail.md)
 
 Voicemail specific default settings.
 
