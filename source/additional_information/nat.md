@@ -7,9 +7,9 @@ audio working in both directions.
 
 ## Default config
 
-The external[rtp_ip]{#rtp_ip} and external[sip_ip]{#sip_ip} are set to
-\$\${local[ip_v4]{#ip_v4}} in Advanced -\> Variables by default or
-Advanced \> Sip Profile settings. The local[ip_v4]{#ip_v4} variable is
+The external_rtp_ip and external_sip_ip are set to
+$${local_ip_v4} in Advanced -\> Variables by default or
+Advanced \> Sip Profile settings. The local_ip_v4 variable is
 auto detected by FreeSWITCH. The variable can be also be overidden as a
 preset variable before it is used if you want to control the IP address
 that it represents.
@@ -32,9 +32,9 @@ move SIP to a non standard port.
 FusionPBX is behind NAT and you have a static public IP address and you
 have phones on the same network and/or outside the network.
 
--   Set external[rtp_ip]{#rtp_ip} to autonat:xxx.xxx.xxx.xxx
+-   Set external_rtp_ip to autonat:xxx.xxx.xxx.xxx
     (xxx.xxx.xxx.xxx can be used also in some instances)
--   Set external[sip_ip]{#sip_ip} to autonat:xxx.xxx.xxx.xxx
+-   Set external_sip_ip to autonat:xxx.xxx.xxx.xxx
     (xxx.xxx.xxx.xxx can be used also in some instances)
 -   If you don\'t register a gateway to the carrier you may need to port
     forward SIP and RTP.
@@ -47,8 +47,8 @@ have a firewall that is capable of UPnP or PMP.
 -   Enable UPnP or PMP in your firewall
 -   In Debian OS /etc/default/freeswitch remove -nonat
 -   Make systemd aware of the changes. systemctl daemon-reload
--   Set external[rtp_ip]{#rtp_ip} to auto-nat
--   Set external[sip_ip]{#sip_ip} to auto-nat
+-   Set external_rtp_ip to auto-nat
+-   Set external_sip_ip to auto-nat
 -   Restart FreeSWITCH. service freeswitch restart
 
 ## Symptoms of misconfigured NAT
