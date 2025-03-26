@@ -2,7 +2,7 @@
 
 There are many ways to help the FusionPBX project.
 
-## What We Need:
+## What We Need
 
 1. Developers
 2. Technical Writers
@@ -15,7 +15,7 @@ There are many ways to help the FusionPBX project.
 > from code that could be inserted that might pose a legal problem. It does this by verifying the code you're   
 > contributing is yours to give and that you give it freely and irrevocably to the project.
 
-## How to Get Started:
+## How to Get Started
 
 1. Watch the "FusionPBX Pull Requests with GitHub" YouTube video: [https://youtu.be/SPUe7S4Z6ms](https://youtu.be/SPUe7S4Z6ms)
 
