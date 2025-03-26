@@ -37,7 +37,7 @@ How to setup the device using the phone\'s web interface.
 ## Advanced \> Default Settings
 
 In the [Provisioning
-section](../advanced/default_settings.md#id17), there are a
+section](../advanced/default_settings.md#provision), there are a
 few key options that have to be set in order to turn auto provisioning
 on.
 
