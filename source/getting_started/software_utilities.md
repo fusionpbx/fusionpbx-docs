@@ -55,8 +55,8 @@ and make reports is a very needed tool.
 Homer is well known to help track and graph quality issues with SIP,
 like utilizing QoS Reports.
 
-
-:::{quote}
+:::{admonition} Quote
+:class: seealso
 
 *HOMER is a robust, carrier-grade, scalable SIP Capture system and
 VoiP Monitoring Application offering HEP/EEP, IP Proto4 (IPIP)
@@ -64,7 +64,7 @@ encapsulation & port mirroring/monitoring support right out of the
 box, ready to process & store insane amounts of signaling, logs and
 statistics with instant search, end-to-end analysis and drill-down
 capabilities for ITSPs, VoIP Providers and Trunk Suppliers using SIP
-signaling protocol.*
+signaling protocol.*   
 :::
 
 To install and configure Homer visit
