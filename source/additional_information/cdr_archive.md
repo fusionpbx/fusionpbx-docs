@@ -1,11 +1,13 @@
 # CDR Archive Server
 
-\* Note: This feature is on version 4.5+ and requires PostgreSQL ver
-9.5+ \| Fusionpbx has the ability to access CDR records on a seperate
+:::{note}
+
+This feature is on version 4.5+ and requires PostgreSQL ver
+9.5+ | Fusionpbx has the ability to access CDR records on a seperate
 archive database. This is helpful for longterm CDR storage while keeping
 your active database small. When the feature is enabled you will see an
-\"ARCHIVE\" button in CDR page that accesses records on your archive
-database.
+"ARCHIVE" button in CDR page that accesses records on your archive database.   
+:::
 
   The first step is to install an archive database. This can be done by
   standing up another fusionpbx server or by setting up a postgres
@@ -93,9 +95,13 @@ database.
     15 0 * * * bash /etc/cron.daily/db_copy.sh
 ```
 
--   Note: In this example I remove the json data from the records. You
-    will need to comment out the \"SET json = NULL\" line if you want to
-    keep the call variables.
+:::{note}
+
+In this example I remove the json data from the records. You
+will need to comment out the \"SET json = NULL\" line if you want to
+keep the call variables.   
+:::
+
 
 ### [CDR](default_settings/cdr.html)
 
