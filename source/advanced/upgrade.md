@@ -106,14 +106,22 @@ Used to update FusionPBX to the latest release.
 
 ### Step 2: Update Freeswitch Scripts
 
-  **Note:** As of FusionPBX 3.8.3 (Stable Branch), the scripts should be
-  automatically updated when updating the Source Code, using the
-  **Advanced \> Upgrade** page. Any customized scripts, having the same
-  name as the default scripts, **will be overwritten.** (An option to
-  disable this default behavior is available using **Default Setting:
-  switch \> scripts_update \> false**) Missing scripts will be restored,
-  and any additional files within the scripts folder will remain
-  untouched.
+:::{note}
+
+As of FusionPBX 3.8.3 (Stable Branch), the scripts should be
+automatically updated when updating the Source Code, using the
+**Advanced** > **Upgrade** page. Any customized scripts, having the same
+name as the default scripts, **will be overwritten.** 
+:::
+
+:::{tip}
+
+An option to
+disable this default behavior is available using **Default Setting:
+switch > scripts_update > false**. Missing scripts will be restored,
+and any additional files within the scripts folder will remain
+untouched.   
+:::
 
   FusionPBX is a fast moving project where features are constantly being
   added and bugs are being fixed on a daily basis so I would also
@@ -124,8 +132,12 @@ Used to update FusionPBX to the latest release.
     - Use github to get the updated files. **You have to do this from an
   empty directory**.
 
-**Note:** Older versions of FusionPBX may use the /usr/local path instead of /usr/share
+:::{note}
 
+Older versions of FusionPBX may use the /usr/local path instead of /usr/share   
+:::
+
+```
     cp -R /usr/share/freeswitch/scripts /usr/share/freeswitch/scripts-bak
     rm -Rf /usr/share/freeswitch/scripts/
     cd /usr/src
@@ -135,6 +147,7 @@ Used to update FusionPBX to the latest release.
 
     # (The last step above is not required if your config.lua file is being stored in a different location, such as the /etc/fusionpbx folder.)
     cp -R /usr/share/freeswitch/scripts-bak/resources/functions/config.lua /usr/share/freeswitch/scripts/resources/functions/config.lua
+```
 
 - Clean out this scripts directory
      - An alternative is to remove the Lua scripts. **Only do this if you
@@ -192,7 +205,7 @@ Used to update FusionPBX to the latest release.
   no theme, it is because you were using a theme which no longer exists
   in the latest version of the code. If this happens to you navigate to:
 
-    http://domain_or_ip/mod/users/usersupdate.php
+- http://domain_or_ip/mod/users/usersupdate.php
 
   Then scroll down to where it says **\"Template\"** and select one of
   the valid templates from the drop down list. Then press Save. It will
@@ -234,10 +247,13 @@ Needed if your menu disappeared.
 
 ### Step 6: Re-generate Settings
 
-  **Note:** Sometimes variable names changes. In rev 1877 **v_config_cli.php**
-  variable names changed which caused no fax to email emails or
-  voicemail emails to be sent. Problem was the SMTP details did not
-  exist.
+:::{note}
+
+Sometimes variable names changes. In rev 1877 **v_config_cli.php**
+variable names changed which caused no fax to email emails or
+voicemail emails to be sent. Problem was the SMTP details did not
+exist.
+:::
 
 - Go to Advanced -> Settings and then click save. This will re-generate v_config_cli.php and any other needs config files.
 
