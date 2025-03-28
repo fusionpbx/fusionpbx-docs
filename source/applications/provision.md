@@ -58,12 +58,10 @@ on.
 -   [Screen
     Capture](https://docs.fusionpbx.com/en/latest/applications/provision/phone_screen_capture.html)
 
-:::: note
-<p class="admonition-title">Note</p>
+:::{note}
 
-[Click here to view how to add a
-device](../accounts/devices.md).
-::::
+[Click here to view how to add a device](../accounts/devices.md).   
+:::
 
 ## Phone Book
 
