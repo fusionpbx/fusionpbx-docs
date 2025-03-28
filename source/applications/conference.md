@@ -3,9 +3,11 @@
 Conferences is used to setup conference rooms with a name, description,
 and optional pin number.
 
+:::: note
+<p class="admonition-title">Note</p>
 
->**Note:** For advanced conferencing use Apps -\> Conference Center
-
+For advanced conferencing use Apps -> Conference Center   
+::::
 
 ![image](../_static/images/applications/conference/fusionpbx_conferences1.png)
 
