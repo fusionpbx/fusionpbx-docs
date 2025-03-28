@@ -85,9 +85,12 @@ openai - elevenlabs
 These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.1.0 and higher.
 
-> **Release Note:** When this upgrade.php is run from the root, it will   
-> write the /etc/fusionpbx/config.conf file by reading information from   
-> the database and config.php and config.lua.
+:::{note}
+
+When this upgrade.php is run from the root, it will   
+write the /etc/fusionpbx/config.conf file by reading information from   
+the database and config.php and config.lua.   
+:::
 
 - Run (Install) Upgrades
 
@@ -112,9 +115,12 @@ FusionPBX 5.1.0 and higher.
     systemctl restart event_guard
 ```
 
-> **Note:** If the fax[queue]{#queue} is not installed it will show an error.   
-> This is only a problem if you are using fax. If you are using fax then   
-> you will want to install the fax[queue]{#queue} service.
+:::{note}
+
+If the fax[queue]{#queue} is not installed it will show an error.   
+This is only a problem if you are using fax. If you are using fax then   
+you will want to install the fax[queue]{#queue} service.   
+:::
 
 ```
     cp /var/www/fusionpbx/app/fax_queue/resources/service/debian.service /etc/systemd/system/fax_queue.service
@@ -189,9 +195,12 @@ To manually update the menu, you need to edit the default menu.
 These instructions for upgrade are also relevant to versions of   
 FusionPBX 5.0.3 to 5.0.10 and higher.
 
-> **Release Note:** When this upgrade.php is run from the root, it will write the   
-> /etc/fusionpbx/config.conf file by reading information from the database   
-> and config.php and config.lua.
+:::{note}
+
+When this upgrade.php is run from the root, it will write the   
+/etc/fusionpbx/config.conf file by reading information from the database   
+and config.php and config.lua.   
+:::
 
 - Run (Install) Upgrades
 
@@ -395,9 +404,12 @@ Confirm that the values have been updated using this command.
 - Refresh the browser if there are issues then logout and then back in.
 - Update the following Dialplans.
 
-> **Note:** If you have made any changes, make notes before you delete them.   
-> So changes can be added back. For example, valet park could have custom   
-> music on hold or a custom timeout for the valet park.
+:::{note}
+
+If you have made any changes, make notes before you delete them.   
+So changes can be added back. For example, valet park could have custom   
+music on hold or a custom timeout for the valet park.   
+:::
 
 ```
     user_exists
@@ -526,9 +538,12 @@ the correct preset UUID\>
     chown -R www-data:www-data /var/www/fusionpbx
 ```
 
-> **Note:** Depending on when you installed the path /etc/fusionpbx might need   
-> created. A good way to tell is once you move the fusionpbx folder in   
-> step one and the FusionPBX is on a page with flags.
+:::{note}
+
+Depending on when you installed the path /etc/fusionpbx might need   
+created. A good way to tell is once you move the fusionpbx folder in   
+step one and the FusionPBX is on a page with flags.   
+:::
 
 <br>
 
@@ -544,11 +559,13 @@ the correct preset UUID\>
 -   Then go to **Advanced** -> **Upgrade** and run **Source Code**, **Schema**,   
     **Menu Defaults** and **Permission Defaults**.
 
+:::{note}
 
-> **Note:** config.lua needs to be read and write by the webserver in order   
-> for advanced default settings to update config.lua with new path information.   
-> Make sure config.lua and config.php are in /etc/fuionpbx/ .   
-> And be sure to run this command. 
+config.lua needs to be read and write by the webserver in order   
+for advanced default settings to update config.lua with new path information.   
+Make sure config.lua and config.php are in /etc/fuionpbx/ .   
+And be sure to run this command.    
+:::
 
 ```
 chown -R www-<data:www-data> /etc/fusionpbx/
@@ -593,9 +610,12 @@ Changes have been made in the **Email** section in **Advanced** -> **Default set
 -   Don't delete the blank entries. The code behind them are for   
     version 4.4+ and the original ones are not.
 
-> **Note:** If you already deleted the blank ones, you'll have to delete the email   
-> section, run App Defaults under **Advanced** -> **Upgrade**. Then navigate   
-> back to **Advanced** -> **Default settings** and set the email section back up.
+:::{note}
+
+If you already deleted the blank ones, you'll have to delete the email   
+section, run App Defaults under **Advanced** -> **Upgrade**. Then navigate   
+back to **Advanced** -> **Default settings** and set the email section back up.   
+:::
 
 <br>
 
@@ -685,9 +705,12 @@ Next steps are for existing Time Conditions.
     Select the holidays over again.
 
 
-> **Note:** Many of the provisioning templates were updated.   
-> If you use custom provisioning templates you should consider   
-> updating them with the new versions.
+:::{note}
+
+Many of the provisioning templates were updated.   
+If you use custom provisioning templates you should consider   
+updating them with the new versions.   
+:::
 
 <br>
 
@@ -711,10 +734,12 @@ Rebooting FreeSWITCH is required for this to take effect.
 
 ## Version 3.6 to 3.8
 
-> **Note:** Upgrading can get very complex. If the production system is   
-> critical or you are intimidated from these upgrade instructions you   
-> may want FusionPBX paid support at   
-> http://www.fusionpbx.com/support.php
+:::{note}
+
+Upgrading can get very complex. If the production system is   
+critical or you are intimidated from these upgrade instructions you   
+may want FusionPBX paid support at http://www.fusionpbx.com/support.php   
+:::
 
 A standard upgrade procedure should always be followed:
 
@@ -875,12 +900,15 @@ Groups and Permissions
 
 ## Version 3.5 to 3.6
 
-> **Note:** When running **Schema**   
-> If you see **ALTER TABLE v_xml_cdr ADD json json;** every time you run it, 
-> then you likely have an old version of Postgres. To fix this either
-> upgrade to the latest Postgres server or run the following
-> SQL statement from **Advanced** -> **SQL Query.**
-  
+:::{note}
+
+When running **Schema**   
+If you see **ALTER TABLE v_xml_cdr ADD json json;** every time you run it, 
+then you likely have an old version of Postgres. To fix this either
+upgrade to the latest Postgres server or run the following
+SQL statement from **Advanced** -> **SQL Query.**
+:::
+
 ```
     ALTER TABLE v_xml_cdr ADD json text;
 ```
@@ -933,7 +961,10 @@ See <https://github.com/fusionpbx/fusionpbx/issues/655> for more details.
 - Go To **Advanced -\> Group Manager**,   
   on **superadmin** click **Permissions** and then **Restore Default**
 
-> **Note:** You may need to execute this operation for each group.
+:::{note}
+
+You may need to execute this operation for each group.   
+:::
 
  **Default Settings**
  
@@ -1055,7 +1086,10 @@ See <https://github.com/fusionpbx/fusionpbx/issues/655> for more details.
   <https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade>
     - If greater than revision 1877, use latest.
 
-> **Note:** When upgrading from previous versions, you may encounter the following issues:
+:::{note}
+
+When upgrading from previous versions, you may encounter the following issues:    
+:::
 
 - **Changes to your dial plan or extensions don\'t take effect**   
 - Go to the **Advanced -\> Default Settings** page   

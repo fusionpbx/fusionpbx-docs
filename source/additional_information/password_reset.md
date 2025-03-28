@@ -26,8 +26,10 @@ make a new superadmin user name and password.
 ```
 <br>
 
-Note: In older installations of FusionPBX config.php is located in
-/var/www/fusionpbx/resources/
+:::{note}
+
+In older installations of FusionPBX config.php is located in /var/www/fusionpbx/resources/
+:::
 
 <br>
 

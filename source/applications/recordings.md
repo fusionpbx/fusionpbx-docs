@@ -12,15 +12,12 @@ video.](https://youtu.be/CkqlsVvvv2U)
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/CkqlsVvvv2U?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
 </div>
 
-To view and set the pin number goto Dialplan > Dialplan Manager > Click on Recordings > pin_number=8675309 at the bottom.
+To view and set the pin number goto **Dialplan** > **Dialplan Manager** > Click on **Recordings** > **pin_number=8675309** at the bottom.
 
-:::: note
-::: title
-Note
+:::{note}
+
+Pin number is recomended but can be left empty if no pin number is desired then pin_number=   
 :::
-
-Pin number is recomended but can be left empty if no pin number is desired then pin_number=
-::::
 
 ## Create a Recording
 

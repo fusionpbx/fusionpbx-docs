@@ -21,15 +21,19 @@ Define details for streaming audio.
 
 ![image](../_static/images/applications/streams/fusionpbx_streams2.png)
 
->**Note:**   
->Editing a stream path will result in having to update anything that is   
->using the stream. For example, if you have extension 500 using stream   
->\"Local Weather\" and you edit the shout:// path then you will have to   
->go back to extension 500 and reset the music on hold for extension 500.   
->This is by design.
+:::{note}
 
+Editing a stream path will result in having to update anything that is   
+using the stream.   
+:::
 
+For example, if you have extension **500** using stream   
+"**Local Weather**" and you edit the **shout://** path then you will have to   
+go back to extension **500** and reset the music on hold for extension **500**.   
+This is by design.
 
->**Warning:**   
->Please be aware of your countries copyright laws for streaming the   
->content you are going to stream.   
+:::{warning}
+
+Please be aware of your countries copyright laws for streaming the   
+content you are going to stream.   
+:::

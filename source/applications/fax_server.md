@@ -26,8 +26,13 @@ There are more settings for fax under **Advanced** \> **Default Settings** then 
 
 To create a fax server goto **Applications** \> **Fax Server**. Click the "**ADD**" button on the right.
 
-> **Note:** Make sure you leave the **Destination Number** blank or faxing wont work. All fields in **bold** are required.   
-> It is also good practice accross FusionPBX to stay organized, so define the name and chosen extension thoughtfully.
+:::{note}
+Make sure you leave the **Destination Number** blank or faxing wont work. All fields in **bold** are required.   
+:::
+
+:::{tip}
+It is good practice accross FusionPBX to stay organized, so define the name and chosen extension thoughtfully.
+:::
 
 -   **Account Code**: This item will autofill. 
 -   **Destination Number**: This is used in the Fax Server Dial Plan and is set

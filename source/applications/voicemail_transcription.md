@@ -63,7 +63,10 @@ Uses API services to transcribe voicemails into text for use in the app-sms and 
 ## IBM Watson API
 Sign up and language information is located on [IBM Watson's Site](https://cloud.ibm.com/catalog/services/speech-to-text).
 
-> **Warning**: We cannot use mod_shout to record voicemails because the transcription service needs an uncompressed version of the audio. Therefore, we will record in WAV and then use LAME to re-encode in MP3. This could cause added resource utilization to your system.
+:::{warning}
+
+We cannot use mod_shout to record voicemails because the transcription service needs an uncompressed version of the audio. Therefore, we will record in WAV and then use LAME to re-encode in MP3. This could cause added resource utilization to your system.
+:::
 
 **Go to Advanced > Default Settings.**  
 Add the following entries:
@@ -77,8 +80,11 @@ Add the following entries:
 | voicemail | transcribe_enabled   | boolean| true               | True    |
 | voicemail | json_enabled         | boolean| true               | True    |
 
-*NOTE: Watson URL used for testing was:  
+:::{note}
+
+Watson URL used for testing was:   
 https://example.url.api.us-south.speech-to-text.watson.cloud.ibm.com/instances/{GUID}/v1/recognize?model=en-US_Telephony&smart_formatting=true*
+:::
 
 **List of available IBM Watson speech-to-text models**:  
 [https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models)
@@ -136,7 +142,10 @@ Recommend using Azure as an alternative to Bing.
 Sign up and language information is located on [Microsoft Site](https://www.microsoft.com/cognitive-services/en-us/Speech-api/documentation/API-Reference-REST/BingVoiceRecognition).  
 Note: The Bing Speech API is deprecated as of October 2018; this works for now but needs to be ported to [the new API](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/how-to-migrate-from-bing-speech.md).
 
-> **Warning**: We cannot use mod_shout to record voicemails because the transcription service needs an uncompressed version of the audio. Therefore, we will record in WAV and then use LAME to re-encode in MP3. This could cause added resource utilization to your system.
+:::{warning}
+
+We cannot use mod_shout to record voicemails because the transcription service needs an uncompressed version of the audio. Therefore, we will record in WAV and then use LAME to re-encode in MP3. This could cause added resource utilization to your system.
+:::
 
 **Go to Advanced > Default Settings.**  
 Add the following entries:

@@ -18,7 +18,11 @@ Here you can edit voicemail settings:
 
 ![Voicemail Settings Continued](../_static/images/voicemail/fusionpbx_voicemail2.jpg)
 
-> **Note**: Starting version 4.2, remote access to voicemail by interrupting the greeting message by pressing "*" and entering the password is disabled by default.
+:::{note}
+
+Starting version 4.2, remote access to voicemail by interrupting the greeting message   
+by pressing "*" and entering the password is disabled by default.   
+:::
 
 To enable remote access to voicemail:
 
@@ -80,7 +84,10 @@ Using switch variables provides the ability to adjust FusionPBX Voicemail featur
 | vm_say_caller_id_number   | true or false  |
 | vm_say_date_time          | true or false  |
 
-> **Note**: 'wav' format is the default voicemail message file type. A value of 'mp3' requires *mod_shout* be installed and running.
+:::{note}
+
+The 'wav' format is the default voicemail message file type. A value of 'mp3' requires *mod_shout* be installed and running.   
+:::
 
 ### Not Found Message
 When an extension is unavailable and no voicemail is configured, there is an option to play a message to the caller alerting them to this.
