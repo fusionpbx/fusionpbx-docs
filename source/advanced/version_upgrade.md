@@ -748,53 +748,60 @@ also need to be performed:
     uncomment: <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
     in: /usr/local/freeswitch/conf/autoload_configs/lua.conf.xml 
 
-Rebuild all time conditions.
-After you edit a particular time condition, click the Dialplan
-button on the top right to see what was there originally.
-Delete the following dialplans from each domain then run Advanced
--> Upgrade -> App Defaults. If using XML handler for the dialplan
-flush memcache. If using dialplans XML on the file system resave one
-of the dialplans to have FusionPBX rewrite the XML files.
-user_exists - call_timeout variable was added
-extension-intercom - It has been renamed to \'page-extension\'
-eavesdrop - Change \'\*\'88\[ext\] to \'\*\'33\[ext\] so that it
-doesn\'t conflict with page-extension at \'\*\'8\[ext\]
-user_status - Has been renamed to
-'agent_status'
-page - Dialplan has been simplified.
-valet_park_out - Changed regex variable from \$1 to \$2
-local_extension - failure handler was added to support
-call forward on busy and no answer
-If using call center feature code \'\*\'22 edit each agent and add
-an agent id and password (pin number)
-Delete any dialplan with the \'features\' context. These have been
-moved into the dialplan domain contexts.
-If using App -\> XMPP, Content Manager, or Schema they have been
-moved dev -\> branches -\> apps directory need to pull files from
-there if you want to use any of them.
-For single tenant systems \'default\' context is no longer used by
-default.
-Easiest way to update your system is go to Advanced -\> Domains and
-edit your domain.
-Copy your current domain name then change the name to default then
-save the change.
-Now edit the domain name again and paste your original domain name
-or IP address whatever the domain originally was and save the changes
-Go to accounts extensions and save one extension. (not needed if
-using the XML handler)
-Go to Dialplan Manager and save one of the dialplans. (not needed
-if using the XML handler)
-FAX ( may require adjusting the paths and web server user account
-to match your server \'www-data\' is used in this example)
-Delete all previous FAX dialplans
+Rebuild All Time Conditions after you edit a particular time condition, click the Dialplan button on the top right to see what was there originally.
+
+Delete the following dialplans from each domain, then run Advanced -> Upgrade -> App Defaults.
+If using XML handler for the dialplan, flush memcache.
+If using dialplans XML on the file system, resave one of the dialplans to have FusionPBX rewrite the XML files.
+
+Dialplan Changes:
+user_exists: call_timeout variable was added.
+extension-intercom: It has been renamed to page-extension.
+eavesdrop: Change *[88][ext] to *[33][ext] so that it doesn’t conflict with page-extension at *[8][ext].
+user_status: Has been renamed to agent_status.
+page: Dialplan has been simplified.
+valet_park_out: Changed regex variable from $1 to $2.
+local_extension: Failure handler was added to support call forward on busy and no answer.
+If using call center feature code *[22], edit each agent and add an agent ID and password (pin number).
+
+
+Delete any dialplan with the features context. These have been moved into the dialplan domain contexts.
+
+If using App -> XMPP, Content Manager, or Schema, they have been moved to dev -> branches -> apps directory. Need to pull files from there if you want to use any of them.
+
+Single Tenant Systems
+For single tenant systems, default context is no longer used by default.
+Easiest way to update your system:
+Go to Advanced -> Domains and edit your domain.
+Copy your current domain name, then change the name to default and save the change.
+Now edit the domain name again and paste your original domain name or IP address (whatever the domain originally was) and save the changes.
+Go to Accounts -> Extensions and save one extension. (Not needed if using the XML handler)
+Go to Dialplan Manager and save one of the dialplans. (Not needed if using the XML handler)
+FAX Configuration
+(May require adjusting the paths and web server user account to match your server; www-data is used in this example)
+
+Delete all previous FAX dialplans.
 Resave each fax server in the GUI.
+
+Run the following commands:
+
+```
 cd /var/www/fusionpbx/app/fax
-wget
-  <https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/fax_import.php>
-chown -R www-<data:www-data> fax_import.php
-Login into the GUI and use this path in your browser
- <http://>\<domain-or-ip\>/app/fax/fax_import.php
+wget https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/fax_import.php
+chown -R www-data:www-data fax_import.php
+```
+
+Log in to the GUI and use this path in your browser:
+```
+http://<domain-or-ip>/app/fax/fax_import.php
+```
+
+Then after you can remove the script.
+
+```
 rm /var/www/fusionpbx/app/fax/fax_import.php
+```
+
 Groups and Permissions
 
 - If you go to Advanced Group Manager -\> And you see what looks like   
