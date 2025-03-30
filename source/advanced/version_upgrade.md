@@ -69,10 +69,10 @@ to **false** and enabled to set it to true.
 Transcribe details need to be moved from the default settings category   
 voicemail to transcribe. 
 
-- **Openai** easy to setup enable setting and set the api[key]{#key} 
-- **Watson** requires api[url]{#url} in the transcribe category
-- **Google** requires api[url]{#url}
-- **Azure** language en-US api[url]{#url} used for the region
+- **Openai** easy to setup enable setting and set the api_key
+- **Watson** requires api_url in the transcribe category
+- **Google** requires api_url
+- **Azure** language en-US api_url used for the region
 
 Speech is defined in the default settings category speech this feature   
 is used for Text-to-Speech - Make sure to set enable the settings -   
@@ -117,9 +117,9 @@ the database and config.php and config.lua.
 
 :::{note}
 
-If the fax[queue]{#queue} is not installed it will show an error.   
+If the fax_queue is not installed it will show an error.   
 This is only a problem if you are using fax. If you are using fax then   
-you will want to install the fax[queue]{#queue} service.   
+you will want to install the fax_queue service.   
 :::
 
 ```
@@ -185,7 +185,7 @@ To manually update the menu, you need to edit the default menu.
 
 - Remove the **Email Logs** Menu (No longer used).
 - Add the **Destination Summary** Menu
-   - Title: Destination Summary Link: /app/destinations/destination[summary.php]{#summary.php}
+   - Title: Destination Summary Link: /app/destinations/destination_summary.php
    - Parent Menu: Status Groups: admin, superadmin
 
 <br>
@@ -233,17 +233,11 @@ rm -R -f /tmp/\*.php
 The following dialplans are need to be deleted for all domains. As these   
 are now global dialplans.
 
-> call-direction is[local]{#local} agent[status]{#status}   
-> agent[status_id]{#status_id} agent-status-break   
-> call[privacy]{#privacy} send[to_voicemail]{#to_voicemail} vmain   
-> xfer[vm]{#vm} vmain[user]{#user} delay[echo]{#echo} echo   
-> is[zrtp_secure]{#zrtp_secure} milliwatt is[secure]{#secure}   
-> tone[stream]{#stream} hold[music]{#music} do-not-disturb call-forward   
-> follow-me freeswitch[conference]{#conference}   
-> clear[sip_auto_answer]{#sip_auto_answer} call[return]{#return} dx   
-> att[xfer]{#xfer} directory redial call[return]{#return} dx   
-> att[xfer]{#xfer} is[transfer]{#transfer} cf please[hold]{#hold}   
-> talking[clock_date]{#clock_date}
+call-direction is_local agent_status agent_status_id agent-status-break call_privacy
+send_to_voicemail vmain xfer_vm vmain_user delay_echo echo is_zrtp_secure milliwatt
+is_secure tone_stream hold_music do-not-disturb call-forward follow-me
+freeswitch_conference clear_sip_auto_answer call_return dx att_xfer directory
+redial call_return dx att_xfer is_transfer cf please_hold talking_clock_date
 
 - Then run this command to get the new default global dialplans.
 
@@ -268,9 +262,9 @@ are now global dialplans.
 
 ```
  cp   
- /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/debian.service   
- /etc/systemd/system/event[guard.service]{#guard.service} systemctl   
- enable event[guard]{#guard} systemctl start event[guard]{#guard}   
+ /var/www/fusionpbx/app/event_guard/resources/service/debian.service   
+ /etc/systemd/system/event_guard.service systemctl   
+ enable event_guard systemctl start event_guard   
  systemctl daemon-reload
 ```
 
@@ -278,10 +272,10 @@ are now global dialplans.
 
 ```
  cp   
- /var/www/fusionpbx/app/event[guard]{#guard}/resources/service/debian.service   
- /usr/lib/systemd/system/event[guard.service]{#guard.service} systemctl
- daemon-reload systemctl enable event[guard]{#guard} systemctl start   
- event[guard]{#guard}
+ /var/www/fusionpbx/app/event_guard/resources/service/debian.service   
+ /usr/lib/systemd/system/event_guard.service systemctl
+ daemon-reload systemctl enable event_guard systemctl start   
+ event_guard
 ```
 
 - Remove Old Config Files
@@ -587,8 +581,8 @@ chown -R www-<data:www-data> /etc/fusionpbx/
 
 -  In the menu go to **Status** -> **SIP Status**, then press **Flush Cache**.
 
--  Update old recordings set the record[name]{#name} and   
-    record[path]{#path}.
+-  Update old recordings set the record_name and   
+    record_path].
 
 ```
     cd /usr/src
@@ -650,13 +644,13 @@ back to **Advanced** -> **Default settings** and set the email section back up.
 6.  Check the box for Permission Defaults and run execute. Permissions   
     are store in a session to get new permissions logout and back in.
 7.  Goto **Dialplan** -> **Dialplan Manager** and delete   
-    \"local[extension]{#extension}\". Then goto **Advanced** -> **Upgrade** and   
-    run **App Defaults**. This will regenerate he new local[extension]{#extension} version.
+    \"local_extension\". Then goto **Advanced** -> **Upgrade** and   
+    run **App Defaults**. This will regenerate he new local_extension version.
 9.  Go to Applications \> Conference profiles. Edit each profile and   
-    replace \$\${hold[music]{#music}} with   
-    local[stream]{#stream}://default
-10.  Goto Advanced \> Variables hold[music]{#music}. Make sure it\'s   
-    value is set as local[stream]{#stream}://default
+    replace \$\${hold_music} with   
+    local_stream://default
+10.  Goto Advanced \> Variables hold_music. Make sure it\'s   
+    value is set as local_stream://default
 
 ```
     Check Applications > Music On Hold to see if music is listed properly.
@@ -683,7 +677,7 @@ back to **Advanced** -> **Default settings** and set the email section back up.
     autoload_configs/local_stream.conf
 ```
 
-11. Edit autoload[configs]{#configs}/lua.conf.xml adding \"languages\".
+11. Edit autoload_configs/lua.conf.xml adding \"languages\".
     Restart of FreeSWITCH is required.
 
 ```
@@ -719,7 +713,7 @@ updating them with the new versions.
 - Remove the comments from the script-directory in   
   **/usr/local/freeswitch/conf/autoload_configs/lua.conf.xml**
 
-- If using the FreesWITCH package then remove \$\${base[dir]{#dir}} and   
+- If using the FreesWITCH package then remove \$\${base_dir} and   
   set the full path to the scripts directory.
 
 ```
@@ -761,15 +755,15 @@ Delete the following dialplans from each domain then run Advanced
 -> Upgrade -> App Defaults. If using XML handler for the dialplan
 flush memcache. If using dialplans XML on the file system resave one
 of the dialplans to have FusionPBX rewrite the XML files.
-user[exists]{#exists} - call[timeout]{#timeout} variable was added
+user_exists - call_timeout variable was added
 extension-intercom - It has been renamed to \'page-extension\'
 eavesdrop - Change \'\*\'88\[ext\] to \'\*\'33\[ext\] so that it
 doesn\'t conflict with page-extension at \'\*\'8\[ext\]
-user[status]{#status} - Has been renamed to
-'agent[status]{#status}'
+user_status - Has been renamed to
+'agent_status'
 page - Dialplan has been simplified.
-valet[park_out]{#park_out} - Changed regex variable from \$1 to \$2
-local[extension]{#extension} - failure handler was added to support
+valet_park_out - Changed regex variable from \$1 to \$2
+local_extension - failure handler was added to support
 call forward on busy and no answer
 If using call center feature code \'\*\'22 edit each agent and add
 an agent id and password (pin number)
@@ -797,10 +791,10 @@ Resave each fax server in the GUI.
 cd /var/www/fusionpbx/app/fax
 wget
   <https://github.com/fusionpbx/fusionpbx-scripts/tree/master/upgrade/fax_import.php>
-chown -R www-<data:www-data> fax[import.php]{#import.php}
+chown -R www-<data:www-data> fax_import.php
 Login into the GUI and use this path in your browser
- <http://>\<domain-or-ip\>/app/fax/fax[import.php]{#import.php}
-rm /var/www/fusionpbx/app/fax/fax[import.php]{#import.php}
+ <http://>\<domain-or-ip\>/app/fax/fax_import.php
+rm /var/www/fusionpbx/app/fax/fax_import.php
 Groups and Permissions
 
 - If you go to Advanced Group Manager -\> And you see what looks like   
@@ -849,9 +843,9 @@ Groups and Permissions
        or group_name = 'public'
 ```
 
-- For group users with a null group[uuid]{#uuid}, insert the
-  group[uuid]{#uuid} of the global group that matches the
-  group[name]{#name} value\...
+- For group users with a null group_uuid, insert the
+  group_uuid of the global group that matches the
+  group_name value\...
   
 - Run this code from **Advanced** -> **Command** -> **PHP Command**.
 
@@ -923,22 +917,22 @@ See <https://github.com/fusionpbx/fusionpbx/issues/655> for more details.
   easy fix.
 
 - Go to Advanced -\> variables -\> category default and add the variable
-  record[ext]{#ext} and set it to either wav or mp3. Choosing mp3
-  depends upon whether or not you have mod[shout]{#shout} installed and
+  record_ext and set it to either wav or mp3. Choosing mp3
+  depends upon whether or not you have mod_shout installed and
   enabled.
 
 <br>
 
 ## Version 3.4 to 3.5
 
-- Gateways now use the gateway[uuid]{#uuid} as the name that is used   
+- Gateways now use the gateway_uuid as the name that is used   
   when interacting with FreeSWITCH. 
   
 - This script is needed to help change   
   the gateway names used in the outbound routes.
 
 - You may need to remove the old gateway file names
-  from the conf/sip[profiles]{#profiles}/external directory.
+  from the conf/sip_profiles/external directory.
 
 ```
     cd /var/www/fusionpbx
@@ -1171,6 +1165,6 @@ Under the Settings area insert the following line
 ```
      \<param name=\"core-db-dsn\" value=\"pgsql;hostaddr=127.0.0.1
      dbname=freeswitch user=freeswitch password=\'\' options=\'-c
-     client[min_messages]{#min_messages}=NOTICE\'
-     application[name]{#name}=\'freeswitch\'\" /\>
+     client_min_messages=NOTICE\'
+     application_name=\'freeswitch\'\" /\>
 ```
