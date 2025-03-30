@@ -91,7 +91,7 @@ Explore the powerful capabilities of FusionPBX, organized into categories below.
 | Call Flows (Day/Night Mode)   | To direct calls between two destinations.<br>Direction can be displayed on phones BLF                   |                                                      |
 | Caller ID                     | Customize and support provider caller ID                         |                                                      |
 | Call Center               | Create a robust call center environment                      |   [Call Centers](../applications/call_center.md)                                                     |
-| Dial by Name (*411)           | Search extensions by first or last name                                        | [Dial by Name](../features/dial_by_name.md)       |
+| Dial by Name (*411)           | Search extensions by first or last name                                        | [Dial by Name](../additional_information/dial_by_name.md)       |
 | Direct Inward System Access   | Gives ability to call into the system, put<br>in a pin code, and then call back outbound                     | [Dialplan Details](../dialplan/dialplan_details.md#disa) |
 | Extensions                    | Create extensions for phone registration<br>and options to send an email on<br> missed calls to one or multiple contacts                      | [Extensions](../accounts/extensions.md)           |
 | Fax Server                    | Send/receive faxes with advanced features                        | [Fax Server](../applications/fax_server.md)       |
