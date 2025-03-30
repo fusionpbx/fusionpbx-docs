@@ -128,7 +128,7 @@ Editor specific defaults.
 
 ## Email
 
-These are some example settings for some of the most common email providers, for addition information please check [here](../additional_information/email.md).
+Here are some example settings for some of the most common email providers, for additional information please check [here](../additional_information/email.md).
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value          | Default Setting Enabled | Default Setting Description                                                       |
 |-----------------------------|----------------------|--------------------------------|-------------------------|-----------------------------------------------------------------------------------|
