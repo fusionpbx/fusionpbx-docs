@@ -12,6 +12,7 @@ additional_information/testimonials.md
 additional_information/password_reset.md
 additional_information/feature_codes.md
 features/features.md
+additional_information/email.md
 additional_information/toll_allow.md
 #additional_information/tftp.md
 additional_information/nat.md
