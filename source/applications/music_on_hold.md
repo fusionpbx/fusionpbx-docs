@@ -1,8 +1,7 @@
 # Music on Hold
 
-Music on hold can be in WAV or MP3 format. 
-You can adjust the volume of the MP3 audio from the 'Settings' tab. For best performance upload 16 bit, 8/16/32/48 kHz mono WAV files.
-
+Music on hold can be in WAV or MP3 format.   
+You can adjust the volume of the MP3 audio from the 'Settings' tab. For best performance upload 16 bit, 8/16/32/48 kHz mono WAV files.   
 
 ::{note}
 
@@ -11,7 +10,11 @@ To play an MP3 file you must have mod_shout enabled on the 'Modules' tab.
 
 ![image](../_static/images/applications/music_on_hold/fusionpbx_music_on_hold1.png)
 
+- Upload custom MOH by clicking "**ADD**" on the top right.
+
 ![image](../_static/images/applications/music_on_hold/fusionpbx_music_on_hold2.png)
+
+- You can upload the MOH file to an existing group or create a new group as you upload you MOH file.
 
 ![image](../_static/images/applications/music_on_hold/fusionpbx_music_on_hold4.png)
 
