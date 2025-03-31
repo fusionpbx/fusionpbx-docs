@@ -6,7 +6,7 @@ You can adjust the volume of the MP3 audio from the 'Settings' tab. For best per
 
 ::{note}
 
-To play an MP3 file you must have mod_shout enabled on the 'Modules' tab. 
+To play an MP3 file you must have mod_shout enabled on the 'Modules' tab.   
 ::
 
 ![image](../_static/images/applications/music_on_hold/fusionpbx_music_on_hold1.png)
@@ -41,7 +41,7 @@ To play an MP3 file you must have mod_shout enabled on the 'Modules' tab.
 
 ::{tip}   
 
-When a new music on hold category mod_local_stream will be restarted. If it is busy then it will not restart automatically. A manual restart of the         module is required when not in use.
+When a new music on hold category mod_local_stream will be restarted. If it is busy then it will not restart automatically. A manual restart of the         module is required when not in use.   
 ::
 
 -   The module can be restarted from the **Menu** > **Advanced** > **Modules** or from the console and **fs_cli** with following command.
