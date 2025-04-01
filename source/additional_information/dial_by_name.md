@@ -11,12 +11,8 @@ installations virtual directory.
     the name you wish to call.
 -   To select this entry, press 1. For the next entry press 6.
 
-:::: tip
-::: title
-Tip
-:::
-
+:::{note}
 Go to Accounts \> Extensions \> click the edit icon on an extension.
 Scroll down to the \"Directory Full Name\" field and fill in the field.
 Directory Full Name is what \*411 uses to search by.
-::::
+:::

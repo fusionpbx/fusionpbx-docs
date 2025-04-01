@@ -128,12 +128,7 @@ Editor specific defaults.
 
 ## Email
 
-This is where you configure email settings to receive email notifications of voicemail, missed calls, and fax.
-
-Here are some example settings for some of the most common email providers:
-
-- [SMTP2GO](./default_settings/smtp2go.md)
-- [GMAIL](./default_settings/gmail.md)
+Here are some example settings for some of the most common email providers, for additional information please check [here](../additional_information/email.md).
 
 | Default Setting Subcategory | Default Setting Name | Default Setting Value          | Default Setting Enabled | Default Setting Description                                                       |
 |-----------------------------|----------------------|--------------------------------|-------------------------|-----------------------------------------------------------------------------------|
@@ -147,15 +142,6 @@ Here are some example settings for some of the most common email providers:
 | smtp_secure                 | text                 | tls                            | TRUE                    | tls or ssl depending on the provider                                              |
 | smtp_validate_certificate   | boolean              | TRUE                           | TRUE                    | set to false to ignore SSL certificate warnings e.g. for self-signed certificates |
 | method                      | text                 | smtp                           | TRUE                    | smtp\|sendmail\|mail\|qmail                                                       |
-
-Error log for failed or successfully sent messages:
-```{toctree}
-:hidden:
-default_settings/smtp2go.md
-default_settings/gmail.md
-default_settings/email_error_log.md
-```
-- [Email Log](./default_settings/email_error_log.md)
 
 ## Fax
 

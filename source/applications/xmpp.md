@@ -66,7 +66,7 @@ status says **\'AUTHORIZED\'** then you are ready to go.
 
 :::{note}
 
-If you are not getting AUTHORIZED you might need to goto the
+If you are not getting AUTHORIZED you might need to go to the
 google account settings and choose \"Allow less secure apps: ON\" under
 the Sign-in & security section.   
 :::
@@ -99,7 +99,7 @@ or other XMPP servers.
 
 After version 3.8 XMPP is optional. To add XMPP do the following
 
-Goto command line
+Go to command line
 
 ```
     cd /tmp
@@ -110,12 +110,12 @@ Goto command line
     chown www-data:www-data -R xmpp/
 ```
 
-Goto Fusionpbx GUI
+Go to FusionPBX GUI
 
-Goto the GUI and click advanced \> menu manager \> edit icon \> click
+Go to the GUI and click advanced \> menu manager \> edit icon \> click
 \"Restore Defaults\" at top right
 
-Then goto Advanced \> Upgrade click Schema, Data Types, and Permission
+Then go to Advanced \> Upgrade click Schema, Data Types, and Permission
 Defaults then click execute
 
 Click status \> sip status \> Flush Memcache

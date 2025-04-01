@@ -19,7 +19,7 @@ that it represents.
     nothing needs to traverse the NAT. For example if you are using a
     SIP to TDM gateway and all your phones are in the same network.
 
-## [SIP ALG](http://docs.fusionpbx.com/en/latest/firewall/firewall_devices.html#sip-alg)
+## [SIP ALG](https://docs.fusionpbx.com/en/latest/hardware.html#firewall-devices)
 
 A SIP Application Layer Gateway (ALG) is a tool designed to help SIP
 traverse NAT. While the SIP ALG is good in theory it often causes more

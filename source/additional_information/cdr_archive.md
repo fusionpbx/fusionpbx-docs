@@ -105,35 +105,16 @@ keep the call variables.
 
 ### [CDR](default_settings/cdr.html)
 
-FusionPBX menu [Apps \> CDR](../applications/call_detail_record.html)
+FusionPBX menu [Apps \> CDR](../applications/call_detail_record.md)
 
 Setup your live server to connect to the archive database.
 
-  --------------------------------------------------------------------------------------------------------------
-  Default Setting Subcategory                      Default     Default Setting   Setting      Default Setting
-                                                   Setting     Value             Enabled      Description
-                                                   Name                                       
-  ------------------------------------------------ ----------- ----------------- ------------ ------------------
-  archive[database_driver]{#database_driver}       text        pgsql             TRUE         Archive Database
-                                                                                              Driver
-
-  archive[database_host]{#database_host}           text        x.x.x.x           TRUE         IP/Hostname of
-                                                                                              Archive Database
-
-  archive[database_password]{#database_password}   text        somethingSecret   TRUE         Archive Database
-                                                                                              Password
-
-  archive[database_port]{#database_port}           text        5432              TRUE         Archive Database
-                                                                                              Port
-
-  archive[database_username]{#database_username}   text        fusionpbx         TRUE         Archive Database
-                                                                                              Username
-
-  archive[database]{#database}                     boolean     TRUE              FALSE        Enable Dedicated
-                                                                                              CDR Database
-                                                                                              Access
-
-  archive[database_name]{#database_name}           text        fusionpbx         FALSE        Archive Database
-                                                                                              Name
-                                                                                              
-  --------------------------------------------------------------------------------------------------------------
+| Default Setting Subcategory   | Default Setting Name   | Default Setting Value   | Setting Enabled | Default Setting Description          |
+|-------------------------------|------------------------|-------------------------|-----------------|--------------------------------------|
+| archive_database_driver       | text                   | pgsql                   | TRUE            | Archive Database Driver              |
+| archive_database_host         | text                   | x.x.x.x                 | TRUE            | IP/Hostname of Archive Database      |
+| archive_database_password     | text                   | somethingSecret         | TRUE            | Archive Database Password            |
+| archive_database_port         | text                   | 5432                    | TRUE            | Archive Database Port                |
+| archive_database_username     | text                   | fusionpbx               | TRUE            | Archive Database Username            |
+| archive_database              | boolean                | TRUE                    | FALSE           | Enable Dedicated CDR Database Access |
+| archive_database_name         | text                   | fusionpbx               | FALSE           | Archive Database Name                |
