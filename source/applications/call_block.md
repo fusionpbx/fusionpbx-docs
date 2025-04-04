@@ -4,7 +4,7 @@ The Call Block application can be used to block *inbound* or *outbound*
 calls, based on the Caller ID Name and/or Number (for inbound calls), or
 the Destination Number (for outbound calls).
 
-**Creating a New Call Block**
+## Creating a New Call Block
 
 To create a new Call Block, click the **Add** button at the top-right of
 the Call Block list page. A simple form will be presented\...
@@ -37,14 +37,15 @@ or voicemail box, etc.
 
 **Description** - The reason for blocking the number (? - you decide ;).
 
-*Note: Call Blocks can also be added in bulk using the Recent Calls list
-below the form.*
+:::{note}   
+Call Blocks can also be added in bulk using the Recent Calls list below the form.   
+:::
 
 **Outbound Call Blocking**
 
 Outbound call blocking requires an additional dialplan entry.
 
-If one doesn\'t exist already, add a new **call-direction** Outbound
+If one doesn't exist already, add a new **call-direction** Outbound
 Route to set `call_direction=outbound`.
 
 ![image](../_static/images/fusionpbx_call_block1.jpg)
@@ -52,10 +53,12 @@ Route to set `call_direction=outbound`.
 **Be sure to set \*Continue\* to True, or dialplan execution will never
 reach your existing Outbound Routes!**
 
-*Note: The screen capture example above could be for 10-digit numbers,
+:::{note}   
+The screen capture example above could be for 10-digit numbers,
 such as those in the U.S, so you may want to adjust the regular
 expression used to match the destination number format being used in
-your current Outbound Routes.*
+your current Outbound Routes.*   
+:::
 
 ## Troubleshooting
 

@@ -18,8 +18,7 @@ Here you can edit voicemail settings:
 
 ![Voicemail Settings Continued](../_static/images/voicemail/fusionpbx_voicemail2.jpg)
 
-:::{note}
-
+:::{note}   
 Starting version 4.2, remote access to voicemail by interrupting the greeting message   
 by pressing "*" and entering the password is disabled by default.   
 :::
@@ -84,8 +83,7 @@ Using switch variables provides the ability to adjust FusionPBX Voicemail featur
 | vm_say_caller_id_number   | true or false  |
 | vm_say_date_time          | true or false  |
 
-:::{note}
-
+:::{note}   
 The 'wav' format is the default voicemail message file type. A value of 'mp3' requires *mod_shout* be installed and running.   
 :::
 
@@ -94,7 +92,9 @@ When an extension is unavailable and no voicemail is configured, there is an opt
 
 To enable/disable this, change the option for the **not_found_message** setting in **Advanced > Default Settings > Voicemail** category to suit your preference.
 
-Please note that enabling this option means that the call must be answered in order to play the message to the caller, and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions, this could potentially be illegal as it turns an otherwise toll-free call into a chargeable one.
+:::{warning}   
+Enabling this option means that the call must be answered in order to play the message to the caller, and so the call will complete with a 200 OK rather than a 480 Unavailable or 486 Busy. In some jurisdictions, this could potentially be illegal as it turns an otherwise toll-free call into a chargeable one.   
+:::
 
 ## Voicemail Transcription
 FusionPBX supports Voicemail Transcription, where emails will include a transcribed version of the voicemail the email was sent in regards to. To configure this feature, see [Voicemail Transcription](http://docs.fusionpbx.com/en/latest/applications/voicemail_transcription.html).

@@ -4,7 +4,7 @@ Call Detail Records Statics summarize the call information.
 
 ![image](../_static/images/Status/cdr_statistics/fusionpbx_call_detail_record_statistics.png)
 
-# Definitions
+## Definitions
 
 -   Hours: Specific hour in that day.
 -   Date: Specific date in that month.

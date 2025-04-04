@@ -31,16 +31,20 @@ video](https://youtu.be/QUB3u9pZ7ks).
 
 ## **Update the source from command line**
 
+```
     cd /var/www/fusionpbx 
     git pull
     chown -R www-data:www-data
+```
 
 ## **Back to the GUI**
 
+```
     *Upgrade Database with advanced -> upgrade schema
     *Update permissions
     *Update the menu
     *Logout and back in
+```
 
 ## How to Upgrade
 
@@ -55,7 +59,7 @@ video](https://youtu.be/QUB3u9pZ7ks).
 
 ### **Step 1: Update FusionPBX Source**
 
-- GUI -\> Advanced -\> Upgrade (doesn\'t update all files)
+- **Advanced** > **Upgrade** run **Source Code** (doesn't update all files).
 
 Used to update FusionPBX to the latest release.
 
@@ -64,7 +68,7 @@ Used to update FusionPBX to the latest release.
   Login into the web interface with a user account assigned to the
   superadmin group.
   Login to the console with either the ssh, the locally.
-  Backup It\'s a good idea to make a backup. If using sqlite, your
+  Backup It's a good idea to make a backup. If using sqlite, your
   backup will easily include the SQL database.
 
 ```
@@ -106,16 +110,14 @@ Used to update FusionPBX to the latest release.
 
 ### Step 2: Update Freeswitch Scripts
 
-:::{note}
-
+:::{note}   
 As of FusionPBX 3.8.3 (Stable Branch), the scripts should be
 automatically updated when updating the Source Code, using the
 **Advanced** > **Upgrade** page. Any customized scripts, having the same
 name as the default scripts, **will be overwritten.** 
 :::
 
-:::{tip}
-
+:::{tip}   
 An option to
 disable this default behavior is available using **Default Setting:
 switch > scripts_update > false**. Missing scripts will be restored,
@@ -132,8 +134,7 @@ untouched.
     - Use github to get the updated files. **You have to do this from an
   empty directory**.
 
-:::{note}
-
+:::{note}   
 Older versions of FusionPBX may use the /usr/local path instead of /usr/share   
 :::
 
@@ -150,8 +151,11 @@ Older versions of FusionPBX may use the /usr/local path instead of /usr/share
 ```
 
 - Clean out this scripts directory
-     - An alternative is to remove the Lua scripts. **Only do this if you
-  haven\'t customized any LUA scripts**
+     - An alternative is to remove the Lua scripts.
+
+:::{warning}   
+Only do this if you haven't customized any LUA scripts.   
+:::
 
 ```
     cp -R /usr/share/freeswitch/scripts /usr/local/freeswitch/scripts-bak
@@ -172,8 +176,9 @@ Older versions of FusionPBX may use the /usr/local path instead of /usr/share
 
 ### Step 3: Upgrade Schema
 
-**Note:** Many updates have changes to the database and to the Freeswitch
-  scripts. The upgrade[schema]{#schema} script
+:::{note}   
+Many updates have changes to the database and to the Freeswitch scripts.   
+:::
 
 **Upgrade from the GUI**
 - From the GUI, run **Advanced -\> Upgrade Schema** which will add any
@@ -247,15 +252,14 @@ Needed if your menu disappeared.
 
 ### Step 6: Re-generate Settings
 
-:::{note}
-
+:::{note}   
 Sometimes variable names changes. In rev 1877 **v_config_cli.php**
 variable names changed which caused no fax to email emails or
 voicemail emails to be sent. Problem was the SMTP details did not
 exist.
 :::
 
-- Go to Advanced -> Settings and then click save. This will re-generate v_config_cli.php and any other needs config files.
+- Go to **Advanced** > **Settings** and then click save. This will re-generate **v_config_cli.php** and any other needs config files.
 
 ## Move to a different Branch
 
@@ -263,6 +267,7 @@ FusionPBX has a stable and a master(development) branch. You can switch
 from stable to master but **not recomended to downgrade.**
 
 ### Move to the Stable Branch
+
 ```
     mv /var/www/fusionpbx /var/www/fusionpbx-old
     cd /var/www && git clone -b 4.4 https://github.com/fusionpbx/fusionpbx.git

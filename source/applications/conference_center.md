@@ -5,10 +5,12 @@ organized by cost center, geographically, or other criteria.
 
 ![image](../_static/images/applications/conference_center/fusionpbx_conference_center1.png)
 
--   To Acess Conference Center goto Apps \> Conference Center
--   To view rooms click the **ROOMS** at the top right.
+-   To access the **Conference Center**, go to **Apps** > **Conference Center**
+-   To view rooms click the **ROOMS** button at the top.
 
->**Note:** For basic conferencing use Apps -\> Conferences
+:::{note}    
+For basic conferencing use Apps > Conferences.   
+:::
 
 ## Conference Center Options
 
@@ -26,11 +28,10 @@ organized by cost center, geographically, or other criteria.
 
 ## Conference Center Rooms
 
-Apps \> Conference Center \> Click **Rooms** at the top right. This will
-take you to the Conference Center Rooms. From here you can
+**Apps** > **Conference Center** > Click **Rooms** at the top right. This will
+take you to the **Conference Center Rooms**. 
 
--   Create a Room
--   Edit a Room
+From here you can create or edit a room.
 
 ![image](../_static/images/applications/conference_center/fusionpbx_conference_center3.png)
 
