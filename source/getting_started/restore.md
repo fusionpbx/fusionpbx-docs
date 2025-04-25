@@ -32,7 +32,7 @@ restore methods on test machines first.
     export PGPASSWORD="zzz"
 
     #run the remote backup
-    ssh -p 22 root@$ssh_server "nice -n -20 /etc/cron.daily/./fusionpbx-backup.sh"
+    ssh -p 22 root@$ssh_server "nice -n -20 /etc/cron.daily/./fusionpbx-backup"
 
     #delete freeswitch logs older 7 days
     find /var/log/freeswitch/freeswitch.log.* -mtime +7 -exec rm {} \;
