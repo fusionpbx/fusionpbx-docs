@@ -10,7 +10,7 @@ external_ipv6_sip_profile.md
 
 -   Advanced \> SIP Profiles
 
-![image](../_static/images/fusionpbx_sip_profiles.jpg)
+![image](../_static/images/advanced/sip_profiles/fusionpbx_sip_profiles1.png)
 
 <h2><a href="/en/latest/advanced/internal_sip_profile.html">Internal</a></h2>
 
