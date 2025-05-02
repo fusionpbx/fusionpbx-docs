@@ -25,11 +25,11 @@ video](https://youtu.be/QUB3u9pZ7ks).
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/QUB3u9pZ7ks?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
 </div>
 
-![image](../_static/images/fusionpbx_upgrade.jpg)
+![image](../_static/images/advanced/upgrade/fusionpbx_upgrade_page1.png)
 
 <br>
 
-## **Update the source from command line**
+## Update the source from command line
 
 ```
     cd /var/www/fusionpbx 
@@ -37,7 +37,7 @@ video](https://youtu.be/QUB3u9pZ7ks).
     chown -R www-data:www-data
 ```
 
-## **Back to the GUI**
+## Back to the GUI
 
 ```
     *Upgrade Database with advanced -> upgrade schema
@@ -57,7 +57,7 @@ video](https://youtu.be/QUB3u9pZ7ks).
   since your last update, you may need to follow version specific
   upgrade instructions to bring your install up to date.
 
-### **Step 1: Update FusionPBX Source**
+### Step 1: Update FusionPBX Source
 
 - **Advanced** > **Upgrade** run **Source Code** (doesn't update all files).
 
@@ -186,7 +186,7 @@ Many updates have changes to the database and to the Freeswitch scripts.
 - Then run **App Defaults**. *If you removed the scripts on Step 2 then
   run this* **twice**.
 
-![image](../_static/images/fusionpbx_upgrade_schema_data_types.jpg)
+![image](../_static/images/advanced/upgrade/fusionpbx_upgrade_page2.png)
 
 <br>
 
