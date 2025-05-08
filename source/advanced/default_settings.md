@@ -2,7 +2,7 @@
 
 Default Settings used for all domains. Branding can be done in this section, [see here to adjust](../advanced/domains.md#override-a-default-setting-for-one-domain) or copy settings to specific domains.
 
-![FusionPBX Advanced Default Settings](../_static/images/advanced/fusionpbx_advanced_default_settings.jpg)
+![FusionPBX Advanced Default Settings](../_static/images/advanced/default_settings/fusionpbx_default_settings1.png)
 
 Default Settings have several different categories. Click on the category to view more details.
 
