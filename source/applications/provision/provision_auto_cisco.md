@@ -31,16 +31,33 @@ tenant domain name.
 
 **No HTTP Authentication**
 
-<http://192.168.1.5/admin/resync?http://domain.com/app/provision/?mac=$MA>
+<http://192.168.1.5/admin/resync?http://your.domain.com/app/provision/?mac=$MA>
 
 **With HTTP Authentication**
 
-<http://192.168.1.4/admin/resync?%5B--uid+admin+--pwd+555%5Dhttp://domain.com/app/provision/?mac=$MA>
+<http://192.168.1.4/admin/resync?%5B--uid+admin+--pwd+555%5Dhttp://your.domain.com/app/provision/?mac=$MA>
 
 ## DHCP Option
 
 Use the DHCP Option 66 to deliver the provisioning URL to the phones
 without using the web interface.
+
+**ISC DHCP**
+```
+/etc/dhcp/dhcpd.conf
+```
+Add the following. Make sure to update the IP range of 192.168.1.0 to match your network and your FusionPBX domain name or IP address.
+```
+subnet 192.168.1.0 netmask 255.255.255.0 {
+  range 192.168.1.100 192.168.1.120;
+  option routers 192.168.1.1;
+  option domain-name-servers 8.8.8.8, 8.8.4.4;
+  default-lease-time 600;
+  max-lease-time 7200;
+  option www-server 192.168.1.11;
+  option tftp-server-name "http://192.168.1.11/app/provision/?mac=$MA";
+}
+```
 
 ## Additional Information
 
