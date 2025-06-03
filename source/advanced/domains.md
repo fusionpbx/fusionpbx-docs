@@ -14,8 +14,8 @@ video](https://youtu.be/frMNh43GfUo)
 
 Control the list of domains to manage.
 
-There are several reasons to create a domain (tenant). One reason would
-be to organize customers and so customers have a unique login *ie*
+There are several reasons to create a domain (tenant).   
+One reason would be to organize customers and so customers have a unique login *ie*   
 <superadmin@domain.tld> or <superadmin@subdomain.domain.tld> as the
 username.
 
@@ -27,7 +27,7 @@ In this example we will create a domain.
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains1.png)
 
-You’ll now be prompted to enter your domain information. 
+- You’ll now be prompted to enter your domain information. 
 
 :::{note}   
 Be sure to create an "A record" from your domain hosting account   
@@ -39,30 +39,35 @@ Be sure to create an "A record" from your domain hosting account
 
 ## Domain Selection
 
-Changing to a different domain click the stack of three dashes on the
-top right
+- You can select a different domain by clicking the domain icon on the top right.
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains4.png)
 
-A menu will pop open on the right of the screen. Click on the domain
-that you want to manage. You will always see the domain you are in by
-looking at the top right beside the three stacked dashes.
+- A menu will pop open on the right of the screen, then click on the domain that you want to manage.
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains3.png)
+
+:::{note}    
+The domain select will only display if you have multiple domains.   
+:::   
 
 ### [Domains Default Settings](/en/latest/advanced/default_settings.html#id7)
 
 ## Override a Default Setting for one domain
 
-On the Domains page, click "**Settings**" from the domain you wish to add settings for.
+- On the Domains page, click "**Settings**" from the domain you wish to add settings for.
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains1.png)
 
-Press "**ADD**" on the top right corner.
+- Click "**ADD**" on the top right corner.
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains5.png)
 
-Enter the setting that should be overridden for this domain, then press
-Save.
+- Enter the setting that should be overridden for this domain, then press
+  Save.
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains6.png)
+
+- The added setting will now be visible in the list .
+
+![image](../_static/images/advanced/domains/fusionpbx_domains7.png)
