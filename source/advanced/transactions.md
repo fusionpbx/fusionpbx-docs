@@ -3,7 +3,7 @@
 A list of databse changes (transactions) made by all users while logged
 into FusionPBX. Changes include
 
-![image](../_static/images/advanced/fusionpbx_advanced_database_transactions.jpg)
+![image](../_static/images/advanced/transactions/fusionpbx_database_transactions1.png)
 
 -   **Domain:** The domain the changes occured on.
 -   **User:** The user that was logged in at the time the change was
