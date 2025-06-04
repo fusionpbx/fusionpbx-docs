@@ -3,6 +3,8 @@
 Manage sending emails in a queue. Also works with the transcription of
 audio files with IBM Watson, Azure, or Google.
 
+![image](../_static/images/Status/email_queue/fusionpbx_email_queue1.png)
+
 ## Install Instructions
 
 -   Make sure to upgrade to the latest FusionPBX version
