@@ -17,11 +17,10 @@ these registered IP addresses that were authenticated.
 
 ### Install Instructions
 
--   Make sure to upgrade to the latest FusionPBX version
--   Update the database structure
-    -   Advanced -\> Upgrade -\> Schema
--   Update App Defaults
-    -   Advanced -\> Upgrade -\> App Defaults
+:::{important}   
+Make sure to [Upgrade](https://docs.fusionpbx.com/en/latest/advanced/upgrade.html#) to the latest FusionPBX version.   
+:::   
+
 -   Run the following commands to install as a service
 
 ```
@@ -31,7 +30,8 @@ these registered IP addresses that were authenticated.
     systemctl daemon-reload
 ```
 
-- or as a cron job
+- Or as a cron job
+
 ```
 php /var/www/fusionpbx/app/event_guard/resources/service/event_guard.php >/dev/null 2>&1 &
 ```
