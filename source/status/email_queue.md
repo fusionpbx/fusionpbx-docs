@@ -7,11 +7,10 @@ audio files with IBM Watson, Azure, or Google.
 
 ## Install Instructions
 
--   Make sure to upgrade to the latest FusionPBX version
--   Update the database structure
-    -   **Advanced** > **Upgrade** > **Schema**
--   Update App Defaults
-    -   **Advanced** > **Upgrade** > **App Defaults**
+:::{important}   
+Make sure to [Upgrade](https://docs.fusionpbx.com/en/latest/advanced/upgrade.html#) to the latest FusionPBX version.   
+:::   
+
 -   Run the following commands to install as a service
 
 ```
