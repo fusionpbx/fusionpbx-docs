@@ -30,7 +30,7 @@ Other section is bits of info that needs indexed for the PDF to populate all sec
 #applications/provision/provision_manual_zoiper.md
 #applications/provision/provision_manual_snom.md
 #applications/provision/phone_screen_capture.md
-applications/xmpp.md
+#applications/xmpp.md
 applications_optional/webrtc.md
 #additional_information/sngrep.md
 features/parking.md
