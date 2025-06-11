@@ -8,7 +8,7 @@ functions, and produce the desired result.
 
 You can create a new dialplan or copy and modify an existing dialplan.
 
--   Go to Dialplan \> Dialplan Manager
+-   Go to **Dialplan > Dialplan Manager**.
 -   Click the **ADD** button at the top right.
 
 ![image](../_static/images/dialplan/fusionpbx_dialplan_advanced1.png)
@@ -31,9 +31,9 @@ more blank fileds will populate if needed.
 ## Enable a Dialplan Destination
 
 Dialplans that have a value in the **Number** filed can be enabled and
-used in [Dialplan \> Destinations](../dialplan/destinations.html).
+used in [Dialplan > Destinations](../dialplan/destinations.html).
 Setting the **destination** field to **True** will enable the dialplan
-to be visable and used as an action in [Dialplan \>
+to be visable and used as an action in [Dialplan >
 Destinations](../dialplan/destinations.html).
 
 ![image](../_static/images/dialplan/fusionpbx_dialplan_advanced5.png)
@@ -58,8 +58,8 @@ extensions are 3 digit then you would use 3 instead of 4.
 
 ![image](../_static/images/dialplan/fusionpbx_custom_dialplan.png)
 
->**Note:**   
->A quick way to find a domains uuid is by going to Advanced \> Domains.   
->Then click the edit icon on the domain you want to know the uuid of. The   
->uuid will be at the end of the url.
+:::{note}   
+A quick way to find a domains uuid is by going to **Advanced > Domains**.   
+Then click the edit icon on the domain you want to know the uuid of. The uuid will be at the end of the url.   
+:::   
 
