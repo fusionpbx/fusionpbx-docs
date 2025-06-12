@@ -16,8 +16,7 @@ commands.
     chown -R www-data:www-data /var/www/fusionpbx/app/command
 ```
 
--   Run Advanced \> Upgrade \> Menu Defaults
--   Run Advanced \> Upgrade \> Permission Defaults
+-   Navigate to **Advanced** > **Upgrade**, run **Menu** and **Permission Defaults**.
 -   Log out and then Log back in
 
 ## Upgrade
