@@ -21,7 +21,7 @@ username.
 
 In this example we will create a domain.
 
-- Navigate to Advanced then click Domains.
+- Navigate to **Advanced** > **Domains**.
 
 - Then click "**ADD**" on the right.
 
@@ -31,7 +31,7 @@ In this example we will create a domain.
 
 :::{note}   
 Be sure to create an "A record" from your domain hosting account   
-:::
+:::   
 
 ![image](../_static/images/advanced/domains/fusionpbx_domains2.png)
 
