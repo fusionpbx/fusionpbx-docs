@@ -17,7 +17,7 @@ commands.
 ```
 
 -   Navigate to **Advanced** > **Upgrade**, run **Menu** and **Permission Defaults**.
--   Log out and then Log back in
+-   Log out and back in.
 
 ## Upgrade
 
