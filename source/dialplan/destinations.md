@@ -20,17 +20,14 @@ Outbound destinations can be created also.
 To add a destination, **click** on the **plus** button on the right.
 
 ![FusionPBX Destinations 1](../_static/images/dialplan/fusionpbx_destinations1.png)  
-*Note: Image scaled to 60% in original.*
 
 *Enter* the route information below and *click* **Save** once complete.
 
 ![FusionPBX Destinations 2](../_static/images/dialplan/fusionpbx_destinations2.png)  
-*Note: Image scaled to 60% in original.*
 
 *Examples* of options under **Actions** and **Conditions**.
 
 ![FusionPBX Destinations 3](../_static/images/dialplan/fusionpbx_destinations3.png)  
-*Note: Image scaled to 85% in original.*
 
 - **Type:** Inbound or Outbound. Choose if this is an inbound destination or outbound destination.
 - **Destination:** This is usually the DID a caller will call.
