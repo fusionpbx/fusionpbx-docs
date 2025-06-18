@@ -8,13 +8,12 @@ XMPP Manager there are a few step to take to enble XMPP.
 **XMPP Profile**
 
 -   FusionPBX menu.
--   Accounts -\> XMPP manager.
--   Click the **plus** on the right to create a profile.
+-   **Accounts** > **XMPP manager**.
+-   Click the **ADD** on the right to create a profile.
 
-:::{note}
-
-Google has since depricated xmpp service.   
-:::
+:::{note}   
+Google has since deprecated xmpp service.   
+:::   
 
 In this example we will setup Google Talk and by creating a profile
 called gtalk.
@@ -57,19 +56,18 @@ the multi-tenant domain name.
 
 ```
     Default extension: 1001
-    Advanced -> Context: your.domain.com
+    Advanced > Context: your.domain.com
 ```
 
-Save the settings and restart the module. Restart the \'XMPP\' module
-from Advanced -\> Modules page. Go back to Accounts -\> XMPP if the
-status says **\'AUTHORIZED\'** then you are ready to go.
+Save the settings and restart the module. Restart the 'XMPP' module
+from **Advanced** > **Modules** page. Go back to **Accounts** > **XMPP** if the
+status says **'AUTHORIZED'** then you are ready to go.
 
-:::{note}
-
-If you are not getting AUTHORIZED you might need to go to the
-google account settings and choose \"Allow less secure apps: ON\" under
+:::{note}   
+If you are not getting AUTHORIZED you might need to go to the   
+google account settings and choose "Allow less secure apps: ON" under
 the Sign-in & security section.   
-:::
+:::   
 
 ![image](../_static/images/fusionpbx_xmpp5.jpg)
 
@@ -112,14 +110,14 @@ Go to command line
 
 Go to FusionPBX GUI
 
-Go to the GUI and click advanced \> menu manager \> edit icon \> click
-\"Restore Defaults\" at top right
+Go to the GUI and click **Advanced** > **Menu Manager** and select
+**"Restore Defaults"** at top right.
 
-Then go to Advanced \> Upgrade click Schema, Data Types, and Permission
-Defaults then click execute
+Then go to **Advanced** > **Upgrade** and run **Schema**, **Data Types** and **Permission
+Defaults** then click execute.
 
-Click status \> sip status \> Flush Memcache
+Click **Status** > **Sip Status** > **Flush Memcache**.
 
-Log out then back in
+Log out then back in.
 
 You should now have XMPP Manager under Accounts.
