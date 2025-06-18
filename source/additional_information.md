@@ -17,7 +17,7 @@ additional_information/email.md
 additional_information/toll_allow.md
 #additional_information/tftp.md
 additional_information/nat.md
-applications/provision.md
+#applications/provision.md
 advanced/version_upgrade.md
 additional_information/releases.md
 additional_information/regex.md
