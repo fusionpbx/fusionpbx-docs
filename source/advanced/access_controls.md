@@ -26,19 +26,21 @@ at the end of the IP address.
 ## Access Control Example
 
 - Goto **Advanced** > **Access Controls**.
-- Click the **providers** tab.
 
 ![image](../_static/images/advanced/access_controls/fusionpbx_access_controls1.png)
 
-- Under **nodes** select the **Type** to **allow** or **deny**.
+- Click the **providers** tab.
 
 ![image](../_static/images/advanced/access_controls/fusionpbx_access_controls2.png)
 
-- Add the desired IP address under **CIDR** and add a description (optional).
+- Under **nodes** select the **Type** to **allow** or **deny**.
 
 ![image](../_static/images/advanced/access_controls/fusionpbx_access_controls3.png)
 
+- Add the desired IP address under **CIDR** and add a description (optional).
 - Then click save. 
+
+![image](../_static/images/advanced/access_controls/fusionpbx_access_controls4.png)
 
 :::{note}   
 In the example below, make sure to change the 12.34.56.0 to   
