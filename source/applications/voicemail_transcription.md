@@ -33,8 +33,8 @@ This document provides a step-by-step guide for setting up the email transcripti
 | Subcategory | Type   | Value            | Enabled | Description                                           |
 |-------------|--------|------------------|---------|-------------------------------------------------------|
 | api_key     | text   | secret_key       | true    | Speech to Text API key                                |
-| api_url     | text   | https://api...   | false   | ***Leave this alone unless using a custom service*** |
-| enabled     | boolean| true            | true    | Speech to Text Enabled                                |
+| api_url     | text   | https://api...   | false   | ***Leave this alone unless using a custom service***  |
+| enabled     | boolean| true             | true    | Speech to Text Enabled                                |
 | engine      | text   | openai           | true    | Options: openai, google, azure, custom                |
 
 - Click **Reload** to apply the changes.
@@ -58,11 +58,11 @@ The primary function handling voicemail transcriptions is defined in [transcribe
 
 ---
 
-# Voicemail Transcription in FusionPBX 5.2 and Older
+## Version 5.2 or Older
 
 Uses API services to transcribe voicemails into text for use in the app-sms and voicemail-to-email options. Bing's Speech API or other generic APIs can be used.
 
-## IBM Watson API
+### IBM Watson API
 Sign up and language information is located on [IBM Watson's Site](https://cloud.ibm.com/catalog/services/speech-to-text).
 
 :::{warning}   
@@ -96,7 +96,7 @@ Click "Flush Cache", "Reload XML", and "Rescan".
 
 If you entered your keys correctly, you should now start getting transcriptions delivered in your voicemail-to-email and see them on the Messages page.
 
-## Azure API
+### Azure API
 **Go to Advanced > Default Settings.**  
 Add the following entries:
 
@@ -116,7 +116,7 @@ Click "Flush Cache", "Reload XML", and "Rescan".
 
 If you entered your keys correctly, you should now start getting transcriptions delivered in your voicemail-to-email and see them on the Messages page.
 
-## Google API
+### Google API
 **Go to Advanced > Default Settings.**  
 Add the following entries:
 
@@ -136,7 +136,7 @@ Click "Flush Cache", "Reload XML", and "Rescan".
 
 If you entered your keys correctly, you should now start getting transcriptions delivered in your voicemail-to-email and see them on the Messages page.
 
-## Bing API
+### Bing API
 Recommend using Azure as an alternative to Bing.
 
 Sign up and language information is located on [Microsoft Site](https://www.microsoft.com/cognitive-services/en-us/Speech-api/documentation/API-Reference-REST/BingVoiceRecognition).  
@@ -164,7 +164,7 @@ Click "Flush Cache", "Reload XML", and "Rescan".
 
 If you entered your keys correctly, you should now start getting transcriptions delivered in your voicemail-to-email and see them on the Messages page.
 
-## Custom API
+### Custom API
 Currently does not work with the FusionPBX email_queue.
 
 API info from the Speech-to-Text provider of your choice is needed, or you can self-host a transcription engine like [Mozilla DeepSpeech](https://git.callpipe.com/fusionpbx/deepspeech_frontend) or [Kaldi ASR](https://github.com/dialogflow/asr-server).
