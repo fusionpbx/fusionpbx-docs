@@ -23,13 +23,13 @@ Avoid putting both the domain and cidr on the same node.
 If adding a single IP address to the CIDR field make sure to add /32   
 at the end of the IP address.   
 
-## Access Control Example
+## Access Controls Example
 
-- Goto **Advanced** > **Access Controls**.
+- Navigate to **Advanced** > **Access Controls**.
 
 ![image](../_static/images/advanced/access_controls/fusionpbx_access_controls1.png)
 
-- Click the **providers** tab.
+- Click the **providers** tab to edit it.
 
 ![image](../_static/images/advanced/access_controls/fusionpbx_access_controls2.png)
 
