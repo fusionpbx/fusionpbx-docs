@@ -26,7 +26,7 @@ several purposes for using the ACL.
 - Add the desired IP address under **CIDR** and add a description (optional).
 - Then click save. 
 
-:::{note}
+:::{note}   
 In the example below, make sure to change the 12.34.56.0 to   
 your VoIP providers IP address if adding to the providers access control list.   
 :::   
