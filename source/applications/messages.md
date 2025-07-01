@@ -8,7 +8,7 @@ phones that support message_queue.
 
 This feature supports multiple Providers simultaneously.   
 
-### Install
+## Install
 
 ```
     cd /var/www/fusionpbx/app
@@ -26,7 +26,7 @@ Navigate to **Advanced** > **Upgrade** and run the following:
 -   Group Permissions
 -   Menu Defaults
 
-### Menu
+## Menu
 
 ```
     If you used restore menu defaults you can skip this step.
@@ -99,7 +99,7 @@ server {
 
 <br>
 
-### Setup
+## Setup
 
 -   Go to **Accounts** > **Providers**.
 -   Press the **ADD** button and find your provider and then press the   
@@ -126,22 +126,22 @@ server {
     destination. It makes it possible to the number without the country   
     code, with the country code and e.164.   
 
-## Extensions
+### Extensions
 
 -    In **Accounts** > **Extensions** make sure the user is   
      assigned to an extension.   
 
-## Mobile
+### Mobile
 
 -    On your mobile phone send an SMS or MMS message to the   
      number you set up for SMS with the provider.   
 
-## Messages
+### Messages
 
 -    In **Application** > **Messages** you can use the **New   
      Messages** button to send an SMS or MMS message.   
 
-## Providers
+### Providers
 
 -    The providers are identified and allowed to use IP   
      authentication.   
