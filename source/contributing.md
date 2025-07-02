@@ -12,9 +12,9 @@ There are many ways to help the FusionPBX project.
 
 :::{note}   
 If you are planning to contribute to any of our GitHub repos, we require that you sign   
-the FusionPBX Contributor License Agreement. This mainly protects FusionPBX and our users **(read: you)**   
+the FusionPBX Contributor License Agreement. This mainly protects FusionPBX and our users
 from code that could be inserted that might pose a legal problem. It does this by verifying the code you're   
-contributing is yours to give and that you give it freely and irrevocably to the project.   
+contributing is yours to give and that you give it freely and irrevocably to the project.
 :::   
 
 ### How to Get Started
@@ -35,13 +35,10 @@ Contributing code or documentation requires knowledge of Git, GitHub, and how to
 This is not as bad as it sounds, and if you are willing to learn, we will help you through it.   
 :::   
 
-### Table of Contents
+```{toctree}
+:maxdepth: 1
 
-- [Contributing Code](contributing/contributing_code.md)
-- [Signing the CLA](contributing/signing_the_cla.md)
-- [Contributing Documentation](contributing/contributing_documentation.md)
-- [Contributing Translations](contributing/contributing_translations.md)
-- [QA Testing](contributing/qa_testing.md)
-- [GitHub Rebase](contributing/github_rebase.md)
-- [Coding Standards](contributing/coding_standards.md)
-<!-- # [Directory Structure](contributing/directory_structure.md) -->
+contributing/sign_the_cla.md
+contributing/github_rebase.md
+contributing/coding_standards.md
+```
