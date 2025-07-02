@@ -11,12 +11,11 @@ youtube video](https://youtu.be/rhyfCKLBI-Y).
 **Configuring an Outbound Route.**
 
 -   Select **Dialplan** from the drop-down list and then click
-    **Outbound Routes** .
+    **Outbound Routes**.
 -   Click the **plus** button on the right. Enter the route information
     below and Click **Save** once entry is complete.
 
 ![image](../_static/images/dialplan/fusionpbx_outbound_routes1.png)
-
 
 ![image](../_static/images/dialplan/fusionpbx_outbound_routes2.png)
 
@@ -33,43 +32,45 @@ FusionPBX. Thank you for your support!**
 
 ### Pin Numbers
 
-To have the system ask for a PIN number before a call is made. A good
-use is if you don\'t want every user on the system to be able to call
-international destinations. This can be done with a single PIN or
-multiple PINs by using the \"PIN Number APP\".
+Have the system ask for a PIN number before a call is made. A good use is   
+if you don't want every user on the system to call international destinations. 
+
+This can be done with a single PIN or multiple PINs by using the "PIN Number APP".
 
 #### **To use a single PIN number for all calls**
 
 Before the bridge action on the outbound route add the following actions
 
+```
     action set pin_number=(Whatever pin number you choose)
     action lua pin_number.lua
+```
 
 #### **To use the PIN Number App to manage multiple PINs**
 
--   First enable access to the **\"PIN Number\"** app by giving
+-   First enable access to the **"PIN Number"** app by giving
     permissions to the group of users you want to have access in
-    **Advanced \> Group Manager**. Make sure the **\"PIN Number\"** App
+    **Advanced** > **Group Manager**. Make sure the **"PIN Number"** App
     is displayed in the menu by selecting the groups that can view it in
-    **Advanced \> Menu Manager**.
--   Set the PINs you would like to use in **Apps \> PIN Numbers**
+    **Advanced** > **Menu Manager**.
+-   Set the PINs you would like to use in **Apps** > **PIN Numbers**
 
 Before the bridge action on the outbound route add the following actions
 
+```
     action set pin_number=database
     action lua pin_number.lua
+```
 
 #### Which gateway is my call using?
 
 If you want to know the gateway your call is using there is currently no
-way to do this with FusionPBX\'s GUI. Instead you can do it this way.
+way to do this with FusionPBX's GUI. Instead you can do it this way.
 
--   Go to **Advanced -\> Command** and in the **switch** command
+-   Go to **Advanced** > **Command** and in the **switch** command
     dropdown section type
 
-<!-- -->
-
-    show channels as xml and then press the execute button.
+-   show channels as xml and then press the execute button.
 
 -   In the output that is returned, look for the string **sofia/gateway/
     and the gateway name.** This is the gateway your call is using.
