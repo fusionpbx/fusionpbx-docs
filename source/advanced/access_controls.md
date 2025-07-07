@@ -14,9 +14,7 @@ calls not working between extensions and other undesirable results.
 :::{improtant}   
 Make sure you keep the **providers** access control (formerly known as   
 "domains") as default "**deny**".   
-
 Do not put your public ip or phone IP addresses in the domains access control list.   
-
 Avoid putting both the domain and cidr on the same node.   
 :::   
 
