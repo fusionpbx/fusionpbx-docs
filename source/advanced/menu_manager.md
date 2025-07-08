@@ -4,11 +4,6 @@ Used to customize one or more menus.
 
 ![image](../_static/images/advanced/menu_manager/fusionpbx_menu_manager1.png)
 
-:::{note}   
-Make sure you mark any customized menu items as "protected". Running App Defaults    
-on the upgrade page will reset all unprotected items to their default values.   
-:::   
-
 ![image](../_static/images/advanced/menu_manager/fusionpbx_menu_manager2.png)
 
 ## Menu Icons
