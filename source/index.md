@@ -36,6 +36,10 @@ We are a global community that has an open and very friendly ecosystem. We encou
 
 Most of the core folks who develop and use FusionPBX can be found hanging out in the IRC network **irc.libera.chat** in the **#fusionpbx** channel. Come join us and meet the team!
 
+## Overview
+
+Use the following links below or the menu on the left to navigate to the features you are interested in.
+
 ```{toctree}
 getting_started.md
 home.md
