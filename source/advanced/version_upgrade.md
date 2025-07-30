@@ -5,6 +5,165 @@ to upgrade from specific versions.
 
 <br>
 
+## Upgrade from 5.3 to 5.4
+---
+
+### Minimum Requirement PHP 7.1 or higher
+
+You can check your version of PHP from Status -> System Status or the command line with the following command.
+```nginx -t && nginx -s reload
+php -v
+```
+
+>
+
+### Update source code, then run upgrade.php
+
+>
+
+Run the following commands when connected to your server over SSH.
+
+**Change to the 5.4 release**
+```
+cd /var/www/fusionpbx
+git stash
+git pull
+git checkout 5.4
+git branch
+git pull
+```
+
+**Upgrade Commands**
+```
+mkdir /var/run/fusionpbx
+chown -R www-data:www-data /var/run/fusionpbx
+php /var/www/fusionpbx/core/upgrade/upgrade.php --schema
+php /var/www/fusionpbx/core/upgrade/upgrade.php --defaults
+php /var/www/fusionpbx/core/upgrade/upgrade.php --permissions
+php /var/www/fusionpbx/core/upgrade/upgrade.php --service
+nginx -t && nginx -s reload
+```
+
+---
+
+###Domains member feature.
+
+The latest FusionPBX code requires a new version of the Domains member feature. If this member feature has been installed, then use the following command line to remove it.
+
+These commands could be used to remove the app/domains feature.
+```
+rm -R /var/www/fusionpbx/app/domains
+```
+
+Use the application manager to re-install the domains member feature.
+
+---
+
+### Dialplan
+
+The **user_record** dialplan has been updated to support call recordings in stereo.
+- Go to Dialplan -> Dialplan Manager
+- Add this **user_record** to the search.
+- Press the SEARCH button
+- Press the SHOW ALL button
+- Use the Checkbox next to Domain to select all of the Dialplans 
+- Then press the DELETE button.
+- Go to Advanced -> Upgrade
+- Put a checkmark in the App Defaults checkbox
+- Press the EXECUTE button.
+- Go to Status -> SIP Status
+- Press the FLUSH CACHE button.
+
+---
+
+>
+
+### Users
+
+If the users list is empty at Accounts -> Users. A change was made to the user's database view. Upgrade App Defaults will update this view. If you have already run App Defaults or the upgrade.php commands above, then the list should work.
+
+- Go to Advanced -> Upgrade
+- Put a checkmark in the App Defaults checkbox
+- Press the EXECUTE button.
+- Go to Status -> SIP Status
+
+---
+
+### Websockets
+
+Ensure the folder where the PID file is saved is owned by www-data using the command:
+```
+chown -R www-data:www-data /var/run/fusionpbx
+```
+
+This command will attempt to add websockets to the ssl 443 section of your nginx config file. If websockets will not connect (denoted by a red circle in the active call count), please use the manual update method below.
+```
+php /var/www/fusionpbx/core/upgrade/upgrade.php --service
+```
+
+To test the changes and apply them, run this command.
+```
+nginx -t && nginx -s reload
+```
+
+### **Update the Menu**
+
+You can restore the Default Menu with the Restore Default button in Advanced -> Menu Manager. 
+
+Or you can update the menu manually by using the following instructions to update the active calls path.
+
+- Go to Advanced -> Menu Manager
+- Edit the default menu
+- Find Active Calls
+- Click on Active Calls to edit its settings
+- Change the link to 
+```
+/app/active_calls/active_calls.php
+```
+- Then press the SAVE button
+- After this, press the RELOAD button or log out and back in.
+
+---
+
+>
+
+---
+
+
+### **Optional Manual Method**
+Install the WebSocket services and NGINX settings. If you ran upgrade.php --service then in most cases you shouldn't need to do this.
+
+**Configure NGINX**
+
+**Manual**
+
+Add the following to the 
+```
+nano /etc/nginx/sites-enabled/fusionpbx
+```
+
+Open the file and add this, find the section for 443, and just above dehydrated, add the following settings.
+
+```
+        #redirect websockets to port 8080
+        location /websockets/ {
+                 proxy_pass http://127.0.0.1:8080;
+                 proxy_http_version 1.1;
+                 proxy_set_header Upgrade $http_upgrade;
+                 proxy_set_header Connection "upgrade";
+                 proxy_set_header Host $host;
+        }
+```
+
+Reload the NGINX config without restarting the service.
+```
+nginx -t && nginx -s reload
+```
+This commit shows you where to put this in the file.
+- https://github.com/fusionpbx/fusionpbx-install.sh/commit/e25129c99aeb8164fe05ac04cbb52528608c9625
+
+<br>
+
 ## Version 5.2 to 5.3
 
 These instructions for upgrade are also relevant to versions of   
