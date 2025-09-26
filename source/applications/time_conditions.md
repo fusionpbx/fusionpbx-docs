@@ -13,7 +13,7 @@ mandatory.
 -   **Order** Changes the order of which condition is evaluated first.
 -   **Enabled** If the ring group is enabled.
 
-![image](../_static/images/fusionpbx_time_conditions.jpg)
+![image](../_static/images/applications/time_conditions/fusionpbx_time_conditions1.png)
 
 ## Time Conditions Example
 
@@ -28,14 +28,14 @@ list choose *Time of Day* for the condition, *5:00 PM* for the value and
 *11:00 PM* for the Range. If other options are needed just click the +
 to the right of Range.
 
-![image](../_static/images/fusionpbx_time_conditions1.jpg)
+![image](../_static/images/applications/time_conditions/fusionpbx_time_conditions2.png)
 
 The next dropdown choose the extension where the call is intended for.
 If the call is outside the date and time specified the call will goto
 the **Alternate Destination** dropdown. Be sure **Enabled** is set
 *True* and click save.
 
-![image](../_static/images/fusionpbx_time_conditions2.jpg)
+![image](../_static/images/applications/time_conditions/fusionpbx_time_conditions3.png)
 
 ## **Conditions**
 
