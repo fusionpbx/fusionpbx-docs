@@ -2,7 +2,7 @@
 
 To edit voicemail settings, click the pencil edit icon on the right of the extension number.
 
-![Voicemail Settings](../_static/images/voicemail/fusionpbx_voicemail.jpg)
+![Voicemail Settings](../_static/images/applications/voicemail/fusionpbx_voicemails1.png)
 
 Here you can edit voicemail settings:
 
@@ -16,7 +16,9 @@ Here you can edit voicemail settings:
 - **Forward Destinations**: Forward voicemail messages to additional destinations
 - **Enabled**: Enable or disable the voicemail box
 
-![Voicemail Settings Continued](../_static/images/voicemail/fusionpbx_voicemail2.jpg)
+![Voicemail Settings Continued](../_static/images/applications/voicemail/fusionpbx_voicemails3.png)
+
+![Voicemail Settings Continued](../_static/images/applications/voicemail/fusionpbx_voicemails2.png)
 
 :::{note}   
 Starting version 4.2, remote access to voicemail by interrupting the greeting message   
