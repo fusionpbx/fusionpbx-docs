@@ -10,11 +10,11 @@ to upgrade from specific versions.
 
 ### Pre-release instructions
 
-This is a pre-release, and so these instructions can be changed up to the 5.5 release.
+This is a pre-release, and so these instructions are subject to change before the official 5.5 release.
 
-### Update source code, then run upgrade.php
+**Update source code, then run upgrade.php**
 
-Run the following commands when connected to your server over SSH.
+-   Run the following commands when connected to your server over SSH.
 
 ```
 cd /var/www/fusionpbx
@@ -45,7 +45,7 @@ php /var/www/fusionpbx/core/upgrade/upgrade.php --services
 
 ### Minimum Requirement PHP 7.1 or higher
 
-You can check your version of PHP from Status -> System Status or the command line with the following command.
+You can check your version of PHP from **Status** > **System Status** or the command line with the following command.
 
 ```
 nginx -t && nginx -s reload
