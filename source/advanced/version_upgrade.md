@@ -5,6 +5,43 @@ to upgrade from specific versions.
 
 <br>
 
+## Upgrade from 5.4 to 5.5
+---
+
+### Pre-release instructions
+
+This is a pre-release, and so these instructions can be changed up to the 5.5 release.
+
+>
+
+### Update source code, then run upgrade.php
+
+>
+
+Run the following commands when connected to your server over SSH.
+
+```
+cd /var/www/fusionpbx
+git stash
+git pull
+git branch
+git pull
+```
+
+**Upgrade Commands**
+```
+mkdir /var/run/fusionpbx
+chown -R www-data:www-data /var/run/fusionpbx
+php /var/www/fusionpbx/core/upgrade/upgrade.php --schema
+php /var/www/fusionpbx/core/upgrade/upgrade.php --defaults
+php /var/www/fusionpbx/core/upgrade/upgrade.php --types
+php /var/www/fusionpbx/core/upgrade/upgrade.php --optional
+php /var/www/fusionpbx/core/upgrade/upgrade.php --permissions
+php /var/www/fusionpbx/core/upgrade/upgrade.php --services
+```
+
+<br>
+
 ## Upgrade from 5.3 to 5.4
 ---
 
