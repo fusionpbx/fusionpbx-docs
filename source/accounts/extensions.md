@@ -52,10 +52,10 @@ the domain the endpoint is registering to.
 -   Used by the outbound route for the external caller ID name.
     Typically, the business or organization name is set here. 
     
-	:::{note}
-	Your SIP provider may or may not allow this name to be
-	transmitted to the receiving party.   
-	:::
+:::{note}   
+Your SIP provider may or may not allow this name to be
+transmitted to the receiving party.   
+:::
 
 **Outbound Caller ID Number**
 
@@ -281,13 +281,13 @@ the domain the endpoint is registering to.
 
 ### Advanced Settings
 
-:::{warning}
+:::{warning}   
 <p class="admonition-title">Warning</p>
 
 Exercise caution when modifying advanced settings within extensions.
 Ensure you fully understand the purpose and impact of any changes, as
 incorrect configurations can disrupt the extension's functionality.
-Always back up your settings before making adjustments.
+Always back up your settings before making adjustments.   
 :::
 
 ### Advanced
@@ -320,11 +320,11 @@ Always back up your settings before making adjustments.
 	restrict access to your FusionPBX server to only certain subnets, you
 	would specify those IP ranges in CIDR notation under this setting.
 
-	:::{note}
-	The CIDR setting is typically used by advanced users or network
-	administrators who need to configure more precise network security or
-	routing rules.   
-	:::
+:::{note}   
+The CIDR setting is typically used by advanced users or network
+administrators who need to configure more precise network security or
+routing rules.   
+:::
 
 **SIP Force Contact**
 
