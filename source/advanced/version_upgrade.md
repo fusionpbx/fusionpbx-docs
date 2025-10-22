@@ -99,28 +99,27 @@ rm -R /var/www/fusionpbx/app/domains
 ### Dialplan
 
 The **user_record** dialplan has been updated to support call recordings in stereo.
-- Go to Dialplan -> Dialplan Manager
+- Go to **Dialplan** > **Dialplan Manager**
 - Add this **user_record** to the search.
 - Press the SEARCH button
 - Press the SHOW ALL button
 - Use the Checkbox next to Domain to select all of the Dialplans 
 - Then press the DELETE button.
-- Go to Advanced -> Upgrade
+- Go to **Advanced** > **Upgrade**
 - Put a checkmark in the App Defaults checkbox
 - Press the EXECUTE button.
-- Go to Status -> SIP Status
-- Press the FLUSH CACHE button.
+- Go to **Status** > **SIP Status**
+- Press the **FLUSH CACHE** button.
 
 ---
 
 ### Users
 
-If the users list is empty at Accounts -> Users. A change was made to the user's database view. Upgrade App Defaults will update this view. If you have already run App Defaults or the upgrade.php commands above, then the list should work.
+If the users list is empty at **Accounts** > **Users**. A change was made to the user's database view. Upgrade App Defaults will update this view. If you have already run App Defaults or upgrade.php commands above, then the list should work.
 
-- Go to Advanced -> Upgrade
-- Put a checkmark in the App Defaults checkbox
-- Press the EXECUTE button.
-- Go to Status -> SIP Status
+- Go to **Advanced** > **Upgrade**
+- Select and run **App Defaults**
+- Go to **Status** > **SIP Status**
 
 ---
 
