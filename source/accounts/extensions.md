@@ -282,8 +282,6 @@ transmitted to the receiving party.
 ### Advanced Settings
 
 :::{warning}   
-<p class="admonition-title">Warning</p>
-
 Exercise caution when modifying advanced settings within extensions.
 Ensure you fully understand the purpose and impact of any changes, as
 incorrect configurations can disrupt the extension's functionality.
