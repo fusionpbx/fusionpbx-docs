@@ -7,7 +7,7 @@ the Destination Number (for outbound calls).
 ## Creating a New Call Block
 
 To create a new Call Block, click the **Add** button at the top-right of
-the Call Block list page. A simple form will be presented\...
+the Call Block list page. A simple form will be presented...
 
 ![image](../_static/images/fusionpbx_call_block1.png)
 
@@ -20,8 +20,8 @@ the Call Block list page. A simple form will be presented\...
 - **Name**: Enter the Caller ID Name that should be blocked. (Note: An
   **exact, case-sensitive** match is necessary, but this field can be
   considered optional if a Number is specified.)
-- **Number**: Enter the Country Code (eg. US = \'1\') and the number to
-  block. For *Inbound* calls, enter the calling party\'s number. For
+- **Number**: Enter the Country Code (eg. US = '1') and the number to
+  block. For *Inbound* calls, enter the calling party's number. For
   *Outbound* calls, enter the Destination Number. (Note: An *exact match*
   is necessary, but this field can be considered optional if a Number is
   specified.)
