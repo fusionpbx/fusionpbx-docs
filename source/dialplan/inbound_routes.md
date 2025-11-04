@@ -21,8 +21,8 @@ to an auto attendant, huntgroup, extension, external number, or a
 script. Order is important when an anti-action is used or when there are
 multiple conditions that match.
 
-**Inbound routes can be used for advanced reasons**. [Dialplan \>
-Destinations](http://docs.fusionpbx.com/en/latest/dialplan/destinations.html)
+**Inbound routes can be used for advanced reasons**. [Destinations]
+(http://docs.fusionpbx.com/en/latest/dialplan/destinations.html)
 **will create and configure the Inbound Route for you.**
 
 ![image](../_static/images/dialplan/fusionpbx_inbound_routes1.png)
@@ -58,8 +58,8 @@ Destinations](http://docs.fusionpbx.com/en/latest/dialplan/destinations.html)
 
 Add button allows creating an inbound route. The list of destinations
 for the Destination Number select list is populated by the list from the
-Destinations tool. This list can be found by navigating to Menu -\>
-Dialplan -\> Destinations. Note: It is recommended to use Destinations
+Destinations tool. This list can be found by navigating to **Menu** >
+**Dialplan** > **Destinations**. Note: It is recommended to use Destinations
 tool and select where to route the call and have it build the inbound
 routes. There are many benefits to the destination select tool. Manually
 creating an inbound route is not recommended unless you need an advanced
