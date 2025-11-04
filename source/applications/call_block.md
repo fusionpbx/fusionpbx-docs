@@ -13,45 +13,41 @@ the Call Block list page. A simple form will be presented\...
 
 **Field Descriptions**
 
-**Direction** - Select the direction of the calls you wish to block
-(*Inbound* or *Outbound*)
-
-**Extension** - Select which extension (if any) the Call Block should
-affect.
-
-**Name** - Enter the Caller ID Name that should be blocked. (Note: An
-**exact, case-sensitive** match is necessary, but this field can be
-considered optional if a Number is specified.)
-
-**Number** - Enter the Country Code (eg. US = \'1\') and the number to
-block. For *Inbound* calls, enter the calling party\'s number. For
-*Outbound* calls, enter the Destination Number. (Note: An *exact match*
-is necessary, but this field can be considered optional if a Number is
-specified.)
-
-**Action** - The action to take if the Name and/or Number is matched:
-Reject the call, play a busy signal, transfer to a specific extension,
-or voicemail box, etc.
-
-**Enabled** - True or False
-
-**Description** - The reason for blocking the number (? - you decide ;).
+- **Direction**: Select the direction of the calls you wish to block
+  (*Inbound* or *Outbound*)
+- **Extension**: Select which extension (if any) the Call Block should
+  affect.
+- **Name**: Enter the Caller ID Name that should be blocked. (Note: An
+  **exact, case-sensitive** match is necessary, but this field can be
+  considered optional if a Number is specified.)
+- **Number**: Enter the Country Code (eg. US = \'1\') and the number to
+  block. For *Inbound* calls, enter the calling party\'s number. For
+  *Outbound* calls, enter the Destination Number. (Note: An *exact match*
+  is necessary, but this field can be considered optional if a Number is
+  specified.)
+- **Action**: The action to take if the Name and/or Number is matched:
+  Reject the call, play a busy signal, transfer to a specific extension,
+  or voicemail box, etc.
+- **Enabled**: True or False
+- **Description**: The reason for blocking the number (? - you decide ;).
 
 :::{note}   
 Call Blocks can also be added in bulk using the Recent Calls list below the form.   
 :::
 
-**Outbound Call Blocking**
+## Outbound Call Blocking
 
-Outbound call blocking requires an additional dialplan entry.
+This requires an additional dialplan entry.
 
 If one doesn't exist already, add a new **call-direction** Outbound
 Route to set `call_direction=outbound`.
 
 ![image](../_static/images/fusionpbx_call_block1.jpg)
 
-**Be sure to set \*Continue\* to True, or dialplan execution will never
-reach your existing Outbound Routes!**
+:::{important}   
+Be sure to set *Continue* to True, or dialplan execution will never
+reach your existing Outbound Routes!   
+:::
 
 :::{note}   
 The screen capture example above could be for 10-digit numbers,
