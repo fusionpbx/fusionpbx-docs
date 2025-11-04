@@ -23,7 +23,7 @@ done it is safe to set enabled equal to true.
 
 ## Manual
 
-How to setup the device using the phone\'s web interface.
+How to setup the device using the phone's web interface.
 
 -   [Yealink](https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_yealink.html)
 -   [Polycom](https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_polycom.html)
@@ -34,11 +34,10 @@ How to setup the device using the phone\'s web interface.
 -   [SNOM](http://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_snom.html)
 -   [Zoiper](https://docs.fusionpbx.com/en/latest/applications/provision/provision_manual_zoiper.html)
 
-## Advanced \> Default Settings
+Navigate to **Advanced** > **Default Settings**
 
-In the [Provisioning
-section](../advanced/default_settings.md#provision), there are a
-few key options that have to be set in order to turn auto provisioning
+Select [Provision](../advanced/default_settings.md#provision) in the category list, 
+there are a few key options that have to be set in order to turn auto provisioning
 on.
 
 -   **enabled** Must be enabled and set to **value true** and **enabled
