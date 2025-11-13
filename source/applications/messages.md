@@ -54,7 +54,7 @@ Navigate to **Advanced** > **Upgrade** and run the following:
 <br>
 
 ```
-    cp /var/www/fusionpbx/app/messages/resources/service/debian-message_events.service /etc/systemd/system/message_events.service
+    cp /var/www/fusionpbx/app/messages/resources/service/debian-message_events /etc/systemd/system/message_events.service
     systemctl enable message_events
     systemctl start message_events
     systemctl daemon-reload
