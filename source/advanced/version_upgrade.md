@@ -1287,7 +1287,7 @@ When upgrading from previous versions, you may encounter the following issues:
 
 **Missing menus**
 
-- Go to <hxxps://yourdomain.local/core/menu/menu.php>
+- Go to <hxxps://domain.local/core/menu/menu.php>
 - Click the edit (e) button beside default
 - Click the Restore Default button
 - Check that all the entries in the list are accessible by the   
