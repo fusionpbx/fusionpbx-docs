@@ -13,16 +13,9 @@ make a new superadmin user name and password.
 1.  Move the config.conf file temporarily to a different Folder. Run
     these commands from the server console or using SSH.
 
-### New Method :
 ```
     cd /etc/fusionpbx
     mv config.conf config.conf.backup
-```
-
-### Old Method :
-```
-    cd /etc/fusionpbx
-    mv config.php config.backup.php
 ```
 <br>
 
@@ -53,8 +46,9 @@ examples:
     filled in, click next.
 ```
     cat /etc/fusionpbx/config.conf.backup | grep password
-    $db_password = 'yourDatabasePassword';
 ```
+
+- Result: $db_password = 'yourDatabasePassword';
 
 ![image](../_static/images/fusionpbx_database_configuration.jpg)
 
