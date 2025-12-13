@@ -59,3 +59,5 @@ Links
 http://www.mkyong.com/database/backup-restore-database-in-postgresql-pg_dumppg_restore/
 
 http://www.postgresql.org/docs/9.1/static/backup.html
+
+https://sqlable.com/postgresql/
