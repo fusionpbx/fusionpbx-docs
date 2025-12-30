@@ -81,21 +81,6 @@ nginx -t && nginx -s reload
 
 ---
 
-### Domains member feature.
-
-The latest FusionPBX code requires a new version of the Domains member feature. 
-If this member feature has been installed, then use the following command line to remove it.
-
-- These commands can be used to remove the app/domains feature.
-
-```
-rm -R /var/www/fusionpbx/app/domains
-```
-
-- Use the application manager to re-install the domains member feature.
-
----
-
 ### Dialplan
 
 The **user_record** dialplan has been updated to support call recordings in stereo.
