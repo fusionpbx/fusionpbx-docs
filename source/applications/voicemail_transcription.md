@@ -1,7 +1,6 @@
-# Voicemail Transcription in FusionPBX 5.3
-
+# Voicemail Transcription
 ## Overview
-This document provides a step-by-step guide for setting up the email transcription service in FusionPBX version 5.3. It supports various service providers such as OpenAI, Google, Azure, or a custom solution.
+This document provides a step-by-step guide for setting up the email transcription service in FusionPBX version 5.3 and higher. It supports various service providers such as OpenAI, Google, Azure, or a custom solution.
 
 ## Step-by-Step
 1. **Log in to FusionPBX**
