@@ -25,4 +25,5 @@ additional_information/postgresql.md
 additional_information/shared_line_appearance.md
 additional_information/cdr_archive.md
 additional_information/government_regulations.md
+additional_information/active_calls_stale.md
 ```
