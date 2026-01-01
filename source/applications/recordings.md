@@ -8,11 +8,9 @@ Dial \*732 to create a recording, or upload a 16bit
 8khz/16khz mono WAV file. [Click here for the youtube
 video.](https://youtu.be/CkqlsVvvv2U)
 
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/CkqlsVvvv2U?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
-</div>
 
-To view and set the pin number goto **Dialplan** > **Dialplan Manager** > Click on **Recordings** > **pin_number=8675309** at the bottom.
+The pin number that is required is displayed on the recordings page in the description. 
+
 
 :::{note}
 
@@ -42,6 +40,10 @@ Pin number is recomended but can be left empty if no pin number is desired then 
 Once you have a recording made you can use the recordings in different
 area\'s of FusionPBX. Custom IVR\'s and phrases would be the typical
 uses.
+
+## Dialplan
+
+To view or change the pin number goto **Dialplan** > **Dialplan Manager** > Click on **Recordings** on the dialplan details page look for the  **pin_number=** near the bottom.
 
 ## [Recordings Default Settings](/en/latest/advanced/default_settings.html#id24)
 
