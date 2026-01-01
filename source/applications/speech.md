@@ -1,6 +1,6 @@
-## Text to Speech
+## Speech
 
-Application for text speech is used in FusionPBX 5.3.x and newer versions.
+Text-to-speech is used to make recordings that are typically used for IVR Menus, Voicemail Greetings, Ring Group Greeting, and more. Text-to-speech is available in FusionPBX 5.3.x and newer versions.
 
 * Application -> Recordings
 * Application -> Voicemail -> Greetings
