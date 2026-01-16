@@ -11,7 +11,7 @@ Call Detail Records Statics summarize the call information.
 -   **Time:** Specific time in that day.
 -   **Volume:** Number of calls.
 -   **inutes:** Specific number of minutes.
--   Calls Per Minute:** Specific number of calls per minute.
+-   **Calls Per Minute:** Specific number of calls per minute.
 -   **Missed:** Specific number of missed calls.
 -   **ASR:** The answer to seizure ratio. Which is how many calls where
     answered versus not answered.
