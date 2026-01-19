@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="_static/images/logo.png" alt="Logo" width="130" height="76.5">
+  <img src="_static/images/logo.png" alt="Logo" width="390" height="229.5">
 </div>
 
 <br><br>
@@ -9,7 +9,7 @@
 
 An open source project that provides a customizable and flexible web interface to the very powerful and highly scalable multi-platform voice switch called [FreeSWITCH](https://www.freeswitch.org).
 
-FusionPBX will run on a variety of operating systems (optimized for Debian 8+) and hardware of your choice. FusionPBX provides a GUI for QR Code soft phone provisioning, unlimited extensions, voicemail-to-email, music on hold, call parking, analog lines or high-density T1/E1 circuits, and many other features. FusionPBX provides the functionality that businesses need and delivers corporate-level phone system features to small, medium, and large businesses. [Click here for the FusionPBX YouTube channel](https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF).
+FusionPBX will run on a variety of operating systems (optimized for **Debian 11+**) and hardware of your choice. FusionPBX provides a GUI for QR Code soft phone provisioning, unlimited extensions, voicemail-to-email, music on hold, call parking, analog lines or high-density T1/E1 circuits, and many other features. FusionPBX provides the functionality that businesses need and delivers corporate-level phone system features to small, medium, and large businesses. [Click here for the FusionPBX YouTube channel](https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF).
 
 <div style="text-align: center; margin-bottom: 2em;">
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/XpiVyHqLaus?rel=0" frameborder="0" allowfullscreen></iframe>
