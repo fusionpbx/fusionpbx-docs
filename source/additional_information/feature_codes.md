@@ -14,7 +14,7 @@ Below are the `*` codes used with FusionPBX. You can also create more as needed.
 | `*4`         | Attended Call Transfer | Transfer a call to another extension. After extension number press `#` |
 | `*411`       | Directory        | `*DIR` to dial by name                                                 |
 | `*3472`      | DISA             | `*DISA` followed by the Administrative PIN to receive a dial tone and call out |
-| `*67 number>` | Call Privacy | Activate call privacy                                                  |
+| `*67 number` | Call Privacy | Activate call privacy                                                  |
 | `*69`        | Call Return      | Call back the last incoming number                                     |
 | `*732`       | Record           | `*REC` followed by Administrative PIN to record a message              |
 | `*8[ext]`    | Extension Intercom | Page a specific extension                                              |
