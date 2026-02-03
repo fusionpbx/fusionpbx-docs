@@ -9,7 +9,7 @@
 
 An open source project that provides a customizable and flexible web interface to the very powerful and highly scalable multi-platform voice switch called [FreeSWITCH](https://www.freeswitch.org).
 
-FusionPBX will run on a variety of operating systems (optimized for **Debian 11+**) and hardware of your choice. FusionPBX provides a GUI for QR Code soft phone provisioning, unlimited extensions, voicemail-to-email, music on hold, call parking, analog lines or high-density T1/E1 circuits, and many other features. FusionPBX provides the functionality that businesses need and delivers corporate-level phone system features to small, medium, and large businesses. [Click here for the FusionPBX YouTube channel](https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF).
+FusionPBX will run on a variety of operating systems (optimized for **Debian** & **Ubuntu**) and hardware of your choice. FusionPBX provides a GUI for QR Code soft phone provisioning, unlimited extensions, voicemail-to-email, music on hold, call parking, analog lines or high-density T1/E1 circuits, and many other features. FusionPBX provides the functionality that businesses need and delivers corporate-level phone system features to small, medium, and large businesses. [Click here for the FusionPBX YouTube channel](https://www.youtube.com/playlist?list=PLrhVQpI_CtOwQNB_lsNIxrl9SOAuo9ZSF).
 
 <div style="text-align: center; margin-bottom: 2em;">
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/XpiVyHqLaus?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -24,7 +24,7 @@ FusionPBX will run on a variety of operating systems (optimized for **Debian 11+
 
 |                      |                    |                      |                     |
 |----------------------|--------------------|----------------------|---------------------|
-| Call Block           | Call Broadcast     | Call Flows            | Call Center         |
+| Call Block           | Call Broadcast     | Call Flows           | Call Center         |
 | Call Detail Records  | Conference         | Contacts             | Fax Server          |
 | Follow Me            | Hot Desking        | IVR Menus            | Ring Groups         |
 | Multi-Tenant         | Music on Hold      | Queues               | Recordings          |
@@ -32,7 +32,7 @@ FusionPBX will run on a variety of operating systems (optimized for **Debian 11+
 | Time Conditions      | WebRTC ready       | Voicemail            | and lots more...    |
 
 ## Our Ecosystem
-We are a global community that has an open and very friendly ecosystem. We encourage community engagement, contribution, and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code, or documentation.
+We are a global community that has an open and very friendly ecosystem. We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback and new feature ideas.
 
 Most of the core folks who develop and use FusionPBX can be found hanging out in the IRC network **irc.libera.chat** in the **#fusionpbx** channel. Come join us and meet the team!
 
