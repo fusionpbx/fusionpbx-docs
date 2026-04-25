@@ -26,16 +26,6 @@ Fail2ban, NGINX, PHP-FPM and PostgreSQL.
 Start with a **minimal** install of Debian 12 with SSH enabled. Paste
 the following commands in the console window **one line at a time**.
 
-```
-    wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh; 
-```
-<br>
-
-```
-    cd /usr/src/fusionpbx-install.sh/debian && ./install.sh    
-```
-<br>
-
 If using **Debian on Proxmox LXC** containers please run the following
 **BEFORE** starting the FusionPBX install.
 
@@ -46,6 +36,19 @@ If using **Debian on Proxmox LXC** containers please run the following
     apt-get install ca-certificates
     reboot
  ```
+<br>
+
+Then start install: 
+<br>
+
+```
+    wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh; 
+```
+<br>
+
+```
+    cd /usr/src/fusionpbx-install.sh/debian && ./install.sh    
+```
 <br>
 
 **2.** At the end of the install, the script will instruct you to go to
