@@ -5,7 +5,7 @@ Shared Line Apprearance(SLA) also known in older phone systems as a
 
 ## FusionPBX Settings
 
-FusionPBX Menu Advanced \> SIP Profiles \> edit a profile to enable SLA.
+FusionPBX Menu Advanced \> SIP Profiles \> edit internal profile to enable SLA.
 
 ![image](../_static/images/additional_information/fusionpbx_multiple_reg_true.jpg)
 
