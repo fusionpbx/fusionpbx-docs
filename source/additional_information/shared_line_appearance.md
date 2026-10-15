@@ -1,6 +1,6 @@
 # Shared Line Appearance
 
-Shared Line Apprearance(SLA) also known in older phone systems as a
+Shared Line Appearance (SLA) also known in older phone systems as a
 \"Key System\".
 
 ## FusionPBX Settings
