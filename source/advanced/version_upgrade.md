@@ -5,6 +5,160 @@ to upgrade from specific versions.
 
 <br>
 
+## Upgrade from 5.5 to 5.6
+
+---
+
+>
+
+### Update source code, then run upgrade.php
+
+>
+
+Run the following commands when connected to your server over SSH.
+
+5.6 Branch
+```
+cd /var/www/fusionpbx
+git stash
+git pull
+git checkout 5.6
+git branch
+git pull
+```
+
+Or Master Branch
+```
+cd /var/www/fusionpbx
+git checkout master
+git stash
+git pull
+git branch
+git pull
+```
+
+**Upgrade Commands**
+```
+mkdir /var/run/fusionpbx
+php /var/www/fusionpbx/core/upgrade/upgrade.php --optional
+php /var/www/fusionpbx/core/upgrade/upgrade.php --permissions
+php /var/www/fusionpbx/core/upgrade/upgrade.php --schema
+php /var/www/fusionpbx/core/upgrade/upgrade.php --defaults
+php /var/www/fusionpbx/core/upgrade/upgrade.php --services
+```
+
+### Update the Menu
+
+In FusionPBX, the menu can be customized. This can be a nice feature; however, it means there are a few things to consider when upgrading.
+
+- **Restore Defaults**
+  - Default Menu. If you have not customized the menu, you can restore it to the default menu.
+  - Custom Menu. If your customizations are minor, note them with a screenshot or print to PDF to review and reapply.
+  - Menu -> Upgrade put a check mark in **Menu Defaults**.
+  - Then press the **EXECUTE** button
+- **Manual Update**
+  - If you have custom groups or a customized menu, you must manually update the menu.
+  - Edit the default menu.
+   - Domain Profile
+     - Click on the Home parent menu
+     - Title: **Domain Profile**
+     - Set the value of the link to: **/core/domains/domain_profile.php**
+     - Parent menu set to **Home**
+     - Groups: add superadmin, admin
+     - Then press the **SAVE** button
+   - Global Profile
+     - Click on the Home parent menu
+     - Title: **Global Profile**
+     - Set the value of the link to: **/core/domains/global_profile.php**
+     - Parent menu set to **Home**
+     - Groups: add superadmin, admin
+     - Then press the **SAVE** button
+   - Language Model
+     - Click on the Home parent menu
+     - Title: **Language Model**
+     - Set the value of the link to: **/app/language_model/language_model.php**
+     - Parent menu set to **Applications**
+     - Groups: add superadmin
+     - Then press the **SAVE** button
+   - Now press the **RELOAD** button to see the updated menu.
+
+### Single Point of Entry
+
+Benefits
+- All traffic passes through a single place. This increases security as it reduces the entry points into FusionPBX.
+
+To enable a single point of entry, the NGINX configuration file needs to be updated.
+```
+/etc/nginx/sites-enabled
+```
+
+After this point in the config file
+```
+server {
+        listen [::]:443 ssl;
+        listen 443 ssl;
+
+
+        #redirect websockets to port 8080
+        location /websockets/ {
+                        proxy_pass http://127.0.0.1:8080;
+                        proxy_http_version 1.1;
+                        proxy_set_header Upgrade $http_upgrade;
+                        proxy_set_header Connection "upgrade";
+                        proxy_set_header Host $host;
+        }
+
+        #redirect letsencrypt to dehydrated
+        location ^~ /.well-known/acme-challenge {
+                        default_type "text/plain";
+                        auth_basic "off";
+                        alias /var/www/dehydrated;
+        }
+
+        #REST api
+        if ($uri ~* ^.*/api/.*$) {
+                        rewrite ^(.*)/api/(.*)$ $1/api/index.php?rewrite_uri=$2 last;
+                        break;
+        }
+```
+
+Add the following lines to 
+```
+        #single point of entry
+        location / {
+                root /var/www/fusionpbx/public;
+                index index.php;
+                try_files $uri $uri/ /index.php?$query_string;
+        }
+```
+
+**NGINX rewrite rules**
+- The NGINX rewrite rules are now optional.
+- The single point of entry enables the rewrite rules to be built into the provision code.
+- The NGINX rewrite rules are still supported for backwards compatibility.
+
+**NGINX Test**
+
+Test NGINX configuration for errors:   
+```
+nginx -t
+```
+
+**NGINX Service Restart**
+
+Restart the service after a successful test:   
+```
+service nginx restart
+```
+
+**OR**
+
+```
+nginx -s reload
+# or combine the test and reload
+nginx -t && nginx -s reload
+```
+
 ## Upgrade from 5.4 to 5.5
 ---
 
