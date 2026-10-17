@@ -1,6 +1,6 @@
 # Applications
 
-In the **Applications** menu (Apps) section you will find Bridges, Call Block, Call Broadcast, Call Center, Call Detail Records, Call Flows, Conference Center, Conference Controls, Conference Profiles, Contacts, Fax Server, Follow Me, Grandstream Wave, IVR Menu, Music on Hold, Operator Panel, Phrases, Queues, Recordings, Ring Groups, Streams, Time Conditions and Voicemail.  Other apps can also be added.
+In the **Applications** menu section you will find Bridges, Call Block, Call Broadcast, Call Center, Call Detail Records, Call Flows, Conference Center, Conference Controls, Conference Profiles, Contacts, Fax Server, Follow Me, Grandstream Wave, IVR Menu, Music on Hold, Operator Panel, Phrases, Queues, Recordings, Ring Groups, Streams, Time Conditions and Voicemail.  Other apps can also be added.
 
 ```{toctree}
 :maxdepth: 3
@@ -22,6 +22,7 @@ applications/fax_server.md
 applications/follow_me.md
 applications/gs_wave.md
 applications/ivr.md
+applications/identity.md
 applications/messages.md
 applications/operator_panel.md
 applications/phrases.md
