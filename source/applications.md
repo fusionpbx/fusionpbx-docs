@@ -25,6 +25,7 @@ applications/ivr.md
 applications/identity.md
 applications/messages.md
 applications/operator_panel.md
+applications/phone.md
 applications/phrases.md
 applications/music_on_hold.md
 applications/queues.md
