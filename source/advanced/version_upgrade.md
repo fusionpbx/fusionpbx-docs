@@ -80,6 +80,7 @@ In FusionPBX, the menu can be customized. This can be a nice feature; however, i
      - Parent menu set to **Applications**
      - Groups: add superadmin
      - Then press the **SAVE** button
+     - For details, see the [Language Model documentation](../applications/language_model.md).
    - Now press the **RELOAD** button to see the updated menu.
 
 ### Single Point of Entry

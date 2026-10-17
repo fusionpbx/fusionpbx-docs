@@ -23,6 +23,7 @@ applications/follow_me.md
 applications/gs_wave.md
 applications/ivr.md
 applications/identity.md
+applications/language_model.md
 applications/messages.md
 applications/operator_panel.md
 applications/phone.md
