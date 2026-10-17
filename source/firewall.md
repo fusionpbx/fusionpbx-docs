@@ -15,6 +15,7 @@
 :maxdepth: 3
 
 firewall/iptables.md
+firewall/nftables.md
 firewall/fail2ban.md
 firewall/pf.md
 ```

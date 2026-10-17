@@ -41,6 +41,16 @@ command.
 
     iptables -L -n
 
+:::: note
+<p class="admonition-title">Note</p>
+
+When the system uses nftables instead of iptables, the install
+script installs the nftables version of `jail.local` (all jails use
+the `nftables-allports` action) and you can view the blocked IP
+addresses with `nft list ruleset`. See
+[Nftables](nftables.md).
+::::
+
 To check the status of one of the fail2ban jails
 
     fail2ban-client status freeswitch-ip
